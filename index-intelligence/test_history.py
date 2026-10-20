@@ -1,6 +1,6 @@
 import unittest
 from datetime import date
-from build_dashboard import prepare,target_date,identity
+from build_dashboard import prepare,target_date,identity,pack_rows
 
 def row(day,close,name='Nifty 50'):
     return {'date':day,'close':close,'name':name}
@@ -30,5 +30,18 @@ class HistoryTests(unittest.TestCase):
     def test_zero_dividend_baseline_not_divided(self):
         r=prepare([row('2021-10-19',0,'Nifty50 Dividend Points'),row('2026-10-19',10,'Nifty50 Dividend Points')])[-1]
         self.assertIsNone(r['return_5y']);self.assertIsNone(r['cagr_5y'])
+    def test_compact_payload_preserves_values_dates_and_provenance(self):
+        source=[row('2026-10-16',100),row('2026-10-19',110)]
+        for r in source:r.update(sha='abc123',pe=None,change_pct=0)
+        packed=pack_rows(source)
+        self.assertEqual(packed['hashes'],['abc123'])
+        self.assertEqual(packed['names'],['Nifty 50'])
+        for original,wire in zip(source,packed['rows']):
+            decoded=dict(zip(packed['fields'],wire[3:]))
+            self.assertEqual(decoded['close'],original['close'])
+            self.assertEqual(decoded['pe'],None)
+            self.assertEqual(decoded['change_pct'],0)
+            self.assertEqual(packed['dates'][wire[1]],original['date'])
+            self.assertEqual(packed['hashes'][wire[2]],original['sha'])
 
 if __name__=='__main__':unittest.main()

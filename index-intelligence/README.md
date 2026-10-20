@@ -34,3 +34,11 @@ Working data lives in the sibling `nifty-automation/data/warehouse.sqlite` and `
 The private Sites publication at https://kiran-index-intelligence.kirandnyc.chatgpt.site is a fixed publication snapshot. The local Windows task refreshes local files at 19:00 and 21:00 IST weekdays while the PC is on and the user is logged in. There is no cloud data-refresh connection yet.
 
 Browser QA covered all horizons, all-index and 34-sector counts, numeric sorting/CAGR, comparison, source-date changes and mobile layout. Automated browser download saving was canceled by the browser environment; CSV payload/schema and the prebuilt matrix are separately verified. Source attribution is not a redistribution licence. No blanket licence is applied to third-party market data.
+
+## Daily-history continuation — 21 October 2026
+
+Added a bounded resumable weekday-file backfill. First batch attempted 48 dates: 46 accepted daily snapshots and two non-CSV responses recorded separately. Current database: 17,714 observations over 125 accepted dates; raw archive: 127 responses. Weekday candidates are not an audited exchange calendar; special weekend sessions remain unaudited. Missing/non-CSV files never prove holidays.
+
+The publication now uses an indexed data payload, storing repeated names, dates and source hashes once. Historical period results are computed when a snapshot is selected, with the same calendar targets, 7-day tolerance and CAGR formula as Python. Browser/Python parity passed for 11,067 values over four dates. The self-contained dashboard fell from 6,630,090 to 1,224,476 bytes despite the larger dataset. Full original observations remain in SQLite and source CSVs.
+
+Validation: 19 Python tests, all requested horizons, 167-index and 34-sector counts, CSV payload/static route, comparisons and mobile no-overflow. Hosted refresh is still a fixed publication; local task and GitHub data backup remain distinct.

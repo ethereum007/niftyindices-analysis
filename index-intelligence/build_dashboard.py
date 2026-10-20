@@ -48,11 +48,24 @@ def prepare(observations):
                 r['cagr_'+label]=((r['close']/base['close'])**(365.2425/elapsed)-1)*100 if valid and elapsed>0 else None
     return observations
 
+WIRE_FIELDS=['close','change_pct','open','high','low','pe','pb','yield_pct']
+
+def pack_rows(observations):
+    """Store repeated identifiers once; derived horizons are computed on selection."""
+    names=sorted({r['name'] for r in observations})
+    dates=sorted({r['date'] for r in observations})
+    hashes=sorted({r['sha'] for r in observations})
+    name_ids={v:i for i,v in enumerate(names)}
+    date_ids={v:i for i,v in enumerate(dates)}
+    hash_ids={v:i for i,v in enumerate(hashes)}
+    rows=[[name_ids[r['name']],date_ids[r['date']],hash_ids[r['sha']]]+[r.get(k) for k in WIRE_FIELDS] for r in observations]
+    return {'encoding':'indexed-v1','names':names,'dates':dates,'hashes':hashes,'fields':WIRE_FIELDS,'rows':rows}
+
 def build(db, root, out):
     db.row_factory=sqlite3.Row
     observations=[dict(r) for r in db.execute('SELECT * FROM observations ORDER BY date,name')]
     observations=prepare(observations)
-    payload={'observations':observations,'dates':sorted({r['date'] for r in observations}),
+    payload={**pack_rows(observations),
              'batches':[dict(r) for r in db.execute('SELECT * FROM batches ORDER BY observation_date')],
              'generated':datetime.now(timezone.utc).isoformat(),
              'periods':list(PERIODS),'targets':{d:{k:target_date(date.fromisoformat(d),k).isoformat() for k in PERIODS} for d in sorted({r['date'] for r in observations})}}

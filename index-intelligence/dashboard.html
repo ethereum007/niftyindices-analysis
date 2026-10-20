@@ -22,6 +22,11 @@
 <script>
 'use strict';
 const DATA=JSON.parse(document.getElementById('warehouse').textContent);
+if(DATA.encoding==='indexed-v1'){
+ DATA.observations=DATA.rows.map(w=>{const r={name:DATA.names[w[0]],date:DATA.dates[w[1]],sha:DATA.hashes[w[2]]};DATA.fields.forEach((f,i)=>r[f]=w[i+3]);return r});delete DATA.rows;
+}
+const byIndex=new Map(),byDate=new Map(),enrichedDates=new Set();
+for(const r of DATA.observations){if(!byIndex.has(r.name))byIndex.set(r.name,[]);byIndex.get(r.name).push(r);if(!byDate.has(r.date))byDate.set(r.date,[]);byDate.get(r.date).push(r)}
 const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=n=>n==null?'N/A':Number(n).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});
 const pct=n=>n==null?'N/A':(n>0?'+':'')+fmt(n)+'%';
@@ -33,14 +38,28 @@ let saved;try{saved=JSON.parse(localStorage.getItem('index-intelligence-watchlis
 let state={date:DATA.dates.at(-1),view:'overview',sort:'return_mtd',dir:-1,selected:'Nifty 50',compare:[]};
 const colors=['#14665d','#406fa0','#a76a26'];
 function persist(){try{localStorage.setItem('index-intelligence-watchlist',JSON.stringify([...watch]))}catch{$('notice').textContent='Browser storage unavailable; watchlist lasts this session.'}}
-function current(){return DATA.observations.filter(r=>r.date===state.date)}
+function current(){
+ const rows=byDate.get(state.date)||[];
+ if(!enrichedDates.has(state.date)){
+  const targets=DATA.targets[state.date];
+  for(const r of rows){const history=byIndex.get(r.name)||[];
+   for(const k of DATA.periods){const target=targets[k];let lo=0,hi=history.length;while(lo<hi){const mid=(lo+hi)>>>1;if(history[mid].date<=target)lo=mid+1;else hi=mid}const base=history[lo-1];
+    const gap=base?(Date.parse(target+'T00:00:00Z')-Date.parse(base.date+'T00:00:00Z'))/86400000:Infinity;
+    const valid=!!base&&base.close>0&&gap>=0&&gap<=7;
+    r['return_'+k]=valid?(r.close/base.close-1)*100:null;r['base_'+k]=valid?base.date:null;
+    if(['1y','2y','3y','5y'].includes(k)){const days=valid?(Date.parse(r.date+'T00:00:00Z')-Date.parse(base.date+'T00:00:00Z'))/86400000:0;r['cagr_'+k]=valid&&days>0?(Math.pow(r.close/base.close,365.2425/days)-1)*100:null}
+   }
+  }enrichedDates.add(state.date);
+ }
+ return rows;
+}
 function filtered(){return current().filter(r=>(state.view!=='sectors'||group(r.name)==='Sector')&&(state.view!=='watchlist'||watch.has(r.name))&&(!$('search').value||r.name.toLowerCase().includes($('search').value.toLowerCase()))&&($('group').value==='all'||($('group').value==='standard'?group(r.name)!=='Special variants':group(r.name)===$('group').value)))}
 const periods=['mtd','1m','3m','6m','1y','2y','3y','5y'];
 const label=k=>k==='mtd'?'MTD':k.toUpperCase();
 function chartPeriod(){return $('period').value==='change_pct'?'mtd':$('period').value.replace('return_','')}
 function valueOf(r,k){return $('returnMode').value==='cagr'&&/^return_(1y|2y|3y|5y)$/.test(k)?r[k.replace('return_','cagr_')]:r[k]}
 function sorted(){let k=state.sort;return filtered().sort((a,b)=>{let av=valueOf(a,k),bv=valueOf(b,k);return av==null?bv==null?a.name.localeCompare(b.name):1:bv==null?-1:typeof av==='string'?state.dir*av.localeCompare(bv):state.dir*(av-bv)||a.name.localeCompare(b.name)})}
-function seriesFor(name,start){return DATA.observations.filter(r=>r.name===name&&r.date>=start&&r.date<=state.date)}
+function seriesFor(name,start){return (byIndex.get(name)||[]).filter(r=>r.date>=start&&r.date<=state.date)}
 
 function toggleWatch(name){watch.has(name)?watch.delete(name):watch.add(name);persist();render()}
 function lineChart(id,series){const svg=$(id),W=id==='compareChart'?900:650,H=240,L=65,R=18,T=20,B=35;let all=series.flatMap(s=>s.points);if(all.length<2){svg.innerHTML='<text x="50%" y="50%" text-anchor="middle">More stored dates are needed for a chart.</text>';return}let dates=[...new Set(all.map(p=>p.date))].sort(),times=dates.map(d=>Date.parse(d+'T00:00:00Z')),minT=Math.min(...times),maxT=Math.max(...times),low=Math.min(...all.map(p=>p.value)),high=Math.max(...all.map(p=>p.value));let pad=(high-low)*.12||1;low-=pad;high+=pad;const x=d=>L+(Date.parse(d+'T00:00:00Z')-minT)/(maxT-minT||1)*(W-L-R),y=v=>T+(high-v)/(high-low)*(H-T-B);let str='';for(let i=0;i<4;i++){let yy=T+i*(H-T-B)/3,v=high-i*(high-low)/3;str+=`<line x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}" stroke="#e3eaed"/><text x="${L-10}" y="${yy+4}" text-anchor="end">${fmt(v)}</text>`}for(const d of [dates[0],dates.at(Math.floor(dates.length/2)),dates.at(-1)])str+=`<text x="${x(d)}" y="${H-8}" text-anchor="middle">${esc(maxT-minT>366*86400000?d.slice(0,7):d.slice(5))}</text>`;
@@ -50,7 +69,7 @@ function drawDetail(){let r=current().find(r=>r.name===state.selected);if(!r){r=
 $('detailName').textContent=r.name;$('detailDesc').textContent=group(r.name)+' · Snapshot '+r.date;$('detailWatch').textContent=watch.has(r.name)?'Remove from watchlist':'Add to watchlist';$('detailWatch').onclick=()=>toggleWatch(r.name);
 let k=chartPeriod(),base=r['base_'+k],target=DATA.targets[state.date][k],history=seriesFor(r.name,base||target);
 lineChart('detailChart',[{name:r.name,color:colors[0],points:history.map(h=>({date:h.date,value:h.close}))}]);
-$('detailNote').textContent=`${label(k)} view · ${history.length} stored points · ${history[0]?.date||'unavailable'} to ${history.at(-1)?.date||'unavailable'}. ${base?'Baseline '+base+'.':'Requested baseline unavailable; chart only shows the shorter observed history.'} Monthly historical snapshots and recent daily points; lines do not fill missing sessions.`;
+$('detailNote').textContent=`${label(k)} view · ${history.length} stored points · ${history[0]?.date||'unavailable'} to ${history.at(-1)?.date||'unavailable'}. ${base?'Baseline '+base+'.':'Requested baseline unavailable; chart only shows the shorter observed history.'} Historical daily coverage is being backfilled; stored points may include monthly samples. Lines do not fill missing sessions.`;
 $('detailStats').innerHTML=[['Closing level',fmt(r.close),''],['Daily change',pct(r.change_pct),cls(r.change_pct)],['MTD cumulative',pct(r.return_mtd),cls(r.return_mtd)],['P/E',fmt(r.pe),''],['P/B',fmt(r.pb),''],['Dividend yield',r.yield_pct==null?'N/A':fmt(r.yield_pct)+'%',''],['5Y cumulative',pct(r.return_5y),cls(r.return_5y)],['5Y annual CAGR',pct(r.cagr_5y),cls(r.cagr_5y)],['Selected '+label(k),pct(valueOf(r,'return_'+k)),cls(valueOf(r,'return_'+k))]].map(([label,value,c])=>`<div><small>${label}</small><strong class="${c}">${value}</strong></div>`).join('');
 $('detailBase').textContent=periods.map(k=>label(k)+': '+(r['base_'+k]?r['base_'+k]+' → '+r.date:'insufficient stored history')).join(' · ')}
 function drawCompare(){$('comparison').classList.toggle('hidden',state.compare.length===0);$('compareText').textContent=state.compare.length?state.compare.length+'/3 selected: '+state.compare.join(', '):'Choose up to 3 indices using the compare boxes.';if(!state.compare.length)return;
@@ -62,7 +81,7 @@ lineChart('compareChart',series);$('compareLegend').innerHTML=series.map(s=>`<sp
 
 function render(){let rows=current(),standard=rows.filter(r=>group(r.name)!=='Special variants'),nifty=rows.find(r=>r.name==='Nifty 50'),vix=rows.find(r=>r.name==='India VIX');
 $('niftyClose').textContent=fmt(nifty?.close);$('niftyDaily').innerHTML=`<span class="${cls(nifty?.change_pct)}">${pct(nifty?.change_pct)}</span> on selected day`;$('vix').textContent=fmt(vix?.close);$('vixDaily').textContent=pct(vix?.change_pct)+' daily volatility change';$('breadth').innerHTML=`<span class="pos">${standard.filter(r=>r.change_pct>0).length}</span> <span class="subtle">/</span> <span class="neg">${standard.filter(r=>r.change_pct<0).length}</span>`;$('count').textContent=rows.length;$('datesCount').textContent=rows.filter(r=>group(r.name)==='Sector').length+' sectoral indices · '+DATA.dates.length+' archived dates';
-$('coverage').textContent=`Data through ${state.date} · ${rows.length} published indices · ${DATA.observations.length.toLocaleString()} observations · history from ${DATA.dates[0]}. Monthly historical snapshots plus recent daily points, not a complete daily series. All indices remain listed when a period is N/A.`;
+$('coverage').textContent=`Data through ${state.date} · ${rows.length} published indices · ${DATA.observations.length.toLocaleString()} observations · history from ${DATA.dates[0]}. Monthly samples plus an expanding daily archive, not yet a complete daily series. All indices remain listed when a period is N/A.`;
 $('watchCount').textContent=watch.size?'('+watch.size+')':'';
 const names={overview:['The market, in perspective.','All-index monitor'],sectors:['Every sector. Every perspective.','All sectoral indices'],rankings:['Find the leaders. Understand the laggards.','Performance rankings'],valuations:['Put valuation in context.','Valuation explorer'],watchlist:['Your research shortlist.','My watchlist']};$('title').textContent=names[state.view][0];$('tableTitle').textContent=names[state.view][1];$('overviewPanels').classList.toggle('hidden',!['overview','valuations'].includes(state.view));$('leaders').parentElement.parentElement.classList.toggle('hidden',state.view==='valuations');$('overviewPanels').style.gridTemplateColumns=state.view==='valuations'?'1fr':'';
 let metric=$('period').value,changes=standard.filter(r=>valueOf(r,metric)!=null).sort((a,b)=>valueOf(b,metric)-valueOf(a,metric)),lead=[...changes.slice(0,4),...changes.slice(-4)].filter((r,i,a)=>a.findIndex(x=>x.name===r.name)===i),max=Math.max(...lead.map(r=>Math.abs(valueOf(r,metric))),1);
