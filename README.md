@@ -40,4 +40,4 @@ Current archive: 171 accepted snapshot dates and 24,785 observations, from 19 Oc
 
 Validation: 19 Python tests plus browser checks for periods, complete sector list, all-index default, comparison, CAGR and mobile. Automated browser download saving was canceled by the browser environment; generated CSV content is independently validated.
 
-Daily history can be expanded with `python nifty-automation/backfill_daily.py --max-requests 48`. It resumes without redownloading accepted files, records non-CSV/HTTP/error results and stops on access denial or rate limits. Browser/Python return parity passed for 11,067 values over four dates. The compact publication is 1.2 MB; original observations remain in the source archive and database.
+Daily history can be expanded with `python nifty-automation/backfill_daily.py --max-requests 48`. It resumes without redownloading accepted files, records non-CSV/HTTP/error results and stops on access denial or rate limits. Browser/Python return parity passed for 11,067 values over four dates. The compact publication is approximately 1.7 MB; original observations remain in the source archive and database.
