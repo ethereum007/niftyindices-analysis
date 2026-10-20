@@ -1,6 +1,6 @@
 {
   "as_of": "2026-10-19",
-  "generated_utc": "2026-10-20T16:57:04.586558+00:00",
+  "generated_utc": "2026-10-20T18:12:49.664767+00:00",
   "basis": "PRICE index; not TRI",
   "method": "1m/3m/1y: 30/90/365 calendar days, last available base on/before target within 7 days. Missing history stays blank.",
   "indices": [

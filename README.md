@@ -31,3 +31,11 @@ Historical ingestion is in progress. Initially this includes monthly historical 
 Indices include different return variants and asset types. India VIX is volatility, not an equity return. Inverse, leveraged, fixed-income, currency and futures variants are separated in the dashboard. Valuations alone are not investment recommendations.
 
 Source attribution does not grant ownership of third-party data or establish a redistribution licence. No proprietary vendor feed, subscription dataset, credentials or personal customer records are included. This repository has no blanket licence for third-party data.
+
+## Five-year / all-sector release
+
+167 published indices, including all 34 current sectoral catalogue entries. Rank and chart MTD, 3M, 6M, 1Y, 2Y, 3Y and 5Y (plus 1M/daily). Cumulative returns and annualized CAGR are explicitly separate. Available source history determines horizon coverage; newer indices remain listed with N/A. Calendar periods use actual disclosed baselines within 7 days of the requested anniversary; MTD uses the previous month-end.
+
+Current archive: 79 accepted snapshot dates and 10,166 observations, from 19 October 2021 through 19 October 2026. This is sampled monthly history plus exact latest-period anchors and recent daily snapshots, not a complete daily series. There are 81 raw responses, including two rejected responses. The extended matrix is `nifty-automation/data/reports/performance-latest.csv`.
+
+Validation: 14 Python tests plus browser checks for periods, complete sector list, all-index default, comparison, CAGR and mobile. Automated browser download saving was canceled by the browser environment; generated CSV content is independently validated.

@@ -10,6 +10,7 @@ import re
 import sqlite3
 import time
 import urllib.request
+import urllib.error
 from datetime import date, datetime, timezone, timedelta
 from html.parser import HTMLParser
 from pathlib import Path
@@ -47,6 +48,12 @@ def fetch(url):
                 if len(data) > 10_000_000:
                     raise ValueError('Report exceeds size limit')
                 return data
+        except urllib.error.HTTPError as exc:
+            if exc.code != 429 and 400 <= exc.code < 500:
+                raise
+            if attempt == 2:
+                raise
+            time.sleep(2 ** attempt)
         except (OSError, TimeoutError):
             if attempt == 2:
                 raise
@@ -90,7 +97,8 @@ def parse(raw):
                 row[field] = None if value.upper() in ('','-','--','NA','N/A') else float(value)
                 if row[field] is not None and (not math.isfinite(row[field]) or (field != 'change_pct' and row[field] < 0)):
                     raise ValueError('Invalid numeric value: '+field)
-            if row['close'] is None or row['close'] <= 0:
+            zero_dividend_points = key(row['name']) == 'nifty50dividendpoints' and row['close'] == 0
+            if row['close'] is None or (row['close'] <= 0 and not zero_dividend_points):
                 raise ValueError('Close must be positive')
             if row['high'] is not None and row['low'] is not None and row['high'] < row['low']:
                 raise ValueError('High below low')
@@ -135,7 +143,7 @@ def report(db, root):
         for label, days in [('1m',30),('3m',90),('1y',365)]:
             target = (date.fromisoformat(latest)-timedelta(days=days)).isoformat()
             base = db.execute('SELECT date,close FROM observations WHERE name=? AND date<=? ORDER BY date DESC LIMIT 1',(row['name'],target)).fetchone()
-            valid = base and (date.fromisoformat(target)-date.fromisoformat(base['date'])).days <= 7
+            valid = base and base['close'] > 0 and (date.fromisoformat(target)-date.fromisoformat(base['date'])).days <= 7
             row['return_'+label] = (row['close']/base['close']-1)*100 if valid else None
             row['base_'+label] = base['date'] if valid else None
     out = root/'reports'; out.mkdir(exist_ok=True)
@@ -198,6 +206,10 @@ def main():
                 except Exception as exc:
                     errors.append({'source':url,'error':str(exc)})
                 time.sleep(1)
+        if not a.file and not a.report_only:
+            from backfill_history import run as refresh_anchors
+            anchors=refresh_anchors(db,a.root,anchors_only=True)
+            errors.extend(anchors['errors'])
         summary=report(db,a.root)
         status={'status':'partial' if errors else 'ok','imports':results,'errors':errors,**summary}
     except Exception as exc:

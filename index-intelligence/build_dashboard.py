@@ -2,32 +2,70 @@
 import bisect
 import json
 import sqlite3
+import calendar
+import re
+import csv
 from datetime import date, timedelta, datetime, timezone
 from pathlib import Path
 
 HERE=Path(__file__).parent
+PERIODS={'mtd':None,'1m':1,'3m':3,'6m':6,'1y':12,'2y':24,'3y':36,'5y':60}
+
+def shift_months(d,months):
+    y,m=divmod(d.year*12+d.month-1+months,12);m+=1
+    return date(y,m,min(d.day,calendar.monthrange(y,m)[1]))
+
+def target_date(day,period):
+    return day.replace(day=1)-timedelta(days=1) if period=='mtd' else shift_months(day,-PERIODS[period])
+
+def identity(name):
+    # Case and punctuation only. PR, TR, currency and leverage tokens remain distinct.
+    return re.sub('[^a-z0-9]','',name.lower())
+
+def prepare(observations):
+    canonical={identity(r['name']):r['name'] for r in observations}
+    seen=set()
+    for r in observations:
+        raw=r['name'];r['name']=canonical[identity(raw)]
+        if raw!=r['name']:r['source_name']=raw
+        row_key=(r['name'],r['date'])
+        if row_key in seen:raise ValueError('Ambiguous same-date alias: '+str(row_key))
+        seen.add(row_key)
+    history={}
+    for r in observations:history.setdefault(r['name'],[]).append(r)
+    dates={n:[r['date'] for r in rows] for n,rows in history.items()}
+    for r in observations:
+        day=date.fromisoformat(r['date'])
+        for label in PERIODS:
+            target=target_date(day,label).isoformat()
+            i=bisect.bisect_right(dates[r['name']],target)-1
+            base=history[r['name']][i] if i>=0 else None
+            valid=base and base['close']>0 and (date.fromisoformat(target)-date.fromisoformat(base['date'])).days<=7
+            r['return_'+label]=(r['close']/base['close']-1)*100 if valid else None
+            r['base_'+label]=base['date'] if valid else None
+            if label in ('1y','2y','3y','5y'):
+                elapsed=(day-date.fromisoformat(base['date'])).days if valid else 0
+                r['cagr_'+label]=((r['close']/base['close'])**(365.2425/elapsed)-1)*100 if valid and elapsed>0 else None
+    return observations
 
 def build(db, root, out):
     db.row_factory=sqlite3.Row
     observations=[dict(r) for r in db.execute('SELECT * FROM observations ORDER BY date,name')]
-    history={}
-    for r in observations:
-        history.setdefault(r['name'],[]).append(r)
-    dates={name:[r['date'] for r in rows] for name,rows in history.items()}
-    for r in observations:
-        for label,days in [('1m',30),('3m',90),('1y',365)]:
-            target=(date.fromisoformat(r['date'])-timedelta(days=days)).isoformat()
-            i=bisect.bisect_right(dates[r['name']],target)-1
-            base=history[r['name']][i] if i>=0 else None
-            valid=base and (date.fromisoformat(target)-date.fromisoformat(base['date'])).days<=7
-            r['return_'+label]=(r['close']/base['close']-1)*100 if valid else None
-            r['base_'+label]=base['date'] if valid else None
+    observations=prepare(observations)
     payload={'observations':observations,'dates':sorted({r['date'] for r in observations}),
              'batches':[dict(r) for r in db.execute('SELECT * FROM batches ORDER BY observation_date')],
-             'generated':datetime.now(timezone.utc).isoformat()}
+             'generated':datetime.now(timezone.utc).isoformat(),
+             'periods':list(PERIODS),'targets':{d:{k:target_date(date.fromisoformat(d),k).isoformat() for k in PERIODS} for d in sorted({r['date'] for r in observations})}}
     encoded=json.dumps(payload,separators=(',',':')).replace('<','\\u003c').replace('>','\\u003e').replace('&','\\u0026')
     page=(HERE/'dashboard.html').read_text(encoding='utf-8').replace('__WAREHOUSE_DATA__',encoded)
     out.mkdir(parents=True,exist_ok=True)
+    latest=payload['dates'][-1]
+    latest_rows=[r for r in observations if r['date']==latest]
+    columns=['name','date','close','change_pct']+[field for k in PERIODS for field in ('return_'+k,'base_'+k)]+['cagr_'+k for k in ('1y','2y','3y','5y')]+['pe','pb','yield_pct','sha']
+    for folder in (out,HERE/'dist') if root.resolve()==(HERE.parent/'nifty-automation/data').resolve() else (out,):
+        folder.mkdir(parents=True,exist_ok=True)
+        with (folder/'performance-latest.csv').open('w',newline='',encoding='utf-8-sig') as handle:
+            writer=csv.DictWriter(handle,fieldnames=columns,extrasaction='ignore');writer.writeheader();writer.writerows(latest_rows)
     temp=out/'dashboard.tmp';temp.write_text(page,encoding='utf-8');temp.replace(out/'dashboard.html')
     if root.resolve()==(HERE.parent/'nifty-automation/data').resolve():
         dist=HERE/'dist';dist.mkdir(exist_ok=True)

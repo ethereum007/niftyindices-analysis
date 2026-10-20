@@ -42,5 +42,9 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(len(links.urls),1)
     def test_duplicate_rows_rejected(self):
         with self.assertRaises(ValueError):p.parse(snapshot()+snapshot().split(b'\n')[1]+b'\n')
+    def test_zero_dividend_points_is_a_valid_special_index(self):
+        raw=snapshot(close=0).replace(b'NIFTY 50',b'Nifty50 Dividend Points')
+        self.assertEqual(p.parse(raw)[0]['close'],0)
+        with self.assertRaises(ValueError):p.parse(snapshot(close=0))
 
 if __name__=='__main__':unittest.main()
