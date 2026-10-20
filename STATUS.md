@@ -56,3 +56,7 @@ Batch 5 publication succeeded at the existing private URL from source c7f3996fc6
 Added 89 accepted daily snapshots from 96 attempts, scanning through 2025-01-01. Archive: 69,122 observations / 486 accepted dates / 491 unique raw responses. Latest market date remains 2026-10-19. There are 794 unchecked or retryable weekday candidates; full daily history and weekend sessions remain incomplete. SQLite integrity passed; browser/Python parity passed for 14,028 values over four dates including 2025-03-03. Compact dashboard: 4,790,623 bytes.
 
 Batch 6 publication verified: GitHub main data commit 3ea012c; all 491 staged raw SHA-256 checks and SQLite backup integrity passed. Owner-private Sites source a87bd869c6a5fc2e763b040926c162152d8af3ee deployed successfully as appgdep_6ad7d87fc4f08191a07b959ca4cead66. Browser horizon/sector/CAGR/CSV/mobile suite passed. Next cadence continues before 2025-01-01; 794 weekday candidates remain unchecked/retryable.
+
+
+### 2026-10-21 cadence batch 7
+Added 91 accepted daily snapshots from 96 attempts, scanning through 2024-08-12. Archive: 80,357 observations / 577 accepted dates / 582 unique raw responses. Latest market date remains 2026-10-19. There are 698 unchecked or retryable weekday candidates; full daily history and weekend sessions remain incomplete. SQLite integrity passed; browser/Python parity passed for 13,636 values over four dates including 2024-10-15. All seven requested horizons, 167 indices, 34 sectors, CAGR, missing history, CSV and mobile checks passed. Compact dashboard: 5,554,331 bytes.
