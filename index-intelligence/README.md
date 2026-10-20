@@ -46,3 +46,7 @@ Validation: 19 Python tests, all requested horizons, 167-index and 34-sector cou
 ### Daily-history batch 2
 
 Another 48 weekday files checked: 46 accepted, two non-CSV responses. Current archive: 24,785 observations, 171 accepted dates and 174 raw responses. The bounded daily scan reached 12 May 2026. Source dates still span October 2021–October 2026 through monthly samples and explicit anchors; full daily five-year coverage remains incomplete. The dashboard is approximately 1.7 MB.
+
+### Daily-history batch 3
+
+Checked another 48 weekday candidates: 42 accepted snapshots, six non-CSV responses. Current archive: 30,953 observations over 213 accepted dates; 216 raw responses. The backward scan reached 2 March 2026. The latest market snapshot remains 19 October 2026; full five-year daily history and special weekend sessions are not yet audited. Compact dashboard size: 2,141,140 bytes.

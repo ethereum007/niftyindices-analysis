@@ -26,3 +26,9 @@ The daily-history/compact-payload release is now published at the same private U
 Added 46 accepted snapshots after checking another 48 weekday files. Current totals: 24,785 observations over 171 accepted dates; 174 archived raw responses. The backward daily scan reached 12 May 2026. Two requests in this batch returned non-CSV responses and are not declared holidays. The latest market snapshot remains 19 October 2026; this is historical expansion, not live-market freshness.
 
 Batch 2 publication succeeded at the existing private dashboard URL. Source commit: 05b6d50cc30fcf8d99e7bc82980cce061b59b582. Data backup commit: b994231. All 174 raw-file hashes and SQLite integrity verified; browser/Python parity passed for 10,983 values over four snapshot dates, including newly added June observations. All requested horizon/sector/export/mobile checks passed. Daily five-year history remains incomplete; 1,130 weekday candidates still unchecked/retryable.
+
+## Daily-history batch 3
+
+### Daily-history batch 3
+
+Checked another 48 weekday candidates: 42 accepted snapshots, six non-CSV responses. Current archive: 30,953 observations over 213 accepted dates; 216 raw responses. The backward scan reached 2 March 2026. The latest market snapshot remains 19 October 2026; full five-year daily history and special weekend sessions are not yet audited. Compact dashboard size: 2,141,140 bytes.
