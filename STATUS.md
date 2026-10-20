@@ -32,3 +32,5 @@ Batch 2 publication succeeded at the existing private dashboard URL. Source comm
 ### Daily-history batch 3
 
 Checked another 48 weekday candidates: 42 accepted snapshots, six non-CSV responses. Current archive: 30,953 observations over 213 accepted dates; 216 raw responses. The backward scan reached 2 March 2026. The latest market snapshot remains 19 October 2026; full five-year daily history and special weekend sessions are not yet audited. Compact dashboard size: 2,141,140 bytes.
+
+Batch 3 publication succeeded at the existing private URL from source 762590ebae4683ddc59dc3e757d1823ca2dac6c5. Data commit: 3e435f7. Raw source hashes (216) and consistent SQLite snapshot verified. Browser/Python parity passed for 10,752 values including newly added March data; horizon, sector, export and mobile checks passed. Full five-year daily coverage remains incomplete; 1,082 weekday candidates still unchecked/retryable.
