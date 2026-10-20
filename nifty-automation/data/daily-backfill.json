@@ -383,6 +383,390 @@
       "sha256": "4073110dac3007f657ab0dd2ee7e1eecf4035bc4557d79d2dee5ceb8e120f2cd",
       "status": "accepted",
       "rows": 161
+    },
+    "2026-07-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21072026.csv",
+      "attempted_utc": "2026-10-20T19:05:41.479991+00:00",
+      "attempts": 1,
+      "sha256": "b119aa894dc412b1ba5e137a986c1f7984e436b88f5cfb724e06d8ff4d6c8ea9",
+      "status": "accepted",
+      "rows": 161
+    },
+    "2026-07-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20072026.csv",
+      "attempted_utc": "2026-10-20T19:05:42.546455+00:00",
+      "attempts": 1,
+      "sha256": "1359701c590b6342eefc148dbbac88a3dfdb20bde291292e1499edda9bb1390e",
+      "status": "accepted",
+      "rows": 161
+    },
+    "2026-07-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16072026.csv",
+      "attempted_utc": "2026-10-20T19:05:43.497751+00:00",
+      "attempts": 1,
+      "sha256": "a89689c7b53e96050698889dab279a9c5be1cbb82323e16e76a173ab155b8ea5",
+      "status": "accepted",
+      "rows": 161
+    },
+    "2026-07-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15072026.csv",
+      "attempted_utc": "2026-10-20T19:05:44.475432+00:00",
+      "attempts": 1,
+      "sha256": "e84608ef8f8050d70b735ef8a9184476cff5792e3e85bfdc918d000d10f1c68d",
+      "status": "accepted",
+      "rows": 161
+    },
+    "2026-07-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14072026.csv",
+      "attempted_utc": "2026-10-20T19:05:45.328048+00:00",
+      "attempts": 1,
+      "sha256": "c0a525c6736f862da6df6e7d55eb4200c6e19b4a036e1aeb11e644a3f8206a08",
+      "status": "accepted",
+      "rows": 161
+    },
+    "2026-07-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13072026.csv",
+      "attempted_utc": "2026-10-20T19:05:46.235533+00:00",
+      "attempts": 1,
+      "sha256": "f23776b17d17c4e00b4cdef13db4b7dd43495a395381d91d3cdf024298a0cb78",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-07-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10072026.csv",
+      "attempted_utc": "2026-10-20T19:05:47.151592+00:00",
+      "attempts": 1,
+      "sha256": "8371436f58823e11c2bb24884214963d98fa3d67d4a4ff30928c7be60f6a193c",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-07-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09072026.csv",
+      "attempted_utc": "2026-10-20T19:05:48.027541+00:00",
+      "attempts": 1,
+      "sha256": "4f54816a0db696b7a18e4f6b9d0bfc5fe02f1ddb790a00fe5ae7dddd08063ce0",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-07-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08072026.csv",
+      "attempted_utc": "2026-10-20T19:05:48.907791+00:00",
+      "attempts": 1,
+      "sha256": "cccd22346fd373cd8e9c19ca3d4cd154a28ba37e729546046146829885953bea",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-07-07": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_07072026.csv",
+      "attempted_utc": "2026-10-20T19:05:49.889002+00:00",
+      "attempts": 1,
+      "sha256": "510101fdb4b31ee76785bdc5c838e6a27bf4482090175766107297e694a2a534",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-07-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06072026.csv",
+      "attempted_utc": "2026-10-20T19:05:50.744838+00:00",
+      "attempts": 1,
+      "sha256": "c4f8363be99ac7c2e39ef726af6c6239a8746a8a49ea75e4b95397c0892e7fb9",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-07-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03072026.csv",
+      "attempted_utc": "2026-10-20T19:05:51.685706+00:00",
+      "attempts": 1,
+      "sha256": "7fcaf907737fb5d16d96887de3e25d576316fb3196692596cf93859d5ab5da6a",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-07-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02072026.csv",
+      "attempted_utc": "2026-10-20T19:05:52.575061+00:00",
+      "attempts": 1,
+      "sha256": "4d61c1374814b8c86072a4160a2b3b4eed3e12a4dcbd5da888eba2ec5d3a2c14",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-07-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01072026.csv",
+      "attempted_utc": "2026-10-20T19:05:53.457831+00:00",
+      "attempts": 1,
+      "sha256": "069ea6f1e112fac803519fbb0b9c398d69cce07728ef3ed5293b338a234db010",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-06-29": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_29062026.csv",
+      "attempted_utc": "2026-10-20T19:05:54.338909+00:00",
+      "attempts": 1,
+      "sha256": "93e3fb742c9ab0889ee72101942e91e47a4c3ed137469e0c69b6a75f7d2a8e81",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-06-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26062026.csv",
+      "attempted_utc": "2026-10-20T19:05:55.187309+00:00",
+      "attempts": 1,
+      "sha256": "47fe72a7f3fb896f7d05fd6d528fb51a6871d860ce7469407f4b447d73081f47",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2026-06-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25062026.csv",
+      "attempted_utc": "2026-10-20T19:05:56.334773+00:00",
+      "attempts": 1,
+      "sha256": "5669ef488c40554d8e9b5833ff1e264dc61e444df2b541a49186534c080b5405",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-06-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24062026.csv",
+      "attempted_utc": "2026-10-20T19:05:57.236929+00:00",
+      "attempts": 1,
+      "sha256": "6b368c23762953a1ad074521bd3db1a86c404c30b6a82afb35ff700781e42fd3",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-06-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23062026.csv",
+      "attempted_utc": "2026-10-20T19:05:58.111556+00:00",
+      "attempts": 1,
+      "sha256": "c0662e476ab7f1ee96a3b3b1679f92d705c1a08e6368b0cc102f275bdf9f1765",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-06-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22062026.csv",
+      "attempted_utc": "2026-10-20T19:05:59.009226+00:00",
+      "attempts": 1,
+      "sha256": "ee7e828efd40c2b4e19b0de460bc27dbf8420849b1818027a315cdafa6fafae9",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-06-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19062026.csv",
+      "attempted_utc": "2026-10-20T19:05:59.867089+00:00",
+      "attempts": 1,
+      "sha256": "c30a3070e678b3c9a5590e0f615d6038a8801de35552efbd70aa9c30959e3196",
+      "status": "accepted",
+      "rows": 160
+    },
+    "2026-06-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18062026.csv",
+      "attempted_utc": "2026-10-20T19:06:00.742947+00:00",
+      "attempts": 1,
+      "sha256": "5d246d808da6b3e883314072e1f88827965ead8e9cd080b6d5f7a80b3c6f6416",
+      "status": "accepted",
+      "rows": 158
+    },
+    "2026-06-17": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_17062026.csv",
+      "attempted_utc": "2026-10-20T19:06:01.613205+00:00",
+      "attempts": 1,
+      "sha256": "a03dd5630f18dd2bcba1c195f725c5390faab3dedf5aec46b10ae2305dcd0f3b",
+      "status": "accepted",
+      "rows": 158
+    },
+    "2026-06-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16062026.csv",
+      "attempted_utc": "2026-10-20T19:06:02.559504+00:00",
+      "attempts": 1,
+      "sha256": "0ab588f57b9e6b9840ae6b2ca469f29d6bfe6677a2a5e994dfc5b2abb057eefe",
+      "status": "accepted",
+      "rows": 158
+    },
+    "2026-06-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15062026.csv",
+      "attempted_utc": "2026-10-20T19:06:03.467657+00:00",
+      "attempts": 1,
+      "sha256": "edfe87aad0fdd718b74a7e3fc798b073a05150fe6638b00848a029d1683f5d75",
+      "status": "accepted",
+      "rows": 158
+    },
+    "2026-06-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12062026.csv",
+      "attempted_utc": "2026-10-20T19:06:04.408332+00:00",
+      "attempts": 1,
+      "sha256": "bb95fd917acac2780cd2c442b63e98c0b990786df32f59777e54f6c746e12528",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-06-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11062026.csv",
+      "attempted_utc": "2026-10-20T19:06:05.261966+00:00",
+      "attempts": 1,
+      "sha256": "0112cd3906dfece5f73185db2aac392f87476ab7aced012163e1307c950e3e8d",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-06-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10062026.csv",
+      "attempted_utc": "2026-10-20T19:06:06.172952+00:00",
+      "attempts": 1,
+      "sha256": "4699cd417d3e316d7434b2a60bad7889a3fe5328adae876a33b714df142b518b",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-06-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09062026.csv",
+      "attempted_utc": "2026-10-20T19:06:07.010361+00:00",
+      "attempts": 1,
+      "sha256": "29a7ae1d66df788fca72537719db9cf3caa7bd661577a1ef55519372a66fdf09",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-06-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08062026.csv",
+      "attempted_utc": "2026-10-20T19:06:07.861862+00:00",
+      "attempts": 1,
+      "sha256": "d82903283632823f92ee1fdc5205f928afc1846f08ea4b73c030abb60c5d0564",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-06-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05062026.csv",
+      "attempted_utc": "2026-10-20T19:06:08.751692+00:00",
+      "attempts": 1,
+      "sha256": "488b0e6f96e04dc9bfbbf649ae4fa750165915c77a02a4e4615ad5c5a741dbd7",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-06-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04062026.csv",
+      "attempted_utc": "2026-10-20T19:06:09.646224+00:00",
+      "attempts": 1,
+      "sha256": "5f4a53ccd5811ade3a1463a13711733680184b1a9271f198bfd62427db786fed",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-06-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03062026.csv",
+      "attempted_utc": "2026-10-20T19:06:10.502790+00:00",
+      "attempts": 1,
+      "sha256": "81c8a395c5701354f217ba817a4330e35741e2ef9839b52468ab76b2dc6bbf97",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-06-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02062026.csv",
+      "attempted_utc": "2026-10-20T19:06:11.346841+00:00",
+      "attempts": 1,
+      "sha256": "4c04546d017b3d4d3da9993e64b1ecea71034a4280270f9c8a8523739e91ed7e",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-06-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01062026.csv",
+      "attempted_utc": "2026-10-20T19:06:12.225326+00:00",
+      "attempts": 1,
+      "sha256": "ec26c46249e3c44c6f80b6628754c2792a9e79293c1a396d71d4240d9f432726",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-05-28": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_28052026.csv",
+      "attempted_utc": "2026-10-20T19:06:13.102270+00:00",
+      "attempts": 1,
+      "sha256": "47fe72a7f3fb896f7d05fd6d528fb51a6871d860ce7469407f4b447d73081f47",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2026-05-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27052026.csv",
+      "attempted_utc": "2026-10-20T19:06:14.702679+00:00",
+      "attempts": 1,
+      "sha256": "b27310f238976fbb358d2a7e5d34242fe47a0397850f61d0984611bc6b801c58",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-05-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26052026.csv",
+      "attempted_utc": "2026-10-20T19:06:15.568213+00:00",
+      "attempts": 1,
+      "sha256": "bf029c427824f1c890a86dbc0c9ad265a09b4262be478d71afa23afff750cec4",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-05-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25052026.csv",
+      "attempted_utc": "2026-10-20T19:06:16.438422+00:00",
+      "attempts": 1,
+      "sha256": "5e080649ee6fe93a91768f0b1448d44ccadf14ed18d6c7a11f48777f87731020",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-05-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22052026.csv",
+      "attempted_utc": "2026-10-20T19:06:17.316423+00:00",
+      "attempts": 1,
+      "sha256": "f0e2352227e4471c82ff416868b21afe91124b9c368d9f8dc09106e1eb38fe3f",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-05-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21052026.csv",
+      "attempted_utc": "2026-10-20T19:06:18.222336+00:00",
+      "attempts": 1,
+      "sha256": "697bfe8fb3b3a1d21a8e33b6cf9dc511f122e5627ae9a15397b04ff9cbd6496e",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-05-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20052026.csv",
+      "attempted_utc": "2026-10-20T19:06:19.081971+00:00",
+      "attempts": 1,
+      "sha256": "314240bc9bf81f37ad28747d02b94c68e69e5e996c0e30682d152031006564f7",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-05-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19052026.csv",
+      "attempted_utc": "2026-10-20T19:06:19.944873+00:00",
+      "attempts": 1,
+      "sha256": "eb1ac2ce8dc50d22572734450f91ee797478206be9b84c54c7ef575488599469",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-05-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18052026.csv",
+      "attempted_utc": "2026-10-20T19:06:20.782870+00:00",
+      "attempts": 1,
+      "sha256": "444c2f90855bae3e661f26e11366db4d9989d0ef05177d75d5a4469e33e5b623",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-05-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15052026.csv",
+      "attempted_utc": "2026-10-20T19:06:21.647114+00:00",
+      "attempts": 1,
+      "sha256": "9f2e98ac1f7941be68e14544dee999cc9f5807ab412791609f1586f93e03a32d",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-05-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14052026.csv",
+      "attempted_utc": "2026-10-20T19:06:22.511009+00:00",
+      "attempts": 1,
+      "sha256": "b7890994d687892c59d71dec68449923ffe9aeb4c3720575e396211a15e982aa",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-05-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13052026.csv",
+      "attempted_utc": "2026-10-20T19:06:23.344617+00:00",
+      "attempts": 1,
+      "sha256": "0abf6f385b734a8ac49d41250487e7f29e2fc816c269d6705b34976e6a090569",
+      "status": "accepted",
+      "rows": 147
+    },
+    "2026-05-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12052026.csv",
+      "attempted_utc": "2026-10-20T19:06:24.283646+00:00",
+      "attempts": 1,
+      "sha256": "83d482e007a62786112d4259f2a01648870976d1677a0780f6b35b16dbf275d5",
+      "status": "accepted",
+      "rows": 147
     }
   },
   "range": {
@@ -393,11 +777,11 @@
     "attempted_this_run": 48,
     "loaded_this_run": 46,
     "weekday_candidates": 1305,
-    "accepted_dates_in_range": 125,
-    "remaining_unchecked_or_retryable": 1178,
+    "accepted_dates_in_range": 171,
+    "remaining_unchecked_or_retryable": 1130,
     "stop_reason": null,
     "weekend_sessions_audited": false,
     "note": "Weekday file discovery is not an exchange-calendar audit; absent files do not prove holidays."
   },
-  "updated_utc": "2026-10-20T18:38:39.621540+00:00"
+  "updated_utc": "2026-10-20T19:06:25.132356+00:00"
 }

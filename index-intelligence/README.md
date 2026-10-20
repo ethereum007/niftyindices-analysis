@@ -42,3 +42,7 @@ Added a bounded resumable weekday-file backfill. First batch attempted 48 dates:
 The publication now uses an indexed data payload, storing repeated names, dates and source hashes once. Historical period results are computed when a snapshot is selected, with the same calendar targets, 7-day tolerance and CAGR formula as Python. Browser/Python parity passed for 11,067 values over four dates. The self-contained dashboard fell from 6,630,090 to 1,224,476 bytes despite the larger dataset. Full original observations remain in SQLite and source CSVs.
 
 Validation: 19 Python tests, all requested horizons, 167-index and 34-sector counts, CSV payload/static route, comparisons and mobile no-overflow. Hosted refresh is still a fixed publication; local task and GitHub data backup remain distinct.
+
+### Daily-history batch 2
+
+Another 48 weekday files checked: 46 accepted, two non-CSV responses. Current archive: 24,785 observations, 171 accepted dates and 174 raw responses. The bounded daily scan reached 12 May 2026. Source dates still span October 2021–October 2026 through monthly samples and explicit anchors; full daily five-year coverage remains incomplete. The dashboard is approximately 1.7 MB.

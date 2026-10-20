@@ -36,7 +36,7 @@ Source attribution does not grant ownership of third-party data or establish a r
 
 167 published indices, including all 34 current sectoral catalogue entries. Rank and chart MTD, 3M, 6M, 1Y, 2Y, 3Y and 5Y (plus 1M/daily). Cumulative returns and annualized CAGR are explicitly separate. Available source history determines horizon coverage; newer indices remain listed with N/A. Calendar periods use actual disclosed baselines within 7 days of the requested anniversary; MTD uses the previous month-end.
 
-Current archive: 125 accepted snapshot dates and 17,714 observations, from 19 October 2021 through 19 October 2026. This is sampled monthly history plus exact latest-period anchors and recent daily snapshots, not a complete daily series. There are 127 raw responses, including two rejected responses. The extended matrix is `nifty-automation/data/reports/performance-latest.csv`.
+Current archive: 171 accepted snapshot dates and 24,785 observations, from 19 October 2021 through 19 October 2026. This is sampled monthly history plus exact latest-period anchors and recent daily snapshots, not a complete daily series. There are 174 raw responses, including three rejected responses. The extended matrix is `nifty-automation/data/reports/performance-latest.csv`.
 
 Validation: 19 Python tests plus browser checks for periods, complete sector list, all-index default, comparison, CAGR and mobile. Automated browser download saving was canceled by the browser environment; generated CSV content is independently validated.
 
