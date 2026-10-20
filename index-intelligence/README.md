@@ -78,3 +78,7 @@ Added 90 accepted daily snapshots from 96 attempts, scanning through 2023-11-03.
 
 ### 2026-10-21 cadence batch 10
 Added 91 accepted daily snapshots from 96 attempts, scanning through 2023-06-14. Archive: 109,892 observations / 846 accepted dates / 852 unique raw responses. Latest market date remains 2026-10-19. There are 410 unchecked or retryable weekday candidates; full daily history and weekend sessions remain incomplete. SQLite integrity and requested/embedded date agreement passed for all 846 accepted source files. Browser/Python parity passed for 13,216 values over four dates including 2023-08-23. All seven requested horizons, 167 indices, 34 sectors, CAGR, missing history, CSV and mobile checks passed. Compact dashboard: 7,560,963 bytes.
+
+
+### 2026-10-21 cadence batch 11
+Added 89 accepted daily snapshots from 96 attempts, scanning through 2023-01-24. Archive: 119,272 observations / 935 accepted dates / 941 unique raw responses. Latest market date remains 2026-10-19. There are 314 unchecked or retryable weekday candidates; full daily history and weekend sessions remain incomplete. SQLite integrity and requested/embedded date agreement passed for all 935 accepted source files. Browser/Python parity passed for 13,188 values over four dates including 2023-04-20. All seven requested horizons, 167 indices, 34 sectors, CAGR, missing history, CSV and mobile checks passed. Compact dashboard: 8,195,372 bytes.
