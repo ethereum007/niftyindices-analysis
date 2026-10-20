@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.tmp
+*.sqlite-wal
+*.sqlite-shm
+.env
+.env.*
+!.env.example
+.venv/
+node_modules/
+.DS_Store

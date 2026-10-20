@@ -1,0 +1,21 @@
+{
+  "status": "ok",
+  "imports": [
+    {
+      "status": "unchanged",
+      "rows": 167,
+      "date": "2026-10-16",
+      "sha": "0ec4b642fc4d13ce901c0ae8ada4f262f0363d2ac1382a2ab1ed292f2c506728"
+    },
+    {
+      "status": "unchanged",
+      "rows": 167,
+      "date": "2026-10-19",
+      "sha": "ebff93c77dc6cdf82f1536a92c36a611a644fa6f87e267aa7c2ed5edfcf46502"
+    }
+  ],
+  "errors": [],
+  "as_of": "2026-10-19",
+  "indices": 167,
+  "report": "C:\\Users\\kiran\\Documents\\Codex\\2026-10-20\\we-d\\outputs\\nifty-automation\\data\\reports\\latest.html"
+}
