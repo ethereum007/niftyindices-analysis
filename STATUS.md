@@ -40,3 +40,5 @@ Batch 3 publication succeeded at the existing private URL from source 762590ebae
 ### Daily-history cadence batch 4
 
 Two bounded batches checked 96 weekday candidates: 91 accepted snapshots and five non-CSV responses, with no rate-limit/access stop. The daily scan now reaches 9 October 2025. Current archive: 44,012 observations over 304 accepted dates; 308 archived raw responses. The dashboard is 3,049,129 bytes. Full five-year daily coverage and weekend sessions remain unaudited. Latest snapshot date is still 2026-10-19; this is historical expansion.
+
+Batch 4 publication succeeded at the existing private URL from source 8e0047272972d39ead5c5c6633e76bc3c363bfac. Data commit: fed0a04. All 308 raw-file hashes and consistent SQLite integrity verified. Browser/Python parity passed for 14,224 values, including prices, valuations and source hashes as well as returns/CAGR; horizon, sector, CSV and mobile checks passed. Full five-year daily coverage remains incomplete, with 986 weekday candidates unchecked/retryable and special weekend sessions unaudited.
