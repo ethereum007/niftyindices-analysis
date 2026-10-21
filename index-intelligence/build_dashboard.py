@@ -65,7 +65,9 @@ def build(db, root, out):
     db.row_factory=sqlite3.Row
     observations=[dict(r) for r in db.execute('SELECT * FROM observations ORDER BY date,name')]
     observations=prepare(observations)
-    payload={**pack_rows(observations),
+    coverage_file=root/'coverage-audit.json'
+    coverage=json.loads(coverage_file.read_text(encoding='utf-8')) if coverage_file.exists() else None
+    payload={**pack_rows(observations),'coverage':coverage,
              'batches':[dict(r) for r in db.execute('SELECT * FROM batches ORDER BY observation_date')],
              'generated':datetime.now(timezone.utc).isoformat(),
              'periods':list(PERIODS),'targets':{d:{k:target_date(date.fromisoformat(d),k).isoformat() for k in PERIODS} for d in sorted({r['date'] for r in observations})}}

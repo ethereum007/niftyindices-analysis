@@ -815,6 +815,3366 @@
       "sha256": "5faec7358f5eeafba89a9bb353592b3a29af1048842e86c3229a46f67ae13a7e",
       "status": "non_csv_response",
       "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-11-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15112025.csv",
+      "attempted_utc": "2026-10-21T03:05:43.605098+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-11-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09112025.csv",
+      "attempted_utc": "2026-10-21T03:05:44.911346+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-11-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08112025.csv",
+      "attempted_utc": "2026-10-21T03:05:46.018668+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-11-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02112025.csv",
+      "attempted_utc": "2026-10-21T03:05:47.112693+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-11-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01112025.csv",
+      "attempted_utc": "2026-10-21T03:05:48.213249+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-10-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26102025.csv",
+      "attempted_utc": "2026-10-21T03:05:49.433564+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-10-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25102025.csv",
+      "attempted_utc": "2026-10-21T03:05:50.551930+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-10-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19102025.csv",
+      "attempted_utc": "2026-10-21T03:05:51.706653+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-10-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18102025.csv",
+      "attempted_utc": "2026-10-21T03:05:52.819894+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-10-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12102025.csv",
+      "attempted_utc": "2026-10-21T03:05:53.942677+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-10-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11102025.csv",
+      "attempted_utc": "2026-10-21T03:05:55.203988+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-10-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05102025.csv",
+      "attempted_utc": "2026-10-21T03:05:56.325943+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-10-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04102025.csv",
+      "attempted_utc": "2026-10-21T03:05:57.453704+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-09-28": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_28092025.csv",
+      "attempted_utc": "2026-10-21T03:05:58.592468+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-09-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27092025.csv",
+      "attempted_utc": "2026-10-21T03:05:59.705730+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-09-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21092025.csv",
+      "attempted_utc": "2026-10-21T03:06:00.848532+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-09-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20092025.csv",
+      "attempted_utc": "2026-10-21T03:06:01.980685+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-09-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14092025.csv",
+      "attempted_utc": "2026-10-21T03:06:03.091825+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-09-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13092025.csv",
+      "attempted_utc": "2026-10-21T03:06:04.221942+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-09-07": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_07092025.csv",
+      "attempted_utc": "2026-10-21T03:06:05.501915+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-09-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06092025.csv",
+      "attempted_utc": "2026-10-21T03:06:06.660446+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-08-31": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_31082025.csv",
+      "attempted_utc": "2026-10-21T03:06:08.043811+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-08-30": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_30082025.csv",
+      "attempted_utc": "2026-10-21T03:06:09.179928+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-08-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24082025.csv",
+      "attempted_utc": "2026-10-21T03:06:10.304241+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-08-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23082025.csv",
+      "attempted_utc": "2026-10-21T03:06:11.640069+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-08-17": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_17082025.csv",
+      "attempted_utc": "2026-10-21T03:06:12.769873+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-08-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16082025.csv",
+      "attempted_utc": "2026-10-21T03:06:13.967896+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-08-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10082025.csv",
+      "attempted_utc": "2026-10-21T03:06:15.119637+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-08-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09082025.csv",
+      "attempted_utc": "2026-10-21T03:06:16.292445+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-08-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03082025.csv",
+      "attempted_utc": "2026-10-21T03:06:17.390115+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-08-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02082025.csv",
+      "attempted_utc": "2026-10-21T03:06:18.481756+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-07-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27072025.csv",
+      "attempted_utc": "2026-10-21T03:06:19.602990+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-07-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26072025.csv",
+      "attempted_utc": "2026-10-21T03:06:20.760239+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-07-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20072025.csv",
+      "attempted_utc": "2026-10-21T03:06:21.953675+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-07-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19072025.csv",
+      "attempted_utc": "2026-10-21T03:06:23.154164+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-07-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13072025.csv",
+      "attempted_utc": "2026-10-21T03:06:24.260136+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-07-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12072025.csv",
+      "attempted_utc": "2026-10-21T03:06:25.390294+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-07-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06072025.csv",
+      "attempted_utc": "2026-10-21T03:06:26.654457+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-07-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05072025.csv",
+      "attempted_utc": "2026-10-21T03:06:27.933254+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-06-29": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_29062025.csv",
+      "attempted_utc": "2026-10-21T03:06:29.319638+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-06-28": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_28062025.csv",
+      "attempted_utc": "2026-10-21T03:06:30.585942+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-06-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22062025.csv",
+      "attempted_utc": "2026-10-21T03:06:31.954476+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-06-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21062025.csv",
+      "attempted_utc": "2026-10-21T03:06:33.126949+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-06-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15062025.csv",
+      "attempted_utc": "2026-10-21T03:06:34.455725+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-06-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14062025.csv",
+      "attempted_utc": "2026-10-21T03:06:35.607284+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-06-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08062025.csv",
+      "attempted_utc": "2026-10-21T03:06:36.882666+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-06-07": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_07062025.csv",
+      "attempted_utc": "2026-10-21T03:06:38.286665+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-06-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01062025.csv",
+      "attempted_utc": "2026-10-21T03:06:39.483488+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-05-31": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_31052025.csv",
+      "attempted_utc": "2026-10-21T03:06:40.677752+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-05-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25052025.csv",
+      "attempted_utc": "2026-10-21T03:06:41.849688+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-05-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24052025.csv",
+      "attempted_utc": "2026-10-21T03:06:42.983429+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-05-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18052025.csv",
+      "attempted_utc": "2026-10-21T03:06:44.180392+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-05-17": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_17052025.csv",
+      "attempted_utc": "2026-10-21T03:06:45.451032+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-05-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11052025.csv",
+      "attempted_utc": "2026-10-21T03:06:46.770040+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-05-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10052025.csv",
+      "attempted_utc": "2026-10-21T03:06:48.016809+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-05-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04052025.csv",
+      "attempted_utc": "2026-10-21T03:06:49.333218+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-05-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03052025.csv",
+      "attempted_utc": "2026-10-21T03:06:50.492345+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-04-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27042025.csv",
+      "attempted_utc": "2026-10-21T03:06:51.655243+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-04-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26042025.csv",
+      "attempted_utc": "2026-10-21T03:06:52.822257+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-04-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20042025.csv",
+      "attempted_utc": "2026-10-21T03:06:54.036794+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-04-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19042025.csv",
+      "attempted_utc": "2026-10-21T03:06:55.224403+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-04-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13042025.csv",
+      "attempted_utc": "2026-10-21T03:06:56.337431+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-04-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12042025.csv",
+      "attempted_utc": "2026-10-21T03:06:57.510598+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-04-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06042025.csv",
+      "attempted_utc": "2026-10-21T03:06:58.771839+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-04-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05042025.csv",
+      "attempted_utc": "2026-10-21T03:07:00.083617+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-03-30": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_30032025.csv",
+      "attempted_utc": "2026-10-21T03:07:01.202629+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-03-29": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_29032025.csv",
+      "attempted_utc": "2026-10-21T03:07:02.398503+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-03-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23032025.csv",
+      "attempted_utc": "2026-10-21T03:07:03.522546+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-03-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22032025.csv",
+      "attempted_utc": "2026-10-21T03:07:04.679045+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-03-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16032025.csv",
+      "attempted_utc": "2026-10-21T03:07:05.823298+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-03-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15032025.csv",
+      "attempted_utc": "2026-10-21T03:07:07.008862+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-03-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09032025.csv",
+      "attempted_utc": "2026-10-21T03:07:08.691770+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-03-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08032025.csv",
+      "attempted_utc": "2026-10-21T03:07:09.927562+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-03-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02032025.csv",
+      "attempted_utc": "2026-10-21T03:07:11.052687+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-03-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01032025.csv",
+      "attempted_utc": "2026-10-21T03:07:12.231799+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-02-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23022025.csv",
+      "attempted_utc": "2026-10-21T03:07:13.360623+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-02-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22022025.csv",
+      "attempted_utc": "2026-10-21T03:07:14.509338+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-02-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16022025.csv",
+      "attempted_utc": "2026-10-21T03:07:15.679528+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-02-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15022025.csv",
+      "attempted_utc": "2026-10-21T03:07:16.813188+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-02-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09022025.csv",
+      "attempted_utc": "2026-10-21T03:07:17.966029+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-02-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08022025.csv",
+      "attempted_utc": "2026-10-21T03:07:19.093212+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-02-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02022025.csv",
+      "attempted_utc": "2026-10-21T03:07:20.303751+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-01-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26012025.csv",
+      "attempted_utc": "2026-10-21T03:07:21.588143+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-01-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25012025.csv",
+      "attempted_utc": "2026-10-21T03:07:22.708478+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-01-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19012025.csv",
+      "attempted_utc": "2026-10-21T03:07:23.886291+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-01-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18012025.csv",
+      "attempted_utc": "2026-10-21T03:07:25.036457+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-01-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12012025.csv",
+      "attempted_utc": "2026-10-21T03:07:26.183126+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-01-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11012025.csv",
+      "attempted_utc": "2026-10-21T03:07:27.310866+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-01-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05012025.csv",
+      "attempted_utc": "2026-10-21T03:07:28.411220+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2025-01-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04012025.csv",
+      "attempted_utc": "2026-10-21T03:07:29.494218+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-12-29": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_29122024.csv",
+      "attempted_utc": "2026-10-21T03:07:30.695562+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-12-28": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_28122024.csv",
+      "attempted_utc": "2026-10-21T03:07:31.803883+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-12-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22122024.csv",
+      "attempted_utc": "2026-10-21T03:07:32.902855+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-12-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21122024.csv",
+      "attempted_utc": "2026-10-21T03:07:34.021807+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-12-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15122024.csv",
+      "attempted_utc": "2026-10-21T03:07:35.143526+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-12-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14122024.csv",
+      "attempted_utc": "2026-10-21T03:07:36.609109+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-12-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08122024.csv",
+      "attempted_utc": "2026-10-21T03:07:46.489704+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-12-07": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_07122024.csv",
+      "attempted_utc": "2026-10-21T03:07:47.795086+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-12-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01122024.csv",
+      "attempted_utc": "2026-10-21T03:07:48.926681+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-11-30": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_30112024.csv",
+      "attempted_utc": "2026-10-21T03:07:50.097653+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-11-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24112024.csv",
+      "attempted_utc": "2026-10-21T03:07:51.215753+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-11-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23112024.csv",
+      "attempted_utc": "2026-10-21T03:07:52.507435+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-11-17": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_17112024.csv",
+      "attempted_utc": "2026-10-21T03:07:53.858400+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-11-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16112024.csv",
+      "attempted_utc": "2026-10-21T03:07:55.090957+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-11-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10112024.csv",
+      "attempted_utc": "2026-10-21T03:07:56.316996+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-11-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09112024.csv",
+      "attempted_utc": "2026-10-21T03:07:57.526581+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-11-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03112024.csv",
+      "attempted_utc": "2026-10-21T03:07:58.690621+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-11-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02112024.csv",
+      "attempted_utc": "2026-10-21T03:07:59.812840+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-10-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27102024.csv",
+      "attempted_utc": "2026-10-21T03:08:01.350878+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-10-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26102024.csv",
+      "attempted_utc": "2026-10-21T03:08:02.479961+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-10-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20102024.csv",
+      "attempted_utc": "2026-10-21T03:08:03.613774+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-10-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19102024.csv",
+      "attempted_utc": "2026-10-21T03:08:04.730007+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-10-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13102024.csv",
+      "attempted_utc": "2026-10-21T03:08:05.852050+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-10-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12102024.csv",
+      "attempted_utc": "2026-10-21T03:08:06.980122+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-10-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06102024.csv",
+      "attempted_utc": "2026-10-21T03:08:08.235788+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-10-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05102024.csv",
+      "attempted_utc": "2026-10-21T03:08:09.370281+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-09-29": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_29092024.csv",
+      "attempted_utc": "2026-10-21T03:08:10.558507+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-09-28": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_28092024.csv",
+      "attempted_utc": "2026-10-21T03:08:11.709839+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-09-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22092024.csv",
+      "attempted_utc": "2026-10-21T03:08:13.676161+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-09-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21092024.csv",
+      "attempted_utc": "2026-10-21T03:08:15.671667+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-09-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15092024.csv",
+      "attempted_utc": "2026-10-21T03:08:17.128898+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-09-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14092024.csv",
+      "attempted_utc": "2026-10-21T03:08:18.954882+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-09-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08092024.csv",
+      "attempted_utc": "2026-10-21T03:08:20.219996+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-09-07": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_07092024.csv",
+      "attempted_utc": "2026-10-21T03:08:21.721715+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-09-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01092024.csv",
+      "attempted_utc": "2026-10-21T03:08:23.004141+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-08-31": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_31082024.csv",
+      "attempted_utc": "2026-10-21T03:08:24.124605+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-08-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25082024.csv",
+      "attempted_utc": "2026-10-21T03:08:25.239491+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-08-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24082024.csv",
+      "attempted_utc": "2026-10-21T03:08:26.401276+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-08-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18082024.csv",
+      "attempted_utc": "2026-10-21T03:08:27.533117+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-08-17": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_17082024.csv",
+      "attempted_utc": "2026-10-21T03:08:28.745380+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-08-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11082024.csv",
+      "attempted_utc": "2026-10-21T03:08:29.949292+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-08-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10082024.csv",
+      "attempted_utc": "2026-10-21T03:08:31.158150+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-08-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04082024.csv",
+      "attempted_utc": "2026-10-21T03:08:32.349063+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-08-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03082024.csv",
+      "attempted_utc": "2026-10-21T03:08:33.486914+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-07-28": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_28072024.csv",
+      "attempted_utc": "2026-10-21T03:08:34.751703+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-07-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27072024.csv",
+      "attempted_utc": "2026-10-21T03:08:35.950093+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-07-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21072024.csv",
+      "attempted_utc": "2026-10-21T03:08:37.099235+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-07-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20072024.csv",
+      "attempted_utc": "2026-10-21T03:08:38.295483+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-07-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14072024.csv",
+      "attempted_utc": "2026-10-21T03:08:39.448066+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-07-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13072024.csv",
+      "attempted_utc": "2026-10-21T03:08:40.663940+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-07-07": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_07072024.csv",
+      "attempted_utc": "2026-10-21T03:08:41.816704+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-07-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06072024.csv",
+      "attempted_utc": "2026-10-21T03:08:42.962395+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-06-30": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_30062024.csv",
+      "attempted_utc": "2026-10-21T03:08:44.069870+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-06-29": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_29062024.csv",
+      "attempted_utc": "2026-10-21T03:08:45.223384+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-06-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23062024.csv",
+      "attempted_utc": "2026-10-21T03:08:46.398535+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-06-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22062024.csv",
+      "attempted_utc": "2026-10-21T03:08:47.593943+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-06-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16062024.csv",
+      "attempted_utc": "2026-10-21T03:08:48.727889+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-06-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15062024.csv",
+      "attempted_utc": "2026-10-21T03:08:49.983030+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-06-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09062024.csv",
+      "attempted_utc": "2026-10-21T03:08:51.233236+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-06-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08062024.csv",
+      "attempted_utc": "2026-10-21T03:08:52.422934+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-06-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02062024.csv",
+      "attempted_utc": "2026-10-21T03:08:53.651668+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-06-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01062024.csv",
+      "attempted_utc": "2026-10-21T03:08:54.897994+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-05-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26052024.csv",
+      "attempted_utc": "2026-10-21T03:08:56.268854+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-05-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25052024.csv",
+      "attempted_utc": "2026-10-21T03:08:57.576467+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-05-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19052024.csv",
+      "attempted_utc": "2026-10-21T03:08:58.833822+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-05-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12052024.csv",
+      "attempted_utc": "2026-10-21T03:09:00.106586+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-05-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11052024.csv",
+      "attempted_utc": "2026-10-21T03:09:01.264942+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-05-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05052024.csv",
+      "attempted_utc": "2026-10-21T03:09:02.496383+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-05-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04052024.csv",
+      "attempted_utc": "2026-10-21T03:09:03.624939+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-04-28": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_28042024.csv",
+      "attempted_utc": "2026-10-21T03:09:04.841172+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-04-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27042024.csv",
+      "attempted_utc": "2026-10-21T03:09:05.969870+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-04-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21042024.csv",
+      "attempted_utc": "2026-10-21T03:09:07.231898+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-04-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20042024.csv",
+      "attempted_utc": "2026-10-21T03:09:08.513541+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-04-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14042024.csv",
+      "attempted_utc": "2026-10-21T03:09:09.771418+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-04-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13042024.csv",
+      "attempted_utc": "2026-10-21T03:09:10.902664+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-04-07": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_07042024.csv",
+      "attempted_utc": "2026-10-21T03:09:12.012868+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-04-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06042024.csv",
+      "attempted_utc": "2026-10-21T03:09:13.234449+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-03-31": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_31032024.csv",
+      "attempted_utc": "2026-10-21T03:09:14.388075+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-03-30": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_30032024.csv",
+      "attempted_utc": "2026-10-21T03:09:15.562568+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-03-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24032024.csv",
+      "attempted_utc": "2026-10-21T03:09:16.747597+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-03-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23032024.csv",
+      "attempted_utc": "2026-10-21T03:09:17.908366+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-03-17": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_17032024.csv",
+      "attempted_utc": "2026-10-21T03:09:19.054903+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-03-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16032024.csv",
+      "attempted_utc": "2026-10-21T03:09:20.221203+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-03-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10032024.csv",
+      "attempted_utc": "2026-10-21T03:09:21.477841+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-03-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09032024.csv",
+      "attempted_utc": "2026-10-21T03:09:22.620115+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-03-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03032024.csv",
+      "attempted_utc": "2026-10-21T03:09:23.753876+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-02-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25022024.csv",
+      "attempted_utc": "2026-10-21T03:09:24.897363+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-02-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24022024.csv",
+      "attempted_utc": "2026-10-21T03:09:26.024067+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-02-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18022024.csv",
+      "attempted_utc": "2026-10-21T03:09:27.205119+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-02-17": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_17022024.csv",
+      "attempted_utc": "2026-10-21T03:09:28.331148+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-02-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11022024.csv",
+      "attempted_utc": "2026-10-21T03:09:29.491535+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-02-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10022024.csv",
+      "attempted_utc": "2026-10-21T03:09:30.821040+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-02-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04022024.csv",
+      "attempted_utc": "2026-10-21T03:09:32.026528+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-02-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03022024.csv",
+      "attempted_utc": "2026-10-21T03:09:33.242279+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-01-28": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_28012024.csv",
+      "attempted_utc": "2026-10-21T03:09:34.431563+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-01-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27012024.csv",
+      "attempted_utc": "2026-10-21T03:09:35.604931+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-01-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21012024.csv",
+      "attempted_utc": "2026-10-21T03:09:36.843969+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-01-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14012024.csv",
+      "attempted_utc": "2026-10-21T03:09:38.063122+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-01-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13012024.csv",
+      "attempted_utc": "2026-10-21T03:09:39.191531+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-01-07": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_07012024.csv",
+      "attempted_utc": "2026-10-21T03:09:40.329926+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2024-01-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06012024.csv",
+      "attempted_utc": "2026-10-21T03:09:41.498751+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-12-31": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_31122023.csv",
+      "attempted_utc": "2026-10-21T03:09:42.705207+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-12-30": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_30122023.csv",
+      "attempted_utc": "2026-10-21T03:09:49.525217+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-12-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24122023.csv",
+      "attempted_utc": "2026-10-21T03:09:50.710059+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-12-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23122023.csv",
+      "attempted_utc": "2026-10-21T03:09:51.912896+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-12-17": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_17122023.csv",
+      "attempted_utc": "2026-10-21T03:09:53.045128+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-12-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16122023.csv",
+      "attempted_utc": "2026-10-21T03:09:54.177204+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-12-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10122023.csv",
+      "attempted_utc": "2026-10-21T03:09:55.336397+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-12-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09122023.csv",
+      "attempted_utc": "2026-10-21T03:09:56.474194+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-12-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03122023.csv",
+      "attempted_utc": "2026-10-21T03:09:57.646233+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-12-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02122023.csv",
+      "attempted_utc": "2026-10-21T03:09:58.838308+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-11-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26112023.csv",
+      "attempted_utc": "2026-10-21T03:09:59.985026+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-11-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25112023.csv",
+      "attempted_utc": "2026-10-21T03:10:01.111915+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-11-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19112023.csv",
+      "attempted_utc": "2026-10-21T03:10:02.235558+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-11-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18112023.csv",
+      "attempted_utc": "2026-10-21T03:10:03.356691+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-11-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11112023.csv",
+      "attempted_utc": "2026-10-21T03:10:04.499207+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-11-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05112023.csv",
+      "attempted_utc": "2026-10-21T03:10:05.606680+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-11-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04112023.csv",
+      "attempted_utc": "2026-10-21T03:10:06.709047+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-10-29": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_29102023.csv",
+      "attempted_utc": "2026-10-21T03:10:07.912587+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-10-28": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_28102023.csv",
+      "attempted_utc": "2026-10-21T03:10:09.080241+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-10-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22102023.csv",
+      "attempted_utc": "2026-10-21T03:10:10.211709+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-10-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21102023.csv",
+      "attempted_utc": "2026-10-21T03:10:11.355611+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-10-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15102023.csv",
+      "attempted_utc": "2026-10-21T03:10:12.493173+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-10-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14102023.csv",
+      "attempted_utc": "2026-10-21T03:10:13.605028+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-10-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08102023.csv",
+      "attempted_utc": "2026-10-21T03:10:14.714075+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-10-07": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_07102023.csv",
+      "attempted_utc": "2026-10-21T03:10:15.839769+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-10-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01102023.csv",
+      "attempted_utc": "2026-10-21T03:10:16.968990+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-09-30": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_30092023.csv",
+      "attempted_utc": "2026-10-21T03:10:18.071343+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-09-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24092023.csv",
+      "attempted_utc": "2026-10-21T03:10:19.193392+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-09-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23092023.csv",
+      "attempted_utc": "2026-10-21T03:10:20.426499+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-09-17": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_17092023.csv",
+      "attempted_utc": "2026-10-21T03:10:21.577838+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-09-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16092023.csv",
+      "attempted_utc": "2026-10-21T03:10:22.703545+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-09-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10092023.csv",
+      "attempted_utc": "2026-10-21T03:10:23.805743+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-09-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09092023.csv",
+      "attempted_utc": "2026-10-21T03:10:25.003346+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-09-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03092023.csv",
+      "attempted_utc": "2026-10-21T03:10:26.150398+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-09-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02092023.csv",
+      "attempted_utc": "2026-10-21T03:10:27.266437+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-08-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27082023.csv",
+      "attempted_utc": "2026-10-21T03:10:28.359123+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-08-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26082023.csv",
+      "attempted_utc": "2026-10-21T03:10:29.474746+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-08-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20082023.csv",
+      "attempted_utc": "2026-10-21T03:10:30.683877+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-08-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19082023.csv",
+      "attempted_utc": "2026-10-21T03:10:31.793970+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-08-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13082023.csv",
+      "attempted_utc": "2026-10-21T03:10:32.971961+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-08-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12082023.csv",
+      "attempted_utc": "2026-10-21T03:10:34.067476+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-08-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06082023.csv",
+      "attempted_utc": "2026-10-21T03:10:35.161222+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-08-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05082023.csv",
+      "attempted_utc": "2026-10-21T03:10:36.257385+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-07-30": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_30072023.csv",
+      "attempted_utc": "2026-10-21T03:10:37.366818+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-07-29": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_29072023.csv",
+      "attempted_utc": "2026-10-21T03:10:38.565941+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-07-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23072023.csv",
+      "attempted_utc": "2026-10-21T03:10:39.731778+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-07-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22072023.csv",
+      "attempted_utc": "2026-10-21T03:10:40.951491+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-07-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16072023.csv",
+      "attempted_utc": "2026-10-21T03:10:42.140156+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-07-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15072023.csv",
+      "attempted_utc": "2026-10-21T03:10:43.303101+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-07-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09072023.csv",
+      "attempted_utc": "2026-10-21T03:10:44.800738+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-07-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08072023.csv",
+      "attempted_utc": "2026-10-21T03:10:47.001354+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-07-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02072023.csv",
+      "attempted_utc": "2026-10-21T03:10:48.293462+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-07-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01072023.csv",
+      "attempted_utc": "2026-10-21T03:10:49.582899+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-06-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25062023.csv",
+      "attempted_utc": "2026-10-21T03:10:51.124161+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-06-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24062023.csv",
+      "attempted_utc": "2026-10-21T03:10:52.754558+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-06-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18062023.csv",
+      "attempted_utc": "2026-10-21T03:10:54.569659+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-06-17": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_17062023.csv",
+      "attempted_utc": "2026-10-21T03:10:56.185357+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-06-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11062023.csv",
+      "attempted_utc": "2026-10-21T03:10:57.368852+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-06-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10062023.csv",
+      "attempted_utc": "2026-10-21T03:10:58.543425+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-06-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04062023.csv",
+      "attempted_utc": "2026-10-21T03:11:00.232421+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-06-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03062023.csv",
+      "attempted_utc": "2026-10-21T03:11:01.521952+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-05-28": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_28052023.csv",
+      "attempted_utc": "2026-10-21T03:11:03.076514+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-05-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27052023.csv",
+      "attempted_utc": "2026-10-21T03:11:04.335835+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-05-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21052023.csv",
+      "attempted_utc": "2026-10-21T03:11:05.545252+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-05-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20052023.csv",
+      "attempted_utc": "2026-10-21T03:11:06.765103+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-05-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14052023.csv",
+      "attempted_utc": "2026-10-21T03:11:07.912666+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-05-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13052023.csv",
+      "attempted_utc": "2026-10-21T03:11:09.072274+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-05-07": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_07052023.csv",
+      "attempted_utc": "2026-10-21T03:11:10.187736+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-05-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06052023.csv",
+      "attempted_utc": "2026-10-21T03:11:11.374924+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-04-30": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_30042023.csv",
+      "attempted_utc": "2026-10-21T03:11:12.521226+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-04-29": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_29042023.csv",
+      "attempted_utc": "2026-10-21T03:11:13.661486+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-04-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23042023.csv",
+      "attempted_utc": "2026-10-21T03:11:14.801022+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-04-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22042023.csv",
+      "attempted_utc": "2026-10-21T03:11:15.944043+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-04-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16042023.csv",
+      "attempted_utc": "2026-10-21T03:11:17.084334+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-04-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15042023.csv",
+      "attempted_utc": "2026-10-21T03:11:18.233228+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-04-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09042023.csv",
+      "attempted_utc": "2026-10-21T03:11:19.382444+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-04-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08042023.csv",
+      "attempted_utc": "2026-10-21T03:11:20.555267+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-04-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02042023.csv",
+      "attempted_utc": "2026-10-21T03:11:21.656771+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-04-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01042023.csv",
+      "attempted_utc": "2026-10-21T03:11:22.747709+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-03-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26032023.csv",
+      "attempted_utc": "2026-10-21T03:11:24.005798+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-03-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25032023.csv",
+      "attempted_utc": "2026-10-21T03:11:25.143741+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-03-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19032023.csv",
+      "attempted_utc": "2026-10-21T03:11:26.659738+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-03-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18032023.csv",
+      "attempted_utc": "2026-10-21T03:11:27.837770+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-03-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12032023.csv",
+      "attempted_utc": "2026-10-21T03:11:28.994204+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-03-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11032023.csv",
+      "attempted_utc": "2026-10-21T03:11:30.214148+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-03-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05032023.csv",
+      "attempted_utc": "2026-10-21T03:11:31.381430+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-03-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04032023.csv",
+      "attempted_utc": "2026-10-21T03:11:32.568426+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-02-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26022023.csv",
+      "attempted_utc": "2026-10-21T03:11:33.715589+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-02-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25022023.csv",
+      "attempted_utc": "2026-10-21T03:11:34.863939+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-02-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19022023.csv",
+      "attempted_utc": "2026-10-21T03:11:36.022440+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-02-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18022023.csv",
+      "attempted_utc": "2026-10-21T03:11:37.260886+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-02-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12022023.csv",
+      "attempted_utc": "2026-10-21T03:11:38.494742+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-02-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11022023.csv",
+      "attempted_utc": "2026-10-21T03:11:39.690083+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-02-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05022023.csv",
+      "attempted_utc": "2026-10-21T03:11:40.901755+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-02-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04022023.csv",
+      "attempted_utc": "2026-10-21T03:11:42.096554+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-01-29": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_29012023.csv",
+      "attempted_utc": "2026-10-21T03:11:43.294141+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-01-28": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_28012023.csv",
+      "attempted_utc": "2026-10-21T03:11:44.524934+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-01-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22012023.csv",
+      "attempted_utc": "2026-10-21T03:11:46.535631+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-01-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21012023.csv",
+      "attempted_utc": "2026-10-21T03:11:47.711377+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-01-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15012023.csv",
+      "attempted_utc": "2026-10-21T03:11:48.934114+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-01-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14012023.csv",
+      "attempted_utc": "2026-10-21T03:11:50.193923+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-01-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08012023.csv",
+      "attempted_utc": "2026-10-21T03:11:51.362645+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-01-07": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_07012023.csv",
+      "attempted_utc": "2026-10-21T03:11:52.557563+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2023-01-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01012023.csv",
+      "attempted_utc": "2026-10-21T03:11:53.747272+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-12-31": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_31122022.csv",
+      "attempted_utc": "2026-10-21T03:11:54.888961+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-12-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25122022.csv",
+      "attempted_utc": "2026-10-21T03:11:56.159853+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-12-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24122022.csv",
+      "attempted_utc": "2026-10-21T03:12:19.591172+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-12-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18122022.csv",
+      "attempted_utc": "2026-10-21T03:12:20.724955+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-12-17": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_17122022.csv",
+      "attempted_utc": "2026-10-21T03:12:21.988462+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-12-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11122022.csv",
+      "attempted_utc": "2026-10-21T03:12:23.120518+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-12-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10122022.csv",
+      "attempted_utc": "2026-10-21T03:12:24.420274+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-12-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04122022.csv",
+      "attempted_utc": "2026-10-21T03:12:25.707984+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-12-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03122022.csv",
+      "attempted_utc": "2026-10-21T03:12:26.864993+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-11-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27112022.csv",
+      "attempted_utc": "2026-10-21T03:12:28.002375+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-11-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26112022.csv",
+      "attempted_utc": "2026-10-21T03:12:29.162650+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-11-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20112022.csv",
+      "attempted_utc": "2026-10-21T03:12:30.331692+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-11-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19112022.csv",
+      "attempted_utc": "2026-10-21T03:12:31.484334+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-11-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13112022.csv",
+      "attempted_utc": "2026-10-21T03:12:32.617547+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-11-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12112022.csv",
+      "attempted_utc": "2026-10-21T03:12:33.750608+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-11-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06112022.csv",
+      "attempted_utc": "2026-10-21T03:12:34.877375+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-11-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05112022.csv",
+      "attempted_utc": "2026-10-21T03:12:36.080087+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-10-30": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_30102022.csv",
+      "attempted_utc": "2026-10-21T03:12:37.285520+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-10-29": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_29102022.csv",
+      "attempted_utc": "2026-10-21T03:12:38.408501+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-10-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23102022.csv",
+      "attempted_utc": "2026-10-21T03:12:39.553432+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-10-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22102022.csv",
+      "attempted_utc": "2026-10-21T03:12:40.814163+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-10-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16102022.csv",
+      "attempted_utc": "2026-10-21T03:12:42.025314+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-10-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15102022.csv",
+      "attempted_utc": "2026-10-21T03:12:43.182235+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-10-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09102022.csv",
+      "attempted_utc": "2026-10-21T03:12:44.377063+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-10-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08102022.csv",
+      "attempted_utc": "2026-10-21T03:12:45.529490+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-10-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02102022.csv",
+      "attempted_utc": "2026-10-21T03:12:46.696492+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-10-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01102022.csv",
+      "attempted_utc": "2026-10-21T03:12:47.861355+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-09-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25092022.csv",
+      "attempted_utc": "2026-10-21T03:12:49.005943+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-09-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24092022.csv",
+      "attempted_utc": "2026-10-21T03:12:50.220015+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-09-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18092022.csv",
+      "attempted_utc": "2026-10-21T03:12:51.442837+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-09-17": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_17092022.csv",
+      "attempted_utc": "2026-10-21T03:12:52.595923+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-09-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11092022.csv",
+      "attempted_utc": "2026-10-21T03:12:53.768110+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-09-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10092022.csv",
+      "attempted_utc": "2026-10-21T03:12:54.961471+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-09-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04092022.csv",
+      "attempted_utc": "2026-10-21T03:12:56.111710+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-09-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03092022.csv",
+      "attempted_utc": "2026-10-21T03:12:57.314773+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-08-28": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_28082022.csv",
+      "attempted_utc": "2026-10-21T03:12:58.545757+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-08-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27082022.csv",
+      "attempted_utc": "2026-10-21T03:12:59.770412+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-08-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21082022.csv",
+      "attempted_utc": "2026-10-21T03:13:00.945093+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-08-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20082022.csv",
+      "attempted_utc": "2026-10-21T03:13:02.134212+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-08-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14082022.csv",
+      "attempted_utc": "2026-10-21T03:13:03.252040+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-08-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13082022.csv",
+      "attempted_utc": "2026-10-21T03:13:04.391146+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-08-07": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_07082022.csv",
+      "attempted_utc": "2026-10-21T03:13:05.553629+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-08-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06082022.csv",
+      "attempted_utc": "2026-10-21T03:13:06.688624+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-07-31": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_31072022.csv",
+      "attempted_utc": "2026-10-21T03:13:07.862073+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-07-30": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_30072022.csv",
+      "attempted_utc": "2026-10-21T03:13:09.222946+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-07-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24072022.csv",
+      "attempted_utc": "2026-10-21T03:13:10.397843+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-07-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23072022.csv",
+      "attempted_utc": "2026-10-21T03:13:11.528490+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-07-17": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_17072022.csv",
+      "attempted_utc": "2026-10-21T03:13:13.023919+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-07-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16072022.csv",
+      "attempted_utc": "2026-10-21T03:13:14.171646+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-07-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10072022.csv",
+      "attempted_utc": "2026-10-21T03:13:15.309265+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-07-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09072022.csv",
+      "attempted_utc": "2026-10-21T03:13:16.441706+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-07-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03072022.csv",
+      "attempted_utc": "2026-10-21T03:13:17.695121+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-07-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02072022.csv",
+      "attempted_utc": "2026-10-21T03:13:18.817500+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-06-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26062022.csv",
+      "attempted_utc": "2026-10-21T03:13:19.964053+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-06-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25062022.csv",
+      "attempted_utc": "2026-10-21T03:13:21.057506+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-06-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19062022.csv",
+      "attempted_utc": "2026-10-21T03:13:22.238983+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-06-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18062022.csv",
+      "attempted_utc": "2026-10-21T03:13:23.549403+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-06-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12062022.csv",
+      "attempted_utc": "2026-10-21T03:13:24.689553+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-06-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11062022.csv",
+      "attempted_utc": "2026-10-21T03:13:26.032175+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-06-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05062022.csv",
+      "attempted_utc": "2026-10-21T03:13:27.528849+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-06-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04062022.csv",
+      "attempted_utc": "2026-10-21T03:13:28.836239+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-05-29": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_29052022.csv",
+      "attempted_utc": "2026-10-21T03:13:30.067226+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-05-28": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_28052022.csv",
+      "attempted_utc": "2026-10-21T03:13:31.321935+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-05-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22052022.csv",
+      "attempted_utc": "2026-10-21T03:13:32.549052+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-05-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21052022.csv",
+      "attempted_utc": "2026-10-21T03:13:33.666870+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-05-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15052022.csv",
+      "attempted_utc": "2026-10-21T03:13:34.823776+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-05-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14052022.csv",
+      "attempted_utc": "2026-10-21T03:13:36.060492+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-05-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08052022.csv",
+      "attempted_utc": "2026-10-21T03:13:37.174354+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-05-07": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_07052022.csv",
+      "attempted_utc": "2026-10-21T03:13:38.362089+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-05-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01052022.csv",
+      "attempted_utc": "2026-10-21T03:13:39.582899+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-04-30": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_30042022.csv",
+      "attempted_utc": "2026-10-21T03:13:40.779399+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-04-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24042022.csv",
+      "attempted_utc": "2026-10-21T03:13:41.993985+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-04-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23042022.csv",
+      "attempted_utc": "2026-10-21T03:13:43.132399+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-04-17": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_17042022.csv",
+      "attempted_utc": "2026-10-21T03:13:44.403268+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-04-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16042022.csv",
+      "attempted_utc": "2026-10-21T03:13:46.050151+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-04-10": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_10042022.csv",
+      "attempted_utc": "2026-10-21T03:13:47.207546+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-04-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09042022.csv",
+      "attempted_utc": "2026-10-21T03:13:48.384467+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-04-03": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_03042022.csv",
+      "attempted_utc": "2026-10-21T03:13:49.621654+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-04-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02042022.csv",
+      "attempted_utc": "2026-10-21T03:13:50.754500+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-03-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27032022.csv",
+      "attempted_utc": "2026-10-21T03:13:51.895770+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-03-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26032022.csv",
+      "attempted_utc": "2026-10-21T03:13:53.095415+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-03-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20032022.csv",
+      "attempted_utc": "2026-10-21T03:13:54.210386+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-03-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19032022.csv",
+      "attempted_utc": "2026-10-21T03:13:55.368610+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-03-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13032022.csv",
+      "attempted_utc": "2026-10-21T03:13:56.555904+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-03-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12032022.csv",
+      "attempted_utc": "2026-10-21T03:13:57.752706+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-03-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06032022.csv",
+      "attempted_utc": "2026-10-21T03:13:58.932214+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-03-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05032022.csv",
+      "attempted_utc": "2026-10-21T03:14:00.135797+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-02-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27022022.csv",
+      "attempted_utc": "2026-10-21T03:14:01.429012+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-02-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26022022.csv",
+      "attempted_utc": "2026-10-21T03:14:02.580365+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-02-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20022022.csv",
+      "attempted_utc": "2026-10-21T03:14:04.467991+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-02-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19022022.csv",
+      "attempted_utc": "2026-10-21T03:14:05.733462+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-02-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13022022.csv",
+      "attempted_utc": "2026-10-21T03:14:06.856072+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-02-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12022022.csv",
+      "attempted_utc": "2026-10-21T03:14:08.067119+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-02-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06022022.csv",
+      "attempted_utc": "2026-10-21T03:14:09.180807+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-02-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05022022.csv",
+      "attempted_utc": "2026-10-21T03:14:10.320082+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-01-30": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_30012022.csv",
+      "attempted_utc": "2026-10-21T03:14:11.429268+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-01-29": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_29012022.csv",
+      "attempted_utc": "2026-10-21T03:14:12.564950+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-01-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23012022.csv",
+      "attempted_utc": "2026-10-21T03:14:13.720797+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-01-22": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_22012022.csv",
+      "attempted_utc": "2026-10-21T03:14:14.846436+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-01-16": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_16012022.csv",
+      "attempted_utc": "2026-10-21T03:14:15.975451+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-01-15": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_15012022.csv",
+      "attempted_utc": "2026-10-21T03:14:17.128044+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-01-09": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_09012022.csv",
+      "attempted_utc": "2026-10-21T03:14:18.263041+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-01-08": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_08012022.csv",
+      "attempted_utc": "2026-10-21T03:14:19.367305+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-01-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02012022.csv",
+      "attempted_utc": "2026-10-21T03:14:20.497738+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2022-01-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01012022.csv",
+      "attempted_utc": "2026-10-21T03:14:21.681002+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-12-26": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_26122021.csv",
+      "attempted_utc": "2026-10-21T03:14:22.825874+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-12-25": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_25122021.csv",
+      "attempted_utc": "2026-10-21T03:14:23.944565+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-12-19": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_19122021.csv",
+      "attempted_utc": "2026-10-21T03:14:25.141133+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-12-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18122021.csv",
+      "attempted_utc": "2026-10-21T03:14:26.275132+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-12-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12122021.csv",
+      "attempted_utc": "2026-10-21T03:14:27.477628+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-12-11": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_11122021.csv",
+      "attempted_utc": "2026-10-21T03:14:28.626320+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-12-05": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_05122021.csv",
+      "attempted_utc": "2026-10-21T03:14:29.785931+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-12-04": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_04122021.csv",
+      "attempted_utc": "2026-10-21T03:14:30.973280+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-11-28": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_28112021.csv",
+      "attempted_utc": "2026-10-21T03:14:32.146806+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-11-27": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_27112021.csv",
+      "attempted_utc": "2026-10-21T03:14:33.292148+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-11-21": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_21112021.csv",
+      "attempted_utc": "2026-10-21T03:14:34.419837+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-11-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20112021.csv",
+      "attempted_utc": "2026-10-21T03:14:35.561164+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-11-14": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_14112021.csv",
+      "attempted_utc": "2026-10-21T03:14:36.679339+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-11-13": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_13112021.csv",
+      "attempted_utc": "2026-10-21T03:14:37.861265+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-11-07": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_07112021.csv",
+      "attempted_utc": "2026-10-21T03:14:39.002306+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-11-06": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_06112021.csv",
+      "attempted_utc": "2026-10-21T03:14:40.187799+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-10-31": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_31102021.csv",
+      "attempted_utc": "2026-10-21T03:14:41.305766+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-10-30": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_30102021.csv",
+      "attempted_utc": "2026-10-21T03:14:42.564628+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-10-24": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_24102021.csv",
+      "attempted_utc": "2026-10-21T03:14:43.729339+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
+    },
+    "2021-10-23": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_23102021.csv",
+      "attempted_utc": "2026-10-21T03:14:44.854539+00:00",
+      "attempts": 1,
+      "sha256": "70e544dce285d9732086f2e2bb2d05f5d1c52570181d4356750862726911dc51",
+      "status": "non_csv_response",
+      "error": "Unexpected CSV format; required index name, date and close missing"
     }
   },
   "range": {
@@ -822,14 +4182,14 @@
     "to": "2026-10-19"
   },
   "summary": {
-    "attempted_this_run": 96,
+    "attempted_this_run": 36,
     "loaded_this_run": 0,
     "session_candidates": 522,
     "accepted_dates_in_range": 6,
-    "remaining_unchecked_or_retryable": 420,
+    "remaining_unchecked_or_retryable": 0,
     "stop_reason": null,
     "weekend_sessions_audited": false,
     "note": "Weekday file discovery is not an exchange-calendar audit; absent files do not prove holidays."
   },
-  "updated_utc": "2026-10-21T02:37:59.686936+00:00"
+  "updated_utc": "2026-10-21T03:14:46.108981+00:00"
 }
