@@ -18,14 +18,14 @@ def candidates(start, end):
             yield day
         day -= timedelta(days=1)
 
-def run(root, start, end, max_requests=48, retry_unavailable=False, fetcher=None, delay=.5):
+def run(root, start, end, max_requests=48, retry_unavailable=False, fetcher=None, delay=.5, session_dates=None):
     if not 1 <= max_requests <= 100:
         raise ValueError('Request budget must be 1–100')
     fetcher = fetcher or p.fetch
     root.mkdir(parents=True, exist_ok=True)
-    ledger = root/'daily-backfill.json'
+    ledger = root/('special-backfill.json' if session_dates is not None else 'daily-backfill.json')
     state = json.loads(ledger.read_text(encoding='utf-8')) if ledger.exists() else {'files': {}}
-    dates = list(candidates(start,end))
+    dates = sorted({d for d in session_dates if start <= d <= end}, reverse=True) if session_dates is not None else list(candidates(start,end))
     db = p.connect(root)
     known = {r[0] for r in db.execute('SELECT DISTINCT date FROM observations')}
     attempted = loaded = 0
@@ -33,7 +33,7 @@ def run(root, start, end, max_requests=48, retry_unavailable=False, fetcher=None
     def save():
         state['range'] = {'from':start.isoformat(),'to':end.isoformat()}
         state['summary'] = {'attempted_this_run':attempted,'loaded_this_run':loaded,
-            'weekday_candidates':len(dates),'accepted_dates_in_range':sum(d.isoformat() in known for d in dates),
+            ('session_candidates' if session_dates is not None else 'weekday_candidates'):len(dates),'accepted_dates_in_range':sum(d.isoformat() in known for d in dates),
             'remaining_unchecked_or_retryable':sum(d.isoformat() not in known and state['files'].get(d.isoformat(),{}).get('status') not in ('source_unavailable','non_csv_response','rejected') for d in dates),
             'stop_reason':stop_reason,'weekend_sessions_audited':False,
             'note':'Weekday file discovery is not an exchange-calendar audit; absent files do not prove holidays.'}
@@ -88,6 +88,7 @@ def main():
     parser.add_argument('--to-date',type=date.fromisoformat)
     parser.add_argument('--max-requests',type=int,default=48)
     parser.add_argument('--retry-unavailable',action='store_true')
+    parser.add_argument('--sessions',type=Path,help='JSON manifest with explicit session dates; separate ledger')
     args=parser.parse_args()
     args.root.mkdir(parents=True,exist_ok=True)
     with p.connect(args.root) as db:
@@ -96,7 +97,8 @@ def main():
         raise SystemExit('First load a current snapshot with pipeline.py')
     end=args.to_date or date.fromisoformat(latest)
     start=args.from_date or shift(end,-60)
-    print(json.dumps(run(args.root,start,end,args.max_requests,args.retry_unavailable),indent=2))
+    sessions = [date.fromisoformat(s['date']) for s in json.loads(args.sessions.read_text(encoding='utf-8'))['sessions']] if args.sessions else None
+    print(json.dumps(run(args.root,start,end,args.max_requests,args.retry_unavailable,session_dates=sessions),indent=2))
 
 if __name__=='__main__':
     main()

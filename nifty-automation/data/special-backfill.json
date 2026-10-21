@@ -1,0 +1,67 @@
+{
+  "files": {
+    "2026-02-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01022026.csv",
+      "attempted_utc": "2026-10-21T01:37:37.980897+00:00",
+      "attempts": 1,
+      "sha256": "c0513659ebe392cb611175d899910d3143b3f8a9b0a21262544b9b6eb54e1520",
+      "status": "accepted",
+      "rows": 144
+    },
+    "2025-02-01": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_01022025.csv",
+      "attempted_utc": "2026-10-21T01:37:38.982848+00:00",
+      "attempts": 1,
+      "sha256": "51e6a81bcf7fe4813c2903058dce9d1c5bedaaf6adb1abbc2c7e3174d0ca0aec",
+      "status": "accepted",
+      "rows": 134
+    },
+    "2024-05-18": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_18052024.csv",
+      "attempted_utc": "2026-10-21T01:37:40.173243+00:00",
+      "attempts": 1,
+      "sha256": "45c6de1b22e632e321657bb148a3055602a7698572d474e6089de0a75173b110",
+      "status": "accepted",
+      "rows": 111
+    },
+    "2024-03-02": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_02032024.csv",
+      "attempted_utc": "2026-10-21T01:37:41.065108+00:00",
+      "attempts": 1,
+      "sha256": "cb531ae0469795c8c3979d400512c5baf0906bbc8b1961c0fb128d6bf85cd293",
+      "status": "accepted",
+      "rows": 105
+    },
+    "2024-01-20": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_20012024.csv",
+      "attempted_utc": "2026-10-21T01:37:42.017239+00:00",
+      "attempts": 1,
+      "sha256": "c773dade60cb970a004541f2efd300dffbbde50b4eec4f994d9b3a687d905697",
+      "status": "accepted",
+      "rows": 108
+    },
+    "2023-11-12": {
+      "url": "https://niftyindices.com/Daily_Snapshot/ind_close_all_12112023.csv",
+      "attempted_utc": "2026-10-21T01:37:42.901183+00:00",
+      "attempts": 1,
+      "sha256": "5e4f44164f34fb00e604116ffe22558fbcd76cf27d70af73772ecd791a2a10f6",
+      "status": "accepted",
+      "rows": 104
+    }
+  },
+  "range": {
+    "from": "2021-10-19",
+    "to": "2026-10-19"
+  },
+  "summary": {
+    "attempted_this_run": 6,
+    "loaded_this_run": 6,
+    "session_candidates": 6,
+    "accepted_dates_in_range": 6,
+    "remaining_unchecked_or_retryable": 0,
+    "stop_reason": null,
+    "weekend_sessions_audited": false,
+    "note": "Weekday file discovery is not an exchange-calendar audit; absent files do not prove holidays."
+  },
+  "updated_utc": "2026-10-21T01:37:43.802954+00:00"
+}

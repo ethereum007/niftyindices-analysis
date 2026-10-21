@@ -1,0 +1,35 @@
+{
+  "coverage": "partial verified list; additional sessions and weekday gaps still under audit",
+  "sessions": [
+    {
+      "date": "2023-11-12",
+      "reason": "Muhurat",
+      "official_notice": "https://archives.nseindia.com/content/circulars/FAOP54759.pdf"
+    },
+    {
+      "date": "2024-01-20",
+      "reason": "Special live session",
+      "official_notice": "https://nsearchives.nseindia.com/content/circulars/MSD60300.pdf"
+    },
+    {
+      "date": "2024-03-02",
+      "reason": "Disaster recovery live session",
+      "official_notice": "https://nsearchives.nseindia.com/content/circulars/MSD60677.pdf"
+    },
+    {
+      "date": "2024-05-18",
+      "reason": "Disaster recovery live session",
+      "official_notice": "https://nsearchives.nseindia.com/content/circulars/MSD61893.pdf"
+    },
+    {
+      "date": "2025-02-01",
+      "reason": "Union Budget",
+      "official_notice": "https://nsearchives.nseindia.com/content/circulars/CMTR65729.pdf"
+    },
+    {
+      "date": "2026-02-01",
+      "reason": "Union Budget",
+      "official_notice": "https://nsearchives.nseindia.com/content/circulars/CMTR72349.pdf"
+    }
+  ]
+}
