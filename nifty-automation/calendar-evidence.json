@@ -4,7 +4,8 @@
   "notes": [
     "Muhurat dates with accepted snapshots are excluded from closure evidence.",
     "2023-06-28 remains an accepted trading date after holiday amendment.",
-    "Direct local PDF downloads timed out; cited sources were inspected via web tools. No local PDF bytes were obtained."
+    "Direct local PDF downloads timed out; cited sources were inspected via web tools. No local PDF bytes were obtained.",
+    "Jan22 uses distinct corroborated classification: direct closure circular and issuer passage were not recovered, so it is not counted among directly verified trading-closure notices."
   ],
   "dates": [
     {
@@ -183,10 +184,11 @@
     },
     {
       "date": "2024-01-22",
-      "classification": "pending_direct_notice",
-      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR60338.pdf",
-      "evidence_type": "Direct circular unavailable through web tool; official NSE-hosted issuer filing corroborates closure",
-      "corroborating_url": "https://nsearchives.nseindia.com/corporate/SUPREMEINF_22012024133206_UFR_J23_Supreme.pdf"
+      "classification": "corroborated_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMPT60343.pdf",
+      "evidence_type": "NSE Clearing capital-market notice references CMTR60338 and public holiday; direct trading-closure circular unavailable. Issuer filing search result corroborates closure but extracted text did not reproduce that passage.",
+      "corroborating_url": "https://nsearchives.nseindia.com/corporate/SUPREMEINF_22012024133206_UFR_J23_Supreme.pdf",
+      "direct_notice_url": "https://nsearchives.nseindia.com/content/circulars/CMTR60338.pdf"
     },
     {
       "date": "2024-01-26",

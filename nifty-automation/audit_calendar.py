@@ -15,7 +15,8 @@ def reconcile(files, evidence, accepted):
         gaps.append({'date':day,'download_status':entry['status'],**(item or {'classification':'unexplained'})})
     return {'scope':'Unavailable weekday-file reconciliation; not a complete exchange session calendar',
             'recorded_gaps':len(gaps),'verified_closures':sum(x['classification']=='verified_exchange_closure' for x in gaps),
-            'pending':sum(x['classification']!='verified_exchange_closure' for x in gaps), 'dates':gaps}
+            'corroborated_closures':sum(x['classification']=='corroborated_exchange_closure' for x in gaps),
+            'pending':sum(x['classification'] not in ('verified_exchange_closure','corroborated_exchange_closure') for x in gaps), 'dates':gaps}
 
 def main():
     root=Path(__file__).parent

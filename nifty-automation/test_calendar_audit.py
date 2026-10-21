@@ -12,6 +12,9 @@ class CalendarAuditTests(unittest.TestCase):
         self.assertEqual((result['recorded_gaps'],result['verified_closures'],result['pending']),(2,1,1))
     def test_accepted_muhurat_or_amended_date_cannot_be_called_closed(self):
         with self.assertRaises(ValueError):reconcile({},[{'date':'2023-06-28','classification':'verified_exchange_closure'}],{'2023-06-28'})
+    def test_corroborated_closure_is_not_counted_as_directly_verified(self):
+        result=reconcile({'2024-01-22':{'status':'non_csv_response'}},[{'date':'2024-01-22','classification':'corroborated_exchange_closure'}],set())
+        self.assertEqual((result['verified_closures'],result['corroborated_closures'],result['pending']),(0,1,0))
     def test_duplicate_evidence_is_rejected(self):
         with self.assertRaises(ValueError):reconcile({},[{'date':'2023-06-29'},{'date':'2023-06-29'}],set())
 if __name__=='__main__':unittest.main()

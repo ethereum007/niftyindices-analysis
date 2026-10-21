@@ -2,7 +2,8 @@
   "scope": "Unavailable weekday-file reconciliation; not a complete exchange session calendar",
   "recorded_gaps": 70,
   "verified_closures": 69,
-  "pending": 1,
+  "corroborated_closures": 1,
+  "pending": 0,
   "dates": [
     {
       "date": "2021-11-05",
@@ -210,10 +211,11 @@
     {
       "date": "2024-01-22",
       "download_status": "non_csv_response",
-      "classification": "pending_direct_notice",
-      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR60338.pdf",
-      "evidence_type": "Direct circular unavailable through web tool; official NSE-hosted issuer filing corroborates closure",
-      "corroborating_url": "https://nsearchives.nseindia.com/corporate/SUPREMEINF_22012024133206_UFR_J23_Supreme.pdf"
+      "classification": "corroborated_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMPT60343.pdf",
+      "evidence_type": "NSE Clearing capital-market notice references CMTR60338 and public holiday; direct trading-closure circular unavailable. Issuer filing search result corroborates closure but extracted text did not reproduce that passage.",
+      "corroborating_url": "https://nsearchives.nseindia.com/corporate/SUPREMEINF_22012024133206_UFR_J23_Supreme.pdf",
+      "direct_notice_url": "https://nsearchives.nseindia.com/content/circulars/CMTR60338.pdf"
     },
     {
       "date": "2024-01-26",
