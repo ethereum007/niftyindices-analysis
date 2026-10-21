@@ -1,0 +1,432 @@
+{
+  "reviewed_utc": "2026-10-21",
+  "scope": "Reconciliation of 70 unavailable weekday files only; not an exhaustive session calendar. Dates manually checked against cited official sources; missing files alone never imply closure.",
+  "notes": [
+    "Muhurat dates with accepted snapshots are excluded from closure evidence.",
+    "2023-06-28 remains an accepted trading date after holiday amendment.",
+    "Direct local PDF downloads timed out; cited sources were inspected via web tools. No local PDF bytes were obtained."
+  ],
+  "dates": [
+    {
+      "date": "2021-11-05",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR46623.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2021-11-19",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR46623.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2022-01-26",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR50560.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2022-03-01",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR50560.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2022-03-18",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR50560.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2022-04-14",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR50560.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2022-04-15",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR50560.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2022-05-03",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR50560.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2022-08-09",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR50560.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2022-08-15",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR50560.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2022-08-31",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR50560.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2022-10-05",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR50560.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2022-10-26",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR50560.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2022-11-08",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR50560.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2023-01-26",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2023-03-07",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2023-03-30",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2023-04-04",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2023-04-07",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2023-04-14",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2023-05-01",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2023-06-29",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://niftyindices.com/Press_Release/ind_prs27062023.pdf",
+      "evidence_type": "NSE Indices notice confirming holiday moved from June 28 to June 29; CMTR57285"
+    },
+    {
+      "date": "2023-08-15",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2023-09-19",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2023-10-02",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2023-10-24",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2023-11-14",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2023-11-27",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2023-12-25",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2024-01-22",
+      "classification": "pending_direct_notice",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR60338.pdf",
+      "evidence_type": "Direct circular unavailable through web tool; official NSE-hosted issuer filing corroborates closure",
+      "corroborating_url": "https://nsearchives.nseindia.com/corporate/SUPREMEINF_22012024133206_UFR_J23_Supreme.pdf"
+    },
+    {
+      "date": "2024-01-26",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR59722.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2024-03-08",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR59722.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2024-03-25",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR59722.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2024-03-29",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR59722.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2024-04-11",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR59722.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2024-04-17",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR59722.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2024-05-01",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR59722.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2024-05-20",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMPT61543.pdf",
+      "evidence_type": "NSE Clearing notice explicitly referencing trading holiday CMTR61518"
+    },
+    {
+      "date": "2024-06-17",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR59722.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2024-07-17",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR59722.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2024-08-15",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR59722.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2024-10-02",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR59722.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2024-11-15",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR59722.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2024-11-20",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR64960.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2024-12-25",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR59722.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2025-02-26",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR65587.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2025-03-14",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR65587.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2025-03-31",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR65587.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2025-04-10",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR65587.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2025-04-14",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR65587.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2025-04-18",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR65587.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2025-05-01",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR65587.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2025-08-15",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR65587.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2025-08-27",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR65587.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2025-10-02",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR65587.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2025-10-22",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR65587.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2025-11-05",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR65587.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2025-12-25",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR65587.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2026-01-15",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR72260.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2026-01-26",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR71775.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2026-03-03",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR71775.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2026-03-26",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR71775.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2026-03-31",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR71775.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2026-04-03",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR71775.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2026-04-14",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR71775.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2026-05-01",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR71775.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2026-05-28",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR71775.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2026-06-26",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR71775.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2026-09-14",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR71775.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    },
+    {
+      "date": "2026-10-02",
+      "classification": "verified_exchange_closure",
+      "evidence_url": "https://nsearchives.nseindia.com/content/circulars/CMTR71775.pdf",
+      "evidence_type": "NSE capital-market holiday notice"
+    }
+  ]
+}

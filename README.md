@@ -38,10 +38,12 @@ Source attribution does not grant ownership of third-party data or establish a r
 
 Current archive: 1,241 accepted snapshot dates and 149,620 observations, from 19 October 2021 through 19 October 2026. This is sampled monthly history plus exact latest-period anchors and recent daily snapshots, not a complete daily series. There are 1,249 raw responses, including eight rejected responses. The extended matrix is `nifty-automation/data/reports/performance-latest.csv`.
 
-Validation: 21 Python tests plus browser checks for periods, complete sector list, all-index default, comparison, CAGR and mobile. Automated browser download saving was canceled by the browser environment; generated CSV content is independently validated.
+Validation: 25 Python tests plus browser checks for periods, complete sector list, all-index default, comparison, CAGR and mobile. Automated browser download saving was canceled by the browser environment; generated CSV content is independently validated.
 
 Daily history can be expanded with `python nifty-automation/backfill_daily.py --max-requests 96`. It resumes without redownloading accepted files, records non-CSV/HTTP/error results and stops on access denial or rate limits. Browser/Python return parity passed for 14,252 values over four dates. The compact publication is approximately 10.3 MB; original observations remain in the source archive and database.
 
 Weekday discovery pass finished: all 1,305 weekday candidates in the five-year window checked; 1,235 accepted dates and 70 recorded gaps. Weekend/special-session coverage is not yet audited, so this is not verified complete daily history.
 
 Six verified weekend sessions are included. Run `python nifty-automation/backfill_daily.py --sessions nifty-automation/special-sessions.json --max-requests 96` to resume the explicit manifest using its separate ledger. Official notice links and partial-audit scope are saved in that manifest.
+
+Weekday gaps are reconciled in `nifty-automation/data/calendar-audit.json`: 69 verified exchange closures and one pending direct-notice check. Evidence URLs are saved in `calendar-evidence.json`; `python nifty-automation/audit_calendar.py` regenerates the audit and fails if closure evidence conflicts with an accepted date. This does not yet establish an exhaustive session calendar.
