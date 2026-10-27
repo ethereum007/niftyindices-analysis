@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-10-27",
+  "status": "initial_research_coverage",
+  "themes": [
+    {
+      "id": "compute",
+      "name": "AI Compute Hardware",
+      "rule": "Servers and AI computing systems.",
+      "members": [
+        {
+          "symbol": "NETWEB",
+          "company": "Netweb Technologies",
+          "rationale": "AI systems and server products; theme revenue share not quantified.",
+          "source_url": "https://www.netwebindia.com/investors/press-release/Intimation_of_Press_release_AMD_Make-in-India_Servers.pdf",
+          "exposure": "Documented business exposure; revenue materiality unverified",
+          "isin": "INE0NT901020"
+        }
+      ]
+    },
+    {
+      "id": "cables",
+      "name": "Wires & Cables (T&D Capex)",
+      "rule": "Electrical wiring and power transmission cables.",
+      "members": [
+        {
+          "symbol": "POLYCAB",
+          "company": "Polycab India",
+          "rationale": "Wires and cables business; specific AI/data-centre revenue not established.",
+          "source_url": "https://cms.polycab.com/media/rpzdby5w/housewire-catalogue.pdf",
+          "exposure": "Documented business exposure; revenue materiality unverified",
+          "isin": "INE455K01017"
+        }
+      ]
+    },
+    {
+      "id": "switchgear",
+      "name": "Switchgear & Electrical Equipment",
+      "rule": "Electrical switching and power distribution equipment.",
+      "members": [
+        {
+          "symbol": "CGPOWER",
+          "company": "CG Power and Industrial Solutions",
+          "rationale": "Power-system switchgear portfolio; diversified company.",
+          "source_url": "https://www.cgglobal.com/admin/uploads/Intimationoninvestorpresentation13022024.pdf",
+          "exposure": "Documented business exposure; revenue materiality unverified",
+          "isin": "INE067A01029"
+        }
+      ]
+    },
+    {
+      "id": "ems",
+      "name": "EMS / Electronics Manufacturing",
+      "rule": "Contract electronics design and manufacturing.",
+      "members": [
+        {
+          "symbol": "KAYNES",
+          "company": "Kaynes Technology India",
+          "rationale": "Integrated electronics manufacturing across several end markets.",
+          "source_url": "https://www.kaynestechnology.co.in/",
+          "exposure": "Documented business exposure; revenue materiality unverified",
+          "isin": "INE918Z01012"
+        }
+      ]
+    },
+    {
+      "id": "transformers",
+      "name": "Transformers",
+      "rule": "Power and distribution transformers.",
+      "members": [
+        {
+          "symbol": "CGPOWER",
+          "company": "CG Power and Industrial Solutions",
+          "rationale": "Power-transformer product portfolio; overlaps the switchgear basket.",
+          "source_url": "https://www.cgglobal.com/admin/uploads/Intimationoninvestorpresentation13022024.pdf",
+          "exposure": "Documented business exposure; revenue materiality unverified",
+          "isin": "INE067A01029"
+        }
+      ]
+    },
+    {
+      "id": "semiconductors",
+      "name": "Semiconductors / OSAT",
+      "rule": "Semiconductor assembly, packaging and testing exposure.",
+      "members": [
+        {
+          "symbol": "CGPOWER",
+          "company": "CG Power and Industrial Solutions",
+          "rationale": "CG Semi subsidiary/JV provides OSAT exposure; not a pure-play semiconductor company.",
+          "source_url": "https://www.cgglobal.com/subsidiaries_jv",
+          "exposure": "Documented business exposure; revenue materiality unverified",
+          "isin": "INE067A01029"
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "name": "Embedded AI & Design Services",
+      "rule": "Engineering and software design with documented AI offerings.",
+      "members": [
+        {
+          "symbol": "TATAELXSI",
+          "company": "Tata Elxsi",
+          "rationale": "Disclosed automotive AI software-development offering; AI revenue share not established.",
+          "source_url": "https://nsearchives.nseindia.com/corporate/TELNSE_05032026164002_Reg30PressRelease05032026.pdf",
+          "exposure": "Documented business exposure; revenue materiality unverified",
+          "isin": "INE670A01012"
+        }
+      ]
+    },
+    {
+      "id": "datacentres",
+      "name": "Data Centre Operators",
+      "rule": "Companies with disclosed data-centre operating exposure.",
+      "members": [
+        {
+          "symbol": "ANANTRAJ",
+          "company": "Anant Raj",
+          "rationale": "Data-centre business through Anant Raj Cloud; diversified parent.",
+          "source_url": "https://investors.anantrajlimited.com/admin-login/images/pages/2.%20Data%20Center%20Presentation__05.09.2024.pdf",
+          "exposure": "Documented business exposure; revenue materiality unverified",
+          "isin": "INE242C01024"
+        }
+      ]
+    },
+    {
+      "id": "fibre",
+      "name": "Optic Fibre & Connectivity",
+      "rule": "Optical fibre and network connectivity equipment.",
+      "members": [
+        {
+          "symbol": "STLTECH",
+          "company": "Sterlite Technologies",
+          "rationale": "Optical connectivity solutions; specific AI revenue not established.",
+          "source_url": "https://stl.tech/our-solutions/",
+          "exposure": "Documented business exposure; revenue materiality unverified",
+          "isin": "INE089C01029"
+        }
+      ]
+    },
+    {
+      "id": "cooling",
+      "name": "Data Centre Cooling & HVAC",
+      "rule": "Cooling systems designed for data centres.",
+      "members": [
+        {
+          "symbol": "BLUESTARCO",
+          "company": "Blue Star",
+          "rationale": "Dedicated data-centre chillers within a diversified cooling business.",
+          "source_url": "https://www.bluestarindia.com/products/central-air-conditioning/chillers/data-center-chillers",
+          "exposure": "Documented business exposure; revenue materiality unverified",
+          "isin": "INE472A01039"
+        }
+      ]
+    }
+  ]
+}

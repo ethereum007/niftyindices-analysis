@@ -71,12 +71,12 @@ def build(db, root, out):
     stocks_file=root/'stocks/latest.json'
     members=json.loads(members_file.read_text(encoding='utf-8')) if members_file.exists() else None
     stocks=json.loads(stocks_file.read_text(encoding='utf-8')) if stocks_file.exists() else None
-    payload={**pack_rows(observations),'coverage':coverage,'constituents':members,'stocks':stocks,
+    payload={**pack_rows(observations),'coverage':coverage,'constituents':members,'stocks':stocks,'themes':json.loads((HERE/'themes.json').read_text(encoding='utf-8')),
              'batches':[dict(r) for r in db.execute('SELECT * FROM batches ORDER BY observation_date')],
              'generated':datetime.now(timezone.utc).isoformat(),
              'periods':list(PERIODS),'targets':{d:{k:target_date(date.fromisoformat(d),k).isoformat() for k in PERIODS} for d in sorted({r['date'] for r in observations})}}
     encoded=json.dumps(payload,separators=(',',':')).replace('<','\\u003c').replace('>','\\u003e').replace('&','\\u0026')
-    page=(HERE/'dashboard.html').read_text(encoding='utf-8').replace('__WAREHOUSE_DATA__',encoded)
+    page=(HERE/'dashboard.html').read_text(encoding='utf-8').replace('__WAREHOUSE_DATA__',encoded).replace('__THEME_SCRIPT__',(HERE/'themes.js').read_text(encoding='utf-8'))
     out.mkdir(parents=True,exist_ok=True)
     latest=payload['dates'][-1]
     latest_rows=[r for r in observations if r['date']==latest]
