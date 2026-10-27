@@ -71,7 +71,9 @@ def build(db, root, out):
     stocks_file=root/'stocks/latest.json'
     members=json.loads(members_file.read_text(encoding='utf-8')) if members_file.exists() else None
     stocks=json.loads(stocks_file.read_text(encoding='utf-8')) if stocks_file.exists() else None
-    payload={**pack_rows(observations),'coverage':coverage,'constituents':members,'stocks':stocks,'themes':json.loads((HERE/'themes.json').read_text(encoding='utf-8')),
+    family_file=root/'theme-research/defence.json'
+    family_members=json.loads(family_file.read_text(encoding='utf-8')) if family_file.exists() else None
+    payload={**pack_rows(observations),'coverage':coverage,'constituents':members,'stocks':stocks,'family_members':family_members,'themes':json.loads((HERE/'themes.json').read_text(encoding='utf-8')),
              'batches':[dict(r) for r in db.execute('SELECT * FROM batches ORDER BY observation_date')],
              'generated':datetime.now(timezone.utc).isoformat(),
              'periods':list(PERIODS),'targets':{d:{k:target_date(date.fromisoformat(d),k).isoformat() for k in PERIODS} for d in sorted({r['date'] for r in observations})}}

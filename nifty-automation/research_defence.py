@@ -12,8 +12,8 @@ from urllib.request import Request,urlopen
 HERE=Path(__file__).parent
 ROOT=HERE/'data/theme-research'
 SEEDS=[
- ('HAL','Aerospace & engines','https://hal-india.co.in/?wpmobileexternal=true','Aircraft, helicopter and related service offerings support aerospace exposure. Defence-only revenue share is not inferred.',['aircraft','helicopter']),
- ('BEL','Defence electronics','https://bel-india.in/defence/','Defence radar and electronic-warfare products establish defence-electronics exposure.',['radar','warfare']),
+ ('HAL','Aerospace & engines','https://www.pib.gov.in/PressReleasePage.aspx?PRID=1707214&lang=2&reg=48','Aircraft, helicopter and related service offerings support aerospace exposure. Defence-only revenue share is not inferred.',['aircraft','helicopter']),
+ ('BEL','Defence electronics','https://www.pib.gov.in/PressReleasePage.aspx?PRID=1910393&lang=2&reg=48','Defence radar and electronic-warfare products establish defence-electronics exposure.',['radar','warfare']),
  ('MAZDOCK','Shipbuilding','https://www.mazagondock.in/English/modernization','Warship and submarine construction facilities establish naval shipbuilding exposure.',['warship','submarine']),
  ('DYNAMATECH','Precision components','https://www.dynamatics.com/aerospace.aspx','Flight-critical aerostructures for aerospace OEMs establish precision-aerospace exposure; the parent also serves civil aerospace and other businesses.',['aerostruct','airbus']),
  ('IDEAFORGE','Drones','https://ideaforgetech.com/lp/indigenize-with-ideaforge','UAV products serving armed forces and industrial applications establish dual-use drone exposure.',['armed forces','drone'])]

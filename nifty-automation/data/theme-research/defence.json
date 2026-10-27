@@ -7,7 +7,7 @@
     {
       "symbol": "HAL",
       "subtheme": "Aerospace & engines",
-      "source_url": "https://hal-india.co.in/?wpmobileexternal=true",
+      "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1707214&lang=2&reg=48",
       "rationale": "Aircraft, helicopter and related service offerings support aerospace exposure. Defence-only revenue share is not inferred.",
       "reviewed_on": "2026-10-27",
       "effective_date": null,
@@ -15,19 +15,19 @@
       "identity_source": "Current official Nifty constituent archive; not historical membership",
       "company": "Hindustan Aeronautics Ltd.",
       "isin": "INE066F01020",
-      "resolved_url": "https://hal-india.co.in/?wpmobileexternal=true",
-      "sha256": "62fdeb4986ec3da8c0134815460d92c04637eca8ddef556f355d02f1e1ebf4e7",
-      "retrieved_utc": "2026-10-27T17:43:25.417114+00:00",
+      "resolved_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1707214&lang=2&reg=48",
+      "sha256": "8ba70b439c06cd20218348cdcdee9ee4c4ba4b21436523db8e6308a49f1d00b7",
+      "retrieved_utc": "2026-10-27T18:13:00.482636+00:00",
       "keyword_checks": {
-        "aircraft": false,
-        "helicopter": false
+        "aircraft": true,
+        "helicopter": true
       },
-      "status": "manual_page_review_required"
+      "status": "evidence_archived"
     },
     {
       "symbol": "BEL",
       "subtheme": "Defence electronics",
-      "source_url": "https://bel-india.in/defence/",
+      "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1910393&lang=2&reg=48",
       "rationale": "Defence radar and electronic-warfare products establish defence-electronics exposure.",
       "reviewed_on": "2026-10-27",
       "effective_date": null,
@@ -35,8 +35,14 @@
       "identity_source": "Current official Nifty constituent archive; not historical membership",
       "company": "Bharat Electronics Ltd.",
       "isin": "INE263A01024",
-      "status": "fetch_failed",
-      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>"
+      "resolved_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1910393&lang=2&reg=48",
+      "sha256": "ee66594bef8e77e070abc1c48f0f9362255c743099c37d9d63b0ddf6f2ade52d",
+      "retrieved_utc": "2026-10-27T18:13:00.659074+00:00",
+      "keyword_checks": {
+        "radar": true,
+        "warfare": true
+      },
+      "status": "evidence_archived"
     },
     {
       "symbol": "MAZDOCK",
@@ -50,8 +56,8 @@
       "company": "Mazagoan Dock Shipbuilders Ltd.",
       "isin": "INE249Z01020",
       "resolved_url": "https://www.mazagondock.in/English/modernization",
-      "sha256": "94737aeffc3b2a0c4e91529ebba4ea9674548c5a089d81b3e7d1f0780ed082bf",
-      "retrieved_utc": "2026-10-27T17:43:25.523143+00:00",
+      "sha256": "81d99ed69ee91427390c92ed39e12ab63fa072b20cabae01595b97766d588866",
+      "retrieved_utc": "2026-10-27T18:13:00.585249+00:00",
       "keyword_checks": {
         "warship": true,
         "submarine": true
@@ -71,7 +77,7 @@
       "isin": "INE221B01012",
       "resolved_url": "https://www.dynamatics.com/aerospace.aspx",
       "sha256": "ca0da8c9cfe2f90f2ff38ad7758371f75d191d280bf61405502bd6e1c622c00e",
-      "retrieved_utc": "2026-10-27T17:43:26.474119+00:00",
+      "retrieved_utc": "2026-10-27T18:13:01.765439+00:00",
       "keyword_checks": {
         "aerostruct": true,
         "airbus": true
@@ -91,7 +97,7 @@
       "isin": "INE349Y01013",
       "resolved_url": "https://ideaforgetech.com/lp/indigenize-with-ideaforge",
       "sha256": "ba38998a02da2261311150742fc99d8b2a3a4892530a4953807c410d5f12d268",
-      "retrieved_utc": "2026-10-27T17:43:26.038353+00:00",
+      "retrieved_utc": "2026-10-27T18:13:01.024687+00:00",
       "keyword_checks": {
         "armed forces": true,
         "drone": true

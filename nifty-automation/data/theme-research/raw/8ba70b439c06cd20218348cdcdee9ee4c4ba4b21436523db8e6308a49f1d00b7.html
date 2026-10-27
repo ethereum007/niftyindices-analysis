@@ -1,0 +1,1550 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head id="Head1"><title>
+	Press Release Page | Press Information Bureau
+</title><link href="css/style.css?v=1" rel="stylesheet" type="text/css" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="alternate stylesheet" href="css/change.css?v=1" media="screen" title="change" /><link rel="alternate stylesheet" href="css/green.css?v=1" media="screen" title="green" /><link rel="alternate stylesheet" href="css/yellow.css" media="screen" title="yellow" /><link rel="stylesheet" type="text/css" href="css/prtint.css" media="print" /><link rel="stylesheet" href="css/style3.1.css" type="text/css" /><link id="pibA11yCss" rel="stylesheet" href="/css/accessibility.css?v=7" type="text/css" />
+    <script type="text/javascript">
+        (function (d) {
+            var t = "";
+            try {
+                t = window.localStorage.getItem("pibStyle") || "";
+            } catch (e) {
+                t = "";
+            }
+            if (t === "orange") {
+                t = "yellow";
+            }
+            var c = t === "change" ? " pib-hc"
+                : t === "green" ? " pib-theme-green"
+                : t === "yellow" ? " pib-theme-yellow" : "";
+            d.documentElement.className += c + " pib-a11y-content";
+        }(document));
+    </script>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/js/accessibility.js?v=7"></script>
+
+    <script type="text/javascript">
+            $(document).ready(function () {
+                  function getParameterByName(name) {
+                        var url = window.location.href;
+                        name = name.replace(/[\[\]]/g, '\\$&');
+                        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                              results = regex.exec(url);
+                        if (!results) return null;
+                        if (!results[2]) return '';
+                        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                  }
+                  let prid = parseInt(getParameterByName('PRID'), 10);
+
+                  if (!isNaN(prid) && prid > 0) {
+                        $.ajax({
+                              type: "POST",
+                              url: "AjaxMethod.aspx/UpdatePRHitCount",
+                              async: false,
+                              data: JSON.stringify({ 'PermId': prid }),
+                              contentType: "application/json; charset=utf-8",
+                              dataType: "json",
+                              success: function (response) {
+                                    console.log(response);
+                              },
+                              error: function (error) {
+                                    console.log("Error in AJAX request", error);
+                              }
+                        });
+                  } else {
+                        console.log("Invalid parameters:", prid);
+                  }
+            });
+    </script>
+    <style type="text/css">
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+        }
+
+        full-width {
+            width: 100%;
+        }
+
+        .logo-left, .logo-center, .countdown {
+            display: flex;
+            align-items: center;
+        }
+
+            .logo-left img, .logo-center img {
+                height: 70px;
+            }
+
+        .countdown {
+            text-align: center;
+            background-color: var(--dbim-text, #150202);
+            border-radius: 10px;
+            padding: 10px;
+            border: 2px solid grey;
+        }
+
+        .firstnumber {
+            color: #000000;
+            position: absolute;
+            top: 50px;
+            right: 90px;
+            font-size: 30px;
+        }
+
+        .secondnumber {
+            position: absolute;
+            color: #000000;
+            right: 45px;
+            top: 50px;
+            font-size: 30px;
+        }
+
+        .countdown .days {
+            font-size: 35px;
+            color: gold;
+        }
+
+        .countdown p {
+            margin: 0;
+        }
+
+        .countdown .text {
+            font-size: 16px;
+        }
+
+        a {
+            word-break: break-all;
+        }
+
+        iframe, img {
+            max-width: 100%;
+        }
+
+        /* === DBIM 3.0 Option 4 Separator Line & Reading Meta Styling === */
+        .pr-share--footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            border-top: 1px solid var(--dbim-border, #d1d5db);
+            padding-top: 16px;
+            margin-top: 24px;
+        }
+
+        .pr-share__left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .pr-reading-meta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+            color: var(--dbim-text-secondary, #475569);
+            font-weight: 500;
+            white-space: nowrap;
+            margin-left: auto;
+        }
+
+        .pr-reading-meta__item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .pr-reading-meta__divider {
+            color: var(--dbim-border, #cbd5e1);
+            font-weight: 300;
+        }
+
+        .pib-hc .pr-reading-meta,
+        .pib-hc .pr-reading-meta svg {
+            color: currentColor !important;
+        }
+
+        @media (max-width: 680px) {
+            .pr-share--footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .pr-reading-meta {
+                margin-left: 0;
+                width: 100%;
+                justify-content: flex-start;
+            }
+        }
+
+        @media(max-width:1199px) {
+            .firstnumber {
+                top: 40px;
+                right: 72px;
+                font-size: 30px;
+            }
+
+            .secondnumber {
+                right: 35px;
+                top: 40px;
+                font-size: 30px;
+            }
+        }
+
+        @media(max-width:990px) {
+            .firstnumber {
+                top: 25px;
+                right: 54px;
+                font-size: 30px;
+            }
+
+            .secondnumber {
+                right: 25px;
+                top: 25px;
+                font-size: 30px;
+            }
+        }
+
+        @media(max-width:768px) {
+            .countdown, .days {
+                font-size: 12px !important;
+            }
+
+            .firstnumber {
+                top: 25%;
+                right: 8%;
+                font-size: 30px;
+            }
+
+            .secondnumber {
+                right: 4.5%;
+                top: 25%;
+                font-size: 30px;
+            }
+        }
+
+        @media(max-width:475px) {
+            .countdown, .days {
+                font-size: 10px !important;
+                top: 20%;
+            }
+
+            .bannerimgdiv {
+                padding: 0 !important;
+            }
+
+            .bannerimg {
+                width: 108% !important;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+            $(function () {
+                  $("[id*=printPDF]").click(function () {
+                        $("[id*=hfGridHtml]").val($("#PdfDiv").html());
+                  });
+            });
+            $(function () {
+                  $("[id*=printPDFEvent]").click(function () {
+                        $("[id*=hfGridHtml]").val($("#PdfDiv").html());
+                  });
+            });
+    </script>
+
+    <link id="pibConsentCss" href="/css/consent.css?v=8" rel="stylesheet" type="text/css" /><link id="pibFontsCss" href="/css/fonts-noto.css?v=6" rel="stylesheet" type="text/css" /><link id="pibDbimCss" href="/css/dbim.css?v=1120" rel="stylesheet" type="text/css" /><meta property="og:title" content="Hindustan Aeronautics Limited (HAL)" /><meta property="og:url" content="www.pib.gov.in/Pressreleaseshare.aspx?PRID=1707214" /><meta property="og:description" content="Business done by HAL in last ten years is as under:-
+
+Rs. In Crore
+
+
+	
+		
+			
+			Particulars" /><meta property="og:image" content="https:/pib.gov.in/images/indian-emblem.png" />
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="C4E7H-KSCMC-422L4-W3EM5-U36MF",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"C4E7H-KSCMC-422L4-W3EM5-U36MF";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="nlpox5fydswqu2xa5gta-f-543790d7b-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1825201","ak.ai":parseInt("1215205",10),"ak.ol":"0","ak.cr":6,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"3759798d","ak.r":34612,"ak.a2":n,"ak.m":"dscb","ak.n":"ff","ak.cport":12443,"ak.gh":"184.28.173.31","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1793124774","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==sxBsj6WNSRZf+kRx+kWbie7b5wc+ObGs+mIMvfdNoEZOF69G92Waj53ct+IUwe0Y238bGBe+afqSIdQ5aQpUBW2ywZSsbx9IDemmSbrg5xH4KyvSYVNNKLu1i6DdgZv2kpVg+ySxQsR2JfmN4kEeXlJZrE0vlrbixiOQBGBJghzIIw1DF/t/kKMtiNbPddHitoNVCbdi1BpSgFihFV5Jjwm3qgzawE2MI8ZMRlz0wirgtioVV7hAA+CZOqRE64ZFVxLLdi1jcfDnVZ8xPDspwGtjWSFhY6yf/p6GUJVfA8v9afYmmy/RL83F+Sml4XC9skDZSBDqWQtQZP49+00FWArEde3pWSLuQv3Ex34uK30uz86Afue4aOukkQjbdKN60vtwUHG2+p26twHMkuPjzjCgMkoNGro38geheZgJJ/E=","ak.pv":"9","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+     style="position:absolute;width:0;height:0;overflow:hidden" id="dbim-icon-sprite">
+    <defs>
+        <symbol id="icon-angle-double-left" viewBox="0 0 24 24"><path d="M11.6 4.6 4.2 12l7.4 7.4 2.2-2.2L8.6 12l5.2-5.2z"/><path d="M19 4.6 11.6 12 19 19.4l2.2-2.2L16 12l5.2-5.2z"/></symbol>
+        <symbol id="icon-angle-double-right" viewBox="0 0 24 24"><path d="M12.4 4.6 10.2 6.8 15.4 12l-5.2 5.2 2.2 2.2L19.8 12z"/><path d="M5 4.6 2.8 6.8 8 12l-5.2 5.2L5 19.4 12.4 12z"/></symbol>
+        <symbol id="icon-arrow-left" viewBox="0 0 24 24"><path d="M20.8 10.6H9.6v2.8h11.2z"/><path d="M10.8 5.6 3.2 12l7.6 6.4z"/></symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M3.2 10.6h11.2v2.8H3.2z"/><path d="M13.2 5.6 20.8 12l-7.6 6.4z"/></symbol>
+        <symbol id="icon-blogger" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M6.4 2.4h11.2a4 4 0 0 1 4 4v11.2a4 4 0 0 1-4 4H6.4a4 4 0 0 1-4-4V6.4a4 4 0 0 1 4-4zm2.8 5.2a2 2 0 0 0 0 4h2.4a2 2 0 0 0 0-4zm0 5.6a2 2 0 0 0 0 4h5.6a2 2 0 0 0 0-4z"/></symbol>
+        <symbol id="icon-calendar" viewBox="0 0 24 24"><path d="M7.6 2.4H10v2.4H7.6z"/><path d="M14 2.4h2.4v2.4H14z"/><path fill-rule="evenodd" d="M4 4.8h16a1.6 1.6 0 0 1 1.6 1.6v13.2a1.6 1.6 0 0 1-1.6 1.6H4a1.6 1.6 0 0 1-1.6-1.6V6.4A1.6 1.6 0 0 1 4 4.8zm.4 5.6v8.4h15.2v-8.4z"/><path d="M6.4 12.4h3.2v3.2H6.4z"/></symbol>
+        <symbol id="icon-chevron-left" viewBox="0 0 24 24"><path d="M15.4 4.6 8 12l7.4 7.4 2.2-2.2L12.4 12l5.2-5.2z"/></symbol>
+        <symbol id="icon-chevron-right" viewBox="0 0 24 24"><path d="M8.6 4.6 6.4 6.8 11.6 12l-5.2 5.2 2.2 2.2L16 12z"/></symbol>
+        <symbol id="icon-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/></symbol>
+        <symbol id="icon-download" viewBox="0 0 24 24"><path d="M10.8 3h2.4v7.6h3.4L12 16.6l-4.6-6h3.4z"/><path d="M4 17.2h2.4v2.4h11.2v-2.4H20v3.2a1.4 1.4 0 0 1-1.4 1.4H5.4A1.4 1.4 0 0 1 4 20.4z"/></symbol>
+        <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M13.6 21.6v-8.4h2.8l.42-3.3h-3.22V7.8c0-.95.27-1.6 1.64-1.6h1.74V3.26a23 23 0 0 0-2.54-.13c-2.5 0-4.22 1.53-4.22 4.34v2.43H7.4v3.3h2.82v8.4z"/></symbol>
+        <symbol id="icon-fact-check" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.4 3.6 5.6v6.2c0 4.6 3.4 8.6 8.4 9.8 5-1.2 8.4-5.2 8.4-9.8V5.6zm-1 13.2-3.6-3.6 1.7-1.7 1.9 1.9 4.5-4.5 1.7 1.7z"/></symbol>
+        <symbol id="icon-hashtag" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M8.8 3h2.4l-1 6h3.2l1-6h2.4l-1 6h3.4v2.4h-3.8l-.6 3.2h3.6V17h-4l-1 5h-2.4l1-5h-3.2l-1 5H5.4l1-5H3V14.6h3.8l.6-3.2H3.8V9h4zm.6 8.4-.6 3.2h3.2l.6-3.2z"/></symbol>
+        <symbol id="icon-home" viewBox="0 0 24 24"><path d="M12 3.4 2.8 11.6h2.4v8.4a1 1 0 0 0 1 1h3.3v-5.4h5v5.4h3.3a1 1 0 0 0 1-1v-8.4h2.4z"/></symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M7.6 2.4h8.8a5.2 5.2 0 0 1 5.2 5.2v8.8a5.2 5.2 0 0 1-5.2 5.2H7.6a5.2 5.2 0 0 1-5.2-5.2V7.6a5.2 5.2 0 0 1 5.2-5.2zm0 2.4a2.8 2.8 0 0 0-2.8 2.8v8.8a2.8 2.8 0 0 0 2.8 2.8h8.8a2.8 2.8 0 0 0 2.8-2.8V7.6a2.8 2.8 0 0 0-2.8-2.8z"/><path fill-rule="evenodd" d="M12 6.8a5.2 5.2 0 1 0 0 10.4 5.2 5.2 0 0 0 0-10.4zm0 2.4a2.8 2.8 0 1 1 0 5.6 2.8 2.8 0 0 1 0-5.6z"/><circle cx="17.3" cy="6.7" r="1.3"/></symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M4.8 8.8h3.6v12H4.8z"/><circle cx="6.6" cy="5.4" r="2.1"/><path d="M10.8 8.8h3.45v1.65h.05c.48-.9 1.65-1.85 3.4-1.85 3.63 0 4.3 2.35 4.3 5.4v6.6h-3.6v-5.85c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1v5.95h-3.6z"/></symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24"><path d="M2.4 7.6v9.2a1.6 1.6 0 0 0 1.6 1.6h16a1.6 1.6 0 0 0 1.6-1.6V7.6L12 14z"/><path d="M21.2 5.4H2.8L12 11.8z"/></symbol>
+        <symbol id="icon-mail-open" viewBox="0 0 24 24"><path d="M2.4 9.8h19.2v9.6A1.6 1.6 0 0 1 20 21H4a1.6 1.6 0 0 1-1.6-1.6z"/><path d="M12 2.6 21.6 9.2h-3.8L12 5.3 6.2 9.2H2.4z"/><path d="m3.9 11.2 8.1 5.4 8.1-5.4 1.5 1.3-9.6 6.4-9.6-6.4z"/></symbol>
+        <symbol id="icon-map-marker" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.4a7 7 0 0 0-7 7c0 5.2 7 12.2 7 12.2s7-7 7-12.2a7 7 0 0 0-7-7zm0 9.6a2.6 2.6 0 1 1 0-5.2 2.6 2.6 0 0 1 0 5.2z"/></symbol>
+        <symbol id="icon-newspaper" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M2.8 4.4h14.8v15.2H2.8zm2 2v11.2h10.8V6.4z"/><path d="M6 7.6h8.4v1.6H6z"/><path d="M6 10.8h8.4v1.6H6z"/><path d="M6 14h5.2v1.6H6z"/><path d="M18.4 8.4h2.8v9.6a1.4 1.4 0 0 1-2.8 0z"/></symbol>
+        <symbol id="icon-pause" viewBox="0 0 24 24"><rect x="7.4" y="4" width="3.6" height="16" rx="0.9"/><rect x="13" y="4" width="3.6" height="16" rx="0.9"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="M8 4.5v15l12-7.5z"/></symbol>
+        <symbol id="icon-picture" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M2.4 5.2h19.2v13.6H2.4zm2 2v9.6h15.2V7.2z"/><path d="M5.6 16.4 10 11l2.6 3 2-2.2 4 4.6z"/><circle cx="8" cy="10.4" r="1.5"/></symbol>
+        <symbol id="icon-press-conference" viewBox="0 0 24 24"><circle cx="12" cy="5.2" r="2.6"/><path d="M7.6 12.2a4.4 4.4 0 0 1 8.8 0z"/><circle cx="4.9" cy="9.6" r="2.2"/><path d="M1.8 15.2a3.1 3.1 0 0 1 6.2 0z"/><circle cx="19.1" cy="9.6" r="2.2"/><path d="M16 15.2a3.1 3.1 0 0 1 6.2 0z"/><path d="M6.6 13.6h10.8l2.2 7.8H4.4z"/></symbol>
+        <symbol id="icon-print" viewBox="0 0 24 24"><path d="M6.4 2.8h11.2v4.4H6.4z"/><path d="M4 8.4h16a1.6 1.6 0 0 1 1.6 1.6v5.6a1.6 1.6 0 0 1-1.6 1.6h-1.6v-2.8H6v2.8H4a1.6 1.6 0 0 1-1.6-1.6V10A1.6 1.6 0 0 1 4 8.4z"/><path d="M7.2 15.6h9.6v5.6H7.2z"/></symbol>
+        <symbol id="icon-rss" viewBox="0 0 24 24"><circle cx="4.8" cy="19.2" r="2.4"/><path d="M2.4 11.2v3.2a6.4 6.4 0 0 1 6.4 6.4H12A9.6 9.6 0 0 0 2.4 11.2z"/><path d="M2.4 4.8V8A13.6 13.6 0 0 1 16 21.6h3.2A16.8 16.8 0 0 0 2.4 4.8z"/></symbol>
+        <symbol id="icon-search-plus" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M10 2.8a7.2 7.2 0 1 0 0 14.4 7.2 7.2 0 0 0 0-14.4zm0 2.4a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6z"/><path d="M15.3 14.6 21.2 20.5l-1.5 1.5-5.9-5.9z"/><path d="M9.2 6.8h1.6v2.4h2.4v1.6h-2.4v2.4H9.2v-2.4H6.8V9.2h2.4z"/></symbol>
+        <symbol id="icon-share" viewBox="0 0 24 24"><circle cx="18" cy="5.6" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="18.4" r="3"/><path d="M8.3 10.9 15.7 7.2l.9 1.8-7.4 3.7z"/><path d="M9.2 13.1 16.6 16.8l-.9 1.8-7.4-3.7z"/></symbol>
+        <symbol id="icon-twitter" viewBox="0 0 24 24"><path d="M4.2 3h4.3l11.3 18h-4.3z"/><path d="M19.3 3h-2.6L4.2 21h2.6z"/></symbol>
+        <symbol id="icon-university" viewBox="0 0 24 24"><path d="M12 2.4 21.6 7.2v1.6H2.4V7.2z"/><path d="M4.8 10.4h2.4v8H4.8z"/><path d="M9.2 10.4h2.4v8H9.2z"/><path d="M13.4 10.4h2.4v8h-2.4z"/><path d="M17.6 10.4H20v8h-2.4z"/><path d="M3.2 19.8h17.6v1.8H3.2z"/></symbol>
+        <symbol id="icon-volume-up" viewBox="0 0 24 24"><path d="M3.2 9.2h3.3l5-4.2v14l-5-4.2H3.2z"/><path d="M14.6 8.4a5 5 0 0 1 0 7.2l1.6 1.6a7.2 7.2 0 0 0 0-10.4z"/><path d="M17.4 5.6a8.8 8.8 0 0 1 0 12.8l1.5 1.5a10.9 10.9 0 0 0 0-15.8z"/></symbol>
+        <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.4a9.5 9.5 0 0 0-8.1 14.5L2.4 21.6l4.8-1.4A9.5 9.5 0 1 0 12 2.4zm0 2.2a7.3 7.3 0 1 1-3.8 13.5l-.4-.2-2.6.7.7-2.5-.3-.4A7.3 7.3 0 0 1 12 4.6z"/><path d="M9.4 7.8c-.2-.5-.4-.5-.6-.5h-.5a1 1 0 0 0-.7.3c-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.8 4.3 3.8 2.1.8 2.6.7 3 .6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3-1.6-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6 6 0 0 1-1.8-1.1 6.6 6.6 0 0 1-1.2-1.6c-.1-.2 0-.4.1-.5l.4-.5.3-.5v-.5z"/></symbol>
+        <symbol id="icon-youtube" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.9 4.8 12 4.8 12 4.8s-5.9 0-7.6.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8zM10.2 15.1V8.9l5.1 3.1z"/></symbol>
+    </defs>
+</svg>
+
+    <form method="post" action="./PressReleasePage.aspx?PRID=1707214&amp;lang=2&amp;reg=48" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="sc_HiddenField" id="sc_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZPQet1wIx1Q48y3xJY2k25Y7qxH5RrQ9qQcN-OiTC9guZtri9w2&amp;t=639246315009809930" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=x6wALODbMJK5e0eRC_p1LdIxBJXt0U_WW5GWfJqHAqo6frgCmGRfEywglicTersO2OKrFhK1gAIp0Wk2al2YrpdR3uWqH6f4nfjBsCyRUfTUUVmb0&amp;t=ffffffffecf8d3f2" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=P5lTttoqSeZXoYRLQMIScH645UK3RD852IErF2548Wz9Ssv0rLjB4fhVKnHcMpqkaMHpNAGOeWY02Lf4aBYN9-dVBme_SNK5KJwmFQNpMixYDZ7M0&amp;t=ffffffffecf8d3f2" type="text/javascript"></script>
+<script src="/PressReleasePage.aspx?_TSM_HiddenField_=sc_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.7.123%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a5a4df314-b4a2-4da2-a207-9284f1b1e96c%3ade1feab2%3af2c8e708%3a8613aea7%3af9cec9bc%3a3202a5a2%3aab09e3fe%3a87104b7c%3a720a52bf%3a589eaa30%3aa67c2700%3abe6fb298" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="59B53027" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="zva3Dkk4rNalLZhIT+3o2w7547fJvRoYpXVTLwE0kq/gv3rjWsKYFFZiIV8F+4e/d/g1PgILsfdweWjxjdVvApi5qDHNZ9UQrSAbCMTz+o/OQw7LV931R4/knCCvuMiQut2bDZT4JDENG++bg1wUACL2Bo3Q/EN4LaZ8UHQ7hvv74k2kRreUqQA9V94Kbtlu8DRrhD3Xx3oWSJRlejkXS3xEzCHPASZ/78//VGircuLhXWmkVCoZHLbQSSzHGpMYwEgPdq9dXLPbHSSLVWyGRdWzNQg=" />
+</div>
+        
+        <div id="templateCss"></div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('sc', 'form1', ['tupdate12','update12'], [], [], 90, '');
+//]]>
+</script>
+
+        <input type="hidden" name="hfGridHtml" id="hfGridHtml" />
+        <div class="container" style='margin-bottom: 50px;'>
+            <div id="accessories">
+                
+                <div class="pull-right" style="display: flex">
+                    <div id="voll"></div>
+                    <div id="vollDT"></div>
+                    
+
+<span class="print-icons">
+<input type="image" name="Print1$print" id="Print1_print" aria-label="Print" src="images/printer_icon.png" alt="print page button" style="padding: 5px 10px 5px 10px;" />
+</span>
+                </div>
+            </div>
+            <input type="hidden" name="hydpermid" id="hydpermid" value="1707214" />
+            
+
+            <div class="innner-page-main-about-us-content-right-part">
+                <div id="MinistryName" class="MinistryNameSubhead text-center">
+                    Ministry of Defence
+                </div>
+                <div id="lg_g">
+                </div>
+
+                <div class="text-center event-heading-background">
+                    
+                    <h1 id="Titleh2">
+                        Hindustan Aeronautics Limited (HAL)
+                    </h1>
+                    <h3 id="Subtitleh3">
+                        <span id="ltrSubtitle"></span>
+                    </h3>
+                </div>
+
+                <div id="PrDateTime" class="ReleaseDateSubHeaddateTime text-center pt20">
+                    Posted On:
+                              24 MAR 2021 2:54PM by PIB Delhi
+                </div>
+                
+                <div class='pt20'>
+                </div>
+                <input type="hidden" name="hydphotoUrl" id="hydphotoUrl" />
+                
+
+                <!-- Release content wrapper for client-side zero-reflow word count -->
+                <div id="pibReleaseBody">
+                    <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Business done by HAL in last ten years is as under:-</span></span></p>
+
+<p style="text-align:right"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Rs. In Crore</span></span></p>
+
+<table border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse">
+	<tbody>
+		<tr>
+			<td style="width:43.45pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Particulars</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2010-11</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2011-12</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2012-13</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2013-14</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2014-15</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2015-16</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2016-17</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2017-18</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2018-19</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2019-20</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:43.45pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Revenue from Operations</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">13124</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">14211</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">14328</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">15135</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">15730</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">16758</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">17950</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">18519</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">20008</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">21438</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:43.45pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Profit before tax</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2839</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3328</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3497</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3578</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3172</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3207</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3583</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3240</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3742</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3928</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The list of defence equipment manufactured by HAL is given below:-</span></span></p>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">1.&nbsp; Fighters:</span></span></p>
+
+<ul>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Su-30MKI</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Light Combat Aircraft LCA</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">MiG-21/Bison</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Jaguar</span></span></li>
+</ul>
+
+<p style="margin-left:72.0pt; margin-right:0cm; text-align:justify">&nbsp;</p>
+
+<p style="margin-left:36.0pt; margin-right:0cm; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2.&nbsp; Trainers:</span></span></p>
+
+<ul>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Kiran MK I/II</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Hawk</span></span></li>
+</ul>
+
+<p style="margin-left:72.0pt; margin-right:0cm; text-align:justify">&nbsp;</p>
+
+<p style="margin-left:36.0pt; margin-right:0cm; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3.&nbsp; Transport Aircraft:</span></span></p>
+
+<ul>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Do-228</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">HS-748</span></span></li>
+</ul>
+
+<p style="margin-left:36.0pt; margin-right:0cm; text-align:justify">&nbsp;</p>
+
+<p style="margin-left:36.0pt; margin-right:0cm; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">4.&nbsp; Helicopters:</span></span></p>
+
+<ul>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Advanced Light Helicopter (ALH)</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Chetak</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Cheetah</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Cheetal</span></span></li>
+</ul>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">HAL is also manufacturing Engines, Communication equipment, Navigation equipment, Display systems, Hydraulic systems, Electric equipment etc., required for aircraft/helicopters.</span></span><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Currently, out of the total airborne fleet in use by Indian Defence Services, HAL has supplied about 61% and is supporting 75% of all the aircrafts/helicopters.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222">This information was tabled in a written reply by Raksha Rajya Mantri Shri Shripad Naik to a question asked by</span> <span style="color:#222222">Shri Shyam Singh Yadav in Lok Sabha today.</span></span></span></p>
+
+<p style="margin-left:.75pt; margin-right:8.75pt; text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">Nampi/DK/Savvy/ADA</span></strong></span></span></p>
+
+                </div>
+
+                <div id="reel_pic">
+                </div>
+
+                <br />
+                <span id="ReleaseId">(Release ID: 1707214)</span>
+                <span id="lblViews">Visitor Counter : 632</span>
+                <div>
+                    
+                </div>
+                
+
+                <span id="lblRefPhoto"></span>
+
+                <div class="BackgroundRelease">
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div class="ReleaseLang">Read this release in: 
+                
+                        <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=1707352' target="_blank">
+                            Urdu </a>
+                    
+                        ,
+                    
+                        <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=1707275' target="_blank">
+                            Marathi </a>
+                    
+                </div>
+
+                <div class="RelTag">
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <div class="clear">
+                </div>
+
+                <!-- DBIM 3.0 Option 4: Separator Line with Left Share Rail & Right Reading Metrics -->
+                <div class="pr-share pr-share--footer" role="region" aria-label="Share and reading details">
+                    <div class="pr-share__left">
+                        <span class="pr-share__label" aria-hidden="true">Share</span>
+                        <ul class="pr-share__list">
+                            <li><a class="pr-share__btn pr-share__btn--facebook"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d1707214"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Share on Facebook">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-facebook" xlink:href="#icon-facebook"></use>
+                                </svg>
+                            </a></li>
+                            <li><a class="pr-share__btn pr-share__btn--twitter"
+                                href="https://twitter.com/intent/tweet?url=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d1707214"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Share on X">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-twitter" xlink:href="#icon-twitter"></use>
+                                </svg>
+                            </a></li>
+                            <li><a class="pr-share__btn pr-share__btn--whatsapp"
+                                href="https://api.whatsapp.com/send?text=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d1707214"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Share on WhatsApp">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-whatsapp" xlink:href="#icon-whatsapp"></use>
+                                </svg>
+                            </a></li>
+                            <li><a class="pr-share__btn pr-share__btn--linkedin"
+                                href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d1707214"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Share on LinkedIn">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-linkedin" xlink:href="#icon-linkedin"></use>
+                                </svg>
+                            </a></li>
+                            <li><a class="pr-share__btn pr-share__btn--mail"
+                                href="mailto:?subject=Press+release+from+PIB&amp;body=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d1707214"
+                                aria-label="Share by email">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-mail" xlink:href="#icon-mail"></use>
+                                </svg>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="pr-reading-meta" id="prReadingMeta" aria-label="Reading statistics">
+                        <span class="pr-reading-meta__item">
+                            <!-- Modern Document / Word Count Icon -->
+                            <svg class="pr-reading-meta__icon" width="18" height="18" viewbox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+                                <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                            </svg>
+                            <span id="prWordCount">-- words</span>
+                        </span>
+
+                        <span class="pr-reading-meta__divider" aria-hidden="true">|</span>
+
+                        <span class="pr-reading-meta__item">
+                            <!-- Modern Precision Clock / Read Time Icon -->
+                            <svg class="pr-reading-meta__icon" width="18" height="18" viewbox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                            </svg>
+                            <span id="prReadTime">-- min read</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div id="RelLink" class="RelLink">
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <center>
+                    
+                </center>
+            </div>
+
+            <div id="update12">
+	
+                    
+                    <input type="hidden" name="Hidden" id="Hidden" />
+                    <div id="P_CategoryManagement" class="ModalWindow" style="border-width:0px;height:60%;width:60%;overflow:auto;display: none">
+		
+                        <div>
+                            <input type="image" name="btnClose" id="btnClose" src="images/close_flat_icon.png" />
+                        </div>
+                        <div id="description">
+                        </div>
+                        <div class="text-center">
+                            <h2>
+                                
+                                <br>
+                                
+                            </h2>
+                        </div>
+                        <br />
+                        <div class="clear">
+                        </div>
+                        
+                    
+	</div>
+                
+</div>
+        </div>
+
+        <div id="PdfDiv" style="display: none;">
+            <table width="100%">
+                <tr>
+                    <td style="font-weight: 200; text-align: center">
+                        Ministry of Defence
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="font-weight: 200; text-align: center; font-size: 30px;">
+                            Hindustan Aeronautics Limited (HAL)
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="font-weight: 200; text-align: center; font-size: 30px;">
+                            
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="text-align: center; font-size: 14px;">
+                            Posted On:
+                                          24 MAR 2021 2:54PM by PIB Delhi
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="font-weight: 200; text-align: left; font-size: 16px;">
+                            <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Business done by HAL in last ten years is as under:-</span></span></p>
+
+<p style="text-align:right"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Rs. In Crore</span></span></p>
+
+<table border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse">
+	<tbody>
+		<tr>
+			<td style="width:43.45pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Particulars</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2010-11</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2011-12</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2012-13</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2013-14</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2014-15</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2015-16</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2016-17</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2017-18</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2018-19</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2019-20</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:43.45pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Revenue from Operations</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">13124</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">14211</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">14328</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">15135</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">15730</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">16758</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">17950</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">18519</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">20008</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">21438</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:43.45pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Profit before tax</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2839</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3328</span></span></p>
+			</td>
+			<td style="width:43.5pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3497</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3578</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3172</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3207</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3583</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3240</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3742</span></span></p>
+			</td>
+			<td style="width:43.55pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3928</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The list of defence equipment manufactured by HAL is given below:-</span></span></p>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">1.&nbsp; Fighters:</span></span></p>
+
+<ul>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Su-30MKI</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Light Combat Aircraft LCA</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">MiG-21/Bison</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Jaguar</span></span></li>
+</ul>
+
+<p style="margin-left:72.0pt; margin-right:0cm; text-align:justify">&nbsp;</p>
+
+<p style="margin-left:36.0pt; margin-right:0cm; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2.&nbsp; Trainers:</span></span></p>
+
+<ul>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Kiran MK I/II</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Hawk</span></span></li>
+</ul>
+
+<p style="margin-left:72.0pt; margin-right:0cm; text-align:justify">&nbsp;</p>
+
+<p style="margin-left:36.0pt; margin-right:0cm; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">3.&nbsp; Transport Aircraft:</span></span></p>
+
+<ul>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Do-228</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">HS-748</span></span></li>
+</ul>
+
+<p style="margin-left:36.0pt; margin-right:0cm; text-align:justify">&nbsp;</p>
+
+<p style="margin-left:36.0pt; margin-right:0cm; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">4.&nbsp; Helicopters:</span></span></p>
+
+<ul>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Advanced Light Helicopter (ALH)</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Chetak</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Cheetah</span></span></li>
+	<li style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Cheetal</span></span></li>
+</ul>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">HAL is also manufacturing Engines, Communication equipment, Navigation equipment, Display systems, Hydraulic systems, Electric equipment etc., required for aircraft/helicopters.</span></span><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Currently, out of the total airborne fleet in use by Indian Defence Services, HAL has supplied about 61% and is supporting 75% of all the aircrafts/helicopters.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222">This information was tabled in a written reply by Raksha Rajya Mantri Shri Shripad Naik to a question asked by</span> <span style="color:#222222">Shri Shyam Singh Yadav in Lok Sabha today.</span></span></span></p>
+
+<p style="margin-left:.75pt; margin-right:8.75pt; text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">Nampi/DK/Savvy/ADA</span></strong></span></span></p>
+
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="font-weight: 100; text-align: left; font-size: 16px;">
+                            (Release ID: 1707214)
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 200; text-align: center; font-size: 24px;"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="clearfix">
+        </div>
+
+        <div class="section1">
+            <div id="frst_t">
+                <div id="arr_rm"><div class='sticky-social_mb'><ul class='social_mb'><a href='http://www.facebook.com/share.php?u=https://pib.gov.in/PressReleasePage.aspx?PRID=1707214' target='_blank'><li class='fb_b'   ></li></a><a href='https://twitter.com/intent/tweet?url=https://pib.gov.in/PressReleasePage.aspx?PRID=1707214&text=Hindustan Aeronautics Limited (HAL)' target='_blank'><li class='twitter_r'  > </li></a><a href='https://api.whatsapp.com/send?text=https://pib.gov.in/PressReleasePage.aspx?PRID=1707214' target='_blank'><li class='whatsapp_r'  ></li></a><a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=Hindustan Aeronautics Limited (HAL)&body=https://pib.gov.in/PressReleasePage.aspx?PRID=1707214&ui=2&tf=1&pli=1' title='Share by Email' target='_blank'><li class='fa-envelope_r' ></li></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https://pib.gov.in/PressReleasePage.aspx?PRID=1707214&title=Hindustan Aeronautics Limited (HAL)&summary=My%20favorite%20developer%20program&source=LinkedIn' target='_blank'><li class='fa-linkedin_r'  ></li></a></ul></div></div>
+            </div>
+            <div id="second_t">
+                <div id="sndr_rm"><div class='sticky-social'><ul class='social'><a href='http://www.facebook.com/share.php?u=https://pib.gov.in/PressReleasePage.aspx?PRID=1707214' target='_blank'><li class='fb_b'   ></li></a><a href='https://twitter.com/intent/tweet?url=https://pib.gov.in/PressReleasePage.aspx?PRID=1707214&text=Hindustan Aeronautics Limited (HAL)' target='_blank'><li class='twitter_r'  > </li></a><a href='https://api.whatsapp.com/send?text=https://pib.gov.in/PressReleasePage.aspx?PRID=1707214' target='_blank'><li class='whatsapp_r'  ></li></a><a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=Hindustan Aeronautics Limited (HAL)&body=https://pib.gov.in/PressReleasePage.aspx?PRID=1707214&ui=2&tf=1&pli=1' title='Share by Email' target='_blank'><li class='fa-envelope_r' ></li></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https://pib.gov.in/PressReleasePage.aspx?PRID=1707214&title=Hindustan Aeronautics Limited (HAL)&summary=My%20favorite%20developer%20program&source=LinkedIn' target='_blank'><li class='fa-linkedin_r'  ></li></a></ul></div></div>
+            </div>
+        </div>
+        <input type="hidden" name="ltrTitlee" id="ltrTitlee" value="Hindustan Aeronautics Limited (HAL)" />
+        <input type="hidden" name="ltrSubtitlee" id="ltrSubtitlee" />
+        <input type="hidden" name="ltrDescriptionn" id="ltrDescriptionn" value="&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Business done by HAL in last ten years is as under:-&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:right&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Rs. In Crore&lt;/span>&lt;/span>&lt;/p>
+
+&lt;table border=&quot;1&quot; bordercolor=&quot;#ccc&quot; cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; class=&quot;MsoTableGrid&quot; style=&quot;border-collapse:collapse&quot;>
+	&lt;tbody>
+		&lt;tr>
+			&lt;td style=&quot;width:43.45pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Particulars&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.5pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2010-11&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.5pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2011-12&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.5pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2012-13&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2013-14&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2014-15&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2015-16&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2016-17&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2017-18&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2018-19&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2019-20&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td style=&quot;width:43.45pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Revenue from Operations&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.5pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>13124&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.5pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>14211&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.5pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>14328&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>15135&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>15730&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>16758&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>17950&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>18519&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>20008&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>21438&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td style=&quot;width:43.45pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Profit before tax&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.5pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2839&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.5pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>3328&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.5pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>3497&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>3578&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>3172&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>3207&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>3583&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>3240&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>3742&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:43.55pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>3928&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+	&lt;/tbody>
+&lt;/table>
+
+&lt;p style=&quot;text-align:justify&quot;>&amp;nbsp;&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>The list of defence equipment manufactured by HAL is given below:-&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&amp;nbsp;&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>1.&amp;nbsp; Fighters:&lt;/span>&lt;/span>&lt;/p>
+
+&lt;ul>
+	&lt;li style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Su-30MKI&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Light Combat Aircraft LCA&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>MiG-21/Bison&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Jaguar&lt;/span>&lt;/span>&lt;/li>
+&lt;/ul>
+
+&lt;p style=&quot;margin-left:72.0pt; margin-right:0cm; text-align:justify&quot;>&amp;nbsp;&lt;/p>
+
+&lt;p style=&quot;margin-left:36.0pt; margin-right:0cm; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2.&amp;nbsp; Trainers:&lt;/span>&lt;/span>&lt;/p>
+
+&lt;ul>
+	&lt;li style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Kiran MK I/II&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Hawk&lt;/span>&lt;/span>&lt;/li>
+&lt;/ul>
+
+&lt;p style=&quot;margin-left:72.0pt; margin-right:0cm; text-align:justify&quot;>&amp;nbsp;&lt;/p>
+
+&lt;p style=&quot;margin-left:36.0pt; margin-right:0cm; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>3.&amp;nbsp; Transport Aircraft:&lt;/span>&lt;/span>&lt;/p>
+
+&lt;ul>
+	&lt;li style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Do-228&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>HS-748&lt;/span>&lt;/span>&lt;/li>
+&lt;/ul>
+
+&lt;p style=&quot;margin-left:36.0pt; margin-right:0cm; text-align:justify&quot;>&amp;nbsp;&lt;/p>
+
+&lt;p style=&quot;margin-left:36.0pt; margin-right:0cm; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>4.&amp;nbsp; Helicopters:&lt;/span>&lt;/span>&lt;/p>
+
+&lt;ul>
+	&lt;li style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Advanced Light Helicopter (ALH)&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Chetak&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Cheetah&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Cheetal&lt;/span>&lt;/span>&lt;/li>
+&lt;/ul>
+
+&lt;p style=&quot;text-align:justify&quot;>&amp;nbsp;&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>HAL is also manufacturing Engines, Communication equipment, Navigation equipment, Display systems, Hydraulic systems, Electric equipment etc., required for aircraft/helicopters.&lt;/span>&lt;/span>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Currently, out of the total airborne fleet in use by Indian Defence Services, HAL has supplied about 61% and is supporting 75% of all the aircrafts/helicopters.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>This information was tabled in a written reply by Raksha Rajya Mantri Shri Shripad Naik to a question asked by&lt;/span> &lt;span style=&quot;color:#222222&quot;>Shri Shyam Singh Yadav in Lok Sabha today.&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;margin-left:.75pt; margin-right:8.75pt; text-align:justify&quot;>&amp;nbsp;&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>&lt;span style=&quot;color:black&quot;>Nampi/DK/Savvy/ADA&lt;/span>&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+" />
+        <script type="text/javascript">
+                  var mPlayer = document.getElementById("background_music");
+                  var mPlayAction = document.getElementById("playbutton");
+                  var isPlaying = false;
+
+                  function playAudio() {
+                        mPlayer.play();
+                        isPlaying = true;
+                        document.getElementById('stopA').style.display = "block";
+                        document.getElementById('playA').style.display = "none";
+                  }
+
+                  function pauseAudio() {
+                        mPlayer.pause();
+                        isPlaying = false;
+                        document.getElementById('playA').style.display = "block";
+                        document.getElementById('stopA').style.display = "none";
+                  }
+        </script>
+        <script type="text/javascript">
+                  var synth = window.speechSynthesis;
+
+                  function CleanHtml(html) {
+                        html = html.replace(/<script[\s\S]*?<\/script>/gi, '');
+                        return html;
+                  }
+                  function stripHtml(html) {
+                        let tmp = document.createElement("DIV");
+                        tmp.innerHTML = CleanHtml(html);
+                        return tmp.textContent || tmp.innerText || "";
+                  }
+        </script>
+        <script type="text/javascript">
+                  $(document).ready(function () {
+                        $("table").each(function () {
+                              if (!$(this).closest(".table-responsive").length) {
+                                    $(this).wrap("<div class='table-responsive'></div>");
+                              }
+                        });
+
+                        var width = $(window).width();
+                        if (width < 768) {
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+                        } else if (width < 991) {
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+                        } else if (width < 1199) {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                        } else {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                        }
+                  });
+        </script>
+        <style type="text/css">
+            @media print {
+                .sticky-social, .sticky-social_mb, .pull-right, #printPDF {
+                    display: none !important;
+                }
+            }
+
+            .f_vl {
+                padding-right: 30px;
+                font-size: 17px;
+                cursor: pointer;
+            }
+
+            .log_oo {
+                display: flex;
+                justify-content: space-between;
+            }
+
+                .log_oo img {
+                    width: 150px;
+                }
+
+            .sticky-social_mb {
+                position: fixed;
+                bottom: 0px;
+                padding: 0px;
+                margin: 0px;
+                width: 100%;
+            }
+
+            .social_mb {
+                list-style: none;
+                display: flex;
+                width: 100%;
+                margin-bottom: -8px;
+            }
+
+                .social_mb a {
+                    padding: 8px 0px;
+                    font-size: 30px;
+                    transition: all 0.8s ease-in-out;
+                    width: 20% !important;
+                    text-align: center;
+                }
+        </style>
+        <style type="text/css">
+            .section1 {
+                position: relative;
+                padding: 10px 0px;
+                width: 100%;
+            }
+
+            .sticky-social {
+                position: fixed;
+                top: 20px;
+                left: 0px;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .social {
+                list-style: none;
+            }
+
+                .social a li {
+                    padding: 8px 12px;
+                    font-size: 25px;
+                    transition: all 0.8s ease-in-out;
+                }
+
+                    .social a li:hover {
+                        margin-right: -30px;
+                        box-shadow: 2px 5px 10px grey;
+                    }
+
+                        .social a li:hover .fa {
+                            margin-left: 20px;
+                        }
+
+            .fb_b {
+                background-color: var(--dbim-key, #0F5757);
+            }
+
+            .twitter_r {
+                background-color: var(--dbim-key, #0F5757);
+            }
+
+            .whatsapp_r {
+                background-color: var(--dbim-key, #0F5757);
+            }
+
+            .fa-envelope_r {
+                background-color: var(--dbim-key, #0F5757);
+            }
+
+            .fa-linkedin_r {
+                background-color: var(--dbim-key, #0F5757);
+            }
+        </style>
+        <style type="text/css">
+            @media only screen and (max-device-width: 767px) {
+                p span img {
+                    max-width: 90% !important;
+                    height: auto !important;
+                }
+
+                p img {
+                    max-width: 90% !important;
+                    height: auto !important;
+                }
+
+                h2 {
+                    font-size: var(--dbim-h2, 20px);
+                    font-weight: 600 !important;
+                }
+
+                h3 {
+                    font-size: var(--dbim-h3, 16px);
+                    font-weight: 600 !important;
+                }
+            }
+        </style>
+        <style type="text/css">
+            .film-roll-badge {
+                position: absolute;
+                top: 82%;
+                right: 20px;
+                width: 230px;
+                height: 70px;
+                background: repeating-linear-gradient( to right, var(--dbim-green-key, #0F5757) 0px, var(--dbim-green-key, #0F5757) 18px, var(--dbim-text, #150202) 18px, var(--dbim-text, #150202) 36px );
+                border-top: 8px solid var(--dbim-green-key, #0F5757);
+                border-bottom: 8px solid var(--dbim-green-key, #0F5757);
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+                animation: moveFilm 8s linear infinite;
+                z-index: 10;
+            }
+
+                .film-roll-badge::before,
+                .film-roll-badge::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 10px;
+                    background: repeating-linear-gradient( to right, var(--dbim-green-key, #0F5757) 0px, var(--dbim-green-key, #0F5757) 10px, #fff 10px, #fff 20px );
+                    left: 0;
+                    z-index: 2;
+                }
+
+                .film-roll-badge::before {
+                    top: -4px;
+                }
+
+                .film-roll-badge::after {
+                    bottom: -4px;
+                }
+
+            .film-roll-inner {
+                position: relative;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                animation: flicker 2s infinite ease-in-out;
+            }
+
+            .countdown-text {
+                font-size: 1.3rem;
+                font-weight: 700;
+                color: #fff;
+                text-shadow: 0 0 6px rgba(255, 255, 255, 0.4), 0 0 10px #000;
+                white-space: nowrap;
+            }
+
+            @keyframes moveFilm {
+                0% {
+                    background-position: 0 0;
+                }
+
+                100% {
+                    background-position: 120px 0;
+                }
+            }
+
+            @keyframes flicker {
+                0%, 100% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0.9;
+                }
+
+                25% {
+                    opacity: 0.95;
+                }
+
+                75% {
+                    opacity: 0.85;
+                }
+            }
+
+            @media (max-width: 1500px) {
+                .film-roll-badge {
+                    top: 68%;
+                    right: 18px;
+                    height: 65px;
+                    font-size: 0.85rem;
+                }
+
+                .press-section {
+                    margin-top: 35px;
+                }
+            }
+
+            @media (max-width: 992px) {
+                .film-roll-badge {
+                    top: 52%;
+                    right: 10px;
+                    width: 200px;
+                    height: 60px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .film-roll-badge {
+                    top: 56%;
+                    right: 10px;
+                    width: 124px;
+                    height: 55px;
+                }
+
+                .countdown-text {
+                    font-size: 0.9rem;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .film-roll-badge {
+                    top: 59%;
+                    right: 5px;
+                    height: 50px;
+                }
+
+                .countdown-text {
+                    font-size: 0.85rem;
+                }
+            }
+        </style>
+        <script type="text/javascript">
+                  const festivalStart = new Date("2025-11-20T00:00:00").getTime();
+                  const festivalEnd = new Date("2025-11-28T23:59:59").getTime();
+                  const countdownElement = document.getElementById("countdown");
+
+                  if (countdownElement) {
+                        const interval = setInterval(() => {
+                              const now = new Date().getTime();
+
+                              if (now < festivalStart) {
+                                    const diff = festivalStart - now;
+                                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                                    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+                                    countdownElement.innerHTML = `${days} Day${days !== 1 ? 's' : ''} ${hours} Hour${hours !== 1 ? 's' : ''} to go`;
+                              } else if (now >= festivalStart && now <= festivalEnd) {
+                                    const dayNumber = Math.floor((now - festivalStart) / (1000 * 60 * 60 * 24)) + 1;
+                                    countdownElement.innerHTML = `56th IFFI - Day ${dayNumber}`;
+                              } else {
+                                    countdownElement.innerHTML = `✨ IFFI closes but never ends…`;
+                                    const elements = document.querySelectorAll('.film-roll-badge');
+                                    elements.forEach(el => el.style.width = "350px");
+                                    clearInterval(interval);
+                              }
+                        }, 1000);
+                  }
+        </script>
+        <script type="text/javascript">
+                  const miffStart = new Date("2026-06-15T00:00:00").getTime();
+                  const miffEnd = new Date("2026-06-15T23:59:59").getTime();
+                  const miffElement = document.getElementById("miff");
+
+                  if (miffElement) {
+                        const miffInterval = setInterval(() => {
+                              const now = new Date().getTime();
+
+                              if (now < miffStart) {
+                                    const diff = miffStart - now;
+                                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                                    miffElement.innerHTML = `${days} Day${days === 1 ? '' : 's'} to MIFF ...`;
+                              } else if (now >= miffStart && now <= miffEnd) {
+                                    const dayNumber = Math.floor((now - miffStart) / (1000 * 60 * 60 * 24)) + 1;
+                                    miffElement.innerHTML = `19th MIFF - Day ${dayNumber}`;
+                              } else {
+                                    miffElement.innerHTML = `✨ MIFF concludes, cinema lives on...`;
+                                    document.querySelectorAll('.film-roll-badge').forEach(el => el.style.width = "350px");
+                                    clearInterval(miffInterval);
+                              }
+                        }, 1000);
+                  }
+        </script>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("sc_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","PopupControlID":"P_CategoryManagement","dynamicServicePath":"/PressReleasePage.aspx","id":"mpe"}, null, null, $get("Hidden"));
+});
+//]]>
+</script>
+<input type="hidden" name="__ncforminfo" value="68y0eqYMhkQFJgaRbCMIg996JUwamf0nTOOS7df2j2Q1ftzA6U01VJQR_m7UUgAlfuqHcXVOWLuYTG77hQ2oXMaT1bDnkikvkLu3BC6bh2_BQVqDYu444Q=="/></form>
+    
+
+<script type="application/json" id="pibConsentConfig">{"ga4Id":"G-Q414Y0X6EE,G-QJJ6LZ8LHV","policyUrl":"/CookiePolicy.aspx","text":{"bannerLabel":"Cookie consent","title":"Cookies on this website","body":"We use essential cookies to make this website work. We also set analytics cookies when you arrive, so we can see how the site is used and improve it - you can switch these off below or at any time from the Cookie Policy page. Cookies from embedded social media content are set only if you allow them.","policyLink":"Read our Cookie Policy","accept":"Accept all","reject":"Reject optional","customize":"Customise","prefsTitle":"Cookie preferences","prefsIntro":"Choose which cookies this website may set. Essential cookies cannot be switched off because the site does not work without them. Analytics cookies are on unless you turn them off. Social media cookies stay off until you allow them. You can change these choices at any time from the Cookie Policy page.","essentialName":"Essential cookies","essentialDesc":"Needed for the site to function. These remember your session, your language and region, your text size and colour theme, and verify the security check on forms. They are always on.","analyticsName":"Analytics cookies","analyticsDesc":"Help us understand how visitors use the site - which pages are read and how long people stay - so it can be improved. The information is collected in a form that does not directly identify you. These are on when you arrive; switching them off here stops them and deletes the ones already set.","socialName":"Social media cookies","socialDesc":"Set by content embedded from X, Facebook and YouTube, such as timelines and videos. These platforms may use them to track you across websites. They stay off until you allow them.","save":"Save preferences","cancel":"Cancel"}}</script>
+<script type="text/javascript" src='/js/consent.js?v=10'></script>
+
+<script type="text/javascript" src='/js/consent-embeds.js?v=10'></script>
+
+
+    <!-- Minimal O(N) Time and O(1) Auxiliary Space Word Count & Read Time Calculation -->
+    <script type="text/javascript">
+            (function () {
+                  function calculateReadingStats() {
+                        var bodyEl = document.getElementById("pibReleaseBody");
+                        if (!bodyEl) return;
+
+                        // textContent extracts text without triggering expensive layout/reflow computations
+                        var text = bodyEl.textContent || "";
+                        var words = 0;
+                        var inWord = false;
+
+                        // O(N) single pass character code scan: achieves O(1) space with zero array allocations
+                        for (var i = 0, len = text.length; i < len; i++) {
+                              var code = text.charCodeAt(i);
+                              // Delimits on ASCII whitespace, control characters, tabs, newlines, and non-breaking spaces (160)
+                              if (code <= 32 || code === 160) {
+                                    inWord = false;
+                              } else if (!inWord) {
+                                    inWord = true;
+                                    words++;
+                              }
+                        }
+
+                        // Standard 250 WPM reading speed (e.g., 612 words yields 2 min read)
+                        var minutes = Math.max(1, Math.round(words / 250));
+
+                        var elWords = document.getElementById("prWordCount");
+                        var elTime = document.getElementById("prReadTime");
+
+                        if (elWords) elWords.textContent = words + (words === 1 ? " word" : " words");
+                        if (elTime) elTime.textContent = minutes + " min read";
+                  }
+
+                  if (document.readyState === "loading") {
+                        document.addEventListener("DOMContentLoaded", calculateReadingStats);
+                  } else {
+                        calculateReadingStats();
+                  }
+            })();
+    </script>
+
+    <script type="text/javascript">
+            (function () {
+                  try {
+                        if (window.self === window.top) { return; }
+                  } catch (e) { return; }
+                  var s = document.createElement("style");
+                  s.textContent = ".sticky-social, .sticky-social_mb { display: none !important; }";
+                  (document.head || document.documentElement).appendChild(s);
+            }());
+    </script>
+</body>
+</html>
