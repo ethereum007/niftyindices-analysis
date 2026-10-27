@@ -18,10 +18,10 @@ SEEDS=[
  ('DYNAMATECH','Precision components','https://www.dynamatics.com/aerospace.aspx','Flight-critical aerostructures for aerospace OEMs establish precision-aerospace exposure; the parent also serves civil aerospace and other businesses.',['aerostruct','airbus']),
  ('IDEAFORGE','Drones','https://ideaforgetech.com/lp/indigenize-with-ideaforge','UAV products serving armed forces and industrial applications establish dual-use drone exposure.',['armed forces','drone'])]
 
-def archive(seed,identities):
+def archive(seed,identities,reviewed_on='2026-10-27'):
     symbol,subtheme,url,rationale,keywords=seed
     record={'symbol':symbol,'subtheme':subtheme,'source_url':url,'rationale':rationale,
-            'reviewed_on':'2026-10-27','effective_date':None,'exposure_materiality':'Not quantified',
+            'reviewed_on':reviewed_on,'effective_date':None,'exposure_materiality':'Not quantified',
             'identity_source':identities[symbol].get('identity_source','Current official Nifty constituent archive; not historical membership'),
             **{k:identities[symbol][k] for k in ('company','isin')}}
     try:

@@ -1,0 +1,108 @@
+{
+  "family": "manufacturing",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-28",
+  "note": "Five independently researched examples, not an exhaustive manufacturing universe. Company exposure is distinct from the use of manufacturing technology internally. No weights, historical membership or fundamental statistics inferred. Keyword checks validate archive content only; source claims require research review.",
+  "members": [
+    {
+      "symbol": "KAYNES",
+      "subtheme": "Electronics manufacturing",
+      "source_url": "https://kaynestechnology.co.in/",
+      "rationale": "Integrated electronics manufacturing and design services establish manufacturing exposure; this overlaps the AI examples without implying AI-specific revenue.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Kaynes Technology India Ltd.",
+      "isin": "INE918Z01012",
+      "resolved_url": "https://kaynestechnology.co.in/",
+      "sha256": "a15c7b9c639a1b6629f38de8b34bfce671f7f2bd899a3a39e98a7c1d533540f0",
+      "retrieved_utc": "2026-10-27T18:43:06.597005+00:00",
+      "keyword_checks": {
+        "electronics": true,
+        "manufactur": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "ABB",
+      "subtheme": "Industrial automation",
+      "source_url": "https://www.abb.com/global/en/news/135616/abb-india-posts-solid-start-to-cy2026-with-strong-order-momentum-in-first-jan-mar-quarter",
+      "rationale": "ABB India disclosed industrial automation projects and electrification/motion business activity. No separate group subsidiary or robotics revenue is attributed to the listed company.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "ABB India Ltd.",
+      "isin": "INE117A01022",
+      "resolved_url": "https://www.abb.com/global/en/news/135616/abb-india-posts-solid-start-to-cy2026-with-strong-order-momentum-in-first-jan-mar-quarter",
+      "sha256": "768b61214d7e42e1b3bcd386b1e42ee88653b6ef13e0443151014707d9ee8e22",
+      "retrieved_utc": "2026-10-27T18:43:05.631984+00:00",
+      "keyword_checks": {
+        "abb india": true,
+        "automation": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "LT",
+      "subtheme": "Capital equipment",
+      "source_url": "https://www.larsentoubro.com/heavy-engineering/about-us/",
+      "rationale": "Larsen & Toubro heavy engineering manufactures engineered-to-order industrial equipment within a diversified parent. This does not quantify manufacturing revenue share.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Larsen & Toubro Ltd.",
+      "isin": "INE018A01030",
+      "resolved_url": "https://www.larsentoubro.com/heavy-engineering/about-us",
+      "sha256": "4a2819411be36e9df2e890df01fe5c80124ecd2ad1d782ced9b96c1e6de2bffe",
+      "retrieved_utc": "2026-10-27T18:43:05.496865+00:00",
+      "keyword_checks": {
+        "equipment": true,
+        "engineering": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "DYNAMATECH",
+      "subtheme": "Precision engineering",
+      "source_url": "https://www.dynamatics.com/aerospace.aspx",
+      "rationale": "Complex flight-critical aerostructures establish precision manufacturing exposure, including both defence and civil customers.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Dynamatic Technologies Ltd.",
+      "isin": "INE221B01012",
+      "resolved_url": "https://www.dynamatics.com/aerospace.aspx",
+      "sha256": "ca0da8c9cfe2f90f2ff38ad7758371f75d191d280bf61405502bd6e1c622c00e",
+      "retrieved_utc": "2026-10-27T18:43:06.698648+00:00",
+      "keyword_checks": {
+        "aerostruct": true,
+        "airbus": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "DIXON",
+      "subtheme": "Contract manufacturing",
+      "source_url": "https://www.dixoninfo.com/innovation-hub/digital-transformation",
+      "rationale": "Dixon describes electronics manufacturing services and its manufacturing operations; automation used internally does not establish an automation-products business.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Dixon Technologies (India) Ltd.",
+      "isin": "INE935N01020",
+      "resolved_url": "https://www.dixoninfo.com/innovation-hub/digital-transformation",
+      "sha256": "b7ec2d3488366d73b901052f4531839f8e286ba8524899c4fb78064302f28b09",
+      "retrieved_utc": "2026-10-27T18:43:06.126326+00:00",
+      "keyword_checks": {
+        "manufacturing": true,
+        "ems": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}
