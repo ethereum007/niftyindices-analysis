@@ -1,0 +1,119 @@
+{
+  "family": "capitalmarkets",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-28",
+  "note": "Five proposed service-provider examples, not an exhaustive financialisation universe. Regulatory/company evidence establishes business role, not customer popularity, AUM rankings, revenue materiality or future performance. No client records, paid holdings, current market-share claims, weights or historical membership inferred.",
+  "members": [
+    {
+      "symbol": "BSE",
+      "subtheme": "Exchanges & depositories",
+      "source_url": "https://www.sebi.gov.in/stock-exchanges.html",
+      "rationale": "The regulator lists BSE as a recognised stock exchange. This establishes exchange exposure only; no current depository ownership, transaction volume or market share is inferred.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "BSE Ltd.",
+      "isin": "INE118H01025",
+      "resolved_url": "https://www.sebi.gov.in/stock-exchanges.html",
+      "sha256": "e92915031e622ecc03348977337452179feda1db6bc5f5991776c20414e3f61e",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T21:43:31.154606+00:00",
+      "keyword_checks": {
+        "bse": true,
+        "exchange": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "ANGELONE",
+      "subtheme": "Brokers",
+      "source_url": "https://www.angelone.in/aboutus",
+      "rationale": "Stock-broking services establish brokerage exposure. No customer-growth rate, trading-volume sensitivity or investment recommendation is inferred.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Angel One Ltd.",
+      "isin": "INE732I01021",
+      "resolved_url": "https://www.angelone.in/aboutus",
+      "sha256": "5a90fed01711ee3d9a8f8206589df4cd58db8177433815aa005c4652d1c79014",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T21:43:30.991018+00:00",
+      "keyword_checks": {
+        "broking": true,
+        "angel": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "HDFCAMC",
+      "subtheme": "Asset managers",
+      "source_url": "https://files.hdfcfund.com/s3fs-public/2026-07/NSEBSE_30.pdf",
+      "rationale": "HDFC Asset Management Company is identified as the mutual-fund manager. Fund assets under management are not corporate revenue, company market capitalisation or guaranteed earnings.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "HDFC Asset Management Company Ltd.",
+      "isin": "INE127D01025",
+      "resolved_url": "https://files.hdfcfund.com/s3fs-public/2026-07/NSEBSE_30.pdf",
+      "sha256": "cdd3b3c374bb7a1277e68169538e9c562c69b0d902ef7a649a2975ce10819c61",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-27T21:43:31.225231+00:00",
+      "evidence_pages": [
+        35,
+        36,
+        37,
+        39
+      ],
+      "keyword_checks": {
+        "asset management": true,
+        "mutual fund": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "CAMS",
+      "subtheme": "Registrars & platforms",
+      "source_url": "https://www.camsonline.com/Annual_Report/FY2024-2025/about-cams.html",
+      "rationale": "The listed company annual report describes registrar/transfer-agent and financial-infrastructure services. It is not classified as the investment manager of serviced funds.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Computer Age Management Services Ltd.",
+      "isin": "INE596I01020",
+      "resolved_url": "https://www.camsonline.com/Annual_Report/FY2024-2025/about-cams.html",
+      "sha256": "ac59872f64bc54ad6975706ab4a9d51f47bda4ae45fd4bdd48ec13246c32fa3d",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T21:43:31.302216+00:00",
+      "keyword_checks": {
+        "registrar": true,
+        "transfer": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "NUVAMA",
+      "subtheme": "Wealth management",
+      "source_url": "https://www.nuvama.com/about-us/",
+      "rationale": "The listed wealth-management group describes advisory, investment and related wealth services. Client assets or group business descriptions are not attributed as direct parent-company revenue.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Nuvama Wealth Management Ltd.",
+      "isin": "INE531F01023",
+      "resolved_url": "https://www.nuvama.com/about-us/",
+      "sha256": "603bad5887745e897c9b6d71535de2fae28f11c37a4107a28bce926c933f27d1",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T21:43:31.408625+00:00",
+      "keyword_checks": {
+        "wealth": true,
+        "management": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}
