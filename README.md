@@ -53,3 +53,9 @@ Exhaustive weekend file discovery uses `--sessions nifty-automation/weekend-cand
 ## Completed five-year discovery audit
 
 All 1,305 weekday and 522 weekend candidates checked. Six official-notice-backed weekend sessions are included. The 70 unavailable weekdays reconcile to 69 directly verified closures and one separately labelled corroborated closure. All other unavailable responses remain unavailable-file states; no holiday is inferred from absence. All 29 Python tests, 14,252 browser/Python comparisons, requested-horizon/sector/CAGR/CSV/mobile checks, raw checksums and consistent backup integrity passed. Dashboard coverage labels show the exact audited range. The private hosted dashboard is still a published snapshot; automatic local downloads require the scheduled Windows PC task.
+
+## Equity, debt and index constituents
+
+The dashboard defaults to Equity, with separate Debt / Fixed income and Other instruments tabs. Each has its own available snapshot dates and ranking universe. Click an index for its performance rank, benchmark comparison and available current published constituent list.137 membership lists are archived; all34 sectoral indices are covered. Stock daily moves use official NSE closes dated26 October2026, matched by ISIN and symbol. Current membership has a retrieval date, not an inferred historical effective date. Corporate actions can affect unadjusted price changes, and weighted contribution is not estimated. Bond-level constituents and unavailable company lists remain explicitly unavailable.
+
+Refresh commands: `python nifty-automation/fetch_constituents.py`, `python nifty-automation/fetch_stock_snapshot.py --date YYYY-MM-DD`, then `python index-intelligence/build_dashboard.py`. These additional fetchers are not connected to a cloud scheduler.34 Python tests and browser segregation/drill-down/mobile checks passed.

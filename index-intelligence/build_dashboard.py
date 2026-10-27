@@ -67,7 +67,11 @@ def build(db, root, out):
     observations=prepare(observations)
     coverage_file=root/'coverage-audit.json'
     coverage=json.loads(coverage_file.read_text(encoding='utf-8')) if coverage_file.exists() else None
-    payload={**pack_rows(observations),'coverage':coverage,
+    members_file=root/'constituents/latest.json'
+    stocks_file=root/'stocks/latest.json'
+    members=json.loads(members_file.read_text(encoding='utf-8')) if members_file.exists() else None
+    stocks=json.loads(stocks_file.read_text(encoding='utf-8')) if stocks_file.exists() else None
+    payload={**pack_rows(observations),'coverage':coverage,'constituents':members,'stocks':stocks,
              'batches':[dict(r) for r in db.execute('SELECT * FROM batches ORDER BY observation_date')],
              'generated':datetime.now(timezone.utc).isoformat(),
              'periods':list(PERIODS),'targets':{d:{k:target_date(date.fromisoformat(d),k).isoformat() for k in PERIODS} for d in sorted({r['date'] for r in observations})}}

@@ -1,3 +1,6 @@
 nifty-automation/data/raw/** -text
 *.sqlite binary
 *.png binary
+nifty-automation/data/constituents/raw/** -text
+nifty-automation/data/stocks/raw/** -text
+*.zip binary

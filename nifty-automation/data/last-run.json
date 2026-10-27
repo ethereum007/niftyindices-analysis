@@ -2,20 +2,20 @@
   "status": "ok",
   "imports": [
     {
-      "status": "unchanged",
+      "status": "loaded",
       "rows": 167,
-      "date": "2026-10-16",
-      "sha": "0ec4b642fc4d13ce901c0ae8ada4f262f0363d2ac1382a2ab1ed292f2c506728"
+      "date": "2026-10-23",
+      "sha": "ab72ff5e441a84057dd8ccb44232d168616a4deeca7266d1c762583beeb0e635"
     },
     {
-      "status": "unchanged",
-      "rows": 167,
-      "date": "2026-10-19",
-      "sha": "ebff93c77dc6cdf82f1536a92c36a611a644fa6f87e267aa7c2ed5edfcf46502"
+      "status": "loaded",
+      "rows": 151,
+      "date": "2026-10-26",
+      "sha": "54c5c6a96b0145729b304afcdb3832ec5ccd24a662fdc613430cc5d5eed565c3"
     }
   ],
   "errors": [],
-  "as_of": "2026-10-19",
-  "indices": 167,
+  "as_of": "2026-10-26",
+  "indices": 151,
   "report": "C:\\Users\\kiran\\Documents\\Codex\\2026-10-20\\we-d\\outputs\\nifty-automation\\data\\reports\\latest.html"
 }
