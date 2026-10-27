@@ -1,0 +1,108 @@
+{
+  "family": "cleanenergy",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-28",
+  "note": "Five proposed company examples for energy-transition/grid research, not an exhaustive clean-energy universe or pure-play revenue screen. Subsidiary exposure and conventional-energy operations are explicitly retained. Archive keyword checks are not an automated exposure classifier; failed checks remain pending. No adjusted history, fundamentals, weights or historical membership inferred.",
+  "members": [
+    {
+      "symbol": "WAAREEENER",
+      "subtheme": "Solar value chain",
+      "source_url": "https://www.waaree.com/press-release/waaree-energies-emerges-as-indias-largest-almm-approved-solar-manufacturer-crossing-20-gw/",
+      "rationale": "Solar-module manufacturing establishes solar supply-chain exposure. No generation-utility or full-group revenue is attributed to the listed entity.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Waaree Energies Ltd.",
+      "isin": "INE377N01017",
+      "resolved_url": "https://www.waaree.com/press-release/waaree-energies-emerges-as-indias-largest-almm-approved-solar-manufacturer-crossing-20-gw/",
+      "sha256": "ec3a0635d376004db6f034f5b8ea5b37516ad025621213efc96f3cee0c09a068",
+      "retrieved_utc": "2026-10-27T19:43:09.128228+00:00",
+      "keyword_checks": {
+        "solar": true,
+        "module": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "SUZLON",
+      "subtheme": "Wind equipment",
+      "source_url": "https://www.suzlon.com/our-businesses/products/wind/",
+      "rationale": "Wind-turbine generator products establish wind-equipment exposure; stock-price changes do not measure wind project economics.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Suzlon Energy Ltd.",
+      "isin": "INE040H01021",
+      "resolved_url": "https://www.suzlon.com/our-businesses/products/wind/",
+      "sha256": "0b1174bb5271c5b61cf25d607d8f2d20ac4c5c960f0e2f6aa03388a439e02914",
+      "retrieved_utc": "2026-10-27T19:43:08.977929+00:00",
+      "keyword_checks": {
+        "wind": true,
+        "turbine": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "EXIDEIND",
+      "subtheme": "Storage & batteries",
+      "source_url": "https://www.exideindustries.com/about/subsidiaries.aspx",
+      "rationale": "Stationary energy storage and lithium-ion modules/packs are disclosed through Exide subsidiaries. The parent also has conventional battery businesses; lithium-ion revenue materiality and commissioning status are not inferred.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Exide Industries Ltd.",
+      "isin": "INE302A01020",
+      "resolved_url": "https://www.exideindustries.com/about/subsidiaries.aspx",
+      "sha256": "3ec173f1ffcc79786bb9ba0852ea4433f2d5332ea2aa8f181e0170ae3ace8e54",
+      "retrieved_utc": "2026-10-27T19:43:08.006407+00:00",
+      "keyword_checks": {
+        "li-ion": true,
+        "stationary": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "CGPOWER",
+      "subtheme": "Transmission equipment",
+      "source_url": "https://www.cgglobal.com/about_cg",
+      "rationale": "Power transformers and switchgear establish transmission-equipment exposure within a diversified company. This overlaps AI examples without establishing renewable-only revenue.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "CG Power and Industrial Solutions Ltd.",
+      "isin": "INE067A01029",
+      "resolved_url": "https://www.cgglobal.com/about_cg",
+      "sha256": "396e3b896d6f4b8496c14a4b56933f6807eddb2d4cc55da8c6992f1451f3d90e",
+      "retrieved_utc": "2026-10-27T19:43:08.710027+00:00",
+      "keyword_checks": {
+        "transformer": false,
+        "switchgear": false
+      },
+      "status": "manual_page_review_required"
+    },
+    {
+      "symbol": "POWERGRID",
+      "subtheme": "Grid modernisation",
+      "source_url": "https://www.powergrid.in/en/transmission",
+      "rationale": "Transmission-asset operations and adoption of technology establish grid infrastructure exposure. Not all transmission assets are dedicated to renewable energy.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Power Grid Corporation of India Ltd.",
+      "isin": "INE752E01010",
+      "resolved_url": "https://www.powergrid.in/en/transmission",
+      "sha256": "54022539ff26f8e346535ee3cfcc5d8ec8f53967318b7ef0e8645a13d4ccc44d",
+      "retrieved_utc": "2026-10-27T19:43:09.125102+00:00",
+      "keyword_checks": {
+        "transmission": true,
+        "technology": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}
