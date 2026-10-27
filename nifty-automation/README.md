@@ -2,7 +2,7 @@
 
 
 
-Python 3.10+, no external dependencies. No database credentials needed.
+Core daily pipeline: Python 3.10+ standard library; no database credentials needed. Optional PDF evidence research and its PDF test require `pip install -r requirements-research.txt`.
 
 
 
@@ -100,3 +100,6 @@ python backfill_daily.py --max-requests 48
 ```
 
 The tool resumes backwards from the latest stored date over five calendar years, skips accepted dates and previously recorded unavailable/rejected responses, and persists source URLs, timestamps, statuses and raw-response checksums in data/daily-backfill.json. Use --retry-unavailable to revisit those statuses, and --from-date/--to-date for a smaller range. HTTP 401/403/429 stops the batch; network failures remain retryable. Weekday candidate discovery does not audit special weekend sessions or prove holidays. It is not installed as a separate recurring download task: the 30-minute Codex continuation invokes bounded batches.
+
+
+Energy/grid evidence research (28 October 2026): research_energy.py records five current examples, including ABB India distribution equipment rather than attributing a separate high-voltage transmission business. CG URLs currently return an application shell even at the PDF path; those original responses remain archived and never count as verified product evidence. The shared archiver detects real PDF bytes, preserves the .pdf original, extracts bounded text/pages with pypdf and leaves missing text unverified.

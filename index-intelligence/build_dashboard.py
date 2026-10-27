@@ -65,7 +65,9 @@ def load_family_members(root):
             if member['status']=='evidence_archived':
                 sha=member['sha256']
                 if not re.fullmatch('[0-9a-f]{64}',sha):raise ValueError('Invalid evidence hash')
-                raw=(file.parent/'raw'/(sha+'.html')).read_bytes()
+                extension=member.get('raw_extension','html')
+                if extension not in ('html','pdf'):raise ValueError('Unsupported evidence extension')
+                raw=(file.parent/'raw'/(sha+'.'+extension)).read_bytes()
                 if hashlib.sha256(raw).hexdigest()!=sha:raise ValueError('Changed primary evidence: '+family)
         result[family]=data
     return result

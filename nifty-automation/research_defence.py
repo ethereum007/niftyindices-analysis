@@ -5,6 +5,7 @@ This creates a review dataset, not historical membership or a complete defence u
 import concurrent.futures
 import hashlib
 import json
+import io
 from pathlib import Path
 from datetime import datetime, timezone
 from urllib.request import Request,urlopen
@@ -30,9 +31,17 @@ def archive(seed,identities,reviewed_on='2026-10-27'):
             if len(raw)>8_000_000:raise ValueError('Evidence page exceeds bounded archive size')
             if response.status!=200:raise ValueError('Non-200 evidence page')
             record['resolved_url']=response.url
-        sha=hashlib.sha256(raw).hexdigest();(ROOT/'raw'/f'{sha}.html').write_bytes(raw)
-        record.update(sha256=sha,retrieved_utc=datetime.now(timezone.utc).isoformat())
-        content=raw.decode('utf-8',errors='replace').lower()
+        extension='pdf' if raw.startswith(b'%PDF-') else 'html'
+        sha=hashlib.sha256(raw).hexdigest();(ROOT/'raw'/f'{sha}.{extension}').write_bytes(raw)
+        record.update(sha256=sha,raw_extension=extension,retrieved_utc=datetime.now(timezone.utc).isoformat())
+        if extension=='pdf':
+            from pypdf import PdfReader
+            reader=PdfReader(io.BytesIO(raw))
+            if len(reader.pages)>500:raise ValueError('Evidence PDF exceeds bounded page count')
+            texts=[(page.extract_text() or '').lower() for page in reader.pages]
+            content='\n'.join(texts)
+            record['evidence_pages']=[i+1 for i,t in enumerate(texts) if all(k in t for k in keywords)]
+        else:content=raw.decode('utf-8',errors='replace').lower()
         record['keyword_checks']={k:k in content for k in keywords}
         record['status']='evidence_archived' if all(record['keyword_checks'].values()) else 'manual_page_review_required'
     except Exception as exc:record.update(status='fetch_failed',error=str(exc))

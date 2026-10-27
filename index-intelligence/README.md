@@ -18,7 +18,7 @@ Case and punctuation differences in index names are normalized for dashboard his
 
 ## Build and tests
 
-Python 3.10+; no external Python packages.
+Core build: Python 3.10+ standard library. Optional PDF evidence research/test dependency: `pip install -r ../nifty-automation/requirements-research.txt`.
 
 ```sh
 python build_dashboard.py
@@ -127,3 +127,7 @@ Five independently researched company examples now cover aerospace/engines (HAL)
 
 ## Manufacturing examples (28 October 2026 cadence)
 Five independently researched examples now cover electronics (Kaynes), industrial automation (ABB India), capital equipment (L&T), precision aerostructures (Dynamatic) and contract manufacturing (Dixon). Family manifests are embedded by family ID, preventing mixed membership. Sources retain unknown effective dates, unquantified materiality and dated ISIN+symbol prices. The builder rejects duplicate identities or changed primary-evidence hashes before publication. This remains bounded initial coverage, not a complete investable universe or backtest. Manufacturing, defence and catalogue browser regressions passed; family evidence/hash tests cover tampering and duplicate identities.
+
+
+## Energy transition & grid (28 October 2026 cadence)
+Five independent examples now cover solar modules(Waaree Energies), wind equipment(Suzlon), storage via subsidiaries(Exide), transmission/distribution equipment(ABB India, specifically distribution exposure) and grid infrastructure(PowerGrid). These are not a pure-play renewable revenue screen. Subsidiary/legacy battery and conventional-grid caveats are explicit. The earlier CG corporate/PDF routes returned a JS shell and stay unverified in prior evidence; ABB replaces it as the documented equipment example. Energy, manufacturing, defence and catalogue browser regressions cover all current-date quotes, historical suppression, source links and family isolation. Full universe/history/fundamentals remain pending.

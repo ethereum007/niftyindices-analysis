@@ -17,7 +17,8 @@
       "isin": "INE377N01017",
       "resolved_url": "https://www.waaree.com/press-release/waaree-energies-emerges-as-indias-largest-almm-approved-solar-manufacturer-crossing-20-gw/",
       "sha256": "ec3a0635d376004db6f034f5b8ea5b37516ad025621213efc96f3cee0c09a068",
-      "retrieved_utc": "2026-10-27T19:43:09.128228+00:00",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T20:13:38.879699+00:00",
       "keyword_checks": {
         "solar": true,
         "module": true
@@ -36,8 +37,9 @@
       "company": "Suzlon Energy Ltd.",
       "isin": "INE040H01021",
       "resolved_url": "https://www.suzlon.com/our-businesses/products/wind/",
-      "sha256": "0b1174bb5271c5b61cf25d607d8f2d20ac4c5c960f0e2f6aa03388a439e02914",
-      "retrieved_utc": "2026-10-27T19:43:08.977929+00:00",
+      "sha256": "095c74b4e9abcdb3d944c60e0c08b2e2cc6c285095a322bb72d9ea0fd1c4601b",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T20:13:39.821360+00:00",
       "keyword_checks": {
         "wind": true,
         "turbine": true
@@ -57,7 +59,8 @@
       "isin": "INE302A01020",
       "resolved_url": "https://www.exideindustries.com/about/subsidiaries.aspx",
       "sha256": "3ec173f1ffcc79786bb9ba0852ea4433f2d5332ea2aa8f181e0170ae3ace8e54",
-      "retrieved_utc": "2026-10-27T19:43:08.006407+00:00",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T20:13:38.620583+00:00",
       "keyword_checks": {
         "li-ion": true,
         "stationary": true
@@ -65,24 +68,25 @@
       "status": "evidence_archived"
     },
     {
-      "symbol": "CGPOWER",
-      "subtheme": "Transmission equipment",
-      "source_url": "https://www.cgglobal.com/about_cg",
-      "rationale": "Power transformers and switchgear establish transmission-equipment exposure within a diversified company. This overlaps AI examples without establishing renewable-only revenue.",
+      "symbol": "ABB",
+      "subtheme": "Transmission & distribution equipment",
+      "source_url": "https://www.abb.com/global/en/news/135616/abb-india-posts-solid-start-to-cy2026-with-strong-order-momentum-in-first-jan-mar-quarter",
+      "rationale": "ABB India disclosed electrification orders including low-tension panels and power equipment. This supports distribution-equipment exposure, not an attribution of a separate high-voltage transmission business or renewable-only revenue.",
       "reviewed_on": "2026-10-28",
       "effective_date": null,
       "exposure_materiality": "Not quantified",
       "identity_source": "Current official Nifty constituent archive; not historical membership",
-      "company": "CG Power and Industrial Solutions Ltd.",
-      "isin": "INE067A01029",
-      "resolved_url": "https://www.cgglobal.com/about_cg",
-      "sha256": "396e3b896d6f4b8496c14a4b56933f6807eddb2d4cc55da8c6992f1451f3d90e",
-      "retrieved_utc": "2026-10-27T19:43:08.710027+00:00",
+      "company": "ABB India Ltd.",
+      "isin": "INE117A01022",
+      "resolved_url": "https://www.abb.com/global/en/news/135616/abb-india-posts-solid-start-to-cy2026-with-strong-order-momentum-in-first-jan-mar-quarter",
+      "sha256": "768b61214d7e42e1b3bcd386b1e42ee88653b6ef13e0443151014707d9ee8e22",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T20:13:40.177379+00:00",
       "keyword_checks": {
-        "transformer": false,
-        "switchgear": false
+        "electrification": true,
+        "panel": true
       },
-      "status": "manual_page_review_required"
+      "status": "evidence_archived"
     },
     {
       "symbol": "POWERGRID",
@@ -97,7 +101,8 @@
       "isin": "INE752E01010",
       "resolved_url": "https://www.powergrid.in/en/transmission",
       "sha256": "54022539ff26f8e346535ee3cfcc5d8ec8f53967318b7ef0e8645a13d4ccc44d",
-      "retrieved_utc": "2026-10-27T19:43:09.125102+00:00",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T20:13:39.244659+00:00",
       "keyword_checks": {
         "transmission": true,
         "technology": true

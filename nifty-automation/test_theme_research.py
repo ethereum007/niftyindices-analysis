@@ -1,17 +1,35 @@
 import hashlib
 import json
 import unittest
+import tempfile
+import io
+from unittest.mock import patch,MagicMock
 from pathlib import Path
 
 ROOT=Path(__file__).parent/'data/theme-research'
 
 class ThemeEvidenceTest(unittest.TestCase):
+    def test_pdf_bytes_are_archived_as_pdf_without_invented_text_evidence(self):
+        from pypdf import PdfWriter
+        from research_defence import archive
+        writer=PdfWriter();writer.add_blank_page(width=72,height=72);stream=io.BytesIO();writer.write(stream);raw=stream.getvalue()
+        response=MagicMock();response.status=200;response.url='https://example.com/evidence.pdf';response.read.return_value=raw
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'raw').mkdir()
+            with patch('research_defence.ROOT',root),patch('research_defence.urlopen') as request:
+                request.return_value.__enter__.return_value=response
+                row=archive(('TEST','Example','https://example.com/evidence.pdf','No inferred exposure.',['transformer']),{'TEST':{'company':'Example','isin':'INE000000001'}},'2026-10-28')
+            self.assertEqual(row['raw_extension'],'pdf')
+            self.assertEqual(row['status'],'manual_page_review_required')
+            self.assertEqual(row['evidence_pages'],[])
+            self.assertEqual((root/'raw'/(row['sha256']+'.pdf')).read_bytes(),raw)
+
     def test_energy_archive_keeps_pending_source_unverified(self):
         manifest=json.loads((ROOT/'cleanenergy.json').read_text(encoding='utf-8'))
         self.assertEqual(len({r['symbol'] for r in manifest['members']}),5)
         for row in manifest['members']:
             self.assertIsNone(row['effective_date'])
-            raw=(ROOT/'raw'/(row['sha256']+'.html')).read_bytes()
+            raw=(ROOT/'raw'/(row['sha256']+'.'+row.get('raw_extension','html'))).read_bytes()
             self.assertEqual(hashlib.sha256(raw).hexdigest(),row['sha256'])
             if row['status']=='evidence_archived':self.assertTrue(all(row['keyword_checks'].values()))
             elif row['status']=='manual_page_review_required':self.assertFalse(all(row['keyword_checks'].values()))
@@ -28,7 +46,7 @@ class ThemeEvidenceTest(unittest.TestCase):
             self.assertTrue(row['rationale'])
             self.assertTrue(row['identity_source'])
             if row.get('sha256'):
-                raw=(ROOT/'raw'/(row['sha256']+'.html')).read_bytes()
+                raw=(ROOT/'raw'/(row['sha256']+'.'+row.get('raw_extension','html'))).read_bytes()
                 self.assertEqual(hashlib.sha256(raw).hexdigest(),row['sha256'])
             if row['status']=='evidence_archived':self.assertTrue(all(row['keyword_checks'].values()))
 
@@ -40,7 +58,7 @@ class ThemeEvidenceTest(unittest.TestCase):
             self.assertIsNone(row['effective_date'])
             self.assertRegex(row['isin'],r'^INE[A-Z0-9]{9}$')
             if row.get('sha256'):
-                raw=(ROOT/'raw'/(row['sha256']+'.html')).read_bytes()
+                raw=(ROOT/'raw'/(row['sha256']+'.'+row.get('raw_extension','html'))).read_bytes()
                 self.assertEqual(hashlib.sha256(raw).hexdigest(),row['sha256'])
             if row['status']=='evidence_archived':
                 self.assertTrue(all(row['keyword_checks'].values()))
