@@ -1,0 +1,102 @@
+{
+  "family": "defence",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-27",
+  "note": "Five independently researched examples covering five proposed sub-themes, not an exhaustive universe. Source keywords are archive checks, not an automated exposure classifier. No weights, adjusted history or fundamentals inferred. Current evidence cannot establish historical membership.",
+  "members": [
+    {
+      "symbol": "HAL",
+      "subtheme": "Aerospace & engines",
+      "source_url": "https://hal-india.co.in/?wpmobileexternal=true",
+      "rationale": "Aircraft, helicopter and related service offerings support aerospace exposure. Defence-only revenue share is not inferred.",
+      "reviewed_on": "2026-10-27",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Hindustan Aeronautics Ltd.",
+      "isin": "INE066F01020",
+      "resolved_url": "https://hal-india.co.in/?wpmobileexternal=true",
+      "sha256": "62fdeb4986ec3da8c0134815460d92c04637eca8ddef556f355d02f1e1ebf4e7",
+      "retrieved_utc": "2026-10-27T17:43:25.417114+00:00",
+      "keyword_checks": {
+        "aircraft": false,
+        "helicopter": false
+      },
+      "status": "manual_page_review_required"
+    },
+    {
+      "symbol": "BEL",
+      "subtheme": "Defence electronics",
+      "source_url": "https://bel-india.in/defence/",
+      "rationale": "Defence radar and electronic-warfare products establish defence-electronics exposure.",
+      "reviewed_on": "2026-10-27",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Bharat Electronics Ltd.",
+      "isin": "INE263A01024",
+      "status": "fetch_failed",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>"
+    },
+    {
+      "symbol": "MAZDOCK",
+      "subtheme": "Shipbuilding",
+      "source_url": "https://www.mazagondock.in/English/modernization",
+      "rationale": "Warship and submarine construction facilities establish naval shipbuilding exposure.",
+      "reviewed_on": "2026-10-27",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Mazagoan Dock Shipbuilders Ltd.",
+      "isin": "INE249Z01020",
+      "resolved_url": "https://www.mazagondock.in/English/modernization",
+      "sha256": "94737aeffc3b2a0c4e91529ebba4ea9674548c5a089d81b3e7d1f0780ed082bf",
+      "retrieved_utc": "2026-10-27T17:43:25.523143+00:00",
+      "keyword_checks": {
+        "warship": true,
+        "submarine": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "DYNAMATECH",
+      "subtheme": "Precision components",
+      "source_url": "https://www.dynamatics.com/aerospace.aspx",
+      "rationale": "Flight-critical aerostructures for aerospace OEMs establish precision-aerospace exposure; the parent also serves civil aerospace and other businesses.",
+      "reviewed_on": "2026-10-27",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Dynamatic Technologies Ltd.",
+      "isin": "INE221B01012",
+      "resolved_url": "https://www.dynamatics.com/aerospace.aspx",
+      "sha256": "ca0da8c9cfe2f90f2ff38ad7758371f75d191d280bf61405502bd6e1c622c00e",
+      "retrieved_utc": "2026-10-27T17:43:26.474119+00:00",
+      "keyword_checks": {
+        "aerostruct": true,
+        "airbus": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "IDEAFORGE",
+      "subtheme": "Drones",
+      "source_url": "https://ideaforgetech.com/lp/indigenize-with-ideaforge",
+      "rationale": "UAV products serving armed forces and industrial applications establish dual-use drone exposure.",
+      "reviewed_on": "2026-10-27",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from primary company disclosure",
+      "company": "ideaForge Technology Limited",
+      "isin": "INE349Y01013",
+      "resolved_url": "https://ideaforgetech.com/lp/indigenize-with-ideaforge",
+      "sha256": "ba38998a02da2261311150742fc99d8b2a3a4892530a4953807c410d5f12d268",
+      "retrieved_utc": "2026-10-27T17:43:26.038353+00:00",
+      "keyword_checks": {
+        "armed forces": true,
+        "drone": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}
