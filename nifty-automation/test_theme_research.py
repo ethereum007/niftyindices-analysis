@@ -9,6 +9,22 @@ from pathlib import Path
 ROOT=Path(__file__).parent/'data/theme-research'
 
 class ThemeEvidenceTest(unittest.TestCase):
+    def test_consumption_exposure_is_not_claimed_demand_growth(self):
+        manifest=json.loads((ROOT/'consumption.json').read_text(encoding='utf-8'))
+        self.assertEqual(len({r['subtheme'] for r in manifest['members']}),5)
+        self.assertIn('does not establish',manifest['comparison_note'])
+        prices=json.loads((ROOT.parent/'stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        for row in manifest['members']:
+            self.assertIsNone(row['effective_date'])
+            self.assertEqual(prices[row['isin']]['symbol'],row['symbol'])
+            raw=(ROOT/'raw'/(row['sha256']+'.'+row.get('raw_extension','html'))).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),row['sha256'])
+            self.assertEqual(row['status'],'evidence_archived')
+            self.assertTrue(all(row['keyword_checks'].values()))
+            if row['symbol']=='HINDUNILVR':self.assertIn('not proof of current rural-demand recovery',row['rationale'])
+            if row['symbol']=='INDHOTEL':self.assertIn('does not establish ownership of every hotel',row['rationale'])
+            if row.get('raw_extension')=='pdf':self.assertTrue(raw.startswith(b'%PDF-'))
+
     def test_fintech_identities_and_distinct_provider_roles(self):
         manifest=json.loads((ROOT/'fintech.json').read_text(encoding='utf-8'))
         self.assertEqual(len({r['subtheme'] for r in manifest['members']}),5)

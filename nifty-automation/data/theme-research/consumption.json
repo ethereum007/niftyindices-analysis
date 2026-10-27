@@ -1,0 +1,118 @@
+{
+  "family": "consumption",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-28",
+  "note": "Five independently researched consumer-exposure examples, not an exhaustive consumption universe. Products, brands and distribution routes do not establish realised premiumisation, rural recovery, quarterly demand growth or homogeneous valuation peers. No customer records, weights or historical membership inferred.",
+  "comparison_note": "This is an exposure map across retail, durables, hospitality, packaged food and rural distribution. It does not establish that premiumisation or rural-demand recovery is happening in the selected period.",
+  "members": [
+    {
+      "symbol": "TITAN",
+      "subtheme": "Branded retail",
+      "source_url": "https://www.titancompany.in/about-us",
+      "rationale": "Jewellery, watches and other lifestyle categories establish branded-consumption exposure. Brand presence does not establish premiumisation-led sales growth or a quantified discretionary-revenue share.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Titan Company Ltd.",
+      "isin": "INE280A01028",
+      "resolved_url": "https://www.titancompany.in/about-us",
+      "sha256": "97b7e2664c5aec371b5c327da1db700c7e624264a3479838d90851a730437c7a",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T23:44:04.552283+00:00",
+      "keyword_checks": {
+        "jewellery": true,
+        "watches": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "BLUESTARCO",
+      "subtheme": "Consumer durables",
+      "source_url": "https://www.bluestarindia.com/products/room-air-conditioners",
+      "rationale": "Room air-conditioners establish consumer-durables exposure within a diversified cooling business. Data-centre cooling is separate exposure and is not labelled as consumer-segment revenue.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Blue Star Ltd.",
+      "isin": "INE472A01039",
+      "resolved_url": "https://www.bluestarindia.com/products/room-air-conditioners",
+      "sha256": "c5e1090e20a648aa96fbe53d3f6441dbaf01df1e76fb2c920d02362c5b73c6e2",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T23:44:04.463479+00:00",
+      "keyword_checks": {
+        "room": true,
+        "conditioner": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "INDHOTEL",
+      "subtheme": "Premium experiences",
+      "source_url": "https://www.tata.com/business/the-indian-hotels-company-taj-group",
+      "rationale": "The hospitality portfolio spans luxury and other hotel segments. It is not classified as pure luxury; brand affiliation does not establish ownership of every hotel or a measured occupancy/pricing recovery.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Indian Hotels Co. Ltd.",
+      "isin": "INE053A01029",
+      "resolved_url": "https://www.tata.com/business/the-indian-hotels-company-taj-group",
+      "sha256": "d7fada365ee28bb1ecd333ef4571c740f2e866e455ac3b8d65ff24973a8bfb17",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T23:44:04.556703+00:00",
+      "keyword_checks": {
+        "luxury": true,
+        "hotel": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "BRITANNIA",
+      "subtheme": "Food & staples",
+      "source_url": "https://media.britannia.co.in/Analyst_Deck_Q4_26_V7_a870ddfb37.pdf",
+      "rationale": "Packaged-food categories including biscuits and dairy establish food-consumption exposure. This is not raw-commodity ownership or an inferred household-spending growth rate.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Britannia Industries Ltd.",
+      "isin": "INE216A01030",
+      "resolved_url": "https://media.britannia.co.in/Analyst_Deck_Q4_26_V7_a870ddfb37.pdf",
+      "sha256": "e3144e0ef7ab5caf91ef566cd38c1f671fd77677c2c3320d9abfd32c327b378a",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-27T23:44:04.807199+00:00",
+      "evidence_pages": [
+        13
+      ],
+      "keyword_checks": {
+        "biscuit": true,
+        "dairy": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "subtheme": "Rural demand",
+      "source_url": "https://nsearchives.nseindia.com/corporate/HINDUNILVR_19102023154307_InvestorPresentationSQ2023Signed.pdf",
+      "rationale": "Project Shakti establishes a rural distribution route for consumer products. Rural reach is not proof of current rural-demand recovery or a quantified rural-revenue share.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Hindustan Unilever Ltd.",
+      "isin": "INE030A01027",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/HINDUNILVR_19102023154307_InvestorPresentationSQ2023Signed.pdf",
+      "sha256": "503de6d61e60bba32b069834d92109ce32bd0b361e5655ba7d1adddebc7abf1f",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-27T23:44:04.940945+00:00",
+      "evidence_pages": [],
+      "keyword_checks": {
+        "shakti": true,
+        "rural": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}
