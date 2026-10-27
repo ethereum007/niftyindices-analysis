@@ -1,55 +1,87 @@
-# Release status
+# Index Intelligence — build status
 
-The extended dashboard is deployed at https://kiran-index-intelligence.kirandnyc.chatgpt.site (private). Code and the full requested source-data snapshot are stored in this public repository.
+## Delivered
 
-- 167 published indices; 34 sectoral entries.
-- MTD, 3M, 6M, 1Y, 2Y, 3Y, 5Y rankings and charts, plus 1M/daily.
-- Cumulative returns and annual CAGR are explicitly separate.
-- 10,166 observations, 79 accepted dates, 81 archived raw responses (two are rejected responses).
-- Historical coverage is monthly snapshots, specific return baselines and recent daily points, not full daily history.
-- 14 automated tests and browser interaction checks passed. Generated CSV content and static CSV delivery verified; browser-managed blob saving was canceled in the test environment.
+- Public GitHub destination: https://github.com/ethereum007/niftyindices-analysis (main).
+- Private dashboard: https://kiran-index-intelligence.kirandnyc.chatgpt.site.
+- Latest extended Site deployment succeeded: appgdep_6ad7b0bd224081919eef61e9ba92d916; source commit 198fbfe35fdc1ca7eb84d50814e1203e0da6f80e.
+- GitHub extended release: 131559e. Code, all 81 raw responses, generated reports and a consistent SQLite backup are pushed. All raw Git blobs retain their SHA-256 and SQLite integrity passed. No credentials are committed.
+- 167 current published indices, all 34 official sectoral catalogue entries. Default shows everything. Special variants remain identified.
+- Calendar MTD/1M/3M/6M/1Y/2Y/3Y/5Y cumulative returns, separately labelled annual CAGR for 1Y+, exact baselines, comparison and charts are implemented.
+- MTD uses previous month-end. Other periods use calendar anniversaries, at most a 7-day backward baseline tolerance. Zero/missing baselines never produce invented returns. PR/TR/currency/leverage variants remain distinct.
+- Data: 10,166 observations over 79 accepted dates, 2021-10-19 through 2026-10-19. History uses monthly snapshots plus period anchors and recent daily observations, NOT complete daily history. Latest available period coverage: MTD166, 3M161, 6M146, 1Y143, 2Y123, 3Y103, 5Y87. All indices remain listed with honest N/A.
+- 14 Python tests and browser checks pass for horizons, sector counts, numeric sorting/CAGR, comparison, source-date changes, generated CSV payload, static CSV route and mobile layout. Browser-managed saving of a blob download was canceled in this environment; actual generated content/schema and the independent CSV route were verified.
 
-Local Windows data refresh is scheduled at 19:00 and 21:00 IST weekdays. The private hosted publication is a fixed snapshot and has no automatic cloud data connection yet. A 30-minute Codex continuation cadence is enabled to continue the scoped build, data coverage and operational improvements.
+## Runtime and code locations
 
-Next work: better ingestion-health reporting, bounded daily-history expansion, consolidation of working directories, and a verified durable cloud data-refresh path. Credentials and personal customer data remain excluded.
+Working root: C:/Users/kiran/Documents/Codex/2026-10-20/we-d/outputs.
+- nifty-automation/: live downloader, backfill_history.py, tests and data/raw plus data/warehouse.sqlite.
+- index-intelligence/: live dashboard template/generator and separate Sites Git metadata. Keep its .openai/hosting.json identity and audience.
+- niftyindices-analysis/: GitHub checkout, mirrored source/data. User explicitly requested ALL DATA in this PUBLIC repository. This overrides the earlier private-code-only proposal; always exclude credentials/customer records.
+- work/sync-github.py (relative to workspace, not outputs) mirrors both working folders to the GitHub checkout and creates a consistent SQLite backup. Never copy a live WAL database directly. Preserve gitattributes raw -text and verify hashes before pushes.
 
-## Daily archive update — 21 October 2026
+Windows task NiftyIndices Daily Reports: 19:00 and 21:00 IST weekdays, local logged-in session, catch-up enabled. It downloads current snapshots, refreshes rolling period anchors and rebuilds local dashboard and dist output. Hosted publication remains a FIXED snapshot with no cloud refresh connection.
 
-46 additional daily snapshots loaded: 17,714 observations over 125 accepted dates and 127 archived raw responses. Two requested dates returned non-CSV responses; they are recorded without assuming holidays. Bounded resume tool: nifty-automation/backfill_daily.py.
+Heartbeat: continue-index-intelligence-build, ACTIVE every 30 minutes in this chat, user explicitly requested continued building. Preserve user changes and report meaningful milestones only.
 
-The dashboard uses a compact indexed payload and selected-snapshot calculations. Browser/Python parity passed for 11,067 values over four dates; 19 Python tests and browser interaction checks passed. Page size reduced from 6.6 MB to 1.2 MB. Five-year daily backfill is still incomplete; monthly samples plus expanding daily coverage remain explicitly disclosed.
+## Scoped next work
 
-The daily-history/compact-payload release is now published at the same private URL. Deployment succeeded from Sites source 6ffd6cb21fcb2b7c59c50f92e94c5ca624fa8eec. GitHub code/data commit: ba5ce91. All 127 Git source blobs retain their original checksums; the database snapshot passes integrity_check. Full five-year daily coverage and cloud data refresh remain incomplete.
+1. Improve data-health reporting and source-gap handling; preserve raw/provenance for rejected responses and distinguish absent source files from holidays.
+2. Expand historical charts to full daily coverage in bounded resumable batches, keeping current monthly coverage honest and preserving newly available index histories. Do not promise historical constituents.
+3. Consolidate the runtime and GitHub working directory without breaking source identity, data or the live Windows task. Currently mirrored code folders are deliberate; document any migration.
+4. Prepare durable cloud storage and a verified unattended writer before claiming the hosted dashboard refreshes automatically. Avoid introducing a new provider/account without evidence of the intended destination.
+5. Keep public GitHub data snapshots current and consistent; preserve private Sites access. Do not create extra repos. An unused empty private repo ethereum007/nifty-index-intelligence was created before the user supplied their preferred destination; do not use/delete it without explicit instruction.
 
-## Daily-history batch 2
+## Sites publishing on Windows
 
-Added 46 accepted snapshots after checking another 48 weekday files. Current totals: 24,785 observations over 171 accepted dates; 174 archived raw responses. The backward daily scan reached 12 May 2026. Two requests in this batch returned non-CSV responses and are not declared holidays. The latest market snapshot remains 19 October 2026; this is historical expansion, not live-market freshness.
+Use the Sites skill source helper and short-lived credential via stdin only. Add C:/Program Files/Git/bin to PATH. TAR_OPTIONS=--force-local plus a forward-slash absolute archivePath avoids GNU tar treating C: as a remote host. Reuse project identity in .openai/hosting.json, open source before edits, pass exact helper commit/archive to owner-private save/deploy, and retain any saved deployment version on retry. Never print auth/bypass tokens or persist Git credentials.
 
-Batch 2 publication succeeded at the existing private dashboard URL. Source commit: 05b6d50cc30fcf8d99e7bc82980cce061b59b582. Data backup commit: b994231. All 174 raw-file hashes and SQLite integrity verified; browser/Python parity passed for 10,983 values over four snapshot dates, including newly added June observations. All requested horizon/sector/export/mobile checks passed. Daily five-year history remains incomplete; 1,130 weekday candidates still unchecked/retryable.
+## 21 October 2026 cadence update
 
-## Daily-history batch 3
+- Daily backfill CLI implemented and verified: python outputs/nifty-automation/backfill_daily.py --max-requests 48. Source/result ledger is data/daily-backfill.json, resumable and bounded, with 401/403/429 stop behaviour and explicit unknown/non-CSV states. No exchange holiday is inferred. Weekend sessions not audited.
+- Batch 1 completed: 48 requested files, 46 accepted, 2 non-CSV. Current totals: 17,714 observations, 125 accepted dates/batches, 127 raw responses. Latest data remains 2026-10-19; these are historical additions. Candidate scan reached 2026-07-22; 1,178 weekday dates remain unchecked/retryable within the requested five-year range. Resume the same command on the next cadence; do not restart or claim full daily coverage.
+- Compact indexed dashboard payload implemented. Compute selected-snapshot horizon values in browser from stored levels. Exact parity with Python verified for 11,067 values over latest, recent daily, three-year and earliest snapshots. JSON preserves source hashes/values; raw and SQLite remain original. File shrank from 6,630,090 to 1,224,476 bytes.
+- 19 Python tests and browser interaction suite pass. Desktop/mobile screenshots visually reviewed. Hosted copy is still a fixed publication, not cloud-refreshed.
+- Next action in this run: sync/push current data/code and deploy current private Sites version. After publishing, record IDs below and resume bounded daily backfill next run.
+
+Cadence release completed: GitHub data/code commit ba5ce91 pushed to main; all 127 raw Git blobs matched SHA-256 and the SQLite backup passed integrity_check. Private Sites deployment appgdep_6ad7b619a61c8191b8aea1d34748ead8 succeeded from source 6ffd6cb21fcb2b7c59c50f92e94c5ca624fa8eec. No cloud refresh link was added. Next cadence: resume `python outputs/nifty-automation/backfill_daily.py --max-requests 48`, rebuild/verify, sync a consistent GitHub data snapshot and republish only on meaningful accepted-data/code changes. Keep the bounded request budget and avoid claims of a complete exchange calendar.
+
+## 21 October cadence batch 2
+
+- Resumed bounded daily expansion with max-requests48: another 46 accepted dates and two non-CSV responses. No source access/rate-limit stop. Current totals: 24,785 observations, 171 accepted dates and 174 raw responses. Latest snapshot remains 2026-10-19. New daily scan reached 2026-05-12; 1,130 weekday candidates remain unchecked/retryable. Full exchange-calendar and weekend-session coverage remain unaudited.
+- Rebuilt compact dashboard (1,713,001 bytes) and verified database integrity. Next: browser/Python parity including newly added 2026-06-15, push consistent data backup/raw hashes and publish the private Site.
+
+Batch 2 release complete: GitHub data commit b994231 pushed to main. All 174 raw source Git blobs matched SHA-256; consistent SQLite backup passed integrity_check. Browser/Python parity passed for 10,983 values over four dates including new June 2026 data; all horizon/sector/export/mobile checks passed. Private Site deployment appgdep_6ad7bc6a04c08191b32381c1ba94042b succeeded from source 05b6d50cc30fcf8d99e7bc82980cce061b59b582. Next cadence: same bounded 48-request resume command, beginning before 2026-05-12; 1,130 weekday candidates remain unchecked/retryable. Do not rerun source code tests solely for unchanged code; verify new data integrity and calculation/browser parity. Cloud refresh remains unconnected.
+
+## 21 October cadence batch 3
 
 ### Daily-history batch 3
 
 Checked another 48 weekday candidates: 42 accepted snapshots, six non-CSV responses. Current archive: 30,953 observations over 213 accepted dates; 216 raw responses. The backward scan reached 2 March 2026. The latest market snapshot remains 19 October 2026; full five-year daily history and special weekend sessions are not yet audited. Compact dashboard size: 2,141,140 bytes.
 
-Batch 3 publication succeeded at the existing private URL from source 762590ebae4683ddc59dc3e757d1823ca2dac6c5. Data commit: 3e435f7. Raw source hashes (216) and consistent SQLite snapshot verified. Browser/Python parity passed for 10,752 values including newly added March data; horizon, sector, export and mobile checks passed. Full five-year daily coverage remains incomplete; 1,082 weekday candidates still unchecked/retryable.
+Remaining unchecked/retryable weekday candidates: 1,082. No code changes; verify new March data against Python, raw-source checksums and SQLite integrity, then push and publish.
 
-## Daily-history cadence batch 4
+Batch 3 release complete: GitHub data commit 3e435f7 pushed to main. All 216 raw Git blobs match source SHA-256; SQLite backup integrity verified. Browser/Python parity passed for 10,752 values over four snapshots including 2026-03-16; horizon/sector/export/mobile checks passed. Owner-private Site deployment appgdep_6ad7c35fad688191a8bb39832fdb3bdc succeeded from source 762590ebae4683ddc59dc3e757d1823ca2dac6c5. Next cadence: same bounded 48-request backfill, beginning before 2026-03-02; 1,082 weekday candidates remain unchecked/retryable. Verify actual latest DB date and row counts rather than imposing a permanent 167-index cap when newer source files arrive. Cloud refresh remains unconnected; historical universe coverage is not yet complete or exchange-calendar audited.
+
+## 21 October cadence batch 4
 
 ### Daily-history cadence batch 4
 
 Two bounded batches checked 96 weekday candidates: 91 accepted snapshots and five non-CSV responses, with no rate-limit/access stop. The daily scan now reaches 9 October 2025. Current archive: 44,012 observations over 304 accepted dates; 308 archived raw responses. The dashboard is 3,049,129 bytes. Full five-year daily coverage and weekend sessions remain unaudited. Latest snapshot date is still 2026-10-19; this is historical expansion.
 
-Batch 4 publication succeeded at the existing private URL from source 8e0047272972d39ead5c5c6633e76bc3c363bfac. Data commit: fed0a04. All 308 raw-file hashes and consistent SQLite integrity verified. Browser/Python parity passed for 14,224 values, including prices, valuations and source hashes as well as returns/CAGR; horizon, sector, CSV and mobile checks passed. Full five-year daily coverage remains incomplete, with 986 weekday candidates unchecked/retryable and special weekend sessions unaudited.
+Next cadence may use --max-requests96 (within the existing 100-request ceiling), preserving the .5-second delay and 401/403/429 stop rules, to complete the requested backfill sooner. The prior 48-file budget was an implementation choice, not a user constraint. 986 weekday candidates remain unchecked/retryable. No additional features or code changes this run.
 
-## Daily-history cadence batch 5
+Batch 4 release complete: GitHub data commit fed0a04 pushed to main; all 308 raw-source Git blobs matched SHA-256 and consistent SQLite backup integrity passed. Browser/Python parity passed for 14,224 values over four dates, now including close, daily change, P/E, P/B, dividend yield, date and source hash alongside return/base/CAGR fields. Horizon/sector/export/mobile checks passed. Private Site deployment appgdep_6ad7cac25dc08191aedc0e236c891209 succeeded from source 8e0047272972d39ead5c5c6633e76bc3c363bfac. Next cadence: `python outputs/nifty-automation/backfill_daily.py --max-requests 96` (no more than100), same delay and stop rules, resume before 2025-10-09. 986 weekday candidates remain unchecked/retryable. Latest snapshot remains 2026-10-19. Code unchanged: no need to repeat mock tests; verify new data integrity and browser/Python parity. Use `git commit --quiet` to avoid long filename output. Cloud refresh and full exchange-calendar/weekend audit remain incomplete.
+
+## 21 October cadence batch 5
 
 ### Daily-history cadence batch 5
 
 Checked 96 weekday candidates: 93 accepted snapshots, three non-CSV responses, no access/rate-limit stop. Backward daily scan reached 21 May 2025. Archive now has 57,080 observations over 397 accepted dates and 401 raw responses. Compact dashboard size is 3,953,729 bytes. Latest market snapshot remains 2026-10-19; full daily five-year coverage and weekend-session audit remain incomplete.
 
-Batch 5 publication succeeded at the existing private URL from source c7f3996fc66e7a8ebc2ea6a10c563c1c98c8ffc3. Data commit: 160e0a2. All 401 raw source-file hashes and consistent SQLite integrity verified. Browser/Python parity passed for 14,140 values including newly added July 2025 data; horizon, sector, CSV and mobile checks passed. Five-year daily history remains incomplete, with 890 weekday candidates unchecked/retryable and special weekend sessions unaudited.
+890 weekday candidates remain unchecked/retryable. Next: verify newly added July 2025 calculations and all raw-source Git hashes, push consistent database backup and publish existing owner-private Site. No source code changes this run.
+
+Batch 5 release complete: GitHub data commit 160e0a2 pushed to main; all 401 raw Git blobs matched SHA-256 and consistent SQLite backup integrity passed. Browser/Python parity passed for 14,140 values over four snapshots including newly added 2025-07-15, with prices, valuations, hashes and derived horizons checked. Horizon/sector/export/mobile checks passed. Private Site deployment appgdep_6ad7d1b8f26c819199ed185396512f94 succeeded from source c7f3996fc66e7a8ebc2ea6a10c563c1c98c8ffc3. Next cadence: same bounded max-requests96 command, resume before 2025-05-21; 890 weekday candidates remain unchecked/retryable. Latest market date remains 2026-10-19. Code unchanged; verify new data and browser/Python parity without rerunning unchanged mock tests. Full exchange-calendar/weekend audit and cloud refresh remain incomplete.
 
 
 ### 2026-10-21 cadence batch 6
@@ -136,3 +168,9 @@ User-requested update: Equity is default; Debt / Fixed income and Other instrume
 Validation:34 Python tests passed (26 pipeline/audit/drilldown +8 history); browser checks passed for asset isolation, asset-specific dates, disabled inappropriate views, all34 sectors,15-member Auto prices, rank, historical-price safeguards and390px mobile. Browser/Python parity13,804 values over4dates passed. Latest warehouse now150,256 observations /1,245dates due existing scheduled updates; latest equity source2026-10-26, debt2026-10-23. Source archive daily1256 unique responses plus separate constituent/stock archives; originals included in public GitHub. Stock and constituent fetch commands are reproducible but not yet part of unattended hosted refresh; hosted Site remains a published snapshot. Alpha Radar repositories unchanged by this task.
 
 Equity/debt + constituent release verified: GitHub main c257751 pushed;1,537 daily/constituent/stock raw blobs matched original SHA-256 and SQLite backup integrity passed.137 current constituent lists accepted, with explicit all34-sector coverage assertion passing (Oil & Gas official navigation alias corrected).34 Python tests and asset/date/rank/constituent/history/mobile browser checks passed;13,804 price/return/valuation parity values matched Python. Owner-private Sites source f7c5dab4b0c954987b8ac46026edf0e48d9ab233 deployed successfully as appgdep_6ae062e470748191aa4364bc77e607d2. Published URL https://kiran-index-intelligence.kirandnyc.chatgpt.site. Alpha Radar integration not changed. Constituent/stock refresh remains reproducible/manual; existing hosted publication snapshot caveat retained. Requested UI separation and company drill-down delivered; bond-level holdings and weighted contribution attribution remain explicitly unavailable.
+
+
+## 2026-10-27 — Sectors & Themes initial release
+Built ten AI infrastructure research basket definitions inspired by user screenshot, with one official-disclosure-backed example per basket (8 distinct companies), membership review date, business-exposure rationale and linked sources. ISIN+symbol matching, dated daily member mean only with complete quote coverage, valid-member advancing breadth, overlap, search, sorting, CSV and mobile drilldown delivered. Nine of ten example memberships have an EQ quote on2026-10-26; Sterlite stays unpriced. Theme entry selects the latest stored stock snapshot date explicitly; historical date changes never receive newer prices. No market-cap screen, multi-period stock return, growth/PAT/ROCE/valuation/earnings score or backtest inferred. Latest local scheduled index file advanced to2026-10-27 while stock snapshot remains26. Nine history/theme Python tests plus browser themes/asset isolation/math/missing-date/mobile checks passed. Standalone repository main; Alpha Radar unchanged. Pending GitHub sync/private publication. Next scope: membership expansion, adjusted stock history and timestamped company fundamentals before screenshot-style growth rankings.
+
+Theme release publication verified: Sites source989982fe091313f67fe9176e00eac175ead77946 deployed successfully as appgdep_6ae0d802f8a08191b88edc64354b39f6, preserving owner-only audience. GitHub main implementation commit bf48d2a; all1,540 staged raw SHA checks and SQLite backup integrity passed. Nine Python tests and browser themes/asset/date/math/mobile checks passed. Hosted snapshot includes scheduled index updates through2026-10-27; stock snapshot26. Initial theme release delivered, full theme universe/fundamentals/adjusted-history expansion remains future work rather than implied completion.
