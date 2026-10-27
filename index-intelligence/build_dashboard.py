@@ -5,6 +5,7 @@ import sqlite3
 import calendar
 import re
 import csv
+import hashlib
 from datetime import date, timedelta, datetime, timezone
 from pathlib import Path
 
@@ -50,6 +51,25 @@ def prepare(observations):
 
 WIRE_FIELDS=['close','change_pct','open','high','low','pe','pb','yield_pct']
 
+def load_family_members(root):
+    """Reject ambiguous identities or changed primary evidence before publication."""
+    result={}
+    for file in sorted((root/'theme-research').glob('*.json')):
+        data=json.loads(file.read_text(encoding='utf-8'))
+        family=data['family']
+        if family!=file.stem or family in result:raise ValueError('Ambiguous family manifest: '+str(file))
+        symbols=set();isins=set()
+        for member in data['members']:
+            if member['symbol'] in symbols or member['isin'] in isins:raise ValueError('Duplicate family identity: '+family)
+            symbols.add(member['symbol']);isins.add(member['isin'])
+            if member['status']=='evidence_archived':
+                sha=member['sha256']
+                if not re.fullmatch('[0-9a-f]{64}',sha):raise ValueError('Invalid evidence hash')
+                raw=(file.parent/'raw'/(sha+'.html')).read_bytes()
+                if hashlib.sha256(raw).hexdigest()!=sha:raise ValueError('Changed primary evidence: '+family)
+        result[family]=data
+    return result
+
 def pack_rows(observations):
     """Store repeated identifiers once; derived horizons are computed on selection."""
     names=sorted({r['name'] for r in observations})
@@ -71,8 +91,7 @@ def build(db, root, out):
     stocks_file=root/'stocks/latest.json'
     members=json.loads(members_file.read_text(encoding='utf-8')) if members_file.exists() else None
     stocks=json.loads(stocks_file.read_text(encoding='utf-8')) if stocks_file.exists() else None
-    family_file=root/'theme-research/defence.json'
-    family_members=json.loads(family_file.read_text(encoding='utf-8')) if family_file.exists() else None
+    family_members=load_family_members(root)
     payload={**pack_rows(observations),'coverage':coverage,'constituents':members,'stocks':stocks,'family_members':family_members,'themes':json.loads((HERE/'themes.json').read_text(encoding='utf-8')),
              'batches':[dict(r) for r in db.execute('SELECT * FROM batches ORDER BY observation_date')],
              'generated':datetime.now(timezone.utc).isoformat(),

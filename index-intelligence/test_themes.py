@@ -2,11 +2,29 @@
 import json
 import unittest
 import sqlite3
+import tempfile
+import hashlib
+from build_dashboard import load_family_members
 from pathlib import Path
 
 HERE=Path(__file__).parent
 
 class ThemesTest(unittest.TestCase):
+    def test_family_evidence_tampering_and_duplicate_identity_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);folder=root/'theme-research';(folder/'raw').mkdir(parents=True)
+            raw=b'Original primary evidence';sha=hashlib.sha256(raw).hexdigest()
+            evidence=folder/'raw'/(sha+'.html');evidence.write_bytes(raw)
+            member={'symbol':'EXAMPLE','isin':'INE000000001','status':'evidence_archived','sha256':sha}
+            file=folder/'example.json'
+            file.write_text(json.dumps({'family':'example','members':[member]}))
+            self.assertEqual(len(load_family_members(root)['example']['members']),1)
+            evidence.write_bytes(b'Changed evidence')
+            with self.assertRaisesRegex(ValueError,'Changed primary evidence'):load_family_members(root)
+            evidence.write_bytes(raw)
+            file.write_text(json.dumps({'family':'example','members':[member,member]}))
+            with self.assertRaisesRegex(ValueError,'Duplicate family identity'):load_family_members(root)
+
     def test_membership_evidence_and_quote_identity(self):
         themes=json.loads((HERE/'themes.json').read_text(encoding='utf-8'))
         prices=json.loads((HERE.parent/'nifty-automation/data/stocks/latest.json').read_text())['prices']
