@@ -1,0 +1,117 @@
+{
+  "family": "railways",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-28",
+  "note": "Five independently researched examples, not an exhaustive rail investment universe. Older source disclosures establish business capability only, not current order values, historical membership or pure-play revenue. No weights, stock-history returns or fundamental statistics inferred.",
+  "members": [
+    {
+      "symbol": "TITAGARH",
+      "subtheme": "Rolling stock",
+      "source_url": "https://www.titagarh.in/service/railway-freight",
+      "rationale": "Freight-wagon and rolling-stock manufacturing establishes railway-equipment exposure. No present order-book value or delivery forecast is inferred.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Titagarh Rail Systems Ltd.",
+      "isin": "INE615H01020",
+      "resolved_url": "https://www.titagarh.in/service/railway-freight",
+      "sha256": "7b6e577b99f06c348b4f89cf8c919b43cf3a3aa5dceef2dfb34f7c80768d4e4d",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T20:43:33.851427+00:00",
+      "keyword_checks": {
+        "freight": true,
+        "wagon": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "KEC",
+      "subtheme": "Rail electrification",
+      "source_url": "https://www.kecrpg.com/railways",
+      "rationale": "Railway EPC offerings include overhead electrification and traction substations. KEC also operates in other infrastructure segments; rail revenue materiality is not quantified.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Kec International Ltd.",
+      "isin": "INE389H01022",
+      "resolved_url": "https://www.kecrpg.com/railways",
+      "sha256": "14d650bbe1ed84ee011b47dac345852b82e674634245a90cf0c9b79003fb71b1",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T20:43:34.530039+00:00",
+      "keyword_checks": {
+        "electrification": true,
+        "railway": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "HBLENGINE",
+      "subtheme": "Signalling & safety",
+      "source_url": "https://www.hbl.in/reports/kavachorder01052025.pdf",
+      "rationale": "A primary Kavach order disclosure establishes train-protection-system exposure. This is historical capability/order evidence, not a claim about current unexecuted order value; other businesses remain.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "HBL Engineering Ltd.",
+      "isin": "INE292B01021",
+      "resolved_url": "https://www.hbl.in/reports/kavachorder01052025.pdf",
+      "sha256": "3fd09cc2a1ef1fdfe107482cbc6ca9976d8e2cf014a0cbd9d64f5ea154acb4c3",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-27T20:43:34.605834+00:00",
+      "evidence_pages": [
+        1,
+        2
+      ],
+      "keyword_checks": {
+        "kavach": true,
+        "railway": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "IRCON",
+      "subtheme": "Rail EPC",
+      "source_url": "https://www.ircon.org/",
+      "rationale": "Railway construction and turnkey infrastructure activity establish rail-EPC exposure. No pure-play rail revenue percentage is inferred.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "IRCON International Ltd.",
+      "isin": "INE962Y01021",
+      "resolved_url": "https://www.ircon.org/",
+      "sha256": "29b5fc215369c3e99f723e47ba72cef6ac550d9528d59da943b49ec5235fd0e5",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T20:43:34.798121+00:00",
+      "keyword_checks": {
+        "railway": true,
+        "construction": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "CONCOR",
+      "subtheme": "Freight infrastructure",
+      "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2298580&lang=2&reg=48",
+      "rationale": "A government port disclosure names CONCOR among container-train operators supporting rail-connectivity initiatives. This establishes freight-logistics exposure, not ownership of port assets or a quantified infrastructure-spend sensitivity.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Container Corporation of India Ltd.",
+      "isin": "INE111A01025",
+      "resolved_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2298580&lang=2&reg=48",
+      "sha256": "a79d4658bf614a1dc5320486894d5989218b6d475153d14bc99a517acccf927a",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T20:43:34.909468+00:00",
+      "keyword_checks": {
+        "concor": true,
+        "rail": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

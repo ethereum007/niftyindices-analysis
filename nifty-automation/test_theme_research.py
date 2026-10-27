@@ -9,6 +9,23 @@ from pathlib import Path
 ROOT=Path(__file__).parent/'data/theme-research'
 
 class ThemeEvidenceTest(unittest.TestCase):
+    def test_railways_identity_pdf_provenance_and_no_order_amount_inference(self):
+        manifest=json.loads((ROOT/'railways.json').read_text(encoding='utf-8'))
+        self.assertEqual(len({r['subtheme'] for r in manifest['members']}),5)
+        prices=json.loads((ROOT.parent/'stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        for row in manifest['members']:
+            self.assertIsNone(row['effective_date'])
+            self.assertEqual(prices[row['isin']]['symbol'],row['symbol'])
+            raw=(ROOT/'raw'/(row['sha256']+'.'+row.get('raw_extension','html'))).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),row['sha256'])
+            self.assertEqual(row['status'],'evidence_archived')
+            self.assertTrue(all(row['keyword_checks'].values()))
+            if row['symbol']=='HBLENGINE':
+                self.assertEqual(row['raw_extension'],'pdf')
+                self.assertTrue(raw.startswith(b'%PDF-'))
+                self.assertTrue(row['evidence_pages'])
+                self.assertIn('not a claim about current unexecuted order value',row['rationale'])
+
     def test_pdf_bytes_are_archived_as_pdf_without_invented_text_evidence(self):
         from pypdf import PdfWriter
         from research_defence import archive

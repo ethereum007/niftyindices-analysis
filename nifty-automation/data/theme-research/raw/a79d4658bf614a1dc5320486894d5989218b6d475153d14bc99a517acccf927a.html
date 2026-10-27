@@ -1,0 +1,1157 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head id="Head1"><title>
+	Press Release Page | Press Information Bureau
+</title><link href="css/style.css?v=1" rel="stylesheet" type="text/css" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="alternate stylesheet" href="css/change.css?v=1" media="screen" title="change" /><link rel="alternate stylesheet" href="css/green.css?v=1" media="screen" title="green" /><link rel="alternate stylesheet" href="css/yellow.css" media="screen" title="yellow" /><link rel="stylesheet" type="text/css" href="css/prtint.css" media="print" /><link rel="stylesheet" href="css/style3.1.css" type="text/css" /><link id="pibA11yCss" rel="stylesheet" href="/css/accessibility.css?v=7" type="text/css" />
+    <script type="text/javascript">
+        (function (d) {
+            var t = "";
+            try {
+                t = window.localStorage.getItem("pibStyle") || "";
+            } catch (e) {
+                t = "";
+            }
+            if (t === "orange") {
+                t = "yellow";
+            }
+            var c = t === "change" ? " pib-hc"
+                : t === "green" ? " pib-theme-green"
+                : t === "yellow" ? " pib-theme-yellow" : "";
+            d.documentElement.className += c + " pib-a11y-content";
+        }(document));
+    </script>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/js/accessibility.js?v=7"></script>
+
+    <script type="text/javascript">
+            $(document).ready(function () {
+                  function getParameterByName(name) {
+                        var url = window.location.href;
+                        name = name.replace(/[\[\]]/g, '\\$&');
+                        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                              results = regex.exec(url);
+                        if (!results) return null;
+                        if (!results[2]) return '';
+                        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                  }
+                  let prid = parseInt(getParameterByName('PRID'), 10);
+
+                  if (!isNaN(prid) && prid > 0) {
+                        $.ajax({
+                              type: "POST",
+                              url: "AjaxMethod.aspx/UpdatePRHitCount",
+                              async: false,
+                              data: JSON.stringify({ 'PermId': prid }),
+                              contentType: "application/json; charset=utf-8",
+                              dataType: "json",
+                              success: function (response) {
+                                    console.log(response);
+                              },
+                              error: function (error) {
+                                    console.log("Error in AJAX request", error);
+                              }
+                        });
+                  } else {
+                        console.log("Invalid parameters:", prid);
+                  }
+            });
+    </script>
+    <style type="text/css">
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+        }
+
+        full-width {
+            width: 100%;
+        }
+
+        .logo-left, .logo-center, .countdown {
+            display: flex;
+            align-items: center;
+        }
+
+            .logo-left img, .logo-center img {
+                height: 70px;
+            }
+
+        .countdown {
+            text-align: center;
+            background-color: var(--dbim-text, #150202);
+            border-radius: 10px;
+            padding: 10px;
+            border: 2px solid grey;
+        }
+
+        .firstnumber {
+            color: #000000;
+            position: absolute;
+            top: 50px;
+            right: 90px;
+            font-size: 30px;
+        }
+
+        .secondnumber {
+            position: absolute;
+            color: #000000;
+            right: 45px;
+            top: 50px;
+            font-size: 30px;
+        }
+
+        .countdown .days {
+            font-size: 35px;
+            color: gold;
+        }
+
+        .countdown p {
+            margin: 0;
+        }
+
+        .countdown .text {
+            font-size: 16px;
+        }
+
+        a {
+            word-break: break-all;
+        }
+
+        iframe, img {
+            max-width: 100%;
+        }
+
+        /* === DBIM 3.0 Option 4 Separator Line & Reading Meta Styling === */
+        .pr-share--footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            border-top: 1px solid var(--dbim-border, #d1d5db);
+            padding-top: 16px;
+            margin-top: 24px;
+        }
+
+        .pr-share__left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .pr-reading-meta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+            color: var(--dbim-text-secondary, #475569);
+            font-weight: 500;
+            white-space: nowrap;
+            margin-left: auto;
+        }
+
+        .pr-reading-meta__item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .pr-reading-meta__divider {
+            color: var(--dbim-border, #cbd5e1);
+            font-weight: 300;
+        }
+
+        .pib-hc .pr-reading-meta,
+        .pib-hc .pr-reading-meta svg {
+            color: currentColor !important;
+        }
+
+        @media (max-width: 680px) {
+            .pr-share--footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .pr-reading-meta {
+                margin-left: 0;
+                width: 100%;
+                justify-content: flex-start;
+            }
+        }
+
+        @media(max-width:1199px) {
+            .firstnumber {
+                top: 40px;
+                right: 72px;
+                font-size: 30px;
+            }
+
+            .secondnumber {
+                right: 35px;
+                top: 40px;
+                font-size: 30px;
+            }
+        }
+
+        @media(max-width:990px) {
+            .firstnumber {
+                top: 25px;
+                right: 54px;
+                font-size: 30px;
+            }
+
+            .secondnumber {
+                right: 25px;
+                top: 25px;
+                font-size: 30px;
+            }
+        }
+
+        @media(max-width:768px) {
+            .countdown, .days {
+                font-size: 12px !important;
+            }
+
+            .firstnumber {
+                top: 25%;
+                right: 8%;
+                font-size: 30px;
+            }
+
+            .secondnumber {
+                right: 4.5%;
+                top: 25%;
+                font-size: 30px;
+            }
+        }
+
+        @media(max-width:475px) {
+            .countdown, .days {
+                font-size: 10px !important;
+                top: 20%;
+            }
+
+            .bannerimgdiv {
+                padding: 0 !important;
+            }
+
+            .bannerimg {
+                width: 108% !important;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+            $(function () {
+                  $("[id*=printPDF]").click(function () {
+                        $("[id*=hfGridHtml]").val($("#PdfDiv").html());
+                  });
+            });
+            $(function () {
+                  $("[id*=printPDFEvent]").click(function () {
+                        $("[id*=hfGridHtml]").val($("#PdfDiv").html());
+                  });
+            });
+    </script>
+
+    <link id="pibConsentCss" href="/css/consent.css?v=8" rel="stylesheet" type="text/css" /><link id="pibFontsCss" href="/css/fonts-noto.css?v=6" rel="stylesheet" type="text/css" /><link id="pibDbimCss" href="/css/dbim.css?v=1120" rel="stylesheet" type="text/css" /><meta property="og:title" content="Chennai Port Authority Restart of Train Service between Chennai Port and Hyderabad" /><meta property="og:url" content="www.pib.gov.in/Pressreleaseshare.aspx?PRID=2298580" /><meta property="og:description" content="
+
+Chennai Port Authority (ChPA) has strengthened its rail-based EXIM connectivity with the commenc" /><meta property="og:image" content="https:/pib.gov.in/images/indian-emblem.png" />
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="C4E7H-KSCMC-422L4-W3EM5-U36MF",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"C4E7H-KSCMC-422L4-W3EM5-U36MF";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="nlpomg5ydswqu2xbbtya-f-a13b80794-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1825201","ak.ai":parseInt("1215205",10),"ak.ol":"0","ak.cr":6,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"378e886c","ak.r":34612,"ak.a2":n,"ak.m":"","ak.n":"ff","ak.cport":19631,"ak.gh":"184.28.173.31","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1793133808","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==nQI3RGrUV4rt8H2wgAbkmlWUqBYOyc5pByMNbrO6FSxuQKqQNT4HLjPhl87dKGf6rZXA49fQ6pciv8/qCAYfV8x8UV6xhdGoaU8ehwqyGT9dRsdcacIJqrSkvaMXdQwLpU57gq2ixTn1veKx1W6QmI1LFtT8crNmkaj///cbk7ADK43DmmvWvMQWLHD93EvJe5Yhs7GDCKu9NvIKkJHACiU/ciAuVm+bHSMKa1kSWIV6aHV9lExBLCbwomd93vUDCf/jrY8RTq4wWNXRJ6mPcipChy3nLc4sO3xls+H/pdtBeNjbGqI6sDN4KR9vL3pVd6/qyL96Tz0nK8LqpZfcGH4HoTwUKxnmV9apzOP3QWLjggyTMwfYIrORHIbcFpmF6+n9pXukqsfK47xufyY8X/s+nuLvdcJW3jnYn6K2h9s=","ak.pv":"9","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+     style="position:absolute;width:0;height:0;overflow:hidden" id="dbim-icon-sprite">
+    <defs>
+        <symbol id="icon-angle-double-left" viewBox="0 0 24 24"><path d="M11.6 4.6 4.2 12l7.4 7.4 2.2-2.2L8.6 12l5.2-5.2z"/><path d="M19 4.6 11.6 12 19 19.4l2.2-2.2L16 12l5.2-5.2z"/></symbol>
+        <symbol id="icon-angle-double-right" viewBox="0 0 24 24"><path d="M12.4 4.6 10.2 6.8 15.4 12l-5.2 5.2 2.2 2.2L19.8 12z"/><path d="M5 4.6 2.8 6.8 8 12l-5.2 5.2L5 19.4 12.4 12z"/></symbol>
+        <symbol id="icon-arrow-left" viewBox="0 0 24 24"><path d="M20.8 10.6H9.6v2.8h11.2z"/><path d="M10.8 5.6 3.2 12l7.6 6.4z"/></symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M3.2 10.6h11.2v2.8H3.2z"/><path d="M13.2 5.6 20.8 12l-7.6 6.4z"/></symbol>
+        <symbol id="icon-blogger" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M6.4 2.4h11.2a4 4 0 0 1 4 4v11.2a4 4 0 0 1-4 4H6.4a4 4 0 0 1-4-4V6.4a4 4 0 0 1 4-4zm2.8 5.2a2 2 0 0 0 0 4h2.4a2 2 0 0 0 0-4zm0 5.6a2 2 0 0 0 0 4h5.6a2 2 0 0 0 0-4z"/></symbol>
+        <symbol id="icon-calendar" viewBox="0 0 24 24"><path d="M7.6 2.4H10v2.4H7.6z"/><path d="M14 2.4h2.4v2.4H14z"/><path fill-rule="evenodd" d="M4 4.8h16a1.6 1.6 0 0 1 1.6 1.6v13.2a1.6 1.6 0 0 1-1.6 1.6H4a1.6 1.6 0 0 1-1.6-1.6V6.4A1.6 1.6 0 0 1 4 4.8zm.4 5.6v8.4h15.2v-8.4z"/><path d="M6.4 12.4h3.2v3.2H6.4z"/></symbol>
+        <symbol id="icon-chevron-left" viewBox="0 0 24 24"><path d="M15.4 4.6 8 12l7.4 7.4 2.2-2.2L12.4 12l5.2-5.2z"/></symbol>
+        <symbol id="icon-chevron-right" viewBox="0 0 24 24"><path d="M8.6 4.6 6.4 6.8 11.6 12l-5.2 5.2 2.2 2.2L16 12z"/></symbol>
+        <symbol id="icon-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/></symbol>
+        <symbol id="icon-download" viewBox="0 0 24 24"><path d="M10.8 3h2.4v7.6h3.4L12 16.6l-4.6-6h3.4z"/><path d="M4 17.2h2.4v2.4h11.2v-2.4H20v3.2a1.4 1.4 0 0 1-1.4 1.4H5.4A1.4 1.4 0 0 1 4 20.4z"/></symbol>
+        <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M13.6 21.6v-8.4h2.8l.42-3.3h-3.22V7.8c0-.95.27-1.6 1.64-1.6h1.74V3.26a23 23 0 0 0-2.54-.13c-2.5 0-4.22 1.53-4.22 4.34v2.43H7.4v3.3h2.82v8.4z"/></symbol>
+        <symbol id="icon-fact-check" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.4 3.6 5.6v6.2c0 4.6 3.4 8.6 8.4 9.8 5-1.2 8.4-5.2 8.4-9.8V5.6zm-1 13.2-3.6-3.6 1.7-1.7 1.9 1.9 4.5-4.5 1.7 1.7z"/></symbol>
+        <symbol id="icon-hashtag" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M8.8 3h2.4l-1 6h3.2l1-6h2.4l-1 6h3.4v2.4h-3.8l-.6 3.2h3.6V17h-4l-1 5h-2.4l1-5h-3.2l-1 5H5.4l1-5H3V14.6h3.8l.6-3.2H3.8V9h4zm.6 8.4-.6 3.2h3.2l.6-3.2z"/></symbol>
+        <symbol id="icon-home" viewBox="0 0 24 24"><path d="M12 3.4 2.8 11.6h2.4v8.4a1 1 0 0 0 1 1h3.3v-5.4h5v5.4h3.3a1 1 0 0 0 1-1v-8.4h2.4z"/></symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M7.6 2.4h8.8a5.2 5.2 0 0 1 5.2 5.2v8.8a5.2 5.2 0 0 1-5.2 5.2H7.6a5.2 5.2 0 0 1-5.2-5.2V7.6a5.2 5.2 0 0 1 5.2-5.2zm0 2.4a2.8 2.8 0 0 0-2.8 2.8v8.8a2.8 2.8 0 0 0 2.8 2.8h8.8a2.8 2.8 0 0 0 2.8-2.8V7.6a2.8 2.8 0 0 0-2.8-2.8z"/><path fill-rule="evenodd" d="M12 6.8a5.2 5.2 0 1 0 0 10.4 5.2 5.2 0 0 0 0-10.4zm0 2.4a2.8 2.8 0 1 1 0 5.6 2.8 2.8 0 0 1 0-5.6z"/><circle cx="17.3" cy="6.7" r="1.3"/></symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M4.8 8.8h3.6v12H4.8z"/><circle cx="6.6" cy="5.4" r="2.1"/><path d="M10.8 8.8h3.45v1.65h.05c.48-.9 1.65-1.85 3.4-1.85 3.63 0 4.3 2.35 4.3 5.4v6.6h-3.6v-5.85c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1v5.95h-3.6z"/></symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24"><path d="M2.4 7.6v9.2a1.6 1.6 0 0 0 1.6 1.6h16a1.6 1.6 0 0 0 1.6-1.6V7.6L12 14z"/><path d="M21.2 5.4H2.8L12 11.8z"/></symbol>
+        <symbol id="icon-mail-open" viewBox="0 0 24 24"><path d="M2.4 9.8h19.2v9.6A1.6 1.6 0 0 1 20 21H4a1.6 1.6 0 0 1-1.6-1.6z"/><path d="M12 2.6 21.6 9.2h-3.8L12 5.3 6.2 9.2H2.4z"/><path d="m3.9 11.2 8.1 5.4 8.1-5.4 1.5 1.3-9.6 6.4-9.6-6.4z"/></symbol>
+        <symbol id="icon-map-marker" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.4a7 7 0 0 0-7 7c0 5.2 7 12.2 7 12.2s7-7 7-12.2a7 7 0 0 0-7-7zm0 9.6a2.6 2.6 0 1 1 0-5.2 2.6 2.6 0 0 1 0 5.2z"/></symbol>
+        <symbol id="icon-newspaper" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M2.8 4.4h14.8v15.2H2.8zm2 2v11.2h10.8V6.4z"/><path d="M6 7.6h8.4v1.6H6z"/><path d="M6 10.8h8.4v1.6H6z"/><path d="M6 14h5.2v1.6H6z"/><path d="M18.4 8.4h2.8v9.6a1.4 1.4 0 0 1-2.8 0z"/></symbol>
+        <symbol id="icon-pause" viewBox="0 0 24 24"><rect x="7.4" y="4" width="3.6" height="16" rx="0.9"/><rect x="13" y="4" width="3.6" height="16" rx="0.9"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="M8 4.5v15l12-7.5z"/></symbol>
+        <symbol id="icon-picture" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M2.4 5.2h19.2v13.6H2.4zm2 2v9.6h15.2V7.2z"/><path d="M5.6 16.4 10 11l2.6 3 2-2.2 4 4.6z"/><circle cx="8" cy="10.4" r="1.5"/></symbol>
+        <symbol id="icon-press-conference" viewBox="0 0 24 24"><circle cx="12" cy="5.2" r="2.6"/><path d="M7.6 12.2a4.4 4.4 0 0 1 8.8 0z"/><circle cx="4.9" cy="9.6" r="2.2"/><path d="M1.8 15.2a3.1 3.1 0 0 1 6.2 0z"/><circle cx="19.1" cy="9.6" r="2.2"/><path d="M16 15.2a3.1 3.1 0 0 1 6.2 0z"/><path d="M6.6 13.6h10.8l2.2 7.8H4.4z"/></symbol>
+        <symbol id="icon-print" viewBox="0 0 24 24"><path d="M6.4 2.8h11.2v4.4H6.4z"/><path d="M4 8.4h16a1.6 1.6 0 0 1 1.6 1.6v5.6a1.6 1.6 0 0 1-1.6 1.6h-1.6v-2.8H6v2.8H4a1.6 1.6 0 0 1-1.6-1.6V10A1.6 1.6 0 0 1 4 8.4z"/><path d="M7.2 15.6h9.6v5.6H7.2z"/></symbol>
+        <symbol id="icon-rss" viewBox="0 0 24 24"><circle cx="4.8" cy="19.2" r="2.4"/><path d="M2.4 11.2v3.2a6.4 6.4 0 0 1 6.4 6.4H12A9.6 9.6 0 0 0 2.4 11.2z"/><path d="M2.4 4.8V8A13.6 13.6 0 0 1 16 21.6h3.2A16.8 16.8 0 0 0 2.4 4.8z"/></symbol>
+        <symbol id="icon-search-plus" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M10 2.8a7.2 7.2 0 1 0 0 14.4 7.2 7.2 0 0 0 0-14.4zm0 2.4a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6z"/><path d="M15.3 14.6 21.2 20.5l-1.5 1.5-5.9-5.9z"/><path d="M9.2 6.8h1.6v2.4h2.4v1.6h-2.4v2.4H9.2v-2.4H6.8V9.2h2.4z"/></symbol>
+        <symbol id="icon-share" viewBox="0 0 24 24"><circle cx="18" cy="5.6" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="18.4" r="3"/><path d="M8.3 10.9 15.7 7.2l.9 1.8-7.4 3.7z"/><path d="M9.2 13.1 16.6 16.8l-.9 1.8-7.4-3.7z"/></symbol>
+        <symbol id="icon-twitter" viewBox="0 0 24 24"><path d="M4.2 3h4.3l11.3 18h-4.3z"/><path d="M19.3 3h-2.6L4.2 21h2.6z"/></symbol>
+        <symbol id="icon-university" viewBox="0 0 24 24"><path d="M12 2.4 21.6 7.2v1.6H2.4V7.2z"/><path d="M4.8 10.4h2.4v8H4.8z"/><path d="M9.2 10.4h2.4v8H9.2z"/><path d="M13.4 10.4h2.4v8h-2.4z"/><path d="M17.6 10.4H20v8h-2.4z"/><path d="M3.2 19.8h17.6v1.8H3.2z"/></symbol>
+        <symbol id="icon-volume-up" viewBox="0 0 24 24"><path d="M3.2 9.2h3.3l5-4.2v14l-5-4.2H3.2z"/><path d="M14.6 8.4a5 5 0 0 1 0 7.2l1.6 1.6a7.2 7.2 0 0 0 0-10.4z"/><path d="M17.4 5.6a8.8 8.8 0 0 1 0 12.8l1.5 1.5a10.9 10.9 0 0 0 0-15.8z"/></symbol>
+        <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.4a9.5 9.5 0 0 0-8.1 14.5L2.4 21.6l4.8-1.4A9.5 9.5 0 1 0 12 2.4zm0 2.2a7.3 7.3 0 1 1-3.8 13.5l-.4-.2-2.6.7.7-2.5-.3-.4A7.3 7.3 0 0 1 12 4.6z"/><path d="M9.4 7.8c-.2-.5-.4-.5-.6-.5h-.5a1 1 0 0 0-.7.3c-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.8 4.3 3.8 2.1.8 2.6.7 3 .6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3-1.6-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6 6 0 0 1-1.8-1.1 6.6 6.6 0 0 1-1.2-1.6c-.1-.2 0-.4.1-.5l.4-.5.3-.5v-.5z"/></symbol>
+        <symbol id="icon-youtube" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.9 4.8 12 4.8 12 4.8s-5.9 0-7.6.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8zM10.2 15.1V8.9l5.1 3.1z"/></symbol>
+    </defs>
+</svg>
+
+    <form method="post" action="./PressReleasePage.aspx?PRID=2298580&amp;lang=2&amp;reg=48" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="sc_HiddenField" id="sc_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZPQet1wIx1Q48y3xJY2k25Y7qxH5RrQ9qQcN-OiTC9guZtri9w2&amp;t=639246310055090729" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=x6wALODbMJK5e0eRC_p1LdIxBJXt0U_WW5GWfJqHAqo6frgCmGRfEywglicTersO2OKrFhK1gAIp0Wk2al2YrpdR3uWqH6f4nfjBsCyRUfTUUVmb0&amp;t=ffffffffecf8d3f2" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=P5lTttoqSeZXoYRLQMIScH645UK3RD852IErF2548Wz9Ssv0rLjB4fhVKnHcMpqkaMHpNAGOeWY02Lf4aBYN9-dVBme_SNK5KJwmFQNpMixYDZ7M0&amp;t=ffffffffecf8d3f2" type="text/javascript"></script>
+<script src="/PressReleasePage.aspx?_TSM_HiddenField_=sc_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.7.123%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a5a4df314-b4a2-4da2-a207-9284f1b1e96c%3ade1feab2%3af2c8e708%3a8613aea7%3af9cec9bc%3a3202a5a2%3aab09e3fe%3a87104b7c%3a720a52bf%3a589eaa30%3aa67c2700%3abe6fb298" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="59B53027" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="fh+HLh1Pz6CJ9Q7ANKrmQTz4pd2m4YyS2Z+XxORqWUjE8rYzvBkIIjKpvsqOpAH+YFKic2VSTCmCIL4g1GkNPPXUYICn98Wfiv2ECgyp4pOMicMgMzCbETizehlPKuXa31tSt7mOFX0sMTQl0V3Rrai3ry2wiaCT1RH1y+Q7JgxFRerc3BFUB2uoZ2Uy/9nsOSPbmrqRXZQPg1CZIoq1byMVv4DA6OFy5gDlAs5ucu6QMHJu5XaC9dawjdrMWpNub3+/i5+8PojBNi/hzIvWFwS/XXg=" />
+</div>
+        
+        <div id="templateCss"></div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('sc', 'form1', ['tupdate12','update12'], [], [], 90, '');
+//]]>
+</script>
+
+        <input type="hidden" name="hfGridHtml" id="hfGridHtml" />
+        <div class="container" style='margin-bottom: 50px;'>
+            <div id="accessories">
+                
+                <div class="pull-right" style="display: flex">
+                    <div id="voll"></div>
+                    <div id="vollDT"></div>
+                    
+
+<span class="print-icons">
+<input type="image" name="Print1$print" id="Print1_print" aria-label="Print" src="images/printer_icon.png" alt="print page button" style="padding: 5px 10px 5px 10px;" />
+</span>
+                </div>
+            </div>
+            <input type="hidden" name="hydpermid" id="hydpermid" value="2298580" />
+            
+
+            <div class="innner-page-main-about-us-content-right-part">
+                <div id="MinistryName" class="MinistryNameSubhead text-center">
+                    Special Service and Features
+                </div>
+                <div id="lg_g"><div class='log_oo'>  <img src='https://static.pib.gov.in/WriteReadData/specificdocs/photo/2026/sep/ph_9768_20260902_10000501.png' alt='azadi ka amrit mahotsav' /> </div></div>
+
+                <div class="text-center event-heading-background">
+                    
+                    <h1 id="Titleh2">
+                        Chennai Port Authority Restart of Train Service between Chennai Port and Hyderabad
+                    </h1>
+                    <h3 id="Subtitleh3">
+                        <span id="ltrSubtitle"></span>
+                    </h3>
+                </div>
+
+                <div id="PrDateTime" class="ReleaseDateSubHeaddateTime text-center pt20">
+                    Posted On:
+                              12 AUG 2026 7:53PM by PIB Chennai
+                </div>
+                
+                <div class='pt20'>
+                </div>
+                <input type="hidden" name="hydphotoUrl" id="hydphotoUrl" />
+                
+
+                <!-- Release content wrapper for client-side zero-reflow word count -->
+                <div id="pibReleaseBody">
+                    <p style="text-align:center"><img alt="" src="https://static.pib.gov.in/WriteReadData/userfiles/image/L6P1MYMQ.jpg" style="width:400px" /></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">Chennai Port Authority (ChPA) has strengthened its rail-based EXIM connectivity with the commencement of container rail movement between ICD Sanathnagar, Hyderabad (CSTN) and Chennai Port (CITPL), creating a commercially attractive gateway option for Hyderabad and the adjoining hinterland.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">The inaugural movement, operated by M/s CONCOR in association with M/s OOCL, comprised a 40-wagon container rake with 14 FEUs and 18 TEUs, aggregating 46 TEUs. The service marks an important step in Chennai Port&#39;s strategy to deepen hinterland connectivity and facilitate seamless movement of EXIM cargo.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">A faster gateway for Far East trade</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">The Hyderabad&ndash;Chennai rail connectivity creates an opportunity for Far East-bound cargo to use Chennai as a commercially viable gateway. With first- and last-mile logistics costs broadly comparable to competing West Coast gateways, the Chennai route has the potential to reduce overall transit time by up to seven days, depending on cargo and service routing.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">This combination of competitive inland logistics and faster market access gives exporters and importers greater routing flexibility and strengthens Chennai&#39;s position as a gateway for South and Central Indian trade.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">Chennai&#39;s connectivity with major hubs including Port Klang, Singapore, China and Southeast Asia also provides routing options for west-bound cargo through established transhipment hubs.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">To accelerate rail-based cargo growth, ChPA has constituted a dedicated Rail Connectivity Cell to work with CONCOR, other CTOs, shipping lines, logistics providers and trade to develop new rail-linked opportunities.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">Focused engagement is underway with Hyderabad, Pollachi, Mysore and other key hinterland markets, with the objective of increasing the share of EXIM cargo moving by rail.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">Greater rail utilisation will support cargo aggregation, better gateway access, reduced road congestion and a more sustainable logistics ecosystem.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">Chairperson, Chennai Port Authority, Shri Sachin S. Kurve, I.A.S., flagged off the unloading operations at Chennai Port on 11.08.2026, along with Ms. Gayatri, IRTS, Area Head South, CONCOR. The Chairperson highlighted the importance of stronger hinterland connectivity in enhancing Port competitiveness and facilitating trade.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">ChPA has also constituted a Port Trade Facilitation Cell as a single coordination platform with Customs, terminals, shipping lines, vessel agents, CFSs, rail operators and other stakeholders, focusing on:</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Digitisation of EXIM processes </span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Transhipment promotion </span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shipping line and rail connectivity facilitation </span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">ChPA is also examining commercial support mechanisms for rail-linked cargo to improve cargo aggregation and gateway competitiveness.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">As Chennai Port advances its strategy to scale up container and overall cargo volumes, the objective is to ensure that the benefits extend across the logistics ecosystem&mdash;exporters, importers, shipping lines, CTOs, terminals, logistics providers and the Port.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">These initiatives, together with the Outer Anchorage Promotional Concession Scheme and NCCS 2026&ndash;27, reflect ChPA&#39;s focus on connectivity, commercial responsiveness, cargo growth and Ease of Doing Business.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">Connect the hinterland. Move more by rail. Reach global markets faster.</span></span></p>
+
+<p style="text-align:center"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">***</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">TV/SH</span></span></p>
+
+<p style="text-align:justify">&nbsp;</p>
+
+                </div>
+
+                <div id="reel_pic">
+                </div>
+
+                <br />
+                <span id="ReleaseId">(Release ID: 2298580)</span>
+                <span id="lblViews">Visitor Counter : 186</span>
+                <div>
+                    
+                </div>
+                
+
+                <span id="lblRefPhoto"></span>
+
+                <div class="BackgroundRelease">
+                    
+                </div>
+                <div>
+                    
+                </div>
+                
+                
+                
+
+                <div class="RelTag">
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <div class="clear">
+                </div>
+
+                <!-- DBIM 3.0 Option 4: Separator Line with Left Share Rail & Right Reading Metrics -->
+                <div class="pr-share pr-share--footer" role="region" aria-label="Share and reading details">
+                    <div class="pr-share__left">
+                        <span class="pr-share__label" aria-hidden="true">Share</span>
+                        <ul class="pr-share__list">
+                            <li><a class="pr-share__btn pr-share__btn--facebook"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d2298580"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Share on Facebook">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-facebook" xlink:href="#icon-facebook"></use>
+                                </svg>
+                            </a></li>
+                            <li><a class="pr-share__btn pr-share__btn--twitter"
+                                href="https://twitter.com/intent/tweet?url=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d2298580"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Share on X">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-twitter" xlink:href="#icon-twitter"></use>
+                                </svg>
+                            </a></li>
+                            <li><a class="pr-share__btn pr-share__btn--whatsapp"
+                                href="https://api.whatsapp.com/send?text=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d2298580"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Share on WhatsApp">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-whatsapp" xlink:href="#icon-whatsapp"></use>
+                                </svg>
+                            </a></li>
+                            <li><a class="pr-share__btn pr-share__btn--linkedin"
+                                href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d2298580"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Share on LinkedIn">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-linkedin" xlink:href="#icon-linkedin"></use>
+                                </svg>
+                            </a></li>
+                            <li><a class="pr-share__btn pr-share__btn--mail"
+                                href="mailto:?subject=Press+release+from+PIB&amp;body=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d2298580"
+                                aria-label="Share by email">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-mail" xlink:href="#icon-mail"></use>
+                                </svg>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="pr-reading-meta" id="prReadingMeta" aria-label="Reading statistics">
+                        <span class="pr-reading-meta__item">
+                            <!-- Modern Document / Word Count Icon -->
+                            <svg class="pr-reading-meta__icon" width="18" height="18" viewbox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+                                <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                            </svg>
+                            <span id="prWordCount">-- words</span>
+                        </span>
+
+                        <span class="pr-reading-meta__divider" aria-hidden="true">|</span>
+
+                        <span class="pr-reading-meta__item">
+                            <!-- Modern Precision Clock / Read Time Icon -->
+                            <svg class="pr-reading-meta__icon" width="18" height="18" viewbox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                            </svg>
+                            <span id="prReadTime">-- min read</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div id="RelLink" class="RelLink">
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <center>
+                    
+                </center>
+            </div>
+
+            <div id="update12">
+	
+                    
+                    <input type="hidden" name="Hidden" id="Hidden" />
+                    <div id="P_CategoryManagement" class="ModalWindow" style="border-width:0px;height:60%;width:60%;overflow:auto;display: none">
+		
+                        <div>
+                            <input type="image" name="btnClose" id="btnClose" src="images/close_flat_icon.png" />
+                        </div>
+                        <div id="description">
+                        </div>
+                        <div class="text-center">
+                            <h2>
+                                
+                                <br>
+                                
+                            </h2>
+                        </div>
+                        <br />
+                        <div class="clear">
+                        </div>
+                        
+                    
+	</div>
+                
+</div>
+        </div>
+
+        <div id="PdfDiv" style="display: none;">
+            <table width="100%">
+                <tr>
+                    <td style="font-weight: 200; text-align: center">
+                        Special Service and Features
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="font-weight: 200; text-align: center; font-size: 30px;">
+                            Chennai Port Authority Restart of Train Service between Chennai Port and Hyderabad
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="font-weight: 200; text-align: center; font-size: 30px;">
+                            
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="text-align: center; font-size: 14px;">
+                            Posted On:
+                                          12 AUG 2026 7:53PM by PIB Chennai
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="font-weight: 200; text-align: left; font-size: 16px;">
+                            <p style="text-align:center"><img alt="" src="https://static.pib.gov.in/WriteReadData/userfiles/image/L6P1MYMQ.jpg" style="width:400px" /></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">Chennai Port Authority (ChPA) has strengthened its rail-based EXIM connectivity with the commencement of container rail movement between ICD Sanathnagar, Hyderabad (CSTN) and Chennai Port (CITPL), creating a commercially attractive gateway option for Hyderabad and the adjoining hinterland.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">The inaugural movement, operated by M/s CONCOR in association with M/s OOCL, comprised a 40-wagon container rake with 14 FEUs and 18 TEUs, aggregating 46 TEUs. The service marks an important step in Chennai Port&#39;s strategy to deepen hinterland connectivity and facilitate seamless movement of EXIM cargo.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">A faster gateway for Far East trade</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">The Hyderabad&ndash;Chennai rail connectivity creates an opportunity for Far East-bound cargo to use Chennai as a commercially viable gateway. With first- and last-mile logistics costs broadly comparable to competing West Coast gateways, the Chennai route has the potential to reduce overall transit time by up to seven days, depending on cargo and service routing.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">This combination of competitive inland logistics and faster market access gives exporters and importers greater routing flexibility and strengthens Chennai&#39;s position as a gateway for South and Central Indian trade.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">Chennai&#39;s connectivity with major hubs including Port Klang, Singapore, China and Southeast Asia also provides routing options for west-bound cargo through established transhipment hubs.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">To accelerate rail-based cargo growth, ChPA has constituted a dedicated Rail Connectivity Cell to work with CONCOR, other CTOs, shipping lines, logistics providers and trade to develop new rail-linked opportunities.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">Focused engagement is underway with Hyderabad, Pollachi, Mysore and other key hinterland markets, with the objective of increasing the share of EXIM cargo moving by rail.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">Greater rail utilisation will support cargo aggregation, better gateway access, reduced road congestion and a more sustainable logistics ecosystem.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">Chairperson, Chennai Port Authority, Shri Sachin S. Kurve, I.A.S., flagged off the unloading operations at Chennai Port on 11.08.2026, along with Ms. Gayatri, IRTS, Area Head South, CONCOR. The Chairperson highlighted the importance of stronger hinterland connectivity in enhancing Port competitiveness and facilitating trade.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">ChPA has also constituted a Port Trade Facilitation Cell as a single coordination platform with Customs, terminals, shipping lines, vessel agents, CFSs, rail operators and other stakeholders, focusing on:</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Digitisation of EXIM processes </span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Transhipment promotion </span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shipping line and rail connectivity facilitation </span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">ChPA is also examining commercial support mechanisms for rail-linked cargo to improve cargo aggregation and gateway competitiveness.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">As Chennai Port advances its strategy to scale up container and overall cargo volumes, the objective is to ensure that the benefits extend across the logistics ecosystem&mdash;exporters, importers, shipping lines, CTOs, terminals, logistics providers and the Port.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">These initiatives, together with the Outer Anchorage Promotional Concession Scheme and NCCS 2026&ndash;27, reflect ChPA&#39;s focus on connectivity, commercial responsiveness, cargo growth and Ease of Doing Business.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">Connect the hinterland. Move more by rail. Reach global markets faster.</span></span></p>
+
+<p style="text-align:center"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">***</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:12.0pt"><span style="font-family:&quot;Bookman Old Style&quot;,serif">TV/SH</span></span></p>
+
+<p style="text-align:justify">&nbsp;</p>
+
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="font-weight: 100; text-align: left; font-size: 16px;">
+                            (Release ID: 2298580)
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 200; text-align: center; font-size: 24px;"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="clearfix">
+        </div>
+
+        <div class="section1">
+            <div id="frst_t">
+                <div id="arr_rm"><div class='sticky-social_mb'><ul class='social_mb'><a href='http://www.facebook.com/share.php?u=https://pib.gov.in/PressReleasePage.aspx?PRID=2298580' target='_blank'><li class='fb_b'   ></li></a><a href='https://twitter.com/intent/tweet?url=https://pib.gov.in/PressReleasePage.aspx?PRID=2298580&text=Chennai Port Authority Restart of Train Service between Chennai Port and Hyderabad' target='_blank'><li class='twitter_r'  > </li></a><a href='https://api.whatsapp.com/send?text=https://pib.gov.in/PressReleasePage.aspx?PRID=2298580' target='_blank'><li class='whatsapp_r'  ></li></a><a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=Chennai Port Authority Restart of Train Service between Chennai Port and Hyderabad&body=https://pib.gov.in/PressReleasePage.aspx?PRID=2298580&ui=2&tf=1&pli=1' title='Share by Email' target='_blank'><li class='fa-envelope_r' ></li></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https://pib.gov.in/PressReleasePage.aspx?PRID=2298580&title=Chennai Port Authority Restart of Train Service between Chennai Port and Hyderabad&summary=My%20favorite%20developer%20program&source=LinkedIn' target='_blank'><li class='fa-linkedin_r'  ></li></a></ul></div></div>
+            </div>
+            <div id="second_t">
+                <div id="sndr_rm"><div class='sticky-social'><ul class='social'><a href='http://www.facebook.com/share.php?u=https://pib.gov.in/PressReleasePage.aspx?PRID=2298580' target='_blank'><li class='fb_b'   ></li></a><a href='https://twitter.com/intent/tweet?url=https://pib.gov.in/PressReleasePage.aspx?PRID=2298580&text=Chennai Port Authority Restart of Train Service between Chennai Port and Hyderabad' target='_blank'><li class='twitter_r'  > </li></a><a href='https://api.whatsapp.com/send?text=https://pib.gov.in/PressReleasePage.aspx?PRID=2298580' target='_blank'><li class='whatsapp_r'  ></li></a><a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=Chennai Port Authority Restart of Train Service between Chennai Port and Hyderabad&body=https://pib.gov.in/PressReleasePage.aspx?PRID=2298580&ui=2&tf=1&pli=1' title='Share by Email' target='_blank'><li class='fa-envelope_r' ></li></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https://pib.gov.in/PressReleasePage.aspx?PRID=2298580&title=Chennai Port Authority Restart of Train Service between Chennai Port and Hyderabad&summary=My%20favorite%20developer%20program&source=LinkedIn' target='_blank'><li class='fa-linkedin_r'  ></li></a></ul></div></div>
+            </div>
+        </div>
+        <input type="hidden" name="ltrTitlee" id="ltrTitlee" value="Chennai Port Authority Restart of Train Service between Chennai Port and Hyderabad" />
+        <input type="hidden" name="ltrSubtitlee" id="ltrSubtitlee" />
+        <input type="hidden" name="ltrDescriptionn" id="ltrDescriptionn" value="&lt;p style=&quot;text-align:center&quot;>&lt;img alt=&quot;&quot; src=&quot;https://static.pib.gov.in/WriteReadData/userfiles/image/L6P1MYMQ.jpg&quot; style=&quot;width:400px&quot; />&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>Chennai Port Authority (ChPA) has strengthened its rail-based EXIM connectivity with the commencement of container rail movement between ICD Sanathnagar, Hyderabad (CSTN) and Chennai Port (CITPL), creating a commercially attractive gateway option for Hyderabad and the adjoining hinterland.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>The inaugural movement, operated by M/s CONCOR in association with M/s OOCL, comprised a 40-wagon container rake with 14 FEUs and 18 TEUs, aggregating 46 TEUs. The service marks an important step in Chennai Port&amp;#39;s strategy to deepen hinterland connectivity and facilitate seamless movement of EXIM cargo.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>A faster gateway for Far East trade&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>The Hyderabad&amp;ndash;Chennai rail connectivity creates an opportunity for Far East-bound cargo to use Chennai as a commercially viable gateway. With first- and last-mile logistics costs broadly comparable to competing West Coast gateways, the Chennai route has the potential to reduce overall transit time by up to seven days, depending on cargo and service routing.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>This combination of competitive inland logistics and faster market access gives exporters and importers greater routing flexibility and strengthens Chennai&amp;#39;s position as a gateway for South and Central Indian trade.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>Chennai&amp;#39;s connectivity with major hubs including Port Klang, Singapore, China and Southeast Asia also provides routing options for west-bound cargo through established transhipment hubs.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>To accelerate rail-based cargo growth, ChPA has constituted a dedicated Rail Connectivity Cell to work with CONCOR, other CTOs, shipping lines, logistics providers and trade to develop new rail-linked opportunities.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>Focused engagement is underway with Hyderabad, Pollachi, Mysore and other key hinterland markets, with the objective of increasing the share of EXIM cargo moving by rail.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>Greater rail utilisation will support cargo aggregation, better gateway access, reduced road congestion and a more sustainable logistics ecosystem.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>Chairperson, Chennai Port Authority, Shri Sachin S. Kurve, I.A.S., flagged off the unloading operations at Chennai Port on 11.08.2026, along with Ms. Gayatri, IRTS, Area Head South, CONCOR. The Chairperson highlighted the importance of stronger hinterland connectivity in enhancing Port competitiveness and facilitating trade.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>ChPA has also constituted a Port Trade Facilitation Cell as a single coordination platform with Customs, terminals, shipping lines, vessel agents, CFSs, rail operators and other stakeholders, focusing on:&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>&amp;bull;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Digitisation of EXIM processes &lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>&amp;bull;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Transhipment promotion &lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>&amp;bull;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Shipping line and rail connectivity facilitation &lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>ChPA is also examining commercial support mechanisms for rail-linked cargo to improve cargo aggregation and gateway competitiveness.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>As Chennai Port advances its strategy to scale up container and overall cargo volumes, the objective is to ensure that the benefits extend across the logistics ecosystem&amp;mdash;exporters, importers, shipping lines, CTOs, terminals, logistics providers and the Port.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>These initiatives, together with the Outer Anchorage Promotional Concession Scheme and NCCS 2026&amp;ndash;27, reflect ChPA&amp;#39;s focus on connectivity, commercial responsiveness, cargo growth and Ease of Doing Business.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>Connect the hinterland. Move more by rail. Reach global markets faster.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:center&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>***&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:12.0pt&quot;>&lt;span style=&quot;font-family:&amp;quot;Bookman Old Style&amp;quot;,serif&quot;>TV/SH&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&amp;nbsp;&lt;/p>
+" />
+        <script type="text/javascript">
+                  var mPlayer = document.getElementById("background_music");
+                  var mPlayAction = document.getElementById("playbutton");
+                  var isPlaying = false;
+
+                  function playAudio() {
+                        mPlayer.play();
+                        isPlaying = true;
+                        document.getElementById('stopA').style.display = "block";
+                        document.getElementById('playA').style.display = "none";
+                  }
+
+                  function pauseAudio() {
+                        mPlayer.pause();
+                        isPlaying = false;
+                        document.getElementById('playA').style.display = "block";
+                        document.getElementById('stopA').style.display = "none";
+                  }
+        </script>
+        <script type="text/javascript">
+                  var synth = window.speechSynthesis;
+
+                  function CleanHtml(html) {
+                        html = html.replace(/<script[\s\S]*?<\/script>/gi, '');
+                        return html;
+                  }
+                  function stripHtml(html) {
+                        let tmp = document.createElement("DIV");
+                        tmp.innerHTML = CleanHtml(html);
+                        return tmp.textContent || tmp.innerText || "";
+                  }
+        </script>
+        <script type="text/javascript">
+                  $(document).ready(function () {
+                        $("table").each(function () {
+                              if (!$(this).closest(".table-responsive").length) {
+                                    $(this).wrap("<div class='table-responsive'></div>");
+                              }
+                        });
+
+                        var width = $(window).width();
+                        if (width < 768) {
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+                        } else if (width < 991) {
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+                        } else if (width < 1199) {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                        } else {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                        }
+                  });
+        </script>
+        <style type="text/css">
+            @media print {
+                .sticky-social, .sticky-social_mb, .pull-right, #printPDF {
+                    display: none !important;
+                }
+            }
+
+            .f_vl {
+                padding-right: 30px;
+                font-size: 17px;
+                cursor: pointer;
+            }
+
+            .log_oo {
+                display: flex;
+                justify-content: space-between;
+            }
+
+                .log_oo img {
+                    width: 150px;
+                }
+
+            .sticky-social_mb {
+                position: fixed;
+                bottom: 0px;
+                padding: 0px;
+                margin: 0px;
+                width: 100%;
+            }
+
+            .social_mb {
+                list-style: none;
+                display: flex;
+                width: 100%;
+                margin-bottom: -8px;
+            }
+
+                .social_mb a {
+                    padding: 8px 0px;
+                    font-size: 30px;
+                    transition: all 0.8s ease-in-out;
+                    width: 20% !important;
+                    text-align: center;
+                }
+        </style>
+        <style type="text/css">
+            .section1 {
+                position: relative;
+                padding: 10px 0px;
+                width: 100%;
+            }
+
+            .sticky-social {
+                position: fixed;
+                top: 20px;
+                left: 0px;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .social {
+                list-style: none;
+            }
+
+                .social a li {
+                    padding: 8px 12px;
+                    font-size: 25px;
+                    transition: all 0.8s ease-in-out;
+                }
+
+                    .social a li:hover {
+                        margin-right: -30px;
+                        box-shadow: 2px 5px 10px grey;
+                    }
+
+                        .social a li:hover .fa {
+                            margin-left: 20px;
+                        }
+
+            .fb_b {
+                background-color: var(--dbim-key, #0F5757);
+            }
+
+            .twitter_r {
+                background-color: var(--dbim-key, #0F5757);
+            }
+
+            .whatsapp_r {
+                background-color: var(--dbim-key, #0F5757);
+            }
+
+            .fa-envelope_r {
+                background-color: var(--dbim-key, #0F5757);
+            }
+
+            .fa-linkedin_r {
+                background-color: var(--dbim-key, #0F5757);
+            }
+        </style>
+        <style type="text/css">
+            @media only screen and (max-device-width: 767px) {
+                p span img {
+                    max-width: 90% !important;
+                    height: auto !important;
+                }
+
+                p img {
+                    max-width: 90% !important;
+                    height: auto !important;
+                }
+
+                h2 {
+                    font-size: var(--dbim-h2, 20px);
+                    font-weight: 600 !important;
+                }
+
+                h3 {
+                    font-size: var(--dbim-h3, 16px);
+                    font-weight: 600 !important;
+                }
+            }
+        </style>
+        <style type="text/css">
+            .film-roll-badge {
+                position: absolute;
+                top: 82%;
+                right: 20px;
+                width: 230px;
+                height: 70px;
+                background: repeating-linear-gradient( to right, var(--dbim-green-key, #0F5757) 0px, var(--dbim-green-key, #0F5757) 18px, var(--dbim-text, #150202) 18px, var(--dbim-text, #150202) 36px );
+                border-top: 8px solid var(--dbim-green-key, #0F5757);
+                border-bottom: 8px solid var(--dbim-green-key, #0F5757);
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+                animation: moveFilm 8s linear infinite;
+                z-index: 10;
+            }
+
+                .film-roll-badge::before,
+                .film-roll-badge::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 10px;
+                    background: repeating-linear-gradient( to right, var(--dbim-green-key, #0F5757) 0px, var(--dbim-green-key, #0F5757) 10px, #fff 10px, #fff 20px );
+                    left: 0;
+                    z-index: 2;
+                }
+
+                .film-roll-badge::before {
+                    top: -4px;
+                }
+
+                .film-roll-badge::after {
+                    bottom: -4px;
+                }
+
+            .film-roll-inner {
+                position: relative;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                animation: flicker 2s infinite ease-in-out;
+            }
+
+            .countdown-text {
+                font-size: 1.3rem;
+                font-weight: 700;
+                color: #fff;
+                text-shadow: 0 0 6px rgba(255, 255, 255, 0.4), 0 0 10px #000;
+                white-space: nowrap;
+            }
+
+            @keyframes moveFilm {
+                0% {
+                    background-position: 0 0;
+                }
+
+                100% {
+                    background-position: 120px 0;
+                }
+            }
+
+            @keyframes flicker {
+                0%, 100% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0.9;
+                }
+
+                25% {
+                    opacity: 0.95;
+                }
+
+                75% {
+                    opacity: 0.85;
+                }
+            }
+
+            @media (max-width: 1500px) {
+                .film-roll-badge {
+                    top: 68%;
+                    right: 18px;
+                    height: 65px;
+                    font-size: 0.85rem;
+                }
+
+                .press-section {
+                    margin-top: 35px;
+                }
+            }
+
+            @media (max-width: 992px) {
+                .film-roll-badge {
+                    top: 52%;
+                    right: 10px;
+                    width: 200px;
+                    height: 60px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .film-roll-badge {
+                    top: 56%;
+                    right: 10px;
+                    width: 124px;
+                    height: 55px;
+                }
+
+                .countdown-text {
+                    font-size: 0.9rem;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .film-roll-badge {
+                    top: 59%;
+                    right: 5px;
+                    height: 50px;
+                }
+
+                .countdown-text {
+                    font-size: 0.85rem;
+                }
+            }
+        </style>
+        <script type="text/javascript">
+                  const festivalStart = new Date("2025-11-20T00:00:00").getTime();
+                  const festivalEnd = new Date("2025-11-28T23:59:59").getTime();
+                  const countdownElement = document.getElementById("countdown");
+
+                  if (countdownElement) {
+                        const interval = setInterval(() => {
+                              const now = new Date().getTime();
+
+                              if (now < festivalStart) {
+                                    const diff = festivalStart - now;
+                                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                                    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+                                    countdownElement.innerHTML = `${days} Day${days !== 1 ? 's' : ''} ${hours} Hour${hours !== 1 ? 's' : ''} to go`;
+                              } else if (now >= festivalStart && now <= festivalEnd) {
+                                    const dayNumber = Math.floor((now - festivalStart) / (1000 * 60 * 60 * 24)) + 1;
+                                    countdownElement.innerHTML = `56th IFFI - Day ${dayNumber}`;
+                              } else {
+                                    countdownElement.innerHTML = `✨ IFFI closes but never ends…`;
+                                    const elements = document.querySelectorAll('.film-roll-badge');
+                                    elements.forEach(el => el.style.width = "350px");
+                                    clearInterval(interval);
+                              }
+                        }, 1000);
+                  }
+        </script>
+        <script type="text/javascript">
+                  const miffStart = new Date("2026-06-15T00:00:00").getTime();
+                  const miffEnd = new Date("2026-06-15T23:59:59").getTime();
+                  const miffElement = document.getElementById("miff");
+
+                  if (miffElement) {
+                        const miffInterval = setInterval(() => {
+                              const now = new Date().getTime();
+
+                              if (now < miffStart) {
+                                    const diff = miffStart - now;
+                                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                                    miffElement.innerHTML = `${days} Day${days === 1 ? '' : 's'} to MIFF ...`;
+                              } else if (now >= miffStart && now <= miffEnd) {
+                                    const dayNumber = Math.floor((now - miffStart) / (1000 * 60 * 60 * 24)) + 1;
+                                    miffElement.innerHTML = `19th MIFF - Day ${dayNumber}`;
+                              } else {
+                                    miffElement.innerHTML = `✨ MIFF concludes, cinema lives on...`;
+                                    document.querySelectorAll('.film-roll-badge').forEach(el => el.style.width = "350px");
+                                    clearInterval(miffInterval);
+                              }
+                        }, 1000);
+                  }
+        </script>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("sc_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","PopupControlID":"P_CategoryManagement","dynamicServicePath":"/PressReleasePage.aspx","id":"mpe"}, null, null, $get("Hidden"));
+});
+//]]>
+</script>
+<input type="hidden" name="__ncforminfo" value="pbD5SDBfpXPSPhkXWbrIZj05ooMB0_E7EV1XpYeWOS-HiGJdyyjvm5KLbqKgXb2iHwWWD_lKL6dHrcK2nraGZgisU6x6VxUyFz9llGUPyzDbs3oA6rKQMQ=="/></form>
+    
+
+<script type="application/json" id="pibConsentConfig">{"ga4Id":"G-Q414Y0X6EE,G-QJJ6LZ8LHV","policyUrl":"/CookiePolicy.aspx","text":{"bannerLabel":"Cookie consent","title":"Cookies on this website","body":"We use essential cookies to make this website work. We also set analytics cookies when you arrive, so we can see how the site is used and improve it - you can switch these off below or at any time from the Cookie Policy page. Cookies from embedded social media content are set only if you allow them.","policyLink":"Read our Cookie Policy","accept":"Accept all","reject":"Reject optional","customize":"Customise","prefsTitle":"Cookie preferences","prefsIntro":"Choose which cookies this website may set. Essential cookies cannot be switched off because the site does not work without them. Analytics cookies are on unless you turn them off. Social media cookies stay off until you allow them. You can change these choices at any time from the Cookie Policy page.","essentialName":"Essential cookies","essentialDesc":"Needed for the site to function. These remember your session, your language and region, your text size and colour theme, and verify the security check on forms. They are always on.","analyticsName":"Analytics cookies","analyticsDesc":"Help us understand how visitors use the site - which pages are read and how long people stay - so it can be improved. The information is collected in a form that does not directly identify you. These are on when you arrive; switching them off here stops them and deletes the ones already set.","socialName":"Social media cookies","socialDesc":"Set by content embedded from X, Facebook and YouTube, such as timelines and videos. These platforms may use them to track you across websites. They stay off until you allow them.","save":"Save preferences","cancel":"Cancel"}}</script>
+<script type="text/javascript" src='/js/consent.js?v=10'></script>
+
+<script type="text/javascript" src='/js/consent-embeds.js?v=10'></script>
+
+
+    <!-- Minimal O(N) Time and O(1) Auxiliary Space Word Count & Read Time Calculation -->
+    <script type="text/javascript">
+            (function () {
+                  function calculateReadingStats() {
+                        var bodyEl = document.getElementById("pibReleaseBody");
+                        if (!bodyEl) return;
+
+                        // textContent extracts text without triggering expensive layout/reflow computations
+                        var text = bodyEl.textContent || "";
+                        var words = 0;
+                        var inWord = false;
+
+                        // O(N) single pass character code scan: achieves O(1) space with zero array allocations
+                        for (var i = 0, len = text.length; i < len; i++) {
+                              var code = text.charCodeAt(i);
+                              // Delimits on ASCII whitespace, control characters, tabs, newlines, and non-breaking spaces (160)
+                              if (code <= 32 || code === 160) {
+                                    inWord = false;
+                              } else if (!inWord) {
+                                    inWord = true;
+                                    words++;
+                              }
+                        }
+
+                        // Standard 250 WPM reading speed (e.g., 612 words yields 2 min read)
+                        var minutes = Math.max(1, Math.round(words / 250));
+
+                        var elWords = document.getElementById("prWordCount");
+                        var elTime = document.getElementById("prReadTime");
+
+                        if (elWords) elWords.textContent = words + (words === 1 ? " word" : " words");
+                        if (elTime) elTime.textContent = minutes + " min read";
+                  }
+
+                  if (document.readyState === "loading") {
+                        document.addEventListener("DOMContentLoaded", calculateReadingStats);
+                  } else {
+                        calculateReadingStats();
+                  }
+            })();
+    </script>
+
+    <script type="text/javascript">
+            (function () {
+                  try {
+                        if (window.self === window.top) { return; }
+                  } catch (e) { return; }
+                  var s = document.createElement("style");
+                  s.textContent = ".sticky-social, .sticky-social_mb { display: none !important; }";
+                  (document.head || document.documentElement).appendChild(s);
+            }());
+    </script>
+</body>
+</html>
