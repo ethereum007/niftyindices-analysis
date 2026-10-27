@@ -76,7 +76,7 @@ def build(db, root, out):
              'generated':datetime.now(timezone.utc).isoformat(),
              'periods':list(PERIODS),'targets':{d:{k:target_date(date.fromisoformat(d),k).isoformat() for k in PERIODS} for d in sorted({r['date'] for r in observations})}}
     encoded=json.dumps(payload,separators=(',',':')).replace('<','\\u003c').replace('>','\\u003e').replace('&','\\u0026')
-    page=(HERE/'dashboard.html').read_text(encoding='utf-8').replace('__WAREHOUSE_DATA__',encoded).replace('__THEME_SCRIPT__',(HERE/'themes.js').read_text(encoding='utf-8'))
+    page=(HERE/'dashboard.html').read_text(encoding='utf-8').replace('__WAREHOUSE_DATA__',encoded).replace('__THEME_SCRIPT__',(HERE/'themes.js').read_text(encoding='utf-8')+'\n'+(HERE/'theme-catalogue.js').read_text(encoding='utf-8'))
     out.mkdir(parents=True,exist_ok=True)
     latest=payload['dates'][-1]
     latest_rows=[r for r in observations if r['date']==latest]

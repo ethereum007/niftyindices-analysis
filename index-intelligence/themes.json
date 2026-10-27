@@ -153,5 +153,303 @@
         }
       ]
     }
-  ]
+  ],
+  "catalogue": {
+    "reviewed_on": "2026-10-27",
+    "discovery_method": "Selected publicly visible Smallcase collection listings; editorial feature presence is not investor popularity. This is a sample, not a full marketplace census.",
+    "families": [
+      {
+        "id": "ai",
+        "name": "AI & Digital Infrastructure",
+        "description": "Computing, connectivity and the physical infrastructure behind digital workloads.",
+        "sources": [
+          "https://www.smallcase.com/collection/6a8561ac1e0912c208793b91"
+        ],
+        "subthemes": [
+          "AI compute hardware",
+          "Data centres",
+          "Cooling & HVAC",
+          "Fibre & connectivity",
+          "Embedded design"
+        ],
+        "related_indices": [
+          "Nifty AI Catalysts",
+          "Nifty India Digital"
+        ],
+        "membership_status": "Initial examples available",
+        "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
+        "public_example": "AI & Data Center Theme"
+      },
+      {
+        "id": "defence",
+        "name": "Defence & Aerospace",
+        "description": "Domestic defence capability and its equipment supply chain.",
+        "sources": [
+          "https://www.smallcase.com/collection/6a8561ac1e0912c208793b91",
+          "https://www.smallcase.com/collection/696f2efa23e68d8e372bb581"
+        ],
+        "subthemes": [
+          "Aerospace & engines",
+          "Defence electronics",
+          "Shipbuilding",
+          "Precision components",
+          "Drones"
+        ],
+        "related_indices": [
+          "Nifty India Defence",
+          "Nifty India Defence Equal Weight"
+        ],
+        "membership_status": "Company mapping pending",
+        "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
+        "public_example": "Defence Stars Theme"
+      },
+      {
+        "id": "railways",
+        "name": "Railways & Transport Infrastructure",
+        "description": "Rail investment and the equipment and services supporting it.",
+        "sources": [
+          "https://www.smallcase.com/collection/6a8561ac1e0912c208793b91",
+          "https://www.smallcase.com/collection/696f2efa23e68d8e372bb581"
+        ],
+        "subthemes": [
+          "Rolling stock",
+          "Rail electrification",
+          "Signalling & safety",
+          "Rail EPC",
+          "Freight infrastructure"
+        ],
+        "related_indices": [
+          "Nifty India Railways PSU",
+          "Nifty Transportation & Logistics"
+        ],
+        "membership_status": "Company mapping pending",
+        "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
+        "public_example": "Railways & Defence Tracker"
+      },
+      {
+        "id": "cleanenergy",
+        "name": "Energy Transition & Grid",
+        "description": "Renewable generation and the electrical infrastructure connecting it.",
+        "sources": [
+          "https://www.smallcase.com/collection/6a8561ac1e0912c208793b91",
+          "https://www.smallcase.com/collection/696f2efa23e68d8e372bb581"
+        ],
+        "subthemes": [
+          "Solar value chain",
+          "Wind equipment",
+          "Storage & batteries",
+          "Transmission equipment",
+          "Grid modernisation"
+        ],
+        "related_indices": [
+          "Nifty Power",
+          "Nifty Energy"
+        ],
+        "membership_status": "Company mapping pending",
+        "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
+        "public_example": "Green Energy Theme"
+      },
+      {
+        "id": "manufacturing",
+        "name": "Manufacturing & Industrial Capex",
+        "description": "Domestic manufacturing capacity, electronics and industrial equipment.",
+        "sources": [
+          "https://www.smallcase.com/collection/6a8561ac1e0912c208793b91",
+          "https://www.smallcase.com/collection/6a26af21c630778d5fc73122"
+        ],
+        "subthemes": [
+          "Electronics manufacturing",
+          "Industrial automation",
+          "Capital equipment",
+          "Precision engineering",
+          "Contract manufacturing"
+        ],
+        "related_indices": [
+          "Nifty India Manufacturing",
+          "Nifty Capital Goods"
+        ],
+        "membership_status": "Company mapping pending",
+        "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
+        "public_example": "Electronics Manufacturing Sector Tracker"
+      },
+      {
+        "id": "capitalmarkets",
+        "name": "Capital Markets & Wealth",
+        "description": "Businesses serving investment, trading and financial savings.",
+        "sources": [
+          "https://www.smallcase.com/collection/6a26af21c630778d5fc73122"
+        ],
+        "subthemes": [
+          "Exchanges & depositories",
+          "Brokers",
+          "Asset managers",
+          "Registrars & platforms",
+          "Wealth management"
+        ],
+        "related_indices": [
+          "Nifty Capital Markets"
+        ],
+        "membership_status": "Company mapping pending",
+        "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
+        "public_example": "Capital Markets Theme"
+      },
+      {
+        "id": "fintech",
+        "name": "Fintech & Digital Finance",
+        "description": "Digital payments, financial technology and distribution.",
+        "sources": [
+          "https://www.smallcase.com/collection/696f2efa23e68d8e372bb581"
+        ],
+        "subthemes": [
+          "Payments infrastructure",
+          "Digital lenders",
+          "Financial software",
+          "Insurance distribution",
+          "Digital banking"
+        ],
+        "related_indices": [
+          "Nifty Financial Services",
+          "Nifty Bank"
+        ],
+        "membership_status": "Company mapping pending",
+        "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
+        "public_example": "Omni FinTech, Digital Banking & Payments."
+      },
+      {
+        "id": "consumption",
+        "name": "Consumption & Premiumisation",
+        "description": "Consumer spending across urban and rural India.",
+        "sources": [
+          "https://www.smallcase.com/collection/macro-economic-themes-691db7cd2cba66d2b6f356b4",
+          "https://www.smallcase.com/collection/consumption-picks-68da90d5002610b85842293d"
+        ],
+        "subthemes": [
+          "Branded retail",
+          "Consumer durables",
+          "Premium experiences",
+          "Food & staples",
+          "Rural demand"
+        ],
+        "related_indices": [
+          "Nifty India Consumption",
+          "Nifty India New Age Consumption",
+          "Nifty Rural"
+        ],
+        "membership_status": "Company mapping pending",
+        "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
+        "public_example": "Niveshaay Consumer Trends Portfolio Theme"
+      },
+      {
+        "id": "housing",
+        "name": "Housing & Real Estate Ecosystem",
+        "description": "Property development and the products and finance supporting housing.",
+        "sources": [
+          "https://www.smallcase.com/collection/macro-economic-themes-691db7cd2cba66d2b6f356b4"
+        ],
+        "subthemes": [
+          "Residential developers",
+          "Building materials",
+          "Housing finance",
+          "Home improvement",
+          "Commercial property"
+        ],
+        "related_indices": [
+          "Nifty Realty",
+          "Nifty Core Housing",
+          "Nifty Housing Finance"
+        ],
+        "membership_status": "Company mapping pending",
+        "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
+        "public_example": "Real Estate Stars Tracker"
+      },
+      {
+        "id": "oilgas",
+        "name": "Oil, Gas & Energy Infrastructure",
+        "description": "Hydrocarbon producers, processing and distribution infrastructure.",
+        "sources": [
+          "https://www.smallcase.com/collection/6a26af21c630778d5fc73122"
+        ],
+        "subthemes": [
+          "Exploration & production",
+          "Refining",
+          "Pipelines & terminals",
+          "City gas",
+          "Energy services"
+        ],
+        "related_indices": [
+          "Nifty Oil & Gas"
+        ],
+        "membership_status": "Company mapping pending",
+        "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
+        "public_example": "GVSR - Oil & Gas Sector Tracker-Value Buys"
+      },
+      {
+        "id": "minerals",
+        "name": "Strategic Minerals & Materials",
+        "description": "Supply chains for strategically important minerals and materials.",
+        "sources": [
+          "https://www.smallcase.com/collection/6a8561ac1e0912c208793b91"
+        ],
+        "subthemes": [
+          "Critical mineral producers",
+          "Specialty materials",
+          "Processing & refining",
+          "Recycling",
+          "Mining equipment"
+        ],
+        "related_indices": [
+          "Nifty Metal",
+          "Nifty Commodities"
+        ],
+        "membership_status": "Company mapping pending",
+        "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
+        "public_example": "Arth Strategic Minerals Theme"
+      },
+      {
+        "id": "mobility",
+        "name": "Auto Components & New Mobility",
+        "description": "Vehicle component suppliers and changing mobility technology.",
+        "sources": [
+          "https://www.smallcase.com/collection/macro-economic-themes-691db7cd2cba66d2b6f356b4"
+        ],
+        "subthemes": [
+          "Auto ancillaries",
+          "EV powertrain",
+          "Batteries & charging",
+          "Vehicle electronics",
+          "Tyres"
+        ],
+        "related_indices": [
+          "Nifty Auto",
+          "Nifty EV & New Age Automotive"
+        ],
+        "membership_status": "Company mapping pending",
+        "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
+        "public_example": "Auto Ancillaries Theme"
+      },
+      {
+        "id": "healthcare",
+        "name": "Healthcare & Pharma",
+        "description": "Healthcare businesses and pharmaceutical supply chains.",
+        "sources": [
+          "https://www.smallcase.com/collection/6a26af21c630778d5fc73122"
+        ],
+        "subthemes": [
+          "Hospitals",
+          "Diagnostics",
+          "Pharma manufacturers",
+          "Contract research",
+          "Medical equipment"
+        ],
+        "related_indices": [
+          "Nifty Healthcare Index",
+          "Nifty Hospitals",
+          "Nifty Pharma"
+        ],
+        "membership_status": "Company mapping pending",
+        "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
+        "public_example": "Pharma Stars Tracker"
+      }
+    ]
+  }
 }

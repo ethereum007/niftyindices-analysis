@@ -1,13 +1,14 @@
 """Research membership contracts: evidence, identity, overlap and bounded coverage."""
 import json
 import unittest
+import sqlite3
 from pathlib import Path
 
 HERE=Path(__file__).parent
 
 class ThemesTest(unittest.TestCase):
     def test_membership_evidence_and_quote_identity(self):
-        themes=json.loads((HERE/'themes.json').read_text())
+        themes=json.loads((HERE/'themes.json').read_text(encoding='utf-8'))
         prices=json.loads((HERE.parent/'nifty-automation/data/stocks/latest.json').read_text())['prices']
         symbols=[p['symbol'] for p in prices.values()]
         self.assertEqual(len(themes['themes']),10)
@@ -21,5 +22,19 @@ class ThemesTest(unittest.TestCase):
                 self.assertTrue(m['source_url'].startswith('https://'))
                 self.assertTrue(m['rationale'])
         self.assertEqual(themes['status'],'initial_research_coverage')
+
+    def test_catalogue_has_evidence_and_real_related_series(self):
+        data=json.loads((HERE/'themes.json').read_text(encoding='utf-8'))['catalogue']
+        with sqlite3.connect(HERE.parent/'nifty-automation/data/warehouse.sqlite') as db:
+            names={r[0] for r in db.execute('select distinct name from observations')}
+        self.assertEqual(len(data['families']),13)
+        self.assertEqual(len({f['id'] for f in data['families']}),13)
+        for family in data['families']:
+            self.assertTrue(family['sources'])
+            self.assertTrue(all(u.startswith('https://www.smallcase.com/collection/') for u in family['sources']))
+            self.assertTrue(family['subthemes'])
+            self.assertTrue(set(family['related_indices'])<=names)
+            self.assertNotIn('members',family)
+            self.assertIn('context only',family['mapping_note'])
 
 if __name__=='__main__':unittest.main()
