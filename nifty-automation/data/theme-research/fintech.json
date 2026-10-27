@@ -1,0 +1,113 @@
+{
+  "family": "fintech",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-28",
+  "note": "Five proposed digital-finance examples, not a pure-play fintech universe or a common valuation peer group. Platforms, diversified lenders, software vendors, insurance distributors and banks have different roles and financial statements. No banking licence, underwriting role, revenue materiality, customer records, weights or historical membership inferred.",
+  "members": [
+    {
+      "symbol": "PAYTM",
+      "subtheme": "Payments infrastructure",
+      "source_url": "https://ir.paytm.com/our-business",
+      "rationale": "Merchant payment-platform and gateway offerings support payments exposure. This does not attribute a banking licence, deposit-taking activity or all partner/group revenue to the listed parent.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "One 97 Communications Ltd.",
+      "isin": "INE982J01020",
+      "resolved_url": "https://ir.paytm.com/our-business",
+      "sha256": "db72d07d120d69e1b05a28a97847f13d6a181b742bee0bc8a6189719f5c80566",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T22:43:32.500748+00:00",
+      "keyword_checks": {
+        "merchant": true,
+        "payment": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "subtheme": "Digital lenders",
+      "source_url": "https://www.bajajfinserv.in/personal-loan",
+      "rationale": "An online loan application establishes digital origination at Bajaj Finance, a diversified lender. It is distinct from listed parent Bajaj Finserv; no fintech-only revenue mix or exclusively digital loan book is inferred.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Bajaj Finance Ltd.",
+      "isin": "INE296A01032",
+      "resolved_url": "https://www.bajajfinserv.in/personal-loan",
+      "sha256": "fa9333c7acdf98c73027a0a9138ec4e2c8dd9fc5040c7a12802d0621009584bc",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T22:43:32.375947+00:00",
+      "keyword_checks": {
+        "bajaj finance": true,
+        "online": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "INTELLECT",
+      "subtheme": "Financial software",
+      "source_url": "https://www.intellectdesign.com/",
+      "rationale": "Banking and financial-technology products establish financial-software exposure. A software supplier is not classified as the lender or owner of client bank deposits.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Intellect Design Arena Ltd.",
+      "isin": "INE306R01017",
+      "resolved_url": "https://www.intellectdesign.com/",
+      "sha256": "d304a75027b7b60062a8b3ced8f7c0e56583c6e5857a9a735d39aed407d811e1",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T22:43:35.036597+00:00",
+      "keyword_checks": {
+        "banking": true,
+        "technology": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "POLICYBZR",
+      "subtheme": "Insurance distribution",
+      "source_url": "https://www.pbfintech.in/",
+      "rationale": "Policybazaar and Paisabazaar marketplace offerings establish distribution/platform exposure through the listed group. This does not classify the company as an insurance underwriter or equate distributed premiums with corporate revenue.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "PB Fintech Ltd.",
+      "isin": "INE417T01026",
+      "resolved_url": "https://www.pbfintech.in/",
+      "sha256": "1cd4bfe3bd43bf321d5f1535a18b39389c2876c94063425c617ca94220b6d538",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T22:43:33.104988+00:00",
+      "keyword_checks": {
+        "policybazaar": true,
+        "insurance": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "AUBANK",
+      "subtheme": "Digital banking",
+      "source_url": "https://www.au.bank.in/personal-banking/savings-account/digital-savings-account",
+      "rationale": "Online account opening and AU 0101 services establish digital-channel exposure at AU Small Finance Bank. It also operates physical touchpoints; this is not a pure-play neobank or an inferred digital-revenue percentage.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "AU Small Finance Bank Ltd.",
+      "isin": "INE949L01017",
+      "resolved_url": "https://www.au.bank.in/personal-banking/savings-account/digital-savings-account",
+      "sha256": "8781e7494b971ba2e24c0b85f395e08f97bacc29266d676a7f6e71d79f7be6e7",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-27T22:43:33.463455+00:00",
+      "keyword_checks": {
+        "digital": true,
+        "au 0101": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

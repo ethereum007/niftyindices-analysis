@@ -9,6 +9,21 @@ from pathlib import Path
 ROOT=Path(__file__).parent/'data/theme-research'
 
 class ThemeEvidenceTest(unittest.TestCase):
+    def test_fintech_identities_and_distinct_provider_roles(self):
+        manifest=json.loads((ROOT/'fintech.json').read_text(encoding='utf-8'))
+        self.assertEqual(len({r['subtheme'] for r in manifest['members']}),5)
+        prices=json.loads((ROOT.parent/'stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        for row in manifest['members']:
+            self.assertIsNone(row['effective_date'])
+            self.assertEqual(prices[row['isin']]['symbol'],row['symbol'])
+            raw=(ROOT/'raw'/(row['sha256']+'.'+row.get('raw_extension','html'))).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),row['sha256'])
+            self.assertEqual(row['status'],'evidence_archived')
+            self.assertTrue(all(row['keyword_checks'].values()))
+            if row['symbol']=='BAJFINANCE':self.assertIn('distinct from listed parent Bajaj Finserv',row['rationale'])
+            if row['symbol']=='POLICYBZR':self.assertIn('does not classify the company as an insurance underwriter',row['rationale'])
+            if row['symbol']=='AUBANK':self.assertIn('not a pure-play neobank',row['rationale'])
+
     def test_capitalmarkets_roles_identity_and_primary_pdf(self):
         manifest=json.loads((ROOT/'capitalmarkets.json').read_text(encoding='utf-8'))
         self.assertEqual(len({r['subtheme'] for r in manifest['members']}),5)
