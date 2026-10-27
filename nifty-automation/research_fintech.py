@@ -19,6 +19,7 @@ def main():
         records=list(pool.map(lambda seed:archive(seed,identities,REVIEWED),SEEDS))
     manifest={'family':'fintech','status':'initial_examples_for_review','reviewed_on':REVIEWED,
               'note':'Five proposed digital-finance examples, not a pure-play fintech universe or a common valuation peer group. Platforms, diversified lenders, software vendors, insurance distributors and banks have different roles and financial statements. No banking licence, underwriting role, revenue materiality, customer records, weights or historical membership inferred.',
+              'comparison_note':'These examples span payments, diversified lending, financial software, distribution and banking. They are a business-exposure map, not a homogeneous group for comparing revenue growth or valuation multiples.',
               'members':records}
     (ROOT/'fintech.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
     print(json.dumps({r['symbol']:r['status'] for r in records}))
