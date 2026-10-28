@@ -5,7 +5,7 @@
     {
       "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_138073_28012026183414_iXBRL_WEB.html",
       "filing_date": "2026-01-28",
-      "retrieved_utc": "2026-10-28T07:53:44.001940+00:00",
+      "retrieved_utc": "2026-10-28T08:22:59.007816+00:00",
       "sha256": "fa22661df1d3f9eea6ed55d84392c3e1bc614bd586c0b9e676714837ec317809",
       "fact": {
         "symbol": "BEL",
@@ -29,15 +29,15 @@
     {
       "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_123885_31102025145355_iXBRL_WEB.html",
       "filing_date": "2025-10-31",
-      "retrieved_utc": "2026-10-28T07:53:44.003942+00:00",
-      "sha256": "bce1b995f26a498cc8f6e5c10a978eb842ada45b82ec79ce869db491d11d3311",
+      "retrieved_utc": "2026-10-28T08:22:59.008820+00:00",
+      "sha256": "d56377ceb5b678bd2e7048bab86f709152e11e93da2bf82cb5a1b95d2a5e57ce",
       "status": "fetch_or_validation_failed",
       "error": "Unexpected accounting scope"
     },
     {
       "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_106194_28072025160924_iXBRL_WEB.html",
       "filing_date": "2025-07-28",
-      "retrieved_utc": "2026-10-28T07:53:44.004941+00:00",
+      "retrieved_utc": "2026-10-28T08:22:59.009822+00:00",
       "sha256": "b1a218762e6d684f455c8784d087dcd649cf6c0b8068ec3f9e8b91b3161a0266",
       "fact": {
         "symbol": "BEL",
@@ -57,8 +57,57 @@
         "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
       },
       "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_158847_19052026163923_iXBRL_WEB.html",
+      "filing_date": "2026-05-19",
+      "retrieved_utc": "2026-10-28T08:22:59.656163+00:00",
+      "sha256": "46e9a9d049cce20ca202422b7558ab5275d3c7684449c666d770529c228f0e2c",
+      "fact": {
+        "symbol": "BEL",
+        "isin": "INE263A01024",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_date": "2026-05-19",
+        "scope": "Consolidated",
+        "audit_status": "Audited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "10224.43",
+        "pat_total_period_crore": "2226.35",
+        "ytd_revenue_operations_crore": "27610.11",
+        "ytd_pat_total_period_crore": "6062.26",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_178593_27072026163840_iXBRL_WEB.html",
+      "filing_date": "2026-07-27",
+      "retrieved_utc": "2026-10-28T08:22:59.657165+00:00",
+      "sha256": "dd0c3a14501734c251d00248ae0c01d88d7eab33196b40916d819881c8191760",
+      "fact": {
+        "symbol": "BEL",
+        "isin": "INE263A01024",
+        "period_start": "2026-04-01",
+        "period_end": "2026-06-30",
+        "filing_date": "2026-07-27",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "5546.98",
+        "pat_total_period_crore": "1054.53",
+        "ytd_revenue_operations_crore": "5546.98",
+        "ytd_pat_total_period_crore": "1054.53",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
     }
   ],
   "ttm": null,
+  "ttm_unavailable_reason": "Noncontiguous or duplicate TTM quarters",
   "note": "Primary financial-fact pilot. Accounting/date/unit review and source verification required before publication. Missing prior-year quarters, ROCE and valuation remain unavailable."
 }

@@ -57,6 +57,20 @@ class PrimaryFinancialTest(unittest.TestCase):
             self.assertNotIn('fact',source)
             self.assertEqual(hashlib.sha256(raw).hexdigest(),source['sha256'])
 
+    def test_bel_missing_quarter_keeps_fetched_facts_and_ttm_unavailable(self):
+        data=json.loads((ROOT/'bel.json').read_text(encoding='utf-8'))
+        self.assertIsNone(data['ttm'])
+        self.assertIn('Noncontiguous',data['ttm_unavailable_reason'])
+        facts=[r['fact'] for r in data['sources'] if r.get('fact')]
+        self.assertEqual(len(facts),4)
+        annual=next(f for f in facts if f['period_end']=='2026-03-31')
+        december=next(f for f in facts if f['period_end']=='2025-12-31')
+        for metric in ('revenue_operations_crore','pat_total_period_crore'):
+            self.assertEqual(Decimal(annual['ytd_'+metric])-Decimal(december['ytd_'+metric]),Decimal(annual[metric]))
+        latest=next(f for f in facts if f['period_end']=='2026-06-30')
+        self.assertEqual(latest['revenue_operations_crore'],'5546.98')
+        self.assertEqual(latest['pat_total_period_crore'],'1054.53')
+
     def test_exact_quarter_sales_pat_scope_and_unit(self):
         f=parse(self.raw,'2026-10-27')
         self.assertEqual(f['period_start'],'2026-07-01')

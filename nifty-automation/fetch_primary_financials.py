@@ -75,7 +75,9 @@ def main(symbol='MAZDOCK'):
     sources=[(r['filing_date'],r['source_url']) for r in catalogue[symbol]]
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:records=list(pool.map(lambda source:fetch(source,symbol),sources))
     facts=[r['fact'] for r in records if r.get('fact')]
-    out={'symbol':symbol,'publication_ready':False,'sources':records,'ttm':trailing_four(facts,'2026-10-28'),'note':'Primary financial-fact pilot. Accounting/date/unit review and source verification required before publication. Missing prior-year quarters, ROCE and valuation remain unavailable.'}
+    try:ttm=trailing_four(facts,'2026-10-28');ttm_error=None
+    except ValueError as exc:ttm=None;ttm_error=str(exc)
+    out={'symbol':symbol,'publication_ready':False,'sources':records,'ttm':ttm,'ttm_unavailable_reason':ttm_error,'note':'Primary financial-fact pilot. Accounting/date/unit review and source verification required before publication. Missing prior-year quarters, ROCE and valuation remain unavailable.'}
     (ROOT/(symbol.lower()+'.json')).write_text(json.dumps(out,indent=2),encoding='utf-8');print(json.dumps({'records':[{k:r.get(k) for k in ('filing_date','status','error')} for r in records],'ttm':out['ttm']}))
 if __name__=='__main__':
     import sys

@@ -1,0 +1,30 @@
+{
+  "symbol": "BEL",
+  "isin": "INE263A01024",
+  "reviewed_on": "2026-10-28",
+  "status": "reviewed_with_field_restrictions",
+  "source_hashes": [
+    {
+      "sha256": "fa22661df1d3f9eea6ed55d84392c3e1bc614bd586c0b9e676714837ec317809",
+      "filing_date": "2026-01-28",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_138073_28012026183414_iXBRL_WEB.html"
+    },
+    {
+      "sha256": "b1a218762e6d684f455c8784d087dcd649cf6c0b8068ec3f9e8b91b3161a0266",
+      "filing_date": "2025-07-28",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_106194_28072025160924_iXBRL_WEB.html"
+    },
+    {
+      "sha256": "46e9a9d049cce20ca202422b7558ab5275d3c7684449c666d770529c228f0e2c",
+      "filing_date": "2026-05-19",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_158847_19052026163923_iXBRL_WEB.html"
+    },
+    {
+      "sha256": "dd0c3a14501734c251d00248ae0c01d88d7eab33196b40916d819881c8191760",
+      "filing_date": "2026-07-27",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_178593_27072026163840_iXBRL_WEB.html"
+    }
+  ],
+  "blocked_fields": [],
+  "note": "Consolidated figures in INR crore. The June 2025 filing reports actual rupees, which are converted to crore; blank year-to-date fields remain unavailable. March 2026 sales and PAT reconcile to annual less nine-month figures. TTM remains unavailable because the September 2025 consolidated quarter is missing. YoY compares original as-filed June quarters and may differ from restated comparisons."
+}
