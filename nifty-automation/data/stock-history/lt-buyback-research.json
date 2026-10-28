@@ -1,0 +1,64 @@
+{
+  "symbol": "LT",
+  "publication_ready": false,
+  "sources": [
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/LT_27092023201342_Updateonbuyback.pdf",
+      "sha256": "dc23180bb7ef3789ae3b0b523316014dd4361d8dc6f20c9d825e3fc6f20f1c9b",
+      "retrieved_utc": "2026-10-28T15:22:22.592973+00:00",
+      "pages": 1,
+      "hits": [
+        {
+          "page": 1,
+          "term": "participated in the Buyback",
+          "excerpt": "nge in banking working day from September 29, 2023 to September 28, 2023, Eligible Shareholders who participated in the Buyback are advised to please note that the (i) settlement of bids on the Stock Exchange s, (ii) return of unaccepted Equity Shares and (iii) payment of consideration to Eligible Shareholders who participated in the Buyback will take place on Thursday, September 28, 2023 instead of Friday, September 29, 2023. This is for your in"
+        }
+      ]
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/LT_01112023122710_NewspaperAdvtSep2023.pdf",
+      "sha256": "a37273d63e595092968cb1c40efdcf6541bd022b5773fa0684996688457d062a",
+      "retrieved_utc": "2026-10-28T15:22:24.117717+00:00",
+      "pages": 3,
+      "hits": [
+        {
+          "page": 2,
+          "term": "tender offer",
+          "excerpt": "o the shareholders as on the record date i.e. September 12, 2023 on proportionate basis through the tender offer route. The tendering period was from September 18, 2023 to September 25, 2023. The settlement of all valid bids and extinguishment of equity shares bought back were completed on September 28, 2023. a) b) c} d} Accordingly, the Company has bought back 3, 12,50,000 equity shares of face value oft 2 each, representing 2.22% of the number "
+        },
+        {
+          "page": 2,
+          "term": "2.22%",
+          "excerpt": "ngly, the Company has bought back 3, 12,50,000 equity shares of face value oft 2 each, representing 2.22% of the number of equity shares in the paid-up share capital at a price of t 3,200 per share aggregating tot 10,000 crore. Consequently, the equity share capital stands reduced by~ 6.25 crore. The premium on buyback oft 9,993.75 crore, transaction cost (net of tax} with respect to the buyback of~ 26.37 crore and the tax on buyback of~ 2,253.33"
+        },
+        {
+          "page": 2,
+          "term": "extinguishment",
+          "excerpt": "ring period was from September 18, 2023 to September 25, 2023. The settlement of all valid bids and extinguishment of equity shares bought back were completed on September 28, 2023. a) b) c} d} Accordingly, the Company has bought back 3, 12,50,000 equity shares of face value oft 2 each, representing 2.22% of the number of equity shares in the paid-up share capital at a price of t 3,200 per share aggregating tot 10,000 crore. Consequently, the equ"
+        },
+        {
+          "page": 3,
+          "term": "tender offer",
+          "excerpt": "o the shareholders as on the record date i.e. September 12, 2023 on proportionate basis through the tender offer route. The tendering period was from September 18, 2023 to September 25, 2023. The settlement of all valid bids and extinguishment of equity shares bought back were completed on September 28, 2023. Accordingly, the Company has bought back 3, 12,50,000 equity shares of face value of~ 2 each, representing 2.22% of the number of equity sh"
+        },
+        {
+          "page": 3,
+          "term": "2.22%",
+          "excerpt": "ngly, the Company has bought back 3, 12,50,000 equity shares of face value of~ 2 each, representing 2.22% of the number of equity shares in the paid-up share capital, at a price of ~ 3,200 per share aggregating to~ 10,000 crore. Consequently, the equity share capital stands reduced by~ 6.25 crore. The premium on buyback of~ 9,993.75 crore, transaction cost (net of tax) with respect to the buyback of~ 26.37 crore and the tax on buyback of~ 2,253.3"
+        },
+        {
+          "page": 3,
+          "term": "extinguishment",
+          "excerpt": "ring period was from September 18, 2023 to September 25, 2023. The settlement of all valid bids and extinguishment of equity shares bought back were completed on September 28, 2023. Accordingly, the Company has bought back 3, 12,50,000 equity shares of face value of~ 2 each, representing 2.22% of the number of equity shares in the paid-up share capital, at a price of ~ 3,200 per share aggregating to~ 10,000 crore. Consequently, the equity share c"
+        }
+      ]
+    }
+  ],
+  "event_record_date": "2023-09-12",
+  "review_notes": [
+    "Primary issuer update states cash consideration applies to eligible shareholders who participated in the tender buyback; it is not an automatic cash distribution per retained share.",
+    "Issuer results state 31250000 shares extinguished and 2.22 percent of equity bought back at3200, total10000crore. Corporate paid-up capital reduction is not an automatic split of each continuing share.",
+    "A non-tendering share-price/adjusted-close history must not add tender proceeds to every holder or apply inverse issued-share-count scaling. A tender-participant strategy return is different and is not calculated.",
+    "Pipeline retains unknown/manual event until explicit reviewer override design, identity and original source hashes are checked. No automatic buyback exemption."
+  ]
+}
