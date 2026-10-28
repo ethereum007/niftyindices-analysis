@@ -1,0 +1,11 @@
+{
+  "symbol": "ABB",
+  "isin": "INE117A01022",
+  "publication_ready": false,
+  "source_url": "https://nsearchives.nseindia.com/corporate/ABB_10022021152405_ABBAGMBookClsrDivFeb102021.pdf",
+  "sha256": "e4ad30a3f2c8b2bbe172e177c15b23ac7be3aba90efe69caeb68bc40b30c7548",
+  "retrieved_utc": "2026-10-28T17:39:46.312696+00:00",
+  "source_date": "2021-02-10",
+  "statement_page": 1,
+  "note": "Primary issuer filing explicitly names NSE ABB and current ISIN before five-year history window. Compare with current official membership, action ISINs and vendor ticker. Not a certificate excluding reorganisations or all actions."
+}

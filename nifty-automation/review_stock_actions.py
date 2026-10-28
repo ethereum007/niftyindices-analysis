@@ -107,6 +107,9 @@ def apply_event_dispositions(record,dispositions,root=ROOT):
             if not re.fullmatch('[0-9a-f]{64}',sha):raise ValueError('Invalid event evidence hash')
             if hashlib.sha256((root/'raw'/(sha+'.pdf')).read_bytes()).hexdigest()!=sha:raise ValueError('Changed event disposition evidence')
         matching=[e for e in result['unclassified_actions'] if e['symbol']==decision['symbol'] and e['isin']==decision['isin'] and e['subject']==decision['subject'] and day(e['exDate'])==decision['date']]
+        if not matching:
+            prior=[r for r in result.get('reviewed_non_price_events',[]) if r['decision']==decision and r['event']['symbol']==decision['symbol'] and r['event']['isin']==decision['isin'] and r['event']['subject']==decision['subject'] and day(r['event']['exDate'])==decision['date']]
+            if len(prior)==1:continue
         if len(matching)!=1:raise ValueError('Missing or ambiguous reviewed event')
         result['unclassified_actions'].remove(matching[0]);reviewed.append({'event':matching[0],'decision':decision})
     if reviewed:

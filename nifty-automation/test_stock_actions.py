@@ -50,6 +50,7 @@ class ActionReviewTest(unittest.TestCase):
         self.assertFalse(updated['publication_ready'])
         self.assertEqual(updated['comparisons'],original['comparisons'])
         self.assertEqual(len(updated['reviewed_non_price_events']),1)
+        self.assertEqual(apply_event_dispositions(updated,decisions),updated)
         stale=copy.deepcopy(decisions);stale[0]['action_sha256']='0'*64
         with self.assertRaisesRegex(ValueError,'Stale event disposition'):apply_event_dispositions(original,stale)
         changed=copy.deepcopy(decisions);changed[0]['date']='2023-09-13'
