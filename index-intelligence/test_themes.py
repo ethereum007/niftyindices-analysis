@@ -62,6 +62,12 @@ class ThemesTest(unittest.TestCase):
             pdf=next((folder/'raw').glob('*.pdf'));pdf.write_bytes(pdf.read_bytes()+b'changed')
             with self.assertRaisesRegex(ValueError,'Changed reviewed financial evidence'):load_reviewed_financials(root)
 
+    def test_ideaforge_publication_review_excludes_unreviewed_older_facts(self):
+        data=load_reviewed_financials(HERE.parent/'nifty-automation/data')['INE349Y01013']
+        self.assertEqual(len(data['facts']),1)
+        self.assertEqual(data['facts'][0]['period_end'],'2026-06-30')
+        self.assertEqual(data['facts'][0]['pat_total_period_crore'],'-2.589')
+
     def test_financial_review_withholds_only_conflicting_pat_field(self):
         data=load_reviewed_financials(HERE.parent/'nifty-automation/data')
         facts=data['INE249Z01020']['facts']

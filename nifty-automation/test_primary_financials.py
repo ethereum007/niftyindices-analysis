@@ -147,6 +147,20 @@ class PrimaryFinancialTest(unittest.TestCase):
             self.assertEqual(Decimal(fact['prior_june_comparative'][metric]),Decimal(parsed[metric]))
         self.assertEqual(fact['isin'],parsed['isin'])
 
+    def test_ideaforge_current_quarter_tax_credit_bridge(self):
+        from bs4 import BeautifulSoup
+        data=json.loads((ROOT/'ideaforge.json').read_text(encoding='utf-8'))
+        source=next(r for r in data['sources'] if r.get('fact',{}).get('period_end')=='2026-06-30')
+        raw=(ROOT/'raw'/(source['sha256']+'.html')).read_bytes()
+        soup=BeautifulSoup(raw,'html.parser');rows={}
+        for tr in soup.find_all('tr'):
+            cells=[c.get_text(' ',strip=True) for c in tr.find_all(['td','th'],recursive=False)]
+            if len(cells)>=3 and cells[1] in ('Total profit before tax','Total tax expenses','Total profit (loss) for period'):
+                rows[cells[1]]=number(cells[2])
+        self.assertEqual(rows['Total profit before tax']-rows['Total tax expenses'],rows['Total profit (loss) for period'])
+        self.assertEqual(rows['Total profit (loss) for period']/100,Decimal('-2.589'))
+        self.assertLess(rows['Total tax expenses'],0)
+
     def test_exact_quarter_sales_pat_scope_and_unit(self):
         f=parse(self.raw,'2026-10-27')
         self.assertEqual(f['period_start'],'2026-07-01')

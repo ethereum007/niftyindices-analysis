@@ -1,0 +1,15 @@
+{
+  "symbol": "IDEAFORGE",
+  "isin": "INE349Y01013",
+  "reviewed_on": "2026-10-28",
+  "status": "reviewed_with_field_restrictions",
+  "source_hashes": [
+    {
+      "sha256": "960f03a51f9973c95fe1bf54affd02f7731d2dc61cd0c7180eab3174c38786be",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_184781_10082026195124_iXBRL_WEB.html",
+      "filing_date": "2026-08-10"
+    }
+  ],
+  "blocked_fields": [],
+  "note": "Latest consolidated June 2026 quarter only, in INR crore. Sales 68.588 and total-period loss 2.589 reconcile to the original filing and first-quarter year-to-date figures. Profit before tax minus total tax expense equals the loss, including the reported tax credit; no normalised earnings inferred. Other archived quarters remain outside this publication review while annual bridge differences are checked. Prior-year comparison and TTM remain unavailable; no growth ranking from this partial history."
+}
