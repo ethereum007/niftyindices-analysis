@@ -1,0 +1,11 @@
+{
+  "symbol": "LT",
+  "isin": "INE018A01030",
+  "publication_ready": false,
+  "source_url": "https://investors.larsentoubro.com/upload/ListingCompliance/Corporate%20Governance%20Report%20-%20June%202021.pdf",
+  "sha256": "1bad01fa2fb65e92cc6ff320a8b998b61eeccf382bd809797c83cbd3293bc940",
+  "retrieved_utc": "2026-10-28T18:47:30.322335+00:00",
+  "statement_page": 1,
+  "report_period_end": "2021-06-30",
+  "note": "Primary issuer corporate-governance report maps NSE LT and current ISIN before five-year downloaded window. Review together with current official identity, dividend reconciliation and explicit tender-event disposition."
+}

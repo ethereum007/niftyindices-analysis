@@ -63,6 +63,21 @@ class AdjustedHistoryTest(unittest.TestCase):
             raw=(ROOT/'raw'/(member['sha256']+'.json')).read_bytes()
             self.assertEqual(hashlib.sha256(raw).hexdigest(),member['sha256'])
 
+    def test_manufacturing_primary_identity_research_preserves_pre_window_split_dates(self):
+        data=json.loads((ROOT/'manufacturing.json').read_text(encoding='utf-8'))
+        identities={m['symbol']:m['isin'] for m in data['members']}
+        for symbol in ('LT','DIXON'):
+            evidence=json.loads((ROOT/(symbol.lower()+'-identity-research.json')).read_text(encoding='utf-8'))
+            raw=(ROOT/'raw'/(evidence['sha256']+'.pdf')).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),evidence['sha256'])
+            self.assertFalse(evidence['publication_ready'])
+            self.assertEqual(evidence.get('current_isin',evidence.get('isin')),identities[symbol])
+        dixon=json.loads((ROOT/'dixon-identity-research.json').read_text(encoding='utf-8'))
+        self.assertLess(dixon['trade_ex_date'],'2021-09-01')
+        self.assertNotEqual(dixon['record_date'],dixon['trade_ex_date'])
+        self.assertEqual(dixon['old_isin'],'INE935N01012')
+        self.assertEqual(dixon['current_isin'],'INE935N01020')
+
     def test_archived_defence_data_keeps_review_gate_and_quote_reconciliation(self):
         data=json.loads((ROOT/'defence.json').read_text(encoding='utf-8'))
         self.assertFalse(data['publication_ready']);self.assertEqual(len(data['members']),5)

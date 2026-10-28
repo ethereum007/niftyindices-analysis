@@ -1,0 +1,16 @@
+{
+  "symbol": "DIXON",
+  "publication_ready": false,
+  "source_url": "https://www.msei.in/SX-Content/Circulars/2021/March/Circular-10209.pdf",
+  "sha256": "6909a20177af06c3f8bbd7a781ad56189c79efdd2d59d044c7bf934a8ac82264",
+  "retrieved_utc": "2026-10-28T18:47:05.637873+00:00",
+  "statement_page": 1,
+  "source_date": "2021-03-16",
+  "old_isin": "INE935N01012",
+  "current_isin": "INE935N01020",
+  "record_date": "2021-03-19",
+  "trade_ex_date": "2021-03-18",
+  "face_value_before": "10",
+  "face_value_after": "2",
+  "note": "Exchange circular explicitly links old/new ISIN before downloaded history window. Body change effective19March and trade ex-date18March are separately retained. Do not apply another fivefold split factor to vendor-adjusted history beginning September2021. Publication awaits current/action identity, original hashes and dividend-factor review."
+}
