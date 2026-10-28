@@ -29,8 +29,36 @@ class ActionReviewTest(unittest.TestCase):
         self.assertTrue(combined['matched'])
         self.assertEqual(sorted(e['cash_per_share'] for e in combined['components']),[6,24])
         self.assertTrue(any(r['subject']=='Buy Back' for r in unknown))
-        self.assertFalse(review['all_reported_events_match'])
+        self.assertFalse(review['publication_ready'])
         with self.assertRaisesRegex(ValueError,'Duplicate exchange action'):compare(events+[events[0]],member['events'])
+
+    def test_hash_bound_buyback_disposition_does_not_change_prices_or_auto_publish(self):
+        from review_stock_actions import apply_event_dispositions
+        import copy,tempfile,shutil
+        from pathlib import Path
+        records=json.loads((ROOT/'manufacturing-action-review.json').read_text(encoding='utf-8'))
+        original=next(r for r in records['members'] if r['symbol']=='LT')
+        decisions=json.loads((ROOT/'event-dispositions.json').read_text(encoding='utf-8'))['decisions']
+        original=copy.deepcopy(original)
+        if original.get('reviewed_non_price_events'):
+            original['unclassified_actions']=[r['event'] for r in original.pop('reviewed_non_price_events')]
+            original['all_reported_events_match']=False
+        before=copy.deepcopy(original)
+        updated=apply_event_dispositions(original,decisions)
+        self.assertEqual(original,before)
+        self.assertTrue(updated['all_reported_events_match'])
+        self.assertFalse(updated['publication_ready'])
+        self.assertEqual(updated['comparisons'],original['comparisons'])
+        self.assertEqual(len(updated['reviewed_non_price_events']),1)
+        stale=copy.deepcopy(decisions);stale[0]['action_sha256']='0'*64
+        with self.assertRaisesRegex(ValueError,'Stale event disposition'):apply_event_dispositions(original,stale)
+        changed=copy.deepcopy(decisions);changed[0]['date']='2023-09-13'
+        with self.assertRaisesRegex(ValueError,'Missing or ambiguous'):apply_event_dispositions(original,changed)
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'raw').mkdir()
+            for ref,ext in [(original['sha256'],'json')]+[(r['sha256'],'pdf') for r in decisions[0]['evidence']]:shutil.copy2(ROOT/'raw'/(ref+'.'+ext),root/'raw'/(ref+'.'+ext))
+            pdf=next((root/'raw').glob('*.pdf'));pdf.write_bytes(b'changed')
+            with self.assertRaisesRegex(ValueError,'Changed event disposition evidence'):apply_event_dispositions(original,decisions,root)
 
     def test_dividend_adjustment_step_flags_unadjusted_series(self):
         rows=[{'date':'2022-08-05','vendor_close':100,'adjusted_close':99},{'date':'2022-08-08','vendor_close':99,'adjusted_close':99}]

@@ -89,9 +89,39 @@ def fetch(member):
     except Exception as e:record.update(status='fetch_or_validation_failed',error=str(e))
     return record
 
+def apply_event_dispositions(record,dispositions,root=ROOT):
+    """Explicit hash-bound non-participating-holder decisions; never a generic exemption."""
+    import copy
+    result=copy.deepcopy(record)
+    applicable=[d for d in dispositions if d['symbol']==record['symbol']]
+    reviewed=[]
+    for decision in applicable:
+        if decision['status']!='reviewed_non_price_adjusting':continue
+        if decision['action_sha256']!=record['sha256']:raise ValueError('Stale event disposition')
+        action_raw=(root/'raw'/(record['sha256']+'.json')).read_bytes()
+        if hashlib.sha256(action_raw).hexdigest()!=record['sha256']:raise ValueError('Changed event action source')
+        if decision['holding_assumption']!='continuing_non_tendering_shareholder':raise ValueError('Unsupported event holding assumption')
+        if decision['subject']!='Buy Back' or not decision.get('evidence'):raise ValueError('Unsupported non-price event disposition')
+        for evidence in decision['evidence']:
+            sha=evidence['sha256']
+            if not re.fullmatch('[0-9a-f]{64}',sha):raise ValueError('Invalid event evidence hash')
+            if hashlib.sha256((root/'raw'/(sha+'.pdf')).read_bytes()).hexdigest()!=sha:raise ValueError('Changed event disposition evidence')
+        matching=[e for e in result['unclassified_actions'] if e['symbol']==decision['symbol'] and e['isin']==decision['isin'] and e['subject']==decision['subject'] and day(e['exDate'])==decision['date']]
+        if len(matching)!=1:raise ValueError('Missing or ambiguous reviewed event')
+        result['unclassified_actions'].remove(matching[0]);reviewed.append({'event':matching[0],'decision':decision})
+    if reviewed:
+        result['reviewed_non_price_events']=reviewed
+        result['all_reported_events_match']=bool(result.get('events')) and not result['unclassified_actions'] and all(c['matched'] for c in result['comparisons']) and not result['unmatched_vendor_split_dates'] and not result['unmatched_vendor_dividend_dates'] and all(c['matched'] for c in result['dividend_factor_steps'])
+        result['status']='reported_actions_reconciled_with_reviewed_exclusions' if result['all_reported_events_match'] else 'manual_review_required'
+    return result
+
 def main(family='defence'):
     history=json.loads((ROOT/(family+'.json')).read_text(encoding='utf-8'))
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:records=list(pool.map(fetch,history['members']))
+    decisions_path=ROOT/'event-dispositions.json'
+    if decisions_path.exists():
+        decisions=json.loads(decisions_path.read_text(encoding='utf-8'))['decisions']
+        records=[apply_event_dispositions(r,decisions) for r in records]
     out={'family':family,'publication_ready':False,'reviewed_on':'2026-10-28','note':'NSE reported events compared with vendor split-normalised dividend amounts; not a historical-identity/action-completeness certificate. Corporate-action parsing never auto-publishes history.','members':records}
     (ROOT/(family+'-action-review.json')).write_text(json.dumps(out,indent=2),encoding='utf-8')
     print(json.dumps({r['symbol']:{'status':r['status'],'events':len(r.get('events',[])),'mismatches':[x['date'] for x in r.get('comparisons',[]) if not x['matched']],'unknown':len(r.get('unclassified_actions',[]))} for r in records}))

@@ -1,0 +1,25 @@
+{
+  "decisions": [
+    {
+      "symbol": "LT",
+      "isin": "INE018A01030",
+      "date": "2023-09-12",
+      "subject": "Buy Back",
+      "action_sha256": "01ffd66f9eb7310cf18e641a485612db21b30c6d87e025d99744781f59f8926f",
+      "status": "reviewed_non_price_adjusting",
+      "reviewed_on": "2026-10-28",
+      "holding_assumption": "continuing_non_tendering_shareholder",
+      "evidence": [
+        {
+          "sha256": "dc23180bb7ef3789ae3b0b523316014dd4361d8dc6f20c9d825e3fc6f20f1c9b",
+          "source_url": "https://nsearchives.nseindia.com/corporate/LT_27092023201342_Updateonbuyback.pdf"
+        },
+        {
+          "sha256": "a37273d63e595092968cb1c40efdcf6541bd022b5773fa0684996688457d062a",
+          "source_url": "https://nsearchives.nseindia.com/corporate/LT_01112023122710_NewspaperAdvtSep2023.pdf"
+        }
+      ],
+      "note": "Primary issuer tender offer applied cash only to participating accepted shares. No tender cash or split factor is applied to a continuing non-tendered share. This does not model tender-participant returns or approve company history publication."
+    }
+  ]
+}
