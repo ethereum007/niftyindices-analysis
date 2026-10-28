@@ -7,3 +7,5 @@ nifty-automation/data/stocks/raw/** -text
 nifty-automation/data/theme-research/raw/** -text
 
 *.xlsx binary
+
+nifty-automation/data/stock-history/raw/** -text
