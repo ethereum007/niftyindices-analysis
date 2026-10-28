@@ -131,6 +131,22 @@ class PrimaryFinancialTest(unittest.TestCase):
         self.assertEqual({(r['symbol'],r['metric'],Decimal(r['difference_crore'])) for r in flagged},{('MAZDOCK','pat_total_period_crore',Decimal('-177.21')),('IDEAFORGE','revenue_operations_crore',Decimal('0.001')),('IDEAFORGE','pat_total_period_crore',Decimal('0.005'))})
         self.assertEqual(reconcile([]),[])
 
+    def test_dynamatic_pdf_research_comparator_matches_independent_nse_filing(self):
+        data=json.loads((ROOT/'dynamatech-supplementary-research.json').read_text())
+        self.assertFalse(data['publication_ready'])
+        for source in data['sources']:
+            raw=(ROOT/'raw'/(source['sha256']+'.pdf')).read_bytes()
+            self.assertTrue(raw.startswith(b'%PDF'))
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),source['sha256'])
+        fact=data['pdf_research_fact']
+        self.assertEqual(fact['statement_page'],8)
+        records=json.loads((ROOT/'dynamatech.json').read_text())['sources']
+        original=next(r for r in records if r.get('fact',{}).get('period_end')=='2025-06-30')
+        parsed=parse((ROOT/'raw'/(original['sha256']+'.html')).read_bytes(),original['filing_date'],'DYNAMATECH')
+        for metric in ('revenue_operations_crore','pat_total_period_crore'):
+            self.assertEqual(Decimal(fact['prior_june_comparative'][metric]),Decimal(parsed[metric]))
+        self.assertEqual(fact['isin'],parsed['isin'])
+
     def test_exact_quarter_sales_pat_scope_and_unit(self):
         f=parse(self.raw,'2026-10-27')
         self.assertEqual(f['period_start'],'2026-07-01')

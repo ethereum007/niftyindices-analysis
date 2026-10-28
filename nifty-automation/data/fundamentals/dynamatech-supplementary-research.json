@@ -1,0 +1,46 @@
+{
+  "symbol": "DYNAMATECH",
+  "publication_ready": false,
+  "discovery_url": "https://www.dynamatics.com/filings",
+  "sources": [
+    {
+      "source_url": "https://www.dynamatics.com/UploadImages/Fillings/Q1---FY2026-2027---Dynamatic-Unaudited-Financial-Results-for-the-quarter-ended-30th-June-2026-7356-fillings.pdf",
+      "sha256": "c33f5ab9af6e5032da66f57635471e5174be5235b2e693f4ff37eda894617a02",
+      "retrieved_utc": "2026-10-28T10:22:37.239202+00:00",
+      "pages": 11,
+      "filing_date": "2026-08-07",
+      "statement_page": 8,
+      "accounting_notes_page": 10
+    },
+    {
+      "source_url": "https://www.dynamatics.com/UploadImages/Fillings/3377c7f4-6e4e-42fe-9d8f-1f0cea0777df-fillings.pdf",
+      "sha256": "58cbab45860cc20351427f08e96576c03ac745acf56f64b38481914851e7256e",
+      "retrieved_utc": "2026-10-28T10:22:40.113615+00:00",
+      "pages": 10,
+      "filing_date": "2025-08-07",
+      "note": "Despite UUID link location in issuer listing, actual PDF covers June2025. Do not label it September2025."
+    }
+  ],
+  "note": "Issuer PDFs archived. June2026 consolidated statement visually reviewed on page8; separate PDF-derived research facts remain unpublished pending canonical ingestion and review gate.",
+  "pdf_research_fact": {
+    "symbol": "DYNAMATECH",
+    "isin": "INE221B01012",
+    "period_start": "2026-04-01",
+    "period_end": "2026-06-30",
+    "filing_date": "2026-08-07",
+    "scope": "Consolidated",
+    "source_unit": "INR lakhs",
+    "display_unit": "INR crore",
+    "audit_status": "Unaudited",
+    "revenue_operations_crore": "424.81",
+    "pat_total_period_crore": "20.79",
+    "source_sha256": "c33f5ab9af6e5032da66f57635471e5174be5235b2e693f4ff37eda894617a02",
+    "statement_page": 8,
+    "prior_june_comparative": {
+      "period_end": "2025-06-30",
+      "revenue_operations_crore": "370.93",
+      "pat_total_period_crore": "10.77"
+    },
+    "review": "Visually checked quarter headers, consolidated scope, INR lakhs and PAT row versus comprehensive income. Prior June comparator matches previously archived primary NSE fact exactly. Not yet loaded by published dashboard."
+  }
+}
