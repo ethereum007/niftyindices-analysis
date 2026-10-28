@@ -1,0 +1,23 @@
+{
+  "statement_page": 8,
+  "scope": "Consolidated",
+  "source_unit": "INR million",
+  "filing_date": "2026-08-07",
+  "period_start": "2026-04-01",
+  "period_end": "2026-06-30",
+  "revenue_operations_million": "9460.17",
+  "other_income_million": "144.31",
+  "total_income_million": "9604.48",
+  "pbt_million": "878.76",
+  "current_tax_million": "321.36",
+  "deferred_tax_million": "-6.86",
+  "pat_total_period_million": "564.26",
+  "comprehensive_income_million": "525.39",
+  "kind": "manual_visual_primary_transcription",
+  "status": "reviewed",
+  "symbol": "KAYNES",
+  "isin": "INE918Z01012",
+  "reviewed_on": "2026-10-29",
+  "source_sha256": "952bb1b4ec171b63d2cd949beb8579e04d927bbc4f9f50c2fbd01b1448829ceb",
+  "notes": "Manual visual transcription of page8 consolidated table, distinct from page7 standalone. PDF text layer defective; original pixels reviewed. No automatic OCR inference."
+}
