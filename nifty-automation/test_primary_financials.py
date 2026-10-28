@@ -119,6 +119,18 @@ class PrimaryFinancialTest(unittest.TestCase):
         self.assertEqual(Decimal(annual['ytd_revenue_operations_crore'])-Decimal(december['ytd_revenue_operations_crore'])-Decimal(annual['revenue_operations_crore']),Decimal('0.001'))
         self.assertEqual(Decimal(annual['ytd_pat_total_period_crore'])-Decimal(december['ytd_pat_total_period_crore'])-Decimal(annual['pat_total_period_crore']),Decimal('0.005'))
 
+    def test_reconciliation_queue_detects_large_and_small_discrepancies(self):
+        from reconcile_financials import reconcile
+        flagged=[]
+        for symbol in ('MAZDOCK','IDEAFORGE','DYNAMATECH'):
+            data=json.loads((ROOT/(symbol.lower()+'.json')).read_text(encoding='utf-8'))
+            facts=[r['fact'] for r in data['sources'] if r.get('fact')]
+            before=copy.deepcopy(facts)
+            flagged.extend(c for c in reconcile(facts) if c['status']=='requires_review')
+            self.assertEqual(facts,before)
+        self.assertEqual({(r['symbol'],r['metric'],Decimal(r['difference_crore'])) for r in flagged},{('MAZDOCK','pat_total_period_crore',Decimal('-177.21')),('IDEAFORGE','revenue_operations_crore',Decimal('0.001')),('IDEAFORGE','pat_total_period_crore',Decimal('0.005'))})
+        self.assertEqual(reconcile([]),[])
+
     def test_exact_quarter_sales_pat_scope_and_unit(self):
         f=parse(self.raw,'2026-10-27')
         self.assertEqual(f['period_start'],'2026-07-01')

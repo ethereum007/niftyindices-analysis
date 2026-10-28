@@ -1,0 +1,245 @@
+{
+  "publication_ready": false,
+  "checks": [
+    {
+      "symbol": "HAL",
+      "period_end": "2026-06-30",
+      "metric": "revenue_operations_crore",
+      "reported": "5515.17",
+      "ytd_difference": "5515.17",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "HAL",
+      "period_end": "2026-06-30",
+      "metric": "pat_total_period_crore",
+      "reported": "1589.66",
+      "ytd_difference": "1589.66",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "HAL",
+      "period_end": "2026-03-31",
+      "metric": "revenue_operations_crore",
+      "reported": "13942.40",
+      "ytd_difference": "13942.40",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "HAL",
+      "period_end": "2026-03-31",
+      "metric": "pat_total_period_crore",
+      "reported": "4196.04",
+      "ytd_difference": "4196.04",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "HAL",
+      "period_end": "2025-12-31",
+      "metric": "revenue_operations_crore",
+      "reported": "7698.80",
+      "ytd_difference": "7698.80",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "HAL",
+      "period_end": "2025-12-31",
+      "metric": "pat_total_period_crore",
+      "reported": "1866.66",
+      "ytd_difference": "1866.66",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "BEL",
+      "period_end": "2026-03-31",
+      "metric": "revenue_operations_crore",
+      "reported": "10224.43",
+      "ytd_difference": "10224.43",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "BEL",
+      "period_end": "2026-03-31",
+      "metric": "pat_total_period_crore",
+      "reported": "2226.35",
+      "ytd_difference": "2226.35",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "BEL",
+      "period_end": "2026-06-30",
+      "metric": "revenue_operations_crore",
+      "reported": "5546.98",
+      "ytd_difference": "5546.98",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "BEL",
+      "period_end": "2026-06-30",
+      "metric": "pat_total_period_crore",
+      "reported": "1054.53",
+      "ytd_difference": "1054.53",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "MAZDOCK",
+      "period_end": "2026-09-30",
+      "metric": "revenue_operations_crore",
+      "reported": "2446.09",
+      "ytd_difference": "2446.09",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "MAZDOCK",
+      "period_end": "2026-09-30",
+      "metric": "pat_total_period_crore",
+      "reported": "346.40",
+      "ytd_difference": "346.40",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "MAZDOCK",
+      "period_end": "2026-06-30",
+      "metric": "revenue_operations_crore",
+      "reported": "2942.70",
+      "ytd_difference": "2942.70",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "MAZDOCK",
+      "period_end": "2026-06-30",
+      "metric": "pat_total_period_crore",
+      "reported": "550.46",
+      "ytd_difference": "550.46",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "MAZDOCK",
+      "period_end": "2026-03-31",
+      "metric": "revenue_operations_crore",
+      "reported": "3850.39",
+      "ytd_difference": "3850.39",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "MAZDOCK",
+      "period_end": "2026-03-31",
+      "metric": "pat_total_period_crore",
+      "reported": "674.16",
+      "ytd_difference": "496.95",
+      "difference_crore": "-177.21",
+      "status": "requires_review",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "MAZDOCK",
+      "period_end": "2025-12-31",
+      "metric": "revenue_operations_crore",
+      "reported": "3601.09",
+      "ytd_difference": "3601.09",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "MAZDOCK",
+      "period_end": "2025-12-31",
+      "metric": "pat_total_period_crore",
+      "reported": "879.78",
+      "ytd_difference": "879.78",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "DYNAMATECH",
+      "period_end": "2026-03-31",
+      "metric": "revenue_operations_crore",
+      "reported": "433.16",
+      "ytd_difference": "433.16",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "DYNAMATECH",
+      "period_end": "2026-03-31",
+      "metric": "pat_total_period_crore",
+      "reported": "12.56",
+      "ytd_difference": "12.56",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "IDEAFORGE",
+      "period_end": "2026-06-30",
+      "metric": "revenue_operations_crore",
+      "reported": "68.588",
+      "ytd_difference": "68.588",
+      "difference_crore": "0.000",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "IDEAFORGE",
+      "period_end": "2026-06-30",
+      "metric": "pat_total_period_crore",
+      "reported": "-2.589",
+      "ytd_difference": "-2.589",
+      "difference_crore": "0.000",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "IDEAFORGE",
+      "period_end": "2026-03-31",
+      "metric": "revenue_operations_crore",
+      "reported": "141.043",
+      "ytd_difference": "141.044",
+      "difference_crore": "0.001",
+      "status": "requires_review",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "IDEAFORGE",
+      "period_end": "2026-03-31",
+      "metric": "pat_total_period_crore",
+      "reported": "59.993",
+      "ytd_difference": "59.998",
+      "difference_crore": "0.005",
+      "status": "requires_review",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    }
+  ]
+}
