@@ -115,7 +115,7 @@ def load_reviewed_financials(root):
             if not re.fullmatch('[0-9a-f]{64}',sha):raise ValueError('Invalid financial evidence hash')
             raw=(folder/'raw'/(sha+'.html')).read_bytes()
             if hashlib.sha256(raw).hexdigest()!=sha:raise ValueError('Changed reviewed financial evidence')
-            fact=parse(raw,source['filing_date'])
+            fact=parse(raw,source['filing_date'],review['symbol'])
             if fact['symbol']!=review['symbol'] or fact['isin']!=review['isin']:raise ValueError('Financial review identity mismatch')
             fact.update(source_url=source['source_url'],sha256=sha)
             for blocked in review['blocked_fields']:

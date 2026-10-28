@@ -22,6 +22,20 @@ class PrimaryFinancialTest(unittest.TestCase):
         for r in data['sources']:
             self.assertEqual(hashlib.sha256((ROOT/'raw'/(r['sha256']+'.html')).read_bytes()).hexdigest(),r['sha256'])
 
+    def test_hal_ttm_reconciles_to_annual_rollforward(self):
+        data=json.loads((ROOT/'hal.json').read_text(encoding='utf-8'))
+        facts=[s['fact'] for s in data['sources']]
+        annual=next(f for f in facts if f['period_end']=='2026-03-31')
+        current=next(f for f in facts if f['period_end']=='2026-06-30')
+        september=next(f for f in facts if f['period_end']=='2025-09-30')
+        result=trailing_four(facts,'2026-10-28')
+        for metric in ('revenue_operations_crore','pat_total_period_crore'):
+            prior_june=Decimal(september['ytd_'+metric])-Decimal(september[metric])
+            expected=Decimal(annual['ytd_'+metric])+Decimal(current[metric])-prior_june
+            self.assertEqual(Decimal(result[metric]),expected)
+        self.assertEqual(result['pat_total_period_crore'],'9321.41')
+        self.assertEqual(result['revenue_operations_crore'],'33784.98')
+
     def test_exact_quarter_sales_pat_scope_and_unit(self):
         f=parse(self.raw,'2026-10-27')
         self.assertEqual(f['period_start'],'2026-07-01')

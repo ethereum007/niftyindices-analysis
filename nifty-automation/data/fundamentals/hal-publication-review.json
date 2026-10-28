@@ -1,0 +1,30 @@
+{
+  "symbol": "HAL",
+  "isin": "INE066F01020",
+  "reviewed_on": "2026-10-28",
+  "status": "reviewed_with_field_restrictions",
+  "source_hashes": [
+    {
+      "sha256": "1dce3f7364384c2b905ca0bcc74af0fd686ce9d25ab26e91a82f6fd4b583a407",
+      "filing_date": "2026-08-12",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_185601_12082026141946_iXBRL_WEB.html"
+    },
+    {
+      "sha256": "bd72c3c000fd720f84c9418634a33a5e0f394736887467fec583d026ab8b1dcb",
+      "filing_date": "2026-05-14",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_157527_14052026170430_iXBRL_WEB.html"
+    },
+    {
+      "sha256": "0d2e293057dcd4e1f0953c55eb16bb1eadd4cbf2a8f154a4fb57ee6ddd1e5a32",
+      "filing_date": "2026-02-12",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_142276_12022026145227_iXBRL_WEB.html"
+    },
+    {
+      "sha256": "71f5f8c05c558c37ee6a6fd3d994bbbd1973be0716015f76cfa3bd99126bc78e",
+      "filing_date": "2025-11-12",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_126513_12112025162204_iXBRL_WEB.html"
+    }
+  ],
+  "blocked_fields": [],
+  "note": "Audited consolidated INRcrore; four contiguous reported quarters. December andMarch quarterly revenue/PAT reconcile toYTD differences, June quarter equalsYTD. TTM also agrees with audited FY2026 pluscurrentJune quarter lesspriorJune implied withinSep2025YTD. No matching standalone reportedJune2025 quarter collected, soYoY comparison remains unavailable rather than silently using a derived comparator."
+}

@@ -5,7 +5,7 @@
     {
       "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_185601_12082026141946_iXBRL_WEB.html",
       "filing_date": "2026-08-12",
-      "retrieved_utc": "2026-10-28T06:53:15.208627+00:00",
+      "retrieved_utc": "2026-10-28T07:22:34.244424+00:00",
       "sha256": "1dce3f7364384c2b905ca0bcc74af0fd686ce9d25ab26e91a82f6fd4b583a407",
       "fact": {
         "symbol": "HAL",
@@ -29,7 +29,7 @@
     {
       "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_157527_14052026170430_iXBRL_WEB.html",
       "filing_date": "2026-05-14",
-      "retrieved_utc": "2026-10-28T06:53:15.467270+00:00",
+      "retrieved_utc": "2026-10-28T07:22:34.247437+00:00",
       "sha256": "bd72c3c000fd720f84c9418634a33a5e0f394736887467fec583d026ab8b1dcb",
       "fact": {
         "symbol": "HAL",
@@ -49,7 +49,71 @@
         "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
       },
       "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_142276_12022026145227_iXBRL_WEB.html",
+      "filing_date": "2026-02-12",
+      "retrieved_utc": "2026-10-28T07:22:34.247437+00:00",
+      "sha256": "0d2e293057dcd4e1f0953c55eb16bb1eadd4cbf2a8f154a4fb57ee6ddd1e5a32",
+      "fact": {
+        "symbol": "HAL",
+        "isin": "INE066F01020",
+        "period_start": "2025-10-01",
+        "period_end": "2025-12-31",
+        "filing_date": "2026-02-12",
+        "scope": "Consolidated",
+        "audit_status": "Audited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "7698.80",
+        "pat_total_period_crore": "1866.66",
+        "ytd_revenue_operations_crore": "19146.42",
+        "ytd_pat_total_period_crore": "4919.48",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_126513_12112025162204_iXBRL_WEB.html",
+      "filing_date": "2025-11-12",
+      "retrieved_utc": "2026-10-28T07:22:34.808369+00:00",
+      "sha256": "71f5f8c05c558c37ee6a6fd3d994bbbd1973be0716015f76cfa3bd99126bc78e",
+      "fact": {
+        "symbol": "HAL",
+        "isin": "INE066F01020",
+        "period_start": "2025-07-01",
+        "period_end": "2025-09-30",
+        "filing_date": "2025-11-12",
+        "scope": "Consolidated",
+        "audit_status": "Audited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "6628.61",
+        "pat_total_period_crore": "1669.05",
+        "ytd_revenue_operations_crore": "11447.62",
+        "ytd_pat_total_period_crore": "3052.82",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
     }
   ],
-  "note": "Additional primary-filing pilot; review and remaining quarters/comparatives required."
+  "ttm": {
+    "period_start": "2025-07-01",
+    "period_end": "2026-06-30",
+    "available_on": "2026-08-12",
+    "scope": "Consolidated",
+    "revenue_operations_crore": "33784.98",
+    "pat_total_period_crore": "9321.41",
+    "quarters": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+    ],
+    "growth_yoy": null,
+    "growth_note": "Prior matching four quarters have not yet been collected."
+  },
+  "note": "Primary financial-fact pilot. Accounting/date/unit review and source verification required before publication. Missing prior-year quarters, ROCE and valuation remain unavailable."
 }
