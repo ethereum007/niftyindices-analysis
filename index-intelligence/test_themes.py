@@ -79,6 +79,20 @@ class ThemesTest(unittest.TestCase):
             decision=root/'stock-history/event-dispositions.json';decision.write_bytes(decision.read_bytes()+b' ')
             with self.assertRaisesRegex(ValueError,'Changed reviewed event decisions'):load_reviewed_company_history(root)
 
+    def test_manual_financial_source_verifies_both_reviewed_hashes(self):
+        source=HERE.parent/'nifty-automation/data/fundamentals'
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);folder=root/'fundamentals';(folder/'raw').mkdir(parents=True)
+            review=json.loads((source/'kaynes-publication-review.json').read_text(encoding='utf-8'))
+            (folder/'kaynes-publication-review.json').write_text(json.dumps(review),encoding='utf-8')
+            record=review['source_hashes'][0]
+            for sha,ext in [(record['sha256'],'pdf'),(record['transcription_sha256'],'json')]:shutil.copy2(source/'raw'/(sha+'.'+ext),folder/'raw'/(sha+'.'+ext))
+            fact=load_reviewed_financials(root)['INE918Z01012']['facts'][0]
+            self.assertEqual(fact['revenue_operations_crore'],'946.017')
+            self.assertIn('Manually transcribed',fact['extraction_method'])
+            p=folder/'raw'/(record['transcription_sha256']+'.json');p.write_bytes(p.read_bytes()+b' ')
+            with self.assertRaisesRegex(ValueError,'Changed reviewed transcription'):load_reviewed_financials(root)
+
     def test_financial_review_withholds_only_conflicting_pat_field(self):
         data=load_reviewed_financials(HERE.parent/'nifty-automation/data')
         facts=data['INE249Z01020']['facts']

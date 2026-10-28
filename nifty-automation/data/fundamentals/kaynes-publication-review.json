@@ -1,0 +1,17 @@
+{
+  "symbol": "KAYNES",
+  "isin": "INE918Z01012",
+  "reviewed_on": "2026-10-29",
+  "status": "reviewed_with_field_restrictions",
+  "source_hashes": [
+    {
+      "sha256": "952bb1b4ec171b63d2cd949beb8579e04d927bbc4f9f50c2fbd01b1448829ceb",
+      "source_url": "https://www.kaynestechnology.co.in/doc/Regulation-46-of-sebi-lodr-regulation/UnauditedFinancialResultsQ12026-27.pdf",
+      "filing_date": "2026-08-07",
+      "format": "reviewed_manual_pdf",
+      "transcription_sha256": "b2c53406a39e4ed66f61c36de107b5cd5efe7a47e7aa86332e9096b9c75c5c4b"
+    }
+  ],
+  "blocked_fields": [],
+  "note": "Latest consolidated June 2026 quarter only. Manually transcribed from visually reviewed issuer PDF page 8 because its text layer is defective; original PDF and reviewed transcription hashes are verified. Source figures in INR million are divided by 10 to display crore. Sales of 946.017 crore and total PAT of 56.426 crore pass income and tax reconciliation checks. Prior-year columns still need independent review, so YoY and TTM remain unavailable. Price-history review is separate."
+}

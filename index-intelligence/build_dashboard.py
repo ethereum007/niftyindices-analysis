@@ -123,12 +123,18 @@ def load_reviewed_financials(root):
             sha=source['sha256']
             if not re.fullmatch('[0-9a-f]{64}',sha):raise ValueError('Invalid financial evidence hash')
             kind=source.get('format','nse_indas_html')
-            if kind not in ('nse_indas_html','dynamatic_june2026_pdf'):raise ValueError('Unsupported reviewed financial source format')
-            raw=(folder/'raw'/(sha+('.pdf' if kind=='dynamatic_june2026_pdf' else '.html'))).read_bytes()
+            if kind not in ('nse_indas_html','dynamatic_june2026_pdf','reviewed_manual_pdf'):raise ValueError('Unsupported reviewed financial source format')
+            raw=(folder/'raw'/(sha+('.pdf' if kind!='nse_indas_html' else '.html'))).read_bytes()
             if hashlib.sha256(raw).hexdigest()!=sha:raise ValueError('Changed reviewed financial evidence')
             if kind=='dynamatic_june2026_pdf':
                 from parse_primary_pdf import parse_dynamatic_june2026
                 fact=parse_dynamatic_june2026(raw,source['filing_date'],review['symbol'])
+            elif kind=='reviewed_manual_pdf':
+                from reviewed_transcriptions import load_transcription
+                transcript_sha=source['transcription_sha256']
+                if not re.fullmatch('[0-9a-f]{64}',transcript_sha):raise ValueError('Invalid reviewed transcription hash')
+                transcript_raw=(folder/'raw'/(transcript_sha+'.json')).read_bytes()
+                fact=load_transcription(raw,transcript_raw,transcript_sha,review['symbol'],source['filing_date'])
             else:fact=parse(raw,source['filing_date'],review['symbol'])
             if fact['symbol']!=review['symbol'] or fact['isin']!=review['isin']:raise ValueError('Financial review identity mismatch')
             fact.update(source_url=source['source_url'],sha256=sha)
