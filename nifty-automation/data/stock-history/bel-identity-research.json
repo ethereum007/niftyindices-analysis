@@ -1,0 +1,15 @@
+{
+  "symbol": "BEL",
+  "publication_ready": false,
+  "source_url": "https://www.msei.in/SX-Content/Circulars/2017/March/Circular-4994.pdf",
+  "sha256": "55f46a70a1b5fee17a784a1e201f96c52d4831223b20545b342043237b6632d3",
+  "retrieved_utc": "2026-10-28T12:21:50.121418+00:00",
+  "old_isin": "INE263A01016",
+  "current_isin": "INE263A01024",
+  "split_face_value_before": "10",
+  "split_face_value_after": "1",
+  "circular_date": "2017-03-15",
+  "record_date": "2017-03-17",
+  "trade_ex_date": "2017-03-16",
+  "note": "Primary MSE circular explicitly links old/new ISIN. Body says change w.e.f.17March while final sentence says new ISIN effective for trades from ex-date16March; preserve both, do not collapse date concepts. Corporate action predates downloaded2021-2026 window. Current identity linkage review only; history publication gate unchanged."
+}
