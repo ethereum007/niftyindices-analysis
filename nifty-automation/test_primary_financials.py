@@ -94,6 +94,31 @@ class PrimaryFinancialTest(unittest.TestCase):
         june=next(f for f in facts if f['period_end']=='2025-06-30')
         self.assertEqual(june['source_unit'],'INR actuals')
 
+    def test_ideaforge_losses_half_year_rejection_and_bridge_review(self):
+        data=json.loads((ROOT/'ideaforge.json').read_text(encoding='utf-8'))
+        self.assertFalse(data['publication_ready'])
+        self.assertIsNone(data['ttm'])
+        facts=[]
+        for source in data['sources']:
+            raw=(ROOT/'raw'/(source['sha256']+'.html')).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),source['sha256'])
+            if source['filing_date']=='2025-10-28':
+                with self.assertRaisesRegex(ValueError,'three-month quarter'):parse(raw,source['filing_date'],'IDEAFORGE')
+                self.assertNotIn('fact',source)
+            elif source.get('fact'):
+                facts.append(parse(raw,source['filing_date'],'IDEAFORGE'))
+        self.assertEqual(len(facts),3)
+        june=next(f for f in facts if f['period_end']=='2026-06-30')
+        self.assertEqual(june['revenue_operations_crore'],'68.588')
+        self.assertEqual(june['pat_total_period_crore'],'-2.589')
+        for metric in ('revenue_operations_crore','pat_total_period_crore'):
+            self.assertEqual(june[metric],june['ytd_'+metric])
+        annual=next(f for f in facts if f['period_end']=='2026-03-31')
+        december=next(f for f in facts if f['period_end']=='2025-12-31')
+        # Preserve small reported quarter versus annual-minus-YTD differences for review.
+        self.assertEqual(Decimal(annual['ytd_revenue_operations_crore'])-Decimal(december['ytd_revenue_operations_crore'])-Decimal(annual['revenue_operations_crore']),Decimal('0.001'))
+        self.assertEqual(Decimal(annual['ytd_pat_total_period_crore'])-Decimal(december['ytd_pat_total_period_crore'])-Decimal(annual['pat_total_period_crore']),Decimal('0.005'))
+
     def test_exact_quarter_sales_pat_scope_and_unit(self):
         f=parse(self.raw,'2026-10-27')
         self.assertEqual(f['period_start'],'2026-07-01')

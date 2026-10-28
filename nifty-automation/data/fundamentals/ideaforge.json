@@ -5,12 +5,93 @@
     {
       "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_123015_29102025193910_iXBRL_WEB.html",
       "filing_date": "2025-10-29",
-      "retrieved_utc": "2026-10-28T07:52:55.197752+00:00",
+      "retrieved_utc": "2026-10-28T09:22:00.416621+00:00",
       "sha256": "a65425629a2966d50e80649af8c3cdff29d18b9aeb9fab790a96f9bd3994a367",
       "status": "fetch_or_validation_failed",
       "error": "Unexpected accounting scope"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_184781_10082026195124_iXBRL_WEB.html",
+      "filing_date": "2026-08-10",
+      "retrieved_utc": "2026-10-28T09:22:00.417615+00:00",
+      "sha256": "960f03a51f9973c95fe1bf54affd02f7731d2dc61cd0c7180eab3174c38786be",
+      "fact": {
+        "symbol": "IDEAFORGE",
+        "isin": "INE349Y01013",
+        "period_start": "2026-04-01",
+        "period_end": "2026-06-30",
+        "filing_date": "2026-08-10",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "68.588",
+        "pat_total_period_crore": "-2.589",
+        "ytd_revenue_operations_crore": "68.588",
+        "ytd_pat_total_period_crore": "-2.589",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_155064_30042026203422_iXBRL_WEB.html",
+      "filing_date": "2026-04-30",
+      "retrieved_utc": "2026-10-28T09:22:00.418623+00:00",
+      "sha256": "7064364f0b44df34e434ea1966454fa36477719b593c263542733f9e78ff49f9",
+      "fact": {
+        "symbol": "IDEAFORGE",
+        "isin": "INE349Y01013",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_date": "2026-04-30",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "141.043",
+        "pat_total_period_crore": "59.993",
+        "ytd_revenue_operations_crore": "226.129",
+        "ytd_pat_total_period_crore": "-17.029",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_136877_22012026211218_iXBRL_WEB.html",
+      "filing_date": "2026-01-22",
+      "retrieved_utc": "2026-10-28T09:22:01.011206+00:00",
+      "sha256": "25ce230adf09f148e1653b286b5e6557a44664a042e0fa8c10d88a4ef71467ef",
+      "fact": {
+        "symbol": "IDEAFORGE",
+        "isin": "INE349Y01013",
+        "period_start": "2025-10-01",
+        "period_end": "2025-12-31",
+        "filing_date": "2026-01-22",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "31.545",
+        "pat_total_period_crore": "-33.853",
+        "ytd_revenue_operations_crore": "85.085",
+        "ytd_pat_total_period_crore": "-77.027",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_122450_28102025204532_iXBRL_WEB.html",
+      "filing_date": "2025-10-28",
+      "retrieved_utc": "2026-10-28T09:22:01.012750+00:00",
+      "sha256": "a6339082b6b3686779ce3414974ad3db76355681f865b5332b7da7993fb853f1",
+      "status": "fetch_or_validation_failed",
+      "error": "Statement is not a standalone three-month quarter"
     }
   ],
   "ttm": null,
+  "ttm_unavailable_reason": null,
   "note": "Primary financial-fact pilot. Accounting/date/unit review and source verification required before publication. Missing prior-year quarters, ROCE and valuation remain unavailable."
 }
