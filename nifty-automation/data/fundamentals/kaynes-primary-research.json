@@ -1,0 +1,67 @@
+{
+  "symbol": "KAYNES",
+  "publication_ready": false,
+  "discovery_url": "https://www.kaynestechnology.co.in/investors.html",
+  "sources": [
+    {
+      "source_url": "https://www.kaynestechnology.co.in/doc/Regulation-46-of-sebi-lodr-regulation/UnauditedFinancialResultsQ12026-27.pdf",
+      "sha256": "952bb1b4ec171b63d2cd949beb8579e04d927bbc4f9f50c2fbd01b1448829ceb",
+      "retrieved_utc": "2026-10-28T21:10:51.356075+00:00",
+      "pages": 11,
+      "hits": [
+        {
+          "page": 3,
+          "term": "consolidated",
+          "excerpt": "uditor's Review Report on the Quart3rly Unaudited Consolidated Financial Results of Kaynes Technology India Limited pursuant to the Regulation 33 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 (as amended) Review report to The Board of D"
+        },
+        {
+          "page": 4,
+          "term": "consolidated",
+          "excerpt": "of the Holding Company and reviewed by us. 7. The consolidated financial results include result of eight foreign subsidiaries (including step-down subsidiaries), which have not been reviewed and whose financial results reflect total revenue (before consolidation adjustm"
+        },
+        {
+          "page": 9,
+          "term": "consolidated",
+          "excerpt": "l The above statement of unaudited stcadaione and consolidated fira cial results (\"thc State$enLl\") oi Kayru; ]*hnolop,), India LimiH (the Compnnv') for the quarter eode<i 3otb June 2026 have been re.viewed b\"r, the Audit Co$nriltee dnd approveel Lrv the Board sI Direct"
+        }
+      ]
+    },
+    {
+      "source_url": "https://www.kaynestechnology.co.in/doc/Stock-Exchange-Disclosures/ReclassificationFinancials-13May26.pdf",
+      "sha256": "80340e6fc48d19613f9b68d8d43f0c4956823ff47a479a787937c74a83cc9f05",
+      "retrieved_utc": "2026-10-28T21:10:53.693047+00:00",
+      "pages": 3,
+      "hits": [
+        {
+          "page": 1,
+          "term": "consolidated",
+          "excerpt": "ar Sir/Madam, Subject: Corrigendum to the Audited Consolidated Financial Results for the year ended March 31, 2026 With reference to the Audited Consolidated Financial Results of the Company for the year ended March 31, 2026 , as approved by the Board of Directors on Ma"
+        },
+        {
+          "page": 1,
+          "term": "reclassif",
+          "excerpt": "tal Liabilities as at March 31, 2026. Particulars Reclassified Figures (Rs. in Millions) Figures released to Stock Exchanges on May 13, 2026 (Rs. in Millions) NON-CURRENT LIABILITIES Long Term Provisions 127.00 167.48 CURRENT LIABILITIES Long Term Provisions 50.57 10.09"
+        },
+        {
+          "page": 2,
+          "term": "consolidated",
+          "excerpt": " year, net of taxes 8.20 8.20 15.85 15.85 Audited Consolidated Financial Results Other comprehensive income (i) Items that will not be reclassified to profit or loss (33.23) (26.87) 210.23 216.59 (ii) Income tax relating to items that will not be reclassified to profit "
+        },
+        {
+          "page": 2,
+          "term": "reclassif",
+          "excerpt": "rter ended March 31,2026 Year ended March 31,2026 Reclassified Figures (Rs. in Millions) Figures released to Stock Exchanges on May 13, 2026 (Rs. in Millions) Reclassified Figures (Rs. in Millions) Figures released to Stock Exchanges on May 13, 2026 (Rs. in Millions) Au"
+        },
+        {
+          "page": 3,
+          "term": "consolidated",
+          "excerpt": "rrections to the Standalone Financial Results and Consolidated Financial Results filed with the Stock Exchanges on May 13, 2026. We sincerely regret the inconvenience caused in this regard. We request to kindly take this intimation on record. Thanking You, Yours faithfu"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "corrects_filing_date": "2026-05-13",
+      "review_note": "Actual cover date7Aug2026 overrides misleading13May filename. Corrects current/noncurrent provision classification and OCI line classifications; total liabilities unchanged and page3 says no other corrections. Do not treat OCI changes as quarterly PAT changes."
+    }
+  ],
+  "note": "Primary issuer financial sources; current/annual accounting scope, page columns, units and reclassification notes require review before canonical ingestion. No quarterly figures or growth published from these files yet."
+}
