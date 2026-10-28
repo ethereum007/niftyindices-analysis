@@ -77,10 +77,12 @@ def fetch(member):
     except Exception as e:record.update(status='fetch_or_validation_failed',error=str(e))
     return record
 
-def main():
-    history=json.loads((ROOT/'defence.json').read_text(encoding='utf-8'))
+def main(family='defence'):
+    history=json.loads((ROOT/(family+'.json')).read_text(encoding='utf-8'))
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:records=list(pool.map(fetch,history['members']))
-    out={'family':'defence','publication_ready':False,'reviewed_on':'2026-10-28','note':'NSE reported events compared with vendor split-normalised dividend amounts; not a historical-identity/action-completeness certificate. Corporate-action parsing never auto-publishes history.','members':records}
-    (ROOT/'defence-action-review.json').write_text(json.dumps(out,indent=2),encoding='utf-8')
+    out={'family':family,'publication_ready':False,'reviewed_on':'2026-10-28','note':'NSE reported events compared with vendor split-normalised dividend amounts; not a historical-identity/action-completeness certificate. Corporate-action parsing never auto-publishes history.','members':records}
+    (ROOT/(family+'-action-review.json')).write_text(json.dumps(out,indent=2),encoding='utf-8')
     print(json.dumps({r['symbol']:{'status':r['status'],'events':len(r.get('events',[])),'mismatches':[x['date'] for x in r.get('comparisons',[]) if not x['matched']],'unknown':len(r.get('unclassified_actions',[]))} for r in records}))
-if __name__=='__main__':main()
+if __name__=='__main__':
+    import sys
+    main(*sys.argv[1:])

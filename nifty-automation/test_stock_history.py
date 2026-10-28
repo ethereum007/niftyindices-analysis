@@ -44,6 +44,25 @@ class AdjustedHistoryTest(unittest.TestCase):
         self.assertFalse(action['all_reported_events_match'])
         self.assertEqual(action['status'],'manual_review_required')
 
+    def test_manufacturing_research_identity_quotes_and_manual_action_states(self):
+        data=json.loads((ROOT/'manufacturing.json').read_text(encoding='utf-8'))
+        actions=json.loads((ROOT/'manufacturing-action-review.json').read_text(encoding='utf-8'))
+        self.assertFalse(data['publication_ready'])
+        self.assertEqual(len(data['members']),5)
+        for member in data['members']:
+            raw=(ROOT/'raw'/(member['sha256']+'.json')).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),member['sha256'])
+            rows,_=decode(json.loads(raw),member['symbol'])
+            self.assertTrue(member['crosscheck']['within_0_1_pct'])
+            self.assertGreater(len(rows),900)
+        by_symbol={r['symbol']:r for r in actions['members']}
+        self.assertFalse(by_symbol['KAYNES']['all_reported_events_match'])
+        self.assertFalse(by_symbol['LT']['all_reported_events_match'])
+        self.assertTrue(by_symbol['LT']['unclassified_actions'])
+        for member in actions['members']:
+            raw=(ROOT/'raw'/(member['sha256']+'.json')).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),member['sha256'])
+
     def test_archived_defence_data_keeps_review_gate_and_quote_reconciliation(self):
         data=json.loads((ROOT/'defence.json').read_text(encoding='utf-8'))
         self.assertFalse(data['publication_ready']);self.assertEqual(len(data['members']),5)

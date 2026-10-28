@@ -1,0 +1,750 @@
+{
+  "family": "manufacturing",
+  "publication_ready": false,
+  "reviewed_on": "2026-10-28",
+  "note": "NSE reported events compared with vendor split-normalised dividend amounts; not a historical-identity/action-completeness certificate. Corporate-action parsing never auto-publishes history.",
+  "members": [
+    {
+      "symbol": "KAYNES",
+      "current_isin": "INE918Z01012",
+      "source_url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&symbol=KAYNES&from_date=01-09-2021&to_date=27-10-2026",
+      "retrieved_utc": "2026-10-28T14:22:57.195875+00:00",
+      "publication_ready": false,
+      "sha256": "5fa6f3a2edaab7baa531657d292481c81031fd13ba8adb424799381a57065258",
+      "outside_history_window_events": [],
+      "dividend_factor_steps": [],
+      "events": [],
+      "ignored_meeting_rows": 1,
+      "unclassified_actions": [],
+      "exchange_isins": [
+        "INE918Z01012"
+      ],
+      "comparisons": [],
+      "unmatched_vendor_split_dates": [],
+      "unmatched_vendor_dividend_dates": [],
+      "all_reported_events_match": false,
+      "status": "manual_review_required",
+      "limitations": "Not a completeness certificate. No exchange rows does not prove no actions. ISIN continuity/listing history, rights/reorganizations and vendor price adjustment-factor behaviour still require review."
+    },
+    {
+      "symbol": "ABB",
+      "current_isin": "INE117A01022",
+      "source_url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&symbol=ABB&from_date=01-09-2021&to_date=27-10-2026",
+      "retrieved_utc": "2026-10-28T14:22:57.196873+00:00",
+      "publication_ready": false,
+      "sha256": "03a25e55c6e76e302aaa72499a657353ea7e60a9a0960fce84a9a6f1a35d05d2",
+      "outside_history_window_events": [],
+      "dividend_factor_steps": [
+        {
+          "date": "2022-04-27",
+          "expected_backward_factor_step": 0.9975093997381147,
+          "observed_backward_factor_step": 0.997509575685755,
+          "matched": true
+        },
+        {
+          "date": "2023-04-27",
+          "expected_backward_factor_step": 0.9983824242583514,
+          "observed_backward_factor_step": 0.9983822625518118,
+          "matched": true
+        },
+        {
+          "date": "2023-08-25",
+          "expected_backward_factor_step": 0.9987318277240204,
+          "observed_backward_factor_step": 0.9987319476138793,
+          "matched": true
+        },
+        {
+          "date": "2024-05-03",
+          "expected_backward_factor_step": 0.9964384586606809,
+          "observed_backward_factor_step": 0.9964384160711495,
+          "matched": true
+        },
+        {
+          "date": "2024-08-23",
+          "expected_backward_factor_step": 0.9986436882181671,
+          "observed_backward_factor_step": 0.9986435719860296,
+          "matched": true
+        },
+        {
+          "date": "2025-05-02",
+          "expected_backward_factor_step": 0.9939339067451336,
+          "observed_backward_factor_step": 0.9939339308938276,
+          "matched": true
+        },
+        {
+          "date": "2025-08-08",
+          "expected_backward_factor_step": 0.9980912376672854,
+          "observed_backward_factor_step": 0.9980912145742797,
+          "matched": true
+        },
+        {
+          "date": "2026-04-30",
+          "expected_backward_factor_step": 0.9959267671553445,
+          "observed_backward_factor_step": 0.9959267210454047,
+          "matched": true
+        },
+        {
+          "date": "2026-08-07",
+          "expected_backward_factor_step": 0.9883645765998708,
+          "observed_backward_factor_step": 0.9883645765998708,
+          "matched": true
+        }
+      ],
+      "events": [
+        {
+          "date": "2022-04-27",
+          "type": "dividend",
+          "cash_per_share": 5.2,
+          "subject": "Annual General Meeting/Dividend - Rs 5.20 Per Share"
+        },
+        {
+          "date": "2023-04-27",
+          "type": "dividend",
+          "cash_per_share": 5.5,
+          "subject": "Annual General Meeting/Dividend - Rs 5.50 Per Share"
+        },
+        {
+          "date": "2023-08-25",
+          "type": "dividend",
+          "cash_per_share": 5.5,
+          "subject": "Special Dividend - Rs  5.50 Per Share"
+        },
+        {
+          "date": "2024-05-03",
+          "type": "dividend",
+          "cash_per_share": 23.8,
+          "subject": "Annual General Meeting/Dividend - Rs 23.80 Per Share"
+        },
+        {
+          "date": "2024-08-23",
+          "type": "dividend",
+          "cash_per_share": 10.66,
+          "subject": "Interim Dividend - Rs 10.66 Per Share"
+        },
+        {
+          "date": "2025-05-02",
+          "type": "dividend",
+          "cash_per_share": 33.5,
+          "subject": "Dividend - Rs 33.50 Per Share"
+        },
+        {
+          "date": "2025-08-08",
+          "type": "dividend",
+          "cash_per_share": 9.77,
+          "subject": "Interim Dividend - Rs 9.77 Per Share"
+        },
+        {
+          "date": "2026-04-30",
+          "type": "dividend",
+          "cash_per_share": 29.59,
+          "subject": "Dividend - Rs 29.59 Per Share"
+        },
+        {
+          "date": "2026-08-07",
+          "type": "dividend",
+          "cash_per_share": 90.0,
+          "subject": "Special Dividend - Rs 90 Per Share"
+        }
+      ],
+      "ignored_meeting_rows": 0,
+      "unclassified_actions": [],
+      "exchange_isins": [
+        "INE117A01022"
+      ],
+      "comparisons": [
+        {
+          "date": "2022-04-27",
+          "type": "dividend",
+          "cash_per_share": 5.2,
+          "subject": "Annual General Meeting/Dividend - Rs 5.20 Per Share",
+          "expected_vendor_value": 5.2,
+          "vendor_value": 5.2,
+          "matched": true
+        },
+        {
+          "date": "2023-04-27",
+          "type": "dividend",
+          "cash_per_share": 5.5,
+          "subject": "Annual General Meeting/Dividend - Rs 5.50 Per Share",
+          "expected_vendor_value": 5.5,
+          "vendor_value": 5.5,
+          "matched": true
+        },
+        {
+          "date": "2023-08-25",
+          "type": "dividend",
+          "cash_per_share": 5.5,
+          "subject": "Special Dividend - Rs  5.50 Per Share",
+          "expected_vendor_value": 5.5,
+          "vendor_value": 5.5,
+          "matched": true
+        },
+        {
+          "date": "2024-05-03",
+          "type": "dividend",
+          "cash_per_share": 23.8,
+          "subject": "Annual General Meeting/Dividend - Rs 23.80 Per Share",
+          "expected_vendor_value": 23.8,
+          "vendor_value": 23.8,
+          "matched": true
+        },
+        {
+          "date": "2024-08-23",
+          "type": "dividend",
+          "cash_per_share": 10.66,
+          "subject": "Interim Dividend - Rs 10.66 Per Share",
+          "expected_vendor_value": 10.66,
+          "vendor_value": 10.66,
+          "matched": true
+        },
+        {
+          "date": "2025-05-02",
+          "type": "dividend",
+          "cash_per_share": 33.5,
+          "subject": "Dividend - Rs 33.50 Per Share",
+          "expected_vendor_value": 33.5,
+          "vendor_value": 33.5,
+          "matched": true
+        },
+        {
+          "date": "2025-08-08",
+          "type": "dividend",
+          "cash_per_share": 9.77,
+          "subject": "Interim Dividend - Rs 9.77 Per Share",
+          "expected_vendor_value": 9.77,
+          "vendor_value": 9.77,
+          "matched": true
+        },
+        {
+          "date": "2026-04-30",
+          "type": "dividend",
+          "cash_per_share": 29.59,
+          "subject": "Dividend - Rs 29.59 Per Share",
+          "expected_vendor_value": 29.59,
+          "vendor_value": 29.59,
+          "matched": true
+        },
+        {
+          "date": "2026-08-07",
+          "type": "dividend",
+          "cash_per_share": 90.0,
+          "subject": "Special Dividend - Rs 90 Per Share",
+          "expected_vendor_value": 90.0,
+          "vendor_value": 90.0,
+          "matched": true
+        }
+      ],
+      "unmatched_vendor_split_dates": [],
+      "unmatched_vendor_dividend_dates": [],
+      "all_reported_events_match": true,
+      "status": "reported_actions_reconciled",
+      "limitations": "Not a completeness certificate. No exchange rows does not prove no actions. ISIN continuity/listing history, rights/reorganizations and vendor price adjustment-factor behaviour still require review."
+    },
+    {
+      "symbol": "LT",
+      "current_isin": "INE018A01030",
+      "source_url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&symbol=LT&from_date=01-09-2021&to_date=27-10-2026",
+      "retrieved_utc": "2026-10-28T14:22:57.198376+00:00",
+      "publication_ready": false,
+      "sha256": "563c5e2ea3f98ae9023833c12af82cae5d5fec5e52656f8d5dc3fea95768ea4a",
+      "outside_history_window_events": [],
+      "dividend_factor_steps": [
+        {
+          "date": "2022-07-21",
+          "expected_backward_factor_step": 0.9873559581497257,
+          "observed_backward_factor_step": 0.9873558679349386,
+          "matched": true
+        },
+        {
+          "date": "2023-08-02",
+          "expected_backward_factor_step": 0.9887499292750681,
+          "observed_backward_factor_step": 0.9887498808826413,
+          "matched": true
+        },
+        {
+          "date": "2024-06-20",
+          "expected_backward_factor_step": 0.9922004483681284,
+          "observed_backward_factor_step": 0.9922005306776857,
+          "matched": true
+        },
+        {
+          "date": "2025-06-03",
+          "expected_backward_factor_step": 0.9907598654479718,
+          "observed_backward_factor_step": 0.9907598452105676,
+          "matched": true
+        },
+        {
+          "date": "2026-05-22",
+          "expected_backward_factor_step": 0.9903270968563065,
+          "observed_backward_factor_step": 0.9903270968563065,
+          "matched": true
+        }
+      ],
+      "events": [
+        {
+          "date": "2022-07-21",
+          "type": "dividend",
+          "cash_per_share": 22.0,
+          "subject": "Dividend - Rs 22 Per Share"
+        },
+        {
+          "date": "2023-08-02",
+          "type": "dividend",
+          "cash_per_share": 6.0,
+          "subject": "Special Dividend - Rs 6 Per Share"
+        },
+        {
+          "date": "2023-08-02",
+          "type": "dividend",
+          "cash_per_share": 24.0,
+          "subject": "Dividend - Rs 24 Per Share"
+        },
+        {
+          "date": "2024-06-20",
+          "type": "dividend",
+          "cash_per_share": 28.0,
+          "subject": "Dividend - Rs 28 Per Share"
+        },
+        {
+          "date": "2025-06-03",
+          "type": "dividend",
+          "cash_per_share": 34.0,
+          "subject": "Dividend - Rs 34 Per Share"
+        },
+        {
+          "date": "2026-05-22",
+          "type": "dividend",
+          "cash_per_share": 38.0,
+          "subject": "Dividend - Rs 38 Per Share"
+        }
+      ],
+      "ignored_meeting_rows": 0,
+      "unclassified_actions": [
+        {
+          "bcEndDate": "-",
+          "bcStartDate": "-",
+          "caBroadcastDate": null,
+          "comp": "Larsen & Toubro Limited",
+          "exDate": "12-Sep-2023",
+          "faceVal": "2",
+          "ind": "-",
+          "isin": "INE018A01030",
+          "ndEndDate": "-",
+          "ndStartDate": "-",
+          "recDate": "12-Sep-2023",
+          "series": "EQ",
+          "subject": "Buy Back",
+          "symbol": "LT"
+        }
+      ],
+      "exchange_isins": [
+        "INE018A01030"
+      ],
+      "comparisons": [
+        {
+          "date": "2022-07-21",
+          "type": "dividend",
+          "cash_per_share": 22.0,
+          "subject": "Dividend - Rs 22 Per Share",
+          "expected_vendor_value": 22.0,
+          "vendor_value": 22.0,
+          "matched": true
+        },
+        {
+          "date": "2023-08-02",
+          "type": "dividend",
+          "cash_per_share": 6.0,
+          "subject": "Special Dividend - Rs 6 Per Share",
+          "expected_vendor_value": 6.0,
+          "vendor_value": 30.0,
+          "matched": false
+        },
+        {
+          "date": "2023-08-02",
+          "type": "dividend",
+          "cash_per_share": 24.0,
+          "subject": "Dividend - Rs 24 Per Share",
+          "expected_vendor_value": 24.0,
+          "vendor_value": 30.0,
+          "matched": false
+        },
+        {
+          "date": "2024-06-20",
+          "type": "dividend",
+          "cash_per_share": 28.0,
+          "subject": "Dividend - Rs 28 Per Share",
+          "expected_vendor_value": 28.0,
+          "vendor_value": 28.0,
+          "matched": true
+        },
+        {
+          "date": "2025-06-03",
+          "type": "dividend",
+          "cash_per_share": 34.0,
+          "subject": "Dividend - Rs 34 Per Share",
+          "expected_vendor_value": 34.0,
+          "vendor_value": 34.0,
+          "matched": true
+        },
+        {
+          "date": "2026-05-22",
+          "type": "dividend",
+          "cash_per_share": 38.0,
+          "subject": "Dividend - Rs 38 Per Share",
+          "expected_vendor_value": 38.0,
+          "vendor_value": 38.0,
+          "matched": true
+        }
+      ],
+      "unmatched_vendor_split_dates": [],
+      "unmatched_vendor_dividend_dates": [],
+      "all_reported_events_match": false,
+      "status": "manual_review_required",
+      "limitations": "Not a completeness certificate. No exchange rows does not prove no actions. ISIN continuity/listing history, rights/reorganizations and vendor price adjustment-factor behaviour still require review."
+    },
+    {
+      "symbol": "DYNAMATECH",
+      "current_isin": "INE221B01012",
+      "source_url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&symbol=DYNAMATECH&from_date=01-09-2021&to_date=27-10-2026",
+      "retrieved_utc": "2026-10-28T14:22:57.577015+00:00",
+      "publication_ready": false,
+      "sha256": "3de17c7390dcc42465296f5ffa559fca3644a7946872ccc35e20a2cf4d88e277",
+      "outside_history_window_events": [],
+      "dividend_factor_steps": [
+        {
+          "date": "2022-08-18",
+          "expected_backward_factor_step": 0.9985005247797188,
+          "observed_backward_factor_step": 0.9985005141445781,
+          "matched": true
+        },
+        {
+          "date": "2023-06-09",
+          "expected_backward_factor_step": 0.9979305553801265,
+          "observed_backward_factor_step": 0.9979304405708269,
+          "matched": true
+        },
+        {
+          "date": "2024-02-23",
+          "expected_backward_factor_step": 0.9992889900103097,
+          "observed_backward_factor_step": 0.9992890035030789,
+          "matched": true
+        },
+        {
+          "date": "2024-08-02",
+          "expected_backward_factor_step": 0.9992841086236527,
+          "observed_backward_factor_step": 0.999284037885939,
+          "matched": true
+        },
+        {
+          "date": "2024-11-29",
+          "expected_backward_factor_step": 0.9997385877201581,
+          "observed_backward_factor_step": 0.9997386283111676,
+          "matched": true
+        },
+        {
+          "date": "2026-02-13",
+          "expected_backward_factor_step": 0.999484695455014,
+          "observed_backward_factor_step": 0.9994846387233149,
+          "matched": true
+        },
+        {
+          "date": "2026-08-14",
+          "expected_backward_factor_step": 0.9997224791859389,
+          "observed_backward_factor_step": 0.9997224196501273,
+          "matched": true
+        },
+        {
+          "date": "2026-08-28",
+          "expected_backward_factor_step": 0.9995651039401583,
+          "observed_backward_factor_step": 0.9995651039401583,
+          "matched": true
+        }
+      ],
+      "events": [
+        {
+          "date": "2022-08-18",
+          "type": "dividend",
+          "cash_per_share": 3.0,
+          "subject": "Interim Dividend - Rs  3 Per Share"
+        },
+        {
+          "date": "2023-06-09",
+          "type": "dividend",
+          "cash_per_share": 7.0,
+          "subject": "Dividend - Rs 7 Per Share"
+        },
+        {
+          "date": "2024-02-23",
+          "type": "dividend",
+          "cash_per_share": 5.0,
+          "subject": "Interim Dividend - Rs  5 Per Share"
+        },
+        {
+          "date": "2024-08-02",
+          "type": "dividend",
+          "cash_per_share": 5.0,
+          "subject": "Dividend - Rs 5 Per Share"
+        },
+        {
+          "date": "2024-11-29",
+          "type": "dividend",
+          "cash_per_share": 2.0,
+          "subject": "Interim Dividend - Rs 2 Per Share"
+        },
+        {
+          "date": "2026-02-13",
+          "type": "dividend",
+          "cash_per_share": 5.0,
+          "subject": "Interim Dividend - Rs 5 Per Share"
+        },
+        {
+          "date": "2026-08-14",
+          "type": "dividend",
+          "cash_per_share": 3.0,
+          "subject": "Interim Dividend - Rs 3 Per Share"
+        },
+        {
+          "date": "2026-08-28",
+          "type": "dividend",
+          "cash_per_share": 5.0,
+          "subject": "Dividend - Rs 5 Per Share"
+        }
+      ],
+      "ignored_meeting_rows": 4,
+      "unclassified_actions": [],
+      "exchange_isins": [
+        "INE221B01012"
+      ],
+      "comparisons": [
+        {
+          "date": "2022-08-18",
+          "type": "dividend",
+          "cash_per_share": 3.0,
+          "subject": "Interim Dividend - Rs  3 Per Share",
+          "expected_vendor_value": 3.0,
+          "vendor_value": 3.0,
+          "matched": true
+        },
+        {
+          "date": "2023-06-09",
+          "type": "dividend",
+          "cash_per_share": 7.0,
+          "subject": "Dividend - Rs 7 Per Share",
+          "expected_vendor_value": 7.0,
+          "vendor_value": 7.0,
+          "matched": true
+        },
+        {
+          "date": "2024-02-23",
+          "type": "dividend",
+          "cash_per_share": 5.0,
+          "subject": "Interim Dividend - Rs  5 Per Share",
+          "expected_vendor_value": 5.0,
+          "vendor_value": 5.0,
+          "matched": true
+        },
+        {
+          "date": "2024-08-02",
+          "type": "dividend",
+          "cash_per_share": 5.0,
+          "subject": "Dividend - Rs 5 Per Share",
+          "expected_vendor_value": 5.0,
+          "vendor_value": 5.0,
+          "matched": true
+        },
+        {
+          "date": "2024-11-29",
+          "type": "dividend",
+          "cash_per_share": 2.0,
+          "subject": "Interim Dividend - Rs 2 Per Share",
+          "expected_vendor_value": 2.0,
+          "vendor_value": 2.0,
+          "matched": true
+        },
+        {
+          "date": "2026-02-13",
+          "type": "dividend",
+          "cash_per_share": 5.0,
+          "subject": "Interim Dividend - Rs 5 Per Share",
+          "expected_vendor_value": 5.0,
+          "vendor_value": 5.0,
+          "matched": true
+        },
+        {
+          "date": "2026-08-14",
+          "type": "dividend",
+          "cash_per_share": 3.0,
+          "subject": "Interim Dividend - Rs 3 Per Share",
+          "expected_vendor_value": 3.0,
+          "vendor_value": 3.0,
+          "matched": true
+        },
+        {
+          "date": "2026-08-28",
+          "type": "dividend",
+          "cash_per_share": 5.0,
+          "subject": "Dividend - Rs 5 Per Share",
+          "expected_vendor_value": 5.0,
+          "vendor_value": 5.0,
+          "matched": true
+        }
+      ],
+      "unmatched_vendor_split_dates": [],
+      "unmatched_vendor_dividend_dates": [],
+      "all_reported_events_match": true,
+      "status": "reported_actions_reconciled",
+      "limitations": "Not a completeness certificate. No exchange rows does not prove no actions. ISIN continuity/listing history, rights/reorganizations and vendor price adjustment-factor behaviour still require review."
+    },
+    {
+      "symbol": "DIXON",
+      "current_isin": "INE935N01020",
+      "source_url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&symbol=DIXON&from_date=01-09-2021&to_date=27-10-2026",
+      "retrieved_utc": "2026-10-28T14:22:57.577015+00:00",
+      "publication_ready": false,
+      "sha256": "8a7123b38693a04a012f7628d6855927026ba509997990336c5b927b16770614",
+      "outside_history_window_events": [],
+      "dividend_factor_steps": [
+        {
+          "date": "2021-09-20",
+          "expected_backward_factor_step": 0.999764434294364,
+          "observed_backward_factor_step": 0.999764551024997,
+          "matched": true
+        },
+        {
+          "date": "2022-08-11",
+          "expected_backward_factor_step": 0.999479972431937,
+          "observed_backward_factor_step": 0.9994799599720459,
+          "matched": true
+        },
+        {
+          "date": "2023-09-22",
+          "expected_backward_factor_step": 0.9993813731703236,
+          "observed_backward_factor_step": 0.9993814114038586,
+          "matched": true
+        },
+        {
+          "date": "2024-09-17",
+          "expected_backward_factor_step": 0.9996426095173225,
+          "observed_backward_factor_step": 0.9996426293140546,
+          "matched": true
+        },
+        {
+          "date": "2025-09-16",
+          "expected_backward_factor_step": 0.9995551848762858,
+          "observed_backward_factor_step": 0.9995551454486626,
+          "matched": true
+        },
+        {
+          "date": "2026-09-21",
+          "expected_backward_factor_step": 0.9992310649750096,
+          "observed_backward_factor_step": 0.9992310649750096,
+          "matched": true
+        }
+      ],
+      "events": [
+        {
+          "date": "2021-09-20",
+          "type": "dividend",
+          "cash_per_share": 1.0,
+          "subject": " Annual General Meeting/Dividend - Re 1 Per Share"
+        },
+        {
+          "date": "2022-08-11",
+          "type": "dividend",
+          "cash_per_share": 2.0,
+          "subject": "Annual General Meeting/Dividend - Rs 2 Per Share"
+        },
+        {
+          "date": "2023-09-22",
+          "type": "dividend",
+          "cash_per_share": 3.0,
+          "subject": "Annual General Meeting/Dividend - Rs 3 Per Share"
+        },
+        {
+          "date": "2024-09-17",
+          "type": "dividend",
+          "cash_per_share": 5.0,
+          "subject": "Annual General Meeting/Dividend - Rs 5 Per Share"
+        },
+        {
+          "date": "2025-09-16",
+          "type": "dividend",
+          "cash_per_share": 8.0,
+          "subject": "Dividend - Rs 8 Per Share"
+        },
+        {
+          "date": "2026-09-21",
+          "type": "dividend",
+          "cash_per_share": 10.0,
+          "subject": "Dividend - Rs 10 Per Share"
+        }
+      ],
+      "ignored_meeting_rows": 0,
+      "unclassified_actions": [],
+      "exchange_isins": [
+        "INE935N01012"
+      ],
+      "comparisons": [
+        {
+          "date": "2021-09-20",
+          "type": "dividend",
+          "cash_per_share": 1.0,
+          "subject": " Annual General Meeting/Dividend - Re 1 Per Share",
+          "expected_vendor_value": 1.0,
+          "vendor_value": 1.0,
+          "matched": true
+        },
+        {
+          "date": "2022-08-11",
+          "type": "dividend",
+          "cash_per_share": 2.0,
+          "subject": "Annual General Meeting/Dividend - Rs 2 Per Share",
+          "expected_vendor_value": 2.0,
+          "vendor_value": 2.0,
+          "matched": true
+        },
+        {
+          "date": "2023-09-22",
+          "type": "dividend",
+          "cash_per_share": 3.0,
+          "subject": "Annual General Meeting/Dividend - Rs 3 Per Share",
+          "expected_vendor_value": 3.0,
+          "vendor_value": 3.0,
+          "matched": true
+        },
+        {
+          "date": "2024-09-17",
+          "type": "dividend",
+          "cash_per_share": 5.0,
+          "subject": "Annual General Meeting/Dividend - Rs 5 Per Share",
+          "expected_vendor_value": 5.0,
+          "vendor_value": 5.0,
+          "matched": true
+        },
+        {
+          "date": "2025-09-16",
+          "type": "dividend",
+          "cash_per_share": 8.0,
+          "subject": "Dividend - Rs 8 Per Share",
+          "expected_vendor_value": 8.0,
+          "vendor_value": 8.0,
+          "matched": true
+        },
+        {
+          "date": "2026-09-21",
+          "type": "dividend",
+          "cash_per_share": 10.0,
+          "subject": "Dividend - Rs 10 Per Share",
+          "expected_vendor_value": 10.0,
+          "vendor_value": 10.0,
+          "matched": true
+        }
+      ],
+      "unmatched_vendor_split_dates": [],
+      "unmatched_vendor_dividend_dates": [],
+      "all_reported_events_match": true,
+      "status": "reported_actions_reconciled",
+      "limitations": "Not a completeness certificate. No exchange rows does not prove no actions. ISIN continuity/listing history, rights/reorganizations and vendor price adjustment-factor behaviour still require review."
+    }
+  ]
+}
