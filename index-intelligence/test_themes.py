@@ -38,7 +38,7 @@ class ThemesTest(unittest.TestCase):
     def test_reviewed_history_excludes_pending_and_rejects_stale_review(self):
         source=HERE.parent/'nifty-automation/data'
         approved=load_reviewed_company_history(source)
-        self.assertEqual({r['symbol'] for r in approved.values()},{'HAL','MAZDOCK','DYNAMATECH','BEL','ABB'})
+        self.assertEqual({r['symbol'] for r in approved.values()},{'HAL','MAZDOCK','DYNAMATECH','BEL','ABB','LT','DIXON'})
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);shutil.copytree(source/'stock-history',root/'stock-history')
             p=root/'stock-history/defence-publication-review.json';data=json.loads(p.read_text())
@@ -67,6 +67,17 @@ class ThemesTest(unittest.TestCase):
         self.assertEqual(len(data['facts']),1)
         self.assertEqual(data['facts'][0]['period_end'],'2026-06-30')
         self.assertEqual(data['facts'][0]['pat_total_period_crore'],'-2.589')
+
+    def test_published_history_reconstructs_actions_and_binds_event_decisions(self):
+        source=HERE.parent/'nifty-automation/data'
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);shutil.copytree(source/'stock-history',root/'stock-history')
+            p=root/'stock-history/manufacturing-action-review.json';data=json.loads(p.read_text(encoding='utf-8'))
+            lt=next(r for r in data['members'] if r['symbol']=='LT');lt['all_reported_events_match']=False;lt['comparisons']=[]
+            p.write_text(json.dumps(data),encoding='utf-8')
+            self.assertIn('INE018A01030',load_reviewed_company_history(root))
+            decision=root/'stock-history/event-dispositions.json';decision.write_bytes(decision.read_bytes()+b' ')
+            with self.assertRaisesRegex(ValueError,'Changed reviewed event decisions'):load_reviewed_company_history(root)
 
     def test_financial_review_withholds_only_conflicting_pat_field(self):
         data=load_reviewed_financials(HERE.parent/'nifty-automation/data')

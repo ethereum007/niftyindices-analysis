@@ -89,7 +89,7 @@ def load_reviewed_company_history(root):
             m=next(r for r in history['members'] if r['symbol']==item['symbol'])
             a=next(r for r in actions['members'] if r['symbol']==item['symbol'])
             if m['isin']!=item['isin'] or m['sha256']!=item['history_sha256'] or a['sha256']!=item['action_sha256']:raise ValueError('Stale company history review')
-            if not a.get('all_reported_events_match') or not m['crosscheck']['within_0_1_pct']:raise ValueError('Company history checks failed')
+            if not m['crosscheck']['within_0_1_pct']:raise ValueError('Company history checks failed')
             verify(m['sha256'],'json');verify(a['sha256'],'json')
             for evidence in item['identity_evidence']:verify(evidence['sha256'],evidence['extension'])
             if m['isin'] in out:raise ValueError('Duplicate reviewed stock history')
@@ -98,6 +98,15 @@ def load_reviewed_company_history(root):
             sys.path.insert(0,str(HERE.parent/'nifty-automation'))
             from fetch_stock_history import decode
             rows,_=decode(json.loads((folder/'raw'/(m['sha256']+'.json')).read_text()),m['symbol'])
+            from review_stock_actions import reconstruct_action_review
+            decisions=[]
+            if item.get('event_dispositions_sha256'):
+                decision_raw=(folder/'event-dispositions.json').read_bytes()
+                if hashlib.sha256(decision_raw).hexdigest()!=item['event_dispositions_sha256']:raise ValueError('Changed reviewed event decisions')
+                decisions=json.loads(decision_raw)['decisions']
+            reconstructed=reconstruct_action_review(m,a,folder,decisions)
+            if not reconstructed['all_reported_events_match']:raise ValueError('Original company action checks failed')
+
             out[m['isin']]={'symbol':m['symbol'],'family':family,'rows':rows,'method':review['method'],'review':item,'source_url':m['source_url'],'asof':history['asof']}
     return out
 

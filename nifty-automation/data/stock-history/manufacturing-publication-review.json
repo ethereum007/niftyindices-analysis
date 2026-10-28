@@ -17,6 +17,39 @@
         }
       ],
       "note": "Issuer February 2021 filing identifies NSE ABB and INE117A01022 before the downloaded window; current official membership and all reported action ISINs agree. Nine reported cash dividends and vendor adjustment-factor steps reconcile, with no unmatched vendor actions; current official quote is within0.1 percent. Vendor adjusted methodology remains subject to revisions and unreported events. No theme basket, historical membership or tender participation return inferred."
+    },
+    {
+      "symbol": "LT",
+      "isin": "INE018A01030",
+      "status": "reviewed_vendor_methodology",
+      "reviewed_on": "2026-10-29",
+      "history_sha256": "e9e2d030fa5c40c6ac87673f4736358777022e7035bf55c3142490ec2bcb841c",
+      "action_sha256": "01ffd66f9eb7310cf18e641a485612db21b30c6d87e025d99744781f59f8926f",
+      "identity_evidence": [
+        {
+          "sha256": "1bad01fa2fb65e92cc6ff320a8b998b61eeccf382bd809797c83cbd3293bc940",
+          "extension": "pdf",
+          "source_url": "https://investors.larsentoubro.com/upload/ListingCompliance/Corporate%20Governance%20Report%20-%20June%202021.pdf"
+        }
+      ],
+      "note": "Issuer June 2021 governance filing identifies LT/current ISIN before the history window. Regular and special dividends on 2 August 2023 sum to 30 rupees; original source components preserved. September 2023 tender buyback reviewed for a continuing non-tendering shareholder: no tender proceeds or share split applied. Tender participation returns are not modelled.",
+      "event_dispositions_sha256": "8393a8ad3c7483d01968f238ba9528e9af90cf73eeed1e174ec3cd1c43d619c7"
+    },
+    {
+      "symbol": "DIXON",
+      "isin": "INE935N01020",
+      "status": "reviewed_vendor_methodology",
+      "reviewed_on": "2026-10-29",
+      "history_sha256": "35e1dd64ab8d128b9695208808eb3fcce3d58a4f8551539b25bb633f56c0c9ea",
+      "action_sha256": "8a7123b38693a04a012f7628d6855927026ba509997990336c5b927b16770614",
+      "identity_evidence": [
+        {
+          "sha256": "6909a20177af06c3f8bbd7a781ad56189c79efdd2d59d044c7bf934a8ac82264",
+          "extension": "pdf",
+          "source_url": "https://www.msei.in/SX-Content/Circulars/2021/March/Circular-10209.pdf"
+        }
+      ],
+      "note": "Primary MSE circular maps legacy INE935N01012 to current INE935N01020 for March 2021 face-value split10-to2. Record date19March and trade ex-date18March are distinct and precede the downloaded window; no duplicate split adjustment. Six reported cash dividends and vendor factor steps reconcile."
     }
   ]
 }
