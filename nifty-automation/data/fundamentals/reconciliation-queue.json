@@ -240,6 +240,46 @@
       "difference_crore": "0.005",
       "status": "requires_review",
       "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "ABB",
+      "period_end": "2026-06-30",
+      "metric": "revenue_operations_crore",
+      "reported": "3558.87",
+      "ytd_difference": "3558.87",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "ABB",
+      "period_end": "2026-06-30",
+      "metric": "pat_total_period_crore",
+      "reported": "362.30",
+      "ytd_difference": "362.30",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "ABB",
+      "period_end": "2026-03-31",
+      "metric": "revenue_operations_crore",
+      "reported": "3184.06",
+      "ytd_difference": "3184.06",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "ABB",
+      "period_end": "2026-03-31",
+      "metric": "pat_total_period_crore",
+      "reported": "1783.65",
+      "ytd_difference": "1783.65",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
     }
   ]
 }

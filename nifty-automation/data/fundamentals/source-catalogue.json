@@ -1,4 +1,14 @@
 {
+  "ABB": [
+    {
+      "filing_date": "2026-07-31",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_181263_31072026182229_iXBRL_WEB.html"
+    },
+    {
+      "filing_date": "2026-05-08",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_156345_08052026180714_iXBRL_WEB.html"
+    }
+  ],
   "MAZDOCK": [
     {
       "filing_date": "2025-10-27",

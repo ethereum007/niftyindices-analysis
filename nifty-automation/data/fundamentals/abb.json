@@ -1,0 +1,59 @@
+{
+  "symbol": "ABB",
+  "publication_ready": false,
+  "sources": [
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_181263_31072026182229_iXBRL_WEB.html",
+      "filing_date": "2026-07-31",
+      "retrieved_utc": "2026-10-28T23:10:48.113996+00:00",
+      "sha256": "05a031deee35cdbf52aa024e7ff417551886f107d2c66beb85aa73c7abeabfdf",
+      "fact": {
+        "symbol": "ABB",
+        "isin": "INE117A01022",
+        "financial_year_start": "2026-01-01",
+        "period_start": "2026-04-01",
+        "period_end": "2026-06-30",
+        "filing_date": "2026-07-31",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "3558.87",
+        "pat_total_period_crore": "362.30",
+        "ytd_revenue_operations_crore": "6742.93",
+        "ytd_pat_total_period_crore": "2145.95",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_156345_08052026180714_iXBRL_WEB.html",
+      "filing_date": "2026-05-08",
+      "retrieved_utc": "2026-10-28T23:10:48.116010+00:00",
+      "sha256": "07b86d4f7bc77d910e5e7f5cb9418d3874e716993638c6b4334b8da22040f96d",
+      "fact": {
+        "symbol": "ABB",
+        "isin": "INE117A01022",
+        "financial_year_start": "2026-01-01",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_date": "2026-05-08",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "3184.06",
+        "pat_total_period_crore": "1783.65",
+        "ytd_revenue_operations_crore": "3184.06",
+        "ytd_pat_total_period_crore": "1783.65",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    }
+  ],
+  "ttm": null,
+  "ttm_unavailable_reason": null,
+  "note": "Primary financial-fact pilot. Accounting/date/unit review and source verification required before publication. Missing prior-year quarters, ROCE and valuation remain unavailable."
+}

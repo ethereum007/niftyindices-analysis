@@ -161,6 +161,24 @@ class PrimaryFinancialTest(unittest.TestCase):
         self.assertEqual(rows['Total profit (loss) for period']/100,Decimal('-2.589'))
         self.assertLess(rows['Total tax expenses'],0)
 
+    def test_calendar_year_abb_june_is_second_quarter_not_april_fiscal_start(self):
+        from reconcile_financials import reconcile
+        data=json.loads((ROOT/'abb.json').read_text(encoding='utf-8'))
+        facts=[]
+        for source in data['sources']:
+            raw=(ROOT/'raw'/(source['sha256']+'.html')).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),source['sha256'])
+            facts.append(parse(raw,source['filing_date'],'ABB'))
+        june=next(f for f in facts if f['period_end']=='2026-06-30')
+        self.assertEqual(june['financial_year_start'],'2026-01-01')
+        self.assertEqual(june['revenue_operations_crore'],'3558.87')
+        self.assertEqual(june['pat_total_period_crore'],'362.30')
+        self.assertNotEqual(june['revenue_operations_crore'],june['ytd_revenue_operations_crore'])
+        checks=reconcile(facts)
+        self.assertEqual(len(checks),4)
+        self.assertTrue(all(c['status']=='exact_match' for c in checks))
+        self.assertFalse(data['publication_ready'])
+
     def test_exact_quarter_sales_pat_scope_and_unit(self):
         f=parse(self.raw,'2026-10-27')
         self.assertEqual(f['period_start'],'2026-07-01')

@@ -12,7 +12,8 @@ def reconcile(facts):
         previous_end=(start-timedelta(days=1)).isoformat()
         prior=[f for f in facts if f['period_end']==previous_end]
         # Q1 compares with its own YTD; other quarters require the immediately preceding fiscal YTD.
-        if current['period_start'][5:]=='04-01':previous=None
+        fiscal_start=current.get('financial_year_start') or str(start.year if start.month>=4 else start.year-1)+'-04-01'
+        if current['period_start']==fiscal_start:previous=None
         elif len(prior)==1:previous=prior[0]
         else:continue
         if previous and any(previous[k]!=current[k] for k in ('symbol','isin','scope','display_unit')):continue
@@ -25,7 +26,7 @@ def reconcile(facts):
 
 def main():
     out=[]
-    for symbol in ('HAL','BEL','MAZDOCK','DYNAMATECH','IDEAFORGE'):
+    for symbol in ('HAL','BEL','MAZDOCK','DYNAMATECH','IDEAFORGE','ABB'):
         data=json.loads((ROOT/(symbol.lower()+'.json')).read_text(encoding='utf-8'))
         out.extend(reconcile([r['fact'] for r in data['sources'] if r.get('fact')]))
     (ROOT/'reconciliation-queue.json').write_text(json.dumps({'publication_ready':False,'checks':out},indent=2),encoding='utf-8')
