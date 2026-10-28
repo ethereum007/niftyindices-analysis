@@ -16,6 +16,22 @@ class ActionReviewTest(unittest.TestCase):
         with self.assertRaises(ValueError):normalize([self.row('Bonus 2:1')],'HAL')
         result=compare([],{'splits':{'1663200000':{'numerator':3,'denominator':1}}})
         self.assertEqual(result['unmatched_vendor_split_dates'],['2022-09-15'])
+    def test_special_and_regular_same_day_dividends_sum_without_losing_evidence(self):
+        records=json.loads((ROOT/'manufacturing-action-review.json').read_text(encoding='utf-8'))
+        review=next(m for m in records['members'] if m['symbol']=='LT')
+        raw=json.loads((ROOT/'raw'/(review['sha256']+'.json')).read_text())
+        events,ignored,unknown=normalize(raw,'LT')
+        history=json.loads((ROOT/'manufacturing.json').read_text(encoding='utf-8'))
+        member=next(m for m in history['members'] if m['symbol']=='LT')
+        result=compare(events,member['events'])
+        combined=next(e for e in result['comparisons'] if e['date']=='2023-08-02')
+        self.assertEqual(combined['expected_vendor_value'],30)
+        self.assertTrue(combined['matched'])
+        self.assertEqual(sorted(e['cash_per_share'] for e in combined['components']),[6,24])
+        self.assertTrue(any(r['subject']=='Buy Back' for r in unknown))
+        self.assertFalse(review['all_reported_events_match'])
+        with self.assertRaisesRegex(ValueError,'Duplicate exchange action'):compare(events+[events[0]],member['events'])
+
     def test_dividend_adjustment_step_flags_unadjusted_series(self):
         rows=[{'date':'2022-08-05','vendor_close':100,'adjusted_close':99},{'date':'2022-08-08','vendor_close':99,'adjusted_close':99}]
         vendor={'dividends':{'1659916800':{'amount':1}}}

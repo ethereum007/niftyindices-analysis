@@ -32,7 +32,19 @@ def compare(events,vendor):
     splits={datetime.fromtimestamp(int(k),timezone.utc).date().isoformat():v for k,v in vendor.get('splits',{}).items()}
     divs={datetime.fromtimestamp(int(k),timezone.utc).date().isoformat():v for k,v in vendor.get('dividends',{}).items()}
     out=[];seen_s=set();seen_d=set()
-    for e in events:
+    # Vendors commonly report the combined cash distribution on one ex-date.
+    # Keep each independently named official component as provenance, reject duplicate rows.
+    grouped={};prepared=[];identities=set()
+    for event in events:
+        identity=(event['date'],event['type'],event.get('subject',''))
+        if identity in identities:raise ValueError('Duplicate exchange action identity')
+        identities.add(identity)
+        if event['type']!='dividend':prepared.append(event);continue
+        grouped.setdefault(event['date'],[]).append(event)
+    for d,parts in grouped.items():
+        if len(parts)==1:prepared.append(parts[0]);continue
+        prepared.append({'date':d,'type':'dividend','cash_per_share':sum(e['cash_per_share'] for e in parts),'subject':'Combined same-date cash dividends','components':parts})
+    for e in sorted(prepared,key=lambda r:(r['date'],r['type'])):
         d=e['date']
         if e['type'] in ('split','bonus'):
             v=splits.get(d);seen_s.add(d);actual=v['numerator']/v['denominator'] if v else None;expected=e['share_multiplier']

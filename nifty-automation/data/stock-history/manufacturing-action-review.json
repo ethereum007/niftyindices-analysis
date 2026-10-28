@@ -8,7 +8,7 @@
       "symbol": "KAYNES",
       "current_isin": "INE918Z01012",
       "source_url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&symbol=KAYNES&from_date=01-09-2021&to_date=27-10-2026",
-      "retrieved_utc": "2026-10-28T14:22:57.195875+00:00",
+      "retrieved_utc": "2026-10-28T14:55:21.394815+00:00",
       "publication_ready": false,
       "sha256": "5fa6f3a2edaab7baa531657d292481c81031fd13ba8adb424799381a57065258",
       "outside_history_window_events": [],
@@ -30,7 +30,7 @@
       "symbol": "ABB",
       "current_isin": "INE117A01022",
       "source_url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&symbol=ABB&from_date=01-09-2021&to_date=27-10-2026",
-      "retrieved_utc": "2026-10-28T14:22:57.196873+00:00",
+      "retrieved_utc": "2026-10-28T14:55:21.396333+00:00",
       "publication_ready": false,
       "sha256": "03a25e55c6e76e302aaa72499a657353ea7e60a9a0960fce84a9a6f1a35d05d2",
       "outside_history_window_events": [],
@@ -244,9 +244,9 @@
       "symbol": "LT",
       "current_isin": "INE018A01030",
       "source_url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&symbol=LT&from_date=01-09-2021&to_date=27-10-2026",
-      "retrieved_utc": "2026-10-28T14:22:57.198376+00:00",
+      "retrieved_utc": "2026-10-28T14:55:21.397843+00:00",
       "publication_ready": false,
-      "sha256": "563c5e2ea3f98ae9023833c12af82cae5d5fec5e52656f8d5dc3fea95768ea4a",
+      "sha256": "01ffd66f9eb7310cf18e641a485612db21b30c6d87e025d99744781f59f8926f",
       "outside_history_window_events": [],
       "dividend_factor_steps": [
         {
@@ -290,14 +290,14 @@
         {
           "date": "2023-08-02",
           "type": "dividend",
-          "cash_per_share": 6.0,
-          "subject": "Special Dividend - Rs 6 Per Share"
+          "cash_per_share": 24.0,
+          "subject": "Dividend - Rs 24 Per Share"
         },
         {
           "date": "2023-08-02",
           "type": "dividend",
-          "cash_per_share": 24.0,
-          "subject": "Dividend - Rs 24 Per Share"
+          "cash_per_share": 6.0,
+          "subject": "Special Dividend - Rs 6 Per Share"
         },
         {
           "date": "2024-06-20",
@@ -353,20 +353,25 @@
         {
           "date": "2023-08-02",
           "type": "dividend",
-          "cash_per_share": 6.0,
-          "subject": "Special Dividend - Rs 6 Per Share",
-          "expected_vendor_value": 6.0,
+          "cash_per_share": 30.0,
+          "subject": "Combined same-date cash dividends",
+          "components": [
+            {
+              "date": "2023-08-02",
+              "type": "dividend",
+              "cash_per_share": 24.0,
+              "subject": "Dividend - Rs 24 Per Share"
+            },
+            {
+              "date": "2023-08-02",
+              "type": "dividend",
+              "cash_per_share": 6.0,
+              "subject": "Special Dividend - Rs 6 Per Share"
+            }
+          ],
+          "expected_vendor_value": 30.0,
           "vendor_value": 30.0,
-          "matched": false
-        },
-        {
-          "date": "2023-08-02",
-          "type": "dividend",
-          "cash_per_share": 24.0,
-          "subject": "Dividend - Rs 24 Per Share",
-          "expected_vendor_value": 24.0,
-          "vendor_value": 30.0,
-          "matched": false
+          "matched": true
         },
         {
           "date": "2024-06-20",
@@ -406,7 +411,7 @@
       "symbol": "DYNAMATECH",
       "current_isin": "INE221B01012",
       "source_url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&symbol=DYNAMATECH&from_date=01-09-2021&to_date=27-10-2026",
-      "retrieved_utc": "2026-10-28T14:22:57.577015+00:00",
+      "retrieved_utc": "2026-10-28T14:55:21.792504+00:00",
       "publication_ready": false,
       "sha256": "3de17c7390dcc42465296f5ffa559fca3644a7946872ccc35e20a2cf4d88e277",
       "outside_history_window_events": [],
@@ -599,7 +604,7 @@
       "symbol": "DIXON",
       "current_isin": "INE935N01020",
       "source_url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&symbol=DIXON&from_date=01-09-2021&to_date=27-10-2026",
-      "retrieved_utc": "2026-10-28T14:22:57.577015+00:00",
+      "retrieved_utc": "2026-10-28T14:55:21.884106+00:00",
       "publication_ready": false,
       "sha256": "8a7123b38693a04a012f7628d6855927026ba509997990336c5b927b16770614",
       "outside_history_window_events": [],
