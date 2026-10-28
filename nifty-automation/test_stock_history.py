@@ -27,6 +27,23 @@ class AdjustedHistoryTest(unittest.TestCase):
         self.assertAlmostEqual(horizons(rows,date(2026,10,27))['periods']['1y']['cagr_pct'],100*(1.1**(365.2425/365)-1))
         self.assertEqual(horizons(rows,date(2026,11,15))['status'],'end_price_unavailable')
         self.assertEqual(target(date(2024,5,31),'3m'),date(2024,2,29))
+    def test_ideaforge_listing_limits_history_without_approving_empty_actions(self):
+        data=json.loads((ROOT/'defence.json').read_text(encoding='utf-8'))
+        member=next(m for m in data['members'] if m['symbol']=='IDEAFORGE')
+        evidence=json.loads((ROOT/'ideaforge-listing-research.json').read_text(encoding='utf-8'))
+        raw=(ROOT/'raw'/(evidence['sha256']+'.pdf')).read_bytes()
+        self.assertEqual(hashlib.sha256(raw).hexdigest(),evidence['sha256'])
+        self.assertFalse(evidence['publication_ready'])
+        rows,_=decode(json.loads((ROOT/'raw'/(member['sha256']+'.json')).read_text()),'IDEAFORGE')
+        self.assertEqual(rows[0]['date'],evidence['listing_date'])
+        periods=horizons(rows,date(2026,10,26))['periods']
+        self.assertEqual(periods['5y']['status'],'insufficient_history')
+        self.assertIsNotNone(periods['3y']['cumulative_pct'])
+        actions=json.loads((ROOT/'defence-action-review.json').read_text(encoding='utf-8'))
+        action=next(m for m in actions['members'] if m['symbol']=='IDEAFORGE')
+        self.assertFalse(action['all_reported_events_match'])
+        self.assertEqual(action['status'],'manual_review_required')
+
     def test_archived_defence_data_keeps_review_gate_and_quote_reconciliation(self):
         data=json.loads((ROOT/'defence.json').read_text(encoding='utf-8'))
         self.assertFalse(data['publication_ready']);self.assertEqual(len(data['members']),5)
