@@ -9,6 +9,24 @@ from pathlib import Path
 ROOT=Path(__file__).parent/'data/theme-research'
 
 class ThemeEvidenceTest(unittest.TestCase):
+    def test_healthcare_business_roles_and_nonclinical_evidence(self):
+        data=json.loads((ROOT/'healthcare.json').read_text(encoding='utf-8'))
+        self.assertEqual(len({r['subtheme'] for r in data['members']}),5)
+        self.assertIn('no patient records',data['note'])
+        self.assertIn('not a homogeneous',data['comparison_note'])
+        prices=json.loads((ROOT.parent/'stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        for r in data['members']:
+            self.assertEqual(prices[r['isin']]['symbol'],r['symbol'])
+            self.assertIsNone(r['effective_date'])
+            self.assertEqual(r['status'],'evidence_archived')
+            self.assertTrue(all(r['keyword_checks'].values()))
+            raw=(ROOT/'raw'/(r['sha256']+'.'+r.get('raw_extension','html'))).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),r['sha256'])
+            if r['symbol']=='MAXHEALTH':self.assertIn('not direct ownership of every property',r['rationale'])
+            if r['symbol']=='SYNGENE':self.assertIn('does not establish ownership of client drug intellectual property',r['rationale'])
+            if r['symbol']=='SUNPHARMA':self.assertIn('does not establish approval in every jurisdiction',r['rationale'])
+            if r['symbol']=='POLYMED':self.assertIn('not classified as a hospital operator',r['rationale'])
+
     def test_mobility_roles_preserve_development_and_group_boundaries(self):
         data=json.loads((ROOT/'mobility.json').read_text(encoding='utf-8'))
         self.assertEqual(len({r['subtheme'] for r in data['members']}),5)

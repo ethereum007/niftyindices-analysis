@@ -1,0 +1,123 @@
+{
+  "family": "healthcare",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-28",
+  "note": "Five independent business-role examples, not exhaustive healthcare membership or clinical recommendations. Only public corporate material archived; no patient records, test results, enquiries or bookings accessed. No weights or historical membership inferred.",
+  "comparison_note": "Hospitals, laboratories, pharmaceutical products, contract services and device consumables have different economics and regulatory exposures. This is a business-role map, not a homogeneous revenue-growth or valuation peer group, or a clinical-quality ranking.",
+  "members": [
+    {
+      "symbol": "MAXHEALTH",
+      "subtheme": "Hospitals",
+      "source_url": "https://nsearchives.nseindia.com/corporate/MAXHEALTH_21052026163255_SE_Intimation_Final.pdf",
+      "rationale": "Hospital operations establish care-delivery exposure. Network facilities include varying ownership and operating arrangements; network size is not direct ownership of every property, current occupancy or patient volume growth. Homecare and pathology activity are not ignored.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Max Healthcare Institute Ltd.",
+      "isin": "INE027H01010",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/MAXHEALTH_21052026163255_SE_Intimation_Final.pdf",
+      "sha256": "2be1e7e745aff36caf99596b0a5ea9023b49094ab463f9fd31ecba3e821ffc70",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-28T03:01:12.904607+00:00",
+      "evidence_pages": [
+        2,
+        6,
+        10,
+        53
+      ],
+      "keyword_checks": {
+        "max healthcare institute": true,
+        "hospitals": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "LALPATHLAB",
+      "subtheme": "Diagnostics",
+      "source_url": "https://www.lalpathlabs.com/about-us",
+      "rationale": "Diagnostic testing services establish pathology exposure. Test capability and laboratory reach are not current patient-volume growth or a clinical accuracy comparison; the listed company is not treated as a drug manufacturer.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Dr. Lal Path Labs Ltd.",
+      "isin": "INE600L01024",
+      "resolved_url": "https://www.lalpathlabs.com/about-us",
+      "sha256": "a1e75001a9adac7c856b24a088ef29d36b23d963b2c72bef5e75c3ff4a883e38",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T03:01:12.808631+00:00",
+      "keyword_checks": {
+        "diagnostic": true,
+        "tests": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "subtheme": "Pharma manufacturers",
+      "source_url": "https://sunpharma.com/products/",
+      "rationale": "Generics, specialty products and API offerings establish pharmaceutical product exposure. A portfolio listing does not establish approval in every jurisdiction, clinical efficacy, current launch sales or ownership of every molecule patent.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Sun Pharmaceutical Industries Ltd.",
+      "isin": "INE044A01036",
+      "resolved_url": "https://sunpharma.com/products/",
+      "sha256": "be8ee8d56b2a19be87fa592ff011380173ce7dea3ffbcc0edf768d10de3f1ad7",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T03:01:13.153592+00:00",
+      "keyword_checks": {
+        "generics": true,
+        "special": true,
+        "active pharmaceutical": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "SYNGENE",
+      "subtheme": "Contract research",
+      "source_url": "https://esgreport.syngeneintl.com/about-syngene.html",
+      "rationale": "The corporate sustainability report describes research, development and manufacturing services. Providing discovery services does not establish ownership of client drug intellectual property, successful clinical outcomes or current contracted backlog.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Syngene International Ltd.",
+      "isin": "INE398R01022",
+      "resolved_url": "https://esgreport.syngeneintl.com/about-syngene.html",
+      "sha256": "1be75abd8567c43ef75589f4c4bce831ec34ecb98d161eb1b3601a3fa4b408d0",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T03:01:14.352969+00:00",
+      "keyword_checks": {
+        "research": true,
+        "development": true,
+        "manufacturing": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "POLYMED",
+      "subtheme": "Medical equipment",
+      "source_url": "https://www.polymedicure.com/about-us/",
+      "rationale": "Medical-device manufacturing including infusion and blood-collection products establishes consumables/device exposure. This example is not classified as a hospital operator or assumed to manufacture every category of large diagnostic equipment.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Poly Medicure Ltd.",
+      "isin": "INE205C01021",
+      "resolved_url": "https://www.polymedicure.com/about-us/",
+      "sha256": "b2945138668128d43c38ca3ab7e60be00405f19f53a3eff80bc9ac84cf8438da",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T03:01:14.150003+00:00",
+      "keyword_checks": {
+        "medical": true,
+        "infusion": true,
+        "blood": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}
