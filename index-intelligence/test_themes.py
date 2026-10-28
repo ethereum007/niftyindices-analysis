@@ -45,6 +45,23 @@ class ThemesTest(unittest.TestCase):
             data['reviews'][0]['history_sha256']='0'*64;p.write_text(json.dumps(data))
             with self.assertRaisesRegex(ValueError,'Stale company history review'):load_reviewed_company_history(root)
 
+    def test_mixed_pdf_financial_review_reparses_original_and_rejects_changes(self):
+        source=HERE.parent/'nifty-automation/data'
+        data=load_reviewed_financials(source)['INE221B01012']
+        latest=max(data['facts'],key=lambda f:f['period_end'])
+        self.assertEqual(latest['revenue_operations_crore'],'424.81')
+        self.assertEqual(latest['statement_page'],8)
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);folder=root/'fundamentals';(folder/'raw').mkdir(parents=True)
+            review=json.loads((source/'fundamentals/dynamatech-publication-review.json').read_text())
+            (folder/'dynamatech-publication-review.json').write_text(json.dumps(review))
+            for item in review['source_hashes']:
+                ext='.pdf' if item.get('format') else '.html'
+                shutil.copy2(source/'fundamentals/raw'/(item['sha256']+ext),folder/'raw'/(item['sha256']+ext))
+            self.assertIn('INE221B01012',load_reviewed_financials(root))
+            pdf=next((folder/'raw').glob('*.pdf'));pdf.write_bytes(pdf.read_bytes()+b'changed')
+            with self.assertRaisesRegex(ValueError,'Changed reviewed financial evidence'):load_reviewed_financials(root)
+
     def test_financial_review_withholds_only_conflicting_pat_field(self):
         data=load_reviewed_financials(HERE.parent/'nifty-automation/data')
         facts=data['INE249Z01020']['facts']
