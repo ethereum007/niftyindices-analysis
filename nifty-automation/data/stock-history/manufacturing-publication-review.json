@@ -1,0 +1,22 @@
+{
+  "family": "manufacturing",
+  "method": "Vendor adjusted close; split/dividend treatment, not an official index or independently reconstructed total-return series. NSE reported actions and quote reconciliation checked. Unreported/complex corporate events can require revision.",
+  "reviews": [
+    {
+      "symbol": "ABB",
+      "isin": "INE117A01022",
+      "status": "reviewed_vendor_methodology",
+      "reviewed_on": "2026-10-28",
+      "history_sha256": "c13cbc0b6cbf7013ad058daba36652c6a42f7e474495e185d6f750e7c153f00e",
+      "action_sha256": "03a25e55c6e76e302aaa72499a657353ea7e60a9a0960fce84a9a6f1a35d05d2",
+      "identity_evidence": [
+        {
+          "sha256": "e4ad30a3f2c8b2bbe172e177c15b23ac7be3aba90efe69caeb68bc40b30c7548",
+          "extension": "pdf",
+          "source_url": "https://nsearchives.nseindia.com/corporate/ABB_10022021152405_ABBAGMBookClsrDivFeb102021.pdf"
+        }
+      ],
+      "note": "Issuer February 2021 filing identifies NSE ABB and INE117A01022 before the downloaded window; current official membership and all reported action ISINs agree. Nine reported cash dividends and vendor adjustment-factor steps reconcile, with no unmatched vendor actions; current official quote is within0.1 percent. Vendor adjusted methodology remains subject to revisions and unreported events. No theme basket, historical membership or tender participation return inferred."
+    }
+  ]
+}

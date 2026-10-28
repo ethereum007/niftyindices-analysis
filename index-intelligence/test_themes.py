@@ -38,7 +38,7 @@ class ThemesTest(unittest.TestCase):
     def test_reviewed_history_excludes_pending_and_rejects_stale_review(self):
         source=HERE.parent/'nifty-automation/data'
         approved=load_reviewed_company_history(source)
-        self.assertEqual({r['symbol'] for r in approved.values()},{'HAL','MAZDOCK','DYNAMATECH','BEL'})
+        self.assertEqual({r['symbol'] for r in approved.values()},{'HAL','MAZDOCK','DYNAMATECH','BEL','ABB'})
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);shutil.copytree(source/'stock-history',root/'stock-history')
             p=root/'stock-history/defence-publication-review.json';data=json.loads(p.read_text())
