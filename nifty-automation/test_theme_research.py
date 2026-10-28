@@ -9,6 +9,28 @@ from pathlib import Path
 ROOT=Path(__file__).parent/'data/theme-research'
 
 class ThemeEvidenceTest(unittest.TestCase):
+    def test_oilgas_distinct_roles_and_corporate_identity(self):
+        manifest=json.loads((ROOT/'oilgas.json').read_text(encoding='utf-8'))
+        self.assertEqual(len({r['subtheme'] for r in manifest['members']}),5)
+        self.assertIn('not one directional',manifest['comparison_note'])
+        prices=json.loads((ROOT.parent/'stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        for row in manifest['members']:
+            self.assertIsNone(row['effective_date'])
+            self.assertEqual(prices[row['isin']]['symbol'],row['symbol'])
+            self.assertEqual(row['status'],'evidence_archived')
+            self.assertTrue(all(row['keyword_checks'].values()))
+            raw=(ROOT/'raw'/(row['sha256']+'.'+row.get('raw_extension','html'))).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),row['sha256'])
+            if row['symbol']=='IOC':self.assertIn('ppac.gov.in',row['source_url'])
+            if row['symbol']=='DEEPINDS':
+                self.assertEqual(row['isin'],'INE0FHS01024')
+                evidence=row['identity_evidence']
+                self.assertEqual(evidence['status'],'evidence_archived')
+                raw=(ROOT/'raw'/(evidence['sha256']+'.html')).read_bytes()
+                self.assertEqual(hashlib.sha256(raw).hexdigest(),evidence['sha256'])
+                self.assertIn(b'DEEPINDS',raw)
+                self.assertIn('not ownership of client',row['rationale'])
+
     def test_housing_roles_are_distinct_from_owned_assets_and_demand_cycle(self):
         manifest=json.loads((ROOT/'housing.json').read_text(encoding='utf-8'))
         self.assertEqual(len({r['subtheme'] for r in manifest['members']}),5)

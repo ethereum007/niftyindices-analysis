@@ -22,6 +22,10 @@ def main():
                 'identity_source':'Official NSE EQ bhavcopy '+stocks['date']+'; legal name from primary company presentation; ticker checked against corporate investor-support page, not similarly named Deep Energy Resources'}
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
         records=list(pool.map(lambda seed:archive(seed,identities,REVIEWED),SEEDS))
+    member=next(r for r in records if r['symbol']=='DEEPINDS')
+    identity=archive(('DEEPINDS','Listed identity','https://www.deepindustries.com/investor-support.html','Corporate ticker identity, distinct from Deep Energy Resources.',['deepinds','deep industries']),identities,REVIEWED)
+    member['identity_evidence']={k:identity[k] for k in ('source_url','resolved_url','sha256','raw_extension','retrieved_utc','keyword_checks','status') if k in identity}
+    if identity['status']!='evidence_archived':member['status']='manual_identity_review_required'
     manifest={'family':'oilgas','status':'initial_examples_for_review','reviewed_on':REVIEWED,
               'note':'Five proposed hydrocarbon-value-chain examples, not an exhaustive universe, reserve valuation, uniform crude-price sensitivity or investment forecast. Upstream, refining, transmission, retail gas and service-company economics differ. No customer records, weights or historical membership inferred.',
               'comparison_note':'These roles can respond differently to crude/gas prices, tariffs, inventory and input costs. This is an exposure map, not one directional commodity-price trade or a homogeneous valuation peer group.',

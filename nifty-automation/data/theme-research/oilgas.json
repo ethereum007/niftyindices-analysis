@@ -121,7 +121,19 @@
         "compression": true,
         "deep industries": true
       },
-      "status": "evidence_archived"
+      "status": "evidence_archived",
+      "identity_evidence": {
+        "source_url": "https://www.deepindustries.com/investor-support.html",
+        "resolved_url": "https://www.deepindustries.com/investor-support.html",
+        "sha256": "95d04c69f366a82f9cfe73793f8da9d18f26c29f1b1b326e8bb0e93781e00a6d",
+        "raw_extension": "html",
+        "retrieved_utc": "2026-10-28T01:52:52.829251+00:00",
+        "keyword_checks": {
+          "deepinds": true,
+          "deep industries": true
+        },
+        "status": "evidence_archived"
+      }
     }
   ]
 }
