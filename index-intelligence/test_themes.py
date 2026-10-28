@@ -50,15 +50,33 @@ class ThemesTest(unittest.TestCase):
                 self.assertTrue(m['rationale'])
         self.assertEqual(themes['status'],'initial_research_coverage')
 
+    def test_workbook_alignment_preserves_snapshot_and_pending_coverage(self):
+        data=json.loads((HERE/'themes.json').read_text(encoding='utf-8'))['catalogue']
+        alignment=data['workbook_alignment']
+        self.assertEqual(len(alignment['mappings']),25)
+        self.assertEqual(alignment['unique_products'],545)
+        self.assertEqual(sum(r['products'] for r in alignment['coverage_types']),545)
+        original=HERE.parent/'nifty-automation/data/theme-discovery/smallcase-sector-coverage.xlsx'
+        self.assertEqual(hashlib.sha256(original.read_bytes()).hexdigest(),alignment['sha256'])
+        ids={f['id'] for f in data['families']}
+        self.assertTrue(all(m['family_id'] in ids for m in alignment['mappings']))
+        for family in data['families']:
+            if family.get('origin') in ('workbook_alignment','additional_proposal'):
+                self.assertFalse(family['company_data_ready'])
+            if family.get('workbook_alignment'):
+                row=family['workbook_alignment']
+                self.assertEqual(len(row['references']),row['products'])
+                self.assertEqual(len({r['manager'] for r in row['references']}),row['managers'])
+
     def test_catalogue_has_evidence_and_real_related_series(self):
         data=json.loads((HERE/'themes.json').read_text(encoding='utf-8'))['catalogue']
         with sqlite3.connect(HERE.parent/'nifty-automation/data/warehouse.sqlite') as db:
             names={r[0] for r in db.execute('select distinct name from observations')}
-        self.assertEqual(len(data['families']),13)
-        self.assertEqual(len({f['id'] for f in data['families']}),13)
+        self.assertEqual(len(data['families']),28)
+        self.assertEqual(len({f['id'] for f in data['families']}),28)
         for family in data['families']:
-            self.assertTrue(family['sources'])
-            self.assertTrue(all(u.startswith('https://www.smallcase.com/collection/') for u in family['sources']))
+            self.assertTrue(family['sources'] or family.get('origin')=='additional_proposal')
+            self.assertTrue(all(u.startswith('https://www.smallcase.com/') for u in family['sources']))
             self.assertTrue(family['subthemes'])
             self.assertTrue(set(family['related_indices'])<=names)
             self.assertNotIn('members',family)

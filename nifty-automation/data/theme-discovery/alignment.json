@@ -1,0 +1,1642 @@
+{
+  "snapshot_date": "2026-10-28",
+  "source_file": "smallcase-sector-coverage.xlsx",
+  "sha256": "e32fe92094937832bc2a9c295ef0aa8bf6f56474731691cb8e25c9e0c0af6c23",
+  "unique_products": 545,
+  "unique_managers": 92,
+  "industry_focused_products": 139,
+  "sector_categories": [
+    {
+      "name": "IT, software & digital platforms",
+      "products": 21,
+      "managers": 17,
+      "sheet_row": 10,
+      "family_id": "itservices",
+      "references": [
+        {
+          "name": "Niveshaay TechStack Theme",
+          "manager": "Niveshaay",
+          "url": "https://www.smallcase.com/smallcase/niveshaay-techstack-theme-NIVNM_0003",
+          "id": "NIVNM_0003",
+          "row": 7
+        },
+        {
+          "name": "AI & Data Center Theme",
+          "manager": "Growth Investing",
+          "url": "https://www.smallcase.com/smallcase/ai-and-data-center-model-GRINMX_0003",
+          "id": "GRINMX_0003",
+          "row": 14
+        },
+        {
+          "name": "IT Tracker",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/it-tracker-SCTR_0006",
+          "id": "SCTR_0006",
+          "row": 56
+        },
+        {
+          "name": "Digital Inclusion Theme",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/digital-inclusion-SCNM_0014",
+          "id": "SCNM_0014",
+          "row": 99
+        },
+        {
+          "name": "Data Center Infra Specialists Theme",
+          "manager": "Growth Investing",
+          "url": "https://www.smallcase.com/smallcase/data-center-infra-specialists-model-GRINMX_0008",
+          "id": "GRINMX_0008",
+          "row": 115
+        },
+        {
+          "name": "smartvalues - digital Theme",
+          "manager": "Lamron Analysts",
+          "url": "https://www.smallcase.com/smallcase/smartvalues-digital-theme-LMRNM_0005",
+          "id": "LMRNM_0005",
+          "row": 247
+        },
+        {
+          "name": "India Tech Titans Theme",
+          "manager": "Ethical Advisers",
+          "url": "https://www.smallcase.com/smallcase/india's-tech-titans-EHANM_0020",
+          "id": "EHANM_0020",
+          "row": 282
+        },
+        {
+          "name": "Digital India Theme",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/quantace-digital-india-stars-QURENM_0002",
+          "id": "QURENM_0002",
+          "row": 303
+        },
+        {
+          "name": "Service Stars Tracker",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/quantace-service-QURENM_0007",
+          "id": "QURENM_0007",
+          "row": 339
+        },
+        {
+          "name": "MMG Vision 2028 smallcase Theme",
+          "manager": "My Money Guru",
+          "url": "https://www.smallcase.com/smallcase/my-money-guru-vision-2029-smallcase-MYMONM_0003",
+          "id": "MYMONM_0003",
+          "row": 352
+        },
+        {
+          "name": "SR TECNOLOGY Tracker",
+          "manager": "SR WEALTH ELITE",
+          "url": "https://www.smallcase.com/smallcase/sr-tecnology-LOSETR_0001",
+          "id": "LOSETR_0001",
+          "row": 359
+        },
+        {
+          "name": "SB Riveting IT Portfolio Tracker",
+          "manager": "stockbox",
+          "url": "https://www.smallcase.com/smallcase/sb-riveting-it-portfolio-STBXNM_0002",
+          "id": "STBXNM_0002",
+          "row": 373
+        },
+        {
+          "name": "Wright Innovation Theme",
+          "manager": "Wright Research",
+          "url": "https://www.smallcase.com/smallcase/wright-innovation-WRTNM_0004",
+          "id": "WRTNM_0004",
+          "row": 377
+        },
+        {
+          "name": "CWA HFT - Healthcare, FMCG & Technology Theme",
+          "manager": "Compounding Wealth Advisors",
+          "url": "https://www.smallcase.com/smallcase/cwa-hft-(-healthcare-pharma-fmcg-and-technology)-COWANM_0004",
+          "id": "COWANM_0004",
+          "row": 419
+        },
+        {
+          "name": "SR New Agr-Tech Theme",
+          "manager": "SR WEALTH ELITE",
+          "url": "https://www.smallcase.com/smallcase/sr-new-age-tech-LOSENM_0004",
+          "id": "LOSENM_0004",
+          "row": 434
+        },
+        {
+          "name": "Sunrise Sectors Theme",
+          "manager": "Paterson",
+          "url": "https://www.smallcase.com/smallcase/sunrise-sectors-theme-RUPENM_0017",
+          "id": "RUPENM_0017",
+          "row": 482
+        },
+        {
+          "name": "Viksit Vision Theme",
+          "manager": "INVEST4EDU PRIVATE LIMITED",
+          "url": "https://www.smallcase.com/smallcase/viksit-vision-theme-IEDUNM_0001",
+          "id": "IEDUNM_0001",
+          "row": 490
+        },
+        {
+          "name": "Bharat Tech Infra Tracker",
+          "manager": "Green Portfolio",
+          "url": "https://www.smallcase.com/smallcase/bharat-tech-infra-tracker-GPRTR_0001",
+          "id": "GPRTR_0001",
+          "row": 501
+        },
+        {
+          "name": "EquiBoost NextGen Theme",
+          "manager": "Equiboost Finserv Private Limited",
+          "url": "https://www.smallcase.com/smallcase/equiboost-nextgen-theme-EBFSNM_0007",
+          "id": "EBFSNM_0007",
+          "row": 523
+        },
+        {
+          "name": "Nirivantes TechWave Select Theme",
+          "manager": "NIRIVANTES RESEARCH",
+          "url": "https://www.smallcase.com/smallcase/nirivantes-techwave-select-theme-NVNTNM_0001",
+          "id": "NVNTNM_0001",
+          "row": 533
+        },
+        {
+          "name": "Omni FinTech, Digital Banking & Payments. Theme",
+          "manager": "Omniscience Capital",
+          "url": "https://www.smallcase.com/smallcase/omni-fintech-digital-banking-and-payments-OMNNM_0015",
+          "id": "OMNNM_0015",
+          "row": 544
+        }
+      ]
+    },
+    {
+      "name": "Banks & NBFCs",
+      "products": 16,
+      "managers": 11,
+      "sheet_row": 11,
+      "family_id": "banking",
+      "references": [
+        {
+          "name": "Banking Tracker",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/banking-tracker-SCTR_0002",
+          "id": "SCTR_0002",
+          "row": 41
+        },
+        {
+          "name": "Banking Privately Theme",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/banking-privately-SCNM_0008",
+          "id": "SCNM_0008",
+          "row": 73
+        },
+        {
+          "name": "Banking & Beyond Tracker",
+          "manager": "StoxBazar",
+          "url": "https://www.smallcase.com/smallcase/psu-bank-under-50-STBATR_0001",
+          "id": "STBATR_0001",
+          "row": 118
+        },
+        {
+          "name": "Banking Stars Tracker",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/bank-ace-stars-QURETR_0001",
+          "id": "QURETR_0001",
+          "row": 130
+        },
+        {
+          "name": "Ikashi Emerging India Theme",
+          "manager": "IKASHI FINTECH PRIVATE LIMITED",
+          "url": "https://www.smallcase.com/smallcase/ikashi-emerging-india-theme-IFPLNM_0002",
+          "id": "IFPLNM_0002",
+          "row": 191
+        },
+        {
+          "name": "PSU Bank Stars Tracker",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/quantace-psu-bank-stars-QURETR_0012",
+          "id": "QURETR_0012",
+          "row": 226
+        },
+        {
+          "name": "Omni Banking on Growth Theme",
+          "manager": "Omniscience Capital",
+          "url": "https://www.smallcase.com/smallcase/banking-on-growth-OMNNM_0022",
+          "id": "OMNNM_0022",
+          "row": 365
+        },
+        {
+          "name": "GVSR-NBFC Segment-Value - V Buys Theme",
+          "manager": "GVSRwealth",
+          "url": "https://www.smallcase.com/smallcase/nbfc-segment-value-buys-GVSRTR_0003",
+          "id": "GVSRTR_0003",
+          "row": 380
+        },
+        {
+          "name": "EquiSecure Theme",
+          "manager": "Equivision Consulting",
+          "url": "https://www.smallcase.com/smallcase/equisecure-EREQMO_0005",
+          "id": "EREQMO_0005",
+          "row": 424
+        },
+        {
+          "name": "Arth Private Banks Theme",
+          "manager": "Arthscience Capital Research Private Limited",
+          "url": "https://www.smallcase.com/smallcase/arth-private-banks-theme-ASCRNM_0002",
+          "id": "ASCRNM_0002",
+          "row": 451
+        },
+        {
+          "name": "Arth PSU Banks Theme",
+          "manager": "Arthscience Capital Research Private Limited",
+          "url": "https://www.smallcase.com/smallcase/arth-psu-banks-theme-ASCRNM_0003",
+          "id": "ASCRNM_0003",
+          "row": 452
+        },
+        {
+          "name": "Arth Housing Finance Theme",
+          "manager": "Arthscience Capital Research Private Limited",
+          "url": "https://www.smallcase.com/smallcase/arth-housing-finance-theme-ASCRNM_0004",
+          "id": "ASCRNM_0004",
+          "row": 453
+        },
+        {
+          "name": "Arth Infra NBFC Theme",
+          "manager": "Arthscience Capital Research Private Limited",
+          "url": "https://www.smallcase.com/smallcase/arth-infra-nbfc-theme-ASCRNM_0009",
+          "id": "ASCRNM_0009",
+          "row": 455
+        },
+        {
+          "name": "Bullcapital FinEdge Theme",
+          "manager": "Bullcapital",
+          "url": "https://www.smallcase.com/smallcase/core-financial-compounders-tracker-BULCTR_0001",
+          "id": "BULCTR_0001",
+          "row": 504
+        },
+        {
+          "name": "EquiBoost PSU Banks & NBFCs Theme",
+          "manager": "Equiboost Finserv Private Limited",
+          "url": "https://www.smallcase.com/smallcase/equiboost-psu-banks-and-nbfcs-theme-EBFSNM_0006",
+          "id": "EBFSNM_0006",
+          "row": 508
+        },
+        {
+          "name": "Cherrypicked PSU Financials Theme",
+          "manager": "Ethical Advisers",
+          "url": "https://www.smallcase.com/smallcase/cherrypicked-psu-financials-EHANM_0009",
+          "id": "EHANM_0009",
+          "row": 550
+        }
+      ]
+    },
+    {
+      "name": "Automobiles, EVs & components",
+      "products": 15,
+      "managers": 12,
+      "sheet_row": 12,
+      "family_id": "mobility",
+      "references": [
+        {
+          "name": "Electric Mobility Theme",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/electric-mobility-SCNM_0025",
+          "id": "SCNM_0025",
+          "row": 32
+        },
+        {
+          "name": "Auto Tracker",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/auto-tracker-SCTR_0001",
+          "id": "SCTR_0001",
+          "row": 84
+        },
+        {
+          "name": "Ikashi Emerging India Theme",
+          "manager": "IKASHI FINTECH PRIVATE LIMITED",
+          "url": "https://www.smallcase.com/smallcase/ikashi-emerging-india-theme-IFPLNM_0002",
+          "id": "IFPLNM_0002",
+          "row": 191
+        },
+        {
+          "name": "Pollution Free India - EV Theme",
+          "manager": "stockbox",
+          "url": "https://www.smallcase.com/smallcase/pollution-free-india-(ev)-STBXTR_0001",
+          "id": "STBXTR_0001",
+          "row": 287
+        },
+        {
+          "name": "Omni Future of Mobility. Theme",
+          "manager": "Omniscience Capital",
+          "url": "https://www.smallcase.com/smallcase/omni-future-of-mobility-OMNNM_0019",
+          "id": "OMNNM_0019",
+          "row": 293
+        },
+        {
+          "name": "Auto Pack - Stepping Up the Gear Theme",
+          "manager": "Ethical Advisers",
+          "url": "https://www.smallcase.com/smallcase/auto-pack:-stepping-up-the-gear-EHAMO_0002",
+          "id": "EHAMO_0002",
+          "row": 318
+        },
+        {
+          "name": "India Mobility Theme",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/quantace-mobility-QURENM_0006",
+          "id": "QURENM_0006",
+          "row": 338
+        },
+        {
+          "name": "MMG Green Energy & EV smallcase Theme",
+          "manager": "My Money Guru",
+          "url": "https://www.smallcase.com/smallcase/my-money-guru-green-energy-and-electric-vehicle-MYMONM_0002",
+          "id": "MYMONM_0002",
+          "row": 351
+        },
+        {
+          "name": "MMG Vision 2028 smallcase Theme",
+          "manager": "My Money Guru",
+          "url": "https://www.smallcase.com/smallcase/my-money-guru-vision-2029-smallcase-MYMONM_0003",
+          "id": "MYMONM_0003",
+          "row": 352
+        },
+        {
+          "name": "Auto Ancillaries Theme",
+          "manager": "Agility Advisors",
+          "url": "https://www.smallcase.com/smallcase/yj-ancillary-YEJNM_0005",
+          "id": "YEJNM_0005",
+          "row": 367
+        },
+        {
+          "name": "Wright Innovation Theme",
+          "manager": "Wright Research",
+          "url": "https://www.smallcase.com/smallcase/wright-innovation-WRTNM_0004",
+          "id": "WRTNM_0004",
+          "row": 377
+        },
+        {
+          "name": "Auto Advantage Tracker",
+          "manager": "Green Portfolio",
+          "url": "https://www.smallcase.com/smallcase/auto-advantage-GPRNM_0013",
+          "id": "GPRNM_0013",
+          "row": 418
+        },
+        {
+          "name": "EquiSecure Theme",
+          "manager": "Equivision Consulting",
+          "url": "https://www.smallcase.com/smallcase/equisecure-EREQMO_0005",
+          "id": "EREQMO_0005",
+          "row": 424
+        },
+        {
+          "name": "Sunrise Sectors Theme",
+          "manager": "Paterson",
+          "url": "https://www.smallcase.com/smallcase/sunrise-sectors-theme-RUPENM_0017",
+          "id": "RUPENM_0017",
+          "row": 482
+        },
+        {
+          "name": "Auto Stars Tracker",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/auto-ace-stars-QUREMO_0023",
+          "id": "QUREMO_0023",
+          "row": 541
+        }
+      ]
+    },
+    {
+      "name": "AI, data centres & digital infrastructure",
+      "products": 14,
+      "managers": 12,
+      "sheet_row": 13,
+      "family_id": "ai",
+      "references": [
+        {
+          "name": "Niveshaay TechStack Theme",
+          "manager": "Niveshaay",
+          "url": "https://www.smallcase.com/smallcase/niveshaay-techstack-theme-NIVNM_0003",
+          "id": "NIVNM_0003",
+          "row": 7
+        },
+        {
+          "name": "AI & Data Center Theme",
+          "manager": "Growth Investing",
+          "url": "https://www.smallcase.com/smallcase/ai-and-data-center-model-GRINMX_0003",
+          "id": "GRINMX_0003",
+          "row": 14
+        },
+        {
+          "name": "AI & Data Center Value Chain Theme",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/ai-and-data-center-value-chain-theme-SCNM_0027",
+          "id": "SCNM_0027",
+          "row": 60
+        },
+        {
+          "name": "Data Center Infra Specialists Theme",
+          "manager": "Growth Investing",
+          "url": "https://www.smallcase.com/smallcase/data-center-infra-specialists-model-GRINMX_0008",
+          "id": "GRINMX_0008",
+          "row": 115
+        },
+        {
+          "name": "Bharat Green Theme",
+          "manager": "Samar Wealth",
+          "url": "https://www.smallcase.com/smallcase/bharat-green-SAWENM_0002",
+          "id": "SAWENM_0002",
+          "row": 139
+        },
+        {
+          "name": "Ikashi Emerging India Theme",
+          "manager": "IKASHI FINTECH PRIVATE LIMITED",
+          "url": "https://www.smallcase.com/smallcase/ikashi-emerging-india-theme-IFPLNM_0002",
+          "id": "IFPLNM_0002",
+          "row": 191
+        },
+        {
+          "name": "Ikashi Data Centre Theme",
+          "manager": "IKASHI FINTECH PRIVATE LIMITED",
+          "url": "https://www.smallcase.com/smallcase/ikashi-thematic-advantage-theme-IFPLNM_0005",
+          "id": "IFPLNM_0005",
+          "row": 195
+        },
+        {
+          "name": "Divitiae AI & Innovation Leaders Theme",
+          "manager": "Divitiae Investments",
+          "url": "https://www.smallcase.com/smallcase/divitiae-ai-and-data-center-theme-DIANNM_0003",
+          "id": "DIANNM_0003",
+          "row": 261
+        },
+        {
+          "name": "Omni AI-Tech Global-Artificial Intelligence Theme",
+          "manager": "Omniscience Capital",
+          "url": "https://www.smallcase.com/smallcase/omni-ai-tech-global-artificial-intelligence-OMNNM_0014",
+          "id": "OMNNM_0014",
+          "row": 283
+        },
+        {
+          "name": "EquiSecure Theme",
+          "manager": "Equivision Consulting",
+          "url": "https://www.smallcase.com/smallcase/equisecure-EREQMO_0005",
+          "id": "EREQMO_0005",
+          "row": 424
+        },
+        {
+          "name": "SR New Agr-Tech Theme",
+          "manager": "SR WEALTH ELITE",
+          "url": "https://www.smallcase.com/smallcase/sr-new-age-tech-LOSENM_0004",
+          "id": "LOSENM_0004",
+          "row": 434
+        },
+        {
+          "name": "Bharat Tech Infra Tracker",
+          "manager": "Green Portfolio",
+          "url": "https://www.smallcase.com/smallcase/bharat-tech-infra-tracker-GPRTR_0001",
+          "id": "GPRTR_0001",
+          "row": 501
+        },
+        {
+          "name": "EquiBoost NextGen Theme",
+          "manager": "Equiboost Finserv Private Limited",
+          "url": "https://www.smallcase.com/smallcase/equiboost-nextgen-theme-EBFSNM_0007",
+          "id": "EBFSNM_0007",
+          "row": 523
+        },
+        {
+          "name": "Nirivantes TechWave Select Theme",
+          "manager": "NIRIVANTES RESEARCH",
+          "url": "https://www.smallcase.com/smallcase/nirivantes-techwave-select-theme-NVNTNM_0001",
+          "id": "NVNTNM_0001",
+          "row": 533
+        }
+      ]
+    },
+    {
+      "name": "Consumer, FMCG & durables",
+      "products": 14,
+      "managers": 6,
+      "sheet_row": 14,
+      "family_id": "consumption",
+      "references": [
+        {
+          "name": "Rising Rural Demand Theme",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/rising-rural-demand-SCNM_0012",
+          "id": "SCNM_0012",
+          "row": 45
+        },
+        {
+          "name": "The Great Indian Middle Class Theme",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/the-great-indian-middle-class-SCNM_0010",
+          "id": "SCNM_0010",
+          "row": 55
+        },
+        {
+          "name": "NRI-Core Consumption Compounders Fundamental",
+          "manager": "INVEST4EDU PRIVATE LIMITED",
+          "url": "https://www.smallcase.com/smallcase/nri-core-consumption-compounders-fundamental-IEDUFMM_0002",
+          "id": "IEDUFMM_0002",
+          "row": 62
+        },
+        {
+          "name": "Core Consumption Compounders Theme",
+          "manager": "INVEST4EDU PRIVATE LIMITED",
+          "url": "https://www.smallcase.com/smallcase/core-consumption-compounders-fundamental-IEDUFMM_0001",
+          "id": "IEDUFMM_0001",
+          "row": 71
+        },
+        {
+          "name": "FMCG Tracker",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/fmcg-tracker-SCTR_0004",
+          "id": "SCTR_0004",
+          "row": 87
+        },
+        {
+          "name": "Bringing the Bling Theme",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/bringing-the-bling-SCNM_0015",
+          "id": "SCNM_0015",
+          "row": 95
+        },
+        {
+          "name": "Niveshaay Consumer Trends Portfolio Theme",
+          "manager": "Niveshaay",
+          "url": "https://www.smallcase.com/smallcase/amrit-kaal-of-consumption-NIVNM_0002",
+          "id": "NIVNM_0002",
+          "row": 158
+        },
+        {
+          "name": "Brand Value Theme",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/brand-value-SCNM_0007",
+          "id": "SCNM_0007",
+          "row": 206
+        },
+        {
+          "name": "Consumer Durables Stars Tracker",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/quantace-consumer-stars-QURETR_0009",
+          "id": "QURETR_0009",
+          "row": 302
+        },
+        {
+          "name": "Bharat Consumption Theme",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/quantace-bharat-consumption-QURENM_0008",
+          "id": "QURENM_0008",
+          "row": 414
+        },
+        {
+          "name": "CWA HFT - Healthcare, FMCG & Technology Theme",
+          "manager": "Compounding Wealth Advisors",
+          "url": "https://www.smallcase.com/smallcase/cwa-hft-(-healthcare-pharma-fmcg-and-technology)-COWANM_0004",
+          "id": "COWANM_0004",
+          "row": 419
+        },
+        {
+          "name": "Rural Theme",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/rural-theme-QURENM_0013",
+          "id": "QURENM_0013",
+          "row": 439
+        },
+        {
+          "name": "Wright Consumption Theme",
+          "manager": "Wright Research",
+          "url": "https://www.smallcase.com/smallcase/consumer-theme-WRTNM_0005",
+          "id": "WRTNM_0005",
+          "row": 469
+        },
+        {
+          "name": "FMCG Stars Tracker",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/fmcg-ace-stars-QURETR_0004",
+          "id": "QURETR_0004",
+          "row": 542
+        }
+      ]
+    },
+    {
+      "name": "Defence & aerospace",
+      "products": 14,
+      "managers": 12,
+      "sheet_row": 15,
+      "family_id": "defence",
+      "references": [
+        {
+          "name": "Defence Stars Theme",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/quantace-defence-stars-QURENM_0001",
+          "id": "QURENM_0001",
+          "row": 15
+        },
+        {
+          "name": "Omni Bharat Defence Theme",
+          "manager": "Omniscience Capital",
+          "url": "https://www.smallcase.com/smallcase/omni-bharat-defence-OMNNM_0012",
+          "id": "OMNNM_0012",
+          "row": 47
+        },
+        {
+          "name": "Railways & Defence Tracker",
+          "manager": "Agility Advisors",
+          "url": "https://www.smallcase.com/smallcase/yj-railways-and-defence-YEJMO_0004",
+          "id": "YEJMO_0004",
+          "row": 92
+        },
+        {
+          "name": "CWA Defence Theme",
+          "manager": "Compounding Wealth Advisors",
+          "url": "https://www.smallcase.com/smallcase/cwa-defence-COWANM_0003",
+          "id": "COWANM_0003",
+          "row": 97
+        },
+        {
+          "name": "Defence Picks Theme",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/defence-picks-ai-model-SCMX_0002",
+          "id": "SCMX_0002",
+          "row": 102
+        },
+        {
+          "name": "GDR - Green Energy, Defense, Railway Theme",
+          "manager": "Green Portfolio",
+          "url": "https://www.smallcase.com/smallcase/gdr-opportunities:-green-energy-railway-defense-GPRNM_0011",
+          "id": "GPRNM_0011",
+          "row": 160
+        },
+        {
+          "name": "Drone Growth Model",
+          "manager": "Growth Investing",
+          "url": "https://www.smallcase.com/smallcase/drone-growth-model-GRINMX_0013",
+          "id": "GRINMX_0013",
+          "row": 197
+        },
+        {
+          "name": "CT Defence Compounders Theme",
+          "manager": "CA Tapan Doshi",
+          "url": "https://www.smallcase.com/smallcase/ct-defence-compounders-theme-THIVNM_0002",
+          "id": "THIVNM_0002",
+          "row": 198
+        },
+        {
+          "name": "Aviation & Aerospace Quant",
+          "manager": "Growth Investing",
+          "url": "https://www.smallcase.com/smallcase/aviation-and-aerospace-quant-GRINQM_0006",
+          "id": "GRINQM_0006",
+          "row": 199
+        },
+        {
+          "name": "FINZ Defence Basket Theme",
+          "manager": "Finkhoz Roboadvisory Services Private Limited",
+          "url": "https://www.smallcase.com/smallcase/finz-defence-baket-theme-FIRONM_0003",
+          "id": "FIRONM_0003",
+          "row": 201
+        },
+        {
+          "name": "smartvalues - defense Theme",
+          "manager": "Lamron Analysts",
+          "url": "https://www.smallcase.com/smallcase/smartvalues-defense-LMRMO_0014",
+          "id": "LMRMO_0014",
+          "row": 228
+        },
+        {
+          "name": "The Daring Defence Pack Theme",
+          "manager": "Ethical Advisers",
+          "url": "https://www.smallcase.com/smallcase/the-daring-defence-pack-theme-EHANM_0021",
+          "id": "EHANM_0021",
+          "row": 448
+        },
+        {
+          "name": "GI Defence Titans Theme",
+          "manager": "Growth Investing",
+          "url": "https://www.smallcase.com/smallcase/gi-defence-titans-theme-GRINNM_0001",
+          "id": "GRINNM_0001",
+          "row": 474
+        },
+        {
+          "name": "Finpire Strategic Defence Theme",
+          "manager": "FINPIRE Capital Research",
+          "url": "https://www.smallcase.com/smallcase/finpire-strategic-defence-theme-FIINNM_0003",
+          "id": "FIINNM_0003",
+          "row": 492
+        }
+      ]
+    },
+    {
+      "name": "Pharma & healthcare",
+      "products": 14,
+      "managers": 12,
+      "sheet_row": 16,
+      "family_id": "healthcare",
+      "references": [
+        {
+          "name": "Pharma Tracker",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/pharma-tracker-SCTR_0009",
+          "id": "SCTR_0009",
+          "row": 42
+        },
+        {
+          "name": "Divitiae Healthcare Compounders Tracker",
+          "manager": "Divitiae Investments",
+          "url": "https://www.smallcase.com/smallcase/divitiae-healthcare-compounders-theme-DIANNM_0002",
+          "id": "DIANNM_0002",
+          "row": 103
+        },
+        {
+          "name": "Healthcare Tracker",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/healthcare-tracker-SCTR_0019",
+          "id": "SCTR_0019",
+          "row": 109
+        },
+        {
+          "name": "GVSR - Pharma Sector- Value buys Tracker",
+          "manager": "GVSRwealth",
+          "url": "https://www.smallcase.com/smallcase/gvsr-pharma-value-buys-GVSRTR_0007",
+          "id": "GVSRTR_0007",
+          "row": 133
+        },
+        {
+          "name": "CT Pharma & Hospitals Megatrend Theme",
+          "manager": "CA Tapan Doshi",
+          "url": "https://www.smallcase.com/smallcase/ct-pharma-and-hospitals-megatrend-theme-THIVNM_0003",
+          "id": "THIVNM_0003",
+          "row": 144
+        },
+        {
+          "name": "Pharma Stars Tracker",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/pharma-ace-stars-QURETR_0006",
+          "id": "QURETR_0006",
+          "row": 149
+        },
+        {
+          "name": "MMG Vision 2028 smallcase Theme",
+          "manager": "My Money Guru",
+          "url": "https://www.smallcase.com/smallcase/my-money-guru-vision-2029-smallcase-MYMONM_0003",
+          "id": "MYMONM_0003",
+          "row": 352
+        },
+        {
+          "name": "Wright Innovation Theme",
+          "manager": "Wright Research",
+          "url": "https://www.smallcase.com/smallcase/wright-innovation-WRTNM_0004",
+          "id": "WRTNM_0004",
+          "row": 377
+        },
+        {
+          "name": "Health is Wealth Theme",
+          "manager": "Ethical Advisers",
+          "url": "https://www.smallcase.com/smallcase/health-is-wealth-EHANM_0018",
+          "id": "EHANM_0018",
+          "row": 389
+        },
+        {
+          "name": "Pharma Select Tracker",
+          "manager": "Green Portfolio",
+          "url": "https://www.smallcase.com/smallcase/pharma-select-GPRNM_0012",
+          "id": "GPRNM_0012",
+          "row": 417
+        },
+        {
+          "name": "CWA HFT - Healthcare, FMCG & Technology Theme",
+          "manager": "Compounding Wealth Advisors",
+          "url": "https://www.smallcase.com/smallcase/cwa-hft-(-healthcare-pharma-fmcg-and-technology)-COWANM_0004",
+          "id": "COWANM_0004",
+          "row": 419
+        },
+        {
+          "name": "GI Healthcare Tracker",
+          "manager": "Growth Investing",
+          "url": "https://www.smallcase.com/smallcase/gi-healthcare-theme-GRINNM_0003",
+          "id": "GRINNM_0003",
+          "row": 479
+        },
+        {
+          "name": "CWA Pharma Nextgen Theme",
+          "manager": "Compounding Wealth Advisors",
+          "url": "https://www.smallcase.com/smallcase/cwa-pharma-nextgen-theme-COWANM_0006",
+          "id": "COWANM_0006",
+          "row": 500
+        },
+        {
+          "name": "EquiBoost Pharma & Healthcare Theme",
+          "manager": "Equiboost Finserv Private Limited",
+          "url": "https://www.smallcase.com/smallcase/equiboost-pharma-and-healthcare-theme-EBFSNM_0004",
+          "id": "EBFSNM_0004",
+          "row": 506
+        }
+      ]
+    },
+    {
+      "name": "Financial services & fintech",
+      "products": 11,
+      "managers": 8,
+      "sheet_row": 17,
+      "family_id": "fintech",
+      "references": [
+        {
+          "name": "Banking & Beyond Tracker",
+          "manager": "StoxBazar",
+          "url": "https://www.smallcase.com/smallcase/psu-bank-under-50-STBATR_0001",
+          "id": "STBATR_0001",
+          "row": 118
+        },
+        {
+          "name": "Finance Stars - Non Banks Tracker",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/finance-ace-stars-QURETR_0007",
+          "id": "QURETR_0007",
+          "row": 220
+        },
+        {
+          "name": "Omni Capital Enablers. Theme",
+          "manager": "Omniscience Capital",
+          "url": "https://www.smallcase.com/smallcase/omni-capital-enablers-OMNNM_0018",
+          "id": "OMNNM_0018",
+          "row": 290
+        },
+        {
+          "name": "House of HDFC Tracker",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/house-of-hdfc-SCTR_0015",
+          "id": "SCTR_0015",
+          "row": 309
+        },
+        {
+          "name": "Financial Services Powerpack Theme",
+          "manager": "Ethical Advisers",
+          "url": "https://www.smallcase.com/smallcase/financial-services-powerpack-EHAMO_0001",
+          "id": "EHAMO_0001",
+          "row": 317
+        },
+        {
+          "name": "Service Stars Tracker",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/quantace-service-QURENM_0007",
+          "id": "QURENM_0007",
+          "row": 339
+        },
+        {
+          "name": "MMG Vision 2028 smallcase Theme",
+          "manager": "My Money Guru",
+          "url": "https://www.smallcase.com/smallcase/my-money-guru-vision-2029-smallcase-MYMONM_0003",
+          "id": "MYMONM_0003",
+          "row": 352
+        },
+        {
+          "name": "Wright Innovation Theme",
+          "manager": "Wright Research",
+          "url": "https://www.smallcase.com/smallcase/wright-innovation-WRTNM_0004",
+          "id": "WRTNM_0004",
+          "row": 377
+        },
+        {
+          "name": "Sunrise Sectors Theme",
+          "manager": "Paterson",
+          "url": "https://www.smallcase.com/smallcase/sunrise-sectors-theme-RUPENM_0017",
+          "id": "RUPENM_0017",
+          "row": 482
+        },
+        {
+          "name": "Omni FinTech, Digital Banking & Payments. Theme",
+          "manager": "Omniscience Capital",
+          "url": "https://www.smallcase.com/smallcase/omni-fintech-digital-banking-and-payments-OMNNM_0015",
+          "id": "OMNNM_0015",
+          "row": 544
+        },
+        {
+          "name": "Cherrypicked PSU Financials Theme",
+          "manager": "Ethical Advisers",
+          "url": "https://www.smallcase.com/smallcase/cherrypicked-psu-financials-EHANM_0009",
+          "id": "EHANM_0009",
+          "row": 550
+        }
+      ]
+    },
+    {
+      "name": "Power, utilities & energy",
+      "products": 11,
+      "managers": 8,
+      "sheet_row": 18,
+      "family_id": "utilities",
+      "references": [
+        {
+          "name": "AI & Data Center Theme",
+          "manager": "Growth Investing",
+          "url": "https://www.smallcase.com/smallcase/ai-and-data-center-model-GRINMX_0003",
+          "id": "GRINMX_0003",
+          "row": 14
+        },
+        {
+          "name": "Energy Tracker",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/energy-tracker-SCTR_0003",
+          "id": "SCTR_0003",
+          "row": 38
+        },
+        {
+          "name": "AI & Data Center Value Chain Theme",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/ai-and-data-center-value-chain-theme-SCNM_0027",
+          "id": "SCNM_0027",
+          "row": 60
+        },
+        {
+          "name": "Data Center Infra Specialists Theme",
+          "manager": "Growth Investing",
+          "url": "https://www.smallcase.com/smallcase/data-center-infra-specialists-model-GRINMX_0008",
+          "id": "GRINMX_0008",
+          "row": 115
+        },
+        {
+          "name": "CT Power Mega Trend Theme",
+          "manager": "CA Tapan Doshi",
+          "url": "https://www.smallcase.com/smallcase/ct-power-mega-trend-fundamental-THIVFMM_0005",
+          "id": "THIVFMM_0005",
+          "row": 167
+        },
+        {
+          "name": "Divitiae AI & Innovation Leaders Theme",
+          "manager": "Divitiae Investments",
+          "url": "https://www.smallcase.com/smallcase/divitiae-ai-and-data-center-theme-DIANNM_0003",
+          "id": "DIANNM_0003",
+          "row": 261
+        },
+        {
+          "name": "Omni Power - Electrifying India Theme",
+          "manager": "Omniscience Capital",
+          "url": "https://www.smallcase.com/smallcase/omni-power-electrifying-india-OMNNM_0013",
+          "id": "OMNNM_0013",
+          "row": 281
+        },
+        {
+          "name": "Service Stars Tracker",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/quantace-service-QURENM_0007",
+          "id": "QURENM_0007",
+          "row": 339
+        },
+        {
+          "name": "Metal & Power Tracker",
+          "manager": "Agility Advisors",
+          "url": "https://www.smallcase.com/smallcase/yj-metals-and-power-YEJNM_0007",
+          "id": "YEJNM_0007",
+          "row": 413
+        },
+        {
+          "name": "CWA Energy Next Theme",
+          "manager": "Compounding Wealth Advisors",
+          "url": "https://www.smallcase.com/smallcase/cwa-energy-next-theme-COWANM_0007",
+          "id": "COWANM_0007",
+          "row": 516
+        },
+        {
+          "name": "Energy Stars Tracker",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/energy-ace-stars-QURETR_0005",
+          "id": "QURETR_0005",
+          "row": 543
+        }
+      ]
+    },
+    {
+      "name": "Manufacturing & industrials",
+      "products": 10,
+      "managers": 10,
+      "sheet_row": 19,
+      "family_id": "manufacturing",
+      "references": [
+        {
+          "name": "Electronics Manufacturing Sector Tracker",
+          "manager": "Growth Investing",
+          "url": "https://www.smallcase.com/smallcase/electronics-manufacturing-sector-tracker-GRINTR_0002",
+          "id": "GRINTR_0002",
+          "row": 10
+        },
+        {
+          "name": "High Quality Right Price Theme",
+          "manager": "Green Portfolio",
+          "url": "https://www.smallcase.com/smallcase/%22high-quality-right-price%22-multibagger-portfolio-GPRMO_0003",
+          "id": "GPRMO_0003",
+          "row": 49
+        },
+        {
+          "name": "Made in India Theme",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/quantace-india-manufacturing-QURENM_0003",
+          "id": "QURENM_0003",
+          "row": 57
+        },
+        {
+          "name": "Make in India Theme",
+          "manager": "Niveshaay",
+          "url": "https://www.smallcase.com/smallcase/make-in-india-NIVNM_0001",
+          "id": "NIVNM_0001",
+          "row": 69
+        },
+        {
+          "name": "Wright New India Manufacturing Theme",
+          "manager": "Wright Research",
+          "url": "https://www.smallcase.com/smallcase/wright-new-india-WRTNM_0003",
+          "id": "WRTNM_0003",
+          "row": 155
+        },
+        {
+          "name": "MMG Manufacturing smallcase Theme",
+          "manager": "My Money Guru",
+          "url": "https://www.smallcase.com/smallcase/my-money-guru-manufacturing-defence-and-electronic-MYMONM_0001",
+          "id": "MYMONM_0001",
+          "row": 350
+        },
+        {
+          "name": "CWA Manufacturing - China Plus One Theme",
+          "manager": "Compounding Wealth Advisors",
+          "url": "https://www.smallcase.com/smallcase/cwa-manufacturing-(china-plus-one)-COWANM_0001",
+          "id": "COWANM_0001",
+          "row": 415
+        },
+        {
+          "name": "EquiSecure Theme",
+          "manager": "Equivision Consulting",
+          "url": "https://www.smallcase.com/smallcase/equisecure-EREQMO_0005",
+          "id": "EREQMO_0005",
+          "row": 424
+        },
+        {
+          "name": "Viksit Vision Theme",
+          "manager": "INVEST4EDU PRIVATE LIMITED",
+          "url": "https://www.smallcase.com/smallcase/viksit-vision-theme-IEDUNM_0001",
+          "id": "IEDUNM_0001",
+          "row": 490
+        },
+        {
+          "name": "Precision Manufacturing in Bharat Theme",
+          "manager": "KamayaKya",
+          "url": "https://www.smallcase.com/smallcase/precision-manufacturing-in-bharat-theme-KAKYNM_0002",
+          "id": "KAKYNM_0002",
+          "row": 539
+        }
+      ]
+    },
+    {
+      "name": "Renewables, clean energy & recycling",
+      "products": 9,
+      "managers": 9,
+      "sheet_row": 20,
+      "family_id": "cleanenergy",
+      "references": [
+        {
+          "name": "Green Energy Theme",
+          "manager": "Niveshaay",
+          "url": "https://www.smallcase.com/smallcase/green-energy-portfolio-NIVTR_0001",
+          "id": "NIVTR_0001",
+          "row": 11
+        },
+        {
+          "name": "Bharat Green Theme",
+          "manager": "Samar Wealth",
+          "url": "https://www.smallcase.com/smallcase/bharat-green-SAWENM_0002",
+          "id": "SAWENM_0002",
+          "row": 139
+        },
+        {
+          "name": "GDR - Green Energy, Defense, Railway Theme",
+          "manager": "Green Portfolio",
+          "url": "https://www.smallcase.com/smallcase/gdr-opportunities:-green-energy-railway-defense-GPRNM_0011",
+          "id": "GPRNM_0011",
+          "row": 160
+        },
+        {
+          "name": "CT Power Mega Trend Theme",
+          "manager": "CA Tapan Doshi",
+          "url": "https://www.smallcase.com/smallcase/ct-power-mega-trend-fundamental-THIVFMM_0005",
+          "id": "THIVFMM_0005",
+          "row": 167
+        },
+        {
+          "name": "SR GREEN ENERGY Theme",
+          "manager": "SR WEALTH ELITE",
+          "url": "https://www.smallcase.com/smallcase/sr-green-energy-LOSENM_0003",
+          "id": "LOSENM_0003",
+          "row": 181
+        },
+        {
+          "name": "Ikashi Emerging India Theme",
+          "manager": "IKASHI FINTECH PRIVATE LIMITED",
+          "url": "https://www.smallcase.com/smallcase/ikashi-emerging-india-theme-IFPLNM_0002",
+          "id": "IFPLNM_0002",
+          "row": 191
+        },
+        {
+          "name": "MMG Green Energy & EV smallcase Theme",
+          "manager": "My Money Guru",
+          "url": "https://www.smallcase.com/smallcase/my-money-guru-green-energy-and-electric-vehicle-MYMONM_0002",
+          "id": "MYMONM_0002",
+          "row": 351
+        },
+        {
+          "name": "Arth CleanTech Theme",
+          "manager": "Arthscience Capital Research Private Limited",
+          "url": "https://www.smallcase.com/smallcase/arth-cleantech-theme-ASCRNM_0005",
+          "id": "ASCRNM_0005",
+          "row": 454
+        },
+        {
+          "name": "Sunrise Sectors Theme",
+          "manager": "Paterson",
+          "url": "https://www.smallcase.com/smallcase/sunrise-sectors-theme-RUPENM_0017",
+          "id": "RUPENM_0017",
+          "row": 482
+        }
+      ]
+    },
+    {
+      "name": "Capital markets & wealth management",
+      "products": 7,
+      "managers": 6,
+      "sheet_row": 21,
+      "family_id": "capitalmarkets",
+      "references": [
+        {
+          "name": "Capital Markets Tracker",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/capital-markets-tracker-SCTR_0018",
+          "id": "SCTR_0018",
+          "row": 29
+        },
+        {
+          "name": "Capital Markets Theme",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/capital-markets-theme-QURENM_0014",
+          "id": "QURENM_0014",
+          "row": 190
+        },
+        {
+          "name": "GoalFi India Wealth & Financial Growth Theme",
+          "manager": "GoalFi",
+          "url": "https://www.smallcase.com/smallcase/goalfi-wealth-waves-GOALMO_0154",
+          "id": "GOALMO_0154",
+          "row": 245
+        },
+        {
+          "name": "EquiBoost Capital Markets Theme",
+          "manager": "Equiboost Finserv Private Limited",
+          "url": "https://www.smallcase.com/smallcase/equiboost-capital-markets-theme-EBFSNM_0003",
+          "id": "EBFSNM_0003",
+          "row": 260
+        },
+        {
+          "name": "GVSR - Share Market Services Theme Theme",
+          "manager": "GVSRwealth",
+          "url": "https://www.smallcase.com/smallcase/gvsr-share-market-services-theme-GVSRNM_0004",
+          "id": "GVSRNM_0004",
+          "row": 288
+        },
+        {
+          "name": "GVSR - BFSI- Wealth Management Theme Theme",
+          "manager": "GVSRwealth",
+          "url": "https://www.smallcase.com/smallcase/gvsr-bfsi-wealth-management-cos.-GVSRNM_0005",
+          "id": "GVSRNM_0005",
+          "row": 311
+        },
+        {
+          "name": "Viksit Vision Theme",
+          "manager": "INVEST4EDU PRIVATE LIMITED",
+          "url": "https://www.smallcase.com/smallcase/viksit-vision-theme-IEDUNM_0001",
+          "id": "IEDUNM_0001",
+          "row": 490
+        }
+      ]
+    },
+    {
+      "name": "Metals, mining & minerals",
+      "products": 7,
+      "managers": 7,
+      "sheet_row": 22,
+      "family_id": "minerals",
+      "references": [
+        {
+          "name": "Metal Tracker",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/metal-tracker-SCTR_0008",
+          "id": "SCTR_0008",
+          "row": 28
+        },
+        {
+          "name": "Metal Stars Tracker",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/metal-ace-stars-QURETR_0002",
+          "id": "QURETR_0002",
+          "row": 170
+        },
+        {
+          "name": "Metal Revival Theme",
+          "manager": "Ethical Advisers",
+          "url": "https://www.smallcase.com/smallcase/metal-revival-EHATR_0001",
+          "id": "EHATR_0001",
+          "row": 229
+        },
+        {
+          "name": "Metal & Power Tracker",
+          "manager": "Agility Advisors",
+          "url": "https://www.smallcase.com/smallcase/yj-metals-and-power-YEJNM_0007",
+          "id": "YEJNM_0007",
+          "row": 413
+        },
+        {
+          "name": "Arth Strategic Minerals Theme",
+          "manager": "Arthscience Capital Research Private Limited",
+          "url": "https://www.smallcase.com/smallcase/arth-strategic-minerals-theme-ASCRNM_0012",
+          "id": "ASCRNM_0012",
+          "row": 457
+        },
+        {
+          "name": "CWA Metals Theme",
+          "manager": "Compounding Wealth Advisors",
+          "url": "https://www.smallcase.com/smallcase/cwa-metals-theme-COWANM_0005",
+          "id": "COWANM_0005",
+          "row": 483
+        },
+        {
+          "name": "EquiBoost Metal & Mining Theme",
+          "manager": "Equiboost Finserv Private Limited",
+          "url": "https://www.smallcase.com/smallcase/equiboost-metal-and-mining-theme-EBFSNM_0002",
+          "id": "EBFSNM_0002",
+          "row": 505
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure & construction",
+      "products": 6,
+      "managers": 6,
+      "sheet_row": 23,
+      "family_id": "infrastructure",
+      "references": [
+        {
+          "name": "Infra Tracker",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/infra-tracker-SCTR_0005",
+          "id": "SCTR_0005",
+          "row": 91
+        },
+        {
+          "name": "CWA Infrastructure Theme",
+          "manager": "Compounding Wealth Advisors",
+          "url": "https://www.smallcase.com/smallcase/cwa-infrastructure-COWANM_0002",
+          "id": "COWANM_0002",
+          "row": 243
+        },
+        {
+          "name": "smartvalues - infrastructure Theme",
+          "manager": "Lamron Analysts",
+          "url": "https://www.smallcase.com/smallcase/smartvalues-infrastructure-LMRMO_0012",
+          "id": "LMRMO_0012",
+          "row": 289
+        },
+        {
+          "name": "Omni Capital Enablers. Theme",
+          "manager": "Omniscience Capital",
+          "url": "https://www.smallcase.com/smallcase/omni-capital-enablers-OMNNM_0018",
+          "id": "OMNNM_0018",
+          "row": 290
+        },
+        {
+          "name": "Viksit Vision Theme",
+          "manager": "INVEST4EDU PRIVATE LIMITED",
+          "url": "https://www.smallcase.com/smallcase/viksit-vision-theme-IEDUNM_0001",
+          "id": "IEDUNM_0001",
+          "row": 490
+        },
+        {
+          "name": "Infra Stars Theme",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/quantace-infra-stars-QURETR_0008",
+          "id": "QURETR_0008",
+          "row": 547
+        }
+      ]
+    },
+    {
+      "name": "Logistics, transport & aviation",
+      "products": 5,
+      "managers": 5,
+      "sheet_row": 24,
+      "family_id": "logistics",
+      "references": [
+        {
+          "name": "Transporting India Theme",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/transporting-india-SCNM_0001",
+          "id": "SCNM_0001",
+          "row": 107
+        },
+        {
+          "name": "Aviation & Aerospace Quant",
+          "manager": "Growth Investing",
+          "url": "https://www.smallcase.com/smallcase/aviation-and-aerospace-quant-GRINQM_0006",
+          "id": "GRINQM_0006",
+          "row": 199
+        },
+        {
+          "name": "Omni Future of Mobility. Theme",
+          "manager": "Omniscience Capital",
+          "url": "https://www.smallcase.com/smallcase/omni-future-of-mobility-OMNNM_0019",
+          "id": "OMNNM_0019",
+          "row": 293
+        },
+        {
+          "name": "India Mobility Theme",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/quantace-mobility-QURENM_0006",
+          "id": "QURENM_0006",
+          "row": 338
+        },
+        {
+          "name": "Arth Logistics Theme",
+          "manager": "Arthscience Capital Research Private Limited",
+          "url": "https://www.smallcase.com/smallcase/arth-logistics-theme-ASCRNM_0001",
+          "id": "ASCRNM_0001",
+          "row": 450
+        }
+      ]
+    },
+    {
+      "name": "Railways",
+      "products": 5,
+      "managers": 4,
+      "sheet_row": 25,
+      "family_id": "railways",
+      "references": [
+        {
+          "name": "Railways & Defence Tracker",
+          "manager": "Agility Advisors",
+          "url": "https://www.smallcase.com/smallcase/yj-railways-and-defence-YEJMO_0004",
+          "id": "YEJMO_0004",
+          "row": 92
+        },
+        {
+          "name": "GDR - Green Energy, Defense, Railway Theme",
+          "manager": "Green Portfolio",
+          "url": "https://www.smallcase.com/smallcase/gdr-opportunities:-green-energy-railway-defense-GPRNM_0011",
+          "id": "GPRNM_0011",
+          "row": 160
+        },
+        {
+          "name": "Omni Bullet Train - Great Indian Railways Theme",
+          "manager": "Omniscience Capital",
+          "url": "https://www.smallcase.com/smallcase/omni-bullet-train-OMNNM_0011",
+          "id": "OMNNM_0011",
+          "row": 278
+        },
+        {
+          "name": "Omni Future of Mobility. Theme",
+          "manager": "Omniscience Capital",
+          "url": "https://www.smallcase.com/smallcase/omni-future-of-mobility-OMNNM_0019",
+          "id": "OMNNM_0019",
+          "row": 293
+        },
+        {
+          "name": "Arth Locomotives Theme",
+          "manager": "Arthscience Capital Research Private Limited",
+          "url": "https://www.smallcase.com/smallcase/arth-locomotives-theme-ASCRNM_0011",
+          "id": "ASCRNM_0011",
+          "row": 456
+        }
+      ]
+    },
+    {
+      "name": "Electronics & semiconductors",
+      "products": 4,
+      "managers": 4,
+      "sheet_row": 26,
+      "family_id": "electronics",
+      "references": [
+        {
+          "name": "Electronics Manufacturing Sector Tracker",
+          "manager": "Growth Investing",
+          "url": "https://www.smallcase.com/smallcase/electronics-manufacturing-sector-tracker-GRINTR_0002",
+          "id": "GRINTR_0002",
+          "row": 10
+        },
+        {
+          "name": "Ikashi Emerging India Theme",
+          "manager": "IKASHI FINTECH PRIVATE LIMITED",
+          "url": "https://www.smallcase.com/smallcase/ikashi-emerging-india-theme-IFPLNM_0002",
+          "id": "IFPLNM_0002",
+          "row": 191
+        },
+        {
+          "name": "SR New Agr-Tech Theme",
+          "manager": "SR WEALTH ELITE",
+          "url": "https://www.smallcase.com/smallcase/sr-new-age-tech-LOSENM_0004",
+          "id": "LOSENM_0004",
+          "row": 434
+        },
+        {
+          "name": "EquiBoost NextGen Theme",
+          "manager": "Equiboost Finserv Private Limited",
+          "url": "https://www.smallcase.com/smallcase/equiboost-nextgen-theme-EBFSNM_0007",
+          "id": "EBFSNM_0007",
+          "row": 523
+        }
+      ]
+    },
+    {
+      "name": "Real estate, housing & REITs",
+      "products": 3,
+      "managers": 3,
+      "sheet_row": 27,
+      "family_id": "housing",
+      "references": [
+        {
+          "name": "Realty Tracker",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/realty-tracker-SCTR_0010",
+          "id": "SCTR_0010",
+          "row": 48
+        },
+        {
+          "name": "Prime Real Estate Income - REIT Portfolio Theme",
+          "manager": "Bastion Research",
+          "url": "https://www.smallcase.com/smallcase/prime-real-estate-income-reit-portfolio-theme-BARENM_0001",
+          "id": "BARENM_0001",
+          "row": 266
+        },
+        {
+          "name": "Housing Demand Resurgence Pack Theme",
+          "manager": "Ethical Advisers",
+          "url": "https://www.smallcase.com/smallcase/housing-demand-resurgence-pack-EHANM_0015",
+          "id": "EHANM_0015",
+          "row": 275
+        }
+      ]
+    },
+    {
+      "name": "Insurance",
+      "products": 2,
+      "managers": 2,
+      "sheet_row": 28,
+      "family_id": "insurance",
+      "references": [
+        {
+          "name": "Insurance Tracker",
+          "manager": "Windmill Capital",
+          "url": "https://www.smallcase.com/smallcase/insurance-tracker-SCTR_0011",
+          "id": "SCTR_0011",
+          "row": 77
+        },
+        {
+          "name": "Cherrypicked PSU Financials Theme",
+          "manager": "Ethical Advisers",
+          "url": "https://www.smallcase.com/smallcase/cherrypicked-psu-financials-EHANM_0009",
+          "id": "EHANM_0009",
+          "row": 550
+        }
+      ]
+    },
+    {
+      "name": "Oil & gas",
+      "products": 2,
+      "managers": 2,
+      "sheet_row": 29,
+      "family_id": "oilgas",
+      "references": [
+        {
+          "name": "GVSR - Oil & Gas Sector Tracker-Value Buys Tracker",
+          "manager": "GVSRwealth",
+          "url": "https://www.smallcase.com/smallcase/oil-and-gas-sector-tracker-GVSRTR_0001",
+          "id": "GVSRTR_0001",
+          "row": 382
+        },
+        {
+          "name": "India Oil & Gas Infra Tracker",
+          "manager": "Growth Investing",
+          "url": "https://www.smallcase.com/smallcase/india-oil-and-gas-infra-quant-GRINQM_0005",
+          "id": "GRINQM_0005",
+          "row": 502
+        }
+      ]
+    },
+    {
+      "name": "Water & waste management",
+      "products": 2,
+      "managers": 2,
+      "sheet_row": 30,
+      "family_id": "waterwaste",
+      "references": [
+        {
+          "name": "Ikashi Emerging India Theme",
+          "manager": "IKASHI FINTECH PRIVATE LIMITED",
+          "url": "https://www.smallcase.com/smallcase/ikashi-emerging-india-theme-IFPLNM_0002",
+          "id": "IFPLNM_0002",
+          "row": 191
+        },
+        {
+          "name": "GVSR- Smart Engineering Solutions-Value Buys Theme",
+          "manager": "GVSRwealth",
+          "url": "https://www.smallcase.com/smallcase/eco-friendly-water-management-value-buy-GVSRNM_0002",
+          "id": "GVSRNM_0002",
+          "row": 383
+        }
+      ]
+    },
+    {
+      "name": "Chemicals",
+      "products": 1,
+      "managers": 1,
+      "sheet_row": 31,
+      "family_id": "chemicals",
+      "references": [
+        {
+          "name": "EquiSecure Theme",
+          "manager": "Equivision Consulting",
+          "url": "https://www.smallcase.com/smallcase/equisecure-EREQMO_0005",
+          "id": "EREQMO_0005",
+          "row": 424
+        }
+      ]
+    },
+    {
+      "name": "Diversified services",
+      "products": 1,
+      "managers": 1,
+      "sheet_row": 32,
+      "family_id": "services",
+      "references": [
+        {
+          "name": "Service Stars Tracker",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/quantace-service-QURENM_0007",
+          "id": "QURENM_0007",
+          "row": 339
+        }
+      ]
+    },
+    {
+      "name": "Telecom & media",
+      "products": 1,
+      "managers": 1,
+      "sheet_row": 33,
+      "family_id": "telecommedia",
+      "references": [
+        {
+          "name": "Service Stars Tracker",
+          "manager": "Quantace Research",
+          "url": "https://www.smallcase.com/smallcase/quantace-service-QURENM_0007",
+          "id": "QURENM_0007",
+          "row": 339
+        }
+      ]
+    },
+    {
+      "name": "Travel, leisure & entertainment",
+      "products": 1,
+      "managers": 1,
+      "sheet_row": 34,
+      "family_id": "travelleisure",
+      "references": [
+        {
+          "name": "Happy Hours - Cheers to Good Times Theme",
+          "manager": "Ethical Advisers",
+          "url": "https://www.smallcase.com/smallcase/happy-hours:-cheers-to-good-times-EHANM_0011",
+          "id": "EHANM_0011",
+          "row": 363
+        }
+      ]
+    }
+  ],
+  "coverage_types": [
+    {
+      "name": "Diversified / strategy",
+      "products": 315
+    },
+    {
+      "name": "Sector / industry theme",
+      "products": 139
+    },
+    {
+      "name": "Asset allocation / target date",
+      "products": 63
+    },
+    {
+      "name": "Precious metals / bullion",
+      "products": 2
+    },
+    {
+      "name": "Ethical / ESG screen",
+      "products": 4
+    },
+    {
+      "name": "Event / ownership / listing theme",
+      "products": 8
+    },
+    {
+      "name": "Sector / theme rotation",
+      "products": 7
+    },
+    {
+      "name": "Business group / PSU ownership",
+      "products": 7
+    }
+  ],
+  "note": "User-supplied dated public-mandate classification; counts overlap and measure product listings, not subscribers, AUM, holdings, inflows or returns. Strategy and asset-allocation classifications are not equity sectors."
+}

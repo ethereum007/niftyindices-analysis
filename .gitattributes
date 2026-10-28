@@ -5,3 +5,5 @@ nifty-automation/data/constituents/raw/** -text
 nifty-automation/data/stocks/raw/** -text
 *.zip binary
 nifty-automation/data/theme-research/raw/** -text
+
+*.xlsx binary
