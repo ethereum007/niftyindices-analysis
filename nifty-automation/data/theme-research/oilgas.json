@@ -1,0 +1,127 @@
+{
+  "family": "oilgas",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-28",
+  "note": "Five proposed hydrocarbon-value-chain examples, not an exhaustive universe, reserve valuation, uniform crude-price sensitivity or investment forecast. Upstream, refining, transmission, retail gas and service-company economics differ. No customer records, weights or historical membership inferred.",
+  "comparison_note": "These roles can respond differently to crude/gas prices, tariffs, inventory and input costs. This is an exposure map, not one directional commodity-price trade or a homogeneous valuation peer group.",
+  "members": [
+    {
+      "symbol": "ONGC",
+      "subtheme": "Exploration & production",
+      "source_url": "https://www.ongcindia.com/web/eng/about-ongc/technology",
+      "rationale": "Oil/gas exploration and production capabilities establish upstream exposure. Group refining or renewable activity is not attributed as direct standalone upstream revenue; no reserve valuation or current production share is inferred.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Oil & Natural Gas Corporation Ltd.",
+      "isin": "INE213A01029",
+      "resolved_url": "https://www.ongcindia.com/web/eng/about-ongc/technology",
+      "sha256": "e5d8b3badbfe39126767ec267c07da8880a1dfde3a7192cfedff4359a4bcfe9a",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T01:12:02.035076+00:00",
+      "keyword_checks": {
+        "exploration": true,
+        "production": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "IOC",
+      "subtheme": "Refining",
+      "source_url": "https://ppac.gov.in/infrastructure/location-of-refineries",
+      "rationale": "Government PPAC refinery listings identify IndianOil facilities, establishing downstream exposure. Refining margins, marketing margins and inventory effects differ from upstream crude-price exposure; no present margin forecast is inferred.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Indian Oil Corporation Ltd.",
+      "isin": "INE242A01010",
+      "resolved_url": "https://ppac.gov.in/infrastructure/location-of-refineries",
+      "sha256": "e3f19334c335e7c1c6318b1aaf2036a12a2c533c6e10e605c4d5d27bda61d33f",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T01:11:59.242961+00:00",
+      "keyword_checks": {
+        "indian oil": true,
+        "refiner": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "GAIL",
+      "subtheme": "Pipelines & terminals",
+      "source_url": "https://www.gailonline.com/Natural_Gas.html",
+      "rationale": "Natural-gas pipeline infrastructure establishes midstream exposure. This does not imply the company produces all transported gas or that every group activity earns a regulated pipeline tariff.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "GAIL (India) Ltd.",
+      "isin": "INE129A01019",
+      "resolved_url": "https://www.gailonline.com/Natural_Gas.html",
+      "sha256": "4ebd557929d25eac6dc95feae0594f52e8c7bb601574b5b9296ba682677d45d2",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T01:11:58.811492+00:00",
+      "keyword_checks": {
+        "gas": true,
+        "pipeline": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "IGL",
+      "subtheme": "City gas",
+      "source_url": "https://nsearchives.nseindia.com/corporate/IGL1_24102025145919_BRSRReportFY202425.pdf",
+      "rationale": "City-gas distribution establishes downstream gas-network exposure. It is not classified as the owner of upstream reserves, and input-gas sourcing or retail-margin sensitivity is not estimated.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Indraprastha Gas Ltd.",
+      "isin": "INE203G01027",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/IGL1_24102025145919_BRSRReportFY202425.pdf",
+      "sha256": "52d2bb9cd938293e292e0d89ad96b107bb9c2481389b69405d776f306c5d76ad",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-28T01:11:59.484884+00:00",
+      "evidence_pages": [
+        1,
+        4,
+        7,
+        11,
+        13,
+        25,
+        27,
+        28
+      ],
+      "keyword_checks": {
+        "city": true,
+        "gas": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "DEEPINDS",
+      "subtheme": "Energy services",
+      "source_url": "https://deepindustries.com/docs/Deep%20Industries%20Ltd%20Q1%20FY26%20Presentation.pdf",
+      "rationale": "The company presentation describes gas-compression services. Equipment/service activity is not ownership of client hydrocarbon reserves; historical contract capability is not present unexecuted order value.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; legal name from primary company presentation; ticker checked against corporate investor-support page, not similarly named Deep Energy Resources",
+      "company": "Deep Industries Limited",
+      "isin": "INE0FHS01024",
+      "resolved_url": "https://deepindustries.com/docs/Deep%20Industries%20Ltd%20Q1%20FY26%20Presentation.pdf",
+      "sha256": "3c1aaf4388a7266db909d477c513e1c800d3459398c797f3cf501ff6d9de5924",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-28T01:12:04.932399+00:00",
+      "evidence_pages": [
+        12
+      ],
+      "keyword_checks": {
+        "compression": true,
+        "deep industries": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

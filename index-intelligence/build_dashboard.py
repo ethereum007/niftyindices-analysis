@@ -51,10 +51,11 @@ def prepare(observations):
 
 WIRE_FIELDS=['close','change_pct','open','high','low','pe','pb','yield_pct']
 
-def load_family_members(root):
+def load_family_members(root, enabled=None):
     """Reject ambiguous identities or changed primary evidence before publication."""
     result={}
     for file in sorted((root/'theme-research').glob('*.json')):
+        if enabled is not None and file.stem not in enabled:continue
         data=json.loads(file.read_text(encoding='utf-8'))
         family=data['family']
         if family!=file.stem or family in result:raise ValueError('Ambiguous family manifest: '+str(file))
@@ -70,6 +71,7 @@ def load_family_members(root):
                 raw=(file.parent/'raw'/(sha+'.'+extension)).read_bytes()
                 if hashlib.sha256(raw).hexdigest()!=sha:raise ValueError('Changed primary evidence: '+family)
         result[family]=data
+    if enabled is not None and set(enabled)-result.keys():raise ValueError('Missing enabled family manifest: '+', '.join(sorted(set(enabled)-result.keys())))
     return result
 
 def pack_rows(observations):
@@ -93,8 +95,10 @@ def build(db, root, out):
     stocks_file=root/'stocks/latest.json'
     members=json.loads(members_file.read_text(encoding='utf-8')) if members_file.exists() else None
     stocks=json.loads(stocks_file.read_text(encoding='utf-8')) if stocks_file.exists() else None
-    family_members=load_family_members(root)
-    payload={**pack_rows(observations),'coverage':coverage,'constituents':members,'stocks':stocks,'family_members':family_members,'themes':json.loads((HERE/'themes.json').read_text(encoding='utf-8')),
+    theme_data=json.loads((HERE/'themes.json').read_text(encoding='utf-8'))
+    enabled={f['id'] for f in theme_data['catalogue']['families'] if f.get('company_data_ready') is True}
+    family_members=load_family_members(root,enabled)
+    payload={**pack_rows(observations),'coverage':coverage,'constituents':members,'stocks':stocks,'family_members':family_members,'themes':theme_data,
              'batches':[dict(r) for r in db.execute('SELECT * FROM batches ORDER BY observation_date')],
              'generated':datetime.now(timezone.utc).isoformat(),
              'periods':list(PERIODS),'targets':{d:{k:target_date(date.fromisoformat(d),k).isoformat() for k in PERIODS} for d in sorted({r['date'] for r in observations})}}

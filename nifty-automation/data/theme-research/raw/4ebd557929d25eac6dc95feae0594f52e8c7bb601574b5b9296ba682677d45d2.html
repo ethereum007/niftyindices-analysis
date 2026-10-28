@@ -1,0 +1,2271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAIL India Limited</title>
+
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+   <style>
+
+:root {
+  --gail-blue: #007bc3;
+  --gail-yellow: #ffed00;
+}
+
+.gail-banner {
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.banner-image-container {
+    background: url('img/natural_gas_banner.png') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    /* Use aspect-ratio to keep the image proportional */
+    /* Example: if your image is 1600x400, use 4/1 */
+    aspect-ratio: 13 / 4; 
+    height: auto; /* Remove the fixed 400px */
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* This creates the semi-transparent blue strip at the bottom of the image */
+.blue-overlay {
+  width: 100%;
+  background: rgba(0, 123, 195, 0.75); /* Matches the blue in the photo */
+  padding: 20px 0;
+  z-index: 1;
+}
+
+.banner-text {
+  color: var(--gail-yellow);
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0 0 0 8%; /* Aligns text with the rest of your page content */
+  text-transform: capitalize;
+}
+
+/* Yellow Breadcrumb Bar */
+.breadcrumb-container {
+  background-color: var(--gail-yellow);
+  padding: 12px 0;
+}
+
+.breadcrumb-inner {
+  margin-left: 8%;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: var(--gail-blue);
+}
+
+.breadcrumb-inner a {
+  text-decoration: none;
+  color: var(--gail-blue);
+}
+
+.breadcrumb-inner .separator {
+  margin: 0 5px;
+  font-size: 0.8rem;
+}
+
+.current-page {
+  color: var(--gail-blue);
+}
+.about-gas-section {
+  padding: 80px 5%;
+  background-color: #f5f5f5; /* Light grey background from image */
+   
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  /* CHANGE THIS from center to flex-start */
+  align-items: flex-start; 
+}
+
+/* Image Grid Styling */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  flex: 1;
+}
+
+.grid-item {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Special styling for the central icon if it's a transparent PNG */
+.central-icon img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.content-block {
+  flex: 1;
+  /* Ensure no default top padding/margin is pushing the heading down */
+  padding-top: 0; 
+}
+
+.gas-title {
+  /* Ensure the heading margin doesn't create a gap at the very top */
+  margin-top: 0 !important; 
+  font-size: 36px !important;
+  color: #000 !important;
+  margin-bottom: 10px !important;
+  font-weight: 500 !important;
+  line-height: 1.2; /* Tightens the line height so the top of the letters align with the top of the image pixels */
+}
+
+.blue-line {
+  width: 180px;
+  height: 3px;
+  background-color: #007bc3;
+  margin-bottom: 30px;
+}
+
+.gas-description {
+    color: #444444;
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 400;
+}
+
+/* Responsive View */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .image-grid {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+:root {
+  --gail-blue: #007bc3;
+  --gail-yellow: #ffed00;
+  --bg-grey: #f0f2f5;
+}
+
+.gas-forms-section {
+  background-color: var(--bg-grey);
+  padding: 60px 5%;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+    color: #000;
+    margin-bottom: 10px;
+    /* font-weight: bold; */
+    font-weight: 500;
+}
+
+.section-title::after {
+     content: '';
+    display: block;
+    width: 194px;
+    height: 3px;
+    background-color: var(--gail-blue);
+    margin: 10px auto 26px;
+}
+
+.forms-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+.form-card {
+    background: #fff;
+    width: 360px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.image-box {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* The Yellow Badge logic */
+.badge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--gail-yellow);
+  color: #000;
+  font-weight: bold;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+}
+
+.form-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  
+}
+.form-card p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    line-height: 20px;
+    text-align: justify;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+:root {
+  --gail-blue: #007bc3;
+  --gail-yellow: #ffed00;
+  --card-blue: #006fb1; /* Slightly darker/different shade for cards */
+}
+
+.usage-section {
+  background-color: var(--gail-blue);
+  padding: 20px; 
+  text-align: center;
+  color: #ffffff;
+}
+.usage-section_2 {
+  
+ 
+     margin-top: 15px;
+  color: #ffffff;
+}
+
+
+.usage-title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.yellow-underline {
+  width: 190px;
+  height: 4px;
+  background-color: var(--gail-yellow);
+  margin: 0 auto 50px;
+}
+
+.usage-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 1602px;
+    margin: 0 auto;
+}
+
+.usage-card {
+ background-color: var(--card-blue);
+    width: 254px;
+    HEIGHT: 380PX;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.usage-card:hover {
+  transform: translateY(-10px);
+  background-color: #0066a3;
+}
+
+.card-image {
+  width: 100%;
+  height: 120px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-heading {
+    color: #FFED00;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    text-align: center;
+   
+}
+
+.card-text {
+    position: relative;
+    z-index: 2;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+    display: block;
+    text-align: justify;
+}
+/* Responsive adjustments for tablet/mobile */
+@media (max-width: 1200px) {
+  .usage-card {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .usage-card {
+    width: calc(50% - 20px);
+  }
+
+}
+:root {
+  --gail-blue: #007bc3;
+  --bg-light: #f4f4f4;
+  --text-color: #555;
+}
+.info-tabs-section {
+  background-color: var(--bg-light);
+  padding: 80px 10%;
+  font-family: 'Arial', sans-serif;
+}
+
+.tabs-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1600px;
+  margin: 0 auto;
+  gap: 0;
+}
+
+/* Left Sidebar */
+.tab-menu {
+  width: 280px;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.tab-link {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    background: none;
+    text-align: left;
+    font-size: clamp(15px, 1.4vw, 18px);
+    font-weight: 600;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    line-height: 1.4;
+    border-radius: 15px 0px 0px 15px;
+    background: yellow;
+}
+
+.tab-link:hover {
+  color: #007bc2;
+}
+
+.tab-link.active {
+background: #fff;
+    color: #000;
+    border-radius: 12px 0 0 12px;
+    box-shadow: -5px 0 12px rgba(0, 0, 0, 0.04);
+    position: relative;
+    z-index: 2;
+
+}
+
+.profile-tab-link {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    background: none;
+    text-align: left;
+    font-size: clamp(15px, 1.4vw, 18px);
+    font-weight: 600;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    line-height: 1.4;
+    border-radius: 15px 0px 0px 15px;
+    background: yellow;
+}
+
+.profile-tab-link:hover {
+  color: #007bc2;
+}
+
+.profile-tab-link.active {
+background: #fff;
+    color: #000;
+    border-radius: 12px 0 0 12px;
+    box-shadow: -5px 0 12px rgba(0, 0, 0, 0.04);
+    position: relative;
+    z-index: 2;
+
+}
+
+/* Right Content Box */
+.tab-content-box {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 0 15px 15px 15px;
+  padding: 40px 50px;
+  min-height: 450px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  display: flex;
+  position: relative;
+  min-width: 0;
+}
+
+.content-scroll-area {
+  flex: 1;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 30px;
+}
+
+/* large tablet */
+@media (max-width: 1199px) {
+  .info-tabs-section {
+    padding: 60px 5%;
+  }
+
+  .tab-menu {
+    width: 220px;
+    min-width: 220px;
+  }
+
+  .tab-link {
+    font-size: 16px !important;
+    padding: 16px 14px 16px 6px;
+  }
+
+  .tab-content-box {
+    padding: 30px 32px;
+  }
+
+  .content-scroll-area {
+    padding-right: 16px;
+  }
+}
+
+/* tablet */
+@media (max-width: 991px) {
+  .info-tabs-section {
+    padding: 40px 20px;
+  }
+
+  .tabs-container {
+    flex-direction: column;
+  }
+  .tools-section {
+    padding: 15px !important;}
+
+  .tab-menu {
+    width: 100%;
+    min-width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    gap: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tab-menu::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .tab-menu::-webkit-scrollbar-thumb {
+    background: #cfcfcf;
+    border-radius: 10px;
+  }
+
+  .tab-link {
+    flex: 0 0 auto;
+    padding: 14px 18px;
+    font-size: 15px !important;
+    border-radius: 12px;
+    background: transparent;
+  }
+
+  .tab-link.active {
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  }
+
+  .tab-content-box {
+    width: 100%;
+    border-radius: 15px;
+    padding: 24px;
+    min-height: auto;
+  }
+
+  .content-scroll-area {
+    max-height: none;
+    padding-right: 0;
+  }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .info-tabs-section {
+    padding: 30px 12px;
+  }
+.table-responsive {
+    overflow-x: auto;
+    width: 100%;
+}
+.tools-container { 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+    gap: 15px !important;
+}
+.more-title::after { 
+    width: 75%; 
+}
+.tools-container .tool-img {
+            width: 100%;
+        height: 100%;}
+  .tab-menu {
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .tab-link {
+    padding: 12px 16px;
+    font-size: 14px !important;
+  }
+
+  .tab-content-box {
+    padding: 18px;
+    border-radius: 12px;
+  }
+}
+
+/* small mobile */
+@media (max-width: 480px) {
+  .info-tabs-section {
+    padding: 24px 10px;
+  }
+
+  .tab-link {
+    padding: 11px 14px;
+    font-size: 13px !important;
+  }
+
+  .tab-content-box {
+    padding: 16px;
+  }
+}
+
+/* Style the scrollbar to look modern */
+.content-scroll-area::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content-scroll-area::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.content-scroll-area::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+
+
+/* Remove the manual custom-scrollbar div from your HTML as it's no longer needed */
+.custom-scrollbar {
+    display: none;
+}
+
+.content-title {
+    font-size: 20px !important;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #444444;
+}
+
+.content-text p {
+    font-size: 16PX;
+    FONT-WEIGHT: 400;
+    line-height: 1.6;
+    color: var(--text-color);
+   
+    text-align: justify;
+}
+
+/* Custom Scrollbar Visual (Static) */
+.custom-scrollbar {
+  width: 6px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  position: absolute;
+  right: 15px;
+  top: 40px;
+  bottom: 40px;
+}
+
+.scrollbar-thumb {
+  width: 100%;
+  height: 40%;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+#contentArea {
+  transition: opacity 0.3s ease-in-out;
+  flex: 1;
+}
+
+/* Ensure the scrollbar thumb moves if content height changes */
+.content-scroll-area {
+  scroll-behavior: smooth;
+}
+:root {
+  --gail-blue: #007bc3;
+  --gail-yellow: #ffed00;
+}
+
+.tools-section {
+  padding: 50px 20px;
+  background-color: #fff;
+  font-family: 'Arial Black', Gadget, sans-serif; /* Heavy font for titles */
+}
+
+
+.tool-card {
+  width: 260px;
+  height: 240px;
+  border-radius: 15px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Background Color Variants */
+.bg-blue { background-color: var(--gail-blue); color: var(--gail-yellow); }
+.bg-yellow { background-color: var(--gail-yellow); color: var(--gail-blue); }
+
+.tool-content {
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tool-content h3 {
+  font-size: 1.4rem;
+  line-height: 1.1;
+  margin: 0;
+  z-index: 2;
+}
+
+/* Positioning the illustration at the bottom right */
+.illustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 90%; /* Adjust size of illustration */
+  height: 60%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.illustration img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .tool-card {
+    width: 100%;
+    height: 180px;
+  }
+}
+.tools-section {
+  padding: 40px 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.tools-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
+    gap: 35px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.tool-card {
+  position: relative;
+  height: 180px; /* Adjust height to match your desired card shape */
+  border-radius: 12px;
+  text-decoration: none;
+  overflow: hidden; 
+  padding: 18px;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: scale(1.02);
+}
+
+/* Backgrounds */
+.bg-blue { background-color: var(--gail-blue); }
+.bg-yellow { background-color: var(--gail-yellow); }
+
+
+
+.bg-blue .card-text { color: var(--gail-yellow); }
+.bg-yellow .card-text { color: var(--gail-blue); }
+
+/* Image Positioning (Bottom Right) */
+.tool-img {
+  
+ 
+      width: 384px;
+    height: 278px;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 15px;
+}
+
+/* Responsive Scaling */
+@media (max-width: 600px) {
+  .card-text { font-size: 1.1rem; }
+  .tool-card { height: 150px; }
+}
+/* --- Dropdown Logic --- */
+
+/* 1. Position the parent list item */
+.nav-menu li {
+  position: relative;
+  list-style: none;
+}
+
+/* 2. Hide the dropdown by default */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* Sits exactly below the nav link */
+  left: 0;
+  background-color: #ffffff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  z-index: 1000;
+  border-top: 3px solid var(--gail-yellow);
+}
+
+/* 3. Style the links inside the dropdown */
+.dropdown a {
+  color: #333 !important; /* Force text to be dark against white bg */
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s;
+}
+
+/* 4. Hover effect for dropdown items */
+.dropdown a:hover {
+  background-color: #f8f8f8;
+  color: var(--gail-blue) !important;
+}
+
+/* 5. THE MAGIC: Show dropdown when hovering over the LI */
+.nav-menu li:hover .dropdown {
+  display: block;
+}
+
+/* --- Small tweak for the Navbar Flex --- */
+.nav-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+/* Specific styling for the Operational Pipelines table */
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd; /* Outer border */
+}
+
+.table-responsive th, 
+.table-responsive td {
+    border: 1px solid #ddd !important; /* Forces the internal borders to show */
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.table-responsive thead th {
+    background-color: #007bc3; /* Corporate Blue */
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Zebra striping for readability */
+.table-responsive tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+@media (max-width: 768px) {
+  .about-gas-section,
+  .gas-forms-section,
+  .usage-section {
+    padding: 15px; 
+}
+.forms-container .form-card p {
+    font-size: 14px !important;}
+  .about-gas-section .container img{
+    width: 100%; 
+}
+  .about-gas-section  .container { 
+    gap: 20px;}
+.gas-title,
+.section-title {
+    font-size: 20px !important;}
+
+.yellow-underline { 
+    margin: 0 auto 25px;
+}
+    .usage-card {
+        width: calc(100% - 20px);
+        height: max-content;
+    }
+  .card-text { 
+    font-size: 14px !important;
+}
+  }
+  .tagline {
+    /* Color: Using the official GAIL Corporate Blue */
+    color: #007bc3; 
+    
+    /* Font Settings */
+    font-size: 22px;         /* Slightly larger than body, smaller than H2 */
+    font-weight: 600;         /* Extra Bold to give it authority */
+  
+    margin-bottom: 13px;
+    display: inline-block;
+    position: relative;
+    text-transform: none;     /* Title Case looks more professional than All Caps here */
+}
+.tp_pipelin_img{
+      height: 420px;
+    width: 558px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+img.usage {
+    width: 100%;
+}
+
+
+@media (min-width: 500px) and (max-width: 991px) {
+
+  .tab-link { width: auto; }
+  .profile-tab-link { width: auto; border-radius: 30px !important; }
+}
+   </style>
+  </head>
+
+  <body>
+    
+   <div id="header-placeholder"></div>
+    <!-- Banner -->
+
+    <section class="gail-banner">
+    <div class="banner-image-container">
+              <div class="blue-overlay">
+                  <h2 class="banner-text lang-en">Natural Gas Transmission & Marketing</h2>
+                  <h2 class="banner-text lang-hi">प्राकृतिक गैस का संचरण एवं विपणन</h2>
+              </div>
+          </div>
+
+  <nav class="breadcrumb-container lang-en">
+    <div class="breadcrumb-inner">
+      <a href="home.html">Home</a> 
+      <span class="separator">&gt;</span> 
+      <a href="home.html">Business Verticals</a> 
+       <span class="separator">&gt;</span> 
+      <span class="current-page">Natural Gas Transmission & Marketing</span>
+    </div>
+  </nav>
+    <nav class="breadcrumb-container lang-hi">
+    <div class="breadcrumb-inner">
+      <a href="home.html">होम</a> 
+      <span class="separator">&gt;</span> 
+      <a href="home.html">व्यापार क्षेत्र </a> 
+       <span class="separator">&gt;</span> 
+      <span class="current-page">प्राकृतिक गैस का संचरण एवं विपणन</span>
+    </div>
+  </nav>
+</section>
+
+    
+ <section class="about-gas-section lang-en">
+  <div class="container">
+   <img src="img/Natural_Gas_intro.png" alt="Pipeline" class="tp_pipelin_img">
+
+    <div class="content-block">
+      <!-- <h2 class="gas-title">Natural Gas Transmission & Marketing</h2> -->
+      <h2 class="gas-title " style="color: #007bc3 !important;">India’s Leading Natural Gas Transmission & Marketing Company</h2>
+      <!-- <h3 class="tagline">India’s Leading Natural Gas Transmission & Marketing Company</h3> -->
+      <div class="blue-line"></div>
+      <p class="gas-description">
+       Natural gas is one of the most important sources of energy in the modern world. It is a clean and efficient fossil fuel primarily composed of methane. Natural gas is widely used for generating electricity, heating homes, and as a fuel for industries and transportation. Compared to other fossil fuels like coal and oil, it produces fewer pollutants and lower carbon emissions. This makes it an important transition fuel in the shift toward cleaner energy systems. 
+       Natural gas is transported through an extensive network of pipelines to reach homes, industries, and power plants. Due to its clean-burning properties and the convenience of pipeline-based supply, which eliminates the need for local storage and complex transportation logistics, natural gas has emerged as a preferred fuel worldwide. Its share in the energy mix of many major economies has been steadily increasing.</p><br />
+        
+    <p class="gas-description"> As the world moves toward sustainable energy, natural gas continues to play a significant role in providing reliable and cleaner energy solutions.
+      </p>
+    </div>
+  </div>
+</section>
+ <section class="about-gas-section lang-hi">
+  <div class="container">
+   <img src="img/Natural_Gas_intro.png" alt="Pipeline" class="tp_pipelin_img">
+
+    <div class="content-block">
+      <!-- <h2 class="gas-title">Natural Gas Transmission & Marketing</h2> -->
+      <h2 class="gas-title " style="color: #007bc3 !important;">प्राकृतिक गैस के बारे में </h2>
+      <!-- <h3 class="tagline">India’s Leading Natural Gas Transmission & Marketing Company</h3> -->
+      <div class="blue-line"></div>
+      <p class="gas-description">
+    प्राकृतिक गैस आधुनिक विश्व में ऊर्जा के सबसे महत्वपूर्ण स्रोतों में से एक है। यह एक स्वच्छ और कुशल जीवाश्म ईंधन है, जो मुख्य रूप से मिथेन से बना होता है। प्राकृतिक गैस का उपयोग बिजली उत्पादन, घरों को गर्म रखने तथा उद्योगों और परिवहन के लिए ईंधन के रूप में व्यापक रूप से किया जाता है। कोयला और तेल जैसे अन्य जीवाश्म ईंधनों की तुलना में यह कम प्रदूषक उत्पन्न करती है और कार्बन उत्सर्जन भी कम करती है।इसी कारण, स्वच्छ ऊर्जा प्रणालियों की ओर परिवर्तन में यह एक महत्वपूर्ण पारगमन ईंधन (transition fuel) के रूप में भूमिका निभाती है। प्राकृतिक गैस को घरों, उद्योगों और बिजली संयंत्रों तक पहुँचाने के लिए पाइपलाइनों के विस्तृत नेटवर्क के माध्यम से परिवहन किया जाता है।इसके स्वच्छ दहन गुणों तथा पाइपलाइन आधारित आपूर्ति की सुविधा के कारण, जिसमें स्थानीय भंडारण और जटिल परिवहन व्यवस्थाओं की आवश्यकता नहीं होती, प्राकृतिक गैस दुनिया भर में एक पसंदीदा ईंधन के रूप में उभरकर सामने आई है।कई प्रमुख अर्थव्यवस्थाओं के ऊर्जा मिश्रण (energy mix) में इसकी हिस्सेदारी लगातार बढ़ती जा रही है।</p><br />
+        
+    <p class="gas-description">जैसे जैसे विश्व सतत (सस्टेनेबल) ऊर्जा की ओर बढ़ रहा है, प्राकृतिक गैस विश्वसनीय और अधिक स्वच्छ ऊर्जा समाधान प्रदान करने में महत्वपूर्ण भूमिका निभाती रहती है।
+      </p>
+    </div>
+  </div>
+</section>
+<section class="gas-forms-section lang-en">
+  <h2 class="section-title">Natural Gas comes in 4 basic forms</h2>
+  
+  <div class="forms-container">
+    <article class="form-card">
+      <div class="image-box">
+        <img src="img/LNG_NaturalGas_.png" alt="LNG Plant">
+        <span class="badge yellow">LNG</span>
+      </div>
+      <h3>Liquefied Natural Gas</h3>
+      <p>Natural Gas which has been liquefied at - (Minus) 160 degree Centigrade. Natural Gas is liquefied to facilitate transportation in large volumes in cryogenic tankers across seas / land.</p>
+    </article>
+
+    <article class="form-card">
+      <div class="image-box">
+        <img src="img/RLNG_NaturalGas_.png" alt="RLNG Terminal">
+        <span class="badge yellow">RLNG</span>
+      </div>
+      <h3>Regasified Liquefied Natural Gas</h3>
+      <p>LNG Re-gasified at import terminals before transporting it to consumers through Pipelines.</p>
+    </article>
+
+    <article class="form-card">
+      <div class="image-box">
+        <img src="img/PNG_NaturalGas_.png" alt="PNG Usage">
+        <span class="badge yellow">PNG</span>
+      </div>
+      <h3>Piped Natural Gas</h3>
+      <p>Natural Gas distributed through a pipeline network that has safety valves to maintain the pressure, assuring safe, uninterrupted supply to the domestic sector for cooking and heating / cooling applications.</p>
+    </article>
+
+    <article class="form-card">
+      <div class="image-box">
+        <img src="img/CNG_NaturalGas_.png" alt="CNG Station">
+        <span class="badge yellow">CNG</span>
+      </div>
+      <h3>Compressed Natural Gas</h3>
+      <p>Natural Gas compressed to a pressure of 200-250 kg/cm2 used as fuel for transportation. CNG decreases vehicular pollution on the virtue of being cleaner fuel than liquid fuels.</p>
+    </article>
+  </div>
+</section>
+<!-- hindi content -->
+ <section class="gas-forms-section lang-hi">
+  <h2 class="section-title">प्राकृतिक गैस के चार प्रमुख रूप होते हैं</h2>
+  
+  <div class="forms-container">
+    <article class="form-card">
+      <div class="image-box">
+        <img src="img/LNG_NaturalGas_.png" alt="LNG Plant">
+        <span class="badge yellow">LNG</span>
+      </div>
+      <h3>द्रवीकृत प्राकृतिक गैस</h3>
+      <p>वह प्राकृतिक गैस है जिसे –160 डिग्री सेल्सियस तापमान पर तरल रूप में परिवर्तित किया जाता है।
+प्राकृतिक गैस को बड़े पैमाने पर समुद्र या स्थल मार्ग से क्रायोजेनिक टैंकरों में आसानी से परिवहन करने के लिए इसे द्रवीकृत किया जाता है।
+</p>
+    </article>
+
+    <article class="form-card">
+      <div class="image-box">
+        <img src="img/RLNG_NaturalGas_.png" alt="RLNG Terminal">
+        <span class="badge yellow">RLNG</span>
+      </div>
+      <h3>
+        पुनः गैसीकृत द्रवीकृत प्राकृतिक गैस</h3>
+      <p>वह LNG है जिसे आयात टर्मिनलों पर पुनः गैसीय रूप में परिवर्तित किया जाता है, ताकि उसे पाइपलाइनों के माध्यम से उपभोक्ताओं तक पहुँचाया जा सके।</p>
+    </article>
+
+    <article class="form-card">
+      <div class="image-box">
+        <img src="img/PNG_NaturalGas_.png" alt="PNG Usage">
+        <span class="badge yellow">PNG</span>
+      </div>
+      <h3>पाइप्ड प्राकृतिक गैस</h3>
+      <p>वह प्राकृतिक गैस है जिसे पाइपलाइन नेटवर्क के माध्यम से वितरित किया जाता है। इस नेटवर्क में दबाव बनाए रखने के लिए सुरक्षा वाल्व लगे होते हैं, जिससे घरेलू क्षेत्र में खाना पकाने तथा हीटिंग/कूलिंग के लिए सुरक्षित और निरंतर आपूर्ति सुनिश्चित होती है।</p>
+    </article>
+
+    <article class="form-card">
+      <div class="image-box">
+        <img src="img/CNG_NaturalGas_.png" alt="CNG Station">
+        <span class="badge yellow">CNG</span>
+      </div>
+      <h3>संपीड़ित प्राकृतिक गैस</h3>
+      <p>वह प्राकृतिक गैस है जिसे 200–250 किग्रा/सेमी² के दबाव पर संपीड़ित किया जाता है और परिवहन के लिए ईंधन के रूप में उपयोग किया जाता है। CNG, तरल ईंधनों की तुलना में अधिक स्वच्छ होने के कारण, वाहनों से होने वाले प्रदूषण को कम करने में सहायक होती है। </p>
+    </article>
+  </div>
+</section>
+ <section class="usage-section lang-en">
+  <h2 class="gas-title" style="
+    color: white !important;
+" >Usage of Natural Gas</h2>
+  <div class="yellow-underline"></div>
+
+  <div class="usage-grid">
+    <article class="usage-card">
+      <div class="card-image"><img src="img/power-sector_.png" alt="Power Sector"></div>
+      <h3 class="card-heading">Power Sector</h3>
+      <p class="card-text">Used as a fuel for base-load power generation in combined cycle and cogeneration power plants, enabling efficient and cleaner electricity production.</p>
+    </article>
+
+    <article class="usage-card">
+      <div class="card-image"><img src="img/fertilizer_.png" alt="Fertilizer Industry"></div>
+      <h3 class="card-heading">Fertilizer Industry</h3>
+      <p class="card-text">Utilized as a key feedstock in the production of ammonia and urea, which are essential for fertilizer manufacturing.</p>
+    </article>
+
+    <article class="usage-card">
+      <div class="card-image"><img src="img/industrial_.png" alt="Industrial Sector"></div>
+      <h3 class="card-heading">Industrial Sector</h3>
+      <p class="card-text">Used as boiler fuel for steam generation and as fuel in furnaces, kilns, and other industrial heating applications.</p>
+    </article>
+
+    <article class="usage-card">
+      <div class="card-image"><img src="img/domestic_.png" alt="Domestic & Commercial"></div>
+      <h3 class="card-heading">Domestic & Commercial</h3>
+      <p class="card-text">Supplied as Piped Natural Gas (PNG) for cooking and heating in households and commercial establishments, offering a safe and convenient energy source.</p>
+    </article>
+
+    <article class="usage-card">
+      <div class="card-image"><img src="img/automotive_.png" alt="Automotive Sector"></div>
+      <h3 class="card-heading">Automotive Sector</h3>
+      <p class="card-text">Used as Compressed Natural Gas (CNG), an eco-friendly and cost-effective fuel for vehicles that reduces emissions.</p>
+    </article>
+
+    <article class="usage-card">
+      <div class="card-image"><img src="img/petrochemical_.png" alt="Petrochemical Industry"></div>
+      <h3 class="card-heading">Petrochemical Industry</h3>
+      <p class="card-text">Serves as a primary raw material for producing various petrochemicals such as methanol, hydrogen, and other chemical derivatives.</p>
+    </article>
+  </div>
+</section>
+ <section class="usage-section lang-hi">
+  <h2 class="gas-title" style="
+    color: white !important;
+" >प्राकृतिक गैस के उपयोग</h2>
+  <div class="yellow-underline"></div>
+
+  <div class="usage-grid">
+    <article class="usage-card">
+      <div class="card-image"><img src="img/power-sector_.png" alt="Power Sector"></div>
+      <h3 class="card-heading">विद्युत क्षेत्र</h3>
+      <p class="card-text">संयुक्त चक्र (Combined Cycle) और सह-उत्पादन (Cogeneration) बिजली संयंत्रों में आधार-लोड बिजली उत्पादन के लिए ईंधन के रूप में उपयोग, जिससे अधिक कुशल और स्वच्छ बिजली उत्पादन संभव होता है।</p>
+    </article>
+
+    <article class="usage-card">
+      <div class="card-image"><img src="img/fertilizer_.png" alt="Fertilizer Industry"></div>
+      <h3 class="card-heading">उर्वरक उद्योग</h3>
+      <p class="card-text">अमोनिया और यूरिया के उत्पादन में एक प्रमुख कच्चे माल (Feedstock) के रूप में उपयोग, जो उर्वरक निर्माण के लिए आवश्यक हैं।
+
+</p>
+    </article>
+
+    <article class="usage-card">
+      <div class="card-image"><img src="img/industrial_.png" alt="Industrial Sector"></div>
+      <h3 class="card-heading">औद्योगिक क्षेत्र</h3>
+      <p class="card-text">भाप उत्पादन के लिए बॉयलर ईंधन के रूप में तथा भट्टियों (Furnaces), भट्ठों (Kilns) और अन्य औद्योगिक ताप अनुप्रयोगों में ईंधन के रूप में उपयोग।
+</p>
+    </article>
+
+    <article class="usage-card">
+      <div class="card-image"><img src="img/domestic_.png" alt="Domestic & Commercial"></div>
+      <h3 class="card-heading">घरेलू एवं वाणिज्यिक क्षेत्र</h3>
+      <p class="card-text">पाइप्ड नेचुरल गैस (PNG) के रूप में घरों और वाणिज्यिक प्रतिष्ठानों में खाना पकाने और हीटिंग के लिए आपूर्ति, जो सुरक्षित और सुविधाजनक ऊर्जा स्रोत प्रदान करती है।</p>
+    </article>
+
+    <article class="usage-card">
+      <div class="card-image"><img src="img/automotive_.png" alt="Automotive Sector"></div>
+      <h3 class="card-heading">ऑटोमोबाइल क्षेत्र</h3>
+      <p class="card-text">संपीड़ित प्राकृतिक गैस (CNG) के रूप में उपयोग, जो पर्यावरण के अनुकूल और लागत प्रभावी ईंधन है तथा उत्सर्जन को कम करता है।
+
+</p>
+    </article>
+
+    <article class="usage-card">
+      <div class="card-image"><img src="img/petrochemical_.png" alt="Petrochemical Industry"></div>
+      <h3 class="card-heading">पेट्रोकेमिकल उद्योग</h3>
+      <p class="card-text">मेथनॉल, हाइड्रोजन तथा अन्य रासायनिक उत्पादों के निर्माण के लिए एक प्रमुख कच्चे माल के रूप में उपयोग।</p>
+    </article>
+  </div>
+</section>
+<section class="usage-section_2">
+  <a href="LNG.html">
+    <img class="usage lang-en" src="img/image for LNG tab from Natural Gas Page.png">
+      <img class="usage lang-hi" src="img/lng_hindi_190626.png">
+  </a>
+  
+</section>  
+
+<section class="info-tabs-section lang-en">
+  <div class="tabs-container">
+
+    <nav class="tab-menu">
+      <div class="tab-link active">Natural Gas Transmission</div>
+      <div class="tab-link" data-target="marketing">Gas Marketing</div>
+      <!-- <div class="tab-link" data-target="lng">Liquefied Natural Gas</div> -->
+      <!-- <div class="tab-link" data-target="profile">Transmission Profile</div> -->
+    </nav>
+
+    <div class="tab-content-box">
+      <div class="content-scroll-area" id="contentArea">
+        <h3 class="content-title">Natural Gas Transmission</h3>
+        <div class="content-text">
+          <p>Natural Gas, a new age fuel is the cleanest, efficient, non-polluting, environmental friendly and
+            relatively economical of the fossil fuel in the modern day industrial society.</p>
+          <p>Natural Gas Pipeline Infrastructure connects various gas sources to different gas markets to meet the
+            existing/future natural gas demand of various Powers, Fertilizer, CGD and other industries in the Country.
+            The gas pipeline infrastructure has facilitated widespread industrialization and has brought significant
+            socio-economic changes to different parts of the country.</p>
+          <p>A big challenge lies in bridging the physical gap between demand and supply centers in an efficient, safe
+            and eco-friendly manner. Pipeline transportation of gas offers a safe, economic and environmentally sound
+            alternative to most other modes of energy transport.</p><br />
+          <p>The Government recognizes the need to augment the natural gas transmission infrastructure in the country
+            and has been driving the development of natural gas pipeline connecting all regions of the country which is
+            shaping-up into Natural Gas Grid (NGG)</p><br />
+          <P>Over the years, GAIL as a major gas pipeline operator has contributed to the growth and development of
+            natural gas pipeline infrastructure and natural gas market. It has an existing 18,862+ km. of gas pipeline
+            network with a capacity of 208 MMSCMD. GAIL’s existing natural gas pipeline network covers 20 States (Andhra
+            Pradesh, Assam, Bihar, Goa, Gujarat, Haryana, Himachal Pradesh, Jharkhand, Karnataka, Kerala, Maharashtra,
+            Madhya Pradesh, Odisha, Punjab, Rajasthan, Tamil Nadu, Tripura, Uttar Pradesh Uttarakhand and West Bengal)
+            and 3 UT’s (Delhi, Puducherry & Dadra Nagar Haveli).</P><br />
+
+        </div>
+
+        <div class="col-sm-6 pt-15">
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead style="background:#0088d7; color:#fff;">
+                <tr>
+                  <th>&nbsp;</th>
+                  <th colspan="2">Operational Natural Gas Pipelines of GAIL
+                  </th>
+                </tr>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th>Common Carrier + Dedicated</th>
+                  <th>&nbsp;</th>
+                </tr>
+                <tr>
+                  <th>Sl. No.</th>
+                  <th>Network/ Region#</th>
+                  <th>Length (KM)*</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Agartala Network</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Cauvery Basin </td>
+                  <td>272</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Chhainsa-Jhajjar-Hissar Pipeline Network (CJPL)</td>
+                  <td>440</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Dabhol-Bengaluru Pipeline Network (DBPL) </td>
+                  <td>1182</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Dadri-Bawana-Nangal Pipeline Network</td>
+                  <td>997</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Dahej-Uran-Dabhol Pipeline Network</td>
+                  <td>943</td>
+                </tr>
+              <!-- new start-->
+                <tr>
+                  <td>7</td>
+                  <td>DVPL – GREP Upgradation</td>
+                  <td>1311</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Gujarat Regional Network</td>
+                  <td>604</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>HVJ- GREP DVPL</td>
+                  <td>5433</td>
+                </tr>
+                <!-- new end -->
+                <tr>
+                  <td>10</td>
+                  <td>Jagdishpur-Haldia-Bokaro-Dhamra (JHBDPL)</td>
+                  <td>3339</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>KG Basin Pipeline Network</td>
+                  <td>919</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Kochi-Koottanad-Bengaluru-Mangaluru Pipeline Network
+                    (KKBMPL)</td>
+                  <td>646</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Mumbai Regional Pipeline Network</td>
+                  <td>125</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>Dedicated Networks</td>
+                  <td>226</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>Mumbai Nagpur Jharsuguda Pipeline (MNJPL) 1148</td>
+                  <td>1715</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>Srikakulam Angul Pipeline (SAPL)</td>
+                  <td>469</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Total Length </td>
+                  <td>18,688</td>
+                </tr>
+              </tbody>
+            </table>
+            <span> #As per PNGRB</span> <span style="float: right;"> As on
+              30<sup>th</sup> Jun 2026</span>
+            </br>
+            </br>
+
+          </div>
+
+          <div>
+            <h3 style="margin-top: 20px;">Ongoing Cross Country Pipeline Projects:</h3>
+            <p>
+              Natural gas pipelines are the core and strategic assets for India’s energy security and backbone to
+              achieve the gas based economy. GAIL is in constant endeavour to expand its pipeline infrastructure across
+              the length and breadth of the country as a part of National Gas Grid. With the execution of in hand
+              pipeline projects, GAIL is expanding its natural gas pipeline infrastructure on PAN India basis. The
+              details of ongoing pipelines under NGG and others are as below:
+            </p><br />
+          </div>
+
+          <div>
+            <h3 style="margin-top: 20px;"> Ongoing NGG pipeline Projects:</h3>
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped">
+                <thead style="background:#0088d7; color:#fff;">
+                  <tr>
+                    <th>S. No.</th>
+                    <th>Projects</th>
+                    <th>Total Length (in Km)</th>
+                    <th>Total Investment (in Rs Crore)</th>
+                    <th>Commissioned as on Nov’25</th>
+                    <th>Under Construction as on Nov’25</th>
+                    <th>States covered</th>
+                  </tr>
+
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Integrated Jagdishpur Haldia and Bokaro Dhamra Pipeline (JHBDPL)</td>
+                    <td>3,290</td>
+                    <td>17,405</td>
+                    <td>3128</td>
+                    <td>162</td>
+                    <td>Uttar Pradesh, Bihar, Odisha, Jharkhand and West Bengal, Assam</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Kochi-Koottanad-Bengaluru-Mangaluru Pipeline Phase-II</td>
+                    <td>902</td>
+                    <td>5,909</td>
+                    <td>608</td>
+                    <td>294</td>
+                    <td>Kerala, Tamil Nadu and Karnataka</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Srikakulam Angul Pipeline (SAPL)</td>
+                    <td>744</td>
+                    <td>2,810</td>
+                    <td>469.5</td>
+                    <td>274.5</td>
+                    <td>Odisha and Andhra Pradesh</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Dhamra Haldia Pipeline (DHPL)</td>
+                    <td>253</td>
+                    <td>1,125</td>
+                    <td>150</td>
+                    <td>103</td>
+                    <td>Odisha and West Bengal</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Gurdaspur-Jammu Pipeline</td>
+                    <td>153</td>
+                    <td>522</td>
+                    <td>0</td>
+                    <td>153</td>
+                    <td>Punjab and UT of Jammu & Kashmir</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Augmentation of Dahej-Uran / Dabhol Panvel Pipeline</td>
+                    <td>105</td>
+                    <td>844</td>
+                    <td>0</td>
+                    <td>105</td>
+                    <td>Maharashtra</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Vijaipur-Bina Pipeline</td>
+                    <td>114</td>
+                    <td>449</td>
+                    <td>0</td>
+                    <td>114</td>
+                    <td>Madhya Pradesh</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Attibele-Bidadi Pipeline</td>
+                    <td>65</td>
+                    <td>652</td>
+                    <td>0</td>
+                    <td>65</td>
+                    <td>Karnataka, Tamil Nadu</td>
+                  </tr>
+                 
+                  <tr class="total-row">
+                    <td></td>
+                    <td><strong>Total</strong></td>
+                    <td><strong>5,626</strong></td>
+                    <td><strong>29,716</strong></td>
+                    <td><strong>4,355.5</strong></td>
+                    <td><strong>1270.5</strong></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+
+              </table>
+              <span style="float: right;">Updated as on
+                29<sup>th</sup> July 2026</span>
+              </br>
+              </br>
+
+            </div>
+          </div>
+
+          <div>
+            <h3 style="margin-top: 20px;"> Other Ongoing Projects:</h3>
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped">
+                <thead style="background:#0088d7; color:#fff;">
+                  <tr>
+                    <th>S. No.</th>
+                    <th>Projects under execution
+
+                    </th>
+                    <th>Details</th>
+                    <th>Investment (Rs. Cr.)
+
+                    </th>
+                    <th>States covered
+
+                    </th>
+
+                  </tr>
+
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Pipeline Replacement Projects KG Basin Ph-3</td>
+                    <td>Pipeline replacement of 30 Km</td>
+                    <td>133</td>
+                    <td>Andhra Pradesh</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Uran-Usar Liquid Propane Pipeline Project</td>
+                    <td>12" X 44 Km Pipeline</td>
+                    <td>309</td>
+                    <td>Maharashtra</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Vijaipur to Pata C2/C3 Pipeline</td>
+                    <td>14" X 357 Km</td>
+                    <td>1,792</td>
+                    <td>Uttar Pradesh &amp; Madhya Pradesh</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Capacity Expansion of Jamnagar-Loni LPG Pipeline</td>
+                    <td>18"/16"/8"/6” X 1150 Km</td>
+                    <td>5,364</td>
+                    <td>Gujarat, Rajasthan, Haryana, Delhi, Uttar Pradesh</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Tie in Connectivity Project</td>
+                    <td>Tie in connectivity from ONGC’s CBM field Jharia to JHBDPL Network (Length 6 Km)</td>
+                    <td>31</td>
+                    <td>Jharkhand</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Consumer Connectivity</td>
+                    <td>Last Mile Connectivities to consumers (11 Nos.) & CGD Hook-up Projects (30 nos.)</td>
+                    <td>1003</td>
+                    <td>Pan India Basis</td>
+                  </tr>
+                  <tr class="total-row">
+                    <td></td>
+                    <td><strong>Total</strong></td>
+                    <td></td>
+                    <td><strong>8,632</strong></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+              </br>
+              <p>GAIL shall continue to meet the noble objective of supply and transportation of natural gas through its
+                state of art natural gas transmission pipeline system and shall contribute to the growth and
+                Industrialization in India. GAIL is continuously playing the vital role in development of National Gas
+                Grid and providing pipeline connectivity to the prospective customers i.e. industrial, commercial,
+                domestic etc. located along GAIL’s pipeline network.
+              </p>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+</section>
+
+
+<section class="info-tabs-section profile-tabs-section lang-hi">
+  <div class="tabs-container">
+
+    <nav class="tab-menu">
+      <div class="profile-tab-link active" data-target="overview">
+        प्राकृतिक गैस संचरण
+      </div>
+
+      <div class="profile-tab-link" data-target="projects">
+        गैस विपणन
+      </div>
+
+    </nav>
+
+    <div class="tab-content-box">
+      <div class="profile-content-scroll-area" id="profileContentArea">
+
+        <h3 class="content-title">प्राकृतिक गैस संचरण</h3>
+        <div class="content-scroll-area">
+          <p>प्राकृतिक गैस, एक आधुनिक युग का ईंधन, आधुनिक औद्योगिक समाज में उपलब्ध जीवाश्म ईंधनों में सबसे स्वच्छ, कुशल,
+            गैर प्रदूषणकारी, पर्यावरण अनुकूल तथा अपेक्षाकृत किफायती ईंधन है।
+          </p>
+          <p>प्राकृतिक गैस पाइपलाइन अवसंरचना विभिन्न गैस स्रोतों को अलग अलग गैस बाजारों से जोड़ती है, जिससे देश में
+            ऊर्जा, उर्वरक, सिटी गैस वितरण (CGD) तथा अन्य उद्योगों की वर्तमान और भविष्य की प्राकृतिक गैस की मांग को पूरा
+            किया जा सके। यह गैस पाइपलाइन अवसंरचना व्यापक औद्योगिकीकरण को बढ़ावा देने में सहायक रही है और देश के विभिन्न
+            क्षेत्रों में महत्वपूर्ण सामाजिक आर्थिक परिवर्तन लाने में योगदान दिया है।</p>
+          <p>मांग और आपूर्ति केंद्रों के बीच भौतिक अंतर को कुशल, सुरक्षित और पर्यावरण अनुकूल तरीके से कम करना एक बड़ी
+            चुनौती है। गैस का पाइपलाइन के माध्यम से परिवहन, ऊर्जा परिवहन के अन्य अधिकांश साधनों की तुलना में एक
+            सुरक्षित, किफायती और पर्यावरण की दृष्टि से बेहतर विकल्प प्रदान करता है।</p>
+          <p>सरकार देश में प्राकृतिक गैस परिवहन अवसंरचना को सुदृढ़ करने की आवश्यकता को पहचानती है और देश के सभी
+            क्षेत्रों को जोड़ने वाली प्राकृतिक गैस पाइपलाइनों के विकास को बढ़ावा दे रही है, जो धीरे धीरे नेचुरल गैस
+            ग्रिड (NGG) के रूप में विकसित हो रही है।</p>
+          <p>पिछले वर्षों में, गेल एक प्रमुख गैस पाइपलाइन संचालक के रूप में प्राकृतिक गैस पाइपलाइन अवसंरचना और प्राकृतिक
+            गैस बाजार के विकास एवं विस्तार में महत्वपूर्ण योगदान देता रहा है। इसके पास वर्तमान में 18,862+ किमी लंबा गैस
+            पाइपलाइन नेटवर्क है, जिसकी क्षमता 208 MMSCMD है। गेल का मौजूदा प्राकृतिक गैस पाइपलाइन नेटवर्क 20 राज्यों
+            (आंध्र प्रदेश, असम, बिहार, गोवा, गुजरात, हरियाणा, हिमाचल प्रदेश, झारखंड, कर्नाटक, केरल, महाराष्ट्र, मध्य
+            प्रदेश, ओडिशा, पंजाब, राजस्थान, तमिलनाडु, त्रिपुरा, उत्तर प्रदेश, उत्तराखंड और पश्चिम बंगाल) तथा 3 केंद्र
+            शासित प्रदेशों (दिल्ली, पुडुचेरी और दादरा एवं नगर हवेली) को कवर करता है।</p>
+
+            <div class="col-sm-6 pt-15">
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead style="background:#0088d7; color:#fff;">
+                <tr>
+                  <th>&nbsp;</th>
+                  <th colspan="2">गेल की संचालित प्राकृतिक गैस पाइपलाइनें</th>
+                </tr>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th>Common Carrier + Dedicated</th>
+                  <th>&nbsp;</th>
+                </tr>
+                <tr>
+                <tr>
+                  <th>क्रम सं.</th>
+                  <th>पाइपलाइन नेटवर्क</th>
+                  <th>लंबाई (कि.मी.)</th>
+                </tr>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>अगरतला नेटवर्क</td>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>कावेरी बेसिन</td>
+                    <td>272</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>छैंसा–झज्जर–हिसार पाइपलाइन नेटवर्क (CJPL)</td>
+                    <td>440</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>दाभोल–बेंगलुरु पाइपलाइन नेटवर्क (DBPL)</td>
+                    <td>1182</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>दादरी–बवाना–नांगल पाइपलाइन नेटवर्क</td>
+                    <td>997</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>दहेज–उरण–दाभोल पाइपलाइन नेटवर्क</td>
+                    <td>943</td>
+                </tr>
+                <!-- new start-->
+                <tr>
+                  <td>7</td>
+                  <td>DVPL – GREP Upgradation</td>
+                  <td>1311</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>गुजरात क्षेत्रीय पाइपलाइन नेटवर्क</td>
+                  <td>604</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>HVJ- GREP DVPL</td>
+                  <td>5433</td>
+                </tr>
+                <!-- new end -->
+                <tr>
+                    <td>10</td>
+                    <td>जगदीशपुर–हल्दिया–बोकारो–धामरा पाइपलाइन (JHBDPL)</td>
+                    <td>3339</td>
+                </tr>
+                   <tr>
+                    <td>11</td>
+                    <td>केजी बेसिन पाइपलाइन नेटवर्क</td>
+                    <td>919</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>कोच्चि–कूट्टनाड–बेंगलुरु–मंगलुरु पाइपलाइन नेटवर्क</td>
+                    <td>646</td>
+                </tr>
+                 <tr>
+                    <td>13</td>
+                    <td>मुंबई क्षेत्रीय पाइपलाइन नेटवर्क</td>
+                    <td>125</td>
+                </tr>
+                 <tr>
+                    <td>14</td>
+                    <td>समर्पित नेटवर्क</td>
+                    <td>226</td>
+                </tr>
+                 <tr>
+                    <td>15</td>
+                    <td>मुंबई–नागपुर–झारसुगुड़ा पाइपलाइन (MNJPL)</td>
+                    <td>1175</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>श्रीकाकुलम–अंगुल पाइपलाइन (SAPL)</td>
+                    <td>469</td>
+                </tr>
+
+
+
+                <!-- <tr>
+                    <td>8</td>
+                    <td>एकीकृत HVJ पाइपलाइन नेटवर्क</td>
+                    <td>6741</td>
+                </tr> -->
+ 
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>कुल लंबाई</td>
+                  <td>18,688</td>
+                </tr>
+              </tbody>
+            </table>
+            <span> PNGRB के अनुसार</span> <span style="float: right;">30 जून 2026 तक</span>
+            <!-- <span> PNGRB के अनुसार</span> <span style="float: right;">31 दिसंबर 2025 तक</span> -->
+            </br>
+            </br>
+
+          </div>
+
+          <div>
+            <h3 style="margin-top: 20px;">जारी देशव्‍यापी पाइपलाइन परियोजनाएं :</h3>
+            <p>
+              भारत की ऊर्जा सुरक्षा के लिए प्राकृतिक गैस पाइपलाइनें मुख्य और रणनीतिक संपत्ति हैं और गैस आधारित अर्थव्यवस्था को प्राप्त करने के लिए रीढ़ हैं। गेल राष्ट्रीय गैस ग्रिड के एक हिस्से के रूप में देश भर में अपने पाइपलाइन बुनियादी ढांचे का विस्तार करने के लिए निरंतर प्रयासरत है। चल रही पाइपलाइन परियोजनाओं के निष्पादन के साथ, गेल पूरे भारत में अपने प्राकृतिक गैस पाइपलाइन बुनियादी ढांचे का विस्तार कर रही है। एनजीजी और अन्य के अंतर्गत चल रही पाइपलाइनों का विवरण नीचे दिया गया है :
+            </p><br />
+          </div>
+
+          <div>
+            <h3 style="margin-top: 20px;"> चल रही एनजीजी पाइपलाइन की परियोजनाएं</h3>
+               <div class="table-responsive">
+              <table class="table table-bordered table-striped">
+                <thead style="background:#0088d7; color:#fff;">
+                  <tr>
+                    <th>क्रम सं.</th>
+                    <th>परियोजनाएं</th>
+                    <th>कुल लंबाई (कि.मी. में)</th>
+                    <th>कुल निवेश (करोड़ रुपये में)</th>
+                    <th>नवंबर'25 में चालू किया गया</th>
+                    <th>नवंबर'25 तक निर्माणाधीन</th>
+                    <th>कवर किए गए राज्य</th>
+                  </tr>
+
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>एकीकृत जगदीशपुर हल्दिया और बोकारो धामरा पाइपलाइन (जेएचबीडीपीएल)</td>
+                    <td>3,290</td>
+                    <td>17,405</td>
+                    <td>3128</td>
+                    <td>162</td>
+                    <td>उत्तर प्रदेश, बिहार, ओडिशा, झारखंड और पश्चिम बंगाल, असम</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>कोच्चि-कूट्टानाड-बेंगलुरु-मैंगलोर पाइपलाइन चरण-II</td>
+                    <td>902</td>
+                    <td>5,909</td>
+                    <td>608</td>
+                    <td>294</td>
+                    <td>केरल, तमिलनाडु और कर्नाटक</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>श्रीकाकुलम अंगुल पाइपलाइन (एसएपीएल)</td>
+                    <td>744</td>
+                    <td>2,810</td>
+                    <td>469.5</td>
+                    <td>274.5</td>
+                    <td>ओडिशा और आंध्र प्रदेश</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>धामरा हल्दिया पाइपलाइन (डीएचपीएल)</td>
+                    <td>253</td>
+                    <td>1,125</td>
+                    <td>150</td>
+                    <td>103</td>
+                    <td>ओडिशा और पश्चिम बंगाल</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>गुरदासपुर-जम्मू पाइपलाइन</td>
+                    <td>153</td>
+                    <td>522</td>
+                    <td>0</td>
+                    <td>153</td>
+                    <td>पंजाब और केंद्र शासित प्रदेश जम्मू और कश्मीर</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>दहेज-उरन/दाभोल पनवेल पाइपलाइन का विस्तार</td>
+                    <td>105</td>
+                    <td>844</td>
+                    <td>0</td>
+                    <td>105</td>
+                    <td>महाराष्‍ट्र</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>विजयपुर-बीना पाइपलाइन</td>
+                    <td>114</td>
+                    <td>449</td>
+                    <td>0</td>
+                    <td>114</td>
+                    <td>मध्‍य प्रदेश</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>अट्टीबेले-बिदादी पाइपलाइन</td>
+                    <td>65</td>
+                    <td>652</td>
+                    <td>0</td>
+                    <td>65</td>
+                    <td>कर्नाटक, तमिलनाडु</td>
+                  </tr>
+                 
+                  <tr class="total-row">
+                    <td></td>
+                    <td><strong>कुल</strong></td>
+                    <td><strong>5,626</strong></td>
+                    <td><strong>29,716</strong></td>
+                    <td><strong>4,355.5</strong></td>
+                    <td><strong>1270.5</strong></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+
+              </table>
+              <span style="float: right;">दिनांक 29 जुलाई 2026 तक अद्यतन किया गया</span>
+              </br>
+              </br>
+
+            </div>
+          </div>
+
+          <div>
+            <h3 style="margin-top: 20px;">अन्‍य चालू परियोजनाएं :</h3>
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped">
+                <thead style="background:#0088d7; color:#fff;">
+                  <tr>
+                    <th>क्रम सं.</th>
+                    <th>कार्यान्‍वयनाधीन परियोजनाएं</th>
+                    <th>विवरण</th>
+                    <th>निवेश (करोड़ रुपये)</th>
+                    <th>कवर किए गए राज्य</th>
+
+                  </tr>
+
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>केजी बेसिन पीएच -3 में पाइपलाइन प्रतिस्थापन परियोजनाएं</td>
+                    <td>30 कि.मी. पाइपलाइन को बदलना</td>
+                    <td>133</td>
+                    <td>आंध्र प्रदेश</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>उरन-उसर लिक्विड प्रोपेन पाइपलाइन परियोजना</td>
+                    <td>12" X 44 कि.मी. पाइपलाइन</td>
+                    <td>309</td>
+                    <td>महाराष्‍ट्र</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>विजयपुर से पाता सी2/सी3 पाइपलाइन</td>
+                    <td>14" X 357 कि.मी.</td>
+                    <td>1,792</td>
+                    <td>उत्तर प्रदेश और मध्य प्रदेश</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>जामनगर-लोनी एलपीजी पाइपलाइन की क्षमता विस्तार</td>
+                    <td>18"/16"/8"/6” X 1150 कि.मी.</td>
+                    <td>5,364</td>
+                    <td>गुजरात, राजस्थान, हरियाणा, दिल्ली, उत्तर प्रदेश</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>कनेक्टिविटी परियोजना में टाई</td>
+                    <td>ओएनजीसी के सीबीएम फील्ड झरिया से जेएचबीडीपीएल नेटवर्क तक‍ कनेक्टिविटी स्‍थापित करना (लंबाई 6 किमी)</td>
+                    <td>31</td>
+                    <td>झारखंड</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>उपभोक्ता कनेक्टिविटी</td>
+                    <td>उपभोक्ताओं के लिए अंतिम छोर कनेक्टिविटी (11) और सीजीडी हुक-अप परियोजनाएं (30)</td>
+                    <td>1003</td>
+                    <td>पैन इंडिया आधार</td>
+                  </tr>
+                  <tr class="total-row">
+                    <td></td>
+                    <td><strong>कुल</strong></td>
+                    <td></td>
+                    <td><strong>8,632</strong></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+              </br>
+              <p>
+                गेल अपनी अत्याधुनिक प्राकृतिक गैस ट्रांसमिशन पाइपलाइन प्रणाली के माध्यम से प्राकृतिक गैस की आपूर्ति और परिवहन के महान उद्देश्य को पूरा करना जारी रखेगा और भारत में विकास और औद्योगीकरण में योगदान देगा। गेल राष्ट्रीय गैस ग्रिड के विकास में लगातार महत्वपूर्ण भूमिका निभा रही है और गेल के पाइपलाइन नेटवर्क के साथ स्थित संभावित ग्राहकों जैसे औद्योगिक, वाणिज्यिक, घरेलू आदि को पाइपलाइन कनेक्टिविटी प्रदान कर रही है।
+              </p>
+
+
+            </div>
+          </div>
+
+        </div>
+
+        </div>
+        
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="tools-section">
+  <div class="tools-container">
+    
+    <a href="https://gailebank.gail.co.in/goga/NewApplication/index.html" target="_blank">
+    
+      <img  src="img/pipes-illustration.png" alt="" class="tool-img lang-en">
+      <img  src="img/ngt_hindi_01.png" alt="" class="tool-img lang-hi">
+    </a>
+
+    <a href="https://gailebank.gail.co.in/gailmeterprover/home/home.html" target="_blank">
+     
+      <img src="img/meter-illustration.png" alt="" class="tool-img lang-en">
+        <img  src="img/ngt_hindi_04.png" alt="" class="tool-img lang-hi">
+    </a>
+
+   <a href="img/energy.png" target="_blank">
+    
+      <img src="img/energy-mix-illustration.png" alt="" class="tool-img lang-en">
+         <img  src="img/ngt_hindi_03.png" alt="" class="tool-img lang-hi">
+    </a>
+
+   <a href="pdf/Business_verticals/Operating_Code.pdf" target="_blank">
+    
+      <img src="img/code-book-illustration.png" alt="" class="tool-img lang-en">
+      <img  src="img/ngt_hindi_02.png" alt="" class="tool-img lang-hi">
+    </a>
+
+  </div>
+</section>
+
+   
+      <!-- Everything that should slide open/close -->
+
+      <div id="more-about-placeholder"></div>
+      <div id="footer-placeholder"></div>
+    
+     <script src="header.js"></script>
+     <script src="more-bv.js"></script>
+    <script src="footer.js"></script>
+
+    <script src="js/all.min.js"></script>
+
+    <script>
+      const carousel = document.getElementById('carouselGrid');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+
+if (carousel && nextBtn && prevBtn) {
+  function getScrollAmount() {
+    const card = document.querySelector('.info-card');
+    const cardWidth = card.offsetWidth;
+    const gap = 25;
+    return cardWidth + gap;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+  });
+
+  carousel.addEventListener('scroll', () => {
+    const scrollLeft = carousel.scrollLeft;
+    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+    prevBtn.style.opacity = scrollLeft <= 0 ? "0.3" : "1";
+    nextBtn.style.opacity = scrollLeft >= maxScroll ? "0.3" : "1";
+  });
+}
+     
+      const originalTransmissionHTML = document.getElementById('contentArea').innerHTML;
+      // 1. Store the content for each tab
+    const tabContent = {
+
+  
+  marketing: {
+    title: "Gas Marketing",
+    text: `
+      <p>Since inception in 1984, GAIL has been the undisputed leader in the marketing, transmission and distribution of Natural Gas in India. As India's leading Natural Gas Major, it has been instrumental in the development of the Natural Gas market in the country.</p><br />
+      <p>Currently, GAIL sells around 52% of natural gas sold in the country. Of this, 21% is to the power sector and 43% to the fertilizer sector approximately. Presently, GAIL is supplying around 42 MMSCMD of Natural Gas from domestic sources to customers across India. These customers range from the smallest of companies to mega power and fertilizer plants. GAIL has established a Gas Management System to handle multiple sources of supply and delivery of gas in co-mingled form and provide a seamless interface between shippers, customers, transporters and suppliers. We are present in 20 states, i.e., Andhra Pradesh, Assam, Bihar, Delhi, Goa, Gujarat, Haryana, Himachal Pradesh, Jharkhand, Karnataka, Kerala, Maharashtra, Madhya Pradesh, Punjab, Rajasthan, Tamil Nadu, Tripura, Uttar Pradesh Uttarakhand and West Bengal besides the Union Territories of Puducherry, Dadra & Nagar Haveli and Chandigarh. We are further extending our coverage to the state of Odisha through our upcoming pipelines.</p><br />
+      <p>GAIL is actively pursuing opportunities in inter-regional gas trade both in the form of pipeline gas and LNG.</p>`
+  },
+
+ lng: {
+    title: "Liquefied Natural Gas",
+    text: 
+    `<section>
+        <h3 style="margin-top: 20px;">Sourcing of LNG</h3>
+        <p>GAIL (India) Limited manages an LNG sourcing portfolio of approximately 16.57 MMTPA, the largest in India and among the top LNG marketing portfolios globally. The portfolio is built on a diversified mix of suppliers, contracts, price indexations, and delivery structures such as RLNG, DES, and FOB, ensuring affordability and supply reliability. Through flexible sourcing strategies, optimized shipping arrangements, and long-term contracts, GAIL effectively manages price volatility and strengthens the LNG supply chain. As India’s LNG demand is expected to grow significantly by 2030, GAIL will continue to play a pivotal role in driving LNG imports and enhancing the country’s energy security.</p>
+      </section>
+
+      <section>
+        <h3 style="margin-top: 20px;">Shipping of LNG</h3>
+        <p>GAIL (India) Limited optimizes LNG transportation through a balanced combination of long-term vessel charters, spot shipping arrangements, and flexible logistics strategies. The company leverages delivery flexibility under FOB and DES contracts, along with cargo swaps and destination optimization, to reduce freight costs and capture market opportunities. By dynamically aligning shipping schedules with regasification terminal availability, GAIL minimizes demurrage and ensures efficient cargo handling. This integrated shipping strategy enhances supply reliability and helps deliver competitively priced natural gas to consumers across India.</p>
+      </section>
+
+      <section>
+        <h3  style="margin-top: 20px;">International Operations</h3>
+        <p>GAIL (India) Limited has signed Master Sales and Purchase Agreements (MSPAs) with several major reputed International LNG Suppliers, Producers and Traders.</p>
+        <p>GAIL has been off-taking RLNG from Petronet LNG Limited (PLL) under its long-term SPA being supplied from Qatar and Australia. GAIL has also been successful in securing LNG under long term agreements from suppliers like Sabine Pass, Cove Point USA etc. For its LNG portfolio, GAIL has chartered several LNG vessels on spot and time charter basis. With growing gas demand in India, GAIL brings most of the US volumes to India through an optimal mix of own ship charters and structured optimization transactions like Destination Swap, etc.</p>
+        <p>In addition to the above GAIL’s wholly owned subsidiary, GAIL Global Singapore Pte Ltd (GGSPL), is operating in LNG trading business segment.</p>
+      </section>`,
+    links: `
+      <ul class="Lng_lnks" style="list-style: none; padding: 0; margin-top: 25px; border-top: 1px solid #eee; pt-20px;">
+        <li style="margin: 15px 0;">
+          <a href="pdf/others/List_of_Parties_having_MSPA_with_GAIL_(India)_Ltd_15102024.pdf" target="_blank" style="color: #020202; text-decoration: none; font-weight: bold;">
+            <i ></i> LIST OF PARTIES HAVING MSPA WITH GAIL
+          </a>
+        </li>
+        <li style="margin: 15px 0;">
+          <a href="pdf/others/Qualifying_criteria_signing_MSPA_with_GAIL_LNG_supply.pdf" target="_blank" style="color: #020202; text-decoration: none; font-weight: bold;">
+            <i ></i> QUALIFYING CRITERIA FOR SIGNING OF MSPA WITH PARTIES FOR SUPPLY/SOURCING OF LNG
+          </a>
+        </li>
+        <li style="margin: 15px 0;">
+          <a href="https://gailebank.gail.co.in/LNG_Bidding/frmLogin.aspx" target="_blank" style="color: #020202; text-decoration: none; font-weight: bold;">
+            <i ></i> LNG BIDDING PORTAL
+          </a>
+        </li>
+      </ul>
+    
+   <hr style="margin: 10px 0; border: 0; border-top: 1px solid #eee;">
+    <section>
+      <h3 style="margin-top: 20px;">Downstream LNG:</h3>
+        <p>As a versatile and reliable energy source, LNG powers industries, homes and transportation while supporting efforts toward cleaner and more sustainable energy solutions.</p>
+        <h4 style="margin-top: 20px;">GAIL’s role in LNG:</h4>
+          <p>As a leader in India’s natural gas sector, GAIL (India) Limited is at the forefront of expanding LNG infrastructure-from import terminals to transportation and city gas networks. Through LNG, GAIL is committed to fueling economic growth while supporting India’s clean energy goals.</p>
+          <p>Liquefied Natural Gas (LNG) is an efficient and eco-friendly fuel for trucks, offering 10–15% higher mileage than diesel,10–15% lower fuel costs, savings on Diesel Exhaust Fluid (DEF) due to spark-ignition engines that require no exhaust treatment, eliminating pilferage or theft as LNG is stored at –160°C, while also significantly **reducing emissions**.</p>
+      <h4 style="margin-top: 20px;">LNG Application: Mono vs Dual Fuel Conversion</h4>
+      <ul style="line-height: 1.6;">
+        <li><strong>Mono fuel application:</strong> Used in Heavy Duty Vehicles (HDV) including dumpers up to 55 tons (100% LNG).</li>
+        <li><strong>Dual fuel application:</strong> Used in dumper sizes above 55 tons.</li>
+        <li><strong>No engine modification</strong> is required in dual fuel application.</li>
+        <li style="margin-top: 10px;"><strong>In mono fuel application:</strong>
+          <ol style="margin-top: 10px; padding-left: 20px;">
+            <li><strong>Company-fitted vehicles:</strong> Purchasing directly from OEMs (Ashok Leyland, Blue Energy Motors, Tata Motors, Eicher, Volvo, etc.)</li>
+            <li><strong>Retro-fitted vehicles:</strong> Converting existing fleet to LNG through retro-fitment:
+              <ul style="list-style-type: '➤ '; margin-left: 20px; margin-top: 5px;">
+                <li>Replace old diesel engine with New/Recon Gas Engine for LNG usage</li>
+                <li>Modify old diesel engine for LNG usage</li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+      </ul>
+    </section>`
+} 
+};
+
+
+
+
+
+const tabLinks = document.querySelectorAll('.tab-link');
+const contentArea = document.getElementById('contentArea');
+
+tabLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // A. UI Updates
+    tabLinks.forEach(item => item.classList.remove('active'));
+    link.classList.add('active');
+
+    // B. Logic
+    const target = link.getAttribute('data-target');
+    contentArea.style.opacity = 0;
+
+    setTimeout(() => {
+      // If target is null/empty, it's the first tab (Transmission)
+      if (!target) { 
+        contentArea.innerHTML = originalTransmissionHTML;
+      } 
+      else {
+        const data = tabContent[target];
+        if (data) {
+            let html = `
+              <h3 class="content-title">${data.title}</h3>
+              <div class="content-text">${data.text}</div>
+            `;
+            if (data.links) {
+              html += `<div class="content-links">${data.links}</div>`;
+            }
+            contentArea.innerHTML = html;
+        }
+      }
+      
+      contentArea.style.opacity = 1;
+      
+      // Reset scroll position to top of the content area
+      const scrollArea = document.querySelector('.content-scroll-area');
+      if(scrollArea) scrollArea.scrollTop = 0;
+      
+    }, 200);
+  });
+});
+
+/*counter api*/
+
+
+          async function initCounter() {
+
+              const count = document.getElementById("countValue");
+              const count1 = document.getElementById("countValue1");
+              const lang = localStorage.getItem("lang") || "hi";
+
+              const myHeaders = new Headers();
+              myHeaders.append("Content-Type", "application/json");
+
+              // Your specific raw data
+              const raw = JSON.stringify("https://gailonline.com/Natural_Gas.html");
+
+              const requestOptions = {
+                  method: "POST",
+                  headers: myHeaders,
+                  body: raw
+              };
+
+              fetch("https://gailebank.gail.co.in/hitcounterapi/api/hit/increment", requestOptions)
+                  .then((response) => {
+                      if (!response.ok) {
+                          throw new Error(`HTTP error! Status: ${response.status}`);
+                      }
+                      return response.text();
+                  })
+                  .then((result) => {
+                      return JSON.parse(result)
+                  }).then((result) => {
+              // (count.textContent = `` + result.count),
+  //             {count.textContent =
+  // (lang === "hi" ? "आज के पेज विज़िट: " : "Today's Page Visits: ") +
+  // result.count},
+if (count) {
+        count.textContent = `Today's Page Visits: ${result.count}`;
+      }
+
+      if (count1) {
+        count1.textContent = `आज के कुल आगंतुक: ${result.count}`;
+      }
+    })
+                  .catch((error) => {
+                      count.textContent = `Today’s Page Visits: Unable to fetch`
+                  })
+                  .finally(() => {
+
+                  });
+
+          }
+          document.addEventListener('DOMContentLoaded', initCounter);
+    </script>
+
+    <script>
+      // Store default content
+const originalProfileHTML =
+    document.getElementById('profileContentArea').innerHTML;
+
+
+// New Tab Data
+const profileTabData = {
+
+    projects: {
+        title: "गैस विपणन",
+        text: `
+            <p>1984 में स्थापना के बाद से, गेल भारत में प्राकृतिक गैस के विपणन, संचरण और वितरण के क्षेत्र में निर्विवाद अग्रणी रहा है। भारत की प्रमुख प्राकृतिक गैस कंपनी के रूप में, इसने देश में प्राकृतिक गैस बाजार के विकास में महत्वपूर्ण भूमिका निभाई है।</p><br>
+            <p>वर्तमान में, गेल देश में बेची जाने वाली कुल प्राकृतिक गैस का लगभग 52% विक्रय करता है। इसमें से लगभग 21% बिजली क्षेत्र को और 43% उर्वरक क्षेत्र को आपूर्ति की जाती है। वर्तमान समय में, GAIL घरेलू स्रोतों से पूरे भारत में ग्राहकों को लगभग 42 MMSCMD प्राकृतिक गैस की आपूर्ति कर रहा है। इसके ग्राहक छोटे उद्यमों से लेकर बड़े बिजली संयंत्रों और उर्वरक कारखानों तक फैले हुए हैं। GAIL ने विभिन्न आपूर्ति स्रोतों से गैस की प्राप्ति और मिश्रित (co-mingled) रूप में वितरण को संभालने के लिए एक गैस प्रबंधन प्रणाली (Gas Management System) स्थापित की है, जो शिपर्स, ग्राहकों, परिवहनकर्ताओं और आपूर्तिकर्ताओं के बीच एक सुचारु समन्वय सुनिश्चित करती है। गेल की उपस्थिति 20 राज्यों—आंध्र प्रदेश, असम, बिहार, दिल्ली, गोवा, गुजरात, हरियाणा, हिमाचल प्रदेश, झारखंड, कर्नाटक, केरल, महाराष्ट्र, मध्य प्रदेश, पंजाब, राजस्थान, तमिलनाडु, त्रिपुरा, उत्तर प्रदेश, उत्तराखंड और पश्चिम बंगाल—में है, इसके अतिरिक्त केंद्र शासित प्रदेशों—पुडुचेरी, दादरा एवं नगर हवेली और चंडीगढ़—में भी है। इसके अलावा, गेल अपनी आगामी पाइपलाइनों के माध्यम से ओडिशा राज्य में भी अपनी सेवाओं का विस्तार कर रहा है।</p><br>
+            <p>गेल पाइपलाइन गैस और एलएनजी दोनों रूपों में अंतर क्षेत्रीय गैस व्यापार के अवसरों का सक्रिय रूप से अनुसरण कर रहा है।</p>
+            
+        `
+    },
+
+    contact: {
+        title: "Contact",
+        text: `
+            <p>Email: example@test.com</p>
+            <p>Phone: +91 XXXXX XXXXX</p>
+        `
+    }
+
+};
+
+
+// Elements
+const profileTabLinks =
+    document.querySelectorAll('.profile-tab-link');
+
+const profileContentArea =
+    document.getElementById('profileContentArea');
+
+
+// Events
+profileTabLinks.forEach(link => {
+
+    link.addEventListener('click', () => {
+
+        profileTabLinks.forEach(item =>
+            item.classList.remove('active')
+        );
+
+        link.classList.add('active');
+
+        const target = link.getAttribute('data-target');
+
+        profileContentArea.style.opacity = 0;
+
+        setTimeout(() => {
+
+            if (target === 'overview') {
+
+                profileContentArea.innerHTML =
+                    originalProfileHTML;
+
+            } else {
+
+                const data = profileTabData[target];
+
+                if (data) {
+
+                    profileContentArea.innerHTML = `
+                        <h3 class="content-title">
+                            ${data.title}
+                        </h3>
+
+                        <div class="content-text">
+                            ${data.text}
+                        </div>
+                    `;
+                }
+            }
+
+            profileContentArea.style.opacity = 1;
+            profileContentArea.scrollTop = 0;
+
+        }, 200);
+
+    });
+
+});
+    </script>
+
+  </body>
+</html>

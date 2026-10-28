@@ -25,6 +25,15 @@ class ThemesTest(unittest.TestCase):
             file.write_text(json.dumps({'family':'example','members':[member,member]}))
             with self.assertRaisesRegex(ValueError,'Duplicate family identity'):load_family_members(root)
 
+    def test_publication_allowlist_excludes_drafts_and_requires_enabled_files(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);folder=root/'theme-research';folder.mkdir()
+            for family in ('live','draft'):
+                (folder/(family+'.json')).write_text(json.dumps({'family':family,'members':[]}))
+            self.assertEqual(set(load_family_members(root,{'live'})),{'live'})
+            self.assertEqual(load_family_members(root,set()),{})
+            with self.assertRaisesRegex(ValueError,'Missing enabled family manifest'):load_family_members(root,{'missing'})
+
     def test_membership_evidence_and_quote_identity(self):
         themes=json.loads((HERE/'themes.json').read_text(encoding='utf-8'))
         prices=json.loads((HERE.parent/'nifty-automation/data/stocks/latest.json').read_text())['prices']

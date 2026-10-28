@@ -178,7 +178,8 @@
         ],
         "membership_status": "Initial examples available",
         "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
-        "public_example": "AI & Data Center Theme"
+        "public_example": "AI & Data Center Theme",
+        "company_data_ready": false
       },
       {
         "id": "defence",
@@ -201,7 +202,8 @@
         ],
         "membership_status": "5 researched company examples",
         "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
-        "public_example": "Defence Stars Theme"
+        "public_example": "Defence Stars Theme",
+        "company_data_ready": true
       },
       {
         "id": "railways",
@@ -224,7 +226,8 @@
         ],
         "membership_status": "5 researched company examples",
         "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
-        "public_example": "Railways & Defence Tracker"
+        "public_example": "Railways & Defence Tracker",
+        "company_data_ready": true
       },
       {
         "id": "cleanenergy",
@@ -247,7 +250,8 @@
         ],
         "membership_status": "5 researched company examples",
         "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
-        "public_example": "Green Energy Theme"
+        "public_example": "Green Energy Theme",
+        "company_data_ready": true
       },
       {
         "id": "manufacturing",
@@ -270,7 +274,8 @@
         ],
         "membership_status": "5 researched company examples",
         "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
-        "public_example": "Electronics Manufacturing Sector Tracker"
+        "public_example": "Electronics Manufacturing Sector Tracker",
+        "company_data_ready": true
       },
       {
         "id": "capitalmarkets",
@@ -291,7 +296,8 @@
         ],
         "membership_status": "5 researched company examples",
         "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
-        "public_example": "Capital Markets Theme"
+        "public_example": "Capital Markets Theme",
+        "company_data_ready": true
       },
       {
         "id": "fintech",
@@ -313,7 +319,8 @@
         ],
         "membership_status": "5 researched company examples",
         "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
-        "public_example": "Omni FinTech, Digital Banking & Payments."
+        "public_example": "Omni FinTech, Digital Banking & Payments.",
+        "company_data_ready": true
       },
       {
         "id": "consumption",
@@ -337,7 +344,8 @@
         ],
         "membership_status": "5 researched company examples",
         "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
-        "public_example": "Niveshaay Consumer Trends Portfolio Theme"
+        "public_example": "Niveshaay Consumer Trends Portfolio Theme",
+        "company_data_ready": true
       },
       {
         "id": "housing",
@@ -358,9 +366,10 @@
           "Nifty Core Housing",
           "Nifty Housing Finance"
         ],
-        "membership_status": "Company mapping pending",
+        "membership_status": "5 researched company examples",
         "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
-        "public_example": "Real Estate Stars Tracker"
+        "public_example": "Real Estate Stars Tracker",
+        "company_data_ready": true
       },
       {
         "id": "oilgas",
@@ -381,7 +390,8 @@
         ],
         "membership_status": "Company mapping pending",
         "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
-        "public_example": "GVSR - Oil & Gas Sector Tracker-Value Buys"
+        "public_example": "GVSR - Oil & Gas Sector Tracker-Value Buys",
+        "company_data_ready": false
       },
       {
         "id": "minerals",
@@ -403,7 +413,8 @@
         ],
         "membership_status": "Company mapping pending",
         "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
-        "public_example": "Arth Strategic Minerals Theme"
+        "public_example": "Arth Strategic Minerals Theme",
+        "company_data_ready": false
       },
       {
         "id": "mobility",
@@ -425,7 +436,8 @@
         ],
         "membership_status": "Company mapping pending",
         "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
-        "public_example": "Auto Ancillaries Theme"
+        "public_example": "Auto Ancillaries Theme",
+        "company_data_ready": false
       },
       {
         "id": "healthcare",
@@ -448,7 +460,8 @@
         ],
         "membership_status": "Company mapping pending",
         "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
-        "public_example": "Pharma Stars Tracker"
+        "public_example": "Pharma Stars Tracker",
+        "company_data_ready": false
       }
     ]
   }
