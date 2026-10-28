@@ -458,10 +458,10 @@
           "Nifty Hospitals",
           "Nifty Pharma"
         ],
-        "membership_status": "Company mapping pending",
+        "membership_status": "5 researched company examples",
         "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
         "public_example": "Pharma Stars Tracker",
-        "company_data_ready": false
+        "company_data_ready": true
       }
     ]
   }
