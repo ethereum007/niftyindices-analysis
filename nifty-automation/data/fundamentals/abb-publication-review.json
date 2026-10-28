@@ -1,0 +1,20 @@
+{
+  "symbol": "ABB",
+  "isin": "INE117A01022",
+  "reviewed_on": "2026-10-29",
+  "status": "reviewed_with_field_restrictions",
+  "source_hashes": [
+    {
+      "sha256": "05a031deee35cdbf52aa024e7ff417551886f107d2c66beb85aa73c7abeabfdf",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_181263_31072026182229_iXBRL_WEB.html",
+      "filing_date": "2026-07-31"
+    },
+    {
+      "sha256": "07b86d4f7bc77d910e5e7f5cb9418d3874e716993638c6b4334b8da22040f96d",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_156345_08052026180714_iXBRL_WEB.html",
+      "filing_date": "2026-05-08"
+    }
+  ],
+  "blocked_fields": [],
+  "note": "Calendar financial year starts 1 January: June 2026 is Q2. Operations revenue covers continuing business; total PAT also includes discontinued operations. June continuing PAT of 370.07 crore plus a discontinued loss of 7.77 crore equals total PAT of 362.30 crore. March continuing PAT of 341.91 crore plus discontinued PAT of 1441.74 crore equals total PAT of 1783.65 crore, including the Robotics business disposal impact. These are reported earnings; no normalisation is applied. Quarterly sales and total PAT reconcile to calendar-year YTD differences. Missing prior-year originals and remaining quarters keep YoY and TTM unavailable."
+}

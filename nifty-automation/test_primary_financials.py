@@ -171,6 +171,17 @@ class PrimaryFinancialTest(unittest.TestCase):
             facts.append(parse(raw,source['filing_date'],'ABB'))
         june=next(f for f in facts if f['period_end']=='2026-06-30')
         self.assertEqual(june['financial_year_start'],'2026-01-01')
+        from bs4 import BeautifulSoup
+        for source in data['sources']:
+            soup=BeautifulSoup((ROOT/'raw'/(source['sha256']+'.html')).read_bytes(),'html.parser')
+            components={}
+            for row in soup.find_all('tr'):
+                cells=[c.get_text(' ',strip=True) for c in row.find_all(['td','th'],recursive=False)]
+                if len(cells)>=4 and cells[0] in ('11','14','16'):
+                    components[cells[0]]=number(cells[2])
+            self.assertEqual(components['11']+components['14'],components['16'])
+            if source['filing_date']=='2026-07-31':self.assertEqual(components['14']/100,Decimal('-7.77'))
+            else:self.assertEqual(components['14']/100,Decimal('1441.74'))
         self.assertEqual(june['revenue_operations_crore'],'3558.87')
         self.assertEqual(june['pat_total_period_crore'],'362.30')
         self.assertNotEqual(june['revenue_operations_crore'],june['ytd_revenue_operations_crore'])
