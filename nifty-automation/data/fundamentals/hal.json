@@ -1,0 +1,55 @@
+{
+  "symbol": "HAL",
+  "publication_ready": false,
+  "sources": [
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_185601_12082026141946_iXBRL_WEB.html",
+      "filing_date": "2026-08-12",
+      "retrieved_utc": "2026-10-28T06:53:15.208627+00:00",
+      "sha256": "1dce3f7364384c2b905ca0bcc74af0fd686ce9d25ab26e91a82f6fd4b583a407",
+      "fact": {
+        "symbol": "HAL",
+        "isin": "INE066F01020",
+        "period_start": "2026-04-01",
+        "period_end": "2026-06-30",
+        "filing_date": "2026-08-12",
+        "scope": "Consolidated",
+        "audit_status": "Audited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "5515.17",
+        "pat_total_period_crore": "1589.66",
+        "ytd_revenue_operations_crore": "5515.17",
+        "ytd_pat_total_period_crore": "1589.66",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_157527_14052026170430_iXBRL_WEB.html",
+      "filing_date": "2026-05-14",
+      "retrieved_utc": "2026-10-28T06:53:15.467270+00:00",
+      "sha256": "bd72c3c000fd720f84c9418634a33a5e0f394736887467fec583d026ab8b1dcb",
+      "fact": {
+        "symbol": "HAL",
+        "isin": "INE066F01020",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_date": "2026-05-14",
+        "scope": "Consolidated",
+        "audit_status": "Audited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "13942.40",
+        "pat_total_period_crore": "4196.04",
+        "ytd_revenue_operations_crore": "33088.82",
+        "ytd_pat_total_period_crore": "9115.52",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    }
+  ],
+  "note": "Additional primary-filing pilot; review and remaining quarters/comparatives required."
+}

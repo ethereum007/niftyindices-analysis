@@ -7,6 +7,21 @@ class PrimaryFinancialTest(unittest.TestCase):
         self.facts=[r['fact'] for r in self.data['sources']]
         self.source=next(r for r in self.data['sources'] if r['filing_date']=='2026-10-27')
         self.raw=(ROOT/'raw'/(self.source['sha256']+'.html')).read_bytes()
+    def test_additional_company_requires_explicit_matching_identity(self):
+        data=json.loads((ROOT/'hal.json').read_text(encoding='utf-8'))
+        self.assertFalse(data['publication_ready'])
+        source=data['sources'][0];raw=(ROOT/'raw'/(source['sha256']+'.html')).read_bytes()
+        with self.assertRaisesRegex(ValueError,'Wrong company'):parse(raw,source['filing_date'])
+        fact=parse(raw,source['filing_date'],'HAL')
+        self.assertEqual(fact['symbol'],'HAL')
+        self.assertEqual(fact['isin'],'INE066F01020')
+        self.assertEqual(fact['revenue_operations_crore'],'5515.17')
+        self.assertEqual(fact['pat_total_period_crore'],'1589.66')
+        self.assertEqual(fact['audit_status'],'Audited')
+        self.assertEqual(fact['ytd_revenue_operations_crore'],fact['revenue_operations_crore'])
+        for r in data['sources']:
+            self.assertEqual(hashlib.sha256((ROOT/'raw'/(r['sha256']+'.html')).read_bytes()).hexdigest(),r['sha256'])
+
     def test_exact_quarter_sales_pat_scope_and_unit(self):
         f=parse(self.raw,'2026-10-27')
         self.assertEqual(f['period_start'],'2026-07-01')

@@ -87,5 +87,18 @@
       "reason": "Reported quarter does not reconcile to annual/YTD minus previously filed YTD; comparative restatement/balancing explanation pending."
     }
   ],
-  "note": "Consolidated INR crore. PAT means total profit/loss for period including equity-accounted associates/JVs, not necessarily parent-attributable PAT. Source quarter/YTD reconciliations reviewed; conflicting field withheld, never overwritten."
+  "note": "Consolidated INR crore. PAT means total profit/loss for period including equity-accounted associates/JVs, not necessarily parent-attributable PAT. Source quarter/YTD reconciliations reviewed; conflicting field withheld, never overwritten.",
+  "supplementary_evidence": [
+    {
+      "source_url": "https://mazagondock.in/images/pdf/SE_Disclosure_Outcome_of_BM_30Apr2026.pdf",
+      "sha256": "0abf2af56c84689e7a7d71a31c408ce7e025304ff2cab004b839d40dd8872a68",
+      "extension": "pdf",
+      "note": "Audited consolidated result reproduces the stated figures and auditor balancing-quarter wording; mismatch to previously filed nine-month PAT remains unresolved.",
+      "relevant_pages": [
+        3,
+        9,
+        15
+      ]
+    }
+  ]
 }
