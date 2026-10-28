@@ -43,6 +43,22 @@
       "action_sha256": "3de17c7390dcc42465296f5ffa559fca3644a7946872ccc35e20a2cf4d88e277",
       "identity_evidence": [],
       "note": "NSE reported-action ISIN matches the current official constituent identity; all reported cash dividends and vendor adjustment-factor steps checked."
+    },
+    {
+      "symbol": "BEL",
+      "isin": "INE263A01024",
+      "status": "reviewed_vendor_methodology",
+      "reviewed_on": "2026-10-28",
+      "history_sha256": "ed47d9d8f7fc99ce67123e181feb3342b4baffe9d1309ba3c16e710e7e405b56",
+      "action_sha256": "e75c4f16526514eaf95dc64ee6f81040f9362cd590de721e96cb1e90a251e7cf",
+      "identity_evidence": [
+        {
+          "sha256": "55f46a70a1b5fee17a784a1e201f96c52d4831223b20545b342043237b6632d3",
+          "extension": "pdf",
+          "source_url": "https://www.msei.in/SX-Content/Circulars/2017/March/Circular-4994.pdf"
+        }
+      ],
+      "note": "Primary MSE circular links legacy ISIN INE263A01016 to current INE263A01024. Record date 17 March 2017 and trade ex-date 16 March 2017 are distinct and precede the downloaded window. Within-window 2022 bonus 2:1 is a 3x share multiplier; reported cash dividends, vendor factor steps and official current quote reconcile. Vendor prices already account for splits; no duplicate adjustment. Not an action-completeness certificate or custom theme return."
     }
   ],
   "pending_symbols": {
