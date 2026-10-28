@@ -13,6 +13,21 @@ class IssuerPdfTests(unittest.TestCase):
         for key in ('symbol','isin','period_start','period_end','filing_date','scope','revenue_operations_crore','pat_total_period_crore','statement_page'):self.assertEqual(fact[key],reviewed[key])
         self.assertNotEqual(fact['pat_total_period_crore'],'24.97')
         self.assertEqual(fact['ytd_revenue_operations_crore'],fact['revenue_operations_crore'])
+    def test_kaynes_visual_research_preserves_million_scale_and_pat_bridge(self):
+        from decimal import Decimal
+        import hashlib
+        data=json.loads((ROOT/'kaynes-primary-research.json').read_text(encoding='utf-8'))
+        self.assertFalse(data['publication_ready'])
+        fact=data['visual_review']
+        self.assertEqual(fact['statement_page'],8)
+        self.assertEqual(Decimal(fact['revenue_operations_million'])/10,Decimal(fact['revenue_operations_crore']))
+        self.assertEqual(Decimal(fact['pat_total_period_million'])/10,Decimal(fact['pat_total_period_crore']))
+        self.assertEqual(Decimal(fact['pbt_million'])-Decimal(fact['current_tax_million'])-Decimal(fact['deferred_tax_million']),Decimal(fact['pat_total_period_million']))
+        self.assertEqual(Decimal(fact['revenue_operations_million'])+Decimal(fact['other_income_million']),Decimal(fact['total_income_million']))
+        self.assertNotEqual(fact['pat_total_period_million'],fact['comprehensive_income_million'])
+        for source in data['sources']:
+            self.assertEqual(hashlib.sha256((ROOT/'raw'/(source['sha256']+'.pdf')).read_bytes()).hexdigest(),source['sha256'])
+
     def test_wrong_company_date_format_and_other_issuer_rejected(self):
         for raw,dt,symbol in [(self.raw,'2026-08-07','BEL'),(self.raw,'2026-08-08','DYNAMATECH'),(b'<html>','2026-08-07','DYNAMATECH')]:
             with self.assertRaises(ValueError):parse_dynamatic_june2026(raw,dt,symbol)

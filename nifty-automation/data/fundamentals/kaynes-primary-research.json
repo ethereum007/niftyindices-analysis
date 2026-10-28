@@ -63,5 +63,31 @@
       "review_note": "Actual cover date7Aug2026 overrides misleading13May filename. Corrects current/noncurrent provision classification and OCI line classifications; total liabilities unchanged and page3 says no other corrections. Do not treat OCI changes as quarterly PAT changes."
     }
   ],
-  "note": "Primary issuer financial sources; current/annual accounting scope, page columns, units and reclassification notes require review before canonical ingestion. No quarterly figures or growth published from these files yet."
+  "note": "Primary issuer financial sources; current/annual accounting scope, page columns, units and reclassification notes require review before canonical ingestion. No quarterly figures or growth published from these files yet.",
+  "visual_review": {
+    "reviewed_on": "2026-10-29",
+    "statement_page": 8,
+    "notes_page": 9,
+    "scope": "Consolidated",
+    "source_unit": "INR million",
+    "display_unit": "INR crore",
+    "filing_date": "2026-08-07",
+    "period_start": "2026-04-01",
+    "period_end": "2026-06-30",
+    "revenue_operations_million": "9460.17",
+    "other_income_million": "144.31",
+    "total_income_million": "9604.48",
+    "pbt_million": "878.76",
+    "current_tax_million": "321.36",
+    "deferred_tax_million": "-6.86",
+    "pat_total_period_million": "564.26",
+    "comprehensive_income_million": "525.39",
+    "revenue_operations_crore": "946.017",
+    "pat_total_period_crore": "56.426",
+    "comparison_columns": {
+      "prior_june2025_revenue_million": "6734.66",
+      "prior_june2025_pat_million": "746.12"
+    },
+    "method": "Manual visual research transcription of archived primary PDF. Defective text layer; not automatically parsed. Prior-year current-filing comparatives are not yet independently verified against original prior filings. No publication or YoY inferred."
+  }
 }
