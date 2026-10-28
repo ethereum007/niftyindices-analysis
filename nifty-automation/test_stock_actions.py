@@ -1,0 +1,35 @@
+import unittest,json,hashlib
+from review_stock_actions import normalize,compare,adjustment_steps,ROOT
+class ActionReviewTest(unittest.TestCase):
+    def row(self,subject):return {'symbol':'BEL','series':'EQ','subject':subject,'exDate':'15-Sep-2022'}
+    def test_bonus_is_threefold_and_prior_dividend_uses_postbonus_units(self):
+        events,ignored,unknown=normalize([self.row('Bonus 2:1')],'BEL')
+        self.assertEqual(events[0]['share_multiplier'],3)
+        events.insert(0,{'date':'2022-08-08','type':'dividend','cash_per_share':1.5})
+        vendor={'splits':{'1663200000':{'numerator':3,'denominator':1}},'dividends':{'1659916800':{'amount':0.5}}}
+        result=compare(events,vendor)
+        self.assertTrue(all(r['matched'] for r in result['comparisons']))
+        self.assertEqual(result['comparisons'][0]['expected_vendor_value'],0.5)
+    def test_unknown_reorganisation_and_wrong_identity_do_not_silently_pass(self):
+        events,ignored,unknown=normalize([self.row('Rights 1:5'),self.row('Annual General Meeting')],'BEL')
+        self.assertEqual(len(unknown),1);self.assertEqual(len(ignored),1);self.assertEqual(events,[])
+        with self.assertRaises(ValueError):normalize([self.row('Bonus 2:1')],'HAL')
+        result=compare([],{'splits':{'1663200000':{'numerator':3,'denominator':1}}})
+        self.assertEqual(result['unmatched_vendor_split_dates'],['2022-09-15'])
+    def test_dividend_adjustment_step_flags_unadjusted_series(self):
+        rows=[{'date':'2022-08-05','vendor_close':100,'adjusted_close':99},{'date':'2022-08-08','vendor_close':99,'adjusted_close':99}]
+        vendor={'dividends':{'1659916800':{'amount':1}}}
+        self.assertTrue(adjustment_steps(rows,vendor)[0]['matched'])
+        rows[0]['adjusted_close']=100
+        self.assertFalse(adjustment_steps(rows,vendor)[0]['matched'])
+    def test_archives_and_review_gate_remain_intact(self):
+        data=json.loads((ROOT/'defence-action-review.json').read_text(encoding='utf-8'))
+        self.assertFalse(data['publication_ready'])
+        for r in data['members']:
+            self.assertFalse(r['publication_ready'])
+            self.assertEqual(hashlib.sha256((ROOT/'raw'/(r['sha256']+'.json')).read_bytes()).hexdigest(),r['sha256'])
+            if r['symbol']=='IDEAFORGE':self.assertFalse(r['all_reported_events_match'])
+            else:
+                self.assertTrue(r['all_reported_events_match'])
+                self.assertTrue(all(c['matched'] for c in r['dividend_factor_steps']))
+if __name__=='__main__':unittest.main()
