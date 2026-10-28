@@ -9,6 +9,23 @@ from pathlib import Path
 ROOT=Path(__file__).parent/'data/theme-research'
 
 class ThemeEvidenceTest(unittest.TestCase):
+    def test_minerals_roles_do_not_imply_pureplay_or_operating_refineries(self):
+        data=json.loads((ROOT/'minerals.json').read_text(encoding='utf-8'))
+        self.assertEqual(len({r['subtheme'] for r in data['members']}),5)
+        self.assertIn('not a pure-play',data['comparison_note'])
+        prices=json.loads((ROOT.parent/'stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        for r in data['members']:
+            self.assertEqual(prices[r['isin']]['symbol'],r['symbol'])
+            self.assertIsNone(r['effective_date'])
+            if r.get('sha256'):
+                raw=(ROOT/'raw'/(r['sha256']+'.'+r.get('raw_extension','html'))).read_bytes()
+                self.assertEqual(hashlib.sha256(raw).hexdigest(),r['sha256'])
+            if r['status']=='evidence_archived':self.assertTrue(all(r['keyword_checks'].values()))
+            else:self.assertTrue(r.get('error') or r.get('keyword_checks'))
+            if r['symbol']=='HINDCOPPER':self.assertIn('suspended since 2019',r['rationale'])
+            if r['symbol']=='GRAPHITE':self.assertIn('not classified as natural graphite mining',r['rationale'])
+            if r['symbol']=='BEML':self.assertIn('not classified as a mineral-reserve owner',r['rationale'])
+
     def test_oilgas_distinct_roles_and_corporate_identity(self):
         manifest=json.loads((ROOT/'oilgas.json').read_text(encoding='utf-8'))
         self.assertEqual(len({r['subtheme'] for r in manifest['members']}),5)

@@ -1,0 +1,126 @@
+{
+  "family": "minerals",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-28",
+  "note": "Five independently researched proposed roles, not exhaustive membership, statutory critical-mineral classification or quantified revenue exposure. Source keywords only check archived evidence; no weights or historical membership inferred.",
+  "comparison_note": "Producers, processors, synthetic-material makers, recyclers and equipment suppliers have different economics. This is not a pure-play critical-minerals basket or homogeneous valuation peer group.",
+  "members": [
+    {
+      "symbol": "HINDCOPPER",
+      "subtheme": "Critical mineral producers",
+      "source_url": "https://hindustancopper.com/Page/CompanyProfile",
+      "rationale": "Copper exploration, mining and beneficiation establish producer exposure. The corporate profile says smelting/refining at Jhagadia and Ghatsila has been suspended since 2019; historical integrated facilities are not treated as currently operating refining capacity. No reserve value or critical-mineral-only revenue share is inferred.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Hindustan Copper Ltd.",
+      "isin": "INE531E01026",
+      "resolved_url": "https://hindustancopper.com/Page/CompanyProfile",
+      "sha256": "500a3fc7f8940f631f9bce0517652c7de6c2c08866624a2b0c385400566682fd",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T02:01:21.391530+00:00",
+      "keyword_checks": {
+        "copper": true,
+        "suspended": true,
+        "2019": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "GRAPHITE",
+      "subtheme": "Specialty materials",
+      "source_url": "https://www.graphiteindia.com/investors/documents/654e043d76c71REVISED_EP_30092023.pdf",
+      "rationale": "The 2023 corporate disclosure establishes graphite electrode capability for electric-arc steelmaking. Synthetic electrodes are not classified as natural graphite mining or proven battery-anode sales; historical capability does not establish current product mix.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Graphite India Ltd.",
+      "isin": "INE371A01025",
+      "resolved_url": "https://www.graphiteindia.com/investors/documents/654e043d76c71REVISED_EP_30092023.pdf",
+      "sha256": "b65a1d90619fa64862e094ac6b80debea136b0228933e56443136a8828bc236e",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-28T02:01:24.709129+00:00",
+      "evidence_pages": [
+        5,
+        8,
+        15
+      ],
+      "keyword_checks": {
+        "graphite electrodes": true,
+        "electric arc": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "NATIONALUM",
+      "subtheme": "Processing & refining",
+      "source_url": "https://www.dpe.gov.in/static/uploads/2025/08/5b8897f2dffacc1c0c807c4468585237.pdf",
+      "rationale": "A historical government DPE company profile documents bauxite mining, alumina refining and aluminium smelting as an integrated processing chain; this older capability source does not establish present output. Aluminium exposure is not a lithium or rare-earth production claim, and no current capacity utilisation or commodity-price forecast is inferred.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "National Aluminium Co. Ltd.",
+      "isin": "INE139A01034",
+      "resolved_url": "https://www.dpe.gov.in/static/uploads/2025/08/5b8897f2dffacc1c0c807c4468585237.pdf",
+      "sha256": "d986b01c83cf7c55677194ccff62f67fda706d4438797eea4d4c07c199206f23",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-28T02:01:22.071614+00:00",
+      "evidence_pages": [
+        39
+      ],
+      "keyword_checks": {
+        "bauxite": true,
+        "alumina": true,
+        "smelter": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "GRAVITA",
+      "subtheme": "Recycling",
+      "source_url": "https://www.gravitaindia.com/about-us",
+      "rationale": "Lead battery, aluminium, plastic and tyre recycling establish secondary-material processing exposure. Recycling is not ownership of virgin mineral reserves; emerging battery-material activity is not assigned a quantified revenue share.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Gravita India Ltd.",
+      "isin": "INE024L01027",
+      "resolved_url": "https://www.gravitaindia.com/about-us",
+      "sha256": "5e150172c166a55997bf7e69d44da0b36a04260b0a138bb5c3369e4f87deaf00",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T02:01:22.898054+00:00",
+      "keyword_checks": {
+        "lead": true,
+        "aluminium": true,
+        "recycling": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "BEML",
+      "subtheme": "Mining equipment",
+      "source_url": "https://www.bemlindia.in/mining-construction/",
+      "rationale": "Mining machinery such as excavators and dump trucks establishes equipment-supplier exposure. BEML is not classified as a mineral-reserve owner or mining pure play; rail and defence activities remain distinct.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "BEML Ltd.",
+      "isin": "INE258A01024",
+      "resolved_url": "https://www.bemlindia.in/mining-construction/",
+      "sha256": "087816fe38421b1ad6fa846d87c03095a015a9beab4200fdf189a8e36cb04c17",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T02:01:27.360938+00:00",
+      "keyword_checks": {
+        "mining": true,
+        "excavators": true,
+        "dump trucks": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}
