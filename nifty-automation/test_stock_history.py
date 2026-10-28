@@ -78,6 +78,21 @@ class AdjustedHistoryTest(unittest.TestCase):
         self.assertEqual(dixon['old_isin'],'INE935N01012')
         self.assertEqual(dixon['current_isin'],'INE935N01020')
 
+    def test_kaynes_primary_listing_boundary_and_missing_five_year_history(self):
+        data=json.loads((ROOT/'manufacturing.json').read_text(encoding='utf-8'))
+        member=next(m for m in data['members'] if m['symbol']=='KAYNES')
+        evidence=json.loads((ROOT/'kaynes-listing-research.json').read_text(encoding='utf-8'))
+        raw=(ROOT/'raw'/(evidence['sha256']+'.pdf')).read_bytes()
+        self.assertEqual(hashlib.sha256(raw).hexdigest(),evidence['sha256'])
+        self.assertFalse(evidence['publication_ready'])
+        self.assertEqual(evidence['current_isin'],member['isin'])
+        rows,_=decode(json.loads((ROOT/'raw'/(member['sha256']+'.json')).read_text()),'KAYNES')
+        self.assertEqual(rows[0]['date'],evidence['listing_date'])
+        result=horizons(rows,date(2026,10,27))['periods']
+        self.assertEqual(result['5y']['status'],'insufficient_history')
+        self.assertIsNotNone(result['3y']['cumulative_pct'])
+        self.assertTrue(any(h['page']==93 and h['term']=='not declared any dividend' for h in evidence['hits']))
+
     def test_archived_defence_data_keeps_review_gate_and_quote_reconciliation(self):
         data=json.loads((ROOT/'defence.json').read_text(encoding='utf-8'))
         self.assertFalse(data['publication_ready']);self.assertEqual(len(data['members']),5)

@@ -1,0 +1,33 @@
+{
+  "symbol": "KAYNES",
+  "publication_ready": false,
+  "source_url": "https://nsearchives.nseindia.com/content/equities/PD_KAYNES_110725.pdf",
+  "sha256": "7926bc34c3285a6a226e0b63e1c0c9348f88e900a62bf660be9594d28b201ade",
+  "retrieved_utc": "2026-10-28T20:40:40.809329+00:00",
+  "pages": 455,
+  "listing_date": "2022-11-22",
+  "current_isin": "INE918Z01012",
+  "hits": [
+    {
+      "page": 41,
+      "term": "INE918Z01012",
+      "excerpt": "oting Rights\u201d on page 217. Security Codes for the Equity Shares ISIN: INE918Z01012 BSE code: 543664 NSE symbol: KAYNES"
+    },
+    {
+      "page": 78,
+      "term": "listed on November 22, 2022",
+      "excerpt": ", and March 31, 2023. Please note that the shares of the Company were listed on November 22, 2022, accordingly, the data for the period ended March 31, 2023 does not represent a full year. Based on share price data from BSE: Fiscal High (\u20b9) Date of high Volume on high Turnover on high (\u20b9 million) Low (\u20b9) Date of low Volume on lo"
+    },
+    {
+      "page": 93,
+      "term": "not declared any dividend",
+      "excerpt": "Equity Shares\u201d on page 217. Dividend on Equity Shares Our Company has not declared any dividend on the Equity Shares in respect of Fiscals 2025, 2024 and 2023. Further there are no dividends that have been declared b ut are yet to be paid out by our Company for Fiscal 2026 since April 1, 2025 until the date of this Placement Doc"
+    },
+    {
+      "page": 452,
+      "term": "INE918Z01012",
+      "excerpt": "in; CIN: L29128KA2008PLC045825 LEI NUMBER: 335800BMPIF3PQ2IPI37 ISIN: INE918Z01012 APPLICATION FORM Form No.: Date: Name of the Bidder: _______________________________________________________________________________________________________ QUALIFIED INSTITUTIONS PLACEMENT OF [\u25cf] EQUITY SHARES OF FACE VALUE \u20b9 10 EACH (THE \u201cEQUITY"
+    }
+  ],
+  "note": "Primary issuer placement document hosted by NSE. Listing boundary and period-limited action statements require separate review; empty exchange action response does not establish completeness."
+}
