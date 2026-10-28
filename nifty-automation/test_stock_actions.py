@@ -61,6 +61,28 @@ class ActionReviewTest(unittest.TestCase):
             pdf=next((root/'raw').glob('*.pdf'));pdf.write_bytes(b'changed')
             with self.assertRaisesRegex(ValueError,'Changed event disposition evidence'):apply_event_dispositions(original,decisions,root)
 
+    def test_reconstruction_ignores_edited_derived_rows_flags_and_requires_evidence(self):
+        from review_stock_actions import reconstruct_action_review
+        import copy,tempfile,shutil
+        from pathlib import Path
+        history=json.loads((ROOT/'manufacturing.json').read_text(encoding='utf-8'))
+        actions=json.loads((ROOT/'manufacturing-action-review.json').read_text(encoding='utf-8'))
+        member=copy.deepcopy(next(r for r in history['members'] if r['symbol']=='LT'))
+        source=copy.deepcopy(next(r for r in actions['members'] if r['symbol']=='LT'))
+        decisions=json.loads((ROOT/'event-dispositions.json').read_text(encoding='utf-8'))['decisions']
+        member['rows']=[];member['events']={};source['all_reported_events_match']=True;source['unclassified_actions']=[];source['comparisons']=[]
+        unreviewed=reconstruct_action_review(member,source)
+        self.assertFalse(unreviewed['all_reported_events_match'])
+        self.assertTrue(unreviewed['unclassified_actions'])
+        reviewed=reconstruct_action_review(member,source,dispositions=decisions)
+        self.assertTrue(reviewed['all_reported_events_match'])
+        self.assertEqual(next(r for r in reviewed['comparisons'] if r['date']=='2023-08-02')['expected_vendor_value'],30)
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'raw').mkdir()
+            for sha in (member['sha256'],source['sha256']):shutil.copy2(ROOT/'raw'/(sha+'.json'),root/'raw'/(sha+'.json'))
+            (root/'raw'/(source['sha256']+'.json')).write_bytes(b'[]')
+            with self.assertRaisesRegex(ValueError,'Changed action reconstruction source'):reconstruct_action_review(member,source,root)
+
     def test_dividend_adjustment_step_flags_unadjusted_series(self):
         rows=[{'date':'2022-08-05','vendor_close':100,'adjusted_close':99},{'date':'2022-08-08','vendor_close':99,'adjusted_close':99}]
         vendor={'dividends':{'1659916800':{'amount':1}}}

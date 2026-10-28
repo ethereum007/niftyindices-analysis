@@ -118,6 +118,27 @@ def apply_event_dispositions(record,dispositions,root=ROOT):
         result['status']='reported_actions_reconciled_with_reviewed_exclusions' if result['all_reported_events_match'] else 'manual_review_required'
     return result
 
+def reconstruct_action_review(member,source,root=ROOT,dispositions=()):
+    """Recompute action checks from archived originals, ignoring editable derived flags."""
+    from fetch_stock_history import decode
+    if member['symbol']!=source['symbol'] or member['isin']!=source['current_isin']:raise ValueError('Action review identity mismatch')
+    originals=[]
+    for sha in (member['sha256'],source['sha256']):
+        if not re.fullmatch('[0-9a-f]{64}',sha):raise ValueError('Invalid action reconstruction hash')
+        raw=(root/'raw'/(sha+'.json')).read_bytes()
+        if hashlib.sha256(raw).hexdigest()!=sha:raise ValueError('Changed action reconstruction source')
+        originals.append(json.loads(raw))
+    prices,vendor=decode(originals[0],member['symbol'])
+    if not isinstance(originals[1],list):raise ValueError('Unexpected archived exchange response')
+    events,ignored,unknown=normalize(originals[1],member['symbol'])
+    excluded=[e for e in events if not prices[0]['date']<=e['date']<=prices[-1]['date']]
+    events=[e for e in events if prices[0]['date']<=e['date']<=prices[-1]['date']]
+    result={k:source[k] for k in ('symbol','current_isin','sha256','source_url')}
+    result.update(publication_ready=False,events=events,outside_history_window_events=excluded,unclassified_actions=unknown,ignored_meeting_rows=len(ignored),exchange_isins=sorted({r['isin'] for r in originals[1] if r.get('isin')}),dividend_factor_steps=adjustment_steps(prices,vendor),**compare(events,vendor))
+    result['all_reported_events_match']=bool(events) and not unknown and all(c['matched'] for c in result['comparisons']) and not result['unmatched_vendor_split_dates'] and not result['unmatched_vendor_dividend_dates'] and all(c['matched'] for c in result['dividend_factor_steps'])
+    result['status']='reported_actions_reconciled' if result['all_reported_events_match'] else 'manual_review_required'
+    return apply_event_dispositions(result,dispositions,root)
+
 def main(family='defence'):
     history=json.loads((ROOT/(family+'.json')).read_text(encoding='utf-8'))
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:records=list(pool.map(fetch,history['members']))

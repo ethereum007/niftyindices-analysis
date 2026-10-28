@@ -1,0 +1,106 @@
+{
+  "publication_ready": false,
+  "results": [
+    {
+      "family": "defence",
+      "symbol": "HAL",
+      "history_sha256": "81f9891f0ebb509fb1868a0de1ae76372d046246c68d70335658fa84b075cb57",
+      "action_sha256": "74fce413c92fae6a4dfc4e960bc9f2564b35e1daf4b81341d55e02b355b17347",
+      "reconstructed_status": "reported_actions_reconciled",
+      "all_reported_events_match": true,
+      "unclassified_count": 0,
+      "publication_ready": false
+    },
+    {
+      "family": "defence",
+      "symbol": "BEL",
+      "history_sha256": "ed47d9d8f7fc99ce67123e181feb3342b4baffe9d1309ba3c16e710e7e405b56",
+      "action_sha256": "e75c4f16526514eaf95dc64ee6f81040f9362cd590de721e96cb1e90a251e7cf",
+      "reconstructed_status": "reported_actions_reconciled",
+      "all_reported_events_match": true,
+      "unclassified_count": 0,
+      "publication_ready": false
+    },
+    {
+      "family": "defence",
+      "symbol": "MAZDOCK",
+      "history_sha256": "a69ae7bd2dd951506df9083d9ea78199b4608513db428ccec3a3d5930e9bd96d",
+      "action_sha256": "f1b66b1abf4be5394c6b229b90d34d8d2505cbc76deaf6ab13688282a024f6d6",
+      "reconstructed_status": "reported_actions_reconciled",
+      "all_reported_events_match": true,
+      "unclassified_count": 0,
+      "publication_ready": false
+    },
+    {
+      "family": "defence",
+      "symbol": "DYNAMATECH",
+      "history_sha256": "c9b85caeda2edfd7fe3c2fc4fd5738ee63a0428b5ce7f13838d6d76aecaf7c79",
+      "action_sha256": "3de17c7390dcc42465296f5ffa559fca3644a7946872ccc35e20a2cf4d88e277",
+      "reconstructed_status": "reported_actions_reconciled",
+      "all_reported_events_match": true,
+      "unclassified_count": 0,
+      "publication_ready": false
+    },
+    {
+      "family": "defence",
+      "symbol": "IDEAFORGE",
+      "history_sha256": "d037e836bc35892b7e54937b3624b86b001d62c8afa3099bb47f00d0c2ea2705",
+      "action_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reconstructed_status": "manual_review_required",
+      "all_reported_events_match": false,
+      "unclassified_count": 0,
+      "publication_ready": false
+    },
+    {
+      "family": "manufacturing",
+      "symbol": "KAYNES",
+      "history_sha256": "446c663b4a04125a93bfb858407550710f3e6e6df5a6f461e384c8178b74b9ae",
+      "action_sha256": "5fa6f3a2edaab7baa531657d292481c81031fd13ba8adb424799381a57065258",
+      "reconstructed_status": "manual_review_required",
+      "all_reported_events_match": false,
+      "unclassified_count": 0,
+      "publication_ready": false
+    },
+    {
+      "family": "manufacturing",
+      "symbol": "ABB",
+      "history_sha256": "c13cbc0b6cbf7013ad058daba36652c6a42f7e474495e185d6f750e7c153f00e",
+      "action_sha256": "03a25e55c6e76e302aaa72499a657353ea7e60a9a0960fce84a9a6f1a35d05d2",
+      "reconstructed_status": "reported_actions_reconciled",
+      "all_reported_events_match": true,
+      "unclassified_count": 0,
+      "publication_ready": false
+    },
+    {
+      "family": "manufacturing",
+      "symbol": "LT",
+      "history_sha256": "e9e2d030fa5c40c6ac87673f4736358777022e7035bf55c3142490ec2bcb841c",
+      "action_sha256": "01ffd66f9eb7310cf18e641a485612db21b30c6d87e025d99744781f59f8926f",
+      "reconstructed_status": "reported_actions_reconciled_with_reviewed_exclusions",
+      "all_reported_events_match": true,
+      "unclassified_count": 0,
+      "publication_ready": false
+    },
+    {
+      "family": "manufacturing",
+      "symbol": "DYNAMATECH",
+      "history_sha256": "de4ee191b9e3755c10e37a73698d123a77fab76a630dc0ea42565d90eea1a927",
+      "action_sha256": "3de17c7390dcc42465296f5ffa559fca3644a7946872ccc35e20a2cf4d88e277",
+      "reconstructed_status": "reported_actions_reconciled",
+      "all_reported_events_match": true,
+      "unclassified_count": 0,
+      "publication_ready": false
+    },
+    {
+      "family": "manufacturing",
+      "symbol": "DIXON",
+      "history_sha256": "35e1dd64ab8d128b9695208808eb3fcce3d58a4f8551539b25bb633f56c0c9ea",
+      "action_sha256": "8a7123b38693a04a012f7628d6855927026ba509997990336c5b927b16770614",
+      "reconstructed_status": "reported_actions_reconciled",
+      "all_reported_events_match": true,
+      "unclassified_count": 0,
+      "publication_ready": false
+    }
+  ],
+  "note": "Original payload reconstruction audit; not identity/publication approval."
+}
