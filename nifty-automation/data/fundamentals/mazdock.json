@@ -1,0 +1,111 @@
+{
+  "symbol": "MAZDOCK",
+  "publication_ready": false,
+  "sources": [
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_204966_27102026182222_iXBRL_WEB.html",
+      "filing_date": "2026-10-27",
+      "retrieved_utc": "2026-10-28T06:21:06.576328+00:00",
+      "sha256": "1250ddb1220ff9f815cf1e4dc1d75b2d35114538eb112fec951035feb1e169c3",
+      "fact": {
+        "symbol": "MAZDOCK",
+        "isin": "INE249Z01020",
+        "period_start": "2026-07-01",
+        "period_end": "2026-09-30",
+        "filing_date": "2026-10-27",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "2446.09",
+        "pat_total_period_crore": "346.40",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_180838_30072026190928_iXBRL_WEB.html",
+      "filing_date": "2026-07-30",
+      "retrieved_utc": "2026-10-28T06:21:06.577324+00:00",
+      "sha256": "007ea93020efdd3ce95022aaef42c62ddbdb11653b4b8996cf2d67f5f3f2a7b5",
+      "fact": {
+        "symbol": "MAZDOCK",
+        "isin": "INE249Z01020",
+        "period_start": "2026-04-01",
+        "period_end": "2026-06-30",
+        "filing_date": "2026-07-30",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "2942.70",
+        "pat_total_period_crore": "550.46",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_155129_30042026224129_iXBRL_WEB.html",
+      "filing_date": "2026-04-30",
+      "retrieved_utc": "2026-10-28T06:21:06.578324+00:00",
+      "sha256": "d70bc198765ac143d28eb7fca0a2cccb4976d2e73cd9fc8b8f5403fbfe260bb1",
+      "fact": {
+        "symbol": "MAZDOCK",
+        "isin": "INE249Z01020",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_date": "2026-04-30",
+        "scope": "Consolidated",
+        "audit_status": "Audited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "3850.39",
+        "pat_total_period_crore": "674.16",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_140572_05022026183316_iXBRL_WEB.html",
+      "filing_date": "2026-02-05",
+      "retrieved_utc": "2026-10-28T06:21:07.141299+00:00",
+      "sha256": "8ae6b1fa0d9715900c25bdcf40b8967902ea232e923b25b0d94ea8d4af33de05",
+      "fact": {
+        "symbol": "MAZDOCK",
+        "isin": "INE249Z01020",
+        "period_start": "2025-10-01",
+        "period_end": "2025-12-31",
+        "filing_date": "2026-02-05",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "3601.09",
+        "pat_total_period_crore": "879.78",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    }
+  ],
+  "ttm": {
+    "period_start": "2025-10-01",
+    "period_end": "2026-09-30",
+    "available_on": "2026-10-27",
+    "scope": "Consolidated",
+    "revenue_operations_crore": "12840.27",
+    "pat_total_period_crore": "2450.80",
+    "quarters": [
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30",
+      "2026-09-30"
+    ],
+    "growth_yoy": null,
+    "growth_note": "Prior matching four quarters have not yet been collected."
+  },
+  "note": "Primary financial-fact pilot. Accounting/date/unit review and source verification required before publication. Missing prior-year quarters, ROCE and valuation remain unavailable."
+}
