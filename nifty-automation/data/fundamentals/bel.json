@@ -1,0 +1,64 @@
+{
+  "symbol": "BEL",
+  "publication_ready": false,
+  "sources": [
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_138073_28012026183414_iXBRL_WEB.html",
+      "filing_date": "2026-01-28",
+      "retrieved_utc": "2026-10-28T07:53:44.001940+00:00",
+      "sha256": "fa22661df1d3f9eea6ed55d84392c3e1bc614bd586c0b9e676714837ec317809",
+      "fact": {
+        "symbol": "BEL",
+        "isin": "INE263A01024",
+        "period_start": "2025-10-01",
+        "period_end": "2025-12-31",
+        "filing_date": "2026-01-28",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "7153.85",
+        "pat_total_period_crore": "1579.70",
+        "ytd_revenue_operations_crore": "17385.68",
+        "ytd_pat_total_period_crore": "3835.91",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_123885_31102025145355_iXBRL_WEB.html",
+      "filing_date": "2025-10-31",
+      "retrieved_utc": "2026-10-28T07:53:44.003942+00:00",
+      "sha256": "bce1b995f26a498cc8f6e5c10a978eb842ada45b82ec79ce869db491d11d3311",
+      "status": "fetch_or_validation_failed",
+      "error": "Unexpected accounting scope"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_106194_28072025160924_iXBRL_WEB.html",
+      "filing_date": "2025-07-28",
+      "retrieved_utc": "2026-10-28T07:53:44.004941+00:00",
+      "sha256": "b1a218762e6d684f455c8784d087dcd649cf6c0b8068ec3f9e8b91b3161a0266",
+      "fact": {
+        "symbol": "BEL",
+        "isin": "INE263A01024",
+        "period_start": "2025-04-01",
+        "period_end": "2025-06-30",
+        "filing_date": "2025-07-28",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "INR actuals",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "4439.74",
+        "pat_total_period_crore": "969.05",
+        "ytd_revenue_operations_crore": null,
+        "ytd_pat_total_period_crore": null,
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    }
+  ],
+  "ttm": null,
+  "note": "Primary financial-fact pilot. Accounting/date/unit review and source verification required before publication. Missing prior-year quarters, ROCE and valuation remain unavailable."
+}

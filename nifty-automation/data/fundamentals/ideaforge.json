@@ -1,0 +1,16 @@
+{
+  "symbol": "IDEAFORGE",
+  "publication_ready": false,
+  "sources": [
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_123015_29102025193910_iXBRL_WEB.html",
+      "filing_date": "2025-10-29",
+      "retrieved_utc": "2026-10-28T07:52:55.197752+00:00",
+      "sha256": "a65425629a2966d50e80649af8c3cdff29d18b9aeb9fab790a96f9bd3994a367",
+      "status": "fetch_or_validation_failed",
+      "error": "Unexpected accounting scope"
+    }
+  ],
+  "ttm": null,
+  "note": "Primary financial-fact pilot. Accounting/date/unit review and source verification required before publication. Missing prior-year quarters, ROCE and valuation remain unavailable."
+}

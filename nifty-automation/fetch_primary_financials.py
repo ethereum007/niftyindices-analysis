@@ -22,9 +22,12 @@ def parse(raw,filing_date,symbol='MAZDOCK'):
         tables.append(rows)
         for r in rows:
             if len(r)==2:metadata[clean(r[0])]=r[1]
-    if metadata.get('nse symbol')!=symbol or metadata.get('description of presentation currency')!='INR':raise ValueError('Wrong company/currency')
+    currency=metadata.get('description of presentation currency')
+    if metadata.get('nse symbol')!=symbol or currency not in ('INR','INR (in Actuals)'):raise ValueError('Wrong company/currency')
     unit=metadata.get('level of rounding used in financial results')
-    if clean(unit or '')!='lakhs':raise ValueError('Unexpected financial units')
+    if currency=='INR (in Actuals)' and not unit:unit='INR actuals';divisor=Decimal('10000000')
+    elif currency=='INR' and clean(unit or '')=='lakhs':divisor=Decimal('100')
+    else:raise ValueError('Unexpected financial units')
     candidates=[rows for rows in tables if any(len(r)>=4 and clean(r[1])=='revenue from operations' and number(r[2]) is not None for r in rows) and any(len(r)>=3 and clean(r[1])=='total profit (loss) for period' for r in rows)]
     if len(candidates)!=1:raise ValueError('Ambiguous financial statement table')
     rows=candidates[0]
@@ -32,14 +35,21 @@ def parse(raw,filing_date,symbol='MAZDOCK'):
         values=[r[column] for r in rows if len(r)>column and clean(r[1])==clean(label)]
         if len(values)!=1:raise ValueError('Missing or ambiguous financial fact: '+label)
         return values[0]
-    start=datetime.strptime(get('Date of start of reporting period'),'%d-%m-%Y').date();end=datetime.strptime(get('Date of end of reporting period'),'%d-%m-%Y').date()
+    def parsed_date(value):
+        for fmt in ('%d-%m-%Y','%d-%b-%Y'):
+            try:return datetime.strptime(value,fmt).date()
+            except ValueError:pass
+        raise ValueError('Unsupported financial period date')
+    def converted(label,column=2):
+        value=number(get(label,column));return str(value/divisor) if value is not None else None
+    start=parsed_date(get('Date of start of reporting period'));end=parsed_date(get('Date of end of reporting period'))
     if not 88<=(end-start).days<=92 or start.day!=1 or start.month not in (1,4,7,10):raise ValueError('Statement is not a standalone three-month quarter')
     scope=get('Nature of report standalone or consolidated')
     if scope!='Consolidated':raise ValueError('Unexpected accounting scope')
     if end>date.fromisoformat(filing_date):raise ValueError('Future financial period')
     revenue=number(get('Revenue from operations'));pat=number(get('Total profit (loss) for period'))
     if revenue is None or pat is None:raise ValueError('Missing revenue or total period PAT')
-    return {'symbol':symbol,'isin':metadata.get('isin'),'period_start':start.isoformat(),'period_end':end.isoformat(),'filing_date':filing_date,'scope':scope,'audit_status':get('Whether results are audited or unaudited'),'source_unit':unit,'display_unit':'INR crore','revenue_operations_crore':str(revenue/100),'pat_total_period_crore':str(pat/100),'ytd_revenue_operations_crore':str(number(get('Revenue from operations',3))/100),'ytd_pat_total_period_crore':str(number(get('Total profit (loss) for period',3))/100),'pat_definition':'Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.','notes':'Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred.'}
+    return {'symbol':symbol,'isin':metadata.get('isin'),'period_start':start.isoformat(),'period_end':end.isoformat(),'filing_date':filing_date,'scope':scope,'audit_status':get('Whether results are audited or unaudited'),'source_unit':unit,'display_unit':'INR crore','revenue_operations_crore':str(revenue/divisor),'pat_total_period_crore':str(pat/divisor),'ytd_revenue_operations_crore':converted('Revenue from operations',3),'ytd_pat_total_period_crore':converted('Total profit (loss) for period',3),'pat_definition':'Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.','notes':'Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred.'}
 
 def trailing_four(facts,asof):
     eligible=sorted([f for f in facts if f['filing_date']<=asof],key=lambda f:f['period_end'])[-4:]

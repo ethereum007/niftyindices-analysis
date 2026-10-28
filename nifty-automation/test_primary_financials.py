@@ -36,6 +36,27 @@ class PrimaryFinancialTest(unittest.TestCase):
         self.assertEqual(result['pat_total_period_crore'],'9321.41')
         self.assertEqual(result['revenue_operations_crore'],'33784.98')
 
+    def test_legacy_actual_rupees_are_not_treated_as_lakhs_and_blank_ytd_is_not_zero(self):
+        data=json.loads((ROOT/'bel.json').read_text(encoding='utf-8'))
+        source=next(r for r in data['sources'] if r['filing_date']=='2025-07-28')
+        raw=(ROOT/'raw'/(source['sha256']+'.html')).read_bytes()
+        f=parse(raw,source['filing_date'],'BEL')
+        self.assertEqual(f['source_unit'],'INR actuals')
+        self.assertEqual(f['revenue_operations_crore'],'4439.74')
+        self.assertEqual(f['pat_total_period_crore'],'969.05')
+        self.assertIsNone(f['ytd_revenue_operations_crore'])
+        self.assertIsNone(f['ytd_pat_total_period_crore'])
+        self.assertEqual(f['period_end'],'2025-06-30')
+        self.assertEqual(hashlib.sha256(raw).hexdigest(),source['sha256'])
+    def test_standalone_discovery_is_rejected_for_consolidated_pipeline(self):
+        for symbol in ('DYNAMATECH','IDEAFORGE'):
+            data=json.loads((ROOT/(symbol.lower()+'.json')).read_text(encoding='utf-8'))
+            self.assertFalse(data['publication_ready'])
+            source=data['sources'][0];raw=(ROOT/'raw'/(source['sha256']+'.html')).read_bytes()
+            with self.assertRaisesRegex(ValueError,'Unexpected accounting scope'):parse(raw,source['filing_date'],symbol)
+            self.assertNotIn('fact',source)
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),source['sha256'])
+
     def test_exact_quarter_sales_pat_scope_and_unit(self):
         f=parse(self.raw,'2026-10-27')
         self.assertEqual(f['period_start'],'2026-07-01')

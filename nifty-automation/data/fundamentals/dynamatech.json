@@ -1,0 +1,16 @@
+{
+  "symbol": "DYNAMATECH",
+  "publication_ready": false,
+  "sources": [
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_159032_19052026203916_iXBRL_WEB.html",
+      "filing_date": "2026-05-19",
+      "retrieved_utc": "2026-10-28T07:52:53.490618+00:00",
+      "sha256": "6865acba54f98b6c1a9c02cf716bacf629bfc67203e3416e3ec233fde2f0d20d",
+      "status": "fetch_or_validation_failed",
+      "error": "Unexpected accounting scope"
+    }
+  ],
+  "ttm": null,
+  "note": "Primary financial-fact pilot. Accounting/date/unit review and source verification required before publication. Missing prior-year quarters, ROCE and valuation remain unavailable."
+}
