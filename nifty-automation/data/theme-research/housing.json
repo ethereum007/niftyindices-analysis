@@ -1,0 +1,114 @@
+{
+  "family": "housing",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-28",
+  "note": "Five housing-ecosystem examples, not a homogeneous real-estate valuation group, an exhaustive universe or a housing-demand forecast. Developers, materials, mortgage lenders, improvement products and commercial operators have different operating and financial metrics. No customer/loan records, weights or historical membership inferred.",
+  "comparison_note": "This is a housing ecosystem exposure map, not evidence of a current housing upcycle. A mortgage lender, cement producer and property developer are not interchangeable revenue-growth or valuation peers.",
+  "members": [
+    {
+      "symbol": "DLF",
+      "subtheme": "Residential developers",
+      "source_url": "https://www.dlf.in/homes/",
+      "rationale": "Residential project offerings establish developer exposure. Listings do not establish current sales bookings, project completion, ownership of every group asset or a measured housing-demand upcycle.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "DLF Ltd.",
+      "isin": "INE271C01023",
+      "resolved_url": "https://www.dlf.in/homes/",
+      "sha256": "c8cee39618f2e2b0c1d138074d54aca9301a0e9355f605c4764c09c58d7b193e",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T00:43:27.363661+00:00",
+      "keyword_checks": {
+        "residential": true,
+        "dlf": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "subtheme": "Building materials",
+      "source_url": "https://www.ultratechcement.com/about-us/overview",
+      "rationale": "Cement and ready-mix concrete establish building-material exposure. Demand also comes from non-housing construction; no housing-only revenue share or utilisation trend is inferred.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "UltraTech Cement Ltd.",
+      "isin": "INE481G01011",
+      "resolved_url": "https://www.ultratechcement.com/about-us/overview",
+      "sha256": "2c0b39260205a5e087a5b236256b06a170c9536f87806f1a866ef449b9e31c3e",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T00:43:27.271596+00:00",
+      "keyword_checks": {
+        "cement": true,
+        "concrete": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "LICHSGFIN",
+      "subtheme": "Housing finance",
+      "source_url": "https://www.lichousing.com/housing-loan",
+      "rationale": "Housing-loan products establish mortgage-lending exposure at LIC Housing Finance. It is distinct from LIC the listed insurer, and is not classified as the property developer or owner of financed homes.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "LIC Housing Finance Ltd.",
+      "isin": "INE115A01026",
+      "resolved_url": "https://www.lichousing.com/housing-loan",
+      "sha256": "d2e603ea3b616e79d4648ab9fd37c3b0a9e7bcd0639f8b55d673633bfe1e18d7",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T00:43:27.862761+00:00",
+      "keyword_checks": {
+        "housing": true,
+        "loan": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "subtheme": "Home improvement",
+      "source_url": "https://www.asianpaints.com/products/paints-and-textures.html",
+      "rationale": "Interior/exterior painting products and services establish home-improvement exposure. Repainting can differ from new housing demand; no volume or profitability recovery is inferred.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Asian Paints Ltd.",
+      "isin": "INE021A01026",
+      "resolved_url": "https://www.asianpaints.com/paint-products.html",
+      "sha256": "9d94beecb55e8c413eec6f62c65be77415dca001683e74f04e619c54c0f1fce7",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T00:43:27.880288+00:00",
+      "keyword_checks": {
+        "paint": true,
+        "interior": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "PHOENIXLTD",
+      "subtheme": "Commercial property",
+      "source_url": "https://careers.thephoenixmills.com/knowOurStory",
+      "rationale": "The company describes retail-led mixed-use development across commercial and other asset classes. The listed corporate group is not labelled as a REIT, nor is every property attributed as directly owned by the parent.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Phoenix Mills Ltd.",
+      "isin": "INE211B01039",
+      "resolved_url": "https://careers.thephoenixmills.com/knowOurStory",
+      "sha256": "a80de3abb76e45770a745538bc969e2c70b3061985d88b2cd7cb82f62f49c0a0",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T00:43:27.793952+00:00",
+      "keyword_checks": {
+        "retail": true,
+        "commercial": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

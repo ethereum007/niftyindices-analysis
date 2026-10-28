@@ -9,6 +9,21 @@ from pathlib import Path
 ROOT=Path(__file__).parent/'data/theme-research'
 
 class ThemeEvidenceTest(unittest.TestCase):
+    def test_housing_roles_are_distinct_from_owned_assets_and_demand_cycle(self):
+        manifest=json.loads((ROOT/'housing.json').read_text(encoding='utf-8'))
+        self.assertEqual(len({r['subtheme'] for r in manifest['members']}),5)
+        self.assertIn('not evidence of a current housing upcycle',manifest['comparison_note'])
+        prices=json.loads((ROOT.parent/'stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        for row in manifest['members']:
+            self.assertIsNone(row['effective_date'])
+            self.assertEqual(prices[row['isin']]['symbol'],row['symbol'])
+            raw=(ROOT/'raw'/(row['sha256']+'.'+row.get('raw_extension','html'))).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),row['sha256'])
+            self.assertEqual(row['status'],'evidence_archived')
+            self.assertTrue(all(row['keyword_checks'].values()))
+            if row['symbol']=='LICHSGFIN':self.assertIn('distinct from LIC the listed insurer',row['rationale'])
+            if row['symbol']=='PHOENIXLTD':self.assertIn('not labelled as a REIT',row['rationale'])
+
     def test_consumption_exposure_is_not_claimed_demand_growth(self):
         manifest=json.loads((ROOT/'consumption.json').read_text(encoding='utf-8'))
         self.assertEqual(len({r['subtheme'] for r in manifest['members']}),5)
