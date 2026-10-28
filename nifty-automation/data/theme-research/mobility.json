@@ -1,0 +1,118 @@
+{
+  "family": "mobility",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-28",
+  "note": "Five independent current-role examples, not exhaustive membership, an EV pure-play basket or a product-commercialisation forecast. No weights, historical membership or quantified revenue share inferred.",
+  "comparison_note": "Components, powertrain systems, batteries, electronics and tyres have different demand and input-cost drivers. Product development is not commercial sales; this is not a homogeneous EV valuation peer group.",
+  "members": [
+    {
+      "symbol": "SUNDRMFAST",
+      "subtheme": "Auto ancillaries",
+      "source_url": "https://sundram.com/about-us.php",
+      "rationale": "Fasteners, powertrain parts and pumps establish automotive-component exposure. The company also serves infrastructure, wind and aviation; automotive-only revenue or EV-only exposure is not inferred.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Sundram Fasteners Ltd.",
+      "isin": "INE387A01021",
+      "resolved_url": "https://sundram.com/about-us.php",
+      "sha256": "ee7786f30d2f5427b25dee19596cbf3672ab746da8545bb3d80611f7517387a1",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T02:42:45.490343+00:00",
+      "keyword_checks": {
+        "automotive": true,
+        "fasteners": true,
+        "pumps": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "SONACOMS",
+      "subtheme": "EV powertrain",
+      "source_url": "https://sonacomstar.com/innovation-company",
+      "rationale": "Differential assemblies and traction-motor development establish EV-powertrain capability. The source distinguishes commercial differential production from development-stage applications; development is not treated as commercial revenue or a current order book.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Sona BLW Precision Forgings Ltd.",
+      "isin": "INE073K01018",
+      "resolved_url": "https://sonacomstar.com/innovation-company",
+      "sha256": "34787f7ccf286555059e33eadf2243d3997a038e413cc54bdbdea118eb90ecc6",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T02:42:45.720938+00:00",
+      "keyword_checks": {
+        "differential": true,
+        "traction motors": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "EXIDEIND",
+      "subtheme": "Batteries & charging",
+      "source_url": "https://www.exideindustries.com/about/subsidiaries.aspx",
+      "rationale": "The listed parent has battery exposure and describes wholly owned Exide Energy Solutions, including advanced-chemistry cells/modules/packs and prior pack operations. Subsidiary activity is not standalone-parent sales; no cell-plant commissioning status, current utilisation or charging-network ownership is inferred.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Exide Industries Ltd.",
+      "isin": "INE302A01020",
+      "resolved_url": "https://www.exideindustries.com/about/subsidiaries.aspx",
+      "sha256": "3ec173f1ffcc79786bb9ba0852ea4433f2d5332ea2aa8f181e0170ae3ace8e54",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T02:42:45.585446+00:00",
+      "keyword_checks": {
+        "exide energy solutions": true,
+        "battery": true,
+        "subsidiary": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "UNOMINDA",
+      "subtheme": "Vehicle electronics",
+      "source_url": "https://www.unominda.com/",
+      "rationale": "Switches, sensors, lighting and infotainment offerings establish vehicle-electronics exposure. The portfolio spans vehicle technologies and group operations; this is not evidence of EV-only revenue or ownership of vehicle OEMs.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "UNO Minda Ltd.",
+      "isin": "INE405E01023",
+      "resolved_url": "https://www.unominda.com/",
+      "sha256": "3d69bfad2c637deb04e4fcdab6cc3e47cd67a872bc2ffe10cb960c3f633db76c",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T02:42:45.974468+00:00",
+      "keyword_checks": {
+        "switch": true,
+        "sensor": true,
+        "infotainment": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "APOLLOTYRE",
+      "subtheme": "Tyres",
+      "source_url": "https://corporate.apollotyres.com/who-we-are/our-brands/",
+      "rationale": "Apollo and Vredestein product ranges establish tyre exposure across passenger, commercial and other vehicles. Replacement demand differs from new-vehicle production; the portfolio is not classified as EV-only and brand reach does not establish current volume growth.",
+      "reviewed_on": "2026-10-28",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Apollo Tyres Ltd.",
+      "isin": "INE438A01022",
+      "resolved_url": "https://corporate.apollotyres.com/who-we-are/our-brands/",
+      "sha256": "a9f23810489cb92d73ca714195e0c019adda98fee6dc3a77bc54068cfbfd8233",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-28T02:42:46.516327+00:00",
+      "keyword_checks": {
+        "vredestein": true,
+        "passenger": true,
+        "commercial": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

@@ -9,6 +9,21 @@ from pathlib import Path
 ROOT=Path(__file__).parent/'data/theme-research'
 
 class ThemeEvidenceTest(unittest.TestCase):
+    def test_mobility_roles_preserve_development_and_group_boundaries(self):
+        data=json.loads((ROOT/'mobility.json').read_text(encoding='utf-8'))
+        self.assertEqual(len({r['subtheme'] for r in data['members']}),5)
+        prices=json.loads((ROOT.parent/'stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        for r in data['members']:
+            self.assertEqual(prices[r['isin']]['symbol'],r['symbol'])
+            self.assertIsNone(r['effective_date'])
+            self.assertEqual(r['status'],'evidence_archived')
+            self.assertTrue(all(r['keyword_checks'].values()))
+            raw=(ROOT/'raw'/(r['sha256']+'.'+r.get('raw_extension','html'))).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),r['sha256'])
+            if r['symbol']=='SONACOMS':self.assertIn('development is not treated as commercial revenue',r['rationale'])
+            if r['symbol']=='EXIDEIND':self.assertIn('not standalone-parent sales',r['rationale'])
+            if r['symbol']=='APOLLOTYRE':self.assertIn('Replacement demand differs',r['rationale'])
+
     def test_minerals_roles_do_not_imply_pureplay_or_operating_refineries(self):
         data=json.loads((ROOT/'minerals.json').read_text(encoding='utf-8'))
         self.assertEqual(len({r['subtheme'] for r in data['members']}),5)
