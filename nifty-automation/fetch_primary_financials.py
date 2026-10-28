@@ -6,7 +6,7 @@ from pathlib import Path
 from urllib.request import Request,urlopen
 from bs4 import BeautifulSoup
 HERE=Path(__file__).parent;ROOT=HERE/'data/fundamentals'
-SOURCES=[('2026-10-27','https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_204966_27102026182222_iXBRL_WEB.html'),('2026-07-30','https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_180838_30072026190928_iXBRL_WEB.html'),('2026-04-30','https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_155129_30042026224129_iXBRL_WEB.html'),('2026-02-05','https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_140572_05022026183316_iXBRL_WEB.html')]
+SOURCES=[('2025-10-27','https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_122001_27102025221646_iXBRL_WEB.html'),('2026-10-27','https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_204966_27102026182222_iXBRL_WEB.html'),('2026-07-30','https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_180838_30072026190928_iXBRL_WEB.html'),('2026-04-30','https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_155129_30042026224129_iXBRL_WEB.html'),('2026-02-05','https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_140572_05022026183316_iXBRL_WEB.html')]
 def clean(s):return ' '.join(s.split()).casefold()
 def number(s):
     s=s.strip().replace(',','')
@@ -29,8 +29,8 @@ def parse(raw,filing_date):
     candidates=[rows for rows in tables if any(len(r)>=4 and clean(r[1])=='revenue from operations' and number(r[2]) is not None for r in rows) and any(len(r)>=3 and clean(r[1])=='total profit (loss) for period' for r in rows)]
     if len(candidates)!=1:raise ValueError('Ambiguous financial statement table')
     rows=candidates[0]
-    def get(label):
-        values=[r[2] for r in rows if len(r)>=3 and clean(r[1])==clean(label)]
+    def get(label,column=2):
+        values=[r[column] for r in rows if len(r)>column and clean(r[1])==clean(label)]
         if len(values)!=1:raise ValueError('Missing or ambiguous financial fact: '+label)
         return values[0]
     start=datetime.strptime(get('Date of start of reporting period'),'%d-%m-%Y').date();end=datetime.strptime(get('Date of end of reporting period'),'%d-%m-%Y').date()
@@ -40,7 +40,7 @@ def parse(raw,filing_date):
     if end>date.fromisoformat(filing_date):raise ValueError('Future financial period')
     revenue=number(get('Revenue from operations'));pat=number(get('Total profit (loss) for period'))
     if revenue is None or pat is None:raise ValueError('Missing revenue or total period PAT')
-    return {'symbol':'MAZDOCK','isin':metadata.get('isin'),'period_start':start.isoformat(),'period_end':end.isoformat(),'filing_date':filing_date,'scope':scope,'audit_status':get('Whether results are audited or unaudited'),'source_unit':unit,'display_unit':'INR crore','revenue_operations_crore':str(revenue/100),'pat_total_period_crore':str(pat/100),'pat_definition':'Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.','notes':'Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred.'}
+    return {'symbol':'MAZDOCK','isin':metadata.get('isin'),'period_start':start.isoformat(),'period_end':end.isoformat(),'filing_date':filing_date,'scope':scope,'audit_status':get('Whether results are audited or unaudited'),'source_unit':unit,'display_unit':'INR crore','revenue_operations_crore':str(revenue/100),'pat_total_period_crore':str(pat/100),'ytd_revenue_operations_crore':str(number(get('Revenue from operations',3))/100),'ytd_pat_total_period_crore':str(number(get('Total profit (loss) for period',3))/100),'pat_definition':'Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.','notes':'Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred.'}
 
 def trailing_four(facts,asof):
     eligible=sorted([f for f in facts if f['filing_date']<=asof],key=lambda f:f['period_end'])[-4:]

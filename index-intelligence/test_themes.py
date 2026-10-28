@@ -5,7 +5,7 @@ import sqlite3
 import tempfile
 import hashlib
 import shutil
-from build_dashboard import load_family_members,load_reviewed_company_history
+from build_dashboard import load_family_members,load_reviewed_company_history,load_reviewed_financials
 from pathlib import Path
 
 HERE=Path(__file__).parent
@@ -44,6 +44,16 @@ class ThemesTest(unittest.TestCase):
             p=root/'stock-history/defence-publication-review.json';data=json.loads(p.read_text())
             data['reviews'][0]['history_sha256']='0'*64;p.write_text(json.dumps(data))
             with self.assertRaisesRegex(ValueError,'Stale company history review'):load_reviewed_company_history(root)
+
+    def test_financial_review_withholds_only_conflicting_pat_field(self):
+        data=load_reviewed_financials(HERE.parent/'nifty-automation/data')
+        facts=data['INE249Z01020']['facts']
+        march=next(f for f in facts if f['period_end']=='2026-03-31')
+        self.assertIsNone(march['pat_total_period_crore'])
+        self.assertEqual(march['revenue_operations_crore'],'3850.39')
+        september=next(f for f in facts if f['period_end']=='2026-09-30')
+        self.assertEqual(september['pat_total_period_crore'],'346.40')
+        self.assertEqual(september['filing_date'],'2026-10-27')
 
     def test_membership_evidence_and_quote_identity(self):
         themes=json.loads((HERE/'themes.json').read_text(encoding='utf-8'))

@@ -1,0 +1,91 @@
+{
+  "symbol": "MAZDOCK",
+  "isin": "INE249Z01020",
+  "reviewed_on": "2026-10-28",
+  "source_hashes": [
+    {
+      "sha256": "006a1cee9c88cef5259a5c1bf05a29e00ef1de2feff45fe775a86b7fdadcf0c4",
+      "filing_date": "2025-10-27",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_122001_27102025221646_iXBRL_WEB.html"
+    },
+    {
+      "sha256": "1250ddb1220ff9f815cf1e4dc1d75b2d35114538eb112fec951035feb1e169c3",
+      "filing_date": "2026-10-27",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_204966_27102026182222_iXBRL_WEB.html"
+    },
+    {
+      "sha256": "007ea93020efdd3ce95022aaef42c62ddbdb11653b4b8996cf2d67f5f3f2a7b5",
+      "filing_date": "2026-07-30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_180838_30072026190928_iXBRL_WEB.html"
+    },
+    {
+      "sha256": "d70bc198765ac143d28eb7fca0a2cccb4976d2e73cd9fc8b8f5403fbfe260bb1",
+      "filing_date": "2026-04-30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_155129_30042026224129_iXBRL_WEB.html"
+    },
+    {
+      "sha256": "8ae6b1fa0d9715900c25bdcf40b8967902ea232e923b25b0d94ea8d4af33de05",
+      "filing_date": "2026-02-05",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_140572_05022026183316_iXBRL_WEB.html"
+    }
+  ],
+  "status": "reviewed_with_field_restrictions",
+  "bridges": [
+    {
+      "period_end": "2025-12-31",
+      "metric": "revenue_operations_crore",
+      "quarter_reported": "3601.09",
+      "ytd_difference": "3601.09",
+      "difference": "0.00",
+      "matched": true
+    },
+    {
+      "period_end": "2025-12-31",
+      "metric": "pat_total_period_crore",
+      "quarter_reported": "879.78",
+      "ytd_difference": "879.78",
+      "difference": "0.00",
+      "matched": true
+    },
+    {
+      "period_end": "2026-03-31",
+      "metric": "revenue_operations_crore",
+      "quarter_reported": "3850.39",
+      "ytd_difference": "3850.39",
+      "difference": "0.00",
+      "matched": true
+    },
+    {
+      "period_end": "2026-03-31",
+      "metric": "pat_total_period_crore",
+      "quarter_reported": "674.16",
+      "ytd_difference": "496.95",
+      "difference": "177.21",
+      "matched": false
+    },
+    {
+      "period_end": "2026-09-30",
+      "metric": "revenue_operations_crore",
+      "quarter_reported": "2446.09",
+      "ytd_difference": "2446.09",
+      "difference": "0.00",
+      "matched": true
+    },
+    {
+      "period_end": "2026-09-30",
+      "metric": "pat_total_period_crore",
+      "quarter_reported": "346.40",
+      "ytd_difference": "346.40",
+      "difference": "0.00",
+      "matched": true
+    }
+  ],
+  "blocked_fields": [
+    {
+      "period_end": "2026-03-31",
+      "metric": "pat_total_period_crore",
+      "reason": "Reported quarter does not reconcile to annual/YTD minus previously filed YTD; comparative restatement/balancing explanation pending."
+    }
+  ],
+  "note": "Consolidated INR crore. PAT means total profit/loss for period including equity-accounted associates/JVs, not necessarily parent-attributable PAT. Source quarter/YTD reconciliations reviewed; conflicting field withheld, never overwritten."
+}

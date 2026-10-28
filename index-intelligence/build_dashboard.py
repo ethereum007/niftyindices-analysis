@@ -101,6 +101,29 @@ def load_reviewed_company_history(root):
             out[m['isin']]={'symbol':m['symbol'],'family':family,'rows':rows,'method':review['method'],'review':item,'source_url':m['source_url'],'asof':history['asof']}
     return out
 
+def load_reviewed_financials(root):
+    folder=root/'fundamentals';out={}
+    import sys
+    sys.path.insert(0,str(HERE.parent/'nifty-automation'))
+    from fetch_primary_financials import parse
+    for file in folder.glob('*-publication-review.json'):
+        review=json.loads(file.read_text(encoding='utf-8'))
+        if review['status']!='reviewed_with_field_restrictions':continue
+        facts=[]
+        for source in review['source_hashes']:
+            sha=source['sha256']
+            if not re.fullmatch('[0-9a-f]{64}',sha):raise ValueError('Invalid financial evidence hash')
+            raw=(folder/'raw'/(sha+'.html')).read_bytes()
+            if hashlib.sha256(raw).hexdigest()!=sha:raise ValueError('Changed reviewed financial evidence')
+            fact=parse(raw,source['filing_date'])
+            if fact['symbol']!=review['symbol'] or fact['isin']!=review['isin']:raise ValueError('Financial review identity mismatch')
+            fact.update(source_url=source['source_url'],sha256=sha)
+            for blocked in review['blocked_fields']:
+                if blocked['period_end']==fact['period_end']:fact[blocked['metric']]=None
+            facts.append(fact)
+        out[review['isin']]={'symbol':review['symbol'],'facts':facts,'review':review}
+    return out
+
 def pack_rows(observations):
     """Store repeated identifiers once; derived horizons are computed on selection."""
     names=sorted({r['name'] for r in observations})
@@ -125,7 +148,7 @@ def build(db, root, out):
     theme_data=json.loads((HERE/'themes.json').read_text(encoding='utf-8'))
     enabled={f['id'] for f in theme_data['catalogue']['families'] if f.get('company_data_ready') is True}
     family_members=load_family_members(root,enabled)
-    payload={**pack_rows(observations),'coverage':coverage,'constituents':members,'stocks':stocks,'family_members':family_members,'company_history':load_reviewed_company_history(root),'themes':theme_data,
+    payload={**pack_rows(observations),'coverage':coverage,'constituents':members,'stocks':stocks,'family_members':family_members,'company_history':load_reviewed_company_history(root),'company_financials':load_reviewed_financials(root),'themes':theme_data,
              'batches':[dict(r) for r in db.execute('SELECT * FROM batches ORDER BY observation_date')],
              'generated':datetime.now(timezone.utc).isoformat(),
              'periods':list(PERIODS),'targets':{d:{k:target_date(date.fromisoformat(d),k).isoformat() for k in PERIODS} for d in sorted({r['date'] for r in observations})}}

@@ -5,7 +5,7 @@ class PrimaryFinancialTest(unittest.TestCase):
     def setUp(self):
         self.data=json.loads((ROOT/'mazdock.json').read_text(encoding='utf-8'))
         self.facts=[r['fact'] for r in self.data['sources']]
-        self.source=self.data['sources'][0]
+        self.source=next(r for r in self.data['sources'] if r['filing_date']=='2026-10-27')
         self.raw=(ROOT/'raw'/(self.source['sha256']+'.html')).read_bytes()
     def test_exact_quarter_sales_pat_scope_and_unit(self):
         f=parse(self.raw,'2026-10-27')
@@ -22,11 +22,18 @@ class PrimaryFinancialTest(unittest.TestCase):
     def test_ttm_rejects_mixed_scope_duplicates_and_missing_quarters(self):
         self.assertEqual(trailing_four(self.facts,'2026-10-28')['revenue_operations_crore'],'12840.27')
         self.assertEqual(trailing_four(self.facts,'2026-10-28')['pat_total_period_crore'],'2450.80')
-        self.assertIsNone(trailing_four(self.facts,'2026-10-26'))
-        mixed=copy.deepcopy(self.facts);mixed[0]['scope']='Standalone'
+        self.assertEqual(trailing_four(self.facts,'2026-10-26')['period_end'],'2026-06-30')
+        mixed=copy.deepcopy(self.facts);mixed[1]['scope']='Standalone'
         with self.assertRaisesRegex(ValueError,'Incompatible TTM'):trailing_four(mixed,'2026-10-28')
-        dup=copy.deepcopy(self.facts);dup[0]=dup[1]
+        dup=copy.deepcopy(self.facts);dup[1]=dup[2]
         with self.assertRaisesRegex(ValueError,'Noncontiguous or duplicate'):trailing_four(dup,'2026-10-28')
+    def test_ytd_bridge_finds_pat_conflict_without_replacing_reported_value(self):
+        march=next(f for f in self.facts if f['period_end']=='2026-03-31')
+        december=next(f for f in self.facts if f['period_end']=='2025-12-31')
+        self.assertEqual(Decimal(march['ytd_revenue_operations_crore'])-Decimal(december['ytd_revenue_operations_crore']),Decimal(march['revenue_operations_crore']))
+        self.assertEqual(Decimal(march['ytd_pat_total_period_crore'])-Decimal(december['ytd_pat_total_period_crore']),Decimal('496.95'))
+        self.assertEqual(march['pat_total_period_crore'],'674.16')
+
     def test_wrong_company_units_and_future_period_rejected(self):
         with self.assertRaises(ValueError):parse(self.raw.replace(b'MAZDOCK',b'OTHER'),'2026-10-27')
         with self.assertRaises(ValueError):parse(self.raw.replace(b'Lakhs',b'Crores'),'2026-10-27')
