@@ -1,0 +1,78 @@
+{
+  "symbol": "IDEAFORGE",
+  "publication_ready": false,
+  "sources": [
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/IDEAFORGE_04072025191057_Intimation_SE_Annual_Report.pdf",
+      "sha256": "c4ccb4e621292f861adfb0d4244c140bc215594269a821ea325df17436b97ab6",
+      "retrieved_utc": "2026-10-28T13:52:39.228037+00:00",
+      "pages": 337,
+      "hits": [
+        {
+          "page": 47,
+          "term": "dividend on",
+          "excerpt": "in a growing stage and requires the funds to support its growth objectives, your Board does not recommend any dividend on the equity shares of the Company for the financial year ending March 31, 2025. 4. DIVIDEND DISTRIBUTION POLICY The Board of Directors of the Company in their meeting held on December 14, 2022 approved and adopted a policy on Distribution of Dividend to comply with Reg"
+        },
+        {
+          "page": 93,
+          "term": "sub-division",
+          "excerpt": "red by the Registrar & Share T ransfer Agent; 8. approve requests for transposition, deletion, consolidation, sub-division, change of name etc. of shares, debentures and other securities; 9. to dematerialize or rematerialize the issued shares; 10. r eview of the various measures and initiatives taken by the listed entity for reducing the quantum of unclaimed dividends and ensuring timely"
+        },
+        {
+          "page": 102,
+          "term": "did not recommend any dividend",
+          "excerpt": "g that your Company is in a growing stage and requires the funds to support its growth objectives, your Board did not recommend any dividend on the Equity shares of the Company for the Financial Y ear ending March 31, 2025. 13.5 Listing on Stock Exchanges Equity Shares BSE Limited (\u2018BSE\u2019), [Scrip Code: 543932] Phir oze Jeejeebhoy T owers, Dalal Street, Mumbai - 400 001 National Stock Exc"
+        },
+        {
+          "page": 102,
+          "term": "sub-division",
+          "excerpt": "viz. to issue of duplicate securities certificate, renewal / exchange of securities certificate, endorsement, sub-division / splitting of securities certificate, consolidation of securities certificates/ folios, transmission and transposition. Shareholders holding shares in physical form are accordingly advised to avail the facility of dematerialisation by getting in touch with any Depos"
+        },
+        {
+          "page": 102,
+          "term": "INE349Y01013",
+          "excerpt": "dra \u2013 Kurla Complex, Bandra (East), Mumbai \u2013 400 051 SYMBOL: IDEAFORGE The ISIN of Company\u2019s Equity shares is INE349Y01013. Annual Listing fees for 12 months ended March 31, 2026, have been paid to BSE and NSE. 13.6 Dec laration regarding suspension of securities The securities of your Company have not been suspended during the year. 13.7 Shar e Transfer System (in physical segment) T ra"
+        },
+        {
+          "page": 102,
+          "term": "dividend on",
+          "excerpt": " in a growing stage and requires the funds to support its growth objectives, your Board did not recommend any dividend on the Equity shares of the Company for the Financial Y ear ending March 31, 2025. 13.5 Listing on Stock Exchanges Equity Shares BSE Limited (\u2018BSE\u2019), [Scrip Code: 543932] Phir oze Jeejeebhoy T owers, Dalal Street, Mumbai - 400 001 National Stock Exchange of India Limited"
+        },
+        {
+          "page": 194,
+          "term": "dividend on",
+          "excerpt": "hares are entitled to cumulative dividend @ 0.01% in Preference to Equity shares, as and when declared. Where dividend on Cumulative Preference shares is not declared for a Financial Y ear, the entitlement thereto is carried forward. Each Preference share is convertible in to 1 Equity share of INR 10 each in accordance with the Securities Subscription Agreement.The Series A1 CCPS shall h"
+        },
+        {
+          "page": 195,
+          "term": "dividend on",
+          "excerpt": "ares are entitled to cumulative dividend @ 0.001% in Preference to Equity shares, as and when declared. Where dividend on Cumulative Preference shares is not declared for a Financial Y ear, the entitlement thereto is carried forward. Each Preference share is convertible in to 1 Equity share of INR 10 each in accordance with the Securities Subscription Agreement. Holders of the Series A C"
+        },
+        {
+          "page": 277,
+          "term": "dividend on",
+          "excerpt": "hares are entitled to cumulative dividend @ 0.01% in Preference to Equity shares, as and when declared. Where dividend on cumulative preference shares is not declared for a financial year, the entitlement thereto is carried forward. Each Preference share is convertible in to 1 Equity Share of INR 10 each in accordance with the Securities Subscription Agreement.The Series A1 CCPS shall ha"
+        },
+        {
+          "page": 278,
+          "term": "dividend on",
+          "excerpt": "ares are entitled to cumulative dividend @ 0.001% in Preference to Equity shares, as and when declared. Where dividend on cumulative preference shares is not declared for a financial year, the entitlement thereto is carried forward. Each Preference share is convertible in to 1 Equity share of INR 10 each in accordance with the Securities Subscription Agreement. Holders of the Series A CC"
+        }
+      ]
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/IDEAFORGE_30042026202140_Outcome_30042026.pdf",
+      "sha256": "b0ff2af4b5506cce080f3dd601ecc0bf7451bfc1ba16384581f9de32983ac023",
+      "retrieved_utc": "2026-10-28T13:52:40.866786+00:00",
+      "pages": 19,
+      "hits": []
+    }
+  ],
+  "note": "Partial issuer action-scope evidence, not a certificate of no corporate actions through vendor end date. Annual periods and post-report gap still require review.",
+  "review_notes": [
+    "FY2024-25 annual report page102 explicitly confirms current ISIN INE349Y01013 and no Board-recommended dividend for that financial year. This does not independently exclude interim dividends or all capital events.",
+    "Generic references to certificate splitting/subdivision in investor-service procedures are not evidence of an actual stock split. Preference-share dividend wording is not an equity cash dividend.",
+    "Full issuer30Apr2026 board outcome/results PDF archived for further annual-financial accounting review, not parsed into published facts.",
+    "No action-completeness claim through26Oct2026; empty NSE corporate-action payload remains manual_review_required."
+  ]
+}
