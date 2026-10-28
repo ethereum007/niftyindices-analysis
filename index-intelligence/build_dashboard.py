@@ -74,6 +74,33 @@ def load_family_members(root, enabled=None):
     if enabled is not None and set(enabled)-result.keys():raise ValueError('Missing enabled family manifest: '+', '.join(sorted(set(enabled)-result.keys())))
     return result
 
+def load_reviewed_company_history(root):
+    folder=root/'stock-history';out={}
+    def verify(sha,extension):
+        if not re.fullmatch('[0-9a-f]{64}',sha) or extension not in ('json','pdf'):raise ValueError('Invalid history evidence reference')
+        raw=(folder/'raw'/(sha+'.'+extension)).read_bytes()
+        if hashlib.sha256(raw).hexdigest()!=sha:raise ValueError('Changed reviewed history evidence')
+    for file in folder.glob('*-publication-review.json'):
+        review=json.loads(file.read_text(encoding='utf-8'));family=review['family']
+        history=json.loads((folder/(family+'.json')).read_text(encoding='utf-8'))
+        actions=json.loads((folder/(family+'-action-review.json')).read_text(encoding='utf-8'))
+        for item in review['reviews']:
+            if item['status']!='reviewed_vendor_methodology':continue
+            m=next(r for r in history['members'] if r['symbol']==item['symbol'])
+            a=next(r for r in actions['members'] if r['symbol']==item['symbol'])
+            if m['isin']!=item['isin'] or m['sha256']!=item['history_sha256'] or a['sha256']!=item['action_sha256']:raise ValueError('Stale company history review')
+            if not a.get('all_reported_events_match') or not m['crosscheck']['within_0_1_pct']:raise ValueError('Company history checks failed')
+            verify(m['sha256'],'json');verify(a['sha256'],'json')
+            for evidence in item['identity_evidence']:verify(evidence['sha256'],evidence['extension'])
+            if m['isin'] in out:raise ValueError('Duplicate reviewed stock history')
+            # Decode the original vendor payload again; never trust edited derived rows.
+            import sys
+            sys.path.insert(0,str(HERE.parent/'nifty-automation'))
+            from fetch_stock_history import decode
+            rows,_=decode(json.loads((folder/'raw'/(m['sha256']+'.json')).read_text()),m['symbol'])
+            out[m['isin']]={'symbol':m['symbol'],'family':family,'rows':rows,'method':review['method'],'review':item,'source_url':m['source_url'],'asof':history['asof']}
+    return out
+
 def pack_rows(observations):
     """Store repeated identifiers once; derived horizons are computed on selection."""
     names=sorted({r['name'] for r in observations})
@@ -98,7 +125,7 @@ def build(db, root, out):
     theme_data=json.loads((HERE/'themes.json').read_text(encoding='utf-8'))
     enabled={f['id'] for f in theme_data['catalogue']['families'] if f.get('company_data_ready') is True}
     family_members=load_family_members(root,enabled)
-    payload={**pack_rows(observations),'coverage':coverage,'constituents':members,'stocks':stocks,'family_members':family_members,'themes':theme_data,
+    payload={**pack_rows(observations),'coverage':coverage,'constituents':members,'stocks':stocks,'family_members':family_members,'company_history':load_reviewed_company_history(root),'themes':theme_data,
              'batches':[dict(r) for r in db.execute('SELECT * FROM batches ORDER BY observation_date')],
              'generated':datetime.now(timezone.utc).isoformat(),
              'periods':list(PERIODS),'targets':{d:{k:target_date(date.fromisoformat(d),k).isoformat() for k in PERIODS} for d in sorted({r['date'] for r in observations})}}

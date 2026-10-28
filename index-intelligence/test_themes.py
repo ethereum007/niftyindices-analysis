@@ -4,7 +4,8 @@ import unittest
 import sqlite3
 import tempfile
 import hashlib
-from build_dashboard import load_family_members
+import shutil
+from build_dashboard import load_family_members,load_reviewed_company_history
 from pathlib import Path
 
 HERE=Path(__file__).parent
@@ -33,6 +34,16 @@ class ThemesTest(unittest.TestCase):
             self.assertEqual(set(load_family_members(root,{'live'})),{'live'})
             self.assertEqual(load_family_members(root,set()),{})
             with self.assertRaisesRegex(ValueError,'Missing enabled family manifest'):load_family_members(root,{'missing'})
+
+    def test_reviewed_history_excludes_pending_and_rejects_stale_review(self):
+        source=HERE.parent/'nifty-automation/data'
+        approved=load_reviewed_company_history(source)
+        self.assertEqual({r['symbol'] for r in approved.values()},{'HAL','MAZDOCK','DYNAMATECH'})
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);shutil.copytree(source/'stock-history',root/'stock-history')
+            p=root/'stock-history/defence-publication-review.json';data=json.loads(p.read_text())
+            data['reviews'][0]['history_sha256']='0'*64;p.write_text(json.dumps(data))
+            with self.assertRaisesRegex(ValueError,'Stale company history review'):load_reviewed_company_history(root)
 
     def test_membership_evidence_and_quote_identity(self):
         themes=json.loads((HERE/'themes.json').read_text(encoding='utf-8'))

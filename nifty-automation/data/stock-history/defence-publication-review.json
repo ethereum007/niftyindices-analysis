@@ -1,0 +1,52 @@
+{
+  "family": "defence",
+  "method": "Vendor adjusted close; split/dividend treatment, not an official index or independently reconstructed total-return series. NSE reported actions and quote reconciliation checked. Unreported/complex corporate events can require revision.",
+  "reviews": [
+    {
+      "symbol": "HAL",
+      "isin": "INE066F01020",
+      "status": "reviewed_vendor_methodology",
+      "reviewed_on": "2026-10-28",
+      "history_sha256": "81f9891f0ebb509fb1868a0de1ae76372d046246c68d70335658fa84b075cb57",
+      "action_sha256": "74fce413c92fae6a4dfc4e960bc9f2564b35e1daf4b81341d55e02b355b17347",
+      "identity_evidence": [
+        {
+          "sha256": "cf3b7d10cd5c953f9ec3d26f064c40e0044b9d1e19a5ab27fe1860562e8e2851",
+          "extension": "pdf",
+          "source_url": "https://nsearchives.nseindia.com/corporate/HAL_28092023094728_Changeofrecorddate_28092023.pdf"
+        }
+      ],
+      "note": "NSE revised the split and new-ISIN effective date to 28 September 2023, superseding the earlier29September circular; original historic ISIN maps to INE066F01020. Reported split/dividend events and vendor dividend-factor steps checked."
+    },
+    {
+      "symbol": "MAZDOCK",
+      "isin": "INE249Z01020",
+      "status": "reviewed_vendor_methodology",
+      "reviewed_on": "2026-10-28",
+      "history_sha256": "a69ae7bd2dd951506df9083d9ea78199b4608513db428ccec3a3d5930e9bd96d",
+      "action_sha256": "f1b66b1abf4be5394c6b229b90d34d8d2505cbc76deaf6ab13688282a024f6d6",
+      "identity_evidence": [
+        {
+          "sha256": "c48889e5cf7f53ad59bc6ef36f158615ebd6aa40ce8735b2523f01c2c1806684",
+          "extension": "pdf",
+          "source_url": "https://www.msei.in/SX-Content/Circulars/2024/December/Circular-16513.pdf"
+        }
+      ],
+      "note": "Exchange circular maps old to new ISIN on27December2024 for10-to5 face-value subdivision. Reported events and vendor dividend-factor steps checked."
+    },
+    {
+      "symbol": "DYNAMATECH",
+      "isin": "INE221B01012",
+      "status": "reviewed_vendor_methodology",
+      "reviewed_on": "2026-10-28",
+      "history_sha256": "c9b85caeda2edfd7fe3c2fc4fd5738ee63a0428b5ce7f13838d6d76aecaf7c79",
+      "action_sha256": "3de17c7390dcc42465296f5ffa559fca3644a7946872ccc35e20a2cf4d88e277",
+      "identity_evidence": [],
+      "note": "NSE reported-action ISIN matches the current official constituent identity; all reported cash dividends and vendor adjustment-factor steps checked."
+    }
+  ],
+  "pending_symbols": {
+    "BEL": "Historical ISIN continuity review pending",
+    "IDEAFORGE": "IPO/empty-action response scope review pending"
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "symbol": "HAL",
+    "url": "https://archives.nseindia.com/content/circulars/CML58539.pdf",
+    "sha256": "9855465748af6422ae0eff871c60ba2872f5a6612c665f5c21ab891506a71a7d",
+    "extension": "pdf"
+  },
+  {
+    "symbol": "MAZDOCK",
+    "url": "https://mazagondock.in/images/pdf/SE%20Disclosure_Newspaper%20Publication%20of%20Financial%20results_31122024.pdf",
+    "sha256": "780e6f1b508e20fc5cf57f6ccde3fddbd4d4bf090a28918cb581d8ecb016e26b",
+    "extension": "pdf"
+  }
+]
