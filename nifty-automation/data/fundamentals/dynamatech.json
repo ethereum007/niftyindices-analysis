@@ -5,12 +5,85 @@
     {
       "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_159032_19052026203916_iXBRL_WEB.html",
       "filing_date": "2026-05-19",
-      "retrieved_utc": "2026-10-28T07:52:53.490618+00:00",
+      "retrieved_utc": "2026-10-28T08:52:18.618840+00:00",
       "sha256": "6865acba54f98b6c1a9c02cf716bacf629bfc67203e3416e3ec233fde2f0d20d",
       "status": "fetch_or_validation_failed",
       "error": "Unexpected accounting scope"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_159033_19052026203924_iXBRL_WEB.html",
+      "filing_date": "2026-05-19",
+      "retrieved_utc": "2026-10-28T08:52:18.618840+00:00",
+      "sha256": "a0a8f8fb3ec23c80a77870c4496010d46840c2c1ce45929acc44f11b9197c2a2",
+      "fact": {
+        "symbol": "DYNAMATECH",
+        "isin": "INE221B01012",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_date": "2026-05-19",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "433.16",
+        "pat_total_period_crore": "12.56",
+        "ytd_revenue_operations_crore": "1621.34",
+        "ytd_pat_total_period_crore": "32.41",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_141452_09022026215314_iXBRL_WEB.html",
+      "filing_date": "2026-02-09",
+      "retrieved_utc": "2026-10-28T08:52:18.618840+00:00",
+      "sha256": "ebab73c5a5ebe827211fd55322c6eb31af86783403280bf5ec3e50dc97d1437c",
+      "fact": {
+        "symbol": "DYNAMATECH",
+        "isin": "INE221B01012",
+        "period_start": "2025-10-01",
+        "period_end": "2025-12-31",
+        "filing_date": "2026-02-09",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "424.87",
+        "pat_total_period_crore": "5.77",
+        "ytd_revenue_operations_crore": "1188.18",
+        "ytd_pat_total_period_crore": "19.85",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_109311_07082025195215_iXBRL_WEB.html",
+      "filing_date": "2025-08-07",
+      "retrieved_utc": "2026-10-28T08:52:19.173797+00:00",
+      "sha256": "a9759caf16faf70b0517f022dd80a8060b1e8fcc35c3ed935b1c68bd5f47ecfc",
+      "fact": {
+        "symbol": "DYNAMATECH",
+        "isin": "INE221B01012",
+        "period_start": "2025-04-01",
+        "period_end": "2025-06-30",
+        "filing_date": "2025-08-07",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "INR actuals",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "370.93",
+        "pat_total_period_crore": "10.77",
+        "ytd_revenue_operations_crore": null,
+        "ytd_pat_total_period_crore": null,
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
     }
   ],
   "ttm": null,
+  "ttm_unavailable_reason": null,
   "note": "Primary financial-fact pilot. Accounting/date/unit review and source verification required before publication. Missing prior-year quarters, ROCE and valuation remain unavailable."
 }

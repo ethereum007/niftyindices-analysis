@@ -71,6 +71,29 @@ class PrimaryFinancialTest(unittest.TestCase):
         self.assertEqual(latest['revenue_operations_crore'],'5546.98')
         self.assertEqual(latest['pat_total_period_crore'],'1054.53')
 
+    def test_dynamatic_consolidated_annual_bridge_and_scope_isolation(self):
+        data=json.loads((ROOT/'dynamatech.json').read_text(encoding='utf-8'))
+        self.assertFalse(data['publication_ready'])
+        self.assertIsNone(data['ttm'])
+        facts=[]
+        for source in data['sources']:
+            raw=(ROOT/'raw'/(source['sha256']+'.html')).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),source['sha256'])
+            if source.get('fact'):
+                fact=parse(raw,source['filing_date'],'DYNAMATECH')
+                self.assertEqual(fact['isin'],'INE221B01012')
+                self.assertEqual(fact['scope'],'Consolidated')
+                facts.append(fact)
+        self.assertEqual(len(facts),3)
+        annual=next(f for f in facts if f['period_end']=='2026-03-31')
+        december=next(f for f in facts if f['period_end']=='2025-12-31')
+        for metric in ('revenue_operations_crore','pat_total_period_crore'):
+            self.assertEqual(Decimal(annual['ytd_'+metric])-Decimal(december['ytd_'+metric]),Decimal(annual[metric]))
+        self.assertEqual(annual['revenue_operations_crore'],'433.16')
+        self.assertEqual(annual['pat_total_period_crore'],'12.56')
+        june=next(f for f in facts if f['period_end']=='2025-06-30')
+        self.assertEqual(june['source_unit'],'INR actuals')
+
     def test_exact_quarter_sales_pat_scope_and_unit(self):
         f=parse(self.raw,'2026-10-27')
         self.assertEqual(f['period_start'],'2026-07-01')
