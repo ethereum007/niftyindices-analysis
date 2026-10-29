@@ -1,0 +1,72 @@
+{
+  "symbol": "LT",
+  "publication_ready": false,
+  "sources": [
+    {
+      "source_url": "https://investors.larsentoubro.com/upload/Quarterly/FY2027QuarterlyLTJune2026-website.pdf",
+      "sha256": "a71aadd8b8470e680dde7e455d58595a014344bad7488495f34bd9b2eb5338b3",
+      "retrieved_utc": "2026-10-29T02:10:34.444133+00:00",
+      "pages": 7,
+      "parsed_research_fact": {
+        "symbol": "LT",
+        "isin": "INE018A01030",
+        "scope": "Consolidated",
+        "period_end": "2026-06-30",
+        "source_unit": "INR crore",
+        "revenue_operations_crore": "67941.74",
+        "pat_total_period_crore": "4988.03",
+        "statement_page": 1,
+        "filing_date": null,
+        "publication_ready": false,
+        "pat_definition": "Total period PAT including JV/associate share; not parent-attributable PAT.",
+        "quarter_columns_revenue": [
+          "67941.74",
+          "82762.16",
+          "63678.92",
+          "285874.36"
+        ],
+        "quarter_columns_pat": [
+          "4988.03",
+          "6133.06",
+          "4318.17",
+          "18953.88"
+        ]
+      }
+    },
+    {
+      "source_url": "https://investors.larsentoubro.com/upload/Quarterly/FY2027QuarterlyLnTResultsSeptember2026.pdf",
+      "sha256": "dd9f06b475b96ebdf2042c88e59b81687cff732fc8ec694b7c70a97be9117730",
+      "retrieved_utc": "2026-10-29T02:10:35.045406+00:00",
+      "pages": 10,
+      "parsed_research_fact": {
+        "symbol": "LT",
+        "isin": "INE018A01030",
+        "scope": "Consolidated",
+        "period_end": "2026-09-30",
+        "source_unit": "INR crore",
+        "revenue_operations_crore": "78749.94",
+        "pat_total_period_crore": "5949.15",
+        "statement_page": 1,
+        "filing_date": null,
+        "publication_ready": false,
+        "pat_definition": "Total period PAT including JV/associate share; not parent-attributable PAT.",
+        "quarter_columns_revenue": [
+          "78749.94",
+          "67941.74",
+          "67983.53",
+          "146691.68",
+          "131662.45",
+          "285874.36"
+        ],
+        "quarter_columns_pat": [
+          "5949.15",
+          "4988.03",
+          "4678.01",
+          "10937.18",
+          "8996.18",
+          "18953.88"
+        ]
+      }
+    }
+  ]
+}

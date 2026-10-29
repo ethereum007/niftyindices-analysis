@@ -1,0 +1,34 @@
+{
+  "symbol": "LT",
+  "publication_ready": false,
+  "sources": [
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_106944_29072025194331_iXBRL_WEB.html",
+      "filing_date": "2025-07-29",
+      "retrieved_utc": "2026-10-29T02:10:12.435415+00:00",
+      "sha256": "d9d339306266d5aad51732b21f29a201008a8377baa09da47dc0697a9d8ed6f7",
+      "fact": {
+        "symbol": "LT",
+        "isin": "INE018A01030",
+        "financial_year_start": "2025-04-01",
+        "period_start": "2025-04-01",
+        "period_end": "2025-06-30",
+        "filing_date": "2025-07-29",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "INR actuals",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "63678.92",
+        "pat_total_period_crore": "4318.17",
+        "ytd_revenue_operations_crore": null,
+        "ytd_pat_total_period_crore": null,
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    }
+  ],
+  "ttm": null,
+  "ttm_unavailable_reason": null,
+  "note": "Primary financial-fact pilot. Accounting/date/unit review and source verification required before publication. Missing prior-year quarters, ROCE and valuation remain unavailable."
+}
