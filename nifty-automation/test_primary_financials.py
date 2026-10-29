@@ -190,6 +190,26 @@ class PrimaryFinancialTest(unittest.TestCase):
         self.assertTrue(all(c['status']=='exact_match' for c in checks))
         self.assertFalse(data['publication_ready'])
 
+    def test_dixon_primary_annual_bridge_and_missing_ttm(self):
+        from reconcile_financials import reconcile
+        data=json.loads((ROOT/'dixon.json').read_text(encoding='utf-8'))
+        self.assertFalse(data['publication_ready'])
+        self.assertIsNone(data['ttm'])
+        facts=[]
+        for source in data['sources']:
+            raw=(ROOT/'raw'/(source['sha256']+'.html')).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),source['sha256'])
+            facts.append(parse(raw,source['filing_date'],'DIXON'))
+        self.assertEqual(len(facts),3)
+        march=next(f for f in facts if f['period_end']=='2026-03-31')
+        self.assertEqual(march['revenue_operations_crore'],'10510.51')
+        self.assertEqual(march['pat_total_period_crore'],'297.97')
+        self.assertEqual(march['financial_year_start'],'2025-04-01')
+        self.assertTrue(all(c['status']=='exact_match' for c in reconcile(facts)))
+        prior=next(f for f in facts if f['period_end']=='2025-06-30')
+        self.assertEqual(prior['source_unit'],'INR actuals')
+        self.assertEqual(prior['revenue_operations_crore'],'12835.66')
+
     def test_exact_quarter_sales_pat_scope_and_unit(self):
         f=parse(self.raw,'2026-10-27')
         self.assertEqual(f['period_start'],'2026-07-01')

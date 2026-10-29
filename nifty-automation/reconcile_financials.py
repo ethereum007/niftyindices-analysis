@@ -26,7 +26,7 @@ def reconcile(facts):
 
 def main():
     out=[]
-    for symbol in ('HAL','BEL','MAZDOCK','DYNAMATECH','IDEAFORGE','ABB'):
+    for symbol in ('HAL','BEL','MAZDOCK','DYNAMATECH','IDEAFORGE','ABB','DIXON'):
         data=json.loads((ROOT/(symbol.lower()+'.json')).read_text(encoding='utf-8'))
         out.extend(reconcile([r['fact'] for r in data['sources'] if r.get('fact')]))
     (ROOT/'reconciliation-queue.json').write_text(json.dumps({'publication_ready':False,'checks':out},indent=2),encoding='utf-8')

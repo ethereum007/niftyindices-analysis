@@ -280,6 +280,26 @@
       "difference_crore": "0.00",
       "status": "exact_match",
       "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "DIXON",
+      "period_end": "2026-03-31",
+      "metric": "revenue_operations_crore",
+      "reported": "10510.51",
+      "ytd_difference": "10510.51",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
+    },
+    {
+      "symbol": "DIXON",
+      "period_end": "2026-03-31",
+      "metric": "pat_total_period_crore",
+      "reported": "297.97",
+      "ytd_difference": "297.97",
+      "difference_crore": "0.00",
+      "status": "exact_match",
+      "note": "No tolerance or inferred rounding explanation; source values remain unchanged."
     }
   ]
 }

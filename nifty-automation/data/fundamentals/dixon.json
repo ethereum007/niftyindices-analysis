@@ -1,0 +1,84 @@
+{
+  "symbol": "DIXON",
+  "publication_ready": false,
+  "sources": [
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_157112_12052026233824_iXBRL_WEB.html",
+      "filing_date": "2026-05-12",
+      "retrieved_utc": "2026-10-29T00:09:58.290572+00:00",
+      "sha256": "664b8010658f504179ba009b471717eac0efd7b78f7e87761b4234b25a51325d",
+      "fact": {
+        "symbol": "DIXON",
+        "isin": "INE935N01020",
+        "financial_year_start": "2025-04-01",
+        "period_start": "2026-01-01",
+        "period_end": "2026-03-31",
+        "filing_date": "2026-05-12",
+        "scope": "Consolidated",
+        "audit_status": "Audited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "10510.51",
+        "pat_total_period_crore": "297.97",
+        "ytd_revenue_operations_crore": "48872.80",
+        "ytd_pat_total_period_crore": "1644.25",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_138689_29012026184330_iXBRL_WEB.html",
+      "filing_date": "2026-01-29",
+      "retrieved_utc": "2026-10-29T00:09:58.290572+00:00",
+      "sha256": "d59b3d9221d5f556512560a596d104ba3ff5dbb6ac1e13b40289e58173f99551",
+      "fact": {
+        "symbol": "DIXON",
+        "isin": "INE935N01020",
+        "financial_year_start": "2025-04-01",
+        "period_start": "2025-10-01",
+        "period_end": "2025-12-31",
+        "filing_date": "2026-01-29",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "Lakhs",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "10671.59",
+        "pat_total_period_crore": "320.56",
+        "ytd_revenue_operations_crore": "38362.29",
+        "ytd_pat_total_period_crore": "1346.28",
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    },
+    {
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_104678_22072025164542_iXBRL_WEB.html",
+      "filing_date": "2025-07-22",
+      "retrieved_utc": "2026-10-29T00:09:58.290572+00:00",
+      "sha256": "e554a4ccf2a709f0664e4037509cfd05b321e5fb948a1565177a58e56c86a9d6",
+      "fact": {
+        "symbol": "DIXON",
+        "isin": "INE935N01020",
+        "financial_year_start": "2025-04-01",
+        "period_start": "2025-04-01",
+        "period_end": "2025-06-30",
+        "filing_date": "2025-07-22",
+        "scope": "Consolidated",
+        "audit_status": "Unaudited",
+        "source_unit": "INR actuals",
+        "display_unit": "INR crore",
+        "revenue_operations_crore": "12835.66",
+        "pat_total_period_crore": "280.02",
+        "ytd_revenue_operations_crore": null,
+        "ytd_pat_total_period_crore": null,
+        "pat_definition": "Total profit/loss for period, including equity-accounted associates/JVs where reported; not assumed to be owners-of-parent attributable PAT.",
+        "notes": "Exact reported quarter column; YTD/annual columns and other income are not used as quarterly sales. No forecast or quarterly growth rate inferred."
+      },
+      "status": "parsed_pending_review"
+    }
+  ],
+  "ttm": null,
+  "ttm_unavailable_reason": null,
+  "note": "Primary financial-fact pilot. Accounting/date/unit review and source verification required before publication. Missing prior-year quarters, ROCE and valuation remain unavailable."
+}

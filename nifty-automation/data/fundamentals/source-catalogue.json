@@ -1,4 +1,18 @@
 {
+  "DIXON": [
+    {
+      "filing_date": "2026-05-12",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_157112_12052026233824_iXBRL_WEB.html"
+    },
+    {
+      "filing_date": "2026-01-29",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_138689_29012026184330_iXBRL_WEB.html"
+    },
+    {
+      "filing_date": "2025-07-22",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_104678_22072025164542_iXBRL_WEB.html"
+    }
+  ],
   "ABB": [
     {
       "filing_date": "2026-07-31",
