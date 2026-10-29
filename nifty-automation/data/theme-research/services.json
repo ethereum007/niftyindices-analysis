@@ -1,0 +1,117 @@
+{
+  "family": "services",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-29",
+  "note": "Five independently researched business-role examples; not an exhaustive listed universe. No holdings, weights, historical membership, client records or quantified theme revenue inferred.",
+  "comparison_note": "These roles differ in assets, contracts, regulatory exposure and revenue recognition. Group/subsidiary and managed-client-asset boundaries are explicit. This is not a homogeneous valuation or growth peer group.",
+  "members": [
+    {
+      "symbol": "ECLERX",
+      "subtheme": "Business services",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ECLERX_13052026193401_BSENSEPR310326.pdf",
+      "rationale": "eClerx describes analytics, digital operations and business-process management services. Client data processing is not ownership of client businesses, and no current AI-specific revenue share is inferred.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "eClerx Services Ltd.",
+      "isin": "INE738I01010",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/ECLERX_13052026193401_BSENSEPR310326.pdf",
+      "sha256": "272ad42b83b48666ba04c4055359e4c851beaea6db59589b205ffd254da81272",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T06:49:50.957247+00:00",
+      "evidence_pages": [
+        15
+      ],
+      "keyword_checks": {
+        "eclerx services": true,
+        "business process": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "TEAMLEASE",
+      "subtheme": "Staffing",
+      "source_url": "https://group.teamlease.com/about-teamlease/",
+      "rationale": "TeamLease describes staffing and workforce services. Associates deployed at client sites are distinct from the company owning client operating assets; no current placements or headcount growth inferred.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from primary corporate disclosure",
+      "company": "TeamLease Services Limited",
+      "isin": "INE985S01024",
+      "resolved_url": "https://group.teamlease.com/about-teamlease/",
+      "sha256": "752ed19fb32f7164007894a2e5fba02dba21ce14956abe0de8319bdb7546a5a0",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:49:50.820720+00:00",
+      "keyword_checks": {
+        "teamlease": true,
+        "staffing": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "SIS",
+      "subtheme": "Facility services",
+      "source_url": "https://sisindia.com/facility-management-solutions/",
+      "rationale": "SIS describes facility-management solutions delivered through group operating businesses. Managed premises are not company-owned real estate and facility services are distinct from security guarding and cash logistics.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from primary corporate disclosure",
+      "company": "SIS Limited",
+      "isin": "INE285J01028",
+      "resolved_url": "https://www.sisindia.com/facility-management-solutions/",
+      "sha256": "0cf1b8c415950eb5e01762aca2680f5e37da316ae842ec2e321aea3cb34d63cf",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:49:52.508151+00:00",
+      "keyword_checks": {
+        "facility management": true,
+        "sis": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "NAUKRI",
+      "subtheme": "Professional platforms",
+      "source_url": "https://www.infoedge.in/About/Overview",
+      "rationale": "Info Edge describes recruitment marketplaces including Naukri. Platform services are distinct from staffing payroll/employer-of-record operations and minority investee revenue is not direct operating revenue.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Info Edge (India) Ltd.",
+      "isin": "INE663F01032",
+      "resolved_url": "https://www.infoedge.in/About/Overview",
+      "sha256": "898a0f4b771704d72c0d8afd45c4e7dc71d0a6948a6cda10dbb2657d6c49c944",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:49:51.372221+00:00",
+      "keyword_checks": {
+        "naukri": true,
+        "recruitment": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "FSL",
+      "subtheme": "Service outsourcing",
+      "source_url": "https://www.firstsource.com/newsroom/press-releases/firstsource-unveils-unbpo-a-bold-redefinition-of-business-process-outsourcing",
+      "rationale": "Firstsource describes business-process and customer-experience outsourcing. Service capability is not ownership of clients or independently verified savings and automation success for every engagement.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Firstsource Solutions Ltd.",
+      "isin": "INE684F01012",
+      "resolved_url": "https://www.firstsource.com/newsroom/press-releases/firstsource-unveils-unbpo-a-bold-redefinition-of-business-process-outsourcing",
+      "sha256": "cf14e00eaddd26df7caf45ae35d3e20cbace38251f14968cb2670ab9dceb8eee",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:49:52.274754+00:00",
+      "keyword_checks": {
+        "business process": true,
+        "firstsource": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

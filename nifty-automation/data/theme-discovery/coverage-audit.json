@@ -1221,7 +1221,7 @@
             {
               "symbol": "MOSCHIP",
               "isin": "INE935B01025",
-              "sha256": "1cd962fe9cfc5a4523dfda5bb188332b5fb4c46bfe3bff76214f3f4cad75a8ef"
+              "sha256": "c2f36b8b569445412776b42b10684e273dad9b19b481a41a122297b595d3308d"
             }
           ],
           "gap_note": null
@@ -1233,7 +1233,7 @@
             {
               "symbol": "CGPOWER",
               "isin": "INE067A01029",
-              "sha256": "f0031a39063b5a6a8d9a11726edc282136f4a762fe963303eefb265f9a729b8b"
+              "sha256": "b0147941306e2dc69c91755291f90ff3818f9e62ae6b82b8b9e38c8d4fbac245"
             }
           ],
           "gap_note": null
@@ -1245,7 +1245,7 @@
             {
               "symbol": "DCXINDIA",
               "isin": "INE0KL801015",
-              "sha256": "c1331cbce1cc5ac7fb23f43a7a5301797045994d9bd5796cdeeb0de1d04999ff"
+              "sha256": "73f5d63f1ce025c6a31a9d21774f8002897867c7ca9eed4bed6d02c36c039e23"
             }
           ],
           "gap_note": null
@@ -1257,7 +1257,7 @@
             {
               "symbol": "HONAUT",
               "isin": "INE671A01010",
-              "sha256": "2e0fb1743cf39d512b2e9b56abda68e6718a082ea63cc6e13077124f3f0782f6"
+              "sha256": "3cabe3d94f0c6655f0e75dee8c1861aaca8085c7a02f10b18b7191171d7f4fd2"
             }
           ],
           "gap_note": null
@@ -1335,114 +1335,204 @@
     {
       "family": "waterwaste",
       "name": "Water & Waste Management",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "Water treatment",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "IONEXCHANG",
+              "isin": "INE570A01022",
+              "sha256": "318674f377171abdb4cc1e591dfec17aef8c8e69875f7e09767e2d5107fd3685"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Wastewater EPC",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "WABAG",
+              "isin": "INE956G01038",
+              "sha256": "763baea4315b15f3da98871f8ff0080e7802fc88a573596041348e8ea6509ce8"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Pumps & fluid handling",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "KSB",
+              "isin": "INE999A01023",
+              "sha256": "b26ccd37f153c28aa33f1d25c1fc9874429867626e12d119a2e1d34140575a69"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Solid waste services",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "AWHCL",
+              "isin": "INE01BK01022",
+              "sha256": "dd5617445dbc460b9b73d81cf609178d34c5af0f9aa2392ec973d287e55d4415"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Resource recovery",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "GRAVITA",
+              "isin": "INE024L01027",
+              "sha256": "9a480d0b7c73d6b38a4c8590be34ee40192bb0fec63d8b1755b6dfcbb9c6dc52"
+            }
+          ],
+          "gap_note": null
         }
       ]
     },
     {
       "family": "chemicals",
       "name": "Chemicals",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "Specialty chemicals",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "SRF",
+              "isin": "INE647A01010",
+              "sha256": "d2437d5eead93d12568977572924e9ac9a3b865bd9b7e2490edd3c9011222037"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Agrochemicals",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "UPL",
+              "isin": "INE628A01036",
+              "sha256": "8814e3ee69d20bd5bf6f6202acf2d2d26f4f816fc9f66cbd8dfe4d9178083866"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Fluorochemicals",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "NAVINFLUOR",
+              "isin": "INE048G01026",
+              "sha256": "f902a44424b8b02f32edf80faf049fbf10c647effc99e3b967274ca6424b4c4c"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Commodity chemicals",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "TATACHEM",
+              "isin": "INE092A01019",
+              "sha256": "5b5a7504ee2146c3ea5a613960803ec04bfbbec4a968006ecf59a557f010e0b4"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Industrial gases",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "LINDEINDIA",
+              "isin": "INE473A01011",
+              "sha256": "6918aaab376e2fab83a5cbc7cd3f200ed8d0d4eef5b63a2f78a52d213ad95968"
+            }
+          ],
+          "gap_note": null
         }
       ]
     },
     {
       "family": "services",
       "name": "Diversified Services",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "Business services",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ECLERX",
+              "isin": "INE738I01010",
+              "sha256": "272ad42b83b48666ba04c4055359e4c851beaea6db59589b205ffd254da81272"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Staffing",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "TEAMLEASE",
+              "isin": "INE985S01024",
+              "sha256": "752ed19fb32f7164007894a2e5fba02dba21ce14956abe0de8319bdb7546a5a0"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Facility services",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "SIS",
+              "isin": "INE285J01028",
+              "sha256": "0cf1b8c415950eb5e01762aca2680f5e37da316ae842ec2e321aea3cb34d63cf"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Professional platforms",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "NAUKRI",
+              "isin": "INE663F01032",
+              "sha256": "898a0f4b771704d72c0d8afd45c4e7dc71d0a6948a6cda10dbb2657d6c49c944"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Service outsourcing",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "FSL",
+              "isin": "INE684F01012",
+              "sha256": "cf14e00eaddd26df7caf45ae35d3e20cbace38251f14968cb2670ab9dceb8eee"
+            }
+          ],
+          "gap_note": null
         }
       ]
     },
@@ -1638,6 +1728,6 @@
     }
   ],
   "total_subthemes": 140,
-  "mapped_subthemes": 95,
-  "fully_mapped_example_families": 19
+  "mapped_subthemes": 110,
+  "fully_mapped_example_families": 22
 }

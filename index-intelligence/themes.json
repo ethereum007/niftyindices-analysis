@@ -2143,9 +2143,9 @@
         "related_indices": [
           "Nifty Infrastructure"
         ],
-        "membership_status": "Company mapping pending",
-        "mapping_note": "Related official indices provide context only, including broad proxies where no dedicated series exists. Their returns and constituents are not custom-theme membership or performance.",
-        "company_data_ready": false,
+        "membership_status": "Initial examples available",
+        "mapping_note": "Five independently source-backed business-role examples; not exhaustive membership, weights or historical baskets. Group, subsidiary and client-asset boundaries are explicit. Related official indices provide context only; their returns are not this custom theme.",
+        "company_data_ready": true,
         "origin": "workbook_alignment",
         "workbook_alignment": {
           "name": "Water & waste management",
@@ -2187,9 +2187,9 @@
         "related_indices": [
           "Nifty Chemicals"
         ],
-        "membership_status": "Company mapping pending",
-        "mapping_note": "Related official indices provide context only, including broad proxies where no dedicated series exists. Their returns and constituents are not custom-theme membership or performance.",
-        "company_data_ready": false,
+        "membership_status": "Initial examples available",
+        "mapping_note": "Five independently source-backed business-role examples; not exhaustive membership, weights or historical baskets. Group, subsidiary and client-asset boundaries are explicit. Related official indices provide context only; their returns are not this custom theme.",
+        "company_data_ready": true,
         "origin": "workbook_alignment",
         "workbook_alignment": {
           "name": "Chemicals",
@@ -2224,9 +2224,9 @@
         "related_indices": [
           "Nifty Services Sector"
         ],
-        "membership_status": "Company mapping pending",
-        "mapping_note": "Related official indices provide context only, including broad proxies where no dedicated series exists. Their returns and constituents are not custom-theme membership or performance.",
-        "company_data_ready": false,
+        "membership_status": "Initial examples available",
+        "mapping_note": "Five independently source-backed business-role examples; not exhaustive membership, weights or historical baskets. Group, subsidiary and client-asset boundaries are explicit. Related official indices provide context only; their returns are not this custom theme.",
+        "company_data_ready": true,
         "origin": "workbook_alignment",
         "workbook_alignment": {
           "name": "Diversified services",

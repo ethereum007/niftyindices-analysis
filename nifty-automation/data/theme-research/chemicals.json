@@ -1,0 +1,118 @@
+{
+  "family": "chemicals",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-29",
+  "note": "Five independently researched business-role examples; not an exhaustive listed universe. No holdings, weights, historical membership, client records or quantified theme revenue inferred.",
+  "comparison_note": "These roles differ in assets, contracts, regulatory exposure and revenue recognition. Group/subsidiary and managed-client-asset boundaries are explicit. This is not a homogeneous valuation or growth peer group.",
+  "members": [
+    {
+      "symbol": "SRF",
+      "subtheme": "Specialty chemicals",
+      "source_url": "https://www.srf.com/business-solutions/specialty-chemicals",
+      "rationale": "SRF describes development and manufacturing of advanced specialty intermediates. Its diversified films/textiles businesses are not silently attributed to specialty-chemical revenue.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "SRF Ltd.",
+      "isin": "INE647A01010",
+      "resolved_url": "https://www.srf.com/business-solutions/specialty-chemicals",
+      "sha256": "d2437d5eead93d12568977572924e9ac9a3b865bd9b7e2490edd3c9011222037",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:49:49.638845+00:00",
+      "keyword_checks": {
+        "specialty": true,
+        "intermediates": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "UPL",
+      "subtheme": "Agrochemicals",
+      "source_url": "https://www.upl-ltd.com/investors/corporate-governance",
+      "rationale": "UPL describes sustainable agriculture products and crop protection. Group product exposure is not product registration in every jurisdiction or current crop-cycle growth.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "UPL Ltd.",
+      "isin": "INE628A01036",
+      "resolved_url": "https://www.upl-ltd.com/investors/corporate-governance",
+      "sha256": "8814e3ee69d20bd5bf6f6202acf2d2d26f4f816fc9f66cbd8dfe4d9178083866",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:49:50.093359+00:00",
+      "keyword_checks": {
+        "crop protection": true,
+        "agriculture": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "NAVINFLUOR",
+      "subtheme": "Fluorochemicals",
+      "source_url": "https://nsearchives.nseindia.com/corporate/NAVINFLUOR_07052025020148_NFIL-Intimation-Joint_Press_Release-signed.pdf",
+      "rationale": "Navin Fluorine describes fluorine chemistry and fluorochemical businesses. Capability does not establish commercial volumes for every development molecule or customer programme.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Navin Fluorine International Ltd.",
+      "isin": "INE048G01026",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/NAVINFLUOR_07052025020148_NFIL-Intimation-Joint_Press_Release-signed.pdf",
+      "sha256": "f902a44424b8b02f32edf80faf049fbf10c647effc99e3b967274ca6424b4c4c",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T06:49:49.410102+00:00",
+      "evidence_pages": [
+        2,
+        3
+      ],
+      "keyword_checks": {
+        "fluorine": true,
+        "chemical": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "TATACHEM",
+      "subtheme": "Commodity chemicals",
+      "source_url": "https://www.tatachemicals.com/",
+      "rationale": "Tata Chemicals documents basic chemistry and soda-ash related business. This is materials/chemical production, not all Tata group businesses or pure-play specialty-chemical exposure.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Tata Chemicals Ltd.",
+      "isin": "INE092A01019",
+      "resolved_url": "https://www.tatachemicals.com/",
+      "sha256": "5b5a7504ee2146c3ea5a613960803ec04bfbbec4a968006ecf59a557f010e0b4",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:49:50.118427+00:00",
+      "keyword_checks": {
+        "soda ash": true,
+        "chemistry": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "LINDEINDIA",
+      "subtheme": "Industrial gases",
+      "source_url": "https://www.linde.in/",
+      "rationale": "Linde India supplies industrial gases and engineering solutions. Indian listed-company exposure is distinct from all global Linde revenue and does not imply ownership of customers using the gases.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Linde India Ltd.",
+      "isin": "INE473A01011",
+      "resolved_url": "https://www.linde.in/",
+      "sha256": "6918aaab376e2fab83a5cbc7cd3f200ed8d0d4eef5b63a2f78a52d213ad95968",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:49:50.274121+00:00",
+      "keyword_checks": {
+        "industrial": true,
+        "gases": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

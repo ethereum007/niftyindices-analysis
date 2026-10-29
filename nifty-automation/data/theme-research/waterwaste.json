@@ -1,0 +1,117 @@
+{
+  "family": "waterwaste",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-29",
+  "note": "Five independently researched business-role examples; not an exhaustive listed universe. No holdings, weights, historical membership, client records or quantified theme revenue inferred.",
+  "comparison_note": "These roles differ in assets, contracts, regulatory exposure and revenue recognition. Group/subsidiary and managed-client-asset boundaries are explicit. This is not a homogeneous valuation or growth peer group.",
+  "members": [
+    {
+      "symbol": "IONEXCHANG",
+      "subtheme": "Water treatment",
+      "source_url": "https://ionexchangeglobal.com/",
+      "rationale": "Ion Exchange describes water and environment management solutions. Treatment equipment/chemicals and services do not establish ownership of municipal water utilities.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Ion Exchange (India) Ltd.",
+      "isin": "INE570A01022",
+      "resolved_url": "https://ionexchangeglobal.com/",
+      "sha256": "318674f377171abdb4cc1e591dfec17aef8c8e69875f7e09767e2d5107fd3685",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:49:37.858770+00:00",
+      "keyword_checks": {
+        "water": true,
+        "treatment": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "WABAG",
+      "subtheme": "Wastewater EPC",
+      "source_url": "https://www.wabag.com/total-water-solution/effluent-treatment/",
+      "rationale": "WABAG describes effluent-treatment EPC and design/build/operate models. Project execution and operating contracts are distinct from permanent ownership of client utilities; no current backlog inferred.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Va Tech Wabag Ltd.",
+      "isin": "INE956G01038",
+      "resolved_url": "https://www.wabag.com/total-water-solution/effluent-treatment/",
+      "sha256": "763baea4315b15f3da98871f8ff0080e7802fc88a573596041348e8ea6509ce8",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:49:48.937608+00:00",
+      "keyword_checks": {
+        "effluent": true,
+        "epc": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "KSB",
+      "subtheme": "Pumps & fluid handling",
+      "source_url": "https://www.ksb.com/en-in/about-ksb",
+      "rationale": "KSB Limited issuer profile describes centrifugal pumps and industrial valves. This is equipment exposure serving water and other industries, not a pure-play water utility or quantified water revenue.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "KSB Ltd.",
+      "isin": "INE999A01023",
+      "resolved_url": "https://www.ksb.com/en-in/about-ksb",
+      "sha256": "b26ccd37f153c28aa33f1d25c1fc9874429867626e12d119a2e1d34140575a69",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:50:45.040318+00:00",
+      "keyword_checks": {
+        "pump": true,
+        "fluid": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "AWHCL",
+      "subtheme": "Solid waste services",
+      "source_url": "https://antony-waste.com/",
+      "rationale": "Antony Waste Handling Cell describes waste-management services. Municipal service contracts and processing are not treated as ownership of all municipal waste infrastructure or guaranteed renewals.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from primary corporate disclosure",
+      "company": "Antony Waste Handling Cell Limited",
+      "isin": "INE01BK01022",
+      "resolved_url": "https://antony-waste.com/",
+      "sha256": "dd5617445dbc460b9b73d81cf609178d34c5af0f9aa2392ec973d287e55d4415",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:49:38.310929+00:00",
+      "keyword_checks": {
+        "waste": true,
+        "management": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "GRAVITA",
+      "subtheme": "Resource recovery",
+      "source_url": "https://www.gravitaindia.com/Upload/PDF/gravita-starts-plastic-recycling-plant-tanzania.pdf",
+      "rationale": "Gravita issuer disclosure identifies recycled polypropylene production through a Tanzania step-down subsidiary. This supports recycling/resource recovery, not standalone-parent-only production or every proposed recycling line.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Gravita India Ltd.",
+      "isin": "INE024L01027",
+      "resolved_url": "https://www.gravitaindia.com/Upload/PDF/gravita-starts-plastic-recycling-plant-tanzania.pdf",
+      "sha256": "9a480d0b7c73d6b38a4c8590be34ee40192bb0fec63d8b1755b6dfcbb9c6dc52",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T06:49:39.305624+00:00",
+      "evidence_pages": [
+        2
+      ],
+      "keyword_checks": {
+        "gravita india limited": true,
+        "recycled": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

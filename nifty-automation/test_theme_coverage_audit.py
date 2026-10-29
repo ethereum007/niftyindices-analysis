@@ -2,6 +2,25 @@ import unittest,json,hashlib
 from audit_theme_coverage import audit,HERE
 
 class CoverageAuditTest(unittest.TestCase):
+    def test_water_chemicals_services_have_five_distinct_source_backed_roles(self):
+        catalogue=json.loads((HERE.parent/'index-intelligence/themes.json').read_text(encoding='utf-8'))['catalogue']['families']
+        quotes=json.loads((HERE/'data/stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        datasets={}
+        for family in ('waterwaste','chemicals','services'):
+            d=json.loads((HERE/'data/theme-research'/(family+'.json')).read_text(encoding='utf-8'));datasets[family]=d
+            self.assertEqual(set(next(f['subthemes'] for f in catalogue if f['id']==family)),{m['subtheme'] for m in d['members']})
+            self.assertEqual(len({m['isin'] for m in d['members']}),5)
+            for m in d['members']:
+                self.assertEqual(m['status'],'evidence_archived')
+                self.assertEqual(quotes[m['isin']]['symbol'],m['symbol'])
+                self.assertIsNone(m['effective_date'])
+                raw=(HERE/'data/theme-research/raw'/(m['sha256']+'.'+m.get('raw_extension','html'))).read_bytes()
+                self.assertEqual(hashlib.sha256(raw).hexdigest(),m['sha256'])
+        find=lambda family,symbol:next(m for m in datasets[family]['members'] if m['symbol']==symbol)
+        self.assertIn('not standalone-parent-only',find('waterwaste','GRAVITA')['rationale'])
+        self.assertIn('not company-owned real estate',find('services','SIS')['rationale'])
+        self.assertIn('distinct from staffing payroll',find('services','NAUKRI')['rationale'])
+
     def test_infra_logistics_electronics_roles_keep_operator_and_project_limits(self):
         catalogue=json.loads((HERE.parent/'index-intelligence/themes.json').read_text(encoding='utf-8'))['catalogue']['families']
         quotes=json.loads((HERE/'data/stocks/latest.json').read_text(encoding='utf-8'))['prices']
