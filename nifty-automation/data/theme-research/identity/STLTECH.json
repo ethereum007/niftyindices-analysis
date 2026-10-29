@@ -1,0 +1,21 @@
+{
+  "symbol": "STLTECH",
+  "subtheme": "Issuer identity",
+  "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_155756_06052026125624_iXBRL_WEB.html",
+  "rationale": "NSE filing explicitly identifies listed symbol STLTECH and ISIN INE089C01029. Latest local EQ quote unavailable; do not substitute separately listed STLNETWORK.",
+  "reviewed_on": "2026-10-29",
+  "effective_date": null,
+  "exposure_materiality": "Not quantified",
+  "identity_source": "Official NSE integrated issuer filing approved29April2026, filed6May2026; latest local EQ quote unavailable",
+  "company": "Sterlite Technologies Limited",
+  "isin": "INE089C01029",
+  "resolved_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_155756_06052026125624_iXBRL_WEB.html",
+  "sha256": "5e483072ed707d4b89732933145c05b98b2dd5dfff4268f528cc00d974c293f3",
+  "raw_extension": "html",
+  "retrieved_utc": "2026-10-29T09:12:40.585931+00:00",
+  "keyword_checks": {
+    "stltech": true,
+    "ine089c01029": true
+  },
+  "status": "evidence_archived"
+}

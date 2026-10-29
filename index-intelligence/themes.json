@@ -10,11 +10,29 @@
       "members": [
         {
           "symbol": "NETWEB",
-          "company": "Netweb Technologies",
-          "rationale": "AI systems and server products; theme revenue share not quantified.",
+          "subtheme": "AI compute hardware",
           "source_url": "https://www.netwebindia.com/investors/press-release/Intimation_of_Press_release_AMD_Make-in-India_Servers.pdf",
-          "exposure": "Documented business exposure; revenue materiality unverified",
-          "isin": "INE0NT901020"
+          "rationale": "Netweb June2024 issuer release describes servers supporting AI/ML workloads. This is documented hardware capability, not quantified AI revenue, current shipments or ownership of processor designs.",
+          "reviewed_on": "2026-10-29",
+          "effective_date": null,
+          "exposure_materiality": "Not quantified",
+          "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+          "company": "Netweb Technologies India Limited",
+          "isin": "INE0NT901020",
+          "resolved_url": "https://www.netwebindia.com/investors/press-release/Intimation_of_Press_release_AMD_Make-in-India_Servers.pdf",
+          "sha256": "1fa603b1468a9adfc19b3247f1baac119f642a1e093c5c9cb3f21c3df157336f",
+          "raw_extension": "pdf",
+          "retrieved_utc": "2026-10-29T09:12:42.090700+00:00",
+          "evidence_pages": [
+            1,
+            2,
+            3
+          ],
+          "keyword_checks": {
+            "netweb": true,
+            "ai": true
+          },
+          "status": "evidence_archived"
         }
       ]
     },
@@ -25,11 +43,24 @@
       "members": [
         {
           "symbol": "POLYCAB",
+          "subtheme": "cables",
+          "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_201397_15102026155523_iXBRL_WEB.html",
+          "rationale": "Polycab issuer segment filing documents cables and wires. General electrical products are not quantified AI/data-centre revenue or pure-play AI exposure.",
+          "reviewed_on": "2026-10-29",
+          "effective_date": null,
+          "exposure_materiality": "Not quantified",
+          "identity_source": "Current official Nifty constituent archive; not historical membership",
           "company": "Polycab India",
-          "rationale": "Wires and cables business; specific AI/data-centre revenue not established.",
-          "source_url": "https://cms.polycab.com/media/rpzdby5w/housewire-catalogue.pdf",
-          "exposure": "Documented business exposure; revenue materiality unverified",
-          "isin": "INE455K01017"
+          "isin": "INE455K01017",
+          "resolved_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_201397_15102026155523_iXBRL_WEB.html",
+          "sha256": "8ab8fb174b04b1453e21ee795b6769b85ccf1b8f3854f0f4268c92bb8ff2fa7c",
+          "raw_extension": "html",
+          "retrieved_utc": "2026-10-29T09:13:59.418097+00:00",
+          "keyword_checks": {
+            "polycab": true,
+            "cables": true
+          },
+          "status": "evidence_archived"
         }
       ]
     },
@@ -40,11 +71,29 @@
       "members": [
         {
           "symbol": "CGPOWER",
+          "subtheme": "switchgear",
+          "source_url": "https://nsearchives.nseindia.com/corporate/CGPOWER_04022025085223_Disclosure_Presentation_0405022025.pdf",
+          "rationale": "CG Power February2025 presentation describes switchgear and transformer portfolios. Diversified equipment exposure is not quantified AI revenue or ownership of customer power networks. Historical capability is not current utilisation.",
+          "reviewed_on": "2026-10-29",
+          "effective_date": null,
+          "exposure_materiality": "Not quantified",
+          "identity_source": "Current official Nifty constituent archive; not historical membership",
           "company": "CG Power and Industrial Solutions",
-          "rationale": "Power-system switchgear portfolio; diversified company.",
-          "source_url": "https://www.cgglobal.com/admin/uploads/Intimationoninvestorpresentation13022024.pdf",
-          "exposure": "Documented business exposure; revenue materiality unverified",
-          "isin": "INE067A01029"
+          "isin": "INE067A01029",
+          "resolved_url": "https://nsearchives.nseindia.com/corporate/CGPOWER_04022025085223_Disclosure_Presentation_0405022025.pdf",
+          "sha256": "d61edb789fda0a7dfaf073ba157cc23feaea0597f1765ff4a898bf576b2b4e1b",
+          "raw_extension": "pdf",
+          "retrieved_utc": "2026-10-29T09:13:59.809315+00:00",
+          "evidence_pages": [
+            10,
+            14,
+            15
+          ],
+          "keyword_checks": {
+            "transformers": true,
+            "switchgear": true
+          },
+          "status": "evidence_archived"
         }
       ]
     },
@@ -55,11 +104,24 @@
       "members": [
         {
           "symbol": "KAYNES",
-          "company": "Kaynes Technology India",
-          "rationale": "Integrated electronics manufacturing across several end markets.",
-          "source_url": "https://www.kaynestechnology.co.in/",
-          "exposure": "Documented business exposure; revenue materiality unverified",
-          "isin": "INE918Z01012"
+          "subtheme": "ems",
+          "source_url": "https://kaynestechnology.co.in/",
+          "rationale": "Kaynes describes electronics manufacturing and design services. EMS assembly is distinct from semiconductor wafer fabrication and does not quantify AI revenue.",
+          "reviewed_on": "2026-10-29",
+          "effective_date": null,
+          "exposure_materiality": "Not quantified",
+          "identity_source": "Current official Nifty constituent archive; not historical membership",
+          "company": "Kaynes Technology India Ltd.",
+          "isin": "INE918Z01012",
+          "resolved_url": "https://kaynestechnology.co.in/",
+          "sha256": "a15c7b9c639a1b6629f38de8b34bfce671f7f2bd899a3a39e98a7c1d533540f0",
+          "raw_extension": "html",
+          "retrieved_utc": "2026-10-29T06:40:37.978490+00:00",
+          "keyword_checks": {
+            "electronics": true,
+            "manufactur": true
+          },
+          "status": "evidence_archived"
         }
       ]
     },
@@ -70,11 +132,29 @@
       "members": [
         {
           "symbol": "CGPOWER",
+          "subtheme": "transformers",
+          "source_url": "https://nsearchives.nseindia.com/corporate/CGPOWER_04022025085223_Disclosure_Presentation_0405022025.pdf",
+          "rationale": "CG Power February2025 presentation describes switchgear and transformer portfolios. Diversified equipment exposure is not quantified AI revenue or ownership of customer power networks. Historical capability is not current utilisation.",
+          "reviewed_on": "2026-10-29",
+          "effective_date": null,
+          "exposure_materiality": "Not quantified",
+          "identity_source": "Current official Nifty constituent archive; not historical membership",
           "company": "CG Power and Industrial Solutions",
-          "rationale": "Power-transformer product portfolio; overlaps the switchgear basket.",
-          "source_url": "https://www.cgglobal.com/admin/uploads/Intimationoninvestorpresentation13022024.pdf",
-          "exposure": "Documented business exposure; revenue materiality unverified",
-          "isin": "INE067A01029"
+          "isin": "INE067A01029",
+          "resolved_url": "https://nsearchives.nseindia.com/corporate/CGPOWER_04022025085223_Disclosure_Presentation_0405022025.pdf",
+          "sha256": "d61edb789fda0a7dfaf073ba157cc23feaea0597f1765ff4a898bf576b2b4e1b",
+          "raw_extension": "pdf",
+          "retrieved_utc": "2026-10-29T09:13:59.809315+00:00",
+          "evidence_pages": [
+            10,
+            14,
+            15
+          ],
+          "keyword_checks": {
+            "transformers": true,
+            "switchgear": true
+          },
+          "status": "evidence_archived"
         }
       ]
     },
@@ -85,11 +165,24 @@
       "members": [
         {
           "symbol": "CGPOWER",
-          "company": "CG Power and Industrial Solutions",
-          "rationale": "CG Semi subsidiary/JV provides OSAT exposure; not a pure-play semiconductor company.",
-          "source_url": "https://www.cgglobal.com/subsidiaries_jv",
-          "exposure": "Documented business exposure; revenue materiality unverified",
-          "isin": "INE067A01029"
+          "subtheme": "semiconductors",
+          "source_url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2093860&lang=2&reg=3",
+          "rationale": "January2025 government disclosure identifies CG Power and CG Semi semiconductor assembly/test project. This is subsidiary/JV project exposure, not parent-only semiconductor revenue; this source alone does not establish subsequent commercial production or capacity utilisation.",
+          "reviewed_on": "2026-10-29",
+          "effective_date": null,
+          "exposure_materiality": "Not quantified",
+          "identity_source": "Current official Nifty constituent archive; not historical membership",
+          "company": "CG Power and Industrial Solutions Ltd.",
+          "isin": "INE067A01029",
+          "resolved_url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2093860&lang=2&reg=3",
+          "sha256": "b0147941306e2dc69c91755291f90ff3818f9e62ae6b82b8b9e38c8d4fbac245",
+          "raw_extension": "html",
+          "retrieved_utc": "2026-10-29T06:40:37.723239+00:00",
+          "keyword_checks": {
+            "cg power": true,
+            "osat": true
+          },
+          "status": "evidence_archived"
         }
       ]
     },
@@ -100,11 +193,29 @@
       "members": [
         {
           "symbol": "TATAELXSI",
-          "company": "Tata Elxsi",
-          "rationale": "Disclosed automotive AI software-development offering; AI revenue share not established.",
+          "subtheme": "Embedded design",
           "source_url": "https://nsearchives.nseindia.com/corporate/TELNSE_05032026164002_Reg30PressRelease05032026.pdf",
-          "exposure": "Documented business exposure; revenue materiality unverified",
-          "isin": "INE670A01012"
+          "rationale": "Tata Elxsi March2026 disclosure describes automotive AI software development. Engineering service capability is distinct from manufacturing vehicles or quantified AI revenue; customer deployment and commercial volumes are not inferred.",
+          "reviewed_on": "2026-10-29",
+          "effective_date": null,
+          "exposure_materiality": "Not quantified",
+          "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+          "company": "Tata Elxsi Limited",
+          "isin": "INE670A01012",
+          "resolved_url": "https://nsearchives.nseindia.com/corporate/TELNSE_05032026164002_Reg30PressRelease05032026.pdf",
+          "sha256": "00969a824ff90ebbb910e34af23ea092fbc15a51606778c459ac5298fa40406d",
+          "raw_extension": "pdf",
+          "retrieved_utc": "2026-10-29T09:12:42.351097+00:00",
+          "evidence_pages": [
+            1,
+            2,
+            3
+          ],
+          "keyword_checks": {
+            "tata elxsi": true,
+            "ai": true
+          },
+          "status": "evidence_archived"
         }
       ]
     },
@@ -115,11 +226,27 @@
       "members": [
         {
           "symbol": "ANANTRAJ",
-          "company": "Anant Raj",
-          "rationale": "Data-centre business through Anant Raj Cloud; diversified parent.",
-          "source_url": "https://investors.anantrajlimited.com/admin-login/images/pages/2.%20Data%20Center%20Presentation__05.09.2024.pdf",
-          "exposure": "Documented business exposure; revenue materiality unverified",
-          "isin": "INE242C01024"
+          "subtheme": "Data centres",
+          "source_url": "https://nsearchives.nseindia.com/corporate/ANANTRAJ_21012026201339_Outcome_Jan_2026.pdf",
+          "rationale": "Anant Raj January2026 issuer disclosure describes data-centre business through Anant Raj Cloud. Diversified-parent exposure includes subsidiary operations; announced capacity and future phases are not all commissioned or currently utilised.",
+          "reviewed_on": "2026-10-29",
+          "effective_date": null,
+          "exposure_materiality": "Not quantified",
+          "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+          "company": "Anant Raj Limited",
+          "isin": "INE242C01024",
+          "resolved_url": "https://nsearchives.nseindia.com/corporate/ANANTRAJ_21012026201339_Outcome_Jan_2026.pdf",
+          "sha256": "a7aff991498f7aacfc10f57b61d08d599f62ff89dfb49bda255c984875fc3b60",
+          "raw_extension": "pdf",
+          "retrieved_utc": "2026-10-29T09:12:41.130527+00:00",
+          "evidence_pages": [
+            3
+          ],
+          "keyword_checks": {
+            "anant raj": true,
+            "data": true
+          },
+          "status": "evidence_archived"
         }
       ]
     },
@@ -130,11 +257,24 @@
       "members": [
         {
           "symbol": "STLTECH",
-          "company": "Sterlite Technologies",
-          "rationale": "Optical connectivity solutions; specific AI revenue not established.",
-          "source_url": "https://stl.tech/our-solutions/",
-          "exposure": "Documented business exposure; revenue materiality unverified",
-          "isin": "INE089C01029"
+          "subtheme": "Fibre & connectivity",
+          "source_url": "https://stl.tech/solutions/optical-connectivity-solutions/",
+          "rationale": "Sterlite Technologies describes optical fibre and connectivity products. Connectivity exposure is not quantified AI revenue or ownership of telecom operators, cloud platforms or customer networks.",
+          "reviewed_on": "2026-10-29",
+          "effective_date": null,
+          "exposure_materiality": "Not quantified",
+          "identity_source": "Official NSE integrated issuer filing approved29April2026, filed6May2026; latest local EQ quote unavailable",
+          "company": "Sterlite Technologies Limited",
+          "isin": "INE089C01029",
+          "resolved_url": "https://stl.tech/solutions/optical-connectivity-solutions/",
+          "sha256": "254c6b6508d272302747e71c279148e128d198d1b8870d72dbdd70ab9d155542",
+          "raw_extension": "html",
+          "retrieved_utc": "2026-10-29T09:12:42.177534+00:00",
+          "keyword_checks": {
+            "optical": true,
+            "fibre": true
+          },
+          "status": "evidence_archived"
         }
       ]
     },
@@ -145,11 +285,24 @@
       "members": [
         {
           "symbol": "BLUESTARCO",
-          "company": "Blue Star",
-          "rationale": "Dedicated data-centre chillers within a diversified cooling business.",
+          "subtheme": "Cooling & HVAC",
           "source_url": "https://www.bluestarindia.com/products/central-air-conditioning/chillers/data-center-chillers",
-          "exposure": "Documented business exposure; revenue materiality unverified",
-          "isin": "INE472A01039"
+          "rationale": "Blue Star describes chillers designed for data centres. Product capability is distinct from operating data centres or quantified AI-specific revenue; vendor performance claims are not independent measurements.",
+          "reviewed_on": "2026-10-29",
+          "effective_date": null,
+          "exposure_materiality": "Not quantified",
+          "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+          "company": "Blue Star Limited",
+          "isin": "INE472A01039",
+          "resolved_url": "https://www.bluestarindia.com/products/central-air-conditioning/chillers/data-center-chillers",
+          "sha256": "9a601d389b88c525230897a0b76c56c1e8cd5dfee05cf0458bc5278598a242f5",
+          "raw_extension": "html",
+          "retrieved_utc": "2026-10-29T09:12:41.275596+00:00",
+          "keyword_checks": {
+            "data center chillers": true,
+            "chilled": true
+          },
+          "status": "evidence_archived"
         }
       ]
     }
@@ -176,10 +329,10 @@
           "Nifty AI Catalysts",
           "Nifty India Digital"
         ],
-        "membership_status": "Initial examples available",
-        "mapping_note": "Related official indices provide context only. Their returns and membership are not those of this theme or any Smallcase portfolio. Sub-themes are our research taxonomy, not claimed Smallcase classifications.",
+        "membership_status": "Source-backed role examples; not exhaustive membership",
+        "mapping_note": "All five proposed sub-themes have independently researched examples with archived primary evidence. Bounded examples, not an exhaustive investable universe. Related official indices provide context only; no weights, historical membership or theme-specific revenue share inferred.",
         "public_example": "AI & Data Center Theme",
-        "company_data_ready": false,
+        "company_data_ready": true,
         "workbook_alignment": {
           "name": "AI, data centres & digital infrastructure",
           "products": 14,
@@ -2343,7 +2496,7 @@
       {
         "id": "textiles",
         "name": "Textiles & Apparel",
-        "description": "Additional research proposal beyond the supplied sector categories; companies not yet mapped.",
+        "description": "Additional research proposal beyond the supplied sector categories, with five source-backed business-role examples.",
         "sources": [],
         "subthemes": [
           "Yarn & fabrics",
@@ -2353,15 +2506,15 @@
           "Export supply chain"
         ],
         "related_indices": [],
-        "membership_status": "Additional research proposal",
-        "mapping_note": "Related official indices provide context only. A broad proxy is not a dedicated theme return; absent series remain unavailable.",
-        "company_data_ready": false,
+        "membership_status": "Source-backed role examples; not exhaustive membership",
+        "mapping_note": "All five proposed sub-themes have independently researched examples with archived primary evidence. Bounded examples, not an exhaustive investable universe. Related official indices provide context only; no weights, historical membership or theme-specific revenue share inferred.",
+        "company_data_ready": true,
         "origin": "additional_proposal"
       },
       {
         "id": "packaging",
         "name": "Packaging & Paper",
-        "description": "Additional research proposal beyond the supplied sector categories; companies not yet mapped.",
+        "description": "Additional research proposal beyond the supplied sector categories, with five source-backed business-role examples.",
         "sources": [],
         "subthemes": [
           "Paper & pulp",
@@ -2371,9 +2524,9 @@
           "Sustainable materials"
         ],
         "related_indices": [],
-        "membership_status": "Additional research proposal",
-        "mapping_note": "Related official indices provide context only. A broad proxy is not a dedicated theme return; absent series remain unavailable.",
-        "company_data_ready": false,
+        "membership_status": "Source-backed role examples; not exhaustive membership",
+        "mapping_note": "All five proposed sub-themes have independently researched examples with archived primary evidence. Bounded examples, not an exhaustive investable universe. Related official indices provide context only; no weights, historical membership or theme-specific revenue share inferred.",
+        "company_data_ready": true,
         "origin": "additional_proposal"
       }
     ],

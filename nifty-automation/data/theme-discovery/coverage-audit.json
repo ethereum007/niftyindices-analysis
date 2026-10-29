@@ -5,38 +5,68 @@
     {
       "family": "ai",
       "name": "AI & Digital Infrastructure",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "AI compute hardware",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "AI legacy examples require the same manifest/archive audit as other families."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "NETWEB",
+              "isin": "INE0NT901020",
+              "sha256": "1fa603b1468a9adfc19b3247f1baac119f642a1e093c5c9cb3f21c3df157336f"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Data centres",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "AI legacy examples require the same manifest/archive audit as other families."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ANANTRAJ",
+              "isin": "INE242C01024",
+              "sha256": "a7aff991498f7aacfc10f57b61d08d599f62ff89dfb49bda255c984875fc3b60"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Cooling & HVAC",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "AI legacy examples require the same manifest/archive audit as other families."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "BLUESTARCO",
+              "isin": "INE472A01039",
+              "sha256": "9a601d389b88c525230897a0b76c56c1e8cd5dfee05cf0458bc5278598a242f5"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Fibre & connectivity",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "AI legacy examples require the same manifest/archive audit as other families."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "STLTECH",
+              "isin": "INE089C01029",
+              "sha256": "254c6b6508d272302747e71c279148e128d198d1b8870d72dbdd70ab9d155542"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Embedded design",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "AI legacy examples require the same manifest/archive audit as other families."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "TATAELXSI",
+              "isin": "INE670A01012",
+              "sha256": "00969a824ff90ebbb910e34af23ea092fbc15a51606778c459ac5298fa40406d"
+            }
+          ],
+          "gap_note": null
         }
       ]
     },
@@ -1878,6 +1908,6 @@
     }
   ],
   "total_subthemes": 140,
-  "mapped_subthemes": 135,
-  "fully_mapped_example_families": 27
+  "mapped_subthemes": 140,
+  "fully_mapped_example_families": 28
 }

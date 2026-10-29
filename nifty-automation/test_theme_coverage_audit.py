@@ -144,6 +144,26 @@ class CoverageAuditTest(unittest.TestCase):
         self.assertIn('Other group companies',d['members'][0]['rationale'])
         self.assertEqual(d['members'][3]['symbol'],'WELSPUNLIV')
 
+    def test_ai_legacy_and_all_catalogue_slots_have_archived_evidence(self):
+        report=audit()
+        self.assertEqual(report['mapped_subthemes'],140)
+        self.assertEqual(report['fully_mapped_example_families'],28)
+        rows=json.loads((HERE/'data/theme-research/ai.json').read_text())['members']
+        rows+=json.loads((HERE/'data/theme-research/legacy/ai-additional.json').read_text())['members']
+        self.assertEqual(len(rows),10)
+        for m in rows:
+            self.assertEqual(m['status'],'evidence_archived')
+            self.assertIsNone(m['effective_date'])
+            raw=(HERE/'data/theme-research/raw'/(m['sha256']+'.'+m['raw_extension'])).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),m['sha256'])
+        identity=json.loads((HERE/'data/theme-research/identity/STLTECH.json').read_text())
+        self.assertEqual(identity['isin'],'INE089C01029')
+        raw=(HERE/'data/theme-research/raw'/(identity['sha256']+'.html')).read_bytes()
+        self.assertEqual(hashlib.sha256(raw).hexdigest(),identity['sha256'])
+        self.assertIn(b'INE089C01029',raw)
+        self.assertIn('STLNETWORK',identity['rationale'])
+        self.assertIn('does not establish subsequent commercial production',next(m['rationale'] for m in rows if m['subtheme']=='semiconductors'))
+
     def test_every_catalogue_subtheme_has_explicit_stage(self):
         d=audit()
         self.assertEqual(len(d['families']),28)

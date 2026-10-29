@@ -1,0 +1,121 @@
+{
+  "reviewed_on": "2026-10-29",
+  "note": "Additional legacy AI-adjacent role examples; not five additional catalogue slots or pure-play AI companies.",
+  "members": [
+    {
+      "symbol": "POLYCAB",
+      "subtheme": "cables",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_201397_15102026155523_iXBRL_WEB.html",
+      "rationale": "Polycab issuer segment filing documents cables and wires. General electrical products are not quantified AI/data-centre revenue or pure-play AI exposure.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Polycab India",
+      "isin": "INE455K01017",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_201397_15102026155523_iXBRL_WEB.html",
+      "sha256": "8ab8fb174b04b1453e21ee795b6769b85ccf1b8f3854f0f4268c92bb8ff2fa7c",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T09:13:59.418097+00:00",
+      "keyword_checks": {
+        "polycab": true,
+        "cables": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "CGPOWER",
+      "subtheme": "switchgear",
+      "source_url": "https://nsearchives.nseindia.com/corporate/CGPOWER_04022025085223_Disclosure_Presentation_0405022025.pdf",
+      "rationale": "CG Power February2025 presentation describes switchgear and transformer portfolios. Diversified equipment exposure is not quantified AI revenue or ownership of customer power networks. Historical capability is not current utilisation.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "CG Power and Industrial Solutions",
+      "isin": "INE067A01029",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/CGPOWER_04022025085223_Disclosure_Presentation_0405022025.pdf",
+      "sha256": "d61edb789fda0a7dfaf073ba157cc23feaea0597f1765ff4a898bf576b2b4e1b",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T09:13:59.809315+00:00",
+      "evidence_pages": [
+        10,
+        14,
+        15
+      ],
+      "keyword_checks": {
+        "transformers": true,
+        "switchgear": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "CGPOWER",
+      "subtheme": "transformers",
+      "source_url": "https://nsearchives.nseindia.com/corporate/CGPOWER_04022025085223_Disclosure_Presentation_0405022025.pdf",
+      "rationale": "CG Power February2025 presentation describes switchgear and transformer portfolios. Diversified equipment exposure is not quantified AI revenue or ownership of customer power networks. Historical capability is not current utilisation.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "CG Power and Industrial Solutions",
+      "isin": "INE067A01029",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/CGPOWER_04022025085223_Disclosure_Presentation_0405022025.pdf",
+      "sha256": "d61edb789fda0a7dfaf073ba157cc23feaea0597f1765ff4a898bf576b2b4e1b",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T09:13:59.809315+00:00",
+      "evidence_pages": [
+        10,
+        14,
+        15
+      ],
+      "keyword_checks": {
+        "transformers": true,
+        "switchgear": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "KAYNES",
+      "subtheme": "ems",
+      "source_url": "https://kaynestechnology.co.in/",
+      "rationale": "Kaynes describes electronics manufacturing and design services. EMS assembly is distinct from semiconductor wafer fabrication and does not quantify AI revenue.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Kaynes Technology India Ltd.",
+      "isin": "INE918Z01012",
+      "resolved_url": "https://kaynestechnology.co.in/",
+      "sha256": "a15c7b9c639a1b6629f38de8b34bfce671f7f2bd899a3a39e98a7c1d533540f0",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:40:37.978490+00:00",
+      "keyword_checks": {
+        "electronics": true,
+        "manufactur": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "CGPOWER",
+      "subtheme": "semiconductors",
+      "source_url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2093860&lang=2&reg=3",
+      "rationale": "January2025 government disclosure identifies CG Power and CG Semi semiconductor assembly/test project. This is subsidiary/JV project exposure, not parent-only semiconductor revenue; this source alone does not establish subsequent commercial production or capacity utilisation.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "CG Power and Industrial Solutions Ltd.",
+      "isin": "INE067A01029",
+      "resolved_url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2093860&lang=2&reg=3",
+      "sha256": "b0147941306e2dc69c91755291f90ff3818f9e62ae6b82b8b9e38c8d4fbac245",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:40:37.723239+00:00",
+      "keyword_checks": {
+        "cg power": true,
+        "osat": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}
