@@ -96,6 +96,21 @@ class CoverageAuditTest(unittest.TestCase):
         sun=next(m for m in d['members'] if m['symbol']=='SUNTV')
         self.assertIn('distinct from ownership of IPTV operators',sun['rationale'])
 
+    def test_travel_roles_preserve_operator_and_asset_boundaries(self):
+        d=json.loads((HERE/'data/theme-research/travelleisure.json').read_text(encoding='utf-8'))
+        self.assertEqual({m['subtheme'] for m in d['members']},{'Hotels & resorts','Travel platforms','Leisure venues','Restaurants','Entertainment services'})
+        prices=json.loads((HERE/'data/stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        self.assertEqual(len({m['isin'] for m in d['members']}),5)
+        for m in d['members']:
+            self.assertEqual(m['status'],'evidence_archived')
+            self.assertEqual(prices[m['isin']]['symbol'],m['symbol'])
+            self.assertIsNone(m['effective_date'])
+            raw=(HERE/'data/theme-research/raw'/(m['sha256']+'.'+m['raw_extension'])).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),m['sha256'])
+        self.assertIn('booking value is not platform revenue',d['members'][1]['rationale'])
+        self.assertIn('not all owned properties',d['members'][0]['rationale'])
+        self.assertIn('global franchisor intellectual property',d['members'][3]['rationale'])
+
     def test_every_catalogue_subtheme_has_explicit_stage(self):
         d=audit()
         self.assertEqual(len(d['families']),28)

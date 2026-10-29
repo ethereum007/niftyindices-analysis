@@ -1,0 +1,121 @@
+{
+  "family": "travelleisure",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-29",
+  "note": "Five independently researched bounded examples, not an exhaustive listed universe. No holdings, weights, historical membership or quantified revenue share inferred.",
+  "comparison_note": "Hotels, booking platforms, amusement parks, restaurants and cinemas have different asset, franchise and revenue models. This is not a homogeneous valuation or growth peer group.",
+  "members": [
+    {
+      "symbol": "INDHOTEL",
+      "subtheme": "Hotels & resorts",
+      "source_url": "https://nsearchives.nseindia.com/corporate/INDHOTEL_05022026173633_Pressrelease.pdf",
+      "rationale": "Indian Hotels describes hospitality and hotel brands. Managed or branded hotels are not all owned properties; strategy targets are not current operating assets or realised revenue.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "The Indian Hotels Company Limited",
+      "isin": "INE053A01029",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/INDHOTEL_05022026173633_Pressrelease.pdf",
+      "sha256": "c064520bf504fef50c0dd2b44a49a9b1dd02647429a85a69eb720625b4e8cd20",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T07:42:09.881901+00:00",
+      "evidence_pages": [
+        2,
+        3
+      ],
+      "keyword_checks": {
+        "ihcl": true,
+        "hospitality": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "EASEMYTRIP",
+      "subtheme": "Travel platforms",
+      "source_url": "https://www.easemytrip.com/terms.html",
+      "rationale": "Easy Trip Planners identifies itself as operator of the EaseMyTrip booking platform. Airline and hotel bookings do not imply ownership of partner airlines or hotels, and booking value is not platform revenue.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "Easy Trip Planners Limited",
+      "isin": "INE07O001026",
+      "resolved_url": "https://www.easemytrip.com/terms.html",
+      "sha256": "0719cbc65b8537fbffeb9e1553a423601adf7a438e609ae237ebd7fcbe76322b",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T07:42:10.062634+00:00",
+      "keyword_checks": {
+        "easy trip planners": true,
+        "travel": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "WONDERLA",
+      "subtheme": "Leisure venues",
+      "source_url": "https://www.wonderla.com/",
+      "rationale": "Wonderla Holidays describes amusement parks and rides. This establishes leisure-venue exposure, not verified current footfall, park counts or ownership of every branded property.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "Wonderla Holidays Limited",
+      "isin": "INE066O01014",
+      "resolved_url": "https://www.wonderla.com/",
+      "sha256": "e442bc3eb67d5caca604bb9ea975b667af8d68a09a3a4b0ab76b029ebcd3fe0c",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T07:42:09.905633+00:00",
+      "keyword_checks": {
+        "wonderla holidays": true,
+        "amusement": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "JUBLFOOD",
+      "subtheme": "Restaurants",
+      "source_url": "https://nsearchives.nseindia.com/corporate/JUBLFOOD_20052026161011_EarningsPresentation.pdf",
+      "rationale": "Jubilant FoodWorks May 2026 issuer presentation documents restaurant operations including Domino pizza restaurants. Brand operation does not imply ownership of global franchisor intellectual property; no current store counts or sales growth inferred.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "Jubilant FoodWorks Limited",
+      "isin": "INE797F01020",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/JUBLFOOD_20052026161011_EarningsPresentation.pdf",
+      "sha256": "49300ad9f4e79f41951f0e64f40f6dd7ed703e80d25aba0ee0a2c7c2c0939098",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T07:42:10.451589+00:00",
+      "evidence_pages": [
+        3
+      ],
+      "keyword_checks": {
+        "jubilant": true,
+        "restaurant": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "PVRINOX",
+      "subtheme": "Entertainment services",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_177428_23072026175649_iXBRL_WEB.html",
+      "rationale": "PVR INOX issuer filing identifies film exhibition business. Cinema exhibition is distinct from ownership of all films screened, content production and ownership of every cinema property.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "PVR INOX Limited",
+      "isin": "INE191H01014",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_177428_23072026175649_iXBRL_WEB.html",
+      "sha256": "8ebdad8ab7ba7c3a2613aa2af5caf17ce173df81ce589a69b0fd557a08e07bff",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T07:42:10.345644+00:00",
+      "keyword_checks": {
+        "pvrinox": true,
+        "film exhibition business": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

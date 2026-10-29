@@ -1607,38 +1607,68 @@
     {
       "family": "travelleisure",
       "name": "Travel, Leisure & Entertainment",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "Hotels & resorts",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "INDHOTEL",
+              "isin": "INE053A01029",
+              "sha256": "c064520bf504fef50c0dd2b44a49a9b1dd02647429a85a69eb720625b4e8cd20"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Travel platforms",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "EASEMYTRIP",
+              "isin": "INE07O001026",
+              "sha256": "0719cbc65b8537fbffeb9e1553a423601adf7a438e609ae237ebd7fcbe76322b"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Leisure venues",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "WONDERLA",
+              "isin": "INE066O01014",
+              "sha256": "e442bc3eb67d5caca604bb9ea975b667af8d68a09a3a4b0ab76b029ebcd3fe0c"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Restaurants",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "JUBLFOOD",
+              "isin": "INE797F01020",
+              "sha256": "49300ad9f4e79f41951f0e64f40f6dd7ed703e80d25aba0ee0a2c7c2c0939098"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Entertainment services",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "PVRINOX",
+              "isin": "INE191H01014",
+              "sha256": "8ebdad8ab7ba7c3a2613aa2af5caf17ce173df81ce589a69b0fd557a08e07bff"
+            }
+          ],
+          "gap_note": null
         }
       ]
     },
@@ -1758,6 +1788,6 @@
     }
   ],
   "total_subthemes": 140,
-  "mapped_subthemes": 115,
-  "fully_mapped_example_families": 23
+  "mapped_subthemes": 120,
+  "fully_mapped_example_families": 24
 }
