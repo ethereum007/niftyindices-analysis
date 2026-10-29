@@ -7,6 +7,18 @@ from parse_lt_research import parse
 ROOT=Path(__file__).parent/'data/fundamentals'
 
 class LTResearchTests(unittest.TestCase):
+    def test_availability_cutoff_does_not_use_board_or_filename_timestamp(self):
+        from review_lt_availability import load_research,dated_issuer_availability
+        self.assertEqual(len(load_research(asof='2026-07-27')['facts']),0)
+        self.assertEqual(len(load_research(asof='2026-07-28')['facts']),1)
+        self.assertEqual(len(load_research(asof='2026-10-26')['facts']),1)
+        result=load_research(asof='2026-10-27')
+        self.assertEqual(len(result['facts']),2)
+        self.assertTrue(all(f['filing_date'] is None for f in result['facts']))
+        self.assertFalse(result['publication_ready'])
+        with self.assertRaises(ValueError):dated_issuer_availability(b'<li class="date_sec">28 July 2026</li>','2026-07-29')
+        with self.assertRaises(ValueError):dated_issuer_availability(b'<p>28 July 2026</p>','2026-07-28')
+
     def test_issuer_publication_dates_from_page_content(self):
         from bs4 import BeautifulSoup
         d=json.loads((ROOT/'lt-primary-research.json').read_text(encoding='utf-8'))

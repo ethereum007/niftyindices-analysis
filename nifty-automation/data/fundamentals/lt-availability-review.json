@@ -1,0 +1,76 @@
+{
+  "publication_ready": false,
+  "facts": [
+    {
+      "symbol": "LT",
+      "isin": "INE018A01030",
+      "scope": "Consolidated",
+      "period_end": "2026-06-30",
+      "source_unit": "INR crore",
+      "revenue_operations_crore": "67941.74",
+      "pat_total_period_crore": "4988.03",
+      "statement_page": 1,
+      "filing_date": null,
+      "parent_attributable_pat_crore": "4122.85",
+      "noncontrolling_pat_crore": "865.18",
+      "publication_ready": false,
+      "pat_definition": "Total period PAT including JV/associate share; not parent-attributable PAT.",
+      "quarter_columns_revenue": [
+        "67941.74",
+        "82762.16",
+        "63678.92",
+        "285874.36"
+      ],
+      "quarter_columns_pat": [
+        "4988.03",
+        "6133.06",
+        "4318.17",
+        "18953.88"
+      ],
+      "available_on": "2026-07-28",
+      "availability_basis": "Dated issuer publication; end-of-day cutoff",
+      "source_url": "https://investors.larsentoubro.com/upload/Quarterly/FY2027QuarterlyLTJune2026-website.pdf",
+      "sha256": "a71aadd8b8470e680dde7e455d58595a014344bad7488495f34bd9b2eb5338b3",
+      "availability_source_url": "https://www.larsentoubro.com/pressreleases/2026/2026-07-28-financial-results-for-the-quarter-ended-june-30-2026",
+      "availability_sha256": "6d0613e6ea7ad847e5901c986cbf4280c52fc48bac2b5567c82af5e48fdd210e"
+    },
+    {
+      "symbol": "LT",
+      "isin": "INE018A01030",
+      "scope": "Consolidated",
+      "period_end": "2026-09-30",
+      "source_unit": "INR crore",
+      "revenue_operations_crore": "78749.94",
+      "pat_total_period_crore": "5949.15",
+      "statement_page": 1,
+      "filing_date": null,
+      "parent_attributable_pat_crore": "5202.10",
+      "noncontrolling_pat_crore": "747.05",
+      "publication_ready": false,
+      "pat_definition": "Total period PAT including JV/associate share; not parent-attributable PAT.",
+      "quarter_columns_revenue": [
+        "78749.94",
+        "67941.74",
+        "67983.53",
+        "146691.68",
+        "131662.45",
+        "285874.36"
+      ],
+      "quarter_columns_pat": [
+        "5949.15",
+        "4988.03",
+        "4678.01",
+        "10937.18",
+        "8996.18",
+        "18953.88"
+      ],
+      "available_on": "2026-10-27",
+      "availability_basis": "Dated issuer publication; end-of-day cutoff",
+      "source_url": "https://investors.larsentoubro.com/upload/Quarterly/FY2027QuarterlyLnTResultsSeptember2026.pdf",
+      "sha256": "dd9f06b475b96ebdf2042c88e59b81687cff732fc8ec694b7c70a97be9117730",
+      "availability_source_url": "https://www.larsentoubro.com/pressreleases/2026/2026-10-27-consolidated-financial-results-for-the-quarter-ended-september-30-2026",
+      "availability_sha256": "9f1c03fe0184d2d519d01ea682e9593afdd6a14598d8fd7c274d5838410f4769"
+    }
+  ],
+  "restriction": "Availability evidence only; dashboard publication review still required. No intraday timestamp or exchange filing date inferred."
+}
