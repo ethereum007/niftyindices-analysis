@@ -927,38 +927,68 @@
     {
       "family": "banking",
       "name": "Banks & NBFCs",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "Private banks",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ICICIBANK",
+              "isin": "INE090A01021",
+              "sha256": "65d709a80c6fc18e4c1102e1c25477e33c16131273c0e92803874a0f8c1bf4a1"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "PSU banks",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "SBIN",
+              "isin": "INE062A01020",
+              "sha256": "65d709a80c6fc18e4c1102e1c25477e33c16131273c0e92803874a0f8c1bf4a1"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "NBFC lending",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "BAJFINANCE",
+              "isin": "INE296A01032",
+              "sha256": "2d2af75fd2cdfe8071aa56d8928173181f980d60ff0d5c175e6d0e676a073612"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Microfinance",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "CREDITACC",
+              "isin": "INE741K01010",
+              "sha256": "bb7c33bcd0bb367c9bc62bd71121002a4732cf9874e3319e7acb3ac096416341"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Credit infrastructure",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ICRA",
+              "isin": "INE725G01011",
+              "sha256": "cdeeb78219c596b6f99db1234abbeeda4c4192127a3ea17968624c0b2fbfb81b"
+            }
+          ],
+          "gap_note": null
         }
       ]
     },
@@ -1458,6 +1488,6 @@
     }
   ],
   "total_subthemes": 140,
-  "mapped_subthemes": 65,
-  "fully_mapped_example_families": 13
+  "mapped_subthemes": 70,
+  "fully_mapped_example_families": 14
 }

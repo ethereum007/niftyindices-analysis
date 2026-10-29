@@ -2,6 +2,27 @@ import unittest,json,hashlib
 from audit_theme_coverage import audit,HERE
 
 class CoverageAuditTest(unittest.TestCase):
+    def test_banking_roles_preserve_lender_and_rating_agency_boundaries(self):
+        d=json.loads((HERE/'data/theme-research/banking.json').read_text(encoding='utf-8'))
+        self.assertEqual({m['subtheme'] for m in d['members']},{'Private banks','PSU banks','NBFC lending','Microfinance','Credit infrastructure'})
+        quotes=json.loads((HERE/'data/stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        for m in d['members']:
+            self.assertEqual(m['status'],'evidence_archived')
+            self.assertEqual(quotes[m['isin']]['symbol'],m['symbol'])
+            self.assertIsNone(m['effective_date'])
+            raw=(HERE/'data/theme-research/raw'/(m['sha256']+'.'+m.get('raw_extension','html'))).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),m['sha256'])
+        icra=next(m for m in d['members'] if m['symbol']=='ICRA')
+        self.assertIn('not a deposit-taking bank',icra['rationale'])
+        self.assertIn('not a homogeneous',d['comparison_note'])
+        from pypdf import PdfReader
+        bank=next(m for m in d['members'] if m['symbol']=='SBIN')
+        text=PdfReader(HERE/'data/theme-research/raw'/(bank['sha256']+'.pdf')).pages[0].extract_text()
+        self.assertIn('August 04, 2026',text)
+        public,private=text.split('Scheduled Private Sector Banks',1)
+        self.assertIn('State Bank of India',public)
+        self.assertIn('ICICI Bank Ltd.',private)
+
     def test_every_catalogue_subtheme_has_explicit_stage(self):
         d=audit()
         self.assertEqual(len(d['families']),28)

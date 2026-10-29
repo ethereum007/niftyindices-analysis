@@ -1,0 +1,122 @@
+{
+  "family": "banking",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-29",
+  "note": "Five independently researched business-role examples; not exhaustive banking or credit-universe membership. No holdings, weights, historical membership or quantified theme revenue inferred.",
+  "comparison_note": "Banks, NBFCs, microfinance lenders and rating agencies have different balance sheets, regulation and revenue definitions. Credit infrastructure is an adjacent service role, not a bank; this is not a homogeneous valuation or growth peer group.",
+  "members": [
+    {
+      "symbol": "ICICIBANK",
+      "subtheme": "Private banks",
+      "source_url": "https://rbi.org.in/commonman/Upload/English/Content/PDFs/LAB01112021.pdf",
+      "rationale": "RBI agency-bank list dated4August2026 classifies ICICI Bank as a scheduled private-sector bank. No current market share is inferred. Private-sector ownership classification does not mean private-banking services or deposit guarantees beyond applicable rules.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "ICICI Bank Ltd.",
+      "isin": "INE090A01021",
+      "resolved_url": "https://rbi.org.in/commonman/Upload/English/Content/PDFs/LAB01112021.pdf",
+      "sha256": "65d709a80c6fc18e4c1102e1c25477e33c16131273c0e92803874a0f8c1bf4a1",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T05:11:13.391904+00:00",
+      "evidence_pages": [
+        1
+      ],
+      "keyword_checks": {
+        "scheduled private sector banks": true,
+        "icici bank": true
+      },
+      "status": "evidence_archived",
+      "source_document_date": "2026-08-04"
+    },
+    {
+      "symbol": "SBIN",
+      "subtheme": "PSU banks",
+      "source_url": "https://rbi.org.in/commonman/Upload/English/Content/PDFs/LAB01112021.pdf",
+      "rationale": "RBI agency-bank list classifies State Bank of India as a scheduled public-sector bank. State ownership is distinct from guaranteed equity returns; The list is dated4August2026; no current ownership percentage or latest financial figure is inferred.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "State Bank of India",
+      "isin": "INE062A01020",
+      "resolved_url": "https://rbi.org.in/commonman/Upload/English/Content/PDFs/LAB01112021.pdf",
+      "sha256": "65d709a80c6fc18e4c1102e1c25477e33c16131273c0e92803874a0f8c1bf4a1",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T05:11:13.357042+00:00",
+      "evidence_pages": [
+        1
+      ],
+      "keyword_checks": {
+        "public sector": true,
+        "state bank of india": true
+      },
+      "status": "evidence_archived",
+      "source_document_date": "2026-08-04"
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "subtheme": "NBFC lending",
+      "source_url": "https://www.bajajfinserv.in/finance-digital-annual-report-fy24/about-bajaj-finance.html",
+      "rationale": "Bajaj Finance documents consumer, SME and commercial lending. NBFC lending is distinct from a licensed bank; subsidiary housing-finance activity is not automatically parent-only revenue.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Bajaj Finance Ltd.",
+      "isin": "INE296A01032",
+      "resolved_url": "https://www.bajajfinserv.in/finance-digital-annual-report-fy24/about-bajaj-finance.html",
+      "sha256": "2d2af75fd2cdfe8071aa56d8928173181f980d60ff0d5c175e6d0e676a073612",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T05:11:13.021577+00:00",
+      "keyword_checks": {
+        "bajaj finance": true,
+        "lending": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "CREDITACC",
+      "subtheme": "Microfinance",
+      "source_url": "https://www.creditaccessgrameen.in/about-us/",
+      "rationale": "CreditAccess Grameen describes micro-loans to predominantly rural women customers. This establishes microfinance exposure, not current repayment quality, credit growth or borrower-level data.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "CreditAccess Grameen Ltd.",
+      "isin": "INE741K01010",
+      "resolved_url": "https://www.creditaccessgrameen.in/about-us/",
+      "sha256": "bb7c33bcd0bb367c9bc62bd71121002a4732cf9874e3319e7acb3ac096416341",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T05:11:13.596051+00:00",
+      "keyword_checks": {
+        "microfinance": true,
+        "micro-loans": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "ICRA",
+      "subtheme": "Credit infrastructure",
+      "source_url": "https://www.icra.in/AboutUs/Profile",
+      "rationale": "ICRA provides credit-rating and investment information services. It is credit-assessment infrastructure, not a deposit-taking bank, lender or ownership of the entire Moody's group.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from issuer profile",
+      "company": "ICRA Limited",
+      "isin": "INE725G01011",
+      "resolved_url": "https://www.icra.in/AboutUs/Profile",
+      "sha256": "cdeeb78219c596b6f99db1234abbeeda4c4192127a3ea17968624c0b2fbfb81b",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T05:11:14.209322+00:00",
+      "keyword_checks": {
+        "icra limited": true,
+        "credit rating agency": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}
