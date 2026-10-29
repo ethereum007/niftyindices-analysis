@@ -1896,9 +1896,9 @@
           "Nifty Infrastructure",
           "Nifty Construction"
         ],
-        "membership_status": "Company mapping pending",
-        "mapping_note": "Related official indices provide context only, including broad proxies where no dedicated series exists. Their returns and constituents are not custom-theme membership or performance.",
-        "company_data_ready": false,
+        "membership_status": "Initial examples available",
+        "mapping_note": "Five independently source-backed value-chain roles; not exhaustive membership, weights or historical baskets. Project-stage exposure and company/group boundaries are explicitly distinguished. Related official indices provide context only; their returns are not this custom theme.",
+        "company_data_ready": true,
         "origin": "workbook_alignment",
         "workbook_alignment": {
           "name": "Infrastructure & construction",
@@ -1971,9 +1971,9 @@
           "Nifty Transportation & Logistics",
           "Nifty Commercial & Transport Services"
         ],
-        "membership_status": "Company mapping pending",
-        "mapping_note": "Related official indices provide context only, including broad proxies where no dedicated series exists. Their returns and constituents are not custom-theme membership or performance.",
-        "company_data_ready": false,
+        "membership_status": "Initial examples available",
+        "mapping_note": "Five independently source-backed value-chain roles; not exhaustive membership, weights or historical baskets. Project-stage exposure and company/group boundaries are explicitly distinguished. Related official indices provide context only; their returns are not this custom theme.",
+        "company_data_ready": true,
         "origin": "workbook_alignment",
         "workbook_alignment": {
           "name": "Logistics, transport & aviation",
@@ -2039,9 +2039,9 @@
           "Nifty India Digital",
           "Nifty Capital Goods"
         ],
-        "membership_status": "Company mapping pending",
-        "mapping_note": "Related official indices provide context only, including broad proxies where no dedicated series exists. Their returns and constituents are not custom-theme membership or performance.",
-        "company_data_ready": false,
+        "membership_status": "Initial examples available",
+        "mapping_note": "Five independently source-backed value-chain roles; not exhaustive membership, weights or historical baskets. Project-stage exposure and company/group boundaries are explicitly distinguished. Related official indices provide context only; their returns are not this custom theme.",
+        "company_data_ready": true,
         "origin": "workbook_alignment",
         "workbook_alignment": {
           "name": "Electronics & semiconductors",
