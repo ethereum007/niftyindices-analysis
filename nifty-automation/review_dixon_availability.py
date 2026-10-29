@@ -3,6 +3,7 @@ import io,json,hashlib
 from pathlib import Path
 from pypdf import PdfReader
 from reconcile_dixon_sources import reconcile
+from parse_primary_pdf import parse_dixon_june2026_research
 ROOT=Path(__file__).parent/'data/fundamentals'
 
 def outcome_date(raw):
@@ -25,6 +26,11 @@ def load_research(root=ROOT):
     result=reconcile(original(d['bse_primary_html'],'.html'),original(d['sources'][0],'.pdf'))
     result.update(available_on=available,availability_basis='Dated issuer outcome and website-publication statement; end-of-day cutoff',
                   availability_sha256=outcome['sha256'],availability_source_url=outcome['source_url'])
+    fact=parse_dixon_june2026_research(original(d['sources'][0],'.pdf'))
+    fact.update(available_on=available,availability_basis=result['availability_basis'],
+                availability_sha256=outcome['sha256'],availability_source_url=outcome['source_url'],
+                source_url=d['sources'][0]['source_url'],sha256=d['sources'][0]['sha256'])
+    result['fact']=fact
     result['restriction']='Issuer publication date does not establish exchange/intraday filing time. Lighting-business transfer prevents comparable growth inference. Review before UI publication.'
     return result
 

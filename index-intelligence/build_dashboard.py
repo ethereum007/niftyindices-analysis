@@ -117,7 +117,7 @@ def load_reviewed_financials(root):
     sys.path.insert(0,str(HERE.parent/'nifty-automation'))
     from fetch_primary_financials import parse
     for file in folder.glob('*-publication-review.json'):
-        if file.name=='lt-issuer-publication-review.json':continue
+        if file.name in ('lt-issuer-publication-review.json','dixon-issuer-publication-review.json'):continue
         review=json.loads(file.read_text(encoding='utf-8'))
         if review['status']!='reviewed_with_field_restrictions':continue
         facts=[]
@@ -155,6 +155,16 @@ def load_reviewed_financials(root):
             for f in facts:
                 f['period_start']='2026-04-01' if f['period_end']=='2026-06-30' else '2026-07-01'
             out[review['isin']]={'symbol':'LT','facts':facts,'review':review}
+    dixon_review=folder/'dixon-issuer-publication-review.json'
+    if dixon_review.exists():
+        review=json.loads(dixon_review.read_text(encoding='utf-8'))
+        if review['status']=='reviewed_with_field_restrictions':
+            from review_dixon_availability import load_research as load_dixon
+            fact=load_dixon(folder)['fact']
+            if review['symbol']!='DIXON' or review['isin']!=fact['isin']:raise ValueError('Dixon review identity mismatch')
+            if [fact['sha256'],fact['availability_sha256']]!=review['source_pair']:raise ValueError('Dixon reviewed evidence changed')
+            if fact['comparable_growth_allowed'] is not False:raise ValueError('Dixon comparability restriction missing')
+            out[review['isin']]={'symbol':'DIXON','facts':[fact],'review':review}
     return out
 
 def pack_rows(observations):
