@@ -1743,81 +1743,141 @@
     {
       "family": "textiles",
       "name": "Textiles & Apparel",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "Yarn & fabrics",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "VTL",
+              "isin": "INE825A01020",
+              "sha256": "559be5aca4c1ca6bff470099bd1e8ba5cdfc9c7744cb63d7d4ac9f4f2e0bc485"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Garment manufacturing",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "GOKEX",
+              "isin": "INE887G01027",
+              "sha256": "2f105ce552c286f38300b57f389857f71a8da0c4d0b5cbecc776f576a4113d70"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Technical textiles",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "GARFIBRES",
+              "isin": "INE276A01018",
+              "sha256": "64a6d1acd73516fe7dd9cd507fbc82d5492afb9f40a05459958df2dc85a2f7b2"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Home textiles",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "WELSPUNLIV",
+              "isin": "INE192B01031",
+              "sha256": "24a7dc190d941b2f96b4c17be73b6aedad08feceb436e7f160c04214de287166"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Export supply chain",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "KITEX",
+              "isin": "INE602G01020",
+              "sha256": "13621eb7f9f1e17c66c7a77a6c027b9129577bf5b87a66cbcac6141f6d348ff8"
+            }
+          ],
+          "gap_note": null
         }
       ]
     },
     {
       "family": "packaging",
       "name": "Packaging & Paper",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "Paper & pulp",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "JKPAPER",
+              "isin": "INE789E01012",
+              "sha256": "34602202ba0402ed121deb5934baa6073573be95f7b2dc3f5cd2efb15673286f"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Flexible packaging",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "UFLEX",
+              "isin": "INE516A01017",
+              "sha256": "5def3c9a09cc3b1f43a995c1763256e1c1ffe7f4a73f81292d0fc1ba4bf47509"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Rigid packaging",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "MOLDTKPAC",
+              "isin": "INE893J01029",
+              "sha256": "eb54ebba52b9d6d6841a704011e773fb79a36ae46bc21aed2f8b890a1b22f9aa"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Industrial containers",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "TIMETECHNO",
+              "isin": "INE508G01029",
+              "sha256": "f186ae097da632b39cd2aba8a32d5288ac806b7f734131697f1b213d5f325e57"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Sustainable materials",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "PAKKA",
+              "isin": "INE551D01018",
+              "sha256": "d0278c8f27a56d252e964b315ff380fb216f2c876fc91f0446b463f0abd6704d"
+            }
+          ],
+          "gap_note": null
         }
       ]
     }
   ],
   "total_subthemes": 140,
-  "mapped_subthemes": 125,
-  "fully_mapped_example_families": 25
+  "mapped_subthemes": 135,
+  "fully_mapped_example_families": 27
 }

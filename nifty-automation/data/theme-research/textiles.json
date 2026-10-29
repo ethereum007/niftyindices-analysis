@@ -1,0 +1,146 @@
+{
+  "family": "textiles",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-29",
+  "note": "Five independently researched bounded business-role examples; not an exhaustive listed universe. No paid holdings, weights, historical membership or quantified theme revenue inferred.",
+  "comparison_note": "Yarn, garment contracts, industrial fabrics, home textiles and exports have different input, currency and demand exposures. This is not a homogeneous valuation or growth peer group.",
+  "members": [
+    {
+      "symbol": "VTL",
+      "subtheme": "Yarn & fabrics",
+      "source_url": "https://vardhman.com/document/Resources/Yarn_Brochure.pdf",
+      "rationale": "Vardhman brochure explicitly attributes cotton/blended yarn and woven/processed fabric units to Vardhman Textiles Limited. Other group companies, including threads and special steels, are not silently attributed to this listed issuer. Historical brochure capacities are not current utilisation.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "Vardhman Textiles Limited",
+      "isin": "INE825A01020",
+      "resolved_url": "https://vardhman.com/document/Resources/Yarn_Brochure.pdf",
+      "sha256": "559be5aca4c1ca6bff470099bd1e8ba5cdfc9c7744cb63d7d4ac9f4f2e0bc485",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T08:41:48.956756+00:00",
+      "evidence_pages": [
+        18
+      ],
+      "keyword_checks": {
+        "vardhman textiles": true,
+        "yarn": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "GOKEX",
+      "subtheme": "Garment manufacturing",
+      "source_url": "https://nsearchives.nseindia.com/corporate/GOKEX_19052026172415_intimationofinvestorscall.pdf",
+      "rationale": "Gokaldas Exports issuer disclosure describes apparel manufacturing and exporting. Contract manufacture is distinct from owning customer fashion brands or their retail revenue; no current orders or customer concentration inferred.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "Gokaldas Exports Limited",
+      "isin": "INE887G01027",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/GOKEX_19052026172415_intimationofinvestorscall.pdf",
+      "sha256": "2f105ce552c286f38300b57f389857f71a8da0c4d0b5cbecc776f576a4113d70",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T08:41:48.615974+00:00",
+      "evidence_pages": [
+        2
+      ],
+      "keyword_checks": {
+        "gokaldas exports": true,
+        "apparel": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "GARFIBRES",
+      "subtheme": "Technical textiles",
+      "source_url": "https://nsearchives.nseindia.com/corporate/GARFIBRES_11022026174210_PressRelease11022026.pdf",
+      "rationale": "Garware Technical Fibres describes application-focused nets, ropes and geosynthetics. Industrial technical textiles are distinct from fashion apparel; product capability is not current installed utilisation or quantified exposure to any one end market.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "Garware Technical Fibres Limited",
+      "isin": "INE276A01018",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/GARFIBRES_11022026174210_PressRelease11022026.pdf",
+      "sha256": "64a6d1acd73516fe7dd9cd507fbc82d5492afb9f40a05459958df2dc85a2f7b2",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T08:45:47.785118+00:00",
+      "evidence_pages": [
+        2
+      ],
+      "keyword_checks": {
+        "technical textiles": true,
+        "garware": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "WELSPUNLIV",
+      "subtheme": "Home textiles",
+      "source_url": "https://www.welspunliving.com/about-us",
+      "rationale": "Welspun Living identifies home-textile manufacturing. Listed-company exposure excludes other Welspun group line-pipe, oil/gas and infrastructure businesses; licensed brands do not imply ownership of global brand intellectual property.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "Welspun Living Limited",
+      "isin": "INE192B01031",
+      "resolved_url": "https://www.welspunliving.com/about-us",
+      "sha256": "24a7dc190d941b2f96b4c17be73b6aedad08feceb436e7f160c04214de287166",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T08:41:49.327655+00:00",
+      "keyword_checks": {
+        "welspun living limited": true,
+        "home textile": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "KITEX",
+      "subtheme": "Export supply chain",
+      "source_url": "https://www.kitexgarments.com/wp-content/uploads/2024/09/KGL-AR-23-24.pdf",
+      "rationale": "Kitex Garments FY2023-24 issuer report documents infant-garment manufacture and exports. Export supply-chain exposure is historical business evidence, not current export share or tariff resilience; client outlets and brands are not company-owned retail assets.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "Kitex Garments Limited",
+      "isin": "INE602G01020",
+      "resolved_url": "https://www.kitexgarments.com/wp-content/uploads/2024/09/KGL-AR-23-24.pdf",
+      "sha256": "13621eb7f9f1e17c66c7a77a6c027b9129577bf5b87a66cbcac6141f6d348ff8",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T08:41:56.903731+00:00",
+      "evidence_pages": [
+        6,
+        30,
+        52,
+        58,
+        60,
+        78,
+        110,
+        138,
+        152,
+        154,
+        164,
+        170,
+        174,
+        186,
+        191,
+        203,
+        206,
+        214,
+        224,
+        236,
+        238
+      ],
+      "keyword_checks": {
+        "kitex garments": true,
+        "export": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

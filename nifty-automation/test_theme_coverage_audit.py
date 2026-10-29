@@ -125,6 +125,25 @@ class CoverageAuditTest(unittest.TestCase):
         self.assertIn('not exclusively agriculture revenue',d['members'][4]['rationale'])
         self.assertIn('not a pure-play irrigation utility',d['members'][2]['rationale'])
 
+    def test_textiles_and_packaging_roles_have_verified_identities_and_raw_hashes(self):
+        catalogue=json.loads((HERE.parent/'index-intelligence/themes.json').read_text(encoding='utf-8'))['catalogue']['families']
+        prices=json.loads((HERE/'data/stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        for family in ('textiles','packaging'):
+            d=json.loads((HERE/'data/theme-research'/(family+'.json')).read_text(encoding='utf-8'))
+            self.assertEqual({m['subtheme'] for m in d['members']},set(next(f['subthemes'] for f in catalogue if f['id']==family)))
+            self.assertEqual(len({m['isin'] for m in d['members']}),5)
+            for m in d['members']:
+                self.assertEqual(m['status'],'evidence_archived')
+                self.assertEqual(prices[m['isin']]['symbol'],m['symbol'])
+                self.assertIsNone(m['effective_date'])
+                raw=(HERE/'data/theme-research/raw'/(m['sha256']+'.'+m['raw_extension'])).read_bytes()
+                self.assertEqual(hashlib.sha256(raw).hexdigest(),m['sha256'])
+        d=json.loads((HERE/'data/theme-research/packaging.json').read_text())
+        self.assertIn('not independently proven life-cycle benefit',d['members'][4]['rationale'])
+        d=json.loads((HERE/'data/theme-research/textiles.json').read_text())
+        self.assertIn('Other group companies',d['members'][0]['rationale'])
+        self.assertEqual(d['members'][3]['symbol'],'WELSPUNLIV')
+
     def test_every_catalogue_subtheme_has_explicit_stage(self):
         d=audit()
         self.assertEqual(len(d['families']),28)
