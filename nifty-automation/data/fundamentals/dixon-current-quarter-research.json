@@ -50,5 +50,25 @@
     "PLI incentive receivable1110.06crore awaits formal determination/disbursement; related customer liability603.95crore. Preserve reported earnings rather than infer normalized PAT.",
     "September2025 original quarter missing; TTM unavailable.",
     "Review covers issuer PDF visual transcription only; strict ingestion and source-date publication review pending."
-  ]
+  ],
+  "parsed_research_fact": {
+    "symbol": "DIXON",
+    "isin": "INE935N01020",
+    "scope": "Consolidated",
+    "period_start": "2026-04-01",
+    "period_end": "2026-06-30",
+    "financial_year_start": "2026-04-01",
+    "board_approval_date": "2026-07-31",
+    "filing_date": null,
+    "publication_ready": false,
+    "source_unit": "Crores",
+    "display_unit": "INR crore",
+    "statement_page": 2,
+    "revenue_operations_crore": "15547.66",
+    "pat_total_period_crore": "717.83",
+    "ytd_revenue_operations_crore": "15547.66",
+    "ytd_pat_total_period_crore": "717.83",
+    "comparable_growth_allowed": false,
+    "restriction": "Issuer notes lighting-business transfer makes comparative quarters non-comparable; exchange filing date unverified."
+  }
 }

@@ -4,6 +4,45 @@ from datetime import date
 from decimal import Decimal
 from pypdf import PdfReader
 
+def parse_dixon_june2026_research(raw):
+    """Bounded integrated-report adapter. Approval date is NOT filing availability."""
+    if not raw.startswith(b'%PDF'):raise ValueError('Unsupported PDF format')
+    reader=PdfReader(io.BytesIO(raw))
+    if len(reader.pages)!=5:raise ValueError('Unexpected Dixon integrated PDF page count')
+    cover=' '.join((reader.pages[0].extract_text() or '').split())
+    text=' '.join((reader.pages[1].extract_text() or '').split())
+    required=('Dixon Technologies (India) Limited','NSE Symbol* DIXON','INE935N01020',
+              'Level of rounding Crores','First quarter','Consolidated','31-07-2026')
+    if not all(v in cover for v in required):raise ValueError('Dixon identity/unit/scope mismatch')
+    if not all(v in text for v in ('Amount in (Crores)','01-04-202601-04-2026','30-06-202630-06-2026','ConsolidatedConsolidated')):
+        raise ValueError('Dixon quarter/YTD/scope mismatch')
+    def value(label):
+        # Two decimal places delimit even touching quarter/YTD cells in this template.
+        matches=re.findall(re.escape(label)+r'\s*([\d,]+?\.\d{2})\s*([\d,]+?\.\d{2})',text)
+        if len(matches)!=1:raise ValueError('Missing or ambiguous Dixon fact: '+label)
+        a,b=(Decimal(v.replace(',','')) for v in matches[0])
+        if a!=b:raise ValueError('Dixon Q1 quarter/YTD mismatch')
+        return a
+    sales=value('Revenue from operations');other=value('Other income');income=value('Total income')
+    expenses=value('Total expenses');pbt=value('Total profit before tax')
+    tax=value('Total tax expenses');continuing=value('Net Profit Loss for the period from continuing operations')
+    discontinued=value('Net profit (loss) from discontinued operation after tax')
+    jv=value('method');pat=value('Total profit (loss) for period')
+    parent=value('Profit or loss, attributable to owners of parent')
+    nci=value('Total profit or loss, attributable to non-controlling interests')
+    if sales+other!=income or income-expenses!=pbt or pbt-tax!=continuing:
+        raise ValueError('Dixon income/tax bridge mismatch')
+    if continuing+discontinued+jv!=pat or parent+nci!=pat:
+        raise ValueError('Dixon total PAT bridge mismatch')
+    return {'symbol':'DIXON','isin':'INE935N01020','scope':'Consolidated',
+            'period_start':'2026-04-01','period_end':'2026-06-30','financial_year_start':'2026-04-01',
+            'board_approval_date':'2026-07-31','filing_date':None,'publication_ready':False,
+            'source_unit':'Crores','display_unit':'INR crore','statement_page':2,
+            'revenue_operations_crore':str(sales),'pat_total_period_crore':str(pat),
+            'ytd_revenue_operations_crore':str(sales),'ytd_pat_total_period_crore':str(pat),
+            'comparable_growth_allowed':False,
+            'restriction':'Issuer notes lighting-business transfer makes comparative quarters non-comparable; exchange filing date unverified.'}
+
 def parse_dynamatic_june2026(raw,filing_date,symbol='DYNAMATECH'):
     if symbol!='DYNAMATECH' or not raw.startswith(b'%PDF'):raise ValueError('Unsupported PDF company or format')
     reader=PdfReader(io.BytesIO(raw))

@@ -3,10 +3,28 @@ import hashlib,json,unittest
 from decimal import Decimal
 from pathlib import Path
 from pypdf import PdfReader
+from parse_primary_pdf import parse_dixon_june2026_research
+from unittest.mock import patch
+from types import SimpleNamespace
 
 ROOT=Path(__file__).parent/'data/fundamentals'
 
 class DixonResearchTests(unittest.TestCase):
+    def test_bounded_parser_retains_unavailable_date_and_growth_restriction(self):
+        raw=(ROOT/'raw/d273532c5a19702886e58b1d3d64be2c540603b7d6662527b1b960283c5b5779.pdf').read_bytes()
+        fact=parse_dixon_june2026_research(raw)
+        self.assertEqual(fact['revenue_operations_crore'],'15547.66')
+        self.assertEqual(fact['pat_total_period_crore'],'717.83')
+        self.assertIsNone(fact['filing_date'])
+        self.assertFalse(fact['publication_ready'])
+        self.assertFalse(fact['comparable_growth_allowed'])
+        reader=PdfReader(ROOT/'raw/d273532c5a19702886e58b1d3d64be2c540603b7d6662527b1b960283c5b5779.pdf')
+        original=[p.extract_text() for p in reader.pages]
+        for old,new in [('Crores','Lakhs'),('DIXON','OTHER'),('30-06-2026','30-09-2026'),('717.83','718.00'),('15,547.66','15,547.67')]:
+            pages=[SimpleNamespace(extract_text=lambda t=t:t.replace(old,new)) for t in original]
+            with patch('parse_primary_pdf.PdfReader',return_value=SimpleNamespace(pages=pages)):
+                with self.assertRaises(ValueError):parse_dixon_june2026_research(raw)
+
     def test_original_documents_and_scope(self):
         d=json.loads((ROOT/'dixon-current-quarter-research.json').read_text(encoding='utf-8'))
         self.assertFalse(d['publication_ready'])
