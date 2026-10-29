@@ -1,0 +1,54 @@
+{
+  "symbol": "DIXON",
+  "publication_ready": false,
+  "discovery_page": "https://dixoninfo.com/financial-performance",
+  "discovery_method": "Public document links served by issuer financial-performance page; retained only relevant document references, excluding unrelated administrator metadata.",
+  "sources": [
+    {
+      "source_url": "https://dixon-website.s3.ap-south-1.amazonaws.com/uploads/2026f8e4-9413-4919-8389-58769db7c7af-IntegratedFiling-FinanceConsolidated-30.06.2026.pdf",
+      "sha256": "d273532c5a19702886e58b1d3d64be2c540603b7d6662527b1b960283c5b5779",
+      "retrieved_utc": "2026-10-29T00:41:07.415045+00:00",
+      "pages": 5
+    },
+    {
+      "source_url": "https://dixon-website.s3.ap-south-1.amazonaws.com/uploads/fd85d87b-9753-4b1d-968c-7465159e226a-FullResultsQ1-FY27-31.07.2026.pdf",
+      "sha256": "b26da159028a650efcaf777787f42c93cd398a38728a15dfa03e6673b7336e2c",
+      "retrieved_utc": "2026-10-29T00:41:08.156093+00:00",
+      "pages": 7
+    }
+  ],
+  "note": "Visually reviewed consolidated page6 and source notes page7; retained research-only pending strict ingestion and comparability/date safeguards.",
+  "visual_review": {
+    "statement_page": 6,
+    "notes_page": 7,
+    "reviewed_on": "2026-10-29",
+    "scope": "Consolidated",
+    "source_unit": "INR crore",
+    "period_start": "2026-04-01",
+    "period_end": "2026-06-30",
+    "board_approval_date": "2026-07-31",
+    "filing_date_status": "Board approval established; exchange filing timestamp not independently established from issuer PDF",
+    "revenue_operations": "15547.66",
+    "other_income": "528.29",
+    "total_income": "16075.95",
+    "total_expenses": "15215.61",
+    "profit_before_joint_ventures_and_tax": "860.34",
+    "joint_venture_profit": "8.64",
+    "profit_before_tax": "868.98",
+    "current_tax": "80.41",
+    "deferred_tax": "70.74",
+    "total_tax": "151.15",
+    "total_period_pat": "717.83",
+    "parent_attributable_pat": "663.42",
+    "noncontrolling_pat": "54.41",
+    "comprehensive_income": "718.00",
+    "prior_june_operations": "12835.66",
+    "prior_june_pat": "280.02"
+  },
+  "restrictions": [
+    "Issuer note explicitly states June2026 is not comparable with prior-year/current-year quarter due to lighting-business transfer effective 1August2025. Do not rank simple YoY as comparable organic growth.",
+    "PLI incentive receivable1110.06crore awaits formal determination/disbursement; related customer liability603.95crore. Preserve reported earnings rather than infer normalized PAT.",
+    "September2025 original quarter missing; TTM unavailable.",
+    "Review covers issuer PDF visual transcription only; strict ingestion and source-date publication review pending."
+  ]
+}
