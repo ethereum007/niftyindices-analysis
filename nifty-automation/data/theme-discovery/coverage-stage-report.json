@@ -1,7 +1,7 @@
 {
   "reviewed_on": "2026-10-29",
   "stage": "coverage_first",
-  "status": "mapping_complete_publication_failed",
+  "status": "complete",
   "catalogue_families": 28,
   "subtheme_slots": 140,
   "source_backed_slots": 140,
@@ -22,8 +22,12 @@
     "saved_version_id": "appgprj_6ad79bb2a1ac8191ac4e4cf881161018~appgver_2c7c18d24b748191a9fbe7961bf50427",
     "attempts": [
       "appgdep_6ae30f2d7e50819193d195c9b62c6d3d",
-      "appgdep_6ae30f4e7a388191ae4f53765ddf5736"
+      "appgdep_6ae30f4e7a388191ae4f53765ddf5736",
+      "appgdep_6ae314ac984c81918aadb2abd7c0be3e"
     ],
-    "failure": "Cloudflare workers-sdk unknown error on both attempts; retry existing saved version after provider recovery"
+    "failure": null,
+    "status": "succeeded",
+    "url": "https://kiran-index-intelligence.kirandnyc.chatgpt.site/",
+    "completed_utc": "2026-10-29T09:41:25.736105+00:00"
   }
 }
