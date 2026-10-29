@@ -1675,38 +1675,68 @@
     {
       "family": "agriculture",
       "name": "Agriculture & Food Supply Chain",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "Seeds & crop inputs",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "KSCL",
+              "isin": "INE455I01029",
+              "sha256": "b45611656395cd6d1bb1a45c477f70410139d7913a928242e6b2760da79cadff"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Farm equipment",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ESCORTS",
+              "isin": "INE042A01014",
+              "sha256": "e488f7c71900513c5aca4b702d0b2ccb95ff47d9468311323ba8c660df823247"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Irrigation",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "JISLJALEQS",
+              "isin": "INE175A01038",
+              "sha256": "8695d24577d34c0d5c68bc70892a1e4c5e08706a0e720370e1650db5e3e4df32"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Food processing",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "KRBL",
+              "isin": "INE001B01026",
+              "sha256": "b47f5cecc2f7df3b8cbb3d03bdec3285fdd7e19055d3aed997c5bc4ba871d916"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Cold chain",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "SNOWMAN",
+              "isin": "INE734N01019",
+              "sha256": "dd866397722327c931aa12158d49250f511bb103610c95e590eb6d7a13801c67"
+            }
+          ],
+          "gap_note": null
         }
       ]
     },
@@ -1788,6 +1818,6 @@
     }
   ],
   "total_subthemes": 140,
-  "mapped_subthemes": 120,
-  "fully_mapped_example_families": 24
+  "mapped_subthemes": 125,
+  "fully_mapped_example_families": 25
 }

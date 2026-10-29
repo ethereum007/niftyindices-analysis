@@ -2262,9 +2262,9 @@
           "Nifty Telecommunications",
           "Nifty Media"
         ],
-        "membership_status": "Company mapping pending",
-        "mapping_note": "Related official indices provide context only, including broad proxies where no dedicated series exists. Their returns and constituents are not custom-theme membership or performance.",
-        "company_data_ready": false,
+        "membership_status": "Five independently researched examples; not exhaustive membership",
+        "mapping_note": "Five independently researched business-role examples with archived primary evidence, not an exhaustive listed universe. Related official indices provide context only; they are not custom basket returns. No weights, historical membership or quantified revenue materiality inferred.",
+        "company_data_ready": true,
         "origin": "workbook_alignment",
         "workbook_alignment": {
           "name": "Telecom & media",
@@ -2300,9 +2300,9 @@
           "Nifty India Tourism",
           "Nifty Consumer Services"
         ],
-        "membership_status": "Company mapping pending",
-        "mapping_note": "Related official indices provide context only, including broad proxies where no dedicated series exists. Their returns and constituents are not custom-theme membership or performance.",
-        "company_data_ready": false,
+        "membership_status": "Five independently researched examples; not exhaustive membership",
+        "mapping_note": "Five independently researched business-role examples with archived primary evidence, not an exhaustive listed universe. Related official indices provide context only; they are not custom basket returns. No weights, historical membership or quantified revenue materiality inferred.",
+        "company_data_ready": true,
         "origin": "workbook_alignment",
         "workbook_alignment": {
           "name": "Travel, leisure & entertainment",
@@ -2323,7 +2323,7 @@
       {
         "id": "agriculture",
         "name": "Agriculture & Food Supply Chain",
-        "description": "Additional research proposal beyond the supplied sector categories; companies not yet mapped.",
+        "description": "Additional research proposal beyond the supplied sector categories, with five source-backed business-role examples.",
         "sources": [],
         "subthemes": [
           "Seeds & crop inputs",
@@ -2335,9 +2335,9 @@
         "related_indices": [
           "Nifty Rural"
         ],
-        "membership_status": "Additional research proposal",
-        "mapping_note": "Related official indices provide context only. A broad proxy is not a dedicated theme return; absent series remain unavailable.",
-        "company_data_ready": false,
+        "membership_status": "Five independently researched examples; not exhaustive membership",
+        "mapping_note": "Five independently researched business-role examples with archived primary evidence, not an exhaustive listed universe. Related official indices provide context only; they are not custom basket returns. No weights, historical membership or quantified revenue materiality inferred.",
+        "company_data_ready": true,
         "origin": "additional_proposal"
       },
       {

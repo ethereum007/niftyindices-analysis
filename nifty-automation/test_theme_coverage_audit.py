@@ -111,6 +111,20 @@ class CoverageAuditTest(unittest.TestCase):
         self.assertIn('not all owned properties',d['members'][0]['rationale'])
         self.assertIn('global franchisor intellectual property',d['members'][3]['rationale'])
 
+    def test_agriculture_roles_have_immutable_evidence_and_current_identity(self):
+        d=json.loads((HERE/'data/theme-research/agriculture.json').read_text(encoding='utf-8'))
+        self.assertEqual({m['subtheme'] for m in d['members']},{'Seeds & crop inputs','Farm equipment','Irrigation','Food processing','Cold chain'})
+        prices=json.loads((HERE/'data/stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        self.assertEqual(len({m['isin'] for m in d['members']}),5)
+        for m in d['members']:
+            self.assertEqual(m['status'],'evidence_archived')
+            self.assertEqual(prices[m['isin']]['symbol'],m['symbol'])
+            self.assertIsNone(m['effective_date'])
+            raw=(HERE/'data/theme-research/raw'/(m['sha256']+'.'+m['raw_extension'])).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),m['sha256'])
+        self.assertIn('not exclusively agriculture revenue',d['members'][4]['rationale'])
+        self.assertIn('not a pure-play irrigation utility',d['members'][2]['rationale'])
+
     def test_every_catalogue_subtheme_has_explicit_stage(self):
         d=audit()
         self.assertEqual(len(d['families']),28)

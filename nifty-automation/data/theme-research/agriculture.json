@@ -1,0 +1,114 @@
+{
+  "family": "agriculture",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-29",
+  "note": "Five independently researched bounded business-role examples; not an exhaustive listed universe. No paid holdings, weights, historical membership or quantified theme revenue inferred.",
+  "comparison_note": "Seeds, machinery, irrigation, food processing and logistics have distinct crop-cycle, asset and revenue models. This is not a homogeneous valuation or growth peer group.",
+  "members": [
+    {
+      "symbol": "KSCL",
+      "subtheme": "Seeds & crop inputs",
+      "source_url": "https://www.kaveriseeds.in/our-story/details-of-business/",
+      "rationale": "Kaveri Seed describes hybrid-seed development and production for agricultural crops. Seed supply does not imply ownership of customer farms or quantified yield improvements; crop-input exposure is not all agrochemicals.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "Kaveri Seed Company Limited",
+      "isin": "INE455I01029",
+      "resolved_url": "https://www.kaveriseeds.in/our-story/details-of-business/",
+      "sha256": "b45611656395cd6d1bb1a45c477f70410139d7913a928242e6b2760da79cadff",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T08:12:26.379218+00:00",
+      "keyword_checks": {
+        "kaveri": true,
+        "seed": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "ESCORTS",
+      "subtheme": "Farm equipment",
+      "source_url": "https://exports.escortskubota.com/",
+      "rationale": "Escorts Kubota describes tractors and agricultural implements. Equipment sales are distinct from owning farms or crop output; no current exports, utilisation or market share inferred.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "Escorts Kubota Limited",
+      "isin": "INE042A01014",
+      "resolved_url": "https://exports.escortskubota.com/",
+      "sha256": "e488f7c71900513c5aca4b702d0b2ccb95ff47d9468311323ba8c660df823247",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T08:12:25.373510+00:00",
+      "keyword_checks": {
+        "tractor": true,
+        "implements": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "JISLJALEQS",
+      "subtheme": "Irrigation",
+      "source_url": "https://www.jains.com/Segment/Irrigation.htm",
+      "rationale": "Jain Irrigation describes drip and sprinkler irrigation systems and installation support. Equipment and project services are distinct from ownership of client farms or guaranteed water savings; the diversified company is not a pure-play irrigation utility.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "Jain Irrigation Systems Limited",
+      "isin": "INE175A01038",
+      "resolved_url": "https://www.jains.com/Segment/Irrigation.htm",
+      "sha256": "8695d24577d34c0d5c68bc70892a1e4c5e08706a0e720370e1650db5e3e4df32",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T08:12:25.381939+00:00",
+      "keyword_checks": {
+        "irrigation": true,
+        "drip": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "KRBL",
+      "subtheme": "Food processing",
+      "source_url": "https://krblrice.com/about-us/",
+      "rationale": "KRBL issuer profile describes manufacturing and marketing rice products. This establishes food-processing exposure without inferring current utilisation, output, revenue or ownership of grower land.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "KRBL Limited",
+      "isin": "INE001B01026",
+      "resolved_url": "https://krblrice.com/about-us/",
+      "sha256": "b47f5cecc2f7df3b8cbb3d03bdec3285fdd7e19055d3aed997c5bc4ba871d916",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T08:12:26.029892+00:00",
+      "keyword_checks": {
+        "rice": true,
+        "manufacturing": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "SNOWMAN",
+      "subtheme": "Cold chain",
+      "source_url": "https://snowman.in/about",
+      "rationale": "Snowman Logistics describes temperature-controlled warehousing and distribution. This is supply-chain service exposure across temperature-sensitive products, not exclusively agriculture revenue or ownership of customer inventory.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; name from primary corporate disclosure",
+      "company": "Snowman Logistics Limited",
+      "isin": "INE734N01019",
+      "resolved_url": "https://snowman.in/about",
+      "sha256": "dd866397722327c931aa12158d49250f511bb103610c95e590eb6d7a13801c67",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T08:12:25.812486+00:00",
+      "keyword_checks": {
+        "temperature": true,
+        "warehousing": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}
