@@ -1462,9 +1462,9 @@
           "Nifty IT",
           "Nifty India Digital"
         ],
-        "membership_status": "Company mapping pending",
-        "mapping_note": "Related official indices provide context only, including broad proxies where no dedicated series exists. Their returns and constituents are not custom-theme membership or performance.",
-        "company_data_ready": false,
+        "membership_status": "Initial examples available",
+        "mapping_note": "Five independently source-backed business-role examples; no portfolio holdings, weights, historical membership or exhaustive universe inferred. Related official indices provide context only; their returns are not custom theme returns.",
+        "company_data_ready": true,
         "origin": "workbook_alignment",
         "workbook_alignment": {
           "name": "IT, software & digital platforms",

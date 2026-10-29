@@ -1,0 +1,114 @@
+{
+  "family": "itservices",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-29",
+  "note": "Five source-backed business-role examples covering five proposed subthemes; not an exhaustive listed universe. No Smallcase paid holdings, weights, theme revenue share or historical membership inferred. Keyword checks are archive checks, not exposure classification.",
+  "comparison_note": "IT outsourcing, engineering services, software licensing, classifieds and cybersecurity have different business economics; they are not a homogeneous valuation peer group.",
+  "members": [
+    {
+      "symbol": "HCLTECH",
+      "subtheme": "IT services",
+      "source_url": "https://www.hcltech.com/advisory-and-consulting",
+      "rationale": "IT services, consulting and business solutions establish services exposure; internal AI use is not a separately quantified AI revenue stream.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "HCL Technologies Ltd.",
+      "isin": "INE860A01027",
+      "resolved_url": "https://www.hcltech.com/advisory-and-consulting",
+      "sha256": "eca2408cf2e99bef6239993312c7e3d04b9f928599b9ebd8b7c59a59a2f78083",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T04:58:52.601406+00:00",
+      "keyword_checks": {
+        "it transformation": true,
+        "consulting": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "LTTS",
+      "subtheme": "Engineering R&D",
+      "source_url": "https://www.ltts.com/services",
+      "rationale": "Engineering and embedded-system development services establish outsourced engineering exposure; services for clients do not imply ownership of their end products.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "L&T Technology Services Ltd.",
+      "isin": "INE010V01017",
+      "resolved_url": "https://www.ltts.com/services",
+      "sha256": "42dde67999061cce74db935854fd7a0377a85b86f5499e8f345bf23761ef1640",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T04:58:51.163304+00:00",
+      "keyword_checks": {
+        "engineering": true,
+        "embedded": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "OFSS",
+      "subtheme": "Enterprise software",
+      "source_url": "https://docs.oracle.com/en/industries/financial-services/banking-origination/14.9.0.0.0/oborn/background.html",
+      "rationale": "Oracle documentation explicitly attributes development of Banking Origination to Oracle Financial Services Software Limited. Exposure is banking software; all Oracle group revenue is not attributed to this listed subsidiary.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Oracle Financial Services Software Ltd.",
+      "isin": "INE881D01027",
+      "resolved_url": "https://docs.oracle.com/en/industries/financial-services/banking-origination/14.9.0.0.0/oborn/background.html",
+      "sha256": "d17235f95e814d612b97b492eb3ec7cc9db8befa2434e67a5da1cbb10cbd6193",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T04:58:51.078673+00:00",
+      "keyword_checks": {
+        "oracle financial services software limited": true,
+        "banking origination": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "NAUKRI",
+      "subtheme": "Digital platforms",
+      "source_url": "https://www.infoedge.in/About/Overview",
+      "rationale": "Info Edge operates recruitment and property-classified internet platforms. Minority investments are distinct from fully owned operating businesses and are not counted as direct platform revenue.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Info Edge (India) Ltd.",
+      "isin": "INE663F01032",
+      "resolved_url": "https://www.infoedge.in/About/Overview",
+      "sha256": "0ba5cde0d7eb737986d0fbddd1a7581476e4d8b631653c0ea6bcadbfabf5ac06",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T04:58:51.339069+00:00",
+      "keyword_checks": {
+        "naukri": true,
+        "99acres": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "QUICKHEAL",
+      "subtheme": "Cybersecurity",
+      "source_url": "https://www.seqrite.com/about/",
+      "rationale": "Seqrite identifies itself as the enterprise arm of Quick Heal Technologies Limited providing cybersecurity software. Product capability claims do not establish customer growth or quantified theme revenue.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from issuer business disclosure",
+      "company": "Quick Heal Technologies Limited",
+      "isin": "INE306L01010",
+      "resolved_url": "https://www.seqrite.com/about/",
+      "sha256": "553bb8afe9244b79aa71f16a08967f9da587360420f5decd797bfb9eb33fe38b",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T04:58:52.302775+00:00",
+      "keyword_checks": {
+        "quick heal technologies limited": true,
+        "cybersecurity": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

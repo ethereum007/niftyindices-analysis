@@ -1,0 +1,1463 @@
+{
+  "reviewed_on": "2026-10-29",
+  "definition": "At least one archived, independently researched listed-company exposure example per subtheme; not an exhaustive investable universe, recommendation, historical basket or quantified revenue exposure.",
+  "families": [
+    {
+      "family": "ai",
+      "name": "AI & Digital Infrastructure",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "AI compute hardware",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "AI legacy examples require the same manifest/archive audit as other families."
+        },
+        {
+          "subtheme": "Data centres",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "AI legacy examples require the same manifest/archive audit as other families."
+        },
+        {
+          "subtheme": "Cooling & HVAC",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "AI legacy examples require the same manifest/archive audit as other families."
+        },
+        {
+          "subtheme": "Fibre & connectivity",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "AI legacy examples require the same manifest/archive audit as other families."
+        },
+        {
+          "subtheme": "Embedded design",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "AI legacy examples require the same manifest/archive audit as other families."
+        }
+      ]
+    },
+    {
+      "family": "defence",
+      "name": "Defence & Aerospace",
+      "mapped_subthemes": 5,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Aerospace & engines",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "HAL",
+              "isin": "INE066F01020",
+              "sha256": "8ba70b439c06cd20218348cdcdee9ee4c4ba4b21436523db8e6308a49f1d00b7"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Defence electronics",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "BEL",
+              "isin": "INE263A01024",
+              "sha256": "ee66594bef8e77e070abc1c48f0f9362255c743099c37d9d63b0ddf6f2ade52d"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Shipbuilding",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "MAZDOCK",
+              "isin": "INE249Z01020",
+              "sha256": "81d99ed69ee91427390c92ed39e12ab63fa072b20cabae01595b97766d588866"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Precision components",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "DYNAMATECH",
+              "isin": "INE221B01012",
+              "sha256": "ca0da8c9cfe2f90f2ff38ad7758371f75d191d280bf61405502bd6e1c622c00e"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Drones",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "IDEAFORGE",
+              "isin": "INE349Y01013",
+              "sha256": "ba38998a02da2261311150742fc99d8b2a3a4892530a4953807c410d5f12d268"
+            }
+          ],
+          "gap_note": null
+        }
+      ]
+    },
+    {
+      "family": "railways",
+      "name": "Railways & Transport Infrastructure",
+      "mapped_subthemes": 5,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Rolling stock",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "TITAGARH",
+              "isin": "INE615H01020",
+              "sha256": "7b6e577b99f06c348b4f89cf8c919b43cf3a3aa5dceef2dfb34f7c80768d4e4d"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Rail electrification",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "KEC",
+              "isin": "INE389H01022",
+              "sha256": "14d650bbe1ed84ee011b47dac345852b82e674634245a90cf0c9b79003fb71b1"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Signalling & safety",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "HBLENGINE",
+              "isin": "INE292B01021",
+              "sha256": "3fd09cc2a1ef1fdfe107482cbc6ca9976d8e2cf014a0cbd9d64f5ea154acb4c3"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Rail EPC",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "IRCON",
+              "isin": "INE962Y01021",
+              "sha256": "29b5fc215369c3e99f723e47ba72cef6ac550d9528d59da943b49ec5235fd0e5"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Freight infrastructure",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "CONCOR",
+              "isin": "INE111A01025",
+              "sha256": "a79d4658bf614a1dc5320486894d5989218b6d475153d14bc99a517acccf927a"
+            }
+          ],
+          "gap_note": null
+        }
+      ]
+    },
+    {
+      "family": "cleanenergy",
+      "name": "Energy Transition & Grid",
+      "mapped_subthemes": 5,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Solar value chain",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "WAAREEENER",
+              "isin": "INE377N01017",
+              "sha256": "ec3a0635d376004db6f034f5b8ea5b37516ad025621213efc96f3cee0c09a068"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Wind equipment",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "SUZLON",
+              "isin": "INE040H01021",
+              "sha256": "095c74b4e9abcdb3d944c60e0c08b2e2cc6c285095a322bb72d9ea0fd1c4601b"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Storage & batteries",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "EXIDEIND",
+              "isin": "INE302A01020",
+              "sha256": "3ec173f1ffcc79786bb9ba0852ea4433f2d5332ea2aa8f181e0170ae3ace8e54"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Transmission & distribution equipment",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ABB",
+              "isin": "INE117A01022",
+              "sha256": "768b61214d7e42e1b3bcd386b1e42ee88653b6ef13e0443151014707d9ee8e22"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Grid modernisation",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "POWERGRID",
+              "isin": "INE752E01010",
+              "sha256": "54022539ff26f8e346535ee3cfcc5d8ec8f53967318b7ef0e8645a13d4ccc44d"
+            }
+          ],
+          "gap_note": null
+        }
+      ]
+    },
+    {
+      "family": "manufacturing",
+      "name": "Manufacturing & Industrial Capex",
+      "mapped_subthemes": 5,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Electronics manufacturing",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "KAYNES",
+              "isin": "INE918Z01012",
+              "sha256": "a15c7b9c639a1b6629f38de8b34bfce671f7f2bd899a3a39e98a7c1d533540f0"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Industrial automation",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ABB",
+              "isin": "INE117A01022",
+              "sha256": "768b61214d7e42e1b3bcd386b1e42ee88653b6ef13e0443151014707d9ee8e22"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Capital equipment",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "LT",
+              "isin": "INE018A01030",
+              "sha256": "4a2819411be36e9df2e890df01fe5c80124ecd2ad1d782ced9b96c1e6de2bffe"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Precision engineering",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "DYNAMATECH",
+              "isin": "INE221B01012",
+              "sha256": "ca0da8c9cfe2f90f2ff38ad7758371f75d191d280bf61405502bd6e1c622c00e"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Contract manufacturing",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "DIXON",
+              "isin": "INE935N01020",
+              "sha256": "b7ec2d3488366d73b901052f4531839f8e286ba8524899c4fb78064302f28b09"
+            }
+          ],
+          "gap_note": null
+        }
+      ]
+    },
+    {
+      "family": "capitalmarkets",
+      "name": "Capital Markets & Wealth",
+      "mapped_subthemes": 5,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Exchanges & depositories",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "BSE",
+              "isin": "INE118H01025",
+              "sha256": "e92915031e622ecc03348977337452179feda1db6bc5f5991776c20414e3f61e"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Brokers",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ANGELONE",
+              "isin": "INE732I01021",
+              "sha256": "5a90fed01711ee3d9a8f8206589df4cd58db8177433815aa005c4652d1c79014"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Asset managers",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "HDFCAMC",
+              "isin": "INE127D01025",
+              "sha256": "cdd3b3c374bb7a1277e68169538e9c562c69b0d902ef7a649a2975ce10819c61"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Registrars & platforms",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "CAMS",
+              "isin": "INE596I01020",
+              "sha256": "ac59872f64bc54ad6975706ab4a9d51f47bda4ae45fd4bdd48ec13246c32fa3d"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Wealth management",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "NUVAMA",
+              "isin": "INE531F01023",
+              "sha256": "603bad5887745e897c9b6d71535de2fae28f11c37a4107a28bce926c933f27d1"
+            }
+          ],
+          "gap_note": null
+        }
+      ]
+    },
+    {
+      "family": "fintech",
+      "name": "Fintech & Digital Finance",
+      "mapped_subthemes": 5,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Payments infrastructure",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "PAYTM",
+              "isin": "INE982J01020",
+              "sha256": "db72d07d120d69e1b05a28a97847f13d6a181b742bee0bc8a6189719f5c80566"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Digital lenders",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "BAJFINANCE",
+              "isin": "INE296A01032",
+              "sha256": "fa9333c7acdf98c73027a0a9138ec4e2c8dd9fc5040c7a12802d0621009584bc"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Financial software",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "INTELLECT",
+              "isin": "INE306R01017",
+              "sha256": "d304a75027b7b60062a8b3ced8f7c0e56583c6e5857a9a735d39aed407d811e1"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Insurance distribution",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "POLICYBZR",
+              "isin": "INE417T01026",
+              "sha256": "1cd4bfe3bd43bf321d5f1535a18b39389c2876c94063425c617ca94220b6d538"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Digital banking",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "AUBANK",
+              "isin": "INE949L01017",
+              "sha256": "8781e7494b971ba2e24c0b85f395e08f97bacc29266d676a7f6e71d79f7be6e7"
+            }
+          ],
+          "gap_note": null
+        }
+      ]
+    },
+    {
+      "family": "consumption",
+      "name": "Consumption & Premiumisation",
+      "mapped_subthemes": 5,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Branded retail",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "TITAN",
+              "isin": "INE280A01028",
+              "sha256": "97b7e2664c5aec371b5c327da1db700c7e624264a3479838d90851a730437c7a"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Consumer durables",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "BLUESTARCO",
+              "isin": "INE472A01039",
+              "sha256": "c5e1090e20a648aa96fbe53d3f6441dbaf01df1e76fb2c920d02362c5b73c6e2"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Premium experiences",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "INDHOTEL",
+              "isin": "INE053A01029",
+              "sha256": "d7fada365ee28bb1ecd333ef4571c740f2e866e455ac3b8d65ff24973a8bfb17"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Food & staples",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "BRITANNIA",
+              "isin": "INE216A01030",
+              "sha256": "e3144e0ef7ab5caf91ef566cd38c1f671fd77677c2c3320d9abfd32c327b378a"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Rural demand",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "HINDUNILVR",
+              "isin": "INE030A01027",
+              "sha256": "503de6d61e60bba32b069834d92109ce32bd0b361e5655ba7d1adddebc7abf1f"
+            }
+          ],
+          "gap_note": null
+        }
+      ]
+    },
+    {
+      "family": "housing",
+      "name": "Housing & Real Estate Ecosystem",
+      "mapped_subthemes": 5,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Residential developers",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "DLF",
+              "isin": "INE271C01023",
+              "sha256": "c8cee39618f2e2b0c1d138074d54aca9301a0e9355f605c4764c09c58d7b193e"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Building materials",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ULTRACEMCO",
+              "isin": "INE481G01011",
+              "sha256": "2c0b39260205a5e087a5b236256b06a170c9536f87806f1a866ef449b9e31c3e"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Housing finance",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "LICHSGFIN",
+              "isin": "INE115A01026",
+              "sha256": "d2e603ea3b616e79d4648ab9fd37c3b0a9e7bcd0639f8b55d673633bfe1e18d7"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Home improvement",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ASIANPAINT",
+              "isin": "INE021A01026",
+              "sha256": "9d94beecb55e8c413eec6f62c65be77415dca001683e74f04e619c54c0f1fce7"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Commercial property",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "PHOENIXLTD",
+              "isin": "INE211B01039",
+              "sha256": "a80de3abb76e45770a745538bc969e2c70b3061985d88b2cd7cb82f62f49c0a0"
+            }
+          ],
+          "gap_note": null
+        }
+      ]
+    },
+    {
+      "family": "oilgas",
+      "name": "Oil, Gas & Energy Infrastructure",
+      "mapped_subthemes": 5,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Exploration & production",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ONGC",
+              "isin": "INE213A01029",
+              "sha256": "e5d8b3badbfe39126767ec267c07da8880a1dfde3a7192cfedff4359a4bcfe9a"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Refining",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "IOC",
+              "isin": "INE242A01010",
+              "sha256": "e3f19334c335e7c1c6318b1aaf2036a12a2c533c6e10e605c4d5d27bda61d33f"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Pipelines & terminals",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "GAIL",
+              "isin": "INE129A01019",
+              "sha256": "4ebd557929d25eac6dc95feae0594f52e8c7bb601574b5b9296ba682677d45d2"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "City gas",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "IGL",
+              "isin": "INE203G01027",
+              "sha256": "52d2bb9cd938293e292e0d89ad96b107bb9c2481389b69405d776f306c5d76ad"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Energy services",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "DEEPINDS",
+              "isin": "INE0FHS01024",
+              "sha256": "3c1aaf4388a7266db909d477c513e1c800d3459398c797f3cf501ff6d9de5924"
+            }
+          ],
+          "gap_note": null
+        }
+      ]
+    },
+    {
+      "family": "minerals",
+      "name": "Strategic Minerals & Materials",
+      "mapped_subthemes": 5,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Critical mineral producers",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "HINDCOPPER",
+              "isin": "INE531E01026",
+              "sha256": "500a3fc7f8940f631f9bce0517652c7de6c2c08866624a2b0c385400566682fd"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Specialty materials",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "GRAPHITE",
+              "isin": "INE371A01025",
+              "sha256": "b65a1d90619fa64862e094ac6b80debea136b0228933e56443136a8828bc236e"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Processing & refining",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "NATIONALUM",
+              "isin": "INE139A01034",
+              "sha256": "d986b01c83cf7c55677194ccff62f67fda706d4438797eea4d4c07c199206f23"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Recycling",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "GRAVITA",
+              "isin": "INE024L01027",
+              "sha256": "5e150172c166a55997bf7e69d44da0b36a04260b0a138bb5c3369e4f87deaf00"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Mining equipment",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "BEML",
+              "isin": "INE258A01024",
+              "sha256": "087816fe38421b1ad6fa846d87c03095a015a9beab4200fdf189a8e36cb04c17"
+            }
+          ],
+          "gap_note": null
+        }
+      ]
+    },
+    {
+      "family": "mobility",
+      "name": "Auto Components & New Mobility",
+      "mapped_subthemes": 5,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Auto ancillaries",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "SUNDRMFAST",
+              "isin": "INE387A01021",
+              "sha256": "ee7786f30d2f5427b25dee19596cbf3672ab746da8545bb3d80611f7517387a1"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "EV powertrain",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "SONACOMS",
+              "isin": "INE073K01018",
+              "sha256": "34787f7ccf286555059e33eadf2243d3997a038e413cc54bdbdea118eb90ecc6"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Batteries & charging",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "EXIDEIND",
+              "isin": "INE302A01020",
+              "sha256": "3ec173f1ffcc79786bb9ba0852ea4433f2d5332ea2aa8f181e0170ae3ace8e54"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Vehicle electronics",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "UNOMINDA",
+              "isin": "INE405E01023",
+              "sha256": "3d69bfad2c637deb04e4fcdab6cc3e47cd67a872bc2ffe10cb960c3f633db76c"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Tyres",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "APOLLOTYRE",
+              "isin": "INE438A01022",
+              "sha256": "a9f23810489cb92d73ca714195e0c019adda98fee6dc3a77bc54068cfbfd8233"
+            }
+          ],
+          "gap_note": null
+        }
+      ]
+    },
+    {
+      "family": "healthcare",
+      "name": "Healthcare & Pharma",
+      "mapped_subthemes": 5,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Hospitals",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "MAXHEALTH",
+              "isin": "INE027H01010",
+              "sha256": "2be1e7e745aff36caf99596b0a5ea9023b49094ab463f9fd31ecba3e821ffc70"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Diagnostics",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "LALPATHLAB",
+              "isin": "INE600L01024",
+              "sha256": "a1e75001a9adac7c856b24a088ef29d36b23d963b2c72bef5e75c3ff4a883e38"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Pharma manufacturers",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "SUNPHARMA",
+              "isin": "INE044A01036",
+              "sha256": "be8ee8d56b2a19be87fa592ff011380173ce7dea3ffbcc0edf768d10de3f1ad7"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Contract research",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "SYNGENE",
+              "isin": "INE398R01022",
+              "sha256": "1be75abd8567c43ef75589f4c4bce831ec34ecb98d161eb1b3601a3fa4b408d0"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Medical equipment",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "POLYMED",
+              "isin": "INE205C01021",
+              "sha256": "b2945138668128d43c38ca3ab7e60be00405f19f53a3eff80bc9ac84cf8438da"
+            }
+          ],
+          "gap_note": null
+        }
+      ]
+    },
+    {
+      "family": "itservices",
+      "name": "IT, Software & Digital Platforms",
+      "mapped_subthemes": 5,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "IT services",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "HCLTECH",
+              "isin": "INE860A01027",
+              "sha256": "eca2408cf2e99bef6239993312c7e3d04b9f928599b9ebd8b7c59a59a2f78083"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Engineering R&D",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "LTTS",
+              "isin": "INE010V01017",
+              "sha256": "42dde67999061cce74db935854fd7a0377a85b86f5499e8f345bf23761ef1640"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Enterprise software",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "OFSS",
+              "isin": "INE881D01027",
+              "sha256": "d17235f95e814d612b97b492eb3ec7cc9db8befa2434e67a5da1cbb10cbd6193"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Digital platforms",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "NAUKRI",
+              "isin": "INE663F01032",
+              "sha256": "0ba5cde0d7eb737986d0fbddd1a7581476e4d8b631653c0ea6bcadbfabf5ac06"
+            }
+          ],
+          "gap_note": null
+        },
+        {
+          "subtheme": "Cybersecurity",
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "QUICKHEAL",
+              "isin": "INE306L01010",
+              "sha256": "553bb8afe9244b79aa71f16a08967f9da587360420f5decd797bfb9eb33fe38b"
+            }
+          ],
+          "gap_note": null
+        }
+      ]
+    },
+    {
+      "family": "banking",
+      "name": "Banks & NBFCs",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Private banks",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "PSU banks",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "NBFC lending",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Microfinance",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Credit infrastructure",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        }
+      ]
+    },
+    {
+      "family": "utilities",
+      "name": "Power & Utilities",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Power generation",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Distribution utilities",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Transmission",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Power equipment",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Energy trading",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        }
+      ]
+    },
+    {
+      "family": "infrastructure",
+      "name": "Infrastructure & Construction",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Roads & highways",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Civil EPC",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Urban infrastructure",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Construction materials",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Infrastructure operators",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        }
+      ]
+    },
+    {
+      "family": "logistics",
+      "name": "Logistics, Transport & Aviation",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Ports & shipping",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Warehousing",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Road logistics",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Aviation",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Express delivery",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        }
+      ]
+    },
+    {
+      "family": "electronics",
+      "name": "Electronics & Semiconductors",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "EMS & assembly",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Semiconductor design",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "OSAT & packaging",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Electronic components",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Industrial electronics",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        }
+      ]
+    },
+    {
+      "family": "insurance",
+      "name": "Insurance",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Life insurance",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "General insurance",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Health insurance",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Reinsurance",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Distribution platforms",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        }
+      ]
+    },
+    {
+      "family": "waterwaste",
+      "name": "Water & Waste Management",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Water treatment",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Wastewater EPC",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Pumps & fluid handling",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Solid waste services",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Resource recovery",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        }
+      ]
+    },
+    {
+      "family": "chemicals",
+      "name": "Chemicals",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Specialty chemicals",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Agrochemicals",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Fluorochemicals",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Commodity chemicals",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Industrial gases",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        }
+      ]
+    },
+    {
+      "family": "services",
+      "name": "Diversified Services",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Business services",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Staffing",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Facility services",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Professional platforms",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Service outsourcing",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        }
+      ]
+    },
+    {
+      "family": "telecommedia",
+      "name": "Telecom & Media",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Telecom operators",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Network equipment",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Broadcasting",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Content & entertainment",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Advertising",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        }
+      ]
+    },
+    {
+      "family": "travelleisure",
+      "name": "Travel, Leisure & Entertainment",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Hotels & resorts",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Travel platforms",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Leisure venues",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Restaurants",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Entertainment services",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        }
+      ]
+    },
+    {
+      "family": "agriculture",
+      "name": "Agriculture & Food Supply Chain",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Seeds & crop inputs",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Farm equipment",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Irrigation",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Food processing",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Cold chain",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        }
+      ]
+    },
+    {
+      "family": "textiles",
+      "name": "Textiles & Apparel",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Yarn & fabrics",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Garment manufacturing",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Technical textiles",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Home textiles",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Export supply chain",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        }
+      ]
+    },
+    {
+      "family": "packaging",
+      "name": "Packaging & Paper",
+      "mapped_subthemes": 0,
+      "total_subthemes": 5,
+      "subthemes": [
+        {
+          "subtheme": "Paper & pulp",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Flexible packaging",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Rigid packaging",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Industrial containers",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        },
+        {
+          "subtheme": "Sustainable materials",
+          "stage": "needs_independent_mapping",
+          "examples": [],
+          "gap_note": "No validated business-exposure example in current manifest."
+        }
+      ]
+    }
+  ],
+  "total_subthemes": 140,
+  "mapped_subthemes": 65,
+  "fully_mapped_example_families": 13
+}

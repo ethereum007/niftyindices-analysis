@@ -131,7 +131,11 @@ class ThemesTest(unittest.TestCase):
         self.assertTrue(all(m['family_id'] in ids for m in alignment['mappings']))
         for family in data['families']:
             if family.get('origin') in ('workbook_alignment','additional_proposal'):
-                self.assertFalse(family['company_data_ready'])
+                if family['company_data_ready']:
+                    manifest=HERE.parent/'nifty-automation/data/theme-research'/(family['id']+'.json')
+                    members=json.loads(manifest.read_text(encoding='utf-8'))['members']
+                    self.assertEqual(set(family['subthemes']),{m['subtheme'] for m in members if m['status']=='evidence_archived'})
+                else:self.assertFalse(family['company_data_ready'])
             if family.get('workbook_alignment'):
                 row=family['workbook_alignment']
                 self.assertEqual(len(row['references']),row['products'])
