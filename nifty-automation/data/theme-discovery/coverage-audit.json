@@ -1539,38 +1539,68 @@
     {
       "family": "telecommedia",
       "name": "Telecom & Media",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "Telecom operators",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "BHARTIARTL",
+              "isin": "INE397D01024",
+              "sha256": "ccd15fe62ec4c4c235d2e54536f067d9816beb98c8de7a523f59485e8d5c79da"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Network equipment",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "TEJASNET",
+              "isin": "INE010J01012",
+              "sha256": "83824a76524360563dc6f33ff489168ffe236e0421f33b6c2db475ba7492b7bc"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Broadcasting",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "SUNTV",
+              "isin": "INE424H01027",
+              "sha256": "a1a52b752ea224e131d1649831ce079604a78d777c589e0903875efc07107c58"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Content & entertainment",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "SAREGAMA",
+              "isin": "INE979A01025",
+              "sha256": "ee6de7056abcc270552b2aca872f7f673988da0b5d987e6a0c629e3135f0c41c"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Advertising",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "AFFLE",
+              "isin": "INE00WC01027",
+              "sha256": "e7b4c2dd83cd96c7a76ccd18f816bcdef3fd780d7d86c7040c3051902f8cb7b1"
+            }
+          ],
+          "gap_note": null
         }
       ]
     },
@@ -1728,6 +1758,6 @@
     }
   ],
   "total_subthemes": 140,
-  "mapped_subthemes": 110,
-  "fully_mapped_example_families": 22
+  "mapped_subthemes": 115,
+  "fully_mapped_example_families": 23
 }

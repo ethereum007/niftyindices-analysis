@@ -79,6 +79,23 @@ class CoverageAuditTest(unittest.TestCase):
         self.assertIn('State Bank of India',public)
         self.assertIn('ICICI Bank Ltd.',private)
 
+    def test_telecom_media_roles_and_identity(self):
+        d=json.loads((HERE/'data/theme-research/telecommedia.json').read_text(encoding='utf-8'))
+        self.assertEqual({m['subtheme'] for m in d['members']},{'Telecom operators','Network equipment','Broadcasting','Content & entertainment','Advertising'})
+        prices=json.loads((HERE/'data/stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        self.assertEqual(len({m['isin'] for m in d['members']}),5)
+        for m in d['members']:
+            self.assertEqual(m['status'],'evidence_archived')
+            self.assertEqual(prices[m['isin']]['symbol'],m['symbol'])
+            self.assertIsNone(m['effective_date'])
+            raw=(HERE/'data/theme-research/raw'/(m['sha256']+'.'+m['raw_extension'])).read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(),m['sha256'])
+        affle=next(m for m in d['members'] if m['symbol']=='AFFLE')
+        self.assertEqual(affle['company'],'Affle 3i Limited')
+        self.assertIn('advertiser spending is not assumed',affle['rationale'])
+        sun=next(m for m in d['members'] if m['symbol']=='SUNTV')
+        self.assertIn('distinct from ownership of IPTV operators',sun['rationale'])
+
     def test_every_catalogue_subtheme_has_explicit_stage(self):
         d=audit()
         self.assertEqual(len(d['families']),28)

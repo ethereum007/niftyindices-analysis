@@ -1,0 +1,117 @@
+{
+  "family": "telecommedia",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-29",
+  "note": "Five bounded independently researched role examples, not an exhaustive listed universe. No paid holdings, weights, historical membership or quantified revenue materiality inferred.",
+  "comparison_note": "Operators, equipment, broadcasters, content rights and ad platforms differ in capital intensity and revenue recognition. This is not a homogeneous valuation or growth peer group.",
+  "members": [
+    {
+      "symbol": "BHARTIARTL",
+      "subtheme": "Telecom operators",
+      "source_url": "https://www.airtel.in/about-bharti/about-bharti-airtel/",
+      "rationale": "Bharti Airtel describes mobile and fixed connectivity operations. Group and associate operations are distinct from standalone parent revenue; no subscriber count or market-share ranking is inferred.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from primary corporate disclosure",
+      "company": "Bharti Airtel Limited",
+      "isin": "INE397D01024",
+      "resolved_url": "https://www.airtel.in/about-bharti/about-bharti-airtel/",
+      "sha256": "ccd15fe62ec4c4c235d2e54536f067d9816beb98c8de7a523f59485e8d5c79da",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T07:13:54.169254+00:00",
+      "keyword_checks": {
+        "mobile": true,
+        "communications": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "TEJASNET",
+      "subtheme": "Network equipment",
+      "source_url": "https://www.tejasnetworks.com/products-and-solutions/optical-aggregation/",
+      "rationale": "Tejas describes optical networking equipment supporting mobile backhaul and broadband. Equipment capability does not establish ownership of operator networks or current order conversion.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from primary corporate disclosure",
+      "company": "Tejas Networks Limited",
+      "isin": "INE010J01012",
+      "resolved_url": "https://www.tejasnetworks.com/optical-aggregation/",
+      "sha256": "83824a76524360563dc6f33ff489168ffe236e0421f33b6c2db475ba7492b7bc",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T07:13:54.643086+00:00",
+      "keyword_checks": {
+        "optical": true,
+        "backhaul": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "SUNTV",
+      "subtheme": "Broadcasting",
+      "source_url": "https://www.sunnetwork.in/footerpdf/tvch/2026/RIO_IPTV-TVCH-W.E.F_1st_MAY_2026.pdf",
+      "rationale": "Sun TV Network reference interconnect offer identifies television channel distribution through its authorised agent TVCH. Broadcasting rights and signal distribution are distinct from ownership of IPTV operators; no current audience or channel count is inferred.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from primary corporate disclosure",
+      "company": "Sun TV Network Limited",
+      "isin": "INE424H01027",
+      "resolved_url": "https://www.sunnetwork.in/footerpdf/tvch/2026/RIO_IPTV-TVCH-W.E.F_1st_MAY_2026.pdf",
+      "sha256": "a1a52b752ea224e131d1649831ce079604a78d777c589e0903875efc07107c58",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T07:13:54.773026+00:00",
+      "evidence_pages": [
+        1
+      ],
+      "keyword_checks": {
+        "sun tv network limited": true,
+        "channels": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "SAREGAMA",
+      "subtheme": "Content & entertainment",
+      "source_url": "https://www.saregama.com/static/about-us",
+      "rationale": "Saregama India describes music, film and television content production and entertainment IP. Content rights and production are distinct from broadcasting infrastructure and no quantified revenue share is inferred.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from primary corporate disclosure",
+      "company": "Saregama India Limited",
+      "isin": "INE979A01025",
+      "resolved_url": "https://www.saregama.com/static/about-us",
+      "sha256": "ee6de7056abcc270552b2aca872f7f673988da0b5d987e6a0c629e3135f0c41c",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T07:14:21.430197+00:00",
+      "keyword_checks": {
+        "saregama": true,
+        "music": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "AFFLE",
+      "subtheme": "Advertising",
+      "source_url": "https://affle.com/about",
+      "rationale": "Affle 3i Limited identifies NSE AFFLE and consumer advertising technology. Listed-company platform exposure is distinct from all promoter-group revenue and advertiser spending is not assumed to equal platform revenue.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from primary corporate disclosure",
+      "company": "Affle 3i Limited",
+      "isin": "INE00WC01027",
+      "resolved_url": "https://affle.com/about",
+      "sha256": "e7b4c2dd83cd96c7a76ccd18f816bcdef3fd780d7d86c7040c3051902f8cb7b1",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T07:13:55.047046+00:00",
+      "keyword_checks": {
+        "affle 3i": true,
+        "advertis": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}
