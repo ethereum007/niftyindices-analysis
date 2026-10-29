@@ -1,0 +1,114 @@
+{
+  "family": "utilities",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-29",
+  "note": "Five independently researched business-role examples; not exhaustive utilities membership. No weights, historical membership, capacity forecast achievement or quantified theme revenue inferred.",
+  "comparison_note": "Generation, distribution, transmission assets, equipment manufacturing and power trading differ in regulation, asset intensity and revenue recognition. This is a value-chain map, not a homogeneous valuation peer group.",
+  "members": [
+    {
+      "symbol": "NTPC",
+      "subtheme": "Power generation",
+      "source_url": "https://ntpc.co.in/about-us",
+      "rationale": "NTPC describes conventional and renewable electricity generation. Diversification and future capacity targets are not treated as commissioned assets or current renewable revenue share.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "NTPC Ltd.",
+      "isin": "INE733E01010",
+      "resolved_url": "https://ntpc.co.in/about-us",
+      "sha256": "ca16e95ce7f6b61fd9d6ad62f582e41c92786cdfbdeb05c45caf90af877112cc",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T05:41:35.113108+00:00",
+      "keyword_checks": {
+        "power generation": true,
+        "ntpc": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "TORNTPOWER",
+      "subtheme": "Distribution utilities",
+      "source_url": "https://www.torrentpower.com/index.php/site/info/aboutUs",
+      "rationale": "Torrent Power describes an integrated generation, transmission and distribution business. Distribution exposure is not pure-play revenue, and service areas are not assumed to be owned land or monopoly rights everywhere.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Torrent Power Ltd.",
+      "isin": "INE813H01021",
+      "resolved_url": "https://www.torrentpower.com/index.php/site/info/aboutUs",
+      "sha256": "58e41aa9beb3d6d1bef1054b40358278db1befe5564b618f7d494d842a549234",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T05:41:35.031579+00:00",
+      "keyword_checks": {
+        "distribution": true,
+        "torrent power": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "POWERGRID",
+      "subtheme": "Transmission",
+      "source_url": "https://powergrid.in/en/transmission",
+      "rationale": "Power Grid documents electricity transmission assets and HVDC links. Transmission infrastructure is distinct from electricity generation or equipment manufacturing; no current asset-base growth inferred.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Power Grid Corporation of India Ltd.",
+      "isin": "INE752E01010",
+      "resolved_url": "https://powergrid.in/en/transmission",
+      "sha256": "d089824201299b8929dde724900f57b58270db2cbf74177f0c08b16e5bce3611",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T05:41:34.843616+00:00",
+      "keyword_checks": {
+        "transmission": true,
+        "hvdc": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "ABB",
+      "subtheme": "Power equipment",
+      "source_url": "https://www.abb.com/global/en/news/135616/abb-india-posts-solid-start-to-cy2026-with-strong-order-momentum-in-first-jan-mar-quarter",
+      "rationale": "ABB India reports electrification and motion business activity. This is listed-company equipment exposure adjacent to utilities, not ownership of the utilities supplied or all global ABB business.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "ABB India Ltd.",
+      "isin": "INE117A01022",
+      "resolved_url": "https://www.abb.com/global/en/news/135616/abb-india-posts-solid-start-to-cy2026-with-strong-order-momentum-in-first-jan-mar-quarter",
+      "sha256": "768b61214d7e42e1b3bcd386b1e42ee88653b6ef13e0443151014707d9ee8e22",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T05:41:36.771194+00:00",
+      "keyword_checks": {
+        "abb india": true,
+        "electrification": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "PTC",
+      "subtheme": "Energy trading",
+      "source_url": "https://www.ptcindia.com/about-us/the-concept-of-ptc/",
+      "rationale": "PTC India describes licensed trading of power. Electricity trading is distinct from a power exchange and from generation capacity; traded volumes are not net revenue or company-owned output.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "PTC India Ltd.",
+      "isin": "INE877F01012",
+      "resolved_url": "https://www.ptcindia.com/about-us/the-concept-of-ptc/",
+      "sha256": "7e80b1f130654c444b8eb67f970bb280d318e09a44f806f20790653b3d0d25dc",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T05:41:36.642355+00:00",
+      "keyword_checks": {
+        "ptc india": true,
+        "trading": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

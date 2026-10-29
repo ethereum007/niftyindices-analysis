@@ -995,38 +995,68 @@
     {
       "family": "utilities",
       "name": "Power & Utilities",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "Power generation",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "NTPC",
+              "isin": "INE733E01010",
+              "sha256": "ca16e95ce7f6b61fd9d6ad62f582e41c92786cdfbdeb05c45caf90af877112cc"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Distribution utilities",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "TORNTPOWER",
+              "isin": "INE813H01021",
+              "sha256": "58e41aa9beb3d6d1bef1054b40358278db1befe5564b618f7d494d842a549234"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Transmission",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "POWERGRID",
+              "isin": "INE752E01010",
+              "sha256": "d089824201299b8929dde724900f57b58270db2cbf74177f0c08b16e5bce3611"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Power equipment",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ABB",
+              "isin": "INE117A01022",
+              "sha256": "768b61214d7e42e1b3bcd386b1e42ee88653b6ef13e0443151014707d9ee8e22"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Energy trading",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "PTC",
+              "isin": "INE877F01012",
+              "sha256": "7e80b1f130654c444b8eb67f970bb280d318e09a44f806f20790653b3d0d25dc"
+            }
+          ],
+          "gap_note": null
         }
       ]
     },
@@ -1147,38 +1177,68 @@
     {
       "family": "insurance",
       "name": "Insurance",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "Life insurance",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "HDFCLIFE",
+              "isin": "INE795G01014",
+              "sha256": "deafa73e0b9336115da462408f18916b51fdc8ce5e8c8b055100877ac0b10896"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "General insurance",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ICICIGI",
+              "isin": "INE765G01017",
+              "sha256": "ab9a3425561b8e3a1c8d975a627003429e5b484a8a745f96e0726aef79a32918"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Health insurance",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "STARHEALTH",
+              "isin": "INE575P01011",
+              "sha256": "8440507b247788a1326a139461f4faf35dade26e3e2cfd7bd8d867a5e1713d0a"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Reinsurance",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "GICRE",
+              "isin": "INE481Y01014",
+              "sha256": "e6bd80beb6e70f03124e7fe3a57ecb69e5c05f8a6f5b5a261407ed7b32d80685"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Distribution platforms",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "POLICYBZR",
+              "isin": "INE417T01026",
+              "sha256": "1cd4bfe3bd43bf321d5f1535a18b39389c2876c94063425c617ca94220b6d538"
+            }
+          ],
+          "gap_note": null
         }
       ]
     },
@@ -1488,6 +1548,6 @@
     }
   ],
   "total_subthemes": 140,
-  "mapped_subthemes": 70,
-  "fully_mapped_example_families": 14
+  "mapped_subthemes": 80,
+  "fully_mapped_example_families": 16
 }

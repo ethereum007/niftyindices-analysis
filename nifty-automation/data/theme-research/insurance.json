@@ -1,0 +1,118 @@
+{
+  "family": "insurance",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-29",
+  "note": "Five source-backed business-role examples, not exhaustive insurance membership. No policyholder/customer records accessed, paid holdings, weights, revenue materiality or historical membership inferred.",
+  "comparison_note": "Life, general and health underwriting, reinsurance and distribution platforms use different accounting and operating metrics. Distributed premium is not broker revenue; network hospitals are not owned hospital assets. This is not a homogeneous valuation peer group.",
+  "members": [
+    {
+      "symbol": "HDFCLIFE",
+      "subtheme": "Life insurance",
+      "source_url": "https://www.hdfclife.com/about-us",
+      "rationale": "HDFC Life offers long-term life, protection, pension and annuity solutions. It is the listed insurer, not all HDFC Bank businesses; product breadth is not current new-business growth.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "HDFC Life Insurance Company Ltd.",
+      "isin": "INE795G01014",
+      "resolved_url": "https://www.hdfclife.com/about-us",
+      "sha256": "deafa73e0b9336115da462408f18916b51fdc8ce5e8c8b055100877ac0b10896",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T05:41:58.647791+00:00",
+      "keyword_checks": {
+        "hdfc life": true,
+        "life insurance": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "ICICIGI",
+      "subtheme": "General insurance",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GI_174881_15072026211206_iXBRL_WEB.html",
+      "rationale": "ICICI Lombard underwrites motor, health, crop, fire and other general insurance. General-insurance premium and claims economics differ from life insurance; this does not attribute the whole ICICI group.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "ICICI Lombard General Insurance Company Ltd.",
+      "isin": "INE765G01017",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GI_174881_15072026211206_iXBRL_WEB.html",
+      "sha256": "ab9a3425561b8e3a1c8d975a627003429e5b484a8a745f96e0726aef79a32918",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T05:41:58.413799+00:00",
+      "keyword_checks": {
+        "general insurance": true,
+        "motor": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "STARHEALTH",
+      "subtheme": "Health insurance",
+      "source_url": "https://nsearchives.nseindia.com/corporate/STARHEALTH_21082025102256_PR210825.pdf",
+      "rationale": "Star Health identifies as a standalone health insurer and offers health, accident and travel products. Its network hospitals are service partners, not hospitals owned by the insurer.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Star Health and Allied Insurance Company Ltd.",
+      "isin": "INE575P01011",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/STARHEALTH_21082025102256_PR210825.pdf",
+      "sha256": "8440507b247788a1326a139461f4faf35dade26e3e2cfd7bd8d867a5e1713d0a",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T05:41:58.597274+00:00",
+      "evidence_pages": [
+        2,
+        3
+      ],
+      "keyword_checks": {
+        "standalone": true,
+        "health insurance": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "GICRE",
+      "subtheme": "Reinsurance",
+      "source_url": "https://www.gicre.in/en/index.php?Itemid=102&id=8&lang=en&option=com_content&view=article",
+      "rationale": "GIC Re provides reinsurance to direct insurers. Reinsurance risk transfer is distinct from retail insurance distribution; no monopoly, market share or current premium growth is inferred.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "General Insurance Corporation of India",
+      "isin": "INE481Y01014",
+      "resolved_url": "https://www.gicre.in/en/index.php?Itemid=102&id=8&lang=en&option=com_content&view=article",
+      "sha256": "e6bd80beb6e70f03124e7fe3a57ecb69e5c05f8a6f5b5a261407ed7b32d80685",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T05:41:59.126425+00:00",
+      "keyword_checks": {
+        "gic re": true,
+        "reinsurance": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "POLICYBZR",
+      "subtheme": "Distribution platforms",
+      "source_url": "https://www.pbfintech.in/",
+      "rationale": "PB Fintech operates insurance and credit distribution platforms. Insurance distribution is distinct from underwriting risk; distributed premiums are not treated as platform revenue.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "PB Fintech Ltd.",
+      "isin": "INE417T01026",
+      "resolved_url": "https://www.pbfintech.in/",
+      "sha256": "1cd4bfe3bd43bf321d5f1535a18b39389c2876c94063425c617ca94220b6d538",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T05:41:59.396791+00:00",
+      "keyword_checks": {
+        "policybazaar": true,
+        "insurance": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

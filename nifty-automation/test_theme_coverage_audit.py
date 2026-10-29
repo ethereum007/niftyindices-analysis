@@ -2,6 +2,24 @@ import unittest,json,hashlib
 from audit_theme_coverage import audit,HERE
 
 class CoverageAuditTest(unittest.TestCase):
+    def test_insurance_and_utilities_roles_have_archived_primary_identity(self):
+        catalogue=json.loads((HERE.parent/'index-intelligence/themes.json').read_text(encoding='utf-8'))['catalogue']['families']
+        quotes=json.loads((HERE/'data/stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        for family in ('insurance','utilities'):
+            d=json.loads((HERE/'data/theme-research'/(family+'.json')).read_text(encoding='utf-8'))
+            expected=next(f['subthemes'] for f in catalogue if f['id']==family)
+            self.assertEqual(set(expected),{m['subtheme'] for m in d['members']})
+            for m in d['members']:
+                self.assertEqual(m['status'],'evidence_archived')
+                self.assertEqual(quotes[m['isin']]['symbol'],m['symbol'])
+                self.assertIsNone(m['effective_date'])
+                raw=(HERE/'data/theme-research/raw'/(m['sha256']+'.'+m.get('raw_extension','html'))).read_bytes()
+                self.assertEqual(hashlib.sha256(raw).hexdigest(),m['sha256'])
+        insurance=json.loads((HERE/'data/theme-research/insurance.json').read_text(encoding='utf-8'))
+        self.assertIn('not treated as platform revenue',next(m['rationale'] for m in insurance['members'] if m['symbol']=='POLICYBZR'))
+        utilities=json.loads((HERE/'data/theme-research/utilities.json').read_text(encoding='utf-8'))
+        self.assertIn('distinct from a power exchange',next(m['rationale'] for m in utilities['members'] if m['symbol']=='PTC'))
+
     def test_banking_roles_preserve_lender_and_rating_agency_boundaries(self):
         d=json.loads((HERE/'data/theme-research/banking.json').read_text(encoding='utf-8'))
         self.assertEqual({m['subtheme'] for m in d['members']},{'Private banks','PSU banks','NBFC lending','Microfinance','Credit infrastructure'})

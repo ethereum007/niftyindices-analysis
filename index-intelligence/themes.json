@@ -1642,9 +1642,9 @@
           "Nifty Bank",
           "Nifty NBFC"
         ],
-        "membership_status": "Company mapping pending",
-        "mapping_note": "Related official indices provide context only, including broad proxies where no dedicated series exists. Their returns and constituents are not custom-theme membership or performance.",
-        "company_data_ready": false,
+        "membership_status": "Initial examples available",
+        "mapping_note": "Five independently source-backed business-role examples; not exhaustive membership, weights or historical baskets. Related official indices provide context only; their returns are not this custom theme.",
+        "company_data_ready": true,
         "origin": "workbook_alignment",
         "workbook_alignment": {
           "name": "Banks & NBFCs",
@@ -1786,9 +1786,9 @@
         "related_indices": [
           "Nifty Power"
         ],
-        "membership_status": "Company mapping pending",
-        "mapping_note": "Related official indices provide context only, including broad proxies where no dedicated series exists. Their returns and constituents are not custom-theme membership or performance.",
-        "company_data_ready": false,
+        "membership_status": "Initial examples available",
+        "mapping_note": "Five independently source-backed business-role examples; not exhaustive membership, weights or historical baskets. Related official indices provide context only; their returns are not this custom theme.",
+        "company_data_ready": true,
         "origin": "workbook_alignment",
         "workbook_alignment": {
           "name": "Power, utilities & energy",
@@ -2098,9 +2098,9 @@
         "related_indices": [
           "Nifty Insurance"
         ],
-        "membership_status": "Company mapping pending",
-        "mapping_note": "Related official indices provide context only, including broad proxies where no dedicated series exists. Their returns and constituents are not custom-theme membership or performance.",
-        "company_data_ready": false,
+        "membership_status": "Initial examples available",
+        "mapping_note": "Five independently source-backed business-role examples; not exhaustive membership, weights or historical baskets. Related official indices provide context only; their returns are not this custom theme.",
+        "company_data_ready": true,
         "origin": "workbook_alignment",
         "workbook_alignment": {
           "name": "Insurance",

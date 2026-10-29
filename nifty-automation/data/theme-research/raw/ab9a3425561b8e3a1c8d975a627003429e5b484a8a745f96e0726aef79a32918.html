@@ -1,0 +1,2177 @@
+<html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <title>GI Details</title>
+<style type="text/css" media="screen">
+
+table {
+    border: 1px solid #d6d6d6;
+    border-collapse: collapse;
+    page-break-after: always;
+    overflow-wrap: break-word;
+    align: center;
+    width: 1075px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td:has(b) {
+background-color: #e5e5e5;
+}
+
+
+tr:has(td b) th,
+tr:has(td b) td,
+tr:has(th b) th,
+tr:has(th b) td {
+background-color: #e5e5e5;
+}
+
+
+.textalingright{
+   text-align: right;
+}
+/* table:not(.textblocktable):not(.signatoryDetails):not(.signatureDetailsTable):not(.remarksTable):not(.auditqualificationtable):not(.tdAlingLeft)tbody tr td:nth-last-child(1),
+table:not(.textblocktable):not(.signatoryDetails):not(.signatureDetailsTable):not(.remarksTable):not(.auditqualificationtable):not(.tdAlingLeft)tbody tr td:nth-last-child(2),
+table:not(.textblocktable):not(.signatoryDetails):not(.signatureDetailsTable):not(.remarksTable):not(.auditqualificationtable):not(.tdAlingLeft)thead tr th:nth-last-child(1),
+table:not(.textblocktable):not(.signatoryDetails):not(.signatureDetailsTable):not(.remarksTable):not(.auditqualificationtable):not(.tdAlingLeft)thead tr th:nth-last-child(2){
+    width: 15% !important;
+    max-width: 15% !important;
+    word-wrap: break-word;
+} */
+
+.stockExchnageTableLastColwidth tbody tr td:nth-child(3),
+.stockExchnageTableLastColwidth tbody tr td:nth-child(3){
+    width: 15% !important;
+}
+.stockExchnageTableLastColwidth tbody tr td:nth-child(4),
+.stockExchnageTableLastColwidth tbody tr td:nth-child(4){
+    width: 15% !important;
+}
+.customTablewidth3Col tbody tr td:first-child,
+.customTablewidth3Col thead tr th:first-child{
+    width: 5% !important;
+    max-width: 5% !important;
+    word-wrap: break-word;
+}
+
+.customTablewidth3Col tbody tr td:nth-child(2),
+.customTablewidth3Col thead tr th:nth-child(2){
+    width: 60% !important;
+    max-width: 60% !important;
+    word-wrap: break-word;
+}
+.customTablewidth3Col tbody tr td:nth-child(3),
+.customTablewidth3Col thead tr th:nth-child(3){
+    width: 15% !important;
+    max-width: 15% !important;
+    word-wrap: break-word;
+}
+.customTablewidth3Col tbody tr td:nth-child(4),
+.customTablewidth3Col thead tr th:nth-child(4){
+    width: 15% !important;
+    max-width: 15% !important;
+    word-wrap: break-word;
+}
+
+th {
+
+    border-right: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    text-align: left;
+    font-weight: normal;
+    background: white;
+    word-break: initial;
+}
+
+td {
+    border-right: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    font-size: 15px;
+    text-align: right;
+    word-break: initial;
+
+}
+body {
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* First column: left-aligned */
+table td:first-child {
+text-align: left;
+}
+
+.no-align-left{
+text-align:right !important;
+}
+
+/* Second column: left-aligned */
+table td:nth-child(2):not(.no-align-left) {
+text-align: left !important;
+}
+
+/* All other columns: right-aligned */
+/* table td:nth-child(n+3) {
+text-align: right;
+} */
+
+h1 {
+    margin: 8px;
+    text-align: center;
+}
+
+.l{
+  background: white;
+}
+
+
+
+h3 {
+    margin: 8px;
+    font-size: 18px;
+    height: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.table-container-1{
+  width: 1075px;
+   overflow-x: auto;
+   border: 1px solid #d6d6d6;
+   margin:auto;
+}
+.table-container{
+width: 1073px;
+overflow-x: auto;
+overflow-y: auto;
+height: 400px;
+border: 1px solid #d6d6d6;
+margin:auto;
+}
+
+
+.table-container-anx{
+width: 1073px;
+overflow-x: auto;
+overflow-y: auto;
+height: 700px;
+border: 1px solid #d6d6d6;\
+margin:auto;
+}
+
+.tablescroll {
+    border-collapse: collapse;
+    width: 2500px;
+}
+ .firstColumn {
+    border-right: 1px solid #d6d6d6;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+}
+
+  .secColumn {
+   top: 45px;
+    border-right: 1px solid #d6d6d6;
+    left: -1;
+    z-index: 100;
+}
+
+
+  .fix4row{
+  position: sticky;
+  top:0px;
+}
+.fixTableHead{
+  position: sticky;
+  top: 64px;
+}
+  .fixTableHeadMain{
+    position: sticky;
+    top: 165px;
+
+}
+
+.txtAlign{
+  text-align: left;
+
+}
+ .fixTableHeadrpt{
+  position: sticky;
+  top: 0;
+  border:1px solid black;
+}
+ .fixthirdrowrpt{
+  position: sticky;
+  top: 61px;
+  border:1px solid black;
+}
+
+.fixfourthrowrpt {
+  position: sticky;
+  top: 121px;
+}
+.fixfourthrowrptNew{
+  position: sticky;
+  top: 123px;
+  border:1px solid black;
+}
+.subtitle_bg{
+    background-color: #e5e5e5;
+}
+
+.gITable td {
+text-align: right;
+}
+
+.remarksTable
+    th{
+        width: 20%;
+        text-align:left;
+    }
+
+    .textblocktable td,
+    .auditqualificationtable td,
+    .signatureDetailsTable td
+    .tdAlingLeft td,
+    .signatoryDetails td{
+        text-align: left;
+    }
+.textblocktable th{
+    width: 20% !important;
+    text-align: left;
+}
+.auditqualificationtable
+    th{
+        text-align:left;
+}
+.signatureDetailsTable{
+        width: 20% !important;
+        text-align:left;
+    }
+.tdAlingLeft th{
+        width: 20% !important;
+        text-align:left;
+    }
+
+.signatoryDetails th{
+        min-width: 20% !important;
+        text-align:left;
+    }
+
+.full-width-table{
+  width: 100vh;
+  margin-left: calc(-47vw + 500px);
+  position: relative;
+}
+
+.wrapper-container{max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+.d-flex-table-head{
+    display: flex;
+    width: 1075px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+</style>
+
+<body>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+    <br>
+    <h1> INTEGRATED FILING &mdash; GI </h1>
+    <br>
+    <br>
+
+    <div align='center'>
+      <h3> General information about company </h3>
+        <table cellspacing="5" cellpadding="5" class="gITabl gridtable">
+
+            <tr>
+                <th style="width:85%">Scrip code</th>
+                <td style="width:15%">540716</td>
+            </tr>
+            <tr>
+                <th>NSE Symbol</th>
+                 <td>ICICIGI</td>
+            </tr>
+            <tr>
+                <th>MSEI Symbol</th>
+
+                <td>NA</td>
+            </tr>
+            <tr>
+                <th>ISIN</th>
+                <td>INE765G01017</td>
+            </tr>
+            <tr>
+                <th>Name of Company</th>
+                <td>ICICI LOMBARD GENERAL INSURANCE COMPANY LIMITED</td>
+            </tr>
+             <tr>
+                <th>Type of company</th>
+                <td>Main Board</td>
+            </tr>
+            <tr>
+                <th>Class of security</th>
+                <td>Equity</td>
+            </tr>
+               <tr>
+                <th>Type Of Insurance</th>
+                <td>Non-Linked Policy</td>
+            </tr>
+            <tr>
+                <th>Date of start of financial year</th>
+                <td>01-04-2026</td>
+            </tr>
+            <tr>
+                <th>Date of end of financial year</th>
+                <td>31-03-2027</td>
+            </tr>
+            <tr>
+                <th>Date of board meeting when results were approved</th>
+                <td>15-07-2026</td>
+            </tr>
+            <tr>
+                <th>Date on which prior intimation of the meeting for considering financial results was
+                    informed to the exchange</th>
+                <td>26-06-2026</td>
+            </tr>
+            <tr>
+                           <th>Description of presentation currency</th>
+                           <td>INR</td>
+                       </tr>
+                      <tr>
+                           <th>Level of rounding used in financial results</th>
+                           <td>Lakhs</td>
+                       </tr>
+            <tr>
+                <th>Reporting Type</th>
+                <td>Quarterly</td>
+            </tr>
+            <tr>
+                <th>Reporting Quarter</th>
+                <td>First quarter</td>
+            </tr>
+            <tr>
+                <th>Nature of report standalone or consolidated</th>
+                <td>Standalone</td>
+            </tr>
+            <tr>
+                <th>Whether results are audited or unaudited for the quarter ended</th>
+                <td>Audited</td>
+            </tr>
+             <tr>
+                <th>Whether results are audited or unaudited for the Year to date for current period ended/year ended</th>
+                <td></td>
+            </tr>
+
+      <!--      <tr>
+                <th>Segment Reporting</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Description of single segment</th>
+                <td></td>
+            </tr>  -->
+
+            <tr>
+                <th>Start date and time of board meeting</th>
+                <td>15-07-2026 &nbsp;
+                    15:40:00</td>
+            </tr>
+
+                        <tr>
+                <th>End date and time of board meeting</th>
+                <td>15-07-2026 &nbsp; 17:50:00
+                </td>
+            </tr>
+            <tr>
+                <th>Whether cash flow statement is applicable on company</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Type of cash flow statement</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Declaration of unmodified opinion or statement on impact of audit qualification</th>
+                <td> Not applicable</td>
+            </tr>
+
+                            <tr>
+                <th class="l">Whether statement on deviation or variation for proceeds of public issue, rights issue,
+                    preferential issue, qualified institutions placement etc. is applicable to the company for the
+                    current quarter?</th>
+                <td >No</td>
+            </tr>
+            <tr>
+                <th class="l">No. of times funds raised during the quarter</th>
+                <td ></td>
+            </tr>
+            <tr>
+                <th class="l">Whether the disclosure for the Default on Loans and Debt Securities is applicable to the
+                    entity?</th>
+                   <td>No</td>
+            </tr>
+             <tr>
+                   <td colspan='2'>Not Applicable</td>
+            </tr>
+ 
+
+        </table>
+    </div>
+    <br><br>
+
+
+
+
+
+
+    
+<div class="d-flex-table-head">
+ <h3>Format for financial results by general insurance companies filed with stock
+                exchanges</h3>
+ <h3 style="color:red;text-align:right">Amount in (Lakhs)</h3>
+  </div>
+        <table cellspacing="5" cellpadding="5"  style="width:1350px;" >
+          <colgroup>
+              <col span="3" >
+              <col span="1" style="visibility: collapse">
+           </colgroup>
+        
+            <tr>
+                <td colspan="2" class="header_bg subtitle_bg"><b>Partiuclars</b></td>
+                <td class="header_bg textalingright" >Current Quarter</td>
+                <td class="header_bg">Year to Date Figures</td>
+            </tr>
+            <tr>
+                <td colspan="2"    class="header_bg">Date of start of reporting period</td>
+                <td class="no-align-left">01-04-2026</td>
+                <td class="no-align-left">01-04-2026</td>
+            </tr>
+            <tr>
+                <td colspan="2"    class="header_bg">Date of end of reporting period</td>
+                <td class="no-align-left">30-06-2026</td>
+                <td class="no-align-left">30-06-2026</td>
+            </tr>
+            <tr>
+                <td colspan="2"    class="header_bg">Whether results are audited or unaudited </td>
+                <td class="no-align-left">Audited</td>
+                <td class="no-align-left">Audited</td>
+            </tr>
+
+           <tr>
+                <td colspan="2"    class="header_bg">Nature of report standalone or consolidated	</td>
+                <td class="no-align-left">Standalone</td>
+                <td class="no-align-left">Standalone</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="Left" class="header_bg subtitle_bg"><b>OPERATING RESULTS</b></td>
+                <td colspan="2" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td class="header_bg subtitle_bg"><b>1</b></td>
+                <td align="Left" class="header_bg subtitle_bg"><b>Operating income</b></td>
+                <td colspan="2" class="header_bg"></td>
+            </tr>
+            <tr>
+                <th class="header_bg" >(i)</td>
+                <th align="Left" class="header_bg"> Gross Premiums Written</td>
+                <td>8,86,027.00</td>
+                <td>8,86,027.00</td>
+            </tr>
+            <tr>
+                <td class="header_bg">(ii)</td>
+                <td align="Left" class="header_bg"> Net Premium written</td>
+                <td>6,60,373.00</td>
+                <td>6,60,373.00</td>
+            </tr>
+            <tr>
+                <td class="header_bg">(iii)</td>
+                <td align="Left" class="header_bg"> Premium Earned (Net)</td>
+                <td   >5,95,004.00</td>
+                <td   >5,95,004.00</td>
+            </tr>
+            <tr>
+                <td class="header_bg">(iv)</td>
+                <td align="Left" class="header_bg"> Income from investments (net)</td>
+                <td   >85,787.00</td>
+                <td   >85,787.00</td>
+            </tr>
+            <tr>
+                <td class="header_bg">(v)</td>
+                <td align="Left" class="header_bg">Other income</td>
+                <td colspan="2" class="header_bg"></td>
+            </tr>
+                                    <tr>
+                <td class="header_bg"> 1</td>
+                <td align="Left">Other Income</td>
+                <td>580.00</td>
+                <td>    </td>
+            </tr>
+                                    <tr>
+                <td class="header_bg"></td>
+                <td class="header_bg txtAlign" >Total other income</td>
+
+                <td   >580.00</td>
+                <td   >580.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(vi)</td>
+                <td class="header_bg txtAlign">Total income</td>
+                <td >6,81,371.00</td>
+                <td >6,81,371.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg subtitle_bg"><b>2</b></td>
+                <td align="Left" class="header_bg subtitle_bg"><b>Operating expenses</b></td>
+                <td colspan="2" align="center" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(i)</td>
+                <td align="Left" class="header_bg">Commissions &amp; Brokerage (net) </td>
+                <td   >1,25,018.00</td>
+                <td   >1,25,018.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(ii)</td>
+                <td align="Left" class="header_bg">Net commission </td>
+                <td   >1,25,018.00</td>
+                <td   >1,25,018.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(iii)</td>
+                <td align="Left" class="header_bg">Operating Expenses related to insurance business</td>
+                <td    colspan="2" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(a)</td>
+                <td align="Left" class="header_bg">Employees remuneration and welfare expenses </td>
+                <td   >42,612.00</td>
+                <td   >42,612.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(b)</td>
+                <td align="Left" class="header_bg">Other operating expenses</td>
+                <td    colspan="2" class="header_bg"></td>
+            </tr>
+
+                                    <tr>
+                <td class="header_bg">0</td>
+                <td align="Left">Other Expense</td>
+                <td   >35,910.00</td>
+                <td   >     </td>
+            </tr>
+                        
+
+            <tr>
+                <td class="header_bg"></td>
+                <td    class="header_bg txtAlign">Total other operating expenses</td>
+                <td   >35,910.00</td>
+                <td   >35,910.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(c)</td>
+                <td    class="header_bg txtAlign">Total operating expenses related to insurance business</td>
+                <td   >78,522.00</td>
+                <td   >78,522.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(iv)</td>
+                <td align="Left" class="header_bg">Premium Deficiency</td>
+                <td   >0.00</td>
+                <td   >0.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(v)</td>
+                <td align="Left" class="header_bg">Incurred Claims</td>
+                <td    colspan="2" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(a)</td>
+                <td align="Left" class="header_bg">Claims Paid</td>
+                <td   >3,51,161.00</td>
+                <td   >3,51,161.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(b)</td>
+                <td align="Left" class="header_bg">Change in Outstanding Claims (incl. IBNR/IBNER)</td>
+                <td   >1,03,291.00</td>
+                <td   >1,03,291.00</td>
+            </tr>
+            <tr>
+                <td class="header_bg"></td>
+                <td    class="header_bg txtAlign">Total Incurred claims</td>
+                <td   >4,54,452.00</td>
+                <td   >4,54,452.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(vi)</td>
+                <td    class="header_bg txtAlign">Total Expense</td>
+                <td   >6,57,992.00</td>
+                <td   >6,57,992.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(vii)</td>
+                <td    class="header_bg">Underwriting Profit(Loss)</td>
+                <td   >(62,988.00)</td>
+                <td   >(62,988.00)</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(viii)</td>
+                <td align="Left" class="header_bg">Provisions for doubtful debts (including bad debts written off)</td>
+                <td   >0.00</td>
+                <td   >0.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(ix)</td>
+                <td align="Left" class="header_bg">Provisions for diminution in value of investments</td>
+                <td   >0.00</td>
+                <td   >0.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(x)</td>
+                <td    class="header_bg txtAlign">Operating Profit/loss: </td>
+                <td   >23,379.00</td>
+                <td   >23,379.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(xi)</td>
+                <td align="Left" class="header_bg">Appropriations</td>
+                <td    colspan="2" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(a)</td>
+                <td align="Left" class="header_bg">Transfer to Profit and Loss A/c</td>
+                <td   >23,379.00</td>
+                <td   >23,379.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(b)</td>
+                <td align="Left" class="header_bg">Transfer to reserves</td>
+                <td   >0.00</td>
+                <td   >0.00</td>
+            </tr>
+
+        </table>
+       <br><br><br>
+
+               <table cellspacing="5" cellpadding="5"  style="width:1150px;" class="stockExchnageTableLastColwidth">
+        
+
+                      <colgroup>
+              <col span="3" >
+              <col span="1" style="visibility: collapse">
+           </colgroup>
+           
+                <tr style="font-weight: bold;text-align: center;">
+                    <td colspan=" 2" align="Left" class="header_bg subtitle_bg"><b>NON-OPERATING RESULTS</b></td>
+                    <td colspan="2" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg subtitle_bg"><b>1</b></td>
+                <td align="Left" class="header_bg subtitle_bg"><b>Income in shareholder&apos;s account</b></td>
+                <td colspan="2" align="center" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td align="center" class="$fieldRsz_1 header_bg">(a)</td>
+                <td align="Left" class="$fieldRsz_2 header_bg" style="width:65%">Transfer from Policyholders' Fund</td>
+                <td   class="$fieldRsz_3" >23,379.00</td>
+                <td  class="$fieldRsz_4"   >23,379.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg" style="width:5%;">(b)</td>
+                <td align="Left" class="header_bg" style="width:50%;">Income from investments </td>
+                <td  style="width:20%;"  >28,031.00</td>
+                <td   style="width:20%;" >28,031.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg subtitle_bg"><b>(c)</b></td>
+                <td align="Left" class="header_bg subtitle_bg"><b>Other income</b></td>
+                <td colspan="2" align="center" class="header_bg"></td>
+            </tr>
+
+
+                                    <tr>
+                <td class="header_bg"> 1</td>
+                <td align="Left">Other income</td>
+                <td>780.00</td>
+                <td>   </td>
+            </tr>
+                        
+
+            <tr>
+                <td class="header_bg"></td>
+                <td    class="header_bg txtAlign">Total other income</td>
+                <td   >780.00</td>
+                <td   >780.00</td>
+            </tr>
+            <tr>
+                <td class="header_bg"></td>
+                <td    class="header_bg txtAlign">Total income</td>
+                <td   >52,190.00</td>
+                <td   >52,190.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg subtitle_bg"><b>2</b></td>
+                <td align="Left" class="header_bg subtitle_bg"><b>Expenses</b></td>
+                <td colspan="2" align="center" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(i)</td>
+                <td align="Left" class="header_bg">Expenses other than those related to insurance business</td>
+                <td   >2,123.00</td>
+                <td   >2,123.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(ii)</td>
+                <td align="Left" class="header_bg">Provisions for doubtful debts (including bad debts written off)</td>
+                <td   >94.00</td>
+                <td   >94.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(iii)</td>
+                <td align="Left" class="header_bg">Provisions for diminution in value of investments</td>
+                <td   >(3,597.00)</td>
+                <td   >(3,597.00)</td>
+            </tr>
+            <tr>
+                <td class="header_bg"></td>
+                <td    class="header_bg txtAlign">Total Expense</td>
+                <td   >(1,380.00)</td>
+                <td   >(1,380.00)</td>
+            </tr>
+            <tr>
+                <td class="header_bg subtitle_bg" align="center"><b>3</b></td>
+                <td    class="header_bg txtAlign subtitle_bg"><b>Profit / Loss before extraordinary items<br></b></td>
+                <td   >53,570.00</td>
+                <td   >53,570.00</td>
+            </tr>
+            <tr>
+                <td class="header_bg subtitle_bg" align="center"><b>4</b></td>
+                <td align="Left" class="header_bg subtitle_bg"><b>Extraordinary Items <br></b></td>
+                <td   >0.00</td>
+                <td   >0.00</td>
+            </tr>
+            <tr>
+                <td class="header_bg subtitle_bg" align="center"><b>5</b></td>
+                <td    class="header_bg txtAlign subtitle_bg"><b>Profit/ (loss) before tax<br></b></td>
+                <td   >53,570.00</td>
+                <td   >53,570.00</td>
+            </tr>
+            <tr>
+                <td class="header_bg subtitle_bg" align="center"><b>6</b></td>
+                <td align="Left" class="header_bg subtitle_bg"><b>Provision for tax<br></b></td>
+                <td   >13,253.00</td>
+                <td   >13,253.00</td>
+            </tr>
+            <tr>
+                <td class="header_bg subtitle_bg" align="center"><b>7</b></td>
+                <td    class="header_bg txtAlign subtitle_bg"><b>Profit / (loss) after tax<br></b></td>
+                <td   >40,317.00</td>
+                <td   >40,317.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg subtitle_bg"><b>8</b></td>
+                <td align="Left" class="header_bg subtitle_bg"><b>Divident per share</b></td>
+                <td colspan="2" align="center" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(a)</td>
+                <td align="Left" class="header_bg">Interim Dividend</td>
+                <td   >0.00</td>
+                <td   >0.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(b)</td>
+                <td align="Left" class="header_bg">Final dividend</td>
+                <td   >7.00</td>
+                <td   >7.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">9</td>
+                <td align="Left" class="header_bg">Opening Balance and Appropriations from PAT (Net)</td>
+                <td   >8,51,090.00</td>
+                <td   >8,51,090.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">10</td>
+                <td align="Left" class="header_bg">Profit (loss) carried to balance sheet</td>
+                <td   >8,91,407.00</td>
+                <td   >8,91,407.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">11</td>
+                <td align="Left" class="header_bg">Paid up equity capital</td>
+                <td   >49,927.00</td>
+                <td   >49,927.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">12</td>
+                <td align="Left" class="header_bg">Reserve and Surplus (Excluding Revaluation Reserve)</td>
+                <td   >16,45,999.00</td>
+                <td   >16,45,999.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">13</td>
+                <td align="Left" class="header_bg">Fair value change account and revaluation reserve</td>
+                <td   >7,220.00</td>
+                <td   >7,220.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg subtitle_bg"><b>14</b></td>
+                <td align="Left" class="header_bg subtitle_bg"><b>Assets</b></td>
+                <td colspan="2" align="center" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(a)</td>
+                <td align="Left" class="header_bg">Investments</td>
+                <td colspan="2" align="center" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(i)</td>
+                <td align="Left" class="header_bg">Shareholders Fund </td>
+                <td   >15,17,224.00</td>
+                <td   >15,17,224.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(ii)</td>
+                <td align="Left" class="header_bg">Policyholders' Fund</td>
+                <td   >45,40,716.00</td>
+                <td   >45,40,716.00</td>
+            </tr>
+            <tr>
+                <td class="header_bg"></td>
+                <td    class="header_bg txtAlign">Total investments</td>
+                <td   >60,57,940.00</td>
+                <td   >60,57,940.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(b)</td>
+                <td align="Left" class="header_bg"> Other Assets (Net of current liabilities and provisions)</td>
+                <td   >(43,54,144.00)</td>
+                <td   >(43,54,144.00)</td>
+            </tr>
+            <tr>
+                <td class="header_bg"></td>
+                <td    class="header_bg txtAlign">Total assets</td>
+                <td   >17,03,796.00</td>
+                <td   >17,03,796.00</td>
+            </tr>
+
+        </table>
+       <br><br><br>
+
+
+
+                <table cellspacing="5" cellpadding="5"   style="width:1150px;"  class="stockExchnageTableLastColwidth">
+           <colgroup>
+              <col span="3" >
+              <col span="1" style="visibility: collapse">
+           </colgroup>
+        
+
+
+                <tr  style="font-weight: bold;text-align: center;">
+                    <td colspan=" 4" align="Left" class="header_bg subtitle_bg"><b>Analytical Ratios</b></td>
+            </tr>
+            <tr>
+                <td align="center"  class="$fieldRsz_1" style="width:5%;" >(i)</td>
+                <td align="Left" class="$fieldRsz_2" style="width:65%;">Solvency ratio</td>
+                <td  class="$fieldRsz_3">2.7100</td>
+                <td  class="$fieldRsz_4">2.7100</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(ii)</td>
+                <td align="Left" class="header_bg">Expenses of management ratio</td>
+                <td   >28.800</td>
+                <td   >28.800</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(iii)</td>
+                <td align="Left" class="header_bg">Incurred Claim Ratio</td>
+                <td   >76.400</td>
+                <td   >76.400</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(iv)</td>
+                <td align="Left" class="header_bg">Net retention ratio</td>
+                <td   >74.500</td>
+                <td   >74.500</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(v)</td>
+                <td align="Left" class="header_bg">Combined ratio</td>
+                <td   >107.200</td>
+                <td   >107.200</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg subtitle_bg"><b>(vi)</b></td>
+                <td align="Left" class="header_bg subtitle_bg"><b>Earning per share</b></td>
+                <td colspan="2" align="center" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(a) </td>
+                <td align="Left" class="header_bg">Basic and diluated EPS before extraordinary items (net of tax
+                    expense)
+                    for the
+                    period (not to be annualized)</td>
+                <td   >8.08</td>
+                <td   >8.08</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(b) </td>
+                <td align="Left" class="header_bg">Basic and diluted EPS after extraordinary items (net of tax expense)
+                    for the period (not to be annualized)</td>
+                <td   >8.08</td>
+                <td   >8.08</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg"><b>(vii)</b></td>
+                <td align="Left" class="header_bg"><b>NPA ratios</b></td>
+                <td colspan="2" align="center" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(a) </td>
+                <td align="Left" class="header_bg">Gross NPAs</td>
+                <td   >0.00</td>
+                <td   >0.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(c) </td>
+                <td align="Left" class="header_bg">Net NPAs</td>
+                <td   >0.00</td>
+                <td   >0.00</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(b) </td>
+                <td align="Left" class="header_bg">Percentage of Gross NPAs</td>
+                <td   >0</td>
+                <td   >0</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(d) </td>
+                <td align="Left" class="header_bg">Percentage of net NPAs</td>
+                <td   >0</td>
+                <td   >0</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg"><b>(viii)</b></td>
+                <td align="Left" class="header_bg"><b>Yield on Investments</b></td>
+                <td colspan="2" align="center" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(a) </td>
+                <td align="Left" class="header_bg">Without unrealized gains</td>
+                <td   >1.87</td>
+                <td   >1.87</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(b) </td>
+                <td align="Left" class="header_bg">With unrealised gains</td>
+                <td   >4.64</td>
+                <td   >4.64</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg"><b>(ix)</b></td>
+                <td align="Left" class="header_bg">
+                    <b>Public shareholding (in case of public sector insurance companies)</b>
+                </td>
+                <td colspan="2" align="center" class="header_bg"></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(a) </td>
+                <td align="Left" class="header_bg">Number of shares</td>
+                <td   >243721486</td>
+                <td   >243721486</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(b) </td>
+                <td align="Left" class="header_bg">Percentage of shareholding</td>
+                <td   >48.8200</td>
+                <td   >48.8200</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(c)</td>
+                <td align="Left" class="header_bg">Percentage of government holding</td>
+                <td   >0</td>
+                <td   >0</td>
+            </tr>
+
+        </table>
+        <br><br><br>
+
+                <table cellspacing="5" cellpadding="5"   style="width:1095px;">
+             <colgroup>
+              <col span="3" >
+              <col span="1" style="visibility: collapse">
+           </colgroup>
+                        <tr  style="font-weight: bold;text-align: center;">
+                    <td colspan="4" align="Left" class="header_bg"><b>Investor Compliants</b></td>
+            </tr>
+            <tr>
+                <td align="center" class="$fieldRsz_1" style="width:5%;" >(i)</td>
+                <td align="Left" class="$fieldRsz_2"  style="width:65%;"  >No of investor complaints pending at the beginning of the period</td>
+                <td class="$fieldRsz_3" >1</td>
+                <td   class="$fieldRsz_4">1</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(ii)</td>
+                <td align="Left" class="header_bg">No of investor complaints during the period</td>
+                <td   >1</td>
+                <td   >1</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(iii)</td>
+                <td align="Left" class="header_bg">No of investor complaints disposed off during the period</td>
+                <td   >2</td>
+                <td   >2</td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg">(iv)</td>
+                <td align="Left" class="header_bg">No of investor complaints remaining unresolved at the end of the
+                    period
+                </td>
+                <td   >0</td>
+                <td   >0</td>
+            </tr>
+
+        </table>
+        <br>
+        <br>
+         <br>
+          <table cellspacing="5" cellpadding="5" ">
+
+            <tr  style="font-weight: bold;text-align: center;">
+                    <td align=" center" class="header_bg">(c)</td>
+            <td align="Left" class="header_bg">Notes Format for financial results by general insurance companies filed
+                with stock exchanges</td>
+            </tr>
+             <tr>
+                <td colspan=" 2" style="width:650px">1. ICICI Lombard is General Insurance Company and hence type of insurance viz. “Linked and Non-Linked Policy” would not be applicable. However, in order to validate the sheet we have selected type of insurance as “Non-Linked Policy”      1(ii). Net of reinsurance  (Including Excess of Loss Reinsurance).   1(iv). Including capital gains, net of amortisation and losses.   2(i) & (ii). Commission is net of commission received on reinsurance cession.   8(a). Dividend is recognised in the period it is approved as prescribed by MCA.      Analytical ratios have been calculated as per definition given in IRDAI analytical ratios disclosures.   Analytical ratios (i):- The Solvency has been computed at the last day of the period.   Analytical ratios (ii):- The Expenses of Management has been computed on the basis of Gross Direct Premium   Analytical ratios (v):- The Ratio has been computed at the last day of the period.    Analytical ratios (vi) & (viii):- Not annualised   Analytical ratios (viii):- Excludes unrealised gains or losses on real estate and unlisted equity   Analytical ratios (viii):- Yield on investments with unrealised gains is computed using the modified Dietz method   Analytical ratios (viii)(a):- The computation is based on time weighted average book value.   Analytical ratios (vi)(a)&(b):- Earnings Per Share   Basic:    Rs. 8.08         Diluted:  Rs. 8.03 (Current Quarter)   Basic:    Rs. 8.08         Diluted:  Rs. 8.03 (Year To Date)      Solvency ratio are in times and other ratios mentioned below are in %                         Analytical Ratios                                         Current Quarter                                    Year to date   (i) Solvency ratio                                  2.71                                                       2.71   (ii) Expenses of management ratio              28.8%                                                       28.8%   (iii) Incurred Claim Ratio                 76.4%                                                      76.4%   (iv) Net retention ratio                                74.5%                                                       74.5%   (v) Combined ratio                               107.2%                                                     107.2%
+              </td>
+
+
+        </table>
+        <br>
+        <br>
+         <br>
+     
+
+
+
+
+
+
+        <div class="d-flex-table-head">
+    <h3 align="center">Format for financial results by general insurance companies filed with stock
+                                exchanges</h3>
+    <h3 style="color:red;text-align:right">Amount in (Lakhs)</h3>
+    </div>
+        <table cellspacing="5" cellpadding="5"   style="width:1460px;">
+            <colgroup>
+              <col span="3" >
+              <col span="1" style="visibility: collapse">
+           </colgroup>
+                        <tr>
+                    <td colspan="2" align="center" class="header_bg"><b>Partiuclars</b></td>
+                    <td align="center" class="header_bg textalingright">Current Quarter</td>
+                    <td align="center" class="header_bg textalingright">Year to Date Figures</td>
+                </tr>
+                <tr>
+                    <td colspan="2"    class="header_bg">Date of start of reporting period</td>
+                    <td class="no-align-left">01-04-2026</td>
+                    <td class="no-align-left">01-04-2026</td>
+                </tr>
+                <tr>
+                    <td colspan="2"    class="header_bg">Date of end of reporting period</td>
+                    <td class="no-align-left">30-06-2026</td>
+                    <td class="no-align-left">30-06-2026</td>
+                </tr>
+                <tr>
+                    <td colspan="2"    class="header_bg">Whether results are audited or unaudited </td>
+                    <td class="no-align-left">Audited</td>
+                    <td class="no-align-left">Audited</td>
+                </tr>
+              <tr>
+                    <td colspan="2"    class="header_bg">Nature of report standalone or consolidated</td>
+                    <td class="no-align-left">Standalone</td>
+                    <td class="no-align-left">Standalone</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="Left" class="header_bg"><b>Segment Income</b></td>
+                    <td colspan="2" class="header_bg"></td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg"><b>1</b></td>
+                    <td align="Left" class="header_bg"><b>Fire</b></td>
+                    <td colspan="2" align="center" class="header_bg"></td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(i)</td>
+                    <td align="Left" class="header_bg">Net premium</td>
+
+                                        <td   >11,149.00</td>
+                    <td   >11,149.00</td>
+                                    </tr>
+                <tr>
+                    <td align="center" class="header_bg">(ii)</td>
+                    <td align="Left" class="header_bg">Income form investments</td>
+                                        <td   >5,090.00</td>
+                    <td   >5,090.00</td>
+                                    </tr>
+                <tr>
+                    <td align="center" class="header_bg">(iii)</td>
+                    <td align="Left" class="header_bg">Other income</td>
+                                        <td   >(179.00)</td>
+                    <td   >(179.00)</td>
+                                    </tr>
+                <tr>
+                    <td align="center" class="header_bg"><b>2</b></td>
+                    <td align="Left" class="header_bg"><b>Marine</b></td>
+                    <td colspan="2" align="center" class="header_bg"></td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(i)</td>
+                    <td align="Left" class="header_bg">Net premium</td>
+                    <td   >16,869.00</td>
+                    <td   >16,869.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(ii)</td>
+                    <td align="Left" class="header_bg">Income form investments</td>
+                    <td   >1,420.00</td>
+                    <td   >1,420.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(iii)</td>
+                    <td align="Left" class="header_bg">Other income</td>
+                    <td   >77.00</td>
+                    <td   >77.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg"><b>3</b></td>
+                    <td align="Left" class="header_bg"><b>Health including personal accident</b></td>
+                    <td colspan="2" align="center" class="header_bg"></td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(i)</td>
+                    <td align="Left" class="header_bg">Net premium</td>
+                    <td   >0.00</td>
+                    <td   >0.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(ii)</td>
+                    <td align="Left" class="header_bg">Income form investments</td>
+                    <td   >0.00</td>
+                    <td   >0.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(iii)</td>
+                    <td align="Left" class="header_bg">Other income</td>
+                    <td   >0.00</td>
+                    <td   >0.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg"><b>4</b></td>
+                    <td align="Left" class="header_bg"><b>Health retail</b></td>
+                    <td colspan="2" align="center" class="header_bg"></td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(i)</td>
+                    <td align="Left" class="header_bg">Net premium</td>
+                    <td   >67,732.00</td>
+                    <td   >67,732.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(ii)</td>
+                    <td align="Left" class="header_bg">Income form investments</td>
+                    <td   >4,128.00</td>
+                    <td   >4,128.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(iii)</td>
+                    <td align="Left" class="header_bg">Other income</td>
+                    <td   >56.00</td>
+                    <td   >56.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg"><b>5</b></td>
+                    <td align="Left" class="header_bg"><b>Health group</b></td>
+                    <td colspan="2" align="center" class="header_bg"></td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(i)</td>
+                    <td align="Left" class="header_bg">Net premium</td>
+                    <td>1,79,517.00</td>
+                    <td>1,79,517.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(ii)</td>
+                    <td align="Left" class="header_bg">Income form investments</td>
+                    <td   >11,374.00</td>
+                    <td   >11,374.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(iii)</td>
+                    <td align="Left" class="header_bg">Other income</td>
+                    <td   >(261.00)</td>
+                    <td   >(261.00)</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg"><b>6</b></td>
+                    <td align="Left" class="header_bg"><b>Health government schemes</b></td>
+                    <td colspan="2" align="center" class="header_bg"></td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(i)</td>
+                    <td align="Left" class="header_bg">Net premium</td>
+                    <td   >573.00</td>
+                    <td   >573.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(ii)</td>
+                    <td align="Left" class="header_bg">Income form investments</td>
+                    <td   >29.00</td>
+                    <td   >29.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(iii)</td>
+                    <td align="Left" class="header_bg">Other income</td>
+                    <td   >1.00</td>
+                    <td   >1.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg"><b>7</b></td>
+                    <td align="Left" class="header_bg"><b>Motor</b></td>
+                    <td colspan="2" align="center" class="header_bg"></td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(i)</td>
+                    <td align="Left" class="header_bg">Net premium</td>
+                    <td   >2,88,082.00</td>
+                    <td   >2,88,082.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(ii)</td>
+                    <td align="Left" class="header_bg">Income form investments</td>
+                    <td   >57,495.00</td>
+                    <td   >57,495.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(iii)</td>
+                    <td align="Left" class="header_bg">Other income</td>
+                    <td   >843.00</td>
+                    <td   >843.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg"><b>8</b></td>
+                    <td align="Left" class="header_bg"><b>Retail</b></td>
+                    <td colspan="2" align="center" class="header_bg"></td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(i)</td>
+                    <td align="Left" class="header_bg">Net premium</td>
+                    <td   >3,660.00</td>
+                    <td   >3,660.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(ii)</td>
+                    <td align="Left" class="header_bg">Income form investments</td>
+                    <td   >642.00</td>
+                    <td   >642.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(iii)</td>
+                    <td align="Left" class="header_bg">Other income</td>
+                    <td   >2.00</td>
+                    <td   >2.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg"><b>9</b></td>
+                    <td align="Left" class="header_bg"><b>Group and corporate</b></td>
+                    <td colspan="2" align="center" class="header_bg"></td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(i)</td>
+                    <td align="Left" class="header_bg">Net premium</td>
+                    <td   >27,308.00</td>
+                    <td   >27,308.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(ii)</td>
+                    <td align="Left" class="header_bg">Income form investments</td>
+                    <td   >4,731.00</td>
+                    <td   >4,731.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(iii)</td>
+                    <td align="Left" class="header_bg">Other income</td>
+                    <td   >41.00</td>
+                    <td   >41.00</td>
+                </tr>
+
+                <!--Confusion to take List Object start--->
+                <tr>
+                    <td align="center" class="header_bg"><b>10</b></td>
+                    <td align="Left" class="header_bg" colspan="3"><b>Any other class as may be specified by the
+                            Authority. - Enter the name below</b></td>
+                </tr>
+                           		          <tr>
+                    <td align="center" class="header_bg"><b>(1)</b></td>
+                    <td align="Left" class="header_bg"><b>Other segment 1</b></td>
+                    <td    class="header_bg"></td>
+                    <td    class="header_bg"></td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg"></td>
+                    <td align="Left" class="header_bg">Name of other segment</td>
+                    <td align="Left" colspan="2" align="Left"  >Crop</td>
+
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(i)</td>
+                    <td align="Left" class="header_bg">Net premium</td>
+                    <td>114.00</td>
+                    <td>114.00</td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(ii)</td>
+                    <td align="Left" class="header_bg">Income form investments</td>
+                    <td   >
+                        878.00 </td>
+                    <td>
+                        878.00
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg">(iii)</td>
+                    <td align="Left" class="header_bg">Other income</td>
+                    <td> 0.00</td>
+                    <td> 0.00</td>
+                </tr>
+
+
+                                                   </table>
+           <br>
+
+  
+
+
+
+
+
+            <div class="d-flex-table-head">
+      <h3 align="center">Format for financial results by general insurance companies filed with stock
+                              exchanges</h3>
+      <h3 style="color:red;text-align:right">Amount in (Lakhs)</h3>
+      </div>
+        <table cellspacing="5" cellpadding="5"   style="width:1350px;" class="stockExchnageTableLastColwidth">
+           <colgroup>
+              <col span="3" >
+              <col span="1" style="visibility: collapse">
+           </colgroup>
+                    <tr>
+                <td colspan="2" align="center" class="header_bg"><b>Partiuclars</b></td>
+                <td align="center" class="header_bg textalingright">Current Quarter</td>
+                <td align="center" class="header_bg">Year to Date Figures</td>
+            </tr>
+            <tr>
+                <td colspan="2"    class="header_bg">Date of start of reporting period</td>
+                <td class="no-align-left">01-04-2026</td>
+                <td class="no-align-left">01-04-2026</td>
+            </tr>
+            <tr>
+                <td colspan="2"    class="header_bg">Date of end of reporting period</td>
+                <td class="no-align-left">30-06-2026</td>
+                <td class="no-align-left">30-06-2026</td>
+            </tr>
+            <tr>
+                <td colspan="2"    class="header_bg">Whether results are audited or unaudited </td>
+                <td class="no-align-left">Audited</td>
+                <td class="no-align-left">Audited</td>
+            </tr>
+             <tr>
+                <td colspan="2"    class="header_bg">Nature of report standalone or consolidated</td>
+                   <td class="no-align-left">Standalone</td>
+                    <td class="no-align-left">Standalone</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="Left" class="header_bg"><b>Segment Premium Deficiency</b></td>
+                <td colspan="2" class="header_bg"></td>
+            </tr>
+                                    <tr>
+                <td align="center" class="header_bg">1</td>
+                                <td align="Left" class="header_bg">Fire</td>
+                                <td>0.00</td>
+              <td>           0.00
+      </td>
+                           </tr>
+                                    <tr>
+                <td align="center" class="header_bg">2</td>
+                                <td align="Left" class="header_bg">Marine</td>
+                                <td>0.00</td>
+              <td>           0.00
+      </td>
+                           </tr>
+                                    <tr>
+                <td align="center" class="header_bg">3</td>
+                                <td align="Left" class="header_bg">Health including personal accident</td>
+                                <td>0.00</td>
+              <td>           0.00
+      </td>
+                           </tr>
+                                    <tr>
+                <td align="center" class="header_bg">4</td>
+                                <td align="Left" class="header_bg">Health Retail</td>
+                                <td>0.00</td>
+              <td>           0.00
+      </td>
+                           </tr>
+                                    <tr>
+                <td align="center" class="header_bg">5</td>
+                                <td align="Left" class="header_bg">Health Group</td>
+                                <td>0.00</td>
+              <td>           0.00
+      </td>
+                           </tr>
+                                    <tr>
+                <td align="center" class="header_bg">6</td>
+                                <td align="Left" class="header_bg">Health Government Schemes</td>
+                               <td>0.00</td>
+              <td>           0.00
+      </td>
+                           </tr>
+                                    <tr>
+                <td align="center" class="header_bg">7</td>
+                                <td align="Left" class="header_bg">Motor</td>
+
+
+                                <td>0.00</td>
+              <td>           0.00
+      </td>
+                           </tr>
+                                    <tr>
+                <td align="center" class="header_bg">8</td>
+                                <td align="Left" class="header_bg">Retail</td>
+                                <td>0.00</td>
+              <td>           0.00
+      </td>
+                           </tr>
+                                    <tr>
+                <td align="center" class="header_bg">9</td>
+                                <td align="Left" class="header_bg">Group And Corporate</td>
+                                <td>0.00</td>
+              <td>           0.00
+      </td>
+                           </tr>
+                                    <tr>
+                <td align="center" style="width:5%;" class="header_bg">10</td>
+                <td align="Left" class="header_bg">Any other class as may be specified by the Authority. - Enter the    name below</td>
+                <td class="header_bg"   ></td>
+                <td class="header_bg"  ></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg"></td>
+                <td align="Left" class="header_bg"><b>Name of Other Segment</b></td>
+                <td    class="header_bg"></td>
+                <td    class="header_bg"></td>
+            </tr>
+                                    <tr>
+                <td    class="header_bg">1</td>
+                <td align="Left">Crop</td>
+                <td   >0.00</td>
+              <td>           0.00
+   </td>
+                          </tr>
+                                    <tr>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td    class="header_bg">11</td>
+                <td align="Left">Unallocated</td>
+                <td   ></td>
+            <td>          $!intigratedFilingGivo.generalInsuranceMasterVO.segmentPremiDeficiencyUnallocateList[0].itemValue0
+           </td>
+
+                       </tr>
+        </table>
+        <br>
+     
+
+       <br>
+
+<div class="d-flex-table-head">
+ <h3 align="center">Format for financial results by general insurance companies filed with stock
+                            exchanges</h3>
+<h3 style="color:red;text-align:right">Amount in (Lakhs)</h3>
+  </div>
+        <table cellspacing="5" cellpadding="5"   style="width:1350px;">
+           <colgroup>
+              <col span="3" >
+              <col span="1" style="visibility: collapse">
+           </colgroup>
+                        <tr>
+                    <td colspan="2" align="center" class="header_bg"><b>Partiuclars</b></td>
+                    <td align="center" class="header_bg textalingright">Current Quarter</td>
+                    <td align="center" class="header_bg">Year to Date Figures</td>
+                </tr>
+                <tr>
+                    <td colspan="2"    class="header_bg">Date of start of reporting period</td>
+                    <td class="no-align-left">01-04-2026</td>
+                    <td class="no-align-left">01-04-2026</td>
+                </tr>
+                <tr>
+                    <td colspan="2"    class="header_bg">Date of end of reporting period</td>
+                    <td class="no-align-left">30-06-2026</td>
+                    <td class="no-align-left">30-06-2026</td>
+                </tr>
+                <tr>
+                    <td colspan="2"    class="header_bg">Whether results are audited or unaudited </td>
+                    <td class="no-align-left">Audited</td>
+                    <td class="no-align-left">Audited</td>
+                </tr>
+                 <tr>
+                <td colspan="2"    class="header_bg">Nature of report standalone or consolidated</td>
+                   <td class="no-align-left">Standalone</td>
+                    <td class="no-align-left">Standalone</td>
+            </tr>
+                <tr>
+                    <td colspan="2" align="Left" class="header_bg"><b>Segment Underwriting Profit/Loss</b></td>
+                    <td colspan="2" class="header_bg"></td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg" style="width:5%;">1</td>
+                                        <td align="Left" class="header_bg">Fire</td>
+                                        <td >(2,322.00)</td>
+               <td>          (2,322.00)
+    </td>
+                                     </tr>
+                                                <tr>
+                    <td align="center" class="header_bg" style="width:5%;">2</td>
+                                        <td align="Left" class="header_bg">Marine</td>
+                                        <td >(3,566.00)</td>
+               <td>          (3,566.00)
+    </td>
+                                     </tr>
+                                                <tr>
+                    <td align="center" class="header_bg" style="width:5%;">3</td>
+                                        <td align="Left" class="header_bg">Health including personal accident</td>
+                                        <td >0.00</td>
+               <td>          0.00
+    </td>
+                                     </tr>
+                                                <tr>
+                    <td align="center" class="header_bg" style="width:5%;">4</td>
+                                        <td align="Left" class="header_bg">Health Retail</td>
+                                        <td >(797.00)</td>
+               <td>          (797.00)
+    </td>
+                                     </tr>
+                                                <tr>
+                    <td align="center" class="header_bg" style="width:5%;">5</td>
+                                        <td align="Left" class="header_bg">Health Group</td>
+                                        <td >(30,173.00)</td>
+               <td>          (30,173.00)
+    </td>
+                                     </tr>
+                                                <tr>
+                    <td align="center" class="header_bg" style="width:5%;">6</td>
+                                        <td align="Left" class="header_bg">Health Government Schemes</td>
+                                        <td >(10.00)</td>
+               <td>          (10.00)
+    </td>
+                                     </tr>
+                                                <tr>
+                    <td align="center" class="header_bg" style="width:5%;">7</td>
+                                        <td align="Left" class="header_bg">Motor</td>
+                                        <td >(24,521.00)</td>
+               <td>          (24,521.00)
+    </td>
+                                     </tr>
+                                                <tr>
+                    <td align="center" class="header_bg" style="width:5%;">8</td>
+                                        <td align="Left" class="header_bg">Retail</td>
+                                        <td >439.00</td>
+               <td>          439.00
+    </td>
+                                     </tr>
+                                                <tr>
+                    <td align="center" class="header_bg" style="width:5%;">9</td>
+                                        <td align="Left" class="header_bg">Group And Corporate</td>
+                                        <td >(2,559.00)</td>
+               <td>          (2,559.00)
+    </td>
+                                     </tr>
+                                                <tr>
+                    <td align="center" class="header_bg">10</td>
+                    <td align="Left" class="header_bg">Any other class as may be specified by the Authority. - Enter the
+                        name below</td>
+                    <td   ></td>
+                    <td   ></td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg"></td>
+                    <td align="Left" class="header_bg"><b>Name of Other Segment</b></td>
+                    <td    class="header_bg"></td>
+                    <td    class="header_bg"></td>
+                </tr>
+                                                <tr>
+                    <td    class="header_bg">1</td>
+                    <td align="Left">Crop</td>
+                    <td   >521.00</td>
+                  <td  >          521.00
+      </td>
+
+                              </tr>
+                                                <tr>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td    class="header_bg">11</td>
+                    <td align="Left">Unallocated</td>
+                    <td   >     </td>
+                
+ <td  >          $!intigratedFilingGivo.generalInsuranceMasterVO.segmentUnderWriPropLossUnallocateList[0].itemValue0
+      </td>
+
+                </tr>
+        </table>
+        <br>
+         <br>
+
+
+
+<div class="d-flex-table-head">
+<h3 align="center">Format for financial results by general insurance companies filed with stock
+                exchanges</h3>
+<h3 style="color:red;text-align:right">Amount in (Lakhs)</h3>
+</div>
+        <table cellspacing="5" cellpadding="5"   style="width:1350px;">
+           <colgroup>
+              <col span="3" >
+              <col span="1" style="visibility: collapse">
+           </colgroup>
+        
+            <tr>
+                <td colspan="2" align="center" class="header_bg"><b>Partiuclars</b></td>
+                <td align="center" class="header_bg textalingright">Current Quarter</td>
+                <td align="center" class="header_bg">Year to Date Figures</td>
+            </tr>
+            <tr>
+                <td colspan="2"    class="header_bg">Date of start of reporting period</td>
+                <td class="no-align-left">01-04-2026</td>
+                <td class="no-align-left">01-04-2026</td>
+            </tr>
+            <tr>
+                <td colspan="2"    class="header_bg">Date of end of reporting period</td>
+                <td class="no-align-left">30-06-2026</td>
+                <td class="no-align-left">30-06-2026</td>
+            </tr>
+            <tr>
+                <td colspan="2"    class="header_bg">Whether results are audited or unaudited </td>
+                <td class="no-align-left">Audited</td>
+                <td class="no-align-left">Audited</td>
+            </tr>
+       <tr>
+                <td colspan="2"    class="header_bg">Nature of report standalone or consolidated</td>
+                   <td class="no-align-left">Standalone</td>
+                    <td class="no-align-left">Standalone</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="Left" class="header_bg"><b>Segment Operating Profit/Loss</b></td>
+                <td colspan="2" class="header_bg"></td>
+            </tr>
+                                    <tr>
+                <td align="center" class="header_bg" style="width:5%;">1</td>
+                                <td align="Left" class="header_bg">Fire</td>
+                                <td style="width:20%;">2,589.00</td>
+
+                              <td   >          2,589.00
+      </td>
+
+            </tr>
+                                    <tr>
+                <td align="center" class="header_bg" style="width:5%;">2</td>
+                                <td align="Left" class="header_bg">Marine</td>
+                                <td style="width:20%;">(2,069.00)</td>
+
+                              <td   >          (2,069.00)
+      </td>
+
+            </tr>
+                                    <tr>
+                <td align="center" class="header_bg" style="width:5%;">3</td>
+                                <td align="Left" class="header_bg">Health including personal accident</td>
+                                <td style="width:20%;">0.00</td>
+
+                              <td   >          0.00
+      </td>
+
+            </tr>
+                                    <tr>
+                <td align="center" class="header_bg" style="width:5%;">4</td>
+                                <td align="Left" class="header_bg">Health Retail</td>
+                                <td style="width:20%;">3,388.00</td>
+
+                              <td   >          3,388.00
+      </td>
+
+            </tr>
+                                    <tr>
+                <td align="center" class="header_bg" style="width:5%;">5</td>
+                                <td align="Left" class="header_bg">Health Group</td>
+                                <td style="width:20%;">(19,058.00)</td>
+
+                              <td   >          (19,058.00)
+      </td>
+
+            </tr>
+                                    <tr>
+                <td align="center" class="header_bg" style="width:5%;">6</td>
+                                <td align="Left" class="header_bg">Health Government Schemes</td>
+                                <td style="width:20%;">20.00</td>
+
+                              <td   >          20.00
+      </td>
+
+            </tr>
+                                    <tr>
+                <td align="center" class="header_bg" style="width:5%;">7</td>
+                                <td align="Left" class="header_bg">Motor</td>
+                                <td style="width:20%;">33,819.00</td>
+
+                              <td   >          33,819.00
+      </td>
+
+            </tr>
+                                    <tr>
+                <td align="center" class="header_bg" style="width:5%;">8</td>
+                                <td align="Left" class="header_bg">Retail</td>
+                                <td style="width:20%;">1,079.00</td>
+
+                              <td   >          1,079.00
+      </td>
+
+            </tr>
+                                    <tr>
+                <td align="center" class="header_bg" style="width:5%;">9</td>
+                                <td align="Left" class="header_bg">Group And Corporate</td>
+                                <td style="width:20%;">2,210.00</td>
+
+                              <td   >          2,210.00
+      </td>
+
+            </tr>
+                                    <tr>
+                <td align="center" class="header_bg">10</td>
+                <td align="Left" class="header_bg">Any other class as may be specified by the Authority. - Enter the
+                    name below</td>
+                <td   class="header_bg" ></td>
+                <td  class="header_bg" ></td>
+            </tr>
+            <tr>
+                <td align="center" class="header_bg"></td>
+                <td align="Left" class="header_bg"><b>Name of Other Segment</b></td>
+                <td    class="header_bg"></td>
+                <td    class="header_bg"></td>
+            </tr>
+                                    <tr>
+                <td    class="header_bg">1</td>
+                <td align="Left">Crop</td>
+                <td>1,401.00</td>
+              
+                   <td>          1,401.00
+      </td>
+            </tr>
+                                    <tr>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td    class="header_bg">11</td>
+                <td align="Left">Unallocated</td>
+                <td ></td>
+
+
+                           <td>          $!intigratedFilingGivo.generalInsuranceMasterVO.segmentOperatingPropLossUnallocateList[0].itemValue0
+      </td>
+
+            </tr>
+        </table>
+        <br>
+    <br>
+
+
+<div class="d-flex-table-head">
+ <h3 align="center">Format for financial results by general insurance companies filed with stock
+                            exchanges</h3>
+<h3 style="color:red;text-align:right">Amount in (Lakhs)</h3>
+  </div>
+        <table cellspacing="5" cellpadding="5"   style="width:1090px;">
+           <colgroup>
+              <col span="3" >
+              <col span="1" style="visibility: collapse">
+           </colgroup>
+        
+                <tr>
+                    <td colspan="2"  style="width:85%;" align="center" class="header_bg"><b>Partiuclars</b></td>
+                    <td style="width:15%;" align="center" class="header_bg textalingright no-align-left">Current Quarter</td>
+                </tr>
+                <tr>
+                    <td colspan="2"    class="header_bg">Date of start of reporting period</td>
+                    <td align="center" class="no-align-left">01-04-2026</td>
+                </tr>
+                <tr>
+                    <td colspan="2"    class="header_bg">Date of end of reporting period</td>
+                    <td align="center" class="no-align-left">30-06-2026</td>
+                </tr>
+                <tr>
+                    <td colspan="2"    class="header_bg">Whether results are audited or unaudited </td>
+                    <td align="center" class="no-align-left">Audited</td>
+                </tr>
+                <tr>
+                <td colspan="2"    class="header_bg">Nature of report standalone or consolidated</td>
+                    <td class="no-align-left">Standalone</td>
+                 </tr>
+                <tr>
+                    <td colspan="2" align="Left" class="header_bg"><b>Segment Technical Liabilities  (Unexpired Risk Reserve-Net)</b></td>
+                    <td colspan="2" class="header_bg"></td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg"  style="width:5%;">1</td>
+                                        <td align="Left" class="header_bg">Fire</td>
+                                        <td  style="width:30%;"  >40,345.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg"  style="width:5%;">2</td>
+                                        <td align="Left" class="header_bg">Marine</td>
+                                        <td  style="width:30%;"  >26,517.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg"  style="width:5%;">3</td>
+                                        <td align="Left" class="header_bg">Health including personal accident</td>
+                                        <td  style="width:30%;"  >0.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg"  style="width:5%;">4</td>
+                                        <td align="Left" class="header_bg">Health Retail</td>
+                                        <td  style="width:30%;"  >1,41,363.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg"  style="width:5%;">5</td>
+                                        <td align="Left" class="header_bg">Health Group</td>
+                                        <td  style="width:30%;"  >3,71,961.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg"  style="width:5%;">6</td>
+                                        <td align="Left" class="header_bg">Health Government Schemes</td>
+                                        <td  style="width:30%;"  >365.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg"  style="width:5%;">7</td>
+                                        <td align="Left" class="header_bg">Motor</td>
+                                        <td  style="width:30%;"  >5,90,427.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg"  style="width:5%;">8</td>
+                                        <td align="Left" class="header_bg">Retail</td>
+                                        <td  style="width:30%;"  >23,818.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg"  style="width:5%;">9</td>
+                                        <td align="Left" class="header_bg">Group And Corporate</td>
+                                        <td  style="width:30%;"  >79,627.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg">10</td>
+                    <td align="Left" class="header_bg">Any other class as may be specified by the Authority. - Enter the
+                        name below</td>
+                    <td   ></td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg"></td>
+                    <td align="Left" class="header_bg"><b>Name of Other Segment</b></td>
+                    <td    class="header_bg"></td>
+                </tr>
+                                                <tr>
+                    <td    class="header_bg">1</td>
+                    <td align="Left">Crop</td>
+                    <td   >4.00</td>
+
+                </tr>
+                                                <tr>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td    class="header_bg">11</td>
+                    <td align="Left">Unallocated</td>
+                    <td> </td>
+                </tr>
+        </table>
+ <br>
+     <br>
+
+
+
+
+<div class="d-flex-table-head">
+<h3 align="center">Format for financial results by general insurance companies filed with stock exchanges</h3>
+<h3 style="color:red;text-align:right">Amount in (Lakhs)</h3>
+  </div>
+        <table cellspacing="5" cellpadding="5"   style="width:1090px;">
+           <colgroup>
+              <col span="3" >
+              <col span="1" style="visibility: collapse">
+           </colgroup>
+                        <tr>
+                    <td colspan="2" align="center" class="header_bg"><b>Partiuclars</b></td>
+                    <td align="center" class="header_bg textalingright no-align-left">Current Quarter</td>
+                </tr>
+                <tr>
+                    <td colspan="2"   style="width:85%;"   class="header_bg">Date of start of reporting period</td>
+                    <td  style="width:15%;"  align="center" class="no-align-left">01-04-2026</td>
+                </tr>
+                <tr>
+                    <td colspan="2"    class="header_bg">Date of end of reporting period</td>
+                    <td align="center" class="no-align-left">30-06-2026</td>
+                </tr>
+                <tr>
+                    <td colspan="2"    class="header_bg">Whether results are audited or unaudited </td>
+                    <td align="center" class="no-align-left">Audited</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2"    class="header_bg">Nature of report standalone or consolidated</td>
+                    <td class="no-align-left">Standalone</td>
+                 </tr>
+                <tr>
+                    <td colspan="2" align="Left" class="header_bg"><b>Segment Technical Liabilities (Unexpired Claims Reserves Including IBNR &amp; IIBNER)</b></td>
+                    <td colspan="2" class="header_bg"></td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg">1</td>
+                                        <td align="Left" class="header_bg">Fire</td>
+                                        <td   >3,22,147.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg">2</td>
+                                        <td align="Left" class="header_bg">Marine</td>
+                                        <td   >1,33,066.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg">3</td>
+                                        <td align="Left" class="header_bg">Health including personal accident</td>
+                                        <td   >0.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg">4</td>
+                                        <td align="Left" class="header_bg">Health Retail</td>
+                                        <td   >62,325.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg">5</td>
+                                        <td align="Left" class="header_bg">Health Group</td>
+                                        <td   >2,33,988.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg">6</td>
+                                        <td align="Left" class="header_bg">Health Government Schemes</td>
+                                        <td   >7,408.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg">7</td>
+                                        <td align="Left" class="header_bg">Motor</td>
+                                        <td   >22,46,861.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg">8</td>
+                                        <td align="Left" class="header_bg">Retail</td>
+                                        <td   >12,762.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg">9</td>
+                                        <td align="Left" class="header_bg">Group And Corporate</td>
+                                        <td   >4,58,055.00</td>
+                </tr>
+                                                <tr>
+                    <td align="center" class="header_bg">10</td>
+                    <td align="Left" class="header_bg">Any other class as may be specified by the Authority. - Enter the
+                        name            below</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td align="center" class="header_bg"></td>
+                    <td align="Left" class="header_bg"><b>Name of Other Segment</b></td>
+                    <td    class="header_bg"></td>
+                </tr>
+                                                <tr>
+                    <td    class="header_bg">1</td>
+                    <td align="Left">Crop</td>
+                    <td   >1,59,125.00</td>
+                </tr>
+                                                <tr>
+                    <td    class="header_bg">11</td>
+                    <td align="Left">Unallocated</td>
+                    <td></td>
+                </tr>
+
+
+        </table>
+        <br>
+
+
+        <table cellspacing=" 5" cellpadding="5">
+            <tr style="font-weight: bold;text-align: center;">
+                <td >
+                    <h3 align="center"> Notes to the Technical Liabilities</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>1 The above audited financial results of the ICICI Lombard General Insurance Company Limited (the Company) for the quarter ended June 30, 2026 were reviewed and recommended by the Audit Committee and subsequently approved by the Board of Directors at its Meeting held on July 15, 2026.        2 The above audited financial results were audited by the joint statutory auditors, Walker Chandiok & Co LLP, Chartered Accountants and B S R & Co. LLP, Chartered Accountants who have issued an unmodified opinion on these financial results.        3 During the quarter ended June 30, 2026, the Company has allotted 777,712 equity shares of face value of  Rs. 10 each pursuant to exercise of employee stock options and employee stock units granted. (For the quarter ended June 30, 2025, 909,691 equity shares were allotted, for the quarter and year ended March 31, 2026, 450,167 and 2,768,515 equity shares allotted respectively).        4 The Board of directors has approved a final dividend of Rs.7.00 per equity share of face value of Rs. 10 each for the year ended March 31, 2026 at the annual general meeting held on June 19,2026.        5 Figures of the previous period have been re-grouped wherever necessary, to conform to the current year presentation.        6 In view of the seasonality of Industry, the financial results for the quarters are not indicative of full year's expected performance.        7 The amounts for the quarter ended March 31, 2026 are balancing amounts between the amounts as per audited accounts for the year ended March 31, 2026 and for the nine months ended December 31, 2025.        8 IRDAI has notified Ind AS as the applicable financial reporting framework for insurers with effect from 1 April 2026. Pursuant to the Company's application dated April 29, 2026 for the one-year implementation forbearance permitted under the IRDAI (Actuarial, Finance and Investment Functions of Insurers) (Amendment) Regulations, 2026, IRDAI vide its approval dated 18 June 2026 granted the Company exemption from preparation of Ind AS financial statements up to 31 March 2027.Accordingly, the Company will continue to prepare its financial statements under the existing applicable accounting framework during FY 2027.        9 Pursuant to the judgment delivered by the Hon’ble Supreme Court of India on June 11, 2026, recognizing the economic value of unpaid domestic work performed by homemakers for the purpose of determining compensation under the Motor Vehicles Act, the Company has assessed the potential impact of the ruling on its Motor Third-Party (TP) portfolio. The Company has on a prudent and conservative basis recognized claim reserves amounting to Rs.16,500 Lakhs in the current quarter on the premium earned during the quarter. Meanwhile, the GI council has filed on July 10 , 2026 a review petition on the judgement and the Company will continue to monitor developments on the same. The statutory auditors have placed reliance on the estimates arrived by the appointed actuary of the Company for this matter.        10 In accordance with requirements of IRDAI circular no. IRDAI/F&A/CIR/MISC/256/09/2021 dated September 30, 2021 on Public Disclosures by Insurers, the Company will publish the financials results on the company's website latest by July 30, 2026.        1 The above audited financial results of the ICICI Lombard General Insurance Company Limited (the Company) for the quarter ended June 30, 2026 were reviewed and recommended by the Audit Committee and subsequently approved by the Board of Directors at its Meeting held on July 15, 2026.        2 The above audited financial results were audited by the joint statutory auditors, Walker Chandiok & Co LLP, Chartered Accountants and B S R & Co. LLP, Chartered Accountants who have issued an unmodified opinion on these financial results.        3 During the quarter ended June 30, 2026, the Company has allotted 777,712 equity shares of face value of  Rs. 10 each pursuant to exercise of employee stock options and employee stock units granted. (For the quarter ended June 30, 2025, 909,691 equity shares were allotted, for the quarter and year ended March 31, 2026, 450,167 and 2,768,515 equity shares allotted respectively).        4 The Board of directors has approved a final dividend of Rs.7.00 per equity share of face value of Rs. 10 each for the year ended March 31, 2026 at the annual general meeting held on June 19,2026.        5 Figures of the previous period have been re-grouped wherever necessary, to conform to the current year presentation.        6 In view of the seasonality of Industry, the financial results for the quarters are not indicative of full year's expected performance.        7 The amounts for the quarter ended March 31, 2026 are balancing amounts between the amounts as per audited accounts for the year ended March 31, 2026 and for the nine months ended December 31, 2025.        8 IRDAI has notified Ind AS as the applicable financial reporting framework for insurers with effect from 1 April 2026. Pursuant to the Company's application dated April 29, 2026 for the one-year implementation forbearance permitted under the IRDAI (Actuarial, Finance and Investment Functions of Insurers) (Amendment) Regulations, 2026, IRDAI vide its approval dated 18 June 2026 granted the Company exemption from preparation of Ind AS financial statements up to 31 March 2027.Accordingly, the Company will continue to prepare its financial statements under the existing applicable accounting framework during FY 2027.        9 Pursuant to the judgment delivered by the Hon’ble Supreme Court of India on June 11, 2026, recognizing the economic value of unpaid domestic work performed by homemakers for the purpose of determining compensation under the Motor Vehicles Act, the Company has assessed the potential impact of the ruling on its Motor Third-Party (TP) portfolio. The Company has on a prudent and conservative basis recognized claim reserves amounting to Rs.16,500 Lakhs in the current quarter on the premium earned during the quarter. Meanwhile, the GI council has filed on July 10 , 2026 a review petition on the judgement and the Company will continue to monitor developments on the same. The statutory auditors have placed reliance on the estimates arrived by the appointed actuary of the Company for this matter.        10 In accordance with requirements of IRDAI circular no. IRDAI/F&A/CIR/MISC/256/09/2021 dated September 30, 2021 on Public Disclosures by Insurers, the Company will publish the financials results on the company's website latest by July 30, 2026.</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+
+
+
+
+
+
+
+
+       <br>
+          <!-- Notes missing    -->
+
+
+       <!-- Cash flow statement,  direct -->
+
+
+        
+
+
+
+
+
+               <div class="d-flex-table-head">
+          <h3>Details of Impact of Audit Qualification</h3>
+          <h3 style="color:red;text-align:right">Amount in (Lakhs)</h3>
+     </div>
+          <table cellspacing="5" cellpadding="5" class="auditqualificationtable ">
+
+                <th>Whether results are audited or unaudited</th>
+                <td style="width:15%" class="subtitle_bg"> </td>
+            </tr>
+            <tr>
+                <th>Declaration of unmodified opinion or statement on impact of audit qualification</th>
+                <td class="subtitle_bg">Not applicable</td>
+            </tr>
+            <tr>
+                <th>Auditor's opinion</th>
+                <td></td>
+            </tr>
+            <tr style="border-bottom; none;">
+                <th>Declaration pursuant to Regulation 33 (3) (d) of SEBI (LODR) Regulation, 2015:
+                    The company declares that its Statutory Auditor/s have issued an Audit Report with unmodified
+                    opinion for the period on Standalone results</th>
+                <td style="border-bottom; none;" class="subtitle_bg"></td>
+            </tr>
+
+    </table>
+    <table cellspacing="5" cellpadding="5"  style="border-top: none;" class="stockExchnageTableLastColwidth">
+            <tr style="text-align:center;border-top:1px solid;">
+                    <td class="l" style="width:5%">Sr No.</td>
+                    <td>Audit firm's name</td>
+                    <td>Whether the firm holds a valid peer review certificate issued by Peer Review Board of ICAI</td>
+                    <td colspan="3">Certificate valid upto</td>
+                </tr>
+
+                            </table>
+    <br> <br>
+
+
+
+   
+
+                  
+
+
+
+
+
+
+
+
+
+
+          <h3> Signatories details	</h3>
+               <table class="gridtable" cellspacing="5" cellpadding="5" class="signatureDetailsTable">
+            
+            <tr>
+                <th style="width:20%;" >Name of CEO / Managing director</th>
+                <td  style="width:80%;" ></td>
+            </tr>
+              <tr>
+                            <th style="width:20%;" >Name of CFO</th>
+                            <td  style="width:80%;" ></td>
+                        </tr>
+
+            <tr>
+                <th style="width:20%;" >Name of audit committee chairman</th>
+                <td style="width:80%;" ></td>
+            </tr>
+            <tr>
+                <th style="width:20%;" >Name of statutory auditor</th>
+                <td style="width:80%;" ></td>
+            </tr>
+            <tr>
+                <th style="width:20%;" >Name of other signatory, if any, with designation</th>
+                <td style="width:80%;" ></td>
+            </tr>
+            <tr>
+                <th style="width:20%;" >Place</th>
+                <td style="width:8style="width:80%;" " ></td>
+            </tr>
+            <tr>
+                <th style="width:20%;" >Date</th>
+                <td style="width:8style="width:80%;" " ></td>
+            </tr>
+        </table>
+      <br><br>
+
+
+
+            
+    
+
+
+           
+
+  
+  
+
+ 
+         <br /><br />
+                    <br /><br />
+    </div>
+</html>
