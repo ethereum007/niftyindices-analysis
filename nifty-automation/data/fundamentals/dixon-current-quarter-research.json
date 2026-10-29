@@ -70,5 +70,11 @@
     "ytd_pat_total_period_crore": "717.83",
     "comparable_growth_allowed": false,
     "restriction": "Issuer notes lighting-business transfer makes comparative quarters non-comparable; exchange filing date unverified."
+  },
+  "bse_primary_html": {
+    "source_url": "https://www.bseindia.com/XBRLFILES/IFIndasDuplicateUploadDocument/Integrated_Finance_Ind_As_540699_31072026061306_IFIndAs.html",
+    "sha256": "6f13e9a9b3cce833496b5054e0c4849a9e1344af398bd93308bccede0b5b0d02",
+    "retrieved_utc": "2026-10-29T01:39:48.444468+00:00",
+    "date_caution": "Upload filename alone is not independently verified exchange dissemination time."
   }
 }

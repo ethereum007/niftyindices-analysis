@@ -1,0 +1,23 @@
+{
+  "symbol": "DIXON",
+  "publication_ready": false,
+  "filing_date": null,
+  "checks": [
+    {
+      "metric": "revenue_operations_crore",
+      "quarter_crore": "15547.66",
+      "ytd_crore": "15547.66",
+      "status": "match"
+    },
+    {
+      "metric": "pat_total_period_crore",
+      "quarter_crore": "717.83",
+      "ytd_crore": "717.83",
+      "status": "match"
+    }
+  ],
+  "comparable_growth_allowed": false,
+  "restriction": "Source agreement verifies facts, not dissemination time or economic comparability.",
+  "html_sha256": "6f13e9a9b3cce833496b5054e0c4849a9e1344af398bd93308bccede0b5b0d02",
+  "pdf_sha256": "d273532c5a19702886e58b1d3d64be2c540603b7d6662527b1b960283c5b5779"
+}

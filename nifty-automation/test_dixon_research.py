@@ -10,6 +10,18 @@ from types import SimpleNamespace
 ROOT=Path(__file__).parent/'data/fundamentals'
 
 class DixonResearchTests(unittest.TestCase):
+    def test_independent_bse_source_agreement_and_mutation_rejection(self):
+        from reconcile_dixon_sources import reconcile
+        data=json.loads((ROOT/'dixon-current-quarter-research.json').read_text(encoding='utf-8'))
+        html=(ROOT/'raw'/(data['bse_primary_html']['sha256']+'.html')).read_bytes()
+        pdf=(ROOT/'raw'/(data['sources'][0]['sha256']+'.pdf')).read_bytes()
+        result=reconcile(html,pdf)
+        self.assertEqual(len(result['checks']),2)
+        self.assertIsNone(result['filing_date'])
+        self.assertFalse(result['comparable_growth_allowed'])
+        for old,new in [(b'DIXON',b'OTHER'),(b'Crores',b'Lakhs'),(b'15,547.66',b'15,547.67'),(b'30-06-2026',b'30-09-2026')]:
+            with self.assertRaises(ValueError):reconcile(html.replace(old,new),pdf)
+
     def test_bounded_parser_retains_unavailable_date_and_growth_restriction(self):
         raw=(ROOT/'raw/d273532c5a19702886e58b1d3d64be2c540603b7d6662527b1b960283c5b5779.pdf').read_bytes()
         fact=parse_dixon_june2026_research(raw)
