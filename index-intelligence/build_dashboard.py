@@ -81,6 +81,7 @@ def load_reviewed_company_history(root):
         raw=(folder/'raw'/(sha+'.'+extension)).read_bytes()
         if hashlib.sha256(raw).hexdigest()!=sha:raise ValueError('Changed reviewed history evidence')
     for file in folder.glob('*-publication-review.json'):
+        if file.name=='lt-issuer-publication-review.json':continue
         review=json.loads(file.read_text(encoding='utf-8'));family=review['family']
         history=json.loads((folder/(family+'.json')).read_text(encoding='utf-8'))
         actions=json.loads((folder/(family+'-action-review.json')).read_text(encoding='utf-8'))
@@ -116,6 +117,7 @@ def load_reviewed_financials(root):
     sys.path.insert(0,str(HERE.parent/'nifty-automation'))
     from fetch_primary_financials import parse
     for file in folder.glob('*-publication-review.json'):
+        if file.name=='lt-issuer-publication-review.json':continue
         review=json.loads(file.read_text(encoding='utf-8'))
         if review['status']!='reviewed_with_field_restrictions':continue
         facts=[]
@@ -142,6 +144,17 @@ def load_reviewed_financials(root):
                 if blocked['period_end']==fact['period_end']:fact[blocked['metric']]=None
             facts.append(fact)
         out[review['isin']]={'symbol':review['symbol'],'facts':facts,'review':review}
+    lt_review=folder/'lt-issuer-publication-review.json'
+    if lt_review.exists():
+        review=json.loads(lt_review.read_text(encoding='utf-8'))
+        if review['status']=='reviewed_with_field_restrictions':
+            from review_lt_availability import load_research
+            facts=load_research(folder)['facts']
+            if review['symbol']!='LT' or review['isin']!='INE018A01030':raise ValueError('LT review identity mismatch')
+            if [(f['sha256'],f['availability_sha256']) for f in facts]!=[tuple(x) for x in review['source_pairs']]:raise ValueError('LT reviewed evidence changed')
+            for f in facts:
+                f['period_start']='2026-04-01' if f['period_end']=='2026-06-30' else '2026-07-01'
+            out[review['isin']]={'symbol':'LT','facts':facts,'review':review}
     return out
 
 def pack_rows(observations):

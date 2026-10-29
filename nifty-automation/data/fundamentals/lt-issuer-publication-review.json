@@ -1,0 +1,18 @@
+{
+  "symbol": "LT",
+  "isin": "INE018A01030",
+  "reviewed_on": "2026-10-29",
+  "status": "reviewed_with_field_restrictions",
+  "source_pairs": [
+    [
+      "a71aadd8b8470e680dde7e455d58595a014344bad7488495f34bd9b2eb5338b3",
+      "6d0613e6ea7ad847e5901c986cbf4280c52fc48bac2b5567c82af5e48fdd210e"
+    ],
+    [
+      "dd9f06b475b96ebdf2042c88e59b81687cff732fc8ec694b7c70a97be9117730",
+      "9f1c03fe0184d2d519d01ea682e9593afdd6a14598d8fd7c274d5838410f4769"
+    ]
+  ],
+  "blocked_fields": [],
+  "note": "Total reported consolidated PAT includes JV/associate profit and non-controlling interests; parent-only PAT differs. Issuer publication dates establish end-of-day availability, not exchange filing or intraday timestamps. Nabha Power was divested in June; Hyderabad Metro remains held for sale. No normalisation applied. Missing original matching prior quarters and contiguous history keep YoY and TTM unavailable."
+}
