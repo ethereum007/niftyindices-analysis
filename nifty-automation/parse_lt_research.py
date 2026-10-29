@@ -14,22 +14,26 @@ def parse(raw,period_end):
     if not all(x in text for x in ('LARSEN & TOUBRO LIMITED','L99999MH1946PLC004768',
                                   'STATEMENT OF UNAUDITED CONSOLIDATED FINANCIAL RESULTS',title,'Crore')):
         raise ValueError('LT statement identity/scope/unit mismatch')
-    def values(label):
+    def values(label,expected_occurrences=1):
         matches=re.findall(r'(?<![0-9.])'+re.escape(label)+r'\s+'+r'\s+'.join([r'(\(?-?\d[\d,]*\.\d{2}\)?)']*columns),text)
-        if len(matches)!=1:raise ValueError('Missing/ambiguous LT row: '+label)
+        if len(matches)!=expected_occurrences:raise ValueError('Missing/ambiguous LT row: '+label)
         return [Decimal(v.replace(',','').replace('(','-').replace(')','')) for v in matches[0]]
     sales=values('a) Revenue from operations');other=values('b) Other income (net)');income=values('Total Income')
     pbt=values('5 Profit before tax (3+4)');tax=values('Total tax expense')
     before=values('7 Net profit after tax (5-6)')
     jv=values('8 Share in profit/(loss) after tax of joint ventures/associates (net)')
     total=values('9')
+    parent=values('Attributable to: Owners of the Company',3)
+    nci=values('Non-controlling interests',3)
     if any(s+o!=i for s,o,i in zip(sales,other,income)):raise ValueError('LT income bridge mismatch')
     if any(p-t!=n for p,t,n in zip(pbt,tax,before)):raise ValueError('LT tax bridge mismatch')
     if any(n+j!=p for n,j,p in zip(before,jv,total)):raise ValueError('LT JV/PAT bridge mismatch')
+    if any(p+n!=t for p,n,t in zip(parent,nci,total)):raise ValueError('LT parent/NCI bridge mismatch')
     if columns==6 and (sales[0]+sales[1]!=sales[3] or total[0]+total[1]!=total[3]):raise ValueError('LT half-year bridge mismatch')
     return {'symbol':'LT','isin':'INE018A01030','scope':'Consolidated','period_end':period_end,
             'source_unit':'INR crore','revenue_operations_crore':str(sales[0]),
             'pat_total_period_crore':str(total[0]),'statement_page':1,'filing_date':None,
+            'parent_attributable_pat_crore':str(parent[0]),'noncontrolling_pat_crore':str(nci[0]),
             'publication_ready':False,'pat_definition':'Total period PAT including JV/associate share; not parent-attributable PAT.',
             'quarter_columns_revenue':[str(v) for v in sales], 'quarter_columns_pat':[str(v) for v in total]}
 

@@ -17,6 +17,8 @@
         "pat_total_period_crore": "4988.03",
         "statement_page": 1,
         "filing_date": null,
+        "parent_attributable_pat_crore": "4122.85",
+        "noncontrolling_pat_crore": "865.18",
         "publication_ready": false,
         "pat_definition": "Total period PAT including JV/associate share; not parent-attributable PAT.",
         "quarter_columns_revenue": [
@@ -48,6 +50,8 @@
         "pat_total_period_crore": "5949.15",
         "statement_page": 1,
         "filing_date": null,
+        "parent_attributable_pat_crore": "5202.10",
+        "noncontrolling_pat_crore": "747.05",
         "publication_ready": false,
         "pat_definition": "Total period PAT including JV/associate share; not parent-attributable PAT.",
         "quarter_columns_revenue": [
@@ -67,6 +71,42 @@
           "18953.88"
         ]
       }
+    }
+  ],
+  "visual_review": {
+    "reviewed_on": "2026-10-29",
+    "statement_pages": [
+      1,
+      1
+    ],
+    "units": "INR crore",
+    "scope": "Consolidated",
+    "quarter_not_half_year": true,
+    "parent_pat_june": "4122.85",
+    "parent_pat_september": "5202.10",
+    "nci_june": "865.18",
+    "nci_september": "747.05",
+    "notes": [
+      "June: Nabha Power subsidiary divested25June2026; Hyderabad Metro assets/liabilities held for sale.",
+      "September: Hyderabad Metro completion expected31December2026; held-for-sale classification retained.",
+      "Reported total PAT includes JV/associates and NCI; not parent-only or normalized earnings.",
+      "Board approval28July2026/27October2026 is separate from exchange dissemination time."
+    ]
+  },
+  "dated_issuer_announcements": [
+    {
+      "source_url": "https://www.larsentoubro.com/pressreleases/2026/2026-07-28-financial-results-for-the-quarter-ended-june-30-2026",
+      "sha256": "6d0613e6ea7ad847e5901c986cbf4280c52fc48bac2b5567c82af5e48fdd210e",
+      "retrieved_utc": "2026-10-29T02:40:31.320010+00:00",
+      "issuer_publication_date": "2026-07-28",
+      "availability_type": "Dated issuer announcement, not independently verified exchange timestamp"
+    },
+    {
+      "source_url": "https://www.larsentoubro.com/pressreleases/2026/2026-10-27-consolidated-financial-results-for-the-quarter-ended-september-30-2026",
+      "sha256": "9f1c03fe0184d2d519d01ea682e9593afdd6a14598d8fd7c274d5838410f4769",
+      "retrieved_utc": "2026-10-29T02:40:31.677813+00:00",
+      "issuer_publication_date": "2026-10-27",
+      "availability_type": "Dated issuer announcement, not independently verified exchange timestamp"
     }
   ]
 }
