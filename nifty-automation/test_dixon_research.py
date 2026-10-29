@@ -10,6 +10,21 @@ from types import SimpleNamespace
 ROOT=Path(__file__).parent/'data/fundamentals'
 
 class DixonResearchTests(unittest.TestCase):
+    def test_dated_issuer_outcome_preserves_comparability_gate(self):
+        from review_dixon_availability import load_research,outcome_date
+        d=json.loads((ROOT/'dixon-current-quarter-research.json').read_text(encoding='utf-8'))
+        raw=(ROOT/'raw'/(d['issuer_outcome_source']['sha256']+'.pdf')).read_bytes()
+        result=load_research()
+        self.assertEqual(result['available_on'],'2026-07-31')
+        self.assertIsNone(result['filing_date'])
+        self.assertFalse(result['publication_ready'])
+        self.assertFalse(result['comparable_growth_allowed'])
+        texts=[p.extract_text() for p in PdfReader(ROOT/'raw'/(d['issuer_outcome_source']['sha256']+'.pdf')).pages]
+        for old,new in [('INE935N01020','OTHER'),('31st July, 2026','1st August, 2026'),('also being uploaded','not published')]:
+            pages=[SimpleNamespace(extract_text=lambda t=t:t.replace(old,new)) for t in texts]
+            with patch('review_dixon_availability.PdfReader',return_value=SimpleNamespace(pages=pages)):
+                with self.assertRaises(ValueError):outcome_date(raw)
+
     def test_independent_bse_source_agreement_and_mutation_rejection(self):
         from reconcile_dixon_sources import reconcile
         data=json.loads((ROOT/'dixon-current-quarter-research.json').read_text(encoding='utf-8'))

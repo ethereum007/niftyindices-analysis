@@ -76,5 +76,11 @@
     "sha256": "6f13e9a9b3cce833496b5054e0c4849a9e1344af398bd93308bccede0b5b0d02",
     "retrieved_utc": "2026-10-29T01:39:48.444468+00:00",
     "date_caution": "Upload filename alone is not independently verified exchange dissemination time."
+  },
+  "issuer_outcome_source": {
+    "source_url": "https://dixon-website.s3.ap-south-1.amazonaws.com/uploads/dbc970d5-e8ac-4cae-aaa8-de20cfae6a93-OutcomeofBoardMeeting-31.07.2026.pdf",
+    "sha256": "d36669c58ed418242224d4c6be8d6668e57a1c0d71712c3e7dbe8b32983b68c2",
+    "retrieved_utc": "2026-10-29T04:10:18.764220+00:00",
+    "pages": 12
   }
 }
