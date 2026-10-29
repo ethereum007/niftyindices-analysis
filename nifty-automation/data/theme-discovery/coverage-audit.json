@@ -1063,114 +1063,204 @@
     {
       "family": "infrastructure",
       "name": "Infrastructure & Construction",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "Roads & highways",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "IRB",
+              "isin": "INE821I01022",
+              "sha256": "4bc23cca2380c814f238bdbcc1878e17717f6319c04dd406261b6144e11c44cc"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Civil EPC",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "LT",
+              "isin": "INE018A01030",
+              "sha256": "1d9c4b8e5efaab953445d0b481197ac9cfe45bf00ea40fd6384532b4c5b8faa7"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Urban infrastructure",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "KEC",
+              "isin": "INE389H01022",
+              "sha256": "e42c28fadd037b26a5eafcf4e00dda9d59e240e4bc421cf6d4593e5598abcd4f"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Construction materials",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ULTRACEMCO",
+              "isin": "INE481G01011",
+              "sha256": "b802f3dfe76f9506c1f925107b38f8ba5c452a0ec0aa96b8bd492540501abccc"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Infrastructure operators",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ADANIPORTS",
+              "isin": "INE742F01042",
+              "sha256": "9de73407e5b2e1b00893c242a534ed26ad6bc7003ec72985a279c95ceae40930"
+            }
+          ],
+          "gap_note": null
         }
       ]
     },
     {
       "family": "logistics",
       "name": "Logistics, Transport & Aviation",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "Ports & shipping",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "ADANIPORTS",
+              "isin": "INE742F01042",
+              "sha256": "2d35b24941420a08d1d36819307d4278b2f2600799b908090d93e4563ce9d026"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Warehousing",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "MAHLOG",
+              "isin": "INE766P01016",
+              "sha256": "6f118fd3cf7d6f7f326a1bacebf5f1c81bcfd3770a917761449e217b94d75be7"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Road logistics",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "TCI",
+              "isin": "INE688A01022",
+              "sha256": "a44720d335d66b8d745967cd2b445449c20033298297a47c23256c7e20e191fd"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Aviation",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "INDIGO",
+              "isin": "INE646L01027",
+              "sha256": "fb3ab339cc0fe1c035a6f9421a3b4e150f40decb6928f194eb65c40987142985"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Express delivery",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "BLUEDART",
+              "isin": "INE233B01017",
+              "sha256": "626afe9988116be11912140f5d4ad622c1e3f42439bdf3f93912c72b317d04fd"
+            }
+          ],
+          "gap_note": null
         }
       ]
     },
     {
       "family": "electronics",
       "name": "Electronics & Semiconductors",
-      "mapped_subthemes": 0,
+      "mapped_subthemes": 5,
       "total_subthemes": 5,
       "subthemes": [
         {
           "subtheme": "EMS & assembly",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "KAYNES",
+              "isin": "INE918Z01012",
+              "sha256": "a15c7b9c639a1b6629f38de8b34bfce671f7f2bd899a3a39e98a7c1d533540f0"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Semiconductor design",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "MOSCHIP",
+              "isin": "INE935B01025",
+              "sha256": "1cd962fe9cfc5a4523dfda5bb188332b5fb4c46bfe3bff76214f3f4cad75a8ef"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "OSAT & packaging",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "CGPOWER",
+              "isin": "INE067A01029",
+              "sha256": "f0031a39063b5a6a8d9a11726edc282136f4a762fe963303eefb265f9a729b8b"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Electronic components",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "DCXINDIA",
+              "isin": "INE0KL801015",
+              "sha256": "c1331cbce1cc5ac7fb23f43a7a5301797045994d9bd5796cdeeb0de1d04999ff"
+            }
+          ],
+          "gap_note": null
         },
         {
           "subtheme": "Industrial electronics",
-          "stage": "needs_independent_mapping",
-          "examples": [],
-          "gap_note": "No validated business-exposure example in current manifest."
+          "stage": "source_backed_example",
+          "examples": [
+            {
+              "symbol": "HONAUT",
+              "isin": "INE671A01010",
+              "sha256": "2e0fb1743cf39d512b2e9b56abda68e6718a082ea63cc6e13077124f3f0782f6"
+            }
+          ],
+          "gap_note": null
         }
       ]
     },
@@ -1548,6 +1638,6 @@
     }
   ],
   "total_subthemes": 140,
-  "mapped_subthemes": 80,
-  "fully_mapped_example_families": 16
+  "mapped_subthemes": 95,
+  "fully_mapped_example_families": 19
 }

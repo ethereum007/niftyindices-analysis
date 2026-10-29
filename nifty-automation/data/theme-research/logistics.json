@@ -1,0 +1,120 @@
+{
+  "family": "logistics",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-29",
+  "note": "Five independently researched value-chain examples; not an exhaustive listed universe. No paid holdings, weights, historical membership, asset ownership or revenue materiality inferred.",
+  "comparison_note": "Construction, concessions, material supply and operations have different economics; logistics also distinguishes asset operators from service providers. This is not a homogeneous growth or valuation peer group.",
+  "members": [
+    {
+      "symbol": "ADANIPORTS",
+      "subtheme": "Ports & shipping",
+      "source_url": "https://www.adaniports.com/ports-and-terminals",
+      "rationale": "Port and terminal operations establish port logistics exposure. This does not imply ownership of customer shipping fleets or make the company a pure-play ocean carrier.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Adani Ports and Special Economic Zone Ltd.",
+      "isin": "INE742F01042",
+      "resolved_url": "https://www.adaniports.com/ports-and-terminals",
+      "sha256": "2d35b24941420a08d1d36819307d4278b2f2600799b908090d93e4563ce9d026",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:17:18.633844+00:00",
+      "keyword_checks": {
+        "ports": true,
+        "cargo": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "MAHLOG",
+      "subtheme": "Warehousing",
+      "source_url": "https://mahindralogistics.com/contract-logistics/warehousing-solutions/",
+      "rationale": "Mahindra Logistics describes inventory, storage and warehouse management services. Managed warehouse space is not assumed to be company-owned real estate.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Mahindra Logistics Ltd.",
+      "isin": "INE766P01016",
+      "resolved_url": "https://mahindralogistics.com/contract-logistics/warehousing-solutions/",
+      "sha256": "6f118fd3cf7d6f7f326a1bacebf5f1c81bcfd3770a917761449e217b94d75be7",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:17:18.880160+00:00",
+      "keyword_checks": {
+        "warehousing": true,
+        "inventory": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "TCI",
+      "subtheme": "Road logistics",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ak_bansal_tcil_com_26052026185318_TCIL.pdf",
+      "rationale": "Transport Corporation of India describes TCI Freight surface-transport services. This is the listed TCI operating business, not a consolidation of separately listed TCI Express after demerger.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from primary business disclosure",
+      "company": "Transport Corporation of India Limited",
+      "isin": "INE688A01022",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/ak_bansal_tcil_com_26052026185318_TCIL.pdf",
+      "sha256": "a44720d335d66b8d745967cd2b445449c20033298297a47c23256c7e20e191fd",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T06:17:18.432236+00:00",
+      "evidence_pages": [
+        3
+      ],
+      "keyword_checks": {
+        "tci freight": true,
+        "surface transport": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "INDIGO",
+      "subtheme": "Aviation",
+      "source_url": "https://nsearchives.nseindia.com/corporate/Indigo1_10032026192647_Disclosure.pdf",
+      "rationale": "Issuer identifies InterGlobe Aviation Limited as IndiGo airline. This role is airline operations, not ownership of the broader InterGlobe hospitality and logistics group or an airport operator.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "InterGlobe Aviation Ltd.",
+      "isin": "INE646L01027",
+      "resolved_url": "https://nsearchives.nseindia.com/corporate/Indigo1_10032026192647_Disclosure.pdf",
+      "sha256": "fb3ab339cc0fe1c035a6f9421a3b4e150f40decb6928f194eb65c40987142985",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T06:17:18.846131+00:00",
+      "evidence_pages": [
+        3
+      ],
+      "keyword_checks": {
+        "interglobe aviation limited": true,
+        "airline": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "BLUEDART",
+      "subtheme": "Express delivery",
+      "source_url": "https://www.bluedart.com/web/guest/about-bluedart",
+      "rationale": "Blue Dart describes express air and integrated transportation/distribution services. Its DHL relationship does not attribute the global DHL network revenues to the Indian listed company.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from primary business disclosure",
+      "company": "Blue Dart Express Limited",
+      "isin": "INE233B01017",
+      "resolved_url": "https://www.bluedart.com/web/guest/about-bluedart",
+      "sha256": "626afe9988116be11912140f5d4ad622c1e3f42439bdf3f93912c72b317d04fd",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:17:21.167744+00:00",
+      "keyword_checks": {
+        "blue dart express": true,
+        "express": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

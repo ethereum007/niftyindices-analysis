@@ -1,0 +1,114 @@
+{
+  "family": "infrastructure",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-29",
+  "note": "Five independently researched value-chain examples; not an exhaustive listed universe. No paid holdings, weights, historical membership, asset ownership or revenue materiality inferred.",
+  "comparison_note": "Construction, concessions, material supply and operations have different economics; logistics also distinguishes asset operators from service providers. This is not a homogeneous growth or valuation peer group.",
+  "members": [
+    {
+      "symbol": "IRB",
+      "subtheme": "Roads & highways",
+      "source_url": "https://www.irb.co.in/home/projects/",
+      "rationale": "IRB lists operational and development road concessions. Project concession exposure is not direct ownership of all InvIT assets or an inference that announced projects are operational.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "IRB Infrastructure Developers Ltd.",
+      "isin": "INE821I01022",
+      "resolved_url": "https://www.irb.co.in/home/projects/",
+      "sha256": "4bc23cca2380c814f238bdbcc1878e17717f6319c04dd406261b6144e11c44cc",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:17:17.988338+00:00",
+      "keyword_checks": {
+        "toll": true,
+        "operational": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "LT",
+      "subtheme": "Civil EPC",
+      "source_url": "https://www.larsentoubro.com/businesses",
+      "rationale": "Larsen & Toubro describes infrastructure EPC and heavy civil construction. Contract execution is distinct from permanent ownership or operation of completed infrastructure.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Larsen & Toubro Ltd.",
+      "isin": "INE018A01030",
+      "resolved_url": "https://www.larsentoubro.com/businesses",
+      "sha256": "1d9c4b8e5efaab953445d0b481197ac9cfe45bf00ea40fd6384532b4c5b8faa7",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:17:16.228478+00:00",
+      "keyword_checks": {
+        "heavy civil": true,
+        "infrastructure": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "KEC",
+      "subtheme": "Urban infrastructure",
+      "source_url": "https://www.kecrpg.com/urban-infra-projects",
+      "rationale": "KEC documents metro construction projects. Urban construction exposure does not imply ownership of the metro operator or all city infrastructure.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Kec International Ltd.",
+      "isin": "INE389H01022",
+      "resolved_url": "https://www.kecrpg.com/urban-infra-projects",
+      "sha256": "e42c28fadd037b26a5eafcf4e00dda9d59e240e4bc421cf6d4593e5598abcd4f",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:17:17.211346+00:00",
+      "keyword_checks": {
+        "metro": true,
+        "construction": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "subtheme": "Construction materials",
+      "source_url": "https://www.ultratechcement.com/corporate/media/press-kit",
+      "rationale": "UltraTech manufactures cement and ready-mix concrete used in construction. Material supply is distinct from civil EPC or owning the infrastructure customer.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "UltraTech Cement Ltd.",
+      "isin": "INE481G01011",
+      "resolved_url": "https://www.ultratechcement.com/corporate/media/press-kit",
+      "sha256": "b802f3dfe76f9506c1f925107b38f8ba5c452a0ec0aa96b8bd492540501abccc",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:17:16.374775+00:00",
+      "keyword_checks": {
+        "cement": true,
+        "concrete": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "subtheme": "Infrastructure operators",
+      "source_url": "https://www.adaniports.com/about-us",
+      "rationale": "APSEZ describes port and terminal operations with integrated logistics. Operations are distinct from EPC contracting; no assumed ownership of all Adani group infrastructure or quantified pure-play revenue.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Adani Ports and Special Economic Zone Ltd.",
+      "isin": "INE742F01042",
+      "resolved_url": "https://www.adaniports.com/about-us",
+      "sha256": "9de73407e5b2e1b00893c242a534ed26ad6bc7003ec72985a279c95ceae40930",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:17:17.164133+00:00",
+      "keyword_checks": {
+        "ports": true,
+        "terminals": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}

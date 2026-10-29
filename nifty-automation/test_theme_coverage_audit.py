@@ -2,6 +2,25 @@ import unittest,json,hashlib
 from audit_theme_coverage import audit,HERE
 
 class CoverageAuditTest(unittest.TestCase):
+    def test_infra_logistics_electronics_roles_keep_operator_and_project_limits(self):
+        catalogue=json.loads((HERE.parent/'index-intelligence/themes.json').read_text(encoding='utf-8'))['catalogue']['families']
+        quotes=json.loads((HERE/'data/stocks/latest.json').read_text(encoding='utf-8'))['prices']
+        manifests={}
+        for family in ('infrastructure','logistics','electronics'):
+            d=json.loads((HERE/'data/theme-research'/(family+'.json')).read_text(encoding='utf-8'));manifests[family]=d
+            self.assertEqual(set(next(f['subthemes'] for f in catalogue if f['id']==family)),{m['subtheme'] for m in d['members']})
+            self.assertEqual(len({m['isin'] for m in d['members']}),5)
+            for m in d['members']:
+                self.assertEqual(m['status'],'evidence_archived')
+                self.assertEqual(quotes[m['isin']]['symbol'],m['symbol'])
+                raw=(HERE/'data/theme-research/raw'/(m['sha256']+'.'+m.get('raw_extension','html'))).read_bytes()
+                self.assertEqual(hashlib.sha256(raw).hexdigest(),m['sha256'])
+        find=lambda family,symbol:next(m for m in manifests[family]['members'] if m['symbol']==symbol)
+        self.assertIn('not assumed to be company-owned real estate',find('logistics','MAHLOG')['rationale'])
+        self.assertIn('after demerger',find('logistics','TCI')['rationale'])
+        self.assertIn('does not establish subsequent commercial production',find('electronics','CGPOWER')['rationale'])
+        self.assertIn('current certificate validity',find('electronics','HONAUT')['rationale'])
+
     def test_insurance_and_utilities_roles_have_archived_primary_identity(self):
         catalogue=json.loads((HERE.parent/'index-intelligence/themes.json').read_text(encoding='utf-8'))['catalogue']['families']
         quotes=json.loads((HERE/'data/stocks/latest.json').read_text(encoding='utf-8'))['prices']

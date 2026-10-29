@@ -1,0 +1,119 @@
+{
+  "family": "electronics",
+  "status": "initial_examples_for_review",
+  "reviewed_on": "2026-10-29",
+  "note": "Five independently researched business-role examples; not exhaustive electronics membership. Historical capability and project evidence are explicitly labelled; no weights, historical membership, commercial-production status or theme revenue share inferred.",
+  "comparison_note": "EMS, fabless design, OSAT project exposure, interconnect/assembly and industrial sensors are distinct roles. Packaging is not wafer fabrication. This is not a homogeneous valuation or growth peer group.",
+  "members": [
+    {
+      "symbol": "KAYNES",
+      "subtheme": "EMS & assembly",
+      "source_url": "https://kaynestechnology.co.in/",
+      "rationale": "Kaynes describes electronics manufacturing and design services. EMS assembly is distinct from semiconductor wafer fabrication and does not quantify AI revenue.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Kaynes Technology India Ltd.",
+      "isin": "INE918Z01012",
+      "resolved_url": "https://kaynestechnology.co.in/",
+      "sha256": "a15c7b9c639a1b6629f38de8b34bfce671f7f2bd899a3a39e98a7c1d533540f0",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:12:47.411354+00:00",
+      "keyword_checks": {
+        "electronics": true,
+        "manufactur": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "MOSCHIP",
+      "subtheme": "Semiconductor design",
+      "source_url": "https://moschip.com/silicon-engineering-services/",
+      "rationale": "MosChip describes turnkey ASIC and silicon design services. Design exposure is distinct from owning a wafer fabrication plant or the foundry partners of clients.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from primary corporate disclosure",
+      "company": "MosChip Technologies Limited",
+      "isin": "INE935B01025",
+      "resolved_url": "https://moschip.com/silicon-engineering-services/",
+      "sha256": "1cd962fe9cfc5a4523dfda5bb188332b5fb4c46bfe3bff76214f3f4cad75a8ef",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:12:46.787114+00:00",
+      "keyword_checks": {
+        "design": true,
+        "asic": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "CGPOWER",
+      "subtheme": "OSAT & packaging",
+      "source_url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2093860&lang=2&reg=3",
+      "rationale": "January2025 government disclosure identifies CG Power and CG Semi semiconductor assembly/test project. This is subsidiary/JV project exposure, not parent-only semiconductor revenue; this source alone does not establish subsequent commercial production or capacity utilisation.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "CG Power and Industrial Solutions Ltd.",
+      "isin": "INE067A01029",
+      "resolved_url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2093860&lang=2&reg=3",
+      "sha256": "f0031a39063b5a6a8d9a11726edc282136f4a762fe963303eefb265f9a729b8b",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:12:46.865351+00:00",
+      "keyword_checks": {
+        "cg power": true,
+        "osat": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "DCXINDIA",
+      "subtheme": "Electronic components",
+      "source_url": "https://dcxindia.com/dcx-advantage/capabilities/",
+      "rationale": "DCX documents cable/wire harness, PCB assembly and electronic subsystem integration. These are electronic interconnect/assembly capabilities, not fabrication of every discrete component or semiconductor chip.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Official NSE EQ bhavcopy 2026-10-26; company name from primary corporate disclosure",
+      "company": "DCX Systems Limited",
+      "isin": "INE0KL801015",
+      "resolved_url": "https://dcxindia.com/dcx-advantage/capabilities/",
+      "sha256": "c1331cbce1cc5ac7fb23f43a7a5301797045994d9bd5796cdeeb0de1d04999ff",
+      "raw_extension": "html",
+      "retrieved_utc": "2026-10-29T06:12:48.465508+00:00",
+      "keyword_checks": {
+        "cable": true,
+        "wire harness": true,
+        "pcb": true
+      },
+      "status": "evidence_archived"
+    },
+    {
+      "symbol": "HONAUT",
+      "subtheme": "Industrial electronics",
+      "source_url": "https://automation.honeywell.com/content/dam/honeywell-edam/sps/siot/en-us/quality/honeywell-automation-india-ltd-pune-india-iso-9001-2015.pdf",
+      "rationale": "Historical Honeywell Automation India certificate explicitly scopes design/manufacture/supply of sensing and IoT products. This supports industrial-electronics capability only; current certificate validity and all global Honeywell revenue are not inferred.",
+      "reviewed_on": "2026-10-29",
+      "effective_date": null,
+      "exposure_materiality": "Not quantified",
+      "identity_source": "Current official Nifty constituent archive; not historical membership",
+      "company": "Honeywell Automation India Ltd.",
+      "isin": "INE671A01010",
+      "resolved_url": "https://automation.honeywell.com/content/dam/honeywell-edam/sps/siot/en-us/quality/honeywell-automation-india-ltd-pune-india-iso-9001-2015.pdf",
+      "sha256": "2e0fb1743cf39d512b2e9b56abda68e6718a082ea63cc6e13077124f3f0782f6",
+      "raw_extension": "pdf",
+      "retrieved_utc": "2026-10-29T06:12:48.481006+00:00",
+      "evidence_pages": [
+        1,
+        2
+      ],
+      "keyword_checks": {
+        "honeywell automation india limited": true,
+        "sensing": true
+      },
+      "status": "evidence_archived"
+    }
+  ]
+}
