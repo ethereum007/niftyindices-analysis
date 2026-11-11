@@ -1,8 +1,15 @@
 {
-  "latest": "2026-10-28",
+  "latest": "2026-11-09",
   "completed_targets": 8,
   "total_targets": 8,
-  "loaded": [],
+  "loaded": [
+    {
+      "status": "loaded",
+      "rows": 167,
+      "date": "2026-10-30",
+      "sha": "4ff51addaf0f98c751119aca212c359620ca042b61a28a12d5a540a1be267e6a"
+    }
+  ],
   "errors": [],
   "unavailable_files": [
     "https://niftyindices.com/Daily_Snapshot/ind_close_all_22102025.csv"
