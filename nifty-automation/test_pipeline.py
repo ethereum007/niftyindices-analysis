@@ -27,13 +27,13 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(self.db.execute('select count(*) from batches').fetchone()[0],1)
     def test_returns_and_missing_history(self):
         p.ingest(self.db,self.root,snapshot('19-09-2026',100),'fixture')
-        p.ingest(self.db,self.root,snapshot(),'fixture');p.report(self.db,self.root)
+        p.ingest(self.db,self.root,snapshot(),'fixture');p.report(self.db,self.root,build_dashboard=False)
         r=json.loads((self.root/'reports/latest.json').read_text())['indices'][0]
         self.assertAlmostEqual(r['return_1m'],10)
         self.assertIsNone(r['return_1y'])
     def test_no_stale_base_substitution(self):
         p.ingest(self.db,self.root,snapshot('01-08-2026',100),'fixture')
-        p.ingest(self.db,self.root,snapshot(),'fixture');p.report(self.db,self.root)
+        p.ingest(self.db,self.root,snapshot(),'fixture');p.report(self.db,self.root,build_dashboard=False)
         self.assertIsNone(json.loads((self.root/'reports/latest.json').read_text())['indices'][0]['return_1m'])
     def test_url_restrictions_and_discovery(self):
         for url in ('http://niftyindices.com/a','https://evil.test/a','https://niftyindices.com.evil.test/a'):

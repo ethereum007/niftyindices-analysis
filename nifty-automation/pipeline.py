@@ -133,7 +133,7 @@ def ingest(db, root, raw, source):
                        [tuple(row.get(f) for f in FIELDS)+(digest,) for row in rows])
     return {'status':'loaded','rows':len(rows),'date':rows[0]['date'],'sha':digest}
 
-def report(db, root):
+def report(db, root, *, build_dashboard=True):
     latest = db.execute('SELECT max(date) FROM observations').fetchone()[0]
     if not latest:
         raise ValueError('No stored observations')
@@ -166,7 +166,7 @@ def report(db, root):
     (out/'latest.html').write_text(page,encoding='utf-8')
     (out/f'{latest}.html').write_text(page,encoding='utf-8')
     builder=Path(__file__).parent.parent/'index-intelligence/build_dashboard.py'
-    if builder.exists():
+    if build_dashboard and builder.exists():
         import importlib.util
         spec=importlib.util.spec_from_file_location('index_dashboard_builder',builder)
         module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
