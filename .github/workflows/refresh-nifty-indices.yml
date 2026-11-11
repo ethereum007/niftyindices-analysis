@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install pypdf==6.10.0
+      - run: python -m pip install pypdf==6.10.0 beautifulsoup4==4.14.3
       - name: Refresh and publish verified data
         shell: bash
         run: |
@@ -44,4 +44,5 @@ jobs:
           git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
             commit -m "Refresh Nifty Indices for $after"
           git push origin HEAD:main
+
 
