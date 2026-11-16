@@ -1,10 +1,11 @@
 {
-  "latest": "2026-11-13",
+  "latest": "2026-11-16",
   "completed_targets": 8,
   "total_targets": 8,
   "loaded": [],
   "errors": [],
   "unavailable_files": [
+    "https://niftyindices.com/Daily_Snapshot/ind_close_all_15112024.csv",
     "https://niftyindices.com/Daily_Snapshot/ind_close_all_22102025.csv"
   ]
 }
